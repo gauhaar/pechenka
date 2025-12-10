@@ -29,11 +29,14 @@ export function StickyScrollSolution() {
                 transition={{ duration: 0.3, ease: "easeInOut" }}
                 className="w-full h-full"
               >
-                <Image
+                <img
                   src={item.imagePath}
-                  fill
-                  className="object-contain"
+                  className="w-full h-full object-contain"
                   alt={title}
+                  onError={(e) => {
+                    console.error(`Failed to load image: ${item.imagePath}`);
+                    e.target.style.display = 'none';
+                  }}
                 />
               </motion.div>
             </AnimatePresence>
@@ -71,11 +74,14 @@ export function StickyScrollSolution() {
             <h3 className="text-2xl font-semibold text-white">{item.title}</h3>
             <p className="text-slate-300 text-sm leading-relaxed">{item.description}</p>
             <div className="relative w-full aspect-video overflow-hidden rounded-lg border border-white/10 bg-black/60">
-              <Image
+              <img
                 src={item.imagePath}
-                fill
-                className="object-contain"
+                className="w-full h-full object-contain"
                 alt={item.title}
+                onError={(e) => {
+                  console.error(`Failed to load image: ${item.imagePath}`);
+                  e.target.style.display = 'none';
+                }}
               />
             </div>
           </EdgeGlowCard>
