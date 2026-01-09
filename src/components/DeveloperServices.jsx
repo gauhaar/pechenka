@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import AffiliateHeader from "@/components/affiliate/AffiliateHeader";
+import Header from "@/components/Header";
+import Modal from "@/components/Modal";
 import AffiliateFooter from "@/components/affiliate/AffiliateFooter";
 import BackToTopButton from "@/components/BackToTopButton";
 import HeroSection from "./HeroSection";
@@ -18,11 +19,15 @@ import ContactForm from "./ContactForm";
 export default function DeveloperServicesPage() {
   const [search, setSearch] = useState("");
   const [openIndex, setOpenIndex] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
   return (
     <>
       <main className="flex min-h-screen flex-col items-center bg-[#01091C] px-4 pb-24 sm:px-6 lg:px-8">
-        <AffiliateHeader />
+        <Header onOpenModal={openModal} />
 
         <div className="relative z-10 mt-32 flex w-full max-w-7xl flex-col gap-16">
           <HeroSection />
@@ -44,6 +49,7 @@ export default function DeveloperServicesPage() {
       </main>
       <AffiliateFooter />
       <BackToTopButton />
+      <Modal isOpen={isModalOpen} onClose={closeModal} />
     </>
   );
 }

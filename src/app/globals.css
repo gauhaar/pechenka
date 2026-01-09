@@ -729,18 +729,9 @@
   inset: 0;
   border-radius: inherit;
   pointer-events: none;
-  background:
-    radial-gradient(
-      140px circle at var(--cursor-x, 50%) var(--cursor-y, 50%),
-      var(--edge-glow-color, rgba(255, 0, 183, 0.85)) 0%,
-      var(--edge-glow-color, rgba(255, 0, 183, 0.85)) 45%,
-      transparent 72%
-    );
-  mask-image: radial-gradient(farthest-side, transparent 68%, black 92%);
-  -webkit-mask-image: radial-gradient(farthest-side, transparent 68%, black 92%);
-  mix-blend-mode: screen;
-  opacity: var(--glow-opacity, 0);
-  transition: opacity 0.25s ease;
+  background: none; /* Disable circular hover glow */
+  opacity: 0;
+  transition: none;
 }
 
 .edge-glow-static {

@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Silence AI - Cybersecurity Solutions",
-  description: "Professional cybersecurity platform with Global Shield, Email Protector, and Security Tester services",
+  title: "SLNC Code",
+  description: "Sealed development cloud that keeps code, prompts, and builds inside your network.",
   icons: {
     icon: '/logo.png',
   },

@@ -109,12 +109,13 @@ const HowWeWork = () => {
                   key={activeIndex}
                   r="4"
                   fill={steps[activeIndex].accent}
-                  initial={{ offsetDistance: "0%" }}
-                  animate={{ offsetDistance: "100%" }}
+                  initial={{ "--offset-pos": "0%" }}
+                  animate={{ "--offset-pos": "100%" }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.25, ease: "linear" }} // ⚡ very fast
                   style={{
                     offsetPath: `path('${curvePath}')`,
+                    offsetDistance: "var(--offset-pos)",
                     filter: `drop-shadow(0 0 12px ${steps[activeIndex].accent})`,
                   }}
                 />

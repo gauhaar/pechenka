@@ -3,7 +3,6 @@
 import { usePathname, useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import Footer from "@/components/Footer";
-import RootFooter from "@/components/RootFooter";
 import ParallaxGlobe from "@/components/ParallaxGlobe";
 import LoadingSpinner from "@/components/LoadingSpinner";
 import { LanguageProvider } from "@/contexts/LanguageContext";
@@ -16,6 +15,10 @@ export default function LayoutWrapper({ children }) {
   const isPolicyPage = pathname.startsWith('/policies');
   const isAffiliatePage = pathname.startsWith('/affiliate');
   const isDeveloperServicesPage = pathname.startsWith('/developer-services');
+  const isHomePage = pathname === '/';
+
+  // Restrict globe to the main page only
+  const showParallaxGlobe = isHomePage;
 
   // Handle page navigation loading
   useEffect(() => {
@@ -58,7 +61,7 @@ export default function LayoutWrapper({ children }) {
   return (
     <LanguageProvider>
       <LoadingSpinner isLoading={isLoading} />
-      {!isPolicyPage && !isAffiliatePage && !isDeveloperServicesPage && <ParallaxGlobe />}
+      {showParallaxGlobe && <ParallaxGlobe />}
       <div className={!isPolicyPage ? "default-content-wrapper pt-20" : "default-content-wrapper"}>
         {children}
       </div>
@@ -68,11 +71,11 @@ export default function LayoutWrapper({ children }) {
             <img
               src="/moonrise.webp"
               alt="Moonrise"
-              className="w-full h-full object-cover object-top layout-background-image"
+              className="w-full h-full object-cover object-bottom layout-background-image"
             />
           </div>
         )}
-        {pathname === '/' ? <RootFooter /> : !isAffiliatePage && !isDeveloperServicesPage && <Footer />}
+        {!isAffiliatePage && !isDeveloperServicesPage && <Footer />}
       </div>
       <CookieConsent />
     </LanguageProvider>
