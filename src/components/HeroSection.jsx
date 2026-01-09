@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import EdgeGlowCard from "./EdgeGlowCard";
 import WorldMapKazakhstan from "./WorldMapKazakhstan";
 
-const HeroSection = () => {
+const HeroSection = ({ onOpenModal }) => {
   // Match WhyChooseUs color scheme
   const defaultGlowPalette = {
     glowColor: "#FF00B7",
@@ -100,15 +100,16 @@ const HeroSection = () => {
               variants={item}
               className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-2"
             >
-              <a
-                href="#contact"
+              <button
+                type="button"
+                onClick={onOpenModal}
                 className="group/btn relative inline-flex w-full sm:w-auto items-center justify-center gap-2 overflow-hidden rounded-2xl px-8 py-4 text-base sm:text-lg font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_20px_50px_rgba(255,0,183,0.4)]"
                 style={{
                   background:
                     "linear-gradient(135deg, #FF00B7 0%, rgba(255,0,183,0.85) 100%)",
                   boxShadow: "0 16px 42px rgba(255,0,183,0.3)",
                 }}
-                aria-label="Start a project (go to contact section)"
+                aria-label="Start a project"
               >
                 {/* Shine effect */}
                 <span
@@ -120,7 +121,7 @@ const HeroSection = () => {
                 />
                 <span className="relative">Start a Project</span>
                 <span className="relative">→</span>
-              </a>
+              </button>
 
               <a
                 href="#work"

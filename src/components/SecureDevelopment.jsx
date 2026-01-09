@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Header from "@/components/Header";
 import BackToTopButton from "@/components/BackToTopButton";
-import Modal from "@/components/Modal";
+import RequestSystemModal from "@/components/RequestSystemModal";
 import EdgeGlowCard from "@/components/EdgeGlowCard";
 import GlassyBox3D from "@/components/GlassyBox3D";
 import { motion } from "framer-motion";
@@ -105,12 +105,12 @@ export default function SecureDevelopmentPage() {
                                 Private development environment for enterprises, where code never leaves your corporate network. Meanwhile offering the latest AI-powered technology
                             </p>
                             <div className="flex flex-wrap gap-3">
-                                <button onClick={openModal} className="rounded-full bg-gradient-to-r from-pink-500 via-violet-500 to-blue-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-pink-500/20 transition hover:scale-[1.02]">
-                                    Talk to security team
+                                <button 
+                                    onClick={openModal}
+                                    className="rounded-full bg-gradient-to-r from-pink-500 via-violet-500 to-blue-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-pink-500/20 transition hover:scale-[1.02]"
+                                >
+                                    Request System
                                 </button>
-                                <a href="/developer-services" className="rounded-full border border-white/15 px-5 py-2.5 text-sm font-semibold text-slate-200 hover:border-white/30 hover:text-white transition">
-                                    Explore developer services
-                                </a>
                             </div>
                         </div>
 
@@ -346,7 +346,7 @@ export default function SecureDevelopmentPage() {
 
             </main>
 
-            <Modal isOpen={isModalOpen} onClose={closeModal} />
+            <RequestSystemModal isOpen={isModalOpen} onClose={closeModal} />
             <BackToTopButton />
         </div>
     );

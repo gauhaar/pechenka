@@ -1,6 +1,6 @@
 "use client";
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-import Playground from './Playground.jsx';
+import { StickyScrollAnimation } from '@/components/StickyScrollAnimation.jsx';
 import GlowButton from './GlowButton.jsx';
 import TooltipCard from './TooltipCard';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -145,21 +145,24 @@ const Hero = ({ onOpenModal }) => {
         </div>
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto">
           <GlowButton onClick={onOpenModal} className="w-full sm:w-auto">
-            {t("hero.buttons.connect", "Connect in 4 minutes")}
+            {t("hero.buttons.connect", "Request Demo")}
           </GlowButton>
         </div>
       </div>
       <div className="w-full lg:w-1/2 mt-6 sm:mt-8 lg:-mt-8 relative flex justify-center lg:justify-end pt-0">
-        {/* Playground heading sized to match the card below */}
-        <div className="relative z-10 w-full max-w-2xl">
-          <h2
-            ref={playgroundHeadingRef}
-            className="block w-full font-bold text-white text-center leading-none whitespace-nowrap mt-0 mb-3"
-            style={{ fontSize: `${headingFontSize}px` }}
-          >
-            {playgroundHeading}
-          </h2>
-          <Playground ref={playgroundRef} />
+        <div className="relative z-10 w-full max-w-2xl min-h-[400px] flex items-center justify-center">
+          <div className="absolute inset-0 z-0">
+            <StickyScrollAnimation />
+          </div>
+          <div ref={playgroundRef} className="relative z-10 w-full px-4">
+            <h2
+              ref={playgroundHeadingRef}
+              className="block w-full font-bold text-white text-center leading-none whitespace-nowrap drop-shadow-2xl"
+              style={{ fontSize: `${headingFontSize}px`, textShadow: '0 4px 24px rgba(0,0,0,0.5)' }}
+            >
+              {playgroundHeading}
+            </h2>
+          </div>
         </div>
       </div>
     </div>

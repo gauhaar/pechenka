@@ -14,11 +14,13 @@ export default function LayoutWrapper({ children }) {
   const [isLoading, setIsLoading] = useState(false);
   const isPolicyPage = pathname.startsWith('/policies');
   const isAffiliatePage = pathname.startsWith('/affiliate');
-  const isDeveloperServicesPage = pathname.startsWith('/developer-services');
-  const isHomePage = pathname === '/';
+  // Treat root '/' as the Developer Services page now, along with the old route if kept
+  const isDeveloperServicesPage = pathname.startsWith('/developer-services') || pathname === '/';
+  // Old homepage content is now moved to /ai-soc
+  const isProductPage = pathname === '/ai-soc';
 
-  // Restrict globe to the main page only
-  const showParallaxGlobe = isHomePage;
+  // Restrict globe to the product page only (was main page)
+  const showParallaxGlobe = isProductPage;
 
   // Handle page navigation loading
   useEffect(() => {

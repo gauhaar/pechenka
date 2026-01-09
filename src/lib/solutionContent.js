@@ -12,14 +12,6 @@ export const solutionContent = [
     imagePath: "/solution/page3.png",
   },
   {
-    id: "aiEmailProtection",
-    imagePath: "/solution/page4.png",
-  },
-  {
-    id: "emailVisualization",
-    imagePath: "/solution/page5.png",
-  },
-  {
     id: "secureWebmail",
     imagePath: "/solution/page6.png",
   },

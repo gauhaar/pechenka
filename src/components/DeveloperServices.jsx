@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Header from "@/components/Header";
-import Modal from "@/components/Modal";
+import RequestDemoModal from "@/components/RequestDemoModal";
 import AffiliateFooter from "@/components/affiliate/AffiliateFooter";
 import BackToTopButton from "@/components/BackToTopButton";
 import HeroSection from "./HeroSection";
@@ -30,7 +30,7 @@ export default function DeveloperServicesPage() {
         <Header onOpenModal={openModal} />
 
         <div className="relative z-10 mt-32 flex w-full max-w-7xl flex-col gap-16">
-          <HeroSection />
+          <HeroSection onOpenModal={openModal} />
           <WhyChooseUs />
           <ServicesBlock />
           <PricingSection />
@@ -49,7 +49,7 @@ export default function DeveloperServicesPage() {
       </main>
       <AffiliateFooter />
       <BackToTopButton />
-      <Modal isOpen={isModalOpen} onClose={closeModal} />
+      <RequestDemoModal isOpen={isModalOpen} onClose={closeModal} />
     </>
   );
 }

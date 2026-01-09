@@ -3,7 +3,7 @@
 import React, { useMemo, useState } from "react";
 import Header from "@/components/Header";
 import AffiliateFooter from "@/components/affiliate/AffiliateFooter";
-import Modal from "@/components/Modal";
+import RequestDemoModal from "@/components/RequestDemoModal";
 import BackToTopButton from "@/components/BackToTopButton";
 import GlowButton from "@/components/GlowButton";
 import EdgeGlowCard from "@/components/EdgeGlowCard";
@@ -766,7 +766,7 @@ const AffiliatePage = () => {
         </div>
       </main>
       <AffiliateFooter />
-      <Modal isOpen={isModalOpen} onClose={closeModal} />
+      <RequestDemoModal isOpen={isModalOpen} onClose={closeModal} />
       <BackToTopButton />
     </>
   );
