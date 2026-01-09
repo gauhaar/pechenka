@@ -9,12 +9,10 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@modelcontextprotocol/server-puppeteer": "^2025.5.12",
     "@tabler/icons-react": "^3.34.1",
     "@tsparticles/engine": "^3.9.1",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.9.1",
-    "chrome-devtools-mcp": "^0.6.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "country-flag-icons": "^1.5.21",

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useMemo, useState } from "react";
-import AffiliateHeader from "@/components/affiliate/AffiliateHeader";
+import Header from "@/components/Header";
 import AffiliateFooter from "@/components/affiliate/AffiliateFooter";
 import Modal from "@/components/Modal";
 import BackToTopButton from "@/components/BackToTopButton";
@@ -380,7 +380,7 @@ const AffiliatePage = () => {
   return (
     <>
       <main className="flex min-h-screen flex-col items-center bg-[#01091C] px-4 pb-24 sm:px-6 lg:px-8">
-        <AffiliateHeader onOpenModal={openModal} />
+        <Header onOpenModal={openModal} />
 
         <div className="relative z-10 mt-32 flex w-full max-w-7xl flex-col gap-16">
           <section className="relative grid items-start gap-12 lg:grid-cols-[1.1fr_0.9fr]">

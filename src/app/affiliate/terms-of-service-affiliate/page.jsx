@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import AffiliateHeader from "@/components/affiliate/AffiliateHeader";
+import Header from "@/components/Header";
 import AffiliateFooter from "@/components/affiliate/AffiliateFooter";
 import PolicySidebar from "@/components/PolicySidebar";
 import PolicyNotice from "@/components/PolicyNotice";
@@ -89,7 +89,7 @@ const AffiliateTermsOfServicePage = () => {
   return (
     <>
       <main className="flex min-h-screen flex-col bg-black text-white">
-        <AffiliateHeader onOpenModal={openModal} />
+        <Header onOpenModal={openModal} />
 
         <div className="container mx-auto flex w-full max-w-7xl flex-1 flex-col gap-8 px-4 pb-24 pt-32 sm:px-6 lg:flex-row lg:px-8">
           <div className="lg:w-80">

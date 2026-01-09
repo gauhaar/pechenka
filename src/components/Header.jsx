@@ -56,6 +56,16 @@ const Header = ({ onOpenModal }) => {
       label: t("header.nav.instructions", "Instructions"),
       opensModal: true,
     },
+    {
+      key: "developer-services",
+      label: t("header.nav.developerServices", "Developer Services"),
+      href: "/developer-services",
+    },
+    {
+      key: "secure-development",
+      label: t("header.nav.secureDevelopment", "SLNC Code"),
+      href: "/slnc-code",
+    },
   ];
 
   return (
