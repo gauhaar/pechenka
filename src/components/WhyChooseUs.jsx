@@ -23,7 +23,6 @@ const WhyChooseUs = () => {
   const features = useMemo(
     () => [
       {
-        icon: "/icons/rocket-icon.png",
         fallbackIcon: Rocket,
         title: "Fast Delivery with Enterprise Quality",
         description:
@@ -32,7 +31,6 @@ const WhyChooseUs = () => {
         pill: "Speed + Quality",
       },
       {
-        icon: "/icons/brain-icon.png",
         fallbackIcon: BrainCircuit,
         title: "AI-first Product Engineering",
         description:
@@ -41,7 +39,6 @@ const WhyChooseUs = () => {
         pill: "AI Engineering",
       },
       {
-        icon: "/icons/globe-icon.png",
         fallbackIcon: Globe2,
         title: "Local Expertise, Global Reach",
         description:
@@ -56,17 +53,12 @@ const WhyChooseUs = () => {
   const logos = useMemo(
     () => [
       {
-        src: "/images/kazmunaygaz-logo.png",
+        src: "/kmg-logo.png",
         alt: "KazMunayGas",
         fallbackIcon: Building2,
       },
       {
-        src: "/images/kazatomprom-logo.png",
-        alt: "Kazatomprom",
-        fallbackIcon: ShieldCheck,
-      },
-      {
-        src: "/images/nur-astana-kurylys-logo.png",
+        src: "/nak-logo.png",
         alt: "Nur Astana Kurylys",
         fallbackIcon: Sparkles,
       },

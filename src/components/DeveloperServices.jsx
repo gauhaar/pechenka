@@ -11,7 +11,6 @@ import PricingSection from "./PricingSection";
 import CaseStudies from "./CaseStudies";
 import HowWeWork from "./HowWeWork";
 import TechnologyStack from "./TechnologyStack";
-import Testimonials from "./Testimonials";
 import ConsultingQuestionnaire from "./ConsultingQuestionnaire";
 import ContactForm from "./ContactForm";
 
@@ -37,14 +36,15 @@ export default function DeveloperServicesPage() {
           <CaseStudies />
           <HowWeWork />
           <TechnologyStack />
-          <Testimonials />
           <ConsultingQuestionnaire
             search={search}
             setSearch={setSearch}
             openIndex={openIndex}
             setOpenIndex={setOpenIndex}
           />
-          <ContactForm />
+          <div id="contact-form">
+            <ContactForm />
+          </div>
         </div>
       </main>
       <AffiliateFooter />

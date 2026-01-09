@@ -1,11 +1,8 @@
 "use client";
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useLanguage } from '@/contexts/LanguageContext';
 
-const Modal = ({ isOpen, onClose }) => {
-  const { t } = useLanguage();
-
+const ComingSoonModal = ({ isOpen, onClose }) => {
   return (
     <AnimatePresence>
       {isOpen && (
@@ -33,10 +30,7 @@ const Modal = ({ isOpen, onClose }) => {
               </svg>
             </button>
             <div className="text-2xl font-bold text-center leading-relaxed">
-              {t(
-                "modal.message",
-                "Under active development, planned release date - November 10"
-              )}
+              Coming up soon
             </div>
           </motion.div>
         </motion.div>
@@ -45,4 +39,4 @@ const Modal = ({ isOpen, onClose }) => {
   );
 };
 
-export default Modal;
+export default ComingSoonModal;

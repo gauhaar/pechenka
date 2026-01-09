@@ -36,7 +36,7 @@ export default function SecureDevelopmentPage() {
 
     const analyzerShots = [
         { src: "/slnc-code-analyzer/slnc-code-analyzer1.png", title: "Scan overview", desc: "See issues grouped by severity before code leaves your network." },
-        { src: "/slnc-code-analyzer/slnc-code-analyzer2.png", title: "Commit fingerprint", desc: "Trace every finding to a commit with remediation hints." },
+        { src: "/slnc-code-analyzer/slnc-code-analyzer2.png", title: "Detection of misconfigurations", desc: "Our AI-powered code analyzer even finds misconfigurations within the code." },
         { src: "/slnc-code-analyzer/slnc-code-analyzer3.png", title: "Inline diffs", desc: "Review suggested patches inline with security context." },
     ];
 

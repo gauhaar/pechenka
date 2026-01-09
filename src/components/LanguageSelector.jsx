@@ -5,15 +5,16 @@ import clsx from "clsx";
 import { AVAILABLE_LANGUAGES, useLanguage } from "@/contexts/LanguageContext";
 import * as Flags from "country-flag-icons/react/3x2";
 
-const LanguageSelector = ({ align = "right" }) => {
+const LanguageSelector = ({ align = "right", onlyEnglish = false }) => {
   const { language, setLanguage, t } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
   const containerRef = useRef(null);
 
-  const active =
-    AVAILABLE_LANGUAGES.find((lang) => lang.code === language) ?? AVAILABLE_LANGUAGES[0];
-  const ActiveFlag = Flags[active.flag] ?? null;
+  const active = onlyEnglish
+    ? AVAILABLE_LANGUAGES.find((lang) => lang.code === "en")
+    : AVAILABLE_LANGUAGES.find((lang) => lang.code === language) ?? AVAILABLE_LANGUAGES[0];
+  const ActiveFlag = Flags[active?.flag] ?? null;
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -34,7 +35,10 @@ const LanguageSelector = ({ align = "right" }) => {
     };
   }, [isOpen]);
 
-  const handleToggle = () => setIsOpen((prev) => !prev);
+  const handleToggle = () => {
+    if (onlyEnglish) return;
+    setIsOpen((prev) => !prev);
+  };
 
   const handleSelect = (code) => {
     setSearchTerm("");

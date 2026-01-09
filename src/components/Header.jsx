@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import clsx from "clsx";
 import GlowButton from "./GlowButton";
 import LanguageSelector from "./LanguageSelector";
+import ComingSoonModal from "./ComingSoonModal";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePathname } from "next/navigation";
 
@@ -20,7 +21,15 @@ const Header = ({ onOpenModal }) => {
   const [isCondensed, setIsCondensed] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [comingSoonOpen, setComingSoonOpen] = useState(false);
   const { t } = useLanguage();
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact-form");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -49,7 +58,7 @@ const Header = ({ onOpenModal }) => {
   const condensedShift = isCondensed ? (isDesktop ? 24 : 16) : 0;
 
   const navItems = [
-    { key: "mail", label: t("header.nav.mail", "Mail") },
+    { key: "mail", label: t("header.nav.mail", "Mail"), onClick: () => setComingSoonOpen(true) },
     {
       key: "affiliate",
       label: t("header.nav.affiliate", "Affiliate program"),
@@ -58,6 +67,7 @@ const Header = ({ onOpenModal }) => {
     {
       key: "instructions",
       label: t("header.nav.instructions", "Instructions"),
+      onClick: () => setComingSoonOpen(true),
     },
     {
       key: "product",
@@ -108,7 +118,8 @@ const Header = ({ onOpenModal }) => {
                       type="button"
                       className="nav-link border-b border-white/20 py-2 text-white text-left bg-transparent appearance-none focus:outline-none"
                       onClick={() => {
-                        if (item.opensModal) onOpenModal?.();
+                        if (item.onClick) item.onClick();
+                        else if (item.opensModal) onOpenModal?.();
                         setIsMobileMenuOpen(false);
                       }}
                     >
@@ -117,7 +128,7 @@ const Header = ({ onOpenModal }) => {
                   )
                 )}
                 <div className="pt-4 flex flex-col gap-4">
-                  <LanguageSelector align="left" />
+                  <LanguageSelector align="left" onlyEnglish={isMainPage || isSlncCodePage} />
                   {!isMainPage && (
                     <GlowButton
                       onClick={() => {
@@ -200,7 +211,7 @@ const Header = ({ onOpenModal }) => {
                     key={item.key}
                     type="button"
                     className="nav-link text-white bg-transparent appearance-none focus:outline-none"
-                    onClick={item.opensModal ? onOpenModal : undefined}
+                    onClick={item.onClick || (item.opensModal ? onOpenModal : undefined)}
                   >
                     {item.label}
                   </button>
@@ -222,8 +233,13 @@ const Header = ({ onOpenModal }) => {
                       : undefined
                   }
                 >
-                  <LanguageSelector align={isDesktop ? "right" : "left"} />
+                  <LanguageSelector align={isDesktop ? "right" : "left"} onlyEnglish={isMainPage || isSlncCodePage} />
                 </div>
+                {isDesktop && isMainPage && (
+                  <GlowButton onClick={scrollToContact}>
+                    Contact
+                  </GlowButton>
+                )}
                 {isDesktop && !isMainPage && (
                   <GlowButton onClick={onOpenModal}>
                     {isSlncCodePage ? "Download" : t("header.login", "Request Demo")}
@@ -255,6 +271,7 @@ const Header = ({ onOpenModal }) => {
           </motion.div>
         </motion.div>
       </motion.header>
+      <ComingSoonModal isOpen={comingSoonOpen} onClose={() => setComingSoonOpen(false)} />
     </>
   );
 };

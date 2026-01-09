@@ -161,21 +161,6 @@ const ContactForm = () => {
             >
               {loading ? "Sending…" : "Send Message"}
             </GlowButton>
-
-            <div className="flex justify-center space-x-4 mt-4">
-              <a
-                href="https://wa.me/your-number"
-                className="px-4 py-2 text-white bg-green-500/80 rounded-lg hover:bg-green-500 transition-colors border border-green-500/30"
-              >
-                WhatsApp
-              </a>
-              <a
-                href="https://t.me/your-telegram"
-                className="px-4 py-2 text-white bg-blue-500/80 rounded-lg hover:bg-blue-500 transition-colors border border-blue-500/30"
-              >
-                Telegram
-              </a>
-            </div>
           </form>
         </EdgeGlowCard>
       </div>
