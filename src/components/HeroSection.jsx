@@ -341,28 +341,37 @@ const HeroSection = ({ onOpenModal }) => {
                   {/* Animated Background Elements */}
                   <div className="absolute inset-0 pointer-events-none overflow-hidden">
                     {/* Floating particles */}
-                    {[...Array(6)].map((_, i) => (
-                      <motion.div
-                        key={i}
-                        className="absolute rounded-full"
-                        style={{
-                          width: Math.random() * 4 + 2,
-                          height: Math.random() * 4 + 2,
-                          background: i % 2 === 0 ? "#FF00B7" : "rgba(32,140,255,0.6)",
-                          left: `${Math.random() * 100}%`,
-                          top: `${Math.random() * 100}%`,
-                        }}
-                        animate={{
-                          y: [0, -20, 0],
-                          opacity: [0.3, 0.8, 0.3],
-                        }}
-                        transition={{
-                          duration: 3 + Math.random() * 2,
-                          repeat: Infinity,
-                          delay: Math.random() * 2,
-                        }}
-                      />
-                    ))}
+                    {[...Array(6)].map((_, i) => {
+                      // Use deterministic values based on index instead of random
+                      const sizes = [3, 4.5, 2.5, 3.8, 2.8, 4.2];
+                      const xPositions = [10, 30, 60, 80, 25, 75];
+                      const yPositions = [15, 45, 25, 70, 85, 55];
+                      const durations = [3, 4, 3.5, 4.5, 3.2, 4.8];
+                      const delays = [0, 0.5, 1, 1.5, 2, 0.3];
+                      
+                      return (
+                        <motion.div
+                          key={i}
+                          className="absolute rounded-full"
+                          style={{
+                            width: sizes[i],
+                            height: sizes[i],
+                            background: i % 2 === 0 ? "#FF00B7" : "rgba(32,140,255,0.6)",
+                            left: `${xPositions[i]}%`,
+                            top: `${yPositions[i]}%`,
+                          }}
+                          animate={{
+                            y: [0, -20, 0],
+                            opacity: [0.3, 0.8, 0.3],
+                          }}
+                          transition={{
+                            duration: durations[i],
+                            repeat: Infinity,
+                            delay: delays[i],
+                          }}
+                        />
+                      );
+                    })}
 
                     {/* Grid pattern */}
                     <div
