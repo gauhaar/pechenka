@@ -3,8 +3,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import EdgeGlowCard from "./EdgeGlowCard";
 import WorldMapKazakhstan from "./WorldMapKazakhstan";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const HeroSection = ({ onOpenModal }) => {
+  const { t } = useLanguage();
   // Match WhyChooseUs color scheme
   const defaultGlowPalette = {
     glowColor: "#FF00B7",
@@ -75,7 +77,7 @@ const HeroSection = ({ onOpenModal }) => {
               className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs text-white/70 shadow-[0_12px_36px_rgba(0,0,0,0.25)]"
             >
               <span className="h-2 w-2 rounded-full bg-[#FF00B7] animate-pulse" />
-              Production-ready AI & Software
+              {t("heroSection.badge", "Production-ready AI & Software")}
             </motion.div>
 
             <h1
@@ -83,7 +85,7 @@ const HeroSection = ({ onOpenModal }) => {
               className="text-white text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] sm:whitespace-nowrap"
             >
               <span className="bg-gradient-to-r from-white via-white to-white/80 bg-clip-text text-transparent">
-              Custom AI & Software Development
+              {t("heroSection.title", "Custom AI & Software Development")}
               </span>
             </h1>
 
@@ -91,9 +93,10 @@ const HeroSection = ({ onOpenModal }) => {
               variants={item}
               className="text-white/80 text-lg sm:text-xl lg:text-2xl leading-relaxed max-w-xl"
             >
-              We build production-ready AI agents and custom software for{" "}
-              <span className="text-white font-semibold">Kazakhstan</span> and the{" "}
-              <span className="text-white font-semibold">global market</span>.
+              {t("heroSection.description", "We build production-ready AI agents and custom software for {country} and the {market}.", {
+                country: t("heroSection.country", "Kazakhstan"),
+                market: t("heroSection.market", "global market")
+              })}
             </motion.p>
 
             <motion.div
@@ -119,37 +122,22 @@ const HeroSection = ({ onOpenModal }) => {
                       "linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent)",
                   }}
                 />
-                <span className="relative">Start a Project</span>
+                <span className="relative">{t("heroSection.startProject", "Start a Project")}</span>
                 <span className="relative">→</span>
               </button>
-
-              <a
-                href="#work"
-                className="group/btn2 relative inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-2xl border border-white/20 bg-white/5 px-8 py-4 text-base sm:text-lg font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-white/30 hover:bg-white/10"
-                style={{
-                  boxShadow: "0 16px 42px rgba(32,140,255,0.15)",
-                }}
-                aria-label="View case studies (go to work section)"
-              >
-                <span className="relative">View Case Studies</span>
-                <span
-                  className="relative h-1.5 w-1.5 rounded-full transition-transform duration-300 group-hover/btn2:scale-125"
-                  style={{ background: "rgba(32,140,255,0.8)" }}
-                />
-              </a>
             </motion.div>
           </motion.div>
 
           {/* Live Demo Card - Moved to Bottom */}
           <motion.div variants={item} className="relative w-full max-w-4xl mx-auto mt-8">
             <div className="mb-4 flex items-center justify-between">
-              <motion.div
+                <motion.div
                 inbitial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="text-white text-xl sm:text-2xl font-semibold"
               >
-                Live Demo — AI Agent
+                {t("heroSection.liveDemo", "Live Demo — AI Agent")}
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -165,7 +153,7 @@ const HeroSection = ({ onOpenModal }) => {
                   }}
                   aria-hidden="true"
                 />
-                <span className="text-sm font-medium text-white/90">Live</span>
+                <span className="text-sm font-medium text-white/90">{t("heroSection.live", "Live")}</span>
               </motion.div>
             </div>
 
@@ -220,13 +208,13 @@ const HeroSection = ({ onOpenModal }) => {
                         />
                       </div>
                       <div>
-                        <div className="text-white font-semibold text-sm">AI Agent v2.1</div>
-                        <div className="text-white/50 text-xs">Processing requests...</div>
+                        <div className="text-white font-semibold text-sm">{t("heroSection.aiAgent", "AI Agent v2.1")}</div>
+                        <div className="text-white/50 text-xs">{t("heroSection.processing", "Processing requests...")}</div>
                       </div>
                     </div>
                     <div className="flex items-center gap-2">
                       <div className="h-2 w-2 rounded-full bg-[#37FF8B] animate-pulse" />
-                      <span className="text-xs text-white/60">Active</span>
+                      <span className="text-xs text-white/60">{t("heroSection.active", "Active")}</span>
                     </div>
                   </div>
 
@@ -246,7 +234,7 @@ const HeroSection = ({ onOpenModal }) => {
                           border: "1px solid rgba(255,0,183,0.3)",
                         }}
                       >
-                        Analyze customer data trends
+                        {t("heroSection.userMessage", "Analyze customer data trends")}
                       </div>
                     </motion.div>
 
@@ -265,7 +253,7 @@ const HeroSection = ({ onOpenModal }) => {
                         }}
                       >
                         <div className="flex items-center gap-2">
-                          <span>Analyzing</span>
+                          <span>{t("heroSection.aiResponse", "Analyzing")}</span>
                           <motion.span
                             animate={{ opacity: [0.3, 1, 0.3] }}
                             transition={{ duration: 1.5, repeat: Infinity }}
@@ -283,10 +271,10 @@ const HeroSection = ({ onOpenModal }) => {
                       transition={{ duration: 0.5, delay: 1.5 }}
                       className="space-y-2 mt-4"
                     >
-                      {[
-                        { label: "Data Collection", progress: 100, color: "#FF00B7" },
-                        { label: "AI Analysis", progress: 85, color: "rgba(32,140,255,0.8)" },
-                        { label: "Report Generation", progress: 60, color: "#37FF8B" },
+                        {[
+                        { label: t("heroSection.tasks.dataCollection", "Data Collection"), progress: 100, color: "#FF00B7" },
+                        { label: t("heroSection.tasks.aiAnalysis", "AI Analysis"), progress: 85, color: "rgba(32,140,255,0.8)" },
+                        { label: t("heroSection.tasks.reportGeneration", "Report Generation"), progress: 60, color: "#37FF8B" },
                       ].map((task, idx) => (
                         <div key={idx} className="space-y-1">
                           <div className="flex items-center justify-between text-xs">
@@ -315,9 +303,9 @@ const HeroSection = ({ onOpenModal }) => {
                     className="grid grid-cols-3 gap-3 pt-4 border-t border-white/10"
                   >
                     {[
-                      { label: "Tasks", value: "247", color: "#FF00B7" },
-                      { label: "Success", value: "98%", color: "#37FF8B" },
-                      { label: "Speed", value: "2.3s", color: "rgba(32,140,255,0.8)" },
+                      { label: t("heroSection.stats.tasks", "Tasks"), value: "247", color: "#FF00B7" },
+                      { label: t("heroSection.stats.success", "Success"), value: "98%", color: "#37FF8B" },
+                      { label: t("heroSection.stats.speed", "Speed"), value: "2.3s", color: "rgba(32,140,255,0.8)" },
                     ].map((stat, idx) => (
                       <div
                         key={idx}

@@ -8,7 +8,10 @@
       "main": "ホーム",
       "mail": "メール",
       "affiliate": "アフィリエイト",
-      "instructions": "手順"
+      "instructions": "手順",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC Code",
+      "developerServices": "開発者向けサービス"
     },
     "login": "ログイン"
   },
@@ -321,5 +324,35 @@
       "cookies": "Cookieポリシー"
     },
     "copyright": "© {year} Silence AI. 無断複写・転載を禁じます。"
+  },
+  "notFound": {
+    "title": "ページが見つかりません",
+    "description": "あらゆる場所を探しましたが、このページを見つけることができませんでした。",
+    "cta": "ホームページに戻る"
+  },
+  "heroSection": {
+    "badge": "生産準備完了のAIとソフトウェア",
+    "title": "カスタムAIおよびソフトウェア開発",
+    "description": "私たちは{country}と{market}向けに、生産準備完了のAIエージェントとカスタムソフトウェアを構築します。",
+    "country": "カザフスタン",
+    "market": "グローバル市場",
+    "startProject": "プロジェクトを開始",
+    "liveDemo": "ライブデモ — AIエージェント",
+    "live": "ライブ",
+    "aiAgent": "AIエージェント v2.1",
+    "processing": "リクエストを処理中...",
+    "active": "アクティブ",
+    "userMessage": "顧客データの傾向を分析",
+    "aiResponse": "分析中",
+    "tasks": {
+      "dataCollection": "データ収集",
+      "aiAnalysis": "AI分析",
+      "reportGeneration": "レポート生成"
+    },
+    "stats": {
+      "tasks": "タスク",
+      "success": "成功率",
+      "speed": "速度"
+    }
   }
 }

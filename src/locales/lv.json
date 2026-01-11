@@ -8,9 +8,12 @@
       "main": "Main",
       "mail": "Mail",
       "affiliate": "Affiliate program",
-      "instructions": "Instructions"
+      "instructions": "Instructions",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC Code",
+      "developerServices": "Izstrādātāju pakalpojumi"
     },
-    "login": "Login"
+    "login": "Pieprasīt demonstrāciju"
   },
   "affiliate": {
     "hero": {
@@ -321,5 +324,35 @@
       "cookies": "Cookies Policy"
     },
     "copyright": "© {year} Silence AI. All rights reserved."
+  },
+  "notFound": {
+    "title": "Lapa nav atrasta",
+    "description": "Mēs meklējām visur, bet nevarējām atrast šo lapu.",
+    "cta": "Atpakaļ uz sākumlapu"
+  },
+  "heroSection": {
+    "badge": "Ražošanai gatavs AI un programmatūra",
+    "title": "Pielāgots AI un programmatūras izstrāde",
+    "description": "Mēs veidojam ražošanai gatavus AI aģentus un pielāgotu programmatūru {country} un {market}.",
+    "country": "Kazahstāna",
+    "market": "globālajam tirgum",
+    "startProject": "Sākt projektu",
+    "liveDemo": "Tiešraides demonstrācija — AI aģents",
+    "live": "Tiešraidē",
+    "aiAgent": "AI aģents v2.1",
+    "processing": "Pieprasījumu apstrāde...",
+    "active": "Aktīvs",
+    "userMessage": "Analizēt klientu datu tendences",
+    "aiResponse": "Analizē",
+    "tasks": {
+      "dataCollection": "Datu vākšana",
+      "aiAnalysis": "AI analīze",
+      "reportGeneration": "Pārskatu veidošana"
+    },
+    "stats": {
+      "tasks": "Uzdevumi",
+      "success": "Veiksme",
+      "speed": "Ātrums"
+    }
   }
 }

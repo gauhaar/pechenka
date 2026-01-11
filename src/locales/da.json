@@ -8,7 +8,10 @@
       "main": "Forside",
       "mail": "Mail",
       "affiliate": "Partnerprogram",
-      "instructions": "Vejledninger"
+      "instructions": "Vejledninger",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC Code",
+      "developerServices": "Udviklertjenester"
     },
     "login": "Log ind"
   },
@@ -321,5 +324,35 @@
       "cookies": "Cookiepolitik"
     },
     "copyright": "© {year} Silence AI. Alle rettigheder forbeholdes."
+  },
+  "notFound": {
+    "title": "Siden blev ikke fundet",
+    "description": "Vi kiggede overalt, men kunne ikke finde denne side.",
+    "cta": "Tilbage til startsiden"
+  },
+  "heroSection": {
+    "badge": "Produktionsklar AI og software",
+    "title": "Tilpasset AI og softwareudvikling",
+    "description": "Vi bygger produktionsklare AI-agenter og tilpasset software til {country} og {market}.",
+    "country": "Kasakhstan",
+    "market": "globalt marked",
+    "startProject": "Start et projekt",
+    "liveDemo": "Live demo — AI-agent",
+    "live": "Live",
+    "aiAgent": "AI-agent v2.1",
+    "processing": "Behandler anmodninger...",
+    "active": "Aktiv",
+    "userMessage": "Analyser kundedatatendenser",
+    "aiResponse": "Analyserer",
+    "tasks": {
+      "dataCollection": "Dataindsamling",
+      "aiAnalysis": "AI-analyse",
+      "reportGeneration": "Rapportgenerering"
+    },
+    "stats": {
+      "tasks": "Opgaver",
+      "success": "Succes",
+      "speed": "Hastighed"
+    }
   }
 }

@@ -8,9 +8,12 @@
       "main": "Main",
       "mail": "Mail",
       "affiliate": "Affiliate program",
-      "instructions": "Instructions"
+      "instructions": "Instructions",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC Code",
+      "developerServices": "សេវាកម្មអ្នកអភិវឌ្ឍន៍"
     },
-    "login": "Login"
+    "login": "ស្នើសុំការបង្ហាញ"
   },
   "affiliate": {
     "hero": {
@@ -321,5 +324,35 @@
       "cookies": "Cookies Policy"
     },
     "copyright": "© {year} Silence AI. All rights reserved."
+  },
+  "notFound": {
+    "title": "រកមិនឃើញទំព័រ",
+    "description": "យើងបានស្វែងរកគ្រប់ទីកន្លែង ប៉ុន្តែមិនអាចរកទំព័រនេះបានទេ។",
+    "cta": "ត្រឡប់ទៅទំព័រដើមវិញ"
+  },
+  "heroSection": {
+    "badge": "AI និងកម្មវិធីដែលត្រៀមរួចសម្រាប់ផលិតកម្ម",
+    "title": "ការអភិវឌ្ឍ AI និងកម្មវិធីតាមបំណង",
+    "description": "យើងបង្កើតភ្នាក់ងារ AI ដែលត្រៀមរួចសម្រាប់ផលិតកម្ម និងកម្មវិធីតាមបំណងសម្រាប់ {country} និង {market}។",
+    "country": "កាហ្សាក់ស្ថាន",
+    "market": "ទីផ្សារសកល",
+    "startProject": "ចាប់ផ្តើមគម្រោង",
+    "liveDemo": "ការបង្ហាញផ្ទាល់ — ភ្នាក់ងារ AI",
+    "live": "ផ្ទាល់",
+    "aiAgent": "ភ្នាក់ងារ AI v2.1",
+    "processing": "កំពុងដំណើរការសំណើ...",
+    "active": "សកម្ម",
+    "userMessage": "វិភាគទិន្នន័យអតិថិជន",
+    "aiResponse": "កំពុងវិភាគ",
+    "tasks": {
+      "dataCollection": "ការប្រមូលទិន្នន័យ",
+      "aiAnalysis": "ការវិភាគ AI",
+      "reportGeneration": "ការបង្កើតរបាយការណ៍"
+    },
+    "stats": {
+      "tasks": "ភារកិច្ច",
+      "success": "ជោគជ័យ",
+      "speed": "ល្បឿន"
+    }
   }
 }

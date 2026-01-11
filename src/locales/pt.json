@@ -321,5 +321,49 @@
       "cookies": "Política de cookies"
     },
     "copyright": "© {year} Silence AI. Todos os direitos reservados."
+  },
+  "secureDevelopment": {
+    "hero": {
+      "badge": "SLNC Code · Ambiente de Desenvolvimento Seguro",
+      "title": "Construa sistemas com código seguro e privado",
+      "description": "Ambiente de desenvolvimento privado para empresas, onde o código nunca sai da sua rede corporativa. Oferecendo a mais recente tecnologia alimentada por IA",
+      "requestSystem": "Solicitar Sistema"
+    },
+    "components": {
+      "title": "Tudo fica dentro",
+      "subtitle": "Três componentes, um ciclo selado",
+      "description": "Código, prompts e builds nunca saem da sua rede. O SLNC Code mantém a ajuda de IA, revisões e entrega privados para provedores de nuvem, equipes governamentais e plantas industriais.",
+      "sithub": {
+        "title": "Servidor Sithub",
+        "tag": "Controle de versão local"
+      },
+      "llm": {
+        "title": "Servidor LLM (Qwen-Code)",
+        "tag": "Inteligência local"
+      },
+      "ide": {
+        "title": "IDE com Copilot local",
+        "tag": "Experiência de nível Cursor"
+      },
+      "staysOnPrem": "Permanece local. Sem saída."
+    },
+    "timeline": {
+      "title": "Por que o código isolado e verificado é importante",
+      "subtitle": "Alertas recentes",
+      "incident": {
+        "title": "Incidente crítico — código vazado",
+        "heading": "Vazamento do DeepSeek colocou código-fonte e prompts na internet aberta",
+        "description": "Mantenha inferência e varredura local. Sem saída de modelos externos. Trilhas de auditoria por padrão.",
+        "seePlan": "Ver plano de contenção"
+      }
+    },
+    "analyzer": {
+      "title": "Analisador que supera o CodeQL",
+      "subtitle": "Garantia ao vivo"
+    },
+    "industries": {
+      "title": "Construído para setores regulados e de alto impacto",
+      "subtitle": "Onde implantamos"
+    }
   }
 }

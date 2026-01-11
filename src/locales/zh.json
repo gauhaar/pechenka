@@ -8,7 +8,10 @@
       "main": "首页",
       "mail": "邮件",
       "affiliate": "联盟计划",
-      "instructions": "使用指南"
+      "instructions": "使用指南",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC Code",
+      "developerServices": "开发者服务"
     },
     "login": "登录"
   },
@@ -321,5 +324,79 @@
       "cookies": "Cookie 政策"
     },
     "copyright": "© {year} Silence AI。保留所有权利。"
+  },
+  "notFound": {
+    "title": "页面未找到",
+    "description": "我们找遍了所有地方，但找不到这个页面。",
+    "cta": "返回首页"
+  },
+  "heroSection": {
+    "badge": "生产就绪的 AI 与软件",
+    "title": "定制 AI 与软件开发",
+    "description": "我们为{country}和{market}构建生产就绪的 AI 代理和定制软件。",
+    "country": "哈萨克斯坦",
+    "market": "全球市场",
+    "startProject": "开始项目",
+    "liveDemo": "实时演示 — AI 代理",
+    "live": "实时",
+    "aiAgent": "AI 代理 v2.1",
+    "processing": "正在处理请求...",
+    "active": "活跃",
+    "userMessage": "分析客户数据趋势",
+    "aiResponse": "正在分析",
+    "tasks": {
+      "dataCollection": "数据收集",
+      "aiAnalysis": "AI 分析",
+      "reportGeneration": "报告生成"
+    },
+    "stats": {
+      "tasks": "任务",
+      "success": "成功率",
+      "speed": "速度"
+    }
+  },
+  "secureDevelopment": {
+    "hero": {
+      "badge": "SLNC Code · 安全开发环境",
+      "title": "使用安全私密的代码构建系统",
+      "description": "企业私有开发环境，代码永不离开您的企业网络。同时提供最新的人工智能技术",
+      "requestSystem": "请求系统"
+    },
+    "components": {
+      "title": "一切都在内部",
+      "subtitle": "三个组件，一个封闭循环",
+      "description": "代码、提示和构建永不离开您的网络。SLNC Code 为云提供商、政府团队和工业工厂保持人工智能帮助、审查和交付的私密性。",
+      "sithub": {
+        "title": "Sithub 服务器",
+        "tag": "本地版本控制"
+      },
+      "llm": {
+        "title": "LLM 服务器 (Qwen-Code)",
+        "tag": "本地智能"
+      },
+      "ide": {
+        "title": "带本地 Copilot 的 IDE",
+        "tag": "Cursor 级体验"
+      },
+      "staysOnPrem": "保持本地。无外流。"
+    },
+    "timeline": {
+      "title": "为什么隔离和检查的代码很重要",
+      "subtitle": "最近的警钟",
+      "incident": {
+        "title": "关键事件 — 代码泄露",
+        "heading": "DeepSeek 泄露将源代码和提示放在开放互联网上",
+        "description": "保持推理和扫描本地。无外部模型外流。默认审计跟踪。",
+        "seePlan": "查看遏制计划"
+      }
+    },
+    "analyzer": {
+      "title": "超越 CodeQL 的分析器",
+      "subtitle": "实时保证"
+    },
+    "industries": {
+      "title": "为受监管、高影响力的行业构建",
+      "subtitle": "我们部署的地方"
+    }
   }
 }

@@ -8,9 +8,12 @@
       "main": "ዋና",
       "mail": "ኢሜይል",
       "affiliate": "አጋር ፕሮግራም",
-      "instructions": "መመሪያዎች"
+      "instructions": "መመሪያዎች",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC Code",
+      "developerServices": "የልማት አገልግሎቶች"
     },
-    "login": "ግባ"
+    "login": "ዲሞ ይጠይቁ"
   },
   "affiliate": {
     "hero": {
@@ -321,5 +324,35 @@
       "cookies": "የኩኪ ፖሊሲ"
     },
     "copyright": "© {year} Silence AI. ሁሉም መብቶች ተጠብቀዋል።"
+  },
+  "notFound": {
+    "title": "ገፅ አልተገኘም",
+    "description": "በሁሉም ቦታ ፈልገናል ነገር ግን ይህን ገፅ ማግኘት አልቻልንም።",
+    "cta": "ወደ መነሻ ገፅ ተመለስ"
+  },
+  "heroSection": {
+    "badge": "ለምርት ዝግጁ የሆነ AI እና ሶፍትዌር",
+    "title": "ብጁ AI እና ሶፍትዌር ልማት",
+    "description": "ለምርት ዝግጁ የሆኑ AI አጀንዶችን እና ብጁ ሶፍትዌሮችን ለ{country} እና ለ{market} እንገነባለን።",
+    "country": "ካዛክስታን",
+    "market": "ዓለም አቀፍ ገበያ",
+    "startProject": "ፕሮጀክት ጀምር",
+    "liveDemo": "ቀጥታ ማሳያ — AI አጀንት",
+    "live": "ቀጥታ",
+    "aiAgent": "AI አጀንት v2.1",
+    "processing": "ጥያቄዎችን በማቀናበር ላይ...",
+    "active": "ንቁ",
+    "userMessage": "የደንበኞች የውሂብ አዝማሚያዎችን ተንትን",
+    "aiResponse": "በመተንተን ላይ",
+    "tasks": {
+      "dataCollection": "ውሂብ ስብሰባ",
+      "aiAnalysis": "AI ትንተና",
+      "reportGeneration": "ሪፖርት ማዘጋጀት"
+    },
+    "stats": {
+      "tasks": "ተግባራት",
+      "success": "ስኬት",
+      "speed": "ፍጥነት"
+    }
   }
 }

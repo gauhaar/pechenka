@@ -8,9 +8,12 @@
       "main": "Main",
       "mail": "Mail",
       "affiliate": "Affiliate program",
-      "instructions": "Instructions"
+      "instructions": "Instructions",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC Code",
+      "developerServices": "Þróunaraðstoð"
     },
-    "login": "Login"
+    "login": "Biðja um sýnikennslu"
   },
   "affiliate": {
     "hero": {
@@ -321,5 +324,35 @@
       "cookies": "Cookies Policy"
     },
     "copyright": "© {year} Silence AI. All rights reserved."
+  },
+  "notFound": {
+    "title": "Síða fannst ekki",
+    "description": "Við leitum alls staðar en gátum ekki fundið þessa síðu.",
+    "cta": "Til baka á forsíðu"
+  },
+  "heroSection": {
+    "badge": "AI og hugbúnaður tilbúinn fyrir framleiðslu",
+    "title": "Sérsniðin AI og hugbúnaðarþróun",
+    "description": "Við byggjum AI-umboðsmenn tilbúna fyrir framleiðslu og sérsniðinn hugbúnað fyrir {country} og {market}.",
+    "country": "Kasakstan",
+    "market": "heimsmarkaður",
+    "startProject": "Hefja verkefni",
+    "liveDemo": "Bein útsending — AI umboðsmaður",
+    "live": "Bein útsending",
+    "aiAgent": "AI umboðsmaður v2.1",
+    "processing": "Beiðnir í vinnslu...",
+    "active": "Virkur",
+    "userMessage": "Greindu viðskiptavinagögnatrend",
+    "aiResponse": "Greini",
+    "tasks": {
+      "dataCollection": "Gagnasöfnun",
+      "aiAnalysis": "AI greining",
+      "reportGeneration": "Skýrslugerð"
+    },
+    "stats": {
+      "tasks": "Verkefni",
+      "success": "Árangur",
+      "speed": "Hraði"
+    }
   }
 }

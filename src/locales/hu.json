@@ -8,9 +8,12 @@
       "main": "Main",
       "mail": "Mail",
       "affiliate": "Affiliate program",
-      "instructions": "Instructions"
+      "instructions": "Instructions",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC Code",
+      "developerServices": "Fejlesztői szolgáltatások"
     },
-    "login": "Login"
+    "login": "Demo kérése"
   },
   "affiliate": {
     "hero": {
@@ -321,5 +324,35 @@
       "cookies": "Cookies Policy"
     },
     "copyright": "© {year} Silence AI. All rights reserved."
+  },
+  "notFound": {
+    "title": "Az oldal nem található",
+    "description": "Mindenhol kerestük, de nem találtuk ezt az oldalt.",
+    "cta": "Vissza a főoldalra"
+  },
+  "heroSection": {
+    "badge": "Gyártásra kész AI és szoftver",
+    "title": "Egyedi AI és szoftverfejlesztés",
+    "description": "Gyártásra kész AI-ügynököket és egyedi szoftvereket építünk {country} és a {market} számára.",
+    "country": "Kazahsztán",
+    "market": "globális piac",
+    "startProject": "Projekt indítása",
+    "liveDemo": "Élő bemutató — AI ügynök",
+    "live": "Élő",
+    "aiAgent": "AI ügynök v2.1",
+    "processing": "Kérések feldolgozása...",
+    "active": "Aktív",
+    "userMessage": "Ügyféladat-trendek elemzése",
+    "aiResponse": "Elemzés",
+    "tasks": {
+      "dataCollection": "Adatgyűjtés",
+      "aiAnalysis": "AI elemzés",
+      "reportGeneration": "Jelentéskészítés"
+    },
+    "stats": {
+      "tasks": "Feladatok",
+      "success": "Siker",
+      "speed": "Sebesség"
+    }
   }
 }

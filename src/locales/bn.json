@@ -8,7 +8,10 @@
       "main": "প্রধান পৃষ্ঠা",
       "mail": "মেইল",
       "affiliate": "অ্যাফিলিয়েট প্রোগ্রাম",
-      "instructions": "নির্দেশনা"
+      "instructions": "নির্দেশনা",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC Code",
+      "developerServices": "ডেভেলপার সার্ভিস"
     },
     "login": "লগইন"
   },
@@ -321,5 +324,35 @@
       "cookies": "কুকি নীতি"
     },
     "copyright": "© {year} Silence AI. সর্বস্বত্ব সংরক্ষিত।"
+  },
+  "notFound": {
+    "title": "পৃষ্ঠা পাওয়া যায়নি",
+    "description": "আমরা সব জায়গায় খুঁজেছি কিন্তু এই পৃষ্ঠাটি খুঁজে পাইনি।",
+    "cta": "হোমপেজে ফিরে যান"
+  },
+  "heroSection": {
+    "badge": "উৎপাদন-প্রস্তুত AI এবং সফ্টওয়্যার",
+    "title": "কাস্টম AI এবং সফ্টওয়্যার ডেভেলপমেন্ট",
+    "description": "আমরা {country} এবং {market} এর জন্য উৎপাদন-প্রস্তুত AI এজেন্ট এবং কাস্টম সফ্টওয়্যার তৈরি করি।",
+    "country": "কাজাখস্তান",
+    "market": "বৈশ্বিক বাজার",
+    "startProject": "একটি প্রকল্প শুরু করুন",
+    "liveDemo": "লাইভ ডেমো — AI এজেন্ট",
+    "live": "লাইভ",
+    "aiAgent": "AI এজেন্ট v2.1",
+    "processing": "অনুরোধ প্রক্রিয়াকরণ হচ্ছে...",
+    "active": "সক্রিয়",
+    "userMessage": "গ্রাহক ডেটা ট্রেন্ড বিশ্লেষণ করুন",
+    "aiResponse": "বিশ্লেষণ করা হচ্ছে",
+    "tasks": {
+      "dataCollection": "ডেটা সংগ্রহ",
+      "aiAnalysis": "AI বিশ্লেষণ",
+      "reportGeneration": "রিপোর্ট তৈরি"
+    },
+    "stats": {
+      "tasks": "কাজ",
+      "success": "সাফল্য",
+      "speed": "গতি"
+    }
   }
 }

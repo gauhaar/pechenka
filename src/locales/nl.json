@@ -8,7 +8,10 @@
       "main": "Home",
       "mail": "Mail",
       "affiliate": "Affiliateprogramma",
-      "instructions": "Instructies"
+      "instructions": "Instructies",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC Code",
+      "developerServices": "Ontwikkelaarsdiensten"
     },
     "login": "Inloggen"
   },
@@ -321,5 +324,35 @@
       "cookies": "Cookiebeleid"
     },
     "copyright": "© {year} Silence AI. Alle rechten voorbehouden."
+  },
+  "notFound": {
+    "title": "Pagina niet gevonden",
+    "description": "We hebben overal gezocht, maar konden deze pagina niet vinden.",
+    "cta": "Terug naar startpagina"
+  },
+  "heroSection": {
+    "badge": "Productiegereed AI en software",
+    "title": "Aangepaste AI en softwareontwikkeling",
+    "description": "We bouwen productiegereede AI-agenten en aangepaste software voor {country} en {market}.",
+    "country": "Kazachstan",
+    "market": "wereldwijde markt",
+    "startProject": "Start een project",
+    "liveDemo": "Live demo — AI-agent",
+    "live": "Live",
+    "aiAgent": "AI-agent v2.1",
+    "processing": "Verwerken van verzoeken...",
+    "active": "Actief",
+    "userMessage": "Analyseer klantgegevens trends",
+    "aiResponse": "Analyseren",
+    "tasks": {
+      "dataCollection": "Gegevensverzameling",
+      "aiAnalysis": "AI-analyse",
+      "reportGeneration": "Rapportage genereren"
+    },
+    "stats": {
+      "tasks": "Taken",
+      "success": "Succes",
+      "speed": "Snelheid"
+    }
   }
 }

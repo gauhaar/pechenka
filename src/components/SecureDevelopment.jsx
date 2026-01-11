@@ -7,9 +7,11 @@ import RequestSystemModal from "@/components/RequestSystemModal";
 import EdgeGlowCard from "@/components/EdgeGlowCard";
 import GlassyBox3D from "@/components/GlassyBox3D";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function SecureDevelopmentPage() {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const { t } = useLanguage();
 
     const openModal = () => setIsModalOpen(true);
     const closeModal = () => setIsModalOpen(false);
@@ -96,20 +98,20 @@ export default function SecureDevelopmentPage() {
                                 animate={{ opacity: 1, y: 0 }}
                                 className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.15em] text-slate-200"
                             >
-                                SLNC Code · Secure Development Environment
+                                {t("secureDevelopment.hero.badge", "SLNC Code · Secure Development Environment")}
                             </motion.p>
                             <motion.h1 initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
-                                Build systems with secure and private code
+                                {t("secureDevelopment.hero.title", "Build systems with secure and private code")}
                             </motion.h1>
                             <p className="text-lg text-slate-200 max-w-xl">
-                                Private development environment for enterprises, where code never leaves your corporate network. Meanwhile offering the latest AI-powered technology
+                                {t("secureDevelopment.hero.description", "Private development environment for enterprises, where code never leaves your corporate network. Meanwhile offering the latest AI-powered technology")}
                             </p>
                             <div className="flex flex-wrap gap-3">
                                 <button 
                                     onClick={openModal}
                                     className="rounded-full bg-gradient-to-r from-pink-500 via-violet-500 to-blue-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-pink-500/20 transition hover:scale-[1.02]"
                                 >
-                                    Request System
+                                    {t("secureDevelopment.hero.requestSystem", "Request System")}
                                 </button>
                             </div>
                         </div>
@@ -126,17 +128,36 @@ export default function SecureDevelopmentPage() {
                         <div className="p-8 md:p-10 space-y-5">
                             <div className="flex items-center gap-2 text-sm font-semibold text-blue-300">
                                 <span className="h-2 w-2 rounded-full bg-blue-400 animate-pulse" />
-                                Three components, one sealed loop
+                                {t("secureDevelopment.components.subtitle", "Three components, one sealed loop")}
                             </div>
-                            <h2 className="text-3xl md:text-4xl font-bold text-white">Everything stays inside</h2>
+                            <h2 className="text-3xl md:text-4xl font-bold text-white">{t("secureDevelopment.components.title", "Everything stays inside")}</h2>
                             <p className="text-slate-100 text-base md:text-lg leading-relaxed">
-                                Code, prompts, and builds never leave your network. SLNC Code keeps AI help, reviews, and delivery private for cloud providers, government teams, and industrial plants.
+                                {t("secureDevelopment.components.description", "Code, prompts, and builds never leave your network. SLNC Code keeps AI help, reviews, and delivery private for cloud providers, government teams, and industrial plants.")}
                             </p>
 
                             <div className="grid gap-5 md:grid-cols-3">
-                                {architecture.map((item) => (
-                                    <HoverCard key={item.title} title={item.title} tag={item.tag} accent={item.accent} />
-                                ))}
+                                {architecture.map((item) => {
+                                    let titleKey = "";
+                                    let tagKey = "";
+                                    if (item.title === "Sithub Server") {
+                                        titleKey = "secureDevelopment.components.sithub.title";
+                                        tagKey = "secureDevelopment.components.sithub.tag";
+                                    } else if (item.title === "LLM Server (Qwen-Code)") {
+                                        titleKey = "secureDevelopment.components.llm.title";
+                                        tagKey = "secureDevelopment.components.llm.tag";
+                                    } else if (item.title === "IDE with Local Copilot") {
+                                        titleKey = "secureDevelopment.components.ide.title";
+                                        tagKey = "secureDevelopment.components.ide.tag";
+                                    }
+                                    return (
+                                        <HoverCard 
+                                            key={item.title} 
+                                            title={t(titleKey, item.title)} 
+                                            tag={t(tagKey, item.tag)} 
+                                            accent={item.accent} 
+                                        />
+                                    );
+                                })}
                             </div>
                         </div>
                     </EdgeGlowCard>
@@ -147,24 +168,24 @@ export default function SecureDevelopmentPage() {
                     <GlowOrb className="-left-10 -top-20" color="rgba(248,113,113,0.16)" size="24rem" blur="110px" />
                     <GlowOrb className="right-0 top-8" color="rgba(190,24,93,0.12)" size="18rem" blur="95px" />
 
-                    <div className="flex items-center gap-3">
-                        <div>
-                            <p className="text-xs uppercase tracking-[0.2em] text-slate-400">Recent wake-up calls</p>
-                            <h2 className="text-3xl font-bold text-white">Why isolated, checked code matters</h2>
+                        <div className="flex items-center gap-3">
+                            <div>
+                                <p className="text-xs uppercase tracking-[0.2em] text-slate-400">{t("secureDevelopment.timeline.subtitle", "Recent wake-up calls")}</p>
+                                <h2 className="text-3xl font-bold text-white">{t("secureDevelopment.timeline.title", "Why isolated, checked code matters")}</h2>
+                            </div>
                         </div>
-                    </div>
 
                     <EdgeGlowCard className="relative overflow-hidden" glowColor="#f43f5e" secondaryGlowColor="rgba(248,113,113,0.4)">
                         <div className="absolute inset-0 bg-gradient-to-r from-rose-500/25 via-fuchsia-600/20 to-amber-500/10" />
                         <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-rose-400 via-orange-400 to-amber-300" />
                         <div className="relative flex flex-col gap-3 p-6 md:flex-row md:items-center md:justify-between">
                             <div className="space-y-2">
-                                <p className="text-xs uppercase tracking-[0.22em] text-rose-100">Critical incident — leaked code</p>
-                                <h3 className="text-xl md:text-2xl font-bold text-white">DeepSeek breach put source and prompts on the open internet</h3>
-                                <p className="text-sm text-rose-50/90">Keep inference and scanning on-prem. No external model egress. Audit trails by default.</p>
+                                <p className="text-xs uppercase tracking-[0.22em] text-rose-100">{t("secureDevelopment.timeline.incident.title", "Critical incident — leaked code")}</p>
+                                <h3 className="text-xl md:text-2xl font-bold text-white">{t("secureDevelopment.timeline.incident.heading", "DeepSeek breach put source and prompts on the open internet")}</h3>
+                                <p className="text-sm text-rose-50/90">{t("secureDevelopment.timeline.incident.description", "Keep inference and scanning on-prem. No external model egress. Audit trails by default.")}</p>
                             </div>
                             <button onClick={openModal} className="whitespace-nowrap rounded-full border border-rose-200/60 px-4 py-2 text-sm font-semibold text-white hover:border-white/70 transition">
-                                See containment plan
+                                {t("secureDevelopment.timeline.incident.seePlan", "See containment plan")}
                             </button>
                         </div>
                     </EdgeGlowCard>
@@ -213,12 +234,12 @@ export default function SecureDevelopmentPage() {
                     <GlowOrb className="-right-12 top-0" color="rgba(236,72,153,0.14)" size="22rem" blur="95px" />
                     <GlowOrb className="left-4 bottom-0" color="rgba(59,130,246,0.12)" size="18rem" blur="90px" />
 
-                    <div className="flex items-center gap-3">
-                        <div>
-                            <p className="text-xs uppercase tracking-[0.2em] text-slate-400">Live assurance</p>
-                            <h2 className="text-3xl font-bold text-white">Analyzer that beats CodeQL</h2>
+                        <div className="flex items-center gap-3">
+                            <div>
+                                <p className="text-xs uppercase tracking-[0.2em] text-slate-400">{t("secureDevelopment.analyzer.subtitle", "Live assurance")}</p>
+                                <h2 className="text-3xl font-bold text-white">{t("secureDevelopment.analyzer.title", "Analyzer that beats CodeQL")}</h2>
+                            </div>
                         </div>
-                    </div>
 
                     <div className="grid md:grid-cols-2 gap-5">
                         {[
@@ -322,12 +343,12 @@ export default function SecureDevelopmentPage() {
                     <GlowOrb className="-right-6 top-4" color="rgba(59,130,246,0.12)" size="16rem" blur="80px" />
                     <GlowOrb className="left-0 bottom-2" color="rgba(16,185,129,0.12)" size="14rem" blur="70px" />
 
-                    <div className="flex items-center gap-3">
-                        <div>
-                            <p className="text-xs uppercase tracking-[0.2em] text-slate-400">Where we deploy</p>
-                            <h2 className="text-3xl font-bold text-white">Built for regulated, high-impact sectors</h2>
+                        <div className="flex items-center gap-3">
+                            <div>
+                                <p className="text-xs uppercase tracking-[0.2em] text-slate-400">{t("secureDevelopment.industries.subtitle", "Where we deploy")}</p>
+                                <h2 className="text-3xl font-bold text-white">{t("secureDevelopment.industries.title", "Built for regulated, high-impact sectors")}</h2>
+                            </div>
                         </div>
-                    </div>
 
                     <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
                         {[{ icon: "🛢️", title: "Oil & Gas", text: "Drilling, refining, pipeline control" }, { icon: "⚡", title: "Energy", text: "Grid, distribution, and EMS" }, { icon: "⚛️", title: "Nuclear", text: "Reactor controls and safety" }, { icon: "🏭", title: "Manufacturing", text: "ICS, OT, and robotics" }, { icon: "🏛️", title: "Government", text: "Ministries, defense, critical agencies" }].map((item) => (

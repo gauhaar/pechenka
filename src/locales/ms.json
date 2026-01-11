@@ -8,7 +8,10 @@
       "main": "Laman utama",
       "mail": "Emel",
       "affiliate": "Program rakan kongsi",
-      "instructions": "Arahan"
+      "instructions": "Arahan",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC Code",
+      "developerServices": "Perkhidmatan Pembangun"
     },
     "login": "Log masuk"
   },
@@ -321,5 +324,35 @@
       "cookies": "Dasar kuki"
     },
     "copyright": "© {year} Silence AI. Semua hak terpelihara."
+  },
+  "notFound": {
+    "title": "Halaman tidak ditemui",
+    "description": "Kami mencari di mana-mana tetapi tidak dapat mencari halaman ini.",
+    "cta": "Kembali ke halaman utama"
+  },
+  "heroSection": {
+    "badge": "AI dan Perisian Sedia untuk Pengeluaran",
+    "title": "Pembangunan AI dan Perisian Tersuai",
+    "description": "Kami membina ejen AI sedia untuk pengeluaran dan perisian tersuai untuk {country} dan {market}.",
+    "country": "Kazakhstan",
+    "market": "pasaran global",
+    "startProject": "Mulakan Projek",
+    "liveDemo": "Demo Langsung — Ejen AI",
+    "live": "Langsung",
+    "aiAgent": "Ejen AI v2.1",
+    "processing": "Memproses permintaan...",
+    "active": "Aktif",
+    "userMessage": "Analisis trend data pelanggan",
+    "aiResponse": "Menganalisis",
+    "tasks": {
+      "dataCollection": "Pengumpulan Data",
+      "aiAnalysis": "Analisis AI",
+      "reportGeneration": "Penjanaan Laporan"
+    },
+    "stats": {
+      "tasks": "Tugas",
+      "success": "Kejayaan",
+      "speed": "Kelajuan"
+    }
   }
 }

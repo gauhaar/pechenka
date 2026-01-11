@@ -8,9 +8,12 @@
       "main": "Main",
       "mail": "Mail",
       "affiliate": "Affiliate program",
-      "instructions": "Instructions"
+      "instructions": "Instructions",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC Code",
+      "developerServices": "Usluge za programere"
     },
-    "login": "Login"
+    "login": "Zatražite demo"
   },
   "affiliate": {
     "hero": {
@@ -321,5 +324,35 @@
       "cookies": "Cookies Policy"
     },
     "copyright": "© {year} Silence AI. All rights reserved."
+  },
+  "notFound": {
+    "title": "Stranica nije pronađena",
+    "description": "Tražili smo posvuda, ali nismo mogli pronaći ovu stranicu.",
+    "cta": "Povratak na početnu stranicu"
+  },
+  "heroSection": {
+    "badge": "AI i softver spremni za proizvodnju",
+    "title": "Prilagođeni AI i razvoj softvera",
+    "description": "Gradimo AI agente spremne za proizvodnju i prilagođeni softver za {country} i {market}.",
+    "country": "Kazahstan",
+    "market": "globalno tržište",
+    "startProject": "Započnite projekt",
+    "liveDemo": "Demo uživo — AI agent",
+    "live": "Uživo",
+    "aiAgent": "AI agent v2.1",
+    "processing": "Obrada zahtjeva...",
+    "active": "Aktivan",
+    "userMessage": "Analizirajte trendove podataka kupaca",
+    "aiResponse": "Analiziranje",
+    "tasks": {
+      "dataCollection": "Prikupljanje podataka",
+      "aiAnalysis": "AI analiza",
+      "reportGeneration": "Generiranje izvješća"
+    },
+    "stats": {
+      "tasks": "Zadaci",
+      "success": "Uspjeh",
+      "speed": "Brzina"
+    }
   }
 }

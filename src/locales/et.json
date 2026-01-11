@@ -8,9 +8,12 @@
       "main": "Main",
       "mail": "Mail",
       "affiliate": "Affiliate program",
-      "instructions": "Instructions"
+      "instructions": "Instructions",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC Code",
+      "developerServices": "Arendajate teenused"
     },
-    "login": "Login"
+    "login": "Taotle demo"
   },
   "affiliate": {
     "hero": {
@@ -321,5 +324,35 @@
       "cookies": "Cookies Policy"
     },
     "copyright": "© {year} Silence AI. All rights reserved."
+  },
+  "notFound": {
+    "title": "Lehte ei leitud",
+    "description": "Otsisime kõikjalt, kuid ei leidnud seda lehte.",
+    "cta": "Tagasi avalehele"
+  },
+  "heroSection": {
+    "badge": "Tootmiseks valmis AI ja tarkvara",
+    "title": "Kohandatud AI ja tarkvaraarendus",
+    "description": "Ehitame tootmiseks valmis AI-agente ja kohandatud tarkvara {country} ja {market} jaoks.",
+    "country": "Kasahstan",
+    "market": "globaalne turg",
+    "startProject": "Alusta projekti",
+    "liveDemo": "Reaalajas demo — AI-agent",
+    "live": "Reaalajas",
+    "aiAgent": "AI-agent v2.1",
+    "processing": "Päringute töötlemine...",
+    "active": "Aktiivne",
+    "userMessage": "Analüüsige klientide andmete trende",
+    "aiResponse": "Analüüsin",
+    "tasks": {
+      "dataCollection": "Andmete kogumine",
+      "aiAnalysis": "AI analüüs",
+      "reportGeneration": "Aruannete koostamine"
+    },
+    "stats": {
+      "tasks": "Ülesanded",
+      "success": "Edu",
+      "speed": "Kiirus"
+    }
   }
 }

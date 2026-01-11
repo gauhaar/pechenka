@@ -128,7 +128,7 @@ const Header = ({ onOpenModal }) => {
                   )
                 )}
                 <div className="pt-4 flex flex-col gap-4">
-                  <LanguageSelector align="left" onlyEnglish={isMainPage || isSlncCodePage} />
+                  <LanguageSelector align="left" />
                   {!isMainPage && (
                     <GlowButton
                       onClick={() => {
@@ -233,7 +233,7 @@ const Header = ({ onOpenModal }) => {
                       : undefined
                   }
                 >
-                  <LanguageSelector align={isDesktop ? "right" : "left"} onlyEnglish={isMainPage || isSlncCodePage} />
+                  <LanguageSelector align={isDesktop ? "right" : "left"} />
                 </div>
                 {isDesktop && isMainPage && (
                   <GlowButton onClick={scrollToContact}>

@@ -8,7 +8,10 @@
       "main": "Home",
       "mail": "Posta",
       "affiliate": "Programma affiliati",
-      "instructions": "Istruzioni"
+      "instructions": "Istruzioni",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC Code",
+      "developerServices": "Servizi per sviluppatori"
     },
     "login": "Accedi"
   },
@@ -321,5 +324,35 @@
       "cookies": "Informativa sui cookie"
     },
     "copyright": "© {year} Silence AI. Tutti i diritti riservati."
+  },
+  "notFound": {
+    "title": "Pagina non trovata",
+    "description": "Abbiamo cercato ovunque ma non siamo riusciti a trovare questa pagina.",
+    "cta": "Torna alla home"
+  },
+  "heroSection": {
+    "badge": "AI e software pronti per la produzione",
+    "title": "Sviluppo personalizzato di AI e software",
+    "description": "Costruiamo agenti AI pronti per la produzione e software personalizzati per {country} e il {market}.",
+    "country": "Kazakistan",
+    "market": "mercato globale",
+    "startProject": "Avvia un progetto",
+    "liveDemo": "Demo in diretta — Agente AI",
+    "live": "In diretta",
+    "aiAgent": "Agente AI v2.1",
+    "processing": "Elaborazione delle richieste...",
+    "active": "Attivo",
+    "userMessage": "Analizza le tendenze dei dati dei clienti",
+    "aiResponse": "Analisi in corso",
+    "tasks": {
+      "dataCollection": "Raccolta dati",
+      "aiAnalysis": "Analisi AI",
+      "reportGeneration": "Generazione report"
+    },
+    "stats": {
+      "tasks": "Compiti",
+      "success": "Successo",
+      "speed": "Velocità"
+    }
   }
 }

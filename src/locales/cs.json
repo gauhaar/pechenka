@@ -8,7 +8,10 @@
       "main": "Hlavní",
       "mail": "Pošta",
       "affiliate": "Partnerský program",
-      "instructions": "Instrukce"
+      "instructions": "Instrukce",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC Code",
+      "developerServices": "Vývojářské služby"
     },
     "login": "Přihlásit se"
   },
@@ -321,5 +324,35 @@
       "cookies": "Zásady cookies"
     },
     "copyright": "© {year} Silence AI. Všechna práva vyhrazena."
+  },
+  "notFound": {
+    "title": "Stránka nenalezena",
+    "description": "Hledali jsme všude, ale tuto stránku jsme nenašli.",
+    "cta": "Zpět na domovskou stránku"
+  },
+  "heroSection": {
+    "badge": "AI a software připravené pro výrobu",
+    "title": "Vlastní vývoj AI a softwaru",
+    "description": "Vytváříme AI agenty připravené pro výrobu a vlastní software pro {country} a {market}.",
+    "country": "Kazachstán",
+    "market": "globální trh",
+    "startProject": "Spustit projekt",
+    "liveDemo": "Živá ukázka — AI agent",
+    "live": "Živě",
+    "aiAgent": "AI agent v2.1",
+    "processing": "Zpracování požadavků...",
+    "active": "Aktivní",
+    "userMessage": "Analyzujte trendy v datech zákazníků",
+    "aiResponse": "Analýza",
+    "tasks": {
+      "dataCollection": "Sbírání dat",
+      "aiAnalysis": "AI analýza",
+      "reportGeneration": "Generování zpráv"
+    },
+    "stats": {
+      "tasks": "Úkoly",
+      "success": "Úspěch",
+      "speed": "Rychlost"
+    }
   }
 }

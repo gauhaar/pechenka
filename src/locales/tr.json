@@ -321,5 +321,49 @@
       "cookies": "Çerez politikası"
     },
     "copyright": "© {year} Silence AI. Tüm hakları saklıdır."
+  },
+  "secureDevelopment": {
+    "hero": {
+      "badge": "SLNC Code · Güvenli Geliştirme Ortamı",
+      "title": "Güvenli ve özel kodla sistemler oluşturun",
+      "description": "Kodun kurumsal ağınızdan asla çıkmadığı, işletmeler için özel geliştirme ortamı. Aynı zamanda en son yapay zeka destekli teknolojiyi sunar",
+      "requestSystem": "Sistem Talep Et"
+    },
+    "components": {
+      "title": "Her şey içeride kalır",
+      "subtitle": "Üç bileşen, bir kapalı döngü",
+      "description": "Kod, prompt'lar ve derlemeler ağınızdan asla çıkmaz. SLNC Code, bulut sağlayıcıları, devlet ekipleri ve endüstriyel tesisler için yapay zeka yardımını, incelemeleri ve teslimatı özel tutar.",
+      "sithub": {
+        "title": "Sithub Sunucusu",
+        "tag": "Yerel sürüm kontrolü"
+      },
+      "llm": {
+        "title": "LLM Sunucusu (Qwen-Code)",
+        "tag": "Yerel zeka"
+      },
+      "ide": {
+        "title": "Yerel Copilot ile IDE",
+        "tag": "Cursor seviyesinde deneyim"
+      },
+      "staysOnPrem": "Yerelde kalır. Çıkış yok."
+    },
+    "timeline": {
+      "title": "Neden izole ve kontrol edilmiş kod önemlidir",
+      "subtitle": "Son uyarılar",
+      "incident": {
+        "title": "Kritik olay — sızdırılan kod",
+        "heading": "DeepSeek sızıntısı kaynak kodu ve prompt'ları açık internete koydu",
+        "description": "Çıkarım ve taramayı yerelde tutun. Harici model çıkışı yok. Varsayılan denetim izleri.",
+        "seePlan": "Kontrol planını görüntüle"
+      }
+    },
+    "analyzer": {
+      "title": "CodeQL'i geride bırakan analizör",
+      "subtitle": "Canlı güvence"
+    },
+    "industries": {
+      "title": "Düzenlenmiş, yüksek etkili sektörler için inşa edildi",
+      "subtitle": "Nereye konuşlandırıyoruz"
+    }
   }
 }

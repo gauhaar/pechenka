@@ -55,7 +55,6 @@ export const LOCALES = {
   'cs': lang_cs,
   'da': lang_da,
   'nl': lang_nl,
-  'en': lang_en,
   'et': lang_et,
   'fr': lang_fr,
   'ka': lang_ka,

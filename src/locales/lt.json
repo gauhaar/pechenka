@@ -8,9 +8,12 @@
       "main": "Main",
       "mail": "Mail",
       "affiliate": "Affiliate program",
-      "instructions": "Instructions"
+      "instructions": "Instructions",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC Code",
+      "developerServices": "Kūrėjų paslaugos"
     },
-    "login": "Login"
+    "login": "Užklausti demonstracijos"
   },
   "affiliate": {
     "hero": {
@@ -321,5 +324,35 @@
       "cookies": "Cookies Policy"
     },
     "copyright": "© {year} Silence AI. All rights reserved."
+  },
+  "notFound": {
+    "title": "Puslapis nerastas",
+    "description": "Ieškojome visur, bet negalėjome rasti šio puslapio.",
+    "cta": "Grįžti į pagrindinį puslapį"
+  },
+  "heroSection": {
+    "badge": "Gamybai paruoštas AI ir programinė įranga",
+    "title": "Individualus AI ir programinės įrangos kūrimas",
+    "description": "Mes kuriam gamybai paruoštus AI agentus ir individualią programinę įrangą {country} ir {market}.",
+    "country": "Kazachstanas",
+    "market": "pasaulinė rinka",
+    "startProject": "Pradėti projektą",
+    "liveDemo": "Tiesioginė demonstracija — AI agentas",
+    "live": "Tiesiogiai",
+    "aiAgent": "AI agentas v2.1",
+    "processing": "Apdorojami užklausimai...",
+    "active": "Aktyvus",
+    "userMessage": "Analizuoti klientų duomenų tendencijas",
+    "aiResponse": "Analizuoja",
+    "tasks": {
+      "dataCollection": "Duomenų rinkimas",
+      "aiAnalysis": "AI analizė",
+      "reportGeneration": "Ataskaitų generavimas"
+    },
+    "stats": {
+      "tasks": "Užduotys",
+      "success": "Sėkmė",
+      "speed": "Greitis"
+    }
   }
 }

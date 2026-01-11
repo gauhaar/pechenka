@@ -8,7 +8,10 @@
       "main": "Accueil",
       "mail": "Messagerie",
       "affiliate": "Programme d'affiliation",
-      "instructions": "Instructions"
+      "instructions": "Instructions",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC Code",
+      "developerServices": "Services aux développeurs"
     },
     "login": "Connexion"
   },
@@ -321,5 +324,79 @@
       "cookies": "Politique relative aux cookies"
     },
     "copyright": "© {year} Silence AI. Tous droits réservés."
+  },
+  "notFound": {
+    "title": "Page non trouvée",
+    "description": "Nous avons cherché partout mais n'avons pas pu trouver cette page.",
+    "cta": "Retour à la page d'accueil"
+  },
+  "heroSection": {
+    "badge": "IA et logiciels prêts pour la production",
+    "title": "Développement d'IA et de logiciels personnalisés",
+    "description": "Nous construisons des agents IA prêts pour la production et des logiciels personnalisés pour le {country} et le {market}.",
+    "country": "Kazakhstan",
+    "market": "marché mondial",
+    "startProject": "Démarrer un projet",
+    "liveDemo": "Démo en direct — Agent IA",
+    "live": "En direct",
+    "aiAgent": "Agent IA v2.1",
+    "processing": "Traitement des demandes...",
+    "active": "Actif",
+    "userMessage": "Analyser les tendances des données clients",
+    "aiResponse": "Analyse en cours",
+    "tasks": {
+      "dataCollection": "Collecte de données",
+      "aiAnalysis": "Analyse IA",
+      "reportGeneration": "Génération de rapports"
+    },
+    "stats": {
+      "tasks": "Tâches",
+      "success": "Succès",
+      "speed": "Vitesse"
+    }
+  },
+  "secureDevelopment": {
+    "hero": {
+      "badge": "SLNC Code · Environnement de développement sécurisé",
+      "title": "Construisez des systèmes avec du code sécurisé et privé",
+      "description": "Environnement de développement privé pour les entreprises, où le code ne quitte jamais votre réseau d'entreprise. Tout en offrant la dernière technologie alimentée par l'IA",
+      "requestSystem": "Demander le système"
+    },
+    "components": {
+      "title": "Tout reste à l'intérieur",
+      "subtitle": "Trois composants, une boucle scellée",
+      "description": "Le code, les invites et les builds ne quittent jamais votre réseau. SLNC Code garde l'aide de l'IA, les revues et la livraison privés pour les fournisseurs de cloud, les équipes gouvernementales et les usines industrielles.",
+      "sithub": {
+        "title": "Serveur Sithub",
+        "tag": "Contrôle de version local"
+      },
+      "llm": {
+        "title": "Serveur LLM (Qwen-Code)",
+        "tag": "Intelligence sur site"
+      },
+      "ide": {
+        "title": "IDE avec Copilot local",
+        "tag": "Expérience de niveau Cursor"
+      },
+      "staysOnPrem": "Reste sur site. Pas de sortie."
+    },
+    "timeline": {
+      "title": "Pourquoi le code isolé et vérifié est important",
+      "subtitle": "Réveils récents",
+      "incident": {
+        "title": "Incident critique — code divulgué",
+        "heading": "La fuite de DeepSeek a mis le code source et les invites sur l'internet ouvert",
+        "description": "Gardez l'inférence et l'analyse sur site. Pas de sortie de modèles externes. Traces d'audit par défaut.",
+        "seePlan": "Voir le plan de confinement"
+      }
+    },
+    "analyzer": {
+      "title": "Analyseur qui surpasse CodeQL",
+      "subtitle": "Assurance en direct"
+    },
+    "industries": {
+      "title": "Conçu pour les secteurs réglementés et à fort impact",
+      "subtitle": "Où nous déployons"
+    }
   }
 }

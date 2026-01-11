@@ -321,5 +321,49 @@
       "cookies": "Política de cookies"
     },
     "copyright": "© {year} Silence AI. Todos los derechos reservados."
+  },
+  "secureDevelopment": {
+    "hero": {
+      "badge": "SLNC Code · Entorno de desarrollo seguro",
+      "title": "Construye sistemas con código seguro y privado",
+      "description": "Entorno de desarrollo privado para empresas, donde el código nunca sale de tu red corporativa. Mientras tanto, ofrece la última tecnología impulsada por IA",
+      "requestSystem": "Solicitar sistema"
+    },
+    "components": {
+      "title": "Todo se queda dentro",
+      "subtitle": "Tres componentes, un ciclo sellado",
+      "description": "El código, las indicaciones y las compilaciones nunca salen de tu red. SLNC Code mantiene la ayuda de IA, las revisiones y la entrega privadas para proveedores de nube, equipos gubernamentales y plantas industriales.",
+      "sithub": {
+        "title": "Servidor Sithub",
+        "tag": "Control de versiones local"
+      },
+      "llm": {
+        "title": "Servidor LLM (Qwen-Code)",
+        "tag": "Inteligencia local"
+      },
+      "ide": {
+        "title": "IDE con Copilot local",
+        "tag": "Experiencia de clase Cursor"
+      },
+      "staysOnPrem": "Se queda local. Sin salida."
+    },
+    "timeline": {
+      "title": "Por qué importa el código aislado y verificado",
+      "subtitle": "Llamadas de atención recientes",
+      "incident": {
+        "title": "Incidente crítico — código filtrado",
+        "heading": "La violación de DeepSeek puso el código fuente y las indicaciones en internet abierto",
+        "description": "Mantén la inferencia y el escaneo local. Sin salida de modelos externos. Trazas de auditoría por defecto.",
+        "seePlan": "Ver plan de contención"
+      }
+    },
+    "analyzer": {
+      "title": "Analizador que supera a CodeQL",
+      "subtitle": "Garantía en vivo"
+    },
+    "industries": {
+      "title": "Construido para sectores regulados y de alto impacto",
+      "subtitle": "Donde desplegamos"
+    }
   }
 }

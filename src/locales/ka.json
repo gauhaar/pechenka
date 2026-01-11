@@ -8,9 +8,12 @@
       "main": "Main",
       "mail": "Mail",
       "affiliate": "Affiliate program",
-      "instructions": "Instructions"
+      "instructions": "Instructions",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC Code",
+      "developerServices": "დეველოპერების სერვისები"
     },
-    "login": "Login"
+    "login": "დემოს მოთხოვნა"
   },
   "affiliate": {
     "hero": {
@@ -321,5 +324,35 @@
       "cookies": "Cookies Policy"
     },
     "copyright": "© {year} Silence AI. All rights reserved."
+  },
+  "notFound": {
+    "title": "გვერდი ვერ მოიძებნა",
+    "description": "ყველგან ვეძებდით, მაგრამ ვერ ვიპოვეთ ეს გვერდი.",
+    "cta": "მთავარ გვერდზე დაბრუნება"
+  },
+  "heroSection": {
+    "badge": "წარმოებისთვის მზა AI და პროგრამული უზრუნველყოფა",
+    "title": "მორგებული AI და პროგრამული უზრუნველყოფის განვითარება",
+    "description": "ჩვენ ვქმნით წარმოებისთვის მზა AI აგენტებს და მორგებულ პროგრამულ უზრუნველყოფას {country}-სა და {market}-ისთვის.",
+    "country": "ყაზახეთი",
+    "market": "გლობალური ბაზარი",
+    "startProject": "პროექტის დაწყება",
+    "liveDemo": "პირდაპირი ეთერი — AI აგენტი",
+    "live": "პირდაპირი ეთერი",
+    "aiAgent": "AI აგენტი v2.1",
+    "processing": "მოთხოვნების დამუშავება...",
+    "active": "აქტიური",
+    "userMessage": "მომხმარებელთა მონაცემების ტენდენციების ანალიზი",
+    "aiResponse": "ანალიზი",
+    "tasks": {
+      "dataCollection": "მონაცემთა შეგროვება",
+      "aiAnalysis": "AI ანალიზი",
+      "reportGeneration": "ანგარიშების გენერირება"
+    },
+    "stats": {
+      "tasks": "ამოცანები",
+      "success": "წარმატება",
+      "speed": "სიჩქარე"
+    }
   }
 }

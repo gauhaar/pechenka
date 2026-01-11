@@ -8,7 +8,10 @@
       "main": "메인",
       "mail": "메일",
       "affiliate": "제휴 프로그램",
-      "instructions": "가이드"
+      "instructions": "가이드",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC Code",
+      "developerServices": "개발자 서비스"
     },
     "login": "로그인"
   },
@@ -321,5 +324,35 @@
       "cookies": "쿠키 정책"
     },
     "copyright": "© {year} Silence AI. 모든 권리 보유."
+  },
+  "notFound": {
+    "title": "페이지를 찾을 수 없습니다",
+    "description": "어디에서나 찾아보았지만 이 페이지를 찾을 수 없었습니다.",
+    "cta": "홈페이지로 돌아가기"
+  },
+  "heroSection": {
+    "badge": "생산 준비 완료 AI 및 소프트웨어",
+    "title": "맞춤형 AI 및 소프트웨어 개발",
+    "description": "우리는 {country} 및 {market}을 위한 생산 준비 완료 AI 에이전트와 맞춤형 소프트웨어를 구축합니다.",
+    "country": "카자흐스탄",
+    "market": "글로벌 시장",
+    "startProject": "프로젝트 시작",
+    "liveDemo": "라이브 데모 — AI 에이전트",
+    "live": "라이브",
+    "aiAgent": "AI 에이전트 v2.1",
+    "processing": "요청 처리 중...",
+    "active": "활성",
+    "userMessage": "고객 데이터 트렌드 분석",
+    "aiResponse": "분석 중",
+    "tasks": {
+      "dataCollection": "데이터 수집",
+      "aiAnalysis": "AI 분석",
+      "reportGeneration": "보고서 생성"
+    },
+    "stats": {
+      "tasks": "작업",
+      "success": "성공률",
+      "speed": "속도"
+    }
   }
 }

@@ -8,7 +8,10 @@
       "main": "Əsas səhifə",
       "mail": "Poçt",
       "affiliate": "Tərəfdaş proqramı",
-      "instructions": "Təlimatlar"
+      "instructions": "Təlimatlar",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC Code",
+      "developerServices": "Developer Services"
     },
     "login": "Daxil ol"
   },
@@ -321,5 +324,35 @@
       "cookies": "Kuki siyasəti"
     },
     "copyright": "© {year} Silence AI. Bütün hüquqlar qorunur."
+  },
+  "notFound": {
+    "title": "Səhifə tapılmadı",
+    "description": "Hər yerdə axtardıq, amma bu səhifəni tapa bilmədik.",
+    "cta": "Ana səhifəyə qayıt"
+  },
+  "heroSection": {
+    "badge": "İstehsala hazır AI və Proqram təminatı",
+    "title": "Fərdi AI və Proqram Təminatı İnkişafı",
+    "description": "Biz {country} və {market} üçün istehsala hazır AI agentləri və fərdi proqram təminatı qururuq.",
+    "country": "Qazaxıstan",
+    "market": "qlobal bazar",
+    "startProject": "Layihəyə Başla",
+    "liveDemo": "Canlı Demo — AI Agent",
+    "live": "Canlı",
+    "aiAgent": "AI Agent v2.1",
+    "processing": "Sorğular emal olunur...",
+    "active": "Aktiv",
+    "userMessage": "Müştəri məlumat trendlərini təhlil edin",
+    "aiResponse": "Təhlil edilir",
+    "tasks": {
+      "dataCollection": "Məlumat Toplanması",
+      "aiAnalysis": "AI Təhlili",
+      "reportGeneration": "Hesabat Hazırlanması"
+    },
+    "stats": {
+      "tasks": "Tapşırıqlar",
+      "success": "Uğur",
+      "speed": "Sürət"
+    }
   }
 }

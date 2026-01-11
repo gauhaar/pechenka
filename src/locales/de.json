@@ -8,7 +8,10 @@
       "main": "Start",
       "mail": "Mail",
       "affiliate": "Partnerprogramm",
-      "instructions": "Anleitungen"
+      "instructions": "Anleitungen",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC Code",
+      "developerServices": "Entwicklerdienste"
     },
     "login": "Anmelden"
   },
@@ -321,5 +324,79 @@
       "cookies": "Cookie-Richtlinie"
     },
     "copyright": "© {year} Silence AI. Alle Rechte vorbehalten."
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Wir haben überall gesucht, konnten diese Seite aber nicht finden.",
+    "cta": "Zurück zur Startseite"
+  },
+  "heroSection": {
+    "badge": "Produktionsbereite KI und Software",
+    "title": "Maßgeschneiderte KI- und Softwareentwicklung",
+    "description": "Wir entwickeln produktionsbereite KI-Agenten und maßgeschneiderte Software für {country} und den {market}.",
+    "country": "Kasachstan",
+    "market": "globalen Markt",
+    "startProject": "Projekt starten",
+    "liveDemo": "Live-Demo — KI-Agent",
+    "live": "Live",
+    "aiAgent": "KI-Agent v2.1",
+    "processing": "Anfragen werden verarbeitet...",
+    "active": "Aktiv",
+    "userMessage": "Kundendatentrends analysieren",
+    "aiResponse": "Analysiere",
+    "tasks": {
+      "dataCollection": "Datenerfassung",
+      "aiAnalysis": "KI-Analyse",
+      "reportGeneration": "Berichterstellung"
+    },
+    "stats": {
+      "tasks": "Aufgaben",
+      "success": "Erfolg",
+      "speed": "Geschwindigkeit"
+    }
+  },
+  "secureDevelopment": {
+    "hero": {
+      "badge": "SLNC Code · Sichere Entwicklungsumgebung",
+      "title": "Erstellen Sie Systeme mit sicherem und privatem Code",
+      "description": "Private Entwicklungsumgebung für Unternehmen, in der Code niemals Ihr Unternehmensnetzwerk verlässt. Gleichzeitig bietet sie die neueste KI-gestützte Technologie",
+      "requestSystem": "System anfordern"
+    },
+    "components": {
+      "title": "Alles bleibt intern",
+      "subtitle": "Drei Komponenten, ein geschlossener Kreislauf",
+      "description": "Code, Prompts und Builds verlassen niemals Ihr Netzwerk. SLNC Code hält KI-Hilfe, Reviews und Auslieferung privat für Cloud-Anbieter, Regierungsteams und Industrieanlagen.",
+      "sithub": {
+        "title": "Sithub-Server",
+        "tag": "Lokale Versionskontrolle"
+      },
+      "llm": {
+        "title": "LLM-Server (Qwen-Code)",
+        "tag": "Lokale Intelligenz"
+      },
+      "ide": {
+        "title": "IDE mit lokalem Copilot",
+        "tag": "Cursor-ähnliche Erfahrung"
+      },
+      "staysOnPrem": "Bleibt vor Ort. Kein Ausgang."
+    },
+    "timeline": {
+      "title": "Warum isolierter und geprüfter Code wichtig ist",
+      "subtitle": "Aktuelle Weckrufe",
+      "incident": {
+        "title": "Kritischer Vorfall — geleakter Code",
+        "heading": "DeepSeek-Leak legte Quellcode und Prompts ins offene Internet",
+        "description": "Halten Sie Inferenz und Scans lokal. Kein Ausgang externer Modelle. Audit-Trails standardmäßig.",
+        "seePlan": "Eindämmungsplan ansehen"
+      }
+    },
+    "analyzer": {
+      "title": "Analyse-Tool, das CodeQL übertrifft",
+      "subtitle": "Live-Zusicherung"
+    },
+    "industries": {
+      "title": "Entwickelt für regulierte, hochwirksame Sektoren",
+      "subtitle": "Wo wir einsetzen"
+    }
   }
 }

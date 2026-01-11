@@ -8,7 +8,10 @@
       "main": "Beranda",
       "mail": "Email",
       "affiliate": "Program afiliasi",
-      "instructions": "Instruksi"
+      "instructions": "Instruksi",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC Code",
+      "developerServices": "Layanan Pengembang"
     },
     "login": "Masuk"
   },
@@ -321,5 +324,35 @@
       "cookies": "Kebijakan cookie"
     },
     "copyright": "© {year} Silence AI. Seluruh hak cipta dilindungi."
+  },
+  "notFound": {
+    "title": "Halaman tidak ditemukan",
+    "description": "Kami mencari di mana-mana tetapi tidak dapat menemukan halaman ini.",
+    "cta": "Kembali ke beranda"
+  },
+  "heroSection": {
+    "badge": "AI dan Perangkat Lunak Siap Produksi",
+    "title": "Pengembangan AI dan Perangkat Lunak Kustom",
+    "description": "Kami membangun agen AI siap produksi dan perangkat lunak kustom untuk {country} dan {market}.",
+    "country": "Kazakhstan",
+    "market": "pasar global",
+    "startProject": "Mulai Proyek",
+    "liveDemo": "Demo Langsung — Agen AI",
+    "live": "Langsung",
+    "aiAgent": "Agen AI v2.1",
+    "processing": "Memproses permintaan...",
+    "active": "Aktif",
+    "userMessage": "Analisis tren data pelanggan",
+    "aiResponse": "Menganalisis",
+    "tasks": {
+      "dataCollection": "Pengumpulan Data",
+      "aiAnalysis": "Analisis AI",
+      "reportGeneration": "Pembuatan Laporan"
+    },
+    "stats": {
+      "tasks": "Tugas",
+      "success": "Sukses",
+      "speed": "Kecepatan"
+    }
   }
 }
