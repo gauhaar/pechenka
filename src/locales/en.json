@@ -13,7 +13,7 @@
       "secureDevelopment": "SLNC Code",
       "developerServices": "Developer Services"
     },
-    "login": "Request Demo"
+    "login": "Request System"
   },
   "affiliate": {
     "hero": {
@@ -165,7 +165,7 @@
       "vulnerability": "Vulnerability-finder"
     },
     "buttons": {
-      "connect": "Connect in 4 minutes",
+      "connect": "Request System",
       "tour": "Watch 90-sec Tour"
     },
     "tooltips": {

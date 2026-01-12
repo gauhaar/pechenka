@@ -221,7 +221,7 @@ const Pricing = ({ onOpenModal }) => {
                   innerClassName="w-full justify-center px-10 py-4"
                   onClick={onOpenModal}
                 >
-                  Request Demo
+                  Request System
                 </GlowButton>
               </EdgeGlowCard>
             );

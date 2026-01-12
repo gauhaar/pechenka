@@ -61,7 +61,7 @@ const RequestDemoModal = ({ isOpen, onClose }) => {
               </div>
             ) : (
               <>
-                <h2 className="text-2xl font-bold mb-6 text-center">Request Demo</h2>
+                <h2 className="text-2xl font-bold mb-6 text-center">Request System</h2>
                 
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
