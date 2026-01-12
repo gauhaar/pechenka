@@ -354,5 +354,152 @@
       "success": "成功率",
       "speed": "速度"
     }
+  },
+  "secureDevelopment": {
+    "hero": {
+      "badge": "SLNC Code · セキュア開発環境",
+      "title": "安全でプライベートなコードでシステムを構築",
+      "description": "コードが企業ネットワークを離れることのない、企業向けプライベート開発環境。最新のAI技術を提供します",
+      "requestSystem": "システムをリクエスト"
+    },
+    "components": {
+      "title": "すべてが内部に留まる",
+      "subtitle": "3つのコンポーネント、1つの閉じたループ",
+      "description": "コード、プロンプト、ビルドはネットワークを離れません。SLNC CodeはAI支援、レビュー、配信をクラウドプロバイダー、政府チーム、産業プラント向けにプライベートに保ちます。",
+      "sithub": {
+        "title": "Sithubサーバー",
+        "tag": "ローカルバージョン管理"
+      },
+      "llm": {
+        "title": "LLMサーバー (Qwen-Code)",
+        "tag": "オンプレミスインテリジェンス"
+      },
+      "ide": {
+        "title": "ローカルCopilot付きIDE",
+        "tag": "Cursorクラスの体験"
+      },
+      "staysOnPrem": "オンプレミスに留まる。外部流出なし。"
+    },
+    "timeline": {
+      "title": "なぜ隔離され検証されたコードが重要なのか",
+      "subtitle": "最近の警告",
+      "incident": {
+        "title": "重大インシデント — コード漏洩",
+        "heading": "DeepSeekの侵害によりソースコードとプロンプトが公開インターネットに流出",
+        "description": "推論とスキャンをオンプレミスで保持。外部モデルの流出なし。デフォルトで監査証跡を記録。",
+        "seePlan": "封じ込め計画を確認"
+      },
+      "stuxnet": {
+        "year": "2010",
+        "attack": "Stuxnet",
+        "target": "ナタンズ濃縮施設",
+        "impact": "約1,000台の遠心分離機を破壊",
+        "severity": "重大"
+      },
+      "blackEnergy": {
+        "year": "2015",
+        "attack": "BlackEnergy",
+        "target": "ウクライナ電力網",
+        "impact": "23万世帯が停電",
+        "severity": "高"
+      },
+      "triton": {
+        "year": "2017",
+        "attack": "TRITON",
+        "target": "サウジアラビア石油化学プラント",
+        "impact": "安全システムが無効化",
+        "severity": "重大"
+      },
+      "colonialPipeline": {
+        "year": "2021",
+        "attack": "Colonial Pipeline",
+        "target": "米国燃料パイプライン",
+        "impact": "6日間の燃料麻痺",
+        "severity": "高"
+      },
+      "pdvsa": {
+        "year": "2025",
+        "attack": "PDVSA",
+        "target": "ベネズエラ製油所",
+        "impact": "製油所操業が中断",
+        "severity": "中"
+      }
+    },
+    "analyzer": {
+      "title": "CodeQLを超えるアナライザー",
+      "subtitle": "ライブ保証",
+      "features": {
+        "quality": {
+          "title": "自動コード品質",
+          "description": "安全クリティカルなコードに合わせた構造、スタイル、ベストプラクティスのチェック"
+        },
+        "vulnerability": {
+          "title": "脆弱性スイープ",
+          "description": "SQLi、XSS、認証バイパス、安全でない依存関係を瞬時に検出"
+        },
+        "secrets": {
+          "title": "シークレットガード",
+          "description": "キー、トークン、資格情報をコミット時にブロック"
+        },
+        "config": {
+          "title": "設定強化",
+          "description": "Docker/K8s、IAM、ネットワークポリシーを権限クリープについてスキャン"
+        }
+      },
+      "beyondCodeQL": {
+        "title": "静的クエリが見逃すものを発見",
+        "subtitle": "CodeQLを超えて",
+        "description": "設定ミスや脆弱なパッケージをCodeQLより速く発見し、警告だけでなく修正を提供します。",
+        "points": {
+          "packages": "パッケージグラフを把握し、リスクのある依存関係を数秒でフラグ付け。",
+          "config": "設定のドリフトと権限クリープを検出 — 静的ルールを超えて。",
+          "patches": "各発見には提案されたパッチと担当者が含まれます。"
+        }
+      },
+      "visualizer": {
+        "title": "動作中のコードアナライザー",
+        "subtitle": "ビジュアライザー",
+        "description": "最近のスキャンからの鮮明なスナップショットが、オンプレミスコンソール内で美しくレンダリングされます。",
+        "privateWorkspace": "プライベートワークスペースのみ",
+        "shots": {
+          "scanOverview": {
+            "title": "スキャン概要",
+            "description": "コードがネットワークを離れる前に、重大度別にグループ化された問題を確認。"
+          },
+          "misconfigurations": {
+            "title": "設定ミスの検出",
+            "description": "当社のAI駆動コードアナライザーは、コード内の設定ミスも検出します。"
+          },
+          "inlineDiffs": {
+            "title": "インラインディフ",
+            "description": "セキュリティコンテキストと共に提案されたパッチをインラインでレビュー。"
+          }
+        }
+      }
+    },
+    "industries": {
+      "title": "規制された高影響セクター向けに構築",
+      "subtitle": "導入先",
+      "oilGas": {
+        "title": "石油・ガス",
+        "description": "掘削、精製、パイプライン制御"
+      },
+      "energy": {
+        "title": "エネルギー",
+        "description": "グリッド、配電、EMS"
+      },
+      "nuclear": {
+        "title": "原子力",
+        "description": "原子炉制御と安全"
+      },
+      "manufacturing": {
+        "title": "製造",
+        "description": "ICS、OT、ロボティクス"
+      },
+      "government": {
+        "title": "政府",
+        "description": "省庁、防衛、重要機関"
+      }
+    }
   }
 }

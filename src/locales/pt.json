@@ -322,6 +322,36 @@
     },
     "copyright": "© {year} Silence AI. Todos os direitos reservados."
   },
+  "notFound": {
+    "title": "Página não encontrada",
+    "description": "Procuramos em todos os lugares, mas não encontramos esta página.",
+    "cta": "Voltar para a página inicial"
+  },
+  "heroSection": {
+    "badge": "IA e software pronto para produção",
+    "title": "Desenvolvimento personalizado de IA e software",
+    "description": "Construímos agentes de IA prontos para produção e software personalizado.",
+    "country": "Cazaquistão",
+    "market": "mercado global",
+    "startProject": "Iniciar um projeto",
+    "liveDemo": "Demonstração ao vivo — Agente de IA",
+    "live": "Ao vivo",
+    "aiAgent": "Agente de IA versão 2.1",
+    "processing": "Processando solicitações...",
+    "active": "Ativo",
+    "userMessage": "Analisar tendências de dados de clientes",
+    "aiResponse": "Analisando",
+    "tasks": {
+      "dataCollection": "Coleta de dados",
+      "aiAnalysis": "Análise de IA",
+      "reportGeneration": "Geração de relatórios"
+    },
+    "stats": {
+      "tasks": "Tarefas",
+      "success": "Sucesso",
+      "speed": "Velocidade"
+    }
+  },
   "secureDevelopment": {
     "hero": {
       "badge": "SLNC Code · Ambiente de Desenvolvimento Seguro",
@@ -355,15 +385,118 @@
         "heading": "Vazamento do DeepSeek colocou código-fonte e prompts na internet aberta",
         "description": "Mantenha inferência e varredura local. Sem saída de modelos externos. Trilhas de auditoria por padrão.",
         "seePlan": "Ver plano de contenção"
+      },
+      "stuxnet": {
+        "year": "2010",
+        "attack": "Stuxnet",
+        "target": "Instalação de enriquecimento de Natanz",
+        "impact": "Destruiu ~1.000 centrífugas",
+        "severity": "Crítico"
+      },
+      "blackEnergy": {
+        "year": "2015",
+        "attack": "BlackEnergy",
+        "target": "Rede elétrica da Ucrânia",
+        "impact": "230 mil clientes ficaram sem energia",
+        "severity": "Alto"
+      },
+      "triton": {
+        "year": "2017",
+        "attack": "TRITON",
+        "target": "Planta petroquímica da Arábia Saudita",
+        "impact": "Sistemas de segurança desativados",
+        "severity": "Crítico"
+      },
+      "colonialPipeline": {
+        "year": "2021",
+        "attack": "Colonial Pipeline",
+        "target": "Duto de combustível dos EUA",
+        "impact": "Paralisia de combustível por 6 dias",
+        "severity": "Alto"
+      },
+      "pdvsa": {
+        "year": "2025",
+        "attack": "PDVSA",
+        "target": "Refinaria da Venezuela",
+        "impact": "Operações de refinaria interrompidas",
+        "severity": "Médio"
       }
     },
     "analyzer": {
       "title": "Analisador que supera o CodeQL",
-      "subtitle": "Garantia ao vivo"
+      "subtitle": "Garantia ao vivo",
+      "features": {
+        "quality": {
+          "title": "Qualidade automática de código",
+          "description": "Verificações de estrutura, estilo e melhores práticas ajustadas para código crítico de segurança"
+        },
+        "vulnerability": {
+          "title": "Varreduras de vulnerabilidade",
+          "description": "SQLi, XSS, bypass de autenticação e dependências inseguras detectadas instantaneamente"
+        },
+        "secrets": {
+          "title": "Guarda de segredos",
+          "description": "Chaves, tokens e credenciais bloqueadas no momento do commit"
+        },
+        "config": {
+          "title": "Endurecimento de configuração",
+          "description": "Docker/K8s, IAM e políticas de rede verificadas para escalonamento de privilégios"
+        }
+      },
+      "beyondCodeQL": {
+        "title": "Encontra o que consultas estáticas perdem",
+        "subtitle": "Além do CodeQL",
+        "description": "Encontra configurações incorretas e pacotes vulneráveis mais rápido que o CodeQL e oferece correções, não apenas alertas.",
+        "points": {
+          "packages": "Conhece grafos de pacotes e sinaliza dependências arriscadas em segundos.",
+          "config": "Detecta desvio de configuração e escalonamento de privilégios — além de regras estáticas.",
+          "patches": "Cada descoberta vem com um patch sugerido e proprietário."
+        }
+      },
+      "visualizer": {
+        "title": "Analisador de código em ação",
+        "subtitle": "Visualizador",
+        "description": "Instantâneos nítidos de varreduras recentes, renderizados lindamente no console local.",
+        "privateWorkspace": "Somente espaço de trabalho privado",
+        "shots": {
+          "scanOverview": {
+            "title": "Visão geral da varredura",
+            "description": "Veja problemas agrupados por gravidade antes que o código saia da sua rede."
+          },
+          "misconfigurations": {
+            "title": "Detecção de configurações incorretas",
+            "description": "Nosso analisador de código alimentado por IA encontra até configurações incorretas no código."
+          },
+          "inlineDiffs": {
+            "title": "Diffs inline",
+            "description": "Revise patches sugeridos inline com contexto de segurança."
+          }
+        }
+      }
     },
     "industries": {
       "title": "Construído para setores regulados e de alto impacto",
-      "subtitle": "Onde implantamos"
+      "subtitle": "Onde implantamos",
+      "oilGas": {
+        "title": "Petróleo e Gás",
+        "description": "Perfuração, refino, controle de dutos"
+      },
+      "energy": {
+        "title": "Energia",
+        "description": "Rede, distribuição e EMS"
+      },
+      "nuclear": {
+        "title": "Nuclear",
+        "description": "Controles de reator e segurança"
+      },
+      "manufacturing": {
+        "title": "Manufatura",
+        "description": "ICS, OT e robótica"
+      },
+      "government": {
+        "title": "Governo",
+        "description": "Ministérios, defesa, agências críticas"
+      }
     }
   }
 }

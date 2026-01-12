@@ -354,5 +354,152 @@
       "success": "Úspěch",
       "speed": "Rychlost"
     }
+  },
+  "secureDevelopment": {
+    "hero": {
+      "badge": "Kód SLNC · Bezpečné vývojové prostředí",
+      "title": "Vytvářejte systémy se zabezpečeným a soukromým kódem",
+      "description": "Soukromé vývojové prostředí pro podniky, kde kód nikdy neopouští vaši firemní síť. Mezitím nabízí nejnovější technologii založenou na umělé inteligenci",
+      "requestSystem": "Žádost o systém"
+    },
+    "components": {
+      "title": "Vše zůstane uvnitř",
+      "subtitle": "Tři komponenty, jedna uzavřená smyčka",
+      "description": "Kód, výzvy a buildy nikdy neopouštějí vaši síť. SLNC Code uchovává nápovědu, recenze a dodávky AI soukromé pro poskytovatele cloudu, vládní týmy a průmyslové závody.",
+      "sithub": {
+        "title": "Sithub Server",
+        "tag": "Místní správa verzí"
+      },
+      "llm": {
+        "title": "Server LLM (Qwen-Code)",
+        "tag": "On-prem intelligence"
+      },
+      "ide": {
+        "title": "IDE s místním kopilotem",
+        "tag": "Zkušenosti s kurzorovou třídou"
+      },
+      "staysOnPrem": "Zůstává on-prem. Žádný výstup."
+    },
+    "timeline": {
+      "title": "Proč na izolovaném, zkontrolovaném kódu záleží",
+      "subtitle": "Nedávné budíčky",
+      "incident": {
+        "title": "Kritický incident — uniklý kód",
+        "heading": "DeepSeek porušení dát zdroj a výzvy na otevřeném internetu",
+        "description": "Udržujte inferenci a skenování on-prem. Žádný výstup externího modelu. Auditní stopy ve výchozím nastavení.",
+        "seePlan": "Viz plán omezení úniku"
+      },
+      "stuxnet": {
+        "year": "2010",
+        "attack": "Stuxnet",
+        "target": "Obohacovací zařízení Natanz",
+        "impact": "Zničeno ~1 000 odstředivek",
+        "severity": "Kritické"
+      },
+      "blackEnergy": {
+        "year": "2015",
+        "attack": "BlackEnergy",
+        "target": "Ukrajinská rozvodná síť",
+        "impact": "230 000 zákazníků ztratilo energii",
+        "severity": "Vysoká"
+      },
+      "triton": {
+        "year": "2017",
+        "attack": "TRITON",
+        "target": "Saúdský petrochemický závod",
+        "impact": "Bezpečnostní systémy vypnuty",
+        "severity": "Kritické"
+      },
+      "colonialPipeline": {
+        "year": "2021",
+        "attack": "Koloniální ropovod",
+        "target": "Palivové potrubí USA",
+        "impact": "6denní palivová paralýza",
+        "severity": "Vysoká"
+      },
+      "pdvsa": {
+        "year": "2025",
+        "attack": "PDVSA",
+        "target": "Rafinace ve Venezue",
+        "impact": "Rafinérské operace přerušeny",
+        "severity": "Střední"
+      }
+    },
+    "analyzer": {
+      "title": "Analyzátor, který porazí CodeQL",
+      "subtitle": "Pojištění naživo",
+      "features": {
+        "quality": {
+          "title": "Automatická kvalita kódu",
+          "description": "Kontroly struktury, stylu a osvědčených postupů vyladěné pro kód kritický z hlediska bezpečnosti"
+        },
+        "vulnerability": {
+          "title": "Zranitelnost zametá",
+          "description": "SQLi, XSS, autorizační bypass a nezabezpečené závislosti se objevily okamžitě"
+        },
+        "secrets": {
+          "title": "Strážce tajemství",
+          "description": "Klíče, tokeny a pověření blokovány v době odevzdání"
+        },
+        "config": {
+          "title": "Konfigurace kalení",
+          "description": "Docker/K8s, IAM a síťové zásady prověřeny na plíživost privilegií"
+        }
+      },
+      "beyondCodeQL": {
+        "title": "Zjistí, co statickým dotazům chybí",
+        "subtitle": "Beyond CodeQL",
+        "description": "Najde chybné konfigurace a zranitelné balíčky rychleji než CodeQL a nabízí opravy, nejen upozornění.",
+        "points": {
+          "packages": "Zná grafy balíčků a označuje rizikové závislosti během několika sekund.",
+          "config": "Spoty konfigurují drift a privilegují plíživost - nad rámec statických pravidel.",
+          "patches": "Každý nález má navržený nášivku a majitele."
+        }
+      },
+      "visualizer": {
+        "title": "Analyzátor kódu v akci",
+        "subtitle": "Vizualizér",
+        "description": "Ostré snímky z nedávných skenů, krásně vykreslené uvnitř konzole on-prem.",
+        "privateWorkspace": "Pouze soukromý pracovní prostor",
+        "shots": {
+          "scanOverview": {
+            "title": "Přehled skenování",
+            "description": "Než kód opustí vaši síť, podívejte se na problémy seskupené podle závažnosti."
+          },
+          "misconfigurations": {
+            "title": "Detekce chybných konfigurací",
+            "description": "Náš analyzátor kódu poháněný umělou inteligencí dokonce najde v kódu nesprávnou konfiguraci."
+          },
+          "inlineDiffs": {
+            "title": "Vložené rozdíly",
+            "description": "Zkontrolujte navrhované opravy v souladu s kontextem zabezpečení."
+          }
+        }
+      }
+    },
+    "industries": {
+      "title": "Vytvořeno pro regulovaná odvětví s vysokým dopadem",
+      "subtitle": "Kde nasazujeme",
+      "oilGas": {
+        "title": "Ropa a zemní plyn",
+        "description": "Vrtání, rafinace, kontrola potrubí"
+      },
+      "energy": {
+        "title": "Energie",
+        "description": "Mřížka, distribuce a EMS"
+      },
+      "nuclear": {
+        "title": "Jaderná energie",
+        "description": "Ovládání reaktoru a bezpečnost"
+      },
+      "manufacturing": {
+        "title": "Výroba",
+        "description": "ICS, OT a robotika"
+      },
+      "government": {
+        "title": "Vláda",
+        "description": "Ministerstva, obrana, kritické agentury"
+      }
+    }
   }
 }

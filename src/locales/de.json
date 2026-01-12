@@ -392,11 +392,79 @@
     },
     "analyzer": {
       "title": "Analyse-Tool, das CodeQL übertrifft",
-      "subtitle": "Live-Zusicherung"
+      "subtitle": "Live-Zusicherung",
+      "features": {
+        "quality": {
+          "title": "Automatische Codequalität",
+          "description": "Struktur-, Stil- und Best-Practice-Prüfungen für sicherheitskritischen Code"
+        },
+        "vulnerability": {
+          "title": "Schwachstellen-Scans",
+          "description": "SQLi, XSS, Authentifizierungs-Umgehungen und unsichere Abhängigkeiten sofort erkannt"
+        },
+        "secrets": {
+          "title": "Geheimnis-Schutz",
+          "description": "Schlüssel, Token und Zugangsdaten werden beim Commit blockiert"
+        },
+        "config": {
+          "title": "Konfigurationshärtung",
+          "description": "Docker/K8s, IAM und Netzwerkrichtlinien auf Privilegien-Eskalation gescannt"
+        }
+      },
+      "beyondCodeQL": {
+        "title": "Findet, was statische Abfragen verpassen",
+        "subtitle": "Jenseits von CodeQL",
+        "description": "Findet Fehlkonfigurationen und anfällige Pakete schneller als CodeQL und bietet Korrekturen, nicht nur Warnungen.",
+        "points": {
+          "packages": "Kennt Paketgraphen und markiert riskante Abhängigkeiten in Sekunden.",
+          "config": "Erkennt Konfigurationsabweichungen und Privilegien-Eskalation – jenseits statischer Regeln.",
+          "patches": "Jeder Fund enthält einen vorgeschlagenen Patch und Verantwortlichen."
+        }
+      },
+      "visualizer": {
+        "title": "Code-Analyzer in Aktion",
+        "subtitle": "Visualisierer",
+        "description": "Klarer Schnappschuss aktueller Scans, schön dargestellt in der lokalen Konsole.",
+        "privateWorkspace": "Nur privater Arbeitsbereich",
+        "shots": {
+          "scanOverview": {
+            "title": "Scan-Übersicht",
+            "description": "Probleme nach Schweregrad gruppiert sehen, bevor Code Ihr Netzwerk verlässt."
+          },
+          "misconfigurations": {
+            "title": "Erkennung von Fehlkonfigurationen",
+            "description": "Unser KI-gestützter Code-Analyzer findet sogar Fehlkonfigurationen im Code."
+          },
+          "inlineDiffs": {
+            "title": "Inline-Diffs",
+            "description": "Vorgeschlagene Patches inline mit Sicherheitskontext überprüfen."
+          }
+        }
+      }
     },
     "industries": {
       "title": "Entwickelt für regulierte, hochwirksame Sektoren",
-      "subtitle": "Wo wir einsetzen"
+      "subtitle": "Wo wir einsetzen",
+      "oilGas": {
+        "title": "Öl & Gas",
+        "description": "Bohrung, Raffination, Pipeline-Steuerung"
+      },
+      "energy": {
+        "title": "Energie",
+        "description": "Netz, Verteilung und EMS"
+      },
+      "nuclear": {
+        "title": "Nuklear",
+        "description": "Reaktorsteuerungen und Sicherheit"
+      },
+      "manufacturing": {
+        "title": "Fertigung",
+        "description": "ICS, OT und Robotik"
+      },
+      "government": {
+        "title": "Regierung",
+        "description": "Ministerien, Verteidigung, kritische Behörden"
+      }
     }
   }
 }

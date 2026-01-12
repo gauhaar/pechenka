@@ -354,5 +354,147 @@
       "success": "Successo",
       "speed": "Velocità"
     }
+  },
+  "secureDevelopment": {
+    "hero": {
+      "badge": "SLNC Code · Ambiente di sviluppo sicuro",
+      "title": "Costruisci sistemi con codice sicuro e privato",
+      "description": "Ambiente di sviluppo privato per le aziende, dove il codice non lascia mai la tua rete aziendale. Offre intanto la tecnologia più recente alimentata dall'IA",
+      "requestSystem": "Richiedi sistema"
+    },
+    "components": {
+      "title": "Tutto rimane all'interno",
+      "subtitle": "Tre componenti, un ciclo sigillato",
+      "description": "Codice, prompt e build non lasciano mai la tua rete. SLNC Code mantiene l'aiuto dell'IA, le revisioni e la consegna privati per provider cloud, team governativi e impianti industriali.",
+      "sithub": {
+        "title": "Server Sithub",
+        "tag": "Controllo versione locale"
+      },
+      "llm": {
+        "title": "Server LLM (Qwen-Code)",
+        "tag": "Intelligenza in loco"
+      },
+      "ide": {
+        "title": "IDE con Copilot locale",
+        "tag": "Esperienza di classe Cursor"
+      },
+      "staysOnPrem": "Rimane in loco. Nessuna uscita."
+    },
+    "timeline": {
+      "title": "Perché il codice isolato e verificato è importante",
+      "subtitle": "Chiamate di risveglio recenti",
+      "incident": {
+        "title": "Incidente critico — codice trapelato",
+        "heading": "La violazione di DeepSeek ha messo il codice sorgente e i prompt su Internet aperto",
+        "description": "Mantieni inferenza e scansioni in loco. Nessuna uscita di modelli esterni. Tracciati di audit per impostazione predefinita.",
+        "seePlan": "Vedi piano di contenimento"
+      },
+      "stuxnet": {
+        "attack": "Stuxnet",
+        "target": "Impianto di arricchimento di Natanz",
+        "impact": "Distrutte ~1.000 centrifughe",
+        "severity": "Critico"
+      },
+      "blackEnergy": {
+        "attack": "BlackEnergy",
+        "target": "Rete elettrica ucraina",
+        "impact": "230.000 clienti senza elettricità",
+        "severity": "Alto"
+      },
+      "triton": {
+        "attack": "TRITON",
+        "target": "Impianto petrolchimico saudita",
+        "impact": "Sistemi di sicurezza disabilitati",
+        "severity": "Critico"
+      },
+      "colonialPipeline": {
+        "attack": "Colonial Pipeline",
+        "target": "Pipeline di carburante USA",
+        "impact": "Paralisi del carburante di 6 giorni",
+        "severity": "Alto"
+      },
+      "pdvsa": {
+        "attack": "PDVSA",
+        "target": "Raffinazione venezuelana",
+        "impact": "Operazioni di raffineria interrotte",
+        "severity": "Medio"
+      }
+    },
+    "analyzer": {
+      "title": "Analizzatore che batte CodeQL",
+      "subtitle": "Garanzia in tempo reale",
+      "features": {
+        "quality": {
+          "title": "Qualità automatica del codice",
+          "description": "Controlli di struttura, stile e best practice ottimizzati per codice critico per la sicurezza"
+        },
+        "vulnerability": {
+          "title": "Scansioni di vulnerabilità",
+          "description": "SQLi, XSS, bypass dell'autenticazione e dipendenze non sicure rilevate all'istante"
+        },
+        "secrets": {
+          "title": "Guardia dei segreti",
+          "description": "Chiavi, token e credenziali bloccate al momento del commit"
+        },
+        "config": {
+          "title": "Irrigidimento della configurazione",
+          "description": "Docker/K8s, IAM e politiche di rete scansionate per escalation dei privilegi"
+        }
+      },
+      "beyondCodeQL": {
+        "title": "Trova ciò che le query statiche perdono",
+        "subtitle": "Oltre CodeQL",
+        "description": "Trova configurazioni errate e pacchetti vulnerabili più velocemente di CodeQL e offre correzioni, non solo avvisi.",
+        "points": {
+          "packages": "Conosce i grafi dei pacchetti e segnala dipendenze rischiose in secondi.",
+          "config": "Rileva deriva della configurazione e escalation dei privilegi — oltre le regole statiche.",
+          "patches": "Ogni scoperta include una patch suggerita e un responsabile."
+        }
+      },
+      "visualizer": {
+        "title": "Analizzatore di codice in azione",
+        "subtitle": "Visualizzatore",
+        "description": "Istantanee nitide di scansioni recenti, rese splendidamente nella console in loco.",
+        "privateWorkspace": "Solo spazio di lavoro privato",
+        "shots": {
+          "scanOverview": {
+            "title": "Panoramica della scansione",
+            "description": "Vedi i problemi raggruppati per gravità prima che il codice lasci la tua rete."
+          },
+          "misconfigurations": {
+            "title": "Rilevamento di configurazioni errate",
+            "description": "Il nostro analizzatore di codice alimentato dall'IA trova anche configurazioni errate all'interno del codice."
+          },
+          "inlineDiffs": {
+            "title": "Differenze in linea",
+            "description": "Rivedi le patch suggerite in linea con il contesto di sicurezza."
+          }
+        }
+      }
+    },
+    "industries": {
+      "title": "Costruito per settori regolamentati e ad alto impatto",
+      "subtitle": "Dove distribuiamo",
+      "oilGas": {
+        "title": "Petrolio e Gas",
+        "description": "Perforazione, raffinazione, controllo delle pipeline"
+      },
+      "energy": {
+        "title": "Energia",
+        "description": "Rete, distribuzione e EMS"
+      },
+      "nuclear": {
+        "title": "Nucleare",
+        "description": "Controlli del reattore e sicurezza"
+      },
+      "manufacturing": {
+        "title": "Produzione",
+        "description": "ICS, OT e robotica"
+      },
+      "government": {
+        "title": "Governo",
+        "description": "Ministeri, difesa, agenzie critiche"
+      }
+    }
   }
 }

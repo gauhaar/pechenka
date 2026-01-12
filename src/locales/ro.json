@@ -321,5 +321,182 @@
       "cookies": "Politica de cookie-uri"
     },
     "copyright": "© {year} Silence AI. Toate drepturile rezervate."
+  },
+  "notFound": {
+    "title": "Pagină negăsită",
+    "description": "Am căutat peste tot, dar nu am găsit această pagină.",
+    "cta": "Înapoi la pagina principală"
+  },
+  "heroSection": {
+    "badge": "AI și software gata pentru producție",
+    "title": "Dezvoltare personalizată AI și software",
+    "description": "Construim agenți AI gata pentru producție și software personalizat.",
+    "country": "Kazahstan",
+    "market": "piața globală",
+    "startProject": "Începe un proiect",
+    "liveDemo": "Demo live — Agent AI",
+    "live": "Live",
+    "aiAgent": "Agent AI versiunea 2.1",
+    "processing": "Se procesează cererile...",
+    "active": "Activ",
+    "userMessage": "Analizează tendințele datelor clienților",
+    "aiResponse": "Se analizează",
+    "tasks": {
+      "dataCollection": "Colectare date",
+      "aiAnalysis": "Analiză AI",
+      "reportGeneration": "Generare rapoarte"
+    },
+    "stats": {
+      "tasks": "Sarcini",
+      "success": "Succes",
+      "speed": "Viteză"
+    }
+  },
+  "secureDevelopment": {
+    "hero": {
+      "badge": "Cod SLNC · Mediu de dezvoltare sigur",
+      "title": "Construiți sisteme cu cod securizat și privat",
+      "description": "Mediu privat de dezvoltare pentru întreprinderi, unde codul nu părăsește niciodată rețeaua corporativă. Între timp, oferă cea mai recentă tehnologie bazată pe IA",
+      "requestSystem": "Solicită sistem"
+    },
+    "components": {
+      "title": "Totul rămâne în interior",
+      "subtitle": "Trei componente, o buclă etanșă",
+      "description": "Codurile, solicitările și compilările nu părăsesc niciodată rețeaua. Codul SLNC păstrează confidențialitatea asistenței, revizuirilor și livrărilor AI pentru furnizorii de cloud, echipele guvernamentale și instalațiile industriale.",
+      "sithub": {
+        "title": "Server Sithub",
+        "tag": "Comandă versiune locală"
+      },
+      "llm": {
+        "title": "Server LLM (Qwen-Code)",
+        "tag": "Informații la fața locului"
+      },
+      "ide": {
+        "title": "IDE cu copilot local",
+        "tag": "Experiență la clasă de cursor"
+      },
+      "staysOnPrem": "Rămâne la fața locului. Fără ieșire."
+    },
+    "timeline": {
+      "title": "De ce contează codul izolat și verificat",
+      "subtitle": "Apeluri de trezire recente",
+      "incident": {
+        "title": "Incident critic — cod scurs",
+        "heading": "Încălcarea DeepSeek pune sursa și solicitările pe internetul deschis",
+        "description": "Păstrați inferența și scanarea la fața locului. Nu există ieșire din modelul extern. Piste de audit în mod implicit.",
+        "seePlan": "Consultați planul de izolare"
+      },
+      "stuxnet": {
+        "year": "2010",
+        "attack": "Stuxnet",
+        "target": "Facilitatea de îmbogățire Natanz",
+        "impact": "Distrus ~1.000 centrifuge",
+        "severity": "Critic"
+      },
+      "blackEnergy": {
+        "year": "2015",
+        "attack": "BlackEnergy",
+        "target": "Rețeaua electrică din Ucraina",
+        "impact": "230.000 de clienți au rămas fără energie electrică",
+        "severity": "Ridicat"
+      },
+      "triton": {
+        "year": "2017",
+        "attack": "TRITON",
+        "target": "Uzina petrochimică din Arabia Saudită",
+        "impact": "Sisteme de siguranță dezactivate",
+        "severity": "Critic"
+      },
+      "colonialPipeline": {
+        "year": "2021",
+        "attack": "Conductă colonială",
+        "target": "Conducta de combustibil din SUA",
+        "impact": "Paralizie de combustibil de 6 zile",
+        "severity": "Ridicat"
+      },
+      "pdvsa": {
+        "year": "2025",
+        "attack": "PDVSA",
+        "target": "Rafinarea Venezuelei",
+        "impact": "Operațiuni de rafinare întrerupte",
+        "severity": "Mediu"
+      }
+    },
+    "analyzer": {
+      "title": "Analizor care bate CodeQL",
+      "subtitle": "Asigurare de viață",
+      "features": {
+        "quality": {
+          "title": "Calitate automată a codului",
+          "description": "Verificări ale structurii, stilului și celor mai bune practici reglate pentru codul critic de siguranță"
+        },
+        "vulnerability": {
+          "title": "Curățarea vulnerabilităților",
+          "description": "SQLi, XSS, bypass-ul de autentificare și dependențele nesigure au apărut instantaneu"
+        },
+        "secrets": {
+          "title": "Protejarea secretelor",
+          "description": "Chei, token-uri și acreditări blocate la momentul comiterii"
+        },
+        "config": {
+          "title": "Configurare întărire",
+          "description": "Politicile Docker/K8s, IAM și de rețea au fost scanate pentru fluaj de privilegii"
+        }
+      },
+      "beyondCodeQL": {
+        "title": "Găsește ce interogări statice lipsesc",
+        "subtitle": "Beyond CodeQL",
+        "description": "Găsește configurări greșite și pachete vulnerabile mai rapid decât CodeQL și oferă remedieri, nu doar alerte.",
+        "points": {
+          "packages": "Cunoaște graficele pachetelor și semnalizează dependențele riscante în câteva secunde.",
+          "config": "Spots configurează abaterea și fluajul privilegiilor dincolo de regulile statice.",
+          "patches": "Fiecare constatare vine cu un patch sugerat și proprietar."
+        }
+      },
+      "visualizer": {
+        "title": "Analizor de coduri în acțiune",
+        "subtitle": "Vizualizator",
+        "description": "Instantanee clare de la scanări recente, redate frumos în interiorul consolei on-prem.",
+        "privateWorkspace": "Numai spațiu de lucru privat",
+        "shots": {
+          "scanOverview": {
+            "title": "Prezentare generală a scanării",
+            "description": "Consultați problemele grupate în funcție de severitate înainte ca codul să părăsească rețeaua."
+          },
+          "misconfigurations": {
+            "title": "Detectarea configurărilor greșite",
+            "description": "Analizorul nostru de coduri bazat pe AI găsește chiar și configurații greșite în cod."
+          },
+          "inlineDiffs": {
+            "title": "Diferențe în linie",
+            "description": "Examinați corecțiile sugerate în conformitate cu contextul de securitate."
+          }
+        }
+      }
+    },
+    "industries": {
+      "title": "Construit pentru sectoare reglementate, cu impact ridicat",
+      "subtitle": "Unde ne desfășurăm",
+      "oilGas": {
+        "title": "Petrol și gaze",
+        "description": "Foraj, rafinare, controlul conductelor"
+      },
+      "energy": {
+        "title": "Energie",
+        "description": "Rețea, distribuție și EMS"
+      },
+      "nuclear": {
+        "title": "Energie nucleară",
+        "description": "Comenzile și siguranța reactorului"
+      },
+      "manufacturing": {
+        "title": "Producție",
+        "description": "ICS, OT și robotică"
+      },
+      "government": {
+        "title": "Guvern",
+        "description": "Ministere, apărare, agenții critice"
+      }
+    }
   }
 }

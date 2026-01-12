@@ -388,15 +388,113 @@
         "heading": "La fuite de DeepSeek a mis le code source et les invites sur l'internet ouvert",
         "description": "Gardez l'inférence et l'analyse sur site. Pas de sortie de modèles externes. Traces d'audit par défaut.",
         "seePlan": "Voir le plan de confinement"
+      },
+      "stuxnet": {
+        "attack": "Stuxnet",
+        "target": "Installation d'enrichissement de Natanz",
+        "impact": "Détruit ~1 000 centrifugeuses",
+        "severity": "Critique"
+      },
+      "blackEnergy": {
+        "attack": "BlackEnergy",
+        "target": "Réseau électrique ukrainien",
+        "impact": "230 000 clients privés d'électricité",
+        "severity": "Élevé"
+      },
+      "triton": {
+        "attack": "TRITON",
+        "target": "Usine pétrochimique saoudienne",
+        "impact": "Systèmes de sécurité désactivés",
+        "severity": "Critique"
+      },
+      "colonialPipeline": {
+        "attack": "Colonial Pipeline",
+        "target": "Pipeline de carburant américain",
+        "impact": "Paralysie du carburant pendant 6 jours",
+        "severity": "Élevé"
+      },
+      "pdvsa": {
+        "attack": "PDVSA",
+        "target": "Raffinage vénézuélien",
+        "impact": "Opérations de raffinerie perturbées",
+        "severity": "Moyen"
       }
     },
     "analyzer": {
       "title": "Analyseur qui surpasse CodeQL",
-      "subtitle": "Assurance en direct"
+      "subtitle": "Assurance en direct",
+      "features": {
+        "quality": {
+          "title": "Qualité automatique du code",
+          "description": "Vérifications de structure, de style et de bonnes pratiques adaptées au code critique pour la sécurité"
+        },
+        "vulnerability": {
+          "title": "Balayages de vulnérabilité",
+          "description": "SQLi, XSS, contournement d'authentification et dépendances non sécurisées détectées instantanément"
+        },
+        "secrets": {
+          "title": "Garde des secrets",
+          "description": "Clés, jetons et identifiants bloqués au moment du commit"
+        },
+        "config": {
+          "title": "Durcissement de la configuration",
+          "description": "Docker/K8s, IAM et politiques réseau analysées pour détecter l'escalade de privilèges"
+        }
+      },
+      "beyondCodeQL": {
+        "title": "Détecte ce que les requêtes statiques manquent",
+        "subtitle": "Au-delà de CodeQL",
+        "description": "Trouve les mauvaises configurations et les paquets vulnérables plus vite que CodeQL et propose des correctifs, pas seulement des alertes.",
+        "points": {
+          "packages": "Connaît les graphes de paquets et signale les dépendances risquées en quelques secondes.",
+          "config": "Détecte la dérive de configuration et l'escalade de privilèges — au-delà des règles statiques.",
+          "patches": "Chaque découverte est accompagnée d'un correctif suggéré et d'un responsable."
+        }
+      },
+      "visualizer": {
+        "title": "Analyseur de code en action",
+        "subtitle": "Visualiseur",
+        "description": "Instantanés nets d'analyses récentes, rendus magnifiquement dans la console sur site.",
+        "privateWorkspace": "Espace de travail privé uniquement",
+        "shots": {
+          "scanOverview": {
+            "title": "Vue d'ensemble de l'analyse",
+            "description": "Voir les problèmes regroupés par gravité avant que le code ne quitte votre réseau."
+          },
+          "misconfigurations": {
+            "title": "Détection des mauvaises configurations",
+            "description": "Notre analyseur de code alimenté par l'IA détecte même les mauvaises configurations dans le code."
+          },
+          "inlineDiffs": {
+            "title": "Différences en ligne",
+            "description": "Examinez les correctifs suggérés en ligne avec leur contexte de sécurité."
+          }
+        }
+      }
     },
     "industries": {
       "title": "Conçu pour les secteurs réglementés et à fort impact",
-      "subtitle": "Où nous déployons"
+      "subtitle": "Où nous déployons",
+      "oilGas": {
+        "title": "Pétrole et Gaz",
+        "description": "Forage, raffinage, contrôle des pipelines"
+      },
+      "energy": {
+        "title": "Énergie",
+        "description": "Réseau, distribution et EMS"
+      },
+      "nuclear": {
+        "title": "Nucléaire",
+        "description": "Contrôles des réacteurs et sécurité"
+      },
+      "manufacturing": {
+        "title": "Manufacture",
+        "description": "ICS, OT et robotique"
+      },
+      "government": {
+        "title": "Gouvernement",
+        "description": "Ministères, défense, agences critiques"
+      }
     }
   }
 }

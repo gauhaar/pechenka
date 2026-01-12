@@ -354,5 +354,152 @@
       "success": "성공률",
       "speed": "속도"
     }
+  },
+  "secureDevelopment": {
+    "hero": {
+      "badge": "SLNC 코드 · 보안 개발 환경",
+      "title": "안전한 개인 코드로 시스템 구축",
+      "description": "코드가 기업 네트워크를 벗어나지 않는 기업용 사설 개발 환경. 한편, 최신 AI 기반 기술 제공",
+      "requestSystem": "요청 시스템"
+    },
+    "components": {
+      "title": "모든 것이 내부에 있습니다.",
+      "subtitle": "3개의 구성 요소, 1개의 밀봉된 루프",
+      "description": "코드, 프롬프트 및 빌드가 네트워크를 떠나지 않습니다. SLNC 코드는 클라우드 제공 업체, 정부 팀 및 산업 공장에 대한 AI 도움말, 검토 및 전달을 비공개로 유지합니다.",
+      "sithub": {
+        "title": "Sithub 서버",
+        "tag": "로컬 버전 관리"
+      },
+      "llm": {
+        "title": "LLM 서버 (Qwen-Code)",
+        "tag": "온프레미스 인텔리전스"
+      },
+      "ide": {
+        "title": "로컬 코파일럿이 있는 IDE",
+        "tag": "커서 클래스 체험"
+      },
+      "staysOnPrem": "온프레미스를 유지합니다. 출구가 없습니다."
+    },
+    "timeline": {
+      "title": "격리되고 확인된 코드가 중요한 이유",
+      "subtitle": "최근 모닝콜",
+      "incident": {
+        "title": "심각한 사고 — 유출된 코드",
+        "heading": "DeepSeek 침해는 오픈 인터넷에 소스와 프롬프트를 넣습니다",
+        "description": "추론 및 스캔을 온프레미스로 유지하십시오. 외부 모델 출구가 없습니다. 감사 내역은 기본적으로 표시됩니다.",
+        "seePlan": "봉쇄 계획 보기"
+      },
+      "stuxnet": {
+        "year": "2010",
+        "attack": "스턱스넷",
+        "target": "Natanz 농축 시설",
+        "impact": "파괴된 원심 분리기 ~ 1,000개",
+        "severity": "중요"
+      },
+      "blackEnergy": {
+        "year": "2015",
+        "attack": "BlackEnergy",
+        "target": "우크라이나 전력망",
+        "impact": "23만 명의 고객이 동력을 잃었습니다",
+        "severity": "높음"
+      },
+      "triton": {
+        "year": "2017",
+        "attack": "트리톤",
+        "target": "사우디아라비아 석유화학 공장",
+        "impact": "안전 시스템 비활성화됨",
+        "severity": "중요"
+      },
+      "colonialPipeline": {
+        "year": "2021",
+        "attack": "콜로니얼 파이프라인",
+        "target": "미국 연료 파이프라인",
+        "impact": "6일간의 연료 마비",
+        "severity": "높음"
+      },
+      "pdvsa": {
+        "year": "2025",
+        "attack": "PDVSA",
+        "target": "베네수엘라 정제",
+        "impact": "정제소 운영 중단됨",
+        "severity": "중간"
+      }
+    },
+    "analyzer": {
+      "title": "CodeQL을 능가하는 분석기",
+      "subtitle": "Live assurance",
+      "features": {
+        "quality": {
+          "title": "자동 코드 품질",
+          "description": "안전에 중요한 코드를 위해 조정된 구조, 스타일 및 모범 사례 검사"
+        },
+        "vulnerability": {
+          "title": "취약점 스윕",
+          "description": "SQLi, XSS, 인증 우회 및 안전하지 않은 의존성이 즉시 나타났습니다."
+        },
+        "secrets": {
+          "title": "시크릿 가드",
+          "description": "커밋 시 키, 토큰 및 자격 증명이 차단됨"
+        },
+        "config": {
+          "title": "구성 경화",
+          "description": "Docker/K8s, IAM 및 네트워크 정책을 검색하여 권한 변동 검사"
+        }
+      },
+      "beyondCodeQL": {
+        "title": "누락된 정적 쿼리를 찾습니다",
+        "subtitle": "Beyond CodeQL",
+        "description": "CodeQL보다 빠르게 잘못된 구성과 취약한 패키지를 찾고 경고뿐만 아니라 수정 사항을 제공합니다.",
+        "points": {
+          "packages": "패키지 그래프를 파악하고 위험 종속성을 몇 초 만에 플래그합니다.",
+          "config": "스팟 구성 드리프트 및 권한 크립 - 정적 규칙을 넘어서.",
+          "patches": "각 발견에는 제안된 패치와 소유자가 함께 제공됩니다."
+        }
+      },
+      "visualizer": {
+        "title": "코드 분석기 사용 중",
+        "subtitle": "비주얼라이저",
+        "description": "온프레미스 콘솔에서 아름답게 렌더링된 최근 스캔의 선명한 스냅샷.",
+        "privateWorkspace": "비공개 업무 공간만 해당",
+        "shots": {
+          "scanOverview": {
+            "title": "스캔 개요",
+            "description": "코드가 네트워크를 떠나기 전에 심각도별로 그룹화된 문제를 확인하세요."
+          },
+          "misconfigurations": {
+            "title": "잘못된 구성 감지",
+            "description": "당사의 AI 기반 코드 분석기는 심지어 코드 내에서 잘못된 구성을 찾기도 합니다."
+          },
+          "inlineDiffs": {
+            "title": "INLINE DIFF",
+            "description": "제안된 패치를 보안 컨텍스트와 함께 검토합니다."
+          }
+        }
+      }
+    },
+    "industries": {
+      "title": "규제, 고영향 분야를 위한 설계",
+      "subtitle": "배포 위치",
+      "oilGas": {
+        "title": "석유 및 가스",
+        "description": "드릴링, 정제, 파이프라인 제어"
+      },
+      "energy": {
+        "title": "에너지",
+        "description": "그리드, 배포 및 EMS"
+      },
+      "nuclear": {
+        "title": "원자력",
+        "description": "원자로 제어 및 안전"
+      },
+      "manufacturing": {
+        "title": "제조업",
+        "description": "ICS, OT 및 로봇 공학"
+      },
+      "government": {
+        "title": "정부",
+        "description": "Ministries, defense, critical agencies"
+      }
+    }
   }
 }

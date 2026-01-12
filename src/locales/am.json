@@ -354,5 +354,152 @@
       "success": "ስኬት",
       "speed": "ፍጥነት"
     }
+  },
+  "secureDevelopment": {
+    "hero": {
+      "badge": "SLNC Code · ደህንነቱ የተጠበቀ የልማት አካባቢ",
+      "title": "ደህንነቱ የተጠበቀ እና ግላዊ ኮድ ያላቸውን ስርዓቶች ይገንቡ",
+      "description": "ለድርጅቶች ግላዊ የልማት አካባቢ፣ ኮድ ከድርጅታዊ ኔትወርክዎ ውጭ አይወጣም። በተመሳሳይ ጊዜ የቅርብ ጊዜ በAI የሚመራ ቴክኖሎጂ ያቀርባል",
+      "requestSystem": "ስርዓት ይጠይቁ"
+    },
+    "components": {
+      "title": "ሁሉም ነገር በውስጥ ይቆያል",
+      "subtitle": "ሶስት አካላት፣ አንድ የታሸገ ዑደት",
+      "description": "ኮድ፣ ፕሮምፕቶች እና ግንባታዎች ከኔትወርክዎ ውጭ አይወጡም። SLNC Code የAI እርዳታ፣ ግምገማዎች እና አቅርቦት ለደመና አቅራቢዎች፣ የመንግስት ቡድኖች እና የኢንዱስትሪ ፋብሪካዎች ግላዊ ያደርጋል።",
+      "sithub": {
+        "title": "Sithub አገልጋይ",
+        "tag": "አካባቢያዊ የተለዋጭ ቁጥጥር"
+      },
+      "llm": {
+        "title": "LLM አገልጋይ (Qwen-Code)",
+        "tag": "በቦታ የሚገኝ የማህበረሰብ አስተዋይነት"
+      },
+      "ide": {
+        "title": "IDE ከአካባቢያዊ Copilot ጋር",
+        "tag": "Cursor-ክፍል ተሞክሮ"
+      },
+      "staysOnPrem": "በቦታ ይቆያል። ምንም ውጪ ማምጣት የለም።"
+    },
+    "timeline": {
+      "title": "ለምን የተለየ ፣ የተፈተነ ኮድ አስፈላጊ ነው",
+      "subtitle": "የቅርብ ጊዜ ማስታወሻዎች",
+      "incident": {
+        "title": "ወሳኝ ክስተት — የተፈናቀለ ኮድ",
+        "heading": "DeepSeek ግልባጭ ምንጭ እና ፕሮምፕቶችን በክፍት ኢንተርኔት ላይ አስቀመጠ",
+        "description": "መደምደሚያ እና ስካን በቦታ ያቆዩ። ምንም ውጫዊ ሞዴል ማምጣት የለም። በነባሪ የኦዲት እርምጃዎች።",
+        "seePlan": "የክልል እቅድ ይመልከቱ"
+      },
+      "stuxnet": {
+        "year": "2010",
+        "attack": "Stuxnet",
+        "target": "የNatanz ማጠናከሪያ ተቋም",
+        "impact": "~1,000 ሴንትሪፉጅዎችን አጠፋ",
+        "severity": "ወሳኝ"
+      },
+      "blackEnergy": {
+        "year": "2015",
+        "attack": "BlackEnergy",
+        "target": "የዩክሬን ኃይል ኔትወርክ",
+        "impact": "230ሺ ደንበኞች ኃይል አጡ",
+        "severity": "ከፍተኛ"
+      },
+      "triton": {
+        "year": "2017",
+        "attack": "TRITON",
+        "target": "የሳውዲ ፔትሮኬሚካል ፋብሪካ",
+        "impact": "የደህንነት ስርዓቶች ተሰናክለዋል",
+        "severity": "ወሳኝ"
+      },
+      "colonialPipeline": {
+        "year": "2021",
+        "attack": "Colonial Pipeline",
+        "target": "የአሜሪካ ነዳጅ ፓይፕላይን",
+        "impact": "6-ቀን ነዳጅ ምንጭ መቋረጥ",
+        "severity": "ከፍተኛ"
+      },
+      "pdvsa": {
+        "year": "2025",
+        "attack": "PDVSA",
+        "target": "የቬንዙዌላ ማጥራት",
+        "impact": "የማጥራት ስራዎች ተሰናክለዋል",
+        "severity": "መካከለኛ"
+      }
+    },
+    "analyzer": {
+      "title": "CodeQLን የሚያሸንፍ ተንታኝ",
+      "subtitle": "ቀጥታ ዋስትና",
+      "features": {
+        "quality": {
+          "title": "ራስ-ሰር የኮድ ጥራት",
+          "description": "ለደህንነት-ወሳኝ ኮድ የተስተካከሉ መዋቅር፣ ዘይቤ እና ምርጥ ልምምድ ቼኮች"
+        },
+        "vulnerability": {
+          "title": "የችግር አካባቢ ምርመራዎች",
+          "description": "SQLi፣ XSS፣ ማረጋገጫ መዘላለፍ እና ደህንነት የሌላቸው ጥገኛዎች ወዲያውኑ ይታያሉ"
+        },
+        "secrets": {
+          "title": "ምስጢሮች ጠባቂ",
+          "description": "ቁልፎች፣ ቶከኖች እና ማረጋገጫዎች በcommit ጊዜ ይገደባሉ"
+        },
+        "config": {
+          "title": "ኮንፍግ ማጠናከር",
+          "description": "Docker/K8s፣ IAM፣ እና ኔትወርክ ፖሊሲዎች ለመብት መጨመር ይፈተሻሉ"
+        }
+      },
+      "beyondCodeQL": {
+        "title": "ስታቲክ ጥያቄዎች የሚተዉትን ያገኛል",
+        "subtitle": "ከCodeQL በላይ",
+        "description": "ከCodeQL በበለጠ ፈጣን የሆኑ የተሳሳቱ ኮንፍግዎችን እና ችግር አካባቢ ፓኬጆችን ያገኛል እና ማስተካከያዎችን ያቀርባል፣ ማስጠንቀቂያዎችን ብቻ አይደለም።",
+        "points": {
+          "packages": "የፓኬጅ ግራፎችን ያውቃል እና በሰከንዶች ውስጥ አደገኛ ጥገኛዎችን ያሳያል።",
+          "config": "የኮንፍግ መንቀሳቀስ እና የመብት መጨመርን ያገኛል—ከስታቲክ ህጎች በላይ።",
+          "patches": "እያንዳንዱ ግኝት ከሚመከር ማስተካከያ እና ባለቤት ጋር ይመጣል።"
+        }
+      },
+      "visualizer": {
+        "title": "የኮድ ተንታኝ በስራ ላይ",
+        "subtitle": "ታይታ",
+        "description": "ከቅርብ ስካኖች ጥራት ያላቸው እትሞች፣ በቦታ ኮንሶል ውስጥ በሚገባ ይቀርጻሉ።",
+        "privateWorkspace": "ግላዊ የስራ ቦታ ብቻ",
+        "shots": {
+          "scanOverview": {
+            "title": "የስካን አጠቃላይ እይታ",
+            "description": "ኮድ ከኔትወርክዎ ከመውጣቱ በፊት በአደጋ ደረጃ የተቧደኑ ችግሮችን ይመልከቱ።"
+          },
+          "misconfigurations": {
+            "title": "የተሳሳቱ ኮንፍግዎች መገኘት",
+            "description": "የእኛ በAI የሚመራ የኮድ ተንታኝ በኮድ ውስጥ የተሳሳቱ ኮንፍግዎችን እንኳን ያገኛል።"
+          },
+          "inlineDiffs": {
+            "title": "በመስመር ላይ ልዩነቶች",
+            "description": "ማስተካከያዎችን ከደህንነት አውድ ጋር በመስመር ላይ ይገምግሙ።"
+          }
+        }
+      }
+    },
+    "industries": {
+      "title": "ለተቆጣጠሩ፣ ከፍተኛ ተጽዕኖ ያላቸው ዘርፎች የተገነባ",
+      "subtitle": "የምንዘረጋበት ቦታ",
+      "oilGas": {
+        "title": "ዘይት እና ጋዝ",
+        "description": "መቆፈር፣ ማጥራት፣ ፓይፕላይን ቁጥጥር"
+      },
+      "energy": {
+        "title": "ኃይል",
+        "description": "ግሪድ፣ ስርጭት፣ እና EMS"
+      },
+      "nuclear": {
+        "title": "ኑክሌር",
+        "description": "ሪአክተር ቁጥጥሮች እና ደህንነት"
+      },
+      "manufacturing": {
+        "title": "ማምረቻ",
+        "description": "ICS፣ OT፣ እና ሮቦቲክስ"
+      },
+      "government": {
+        "title": "መንግስት",
+        "description": "ሚኒስቴሮች፣ መከላከያ፣ ወሳኝ አገልግሎቶች"
+      }
+    }
   }
 }

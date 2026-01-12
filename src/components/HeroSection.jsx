@@ -93,7 +93,7 @@ const HeroSection = ({ onOpenModal }) => {
               variants={item}
               className="text-white/80 text-lg sm:text-xl lg:text-2xl leading-relaxed max-w-xl"
             >
-              {t("heroSection.description", "We build production-ready AI agents and custom software for {country} and the {market}.", {
+              {t("heroSection.description", "We build production-ready AI agents and custom software.", {
                 country: t("heroSection.country", "Kazakhstan"),
                 market: t("heroSection.market", "global market")
               })}

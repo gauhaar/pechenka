@@ -321,5 +321,152 @@
       "cookies": "นโยบายคุกกี้"
     },
     "copyright": "© {year} Silence AI. สงวนลิขสิทธิ์ทั้งหมด"
+  },
+  "secureDevelopment": {
+    "hero": {
+      "badge": "SLNC Code · Secure Development Environment",
+      "title": "Build systems with secure and private code",
+      "description": "Private development environment for enterprises, where code never leaves your corporate network. Meanwhile offering the latest AI-powered technology",
+      "requestSystem": "Request System"
+    },
+    "components": {
+      "title": "Everything stays inside",
+      "subtitle": "Three components, one sealed loop",
+      "description": "Code, prompts, and builds never leave your network. SLNC Code keeps AI help, reviews, and delivery private for cloud providers, government teams, and industrial plants.",
+      "sithub": {
+        "title": "Sithub Server",
+        "tag": "Local version control"
+      },
+      "llm": {
+        "title": "LLM Server (Qwen-Code)",
+        "tag": "On-prem intelligence"
+      },
+      "ide": {
+        "title": "IDE with Local Copilot",
+        "tag": "Cursor-class experience"
+      },
+      "staysOnPrem": "Stays on-prem. No egress."
+    },
+    "timeline": {
+      "title": "Why isolated, checked code matters",
+      "subtitle": "Recent wake-up calls",
+      "incident": {
+        "title": "Critical incident — leaked code",
+        "heading": "DeepSeek breach put source and prompts on the open internet",
+        "description": "Keep inference and scanning on-prem. No external model egress. Audit trails by default.",
+        "seePlan": "See containment plan"
+      },
+      "stuxnet": {
+        "year": "2010",
+        "attack": "Stuxnet",
+        "target": "Natanz enrichment facility",
+        "impact": "Destroyed ~1,000 centrifuges",
+        "severity": "Critical"
+      },
+      "blackEnergy": {
+        "year": "2015",
+        "attack": "BlackEnergy",
+        "target": "Ukraine power grid",
+        "impact": "230k customers lost power",
+        "severity": "High"
+      },
+      "triton": {
+        "year": "2017",
+        "attack": "TRITON",
+        "target": "Saudi petrochemical plant",
+        "impact": "Safety systems disabled",
+        "severity": "Critical"
+      },
+      "colonialPipeline": {
+        "year": "2021",
+        "attack": "Colonial Pipeline",
+        "target": "US fuel pipeline",
+        "impact": "6-day fuel paralysis",
+        "severity": "High"
+      },
+      "pdvsa": {
+        "year": "2025",
+        "attack": "PDVSA",
+        "target": "Venezuela refining",
+        "impact": "Refinery operations disrupted",
+        "severity": "Medium"
+      }
+    },
+    "analyzer": {
+      "title": "Analyzer that beats CodeQL",
+      "subtitle": "Live assurance",
+      "features": {
+        "quality": {
+          "title": "Automatic code quality",
+          "description": "Structure, style, and best-practice checks tuned for safety-critical code"
+        },
+        "vulnerability": {
+          "title": "Vulnerability sweeps",
+          "description": "SQLi, XSS, auth bypass, and insecure dependencies surfaced instantly"
+        },
+        "secrets": {
+          "title": "Secrets guard",
+          "description": "Keys, tokens, and credentials blocked at commit time"
+        },
+        "config": {
+          "title": "Config hardening",
+          "description": "Docker/K8s, IAM, and network policies scanned for privilege creep"
+        }
+      },
+      "beyondCodeQL": {
+        "title": "Finds what static queries miss",
+        "subtitle": "Beyond CodeQL",
+        "description": "Finds misconfigs and vulnerable packages faster than CodeQL and offers fixes, not just alerts.",
+        "points": {
+          "packages": "Knows package graphs and flags risky dependencies in seconds.",
+          "config": "Spots config drift and privilege creep—beyond static rules.",
+          "patches": "Each finding comes with a suggested patch and owner."
+        }
+      },
+      "visualizer": {
+        "title": "Code analyzer in action",
+        "subtitle": "Visualizer",
+        "description": "Crisp snapshots from recent scans, rendered beautifully inside the on-prem console.",
+        "privateWorkspace": "Private workspace only",
+        "shots": {
+          "scanOverview": {
+            "title": "Scan overview",
+            "description": "See issues grouped by severity before code leaves your network."
+          },
+          "misconfigurations": {
+            "title": "Detection of misconfigurations",
+            "description": "Our AI-powered code analyzer even finds misconfigurations within the code."
+          },
+          "inlineDiffs": {
+            "title": "Inline diffs",
+            "description": "Review suggested patches inline with security context."
+          }
+        }
+      }
+    },
+    "industries": {
+      "title": "Built for regulated, high-impact sectors",
+      "subtitle": "Where we deploy",
+      "oilGas": {
+        "title": "Oil & Gas",
+        "description": "Drilling, refining, pipeline control"
+      },
+      "energy": {
+        "title": "Energy",
+        "description": "Grid, distribution, and EMS"
+      },
+      "nuclear": {
+        "title": "Nuclear",
+        "description": "Reactor controls and safety"
+      },
+      "manufacturing": {
+        "title": "Manufacturing",
+        "description": "ICS, OT, and robotics"
+      },
+      "government": {
+        "title": "Government",
+        "description": "Ministries, defense, critical agencies"
+      }
+    }
   }
 }

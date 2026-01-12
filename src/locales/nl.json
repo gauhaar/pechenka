@@ -354,5 +354,152 @@
       "success": "Succes",
       "speed": "Snelheid"
     }
+  },
+  "secureDevelopment": {
+    "hero": {
+      "badge": "SLNC-code · Veilige ontwikkelomgeving",
+      "title": "Systemen bouwen met veilige en private code",
+      "description": "Private ontwikkelomgeving voor ondernemingen, waar code nooit uw bedrijfsnetwerk verlaat. Ondertussen het aanbieden van de nieuwste AI-aangedreven technologie",
+      "requestSystem": "Aanvraagsysteem"
+    },
+    "components": {
+      "title": "Alles blijft binnen",
+      "subtitle": "Drie componenten, één verzegelde lus",
+      "description": "Code, prompts en builds verlaten nooit uw netwerk. SLNC-code houdt AI-hulp, beoordelingen en levering privé voor cloudproviders, overheidsteams en industriële fabrieken.",
+      "sithub": {
+        "title": "Sithub-server",
+        "tag": "Lokaal versiebeheer"
+      },
+      "llm": {
+        "title": "LLM-server (Qwen-code)",
+        "tag": "Inlichtingen op locatie"
+      },
+      "ide": {
+        "title": "IDE met lokale copiloot",
+        "tag": "Cursor-klasse ervaring"
+      },
+      "staysOnPrem": "Blijft op locatie. Geen uitgang."
+    },
+    "timeline": {
+      "title": "Waarom geïsoleerde, gecontroleerde code ertoe doet",
+      "subtitle": "Recente wake-up calls",
+      "incident": {
+        "title": "Kritiek incident — gelekte code",
+        "heading": "DeepSeek-inbreuk zet bron en prompts op het open internet",
+        "description": "Houd inferentie en scannen op locatie. Geen externe modeluitgang. Standaard audittrajecten.",
+        "seePlan": "Zie inperkingsplan"
+      },
+      "stuxnet": {
+        "year": "2010",
+        "attack": "Stuxnet",
+        "target": "Natanz verrijkingsinstallatie",
+        "impact": "Vernietigde ~1.000 centrifuges",
+        "severity": "Kritisch"
+      },
+      "blackEnergy": {
+        "year": "2015",
+        "attack": "BlackEnergy",
+        "target": "Oekraïne elektriciteitsnet",
+        "impact": "230.000 klanten verloren stroom",
+        "severity": "Hoog"
+      },
+      "triton": {
+        "year": "2017",
+        "attack": "TRITON",
+        "target": "Saoedische petrochemische fabriek",
+        "impact": "Veiligheidssystemen uitgeschakeld",
+        "severity": "Kritisch"
+      },
+      "colonialPipeline": {
+        "year": "2021",
+        "attack": "Koloniale pijplijn",
+        "target": "Amerikaanse brandstofleiding",
+        "impact": "6-daagse brandstofverlamming",
+        "severity": "Hoog"
+      },
+      "pdvsa": {
+        "year": "2025",
+        "attack": "PDVSA",
+        "target": "Venezuela raffinage",
+        "impact": "Raffinaderijactiviteiten verstoord",
+        "severity": "Gemiddeld"
+      }
+    },
+    "analyzer": {
+      "title": "Analyzer die CodeQL verslaat",
+      "subtitle": "Live assurance",
+      "features": {
+        "quality": {
+          "title": "Automatische codekwaliteit",
+          "description": "Structuur-, stijl- en best practice-controles afgestemd op veiligheidskritische code"
+        },
+        "vulnerability": {
+          "title": "Kwetsbaarheids sweeps",
+          "description": "SQLi, XSS, AUTH-bypass en onveilige afhankelijkheden doken onmiddellijk op"
+        },
+        "secrets": {
+          "title": "Geheimen bewaker",
+          "description": "Sleutels, tokens en inloggegevens geblokkeerd tijdens het vastleggen"
+        },
+        "config": {
+          "title": "Configureer verharding",
+          "description": "Docker/K8s, IAM en netwerkbeleid gescand op privilege creep"
+        }
+      },
+      "beyondCodeQL": {
+        "title": "Vindt wat statische zoekopdrachten missen",
+        "subtitle": "Beyond CodeQL",
+        "description": "Vindt misconfigs en kwetsbare pakketten sneller dan CodeQL en biedt oplossingen, niet alleen waarschuwingen.",
+        "points": {
+          "packages": "Kent pakketgrafieken en markeert risicovolle afhankelijkheden in seconden.",
+          "config": "Spots config drift en privilege creep—beyond statische regels.",
+          "patches": "Elke bevinding wordt geleverd met een voorgestelde patch en eigenaar."
+        }
+      },
+      "visualizer": {
+        "title": "Code-analysator in actie",
+        "subtitle": "Visualizer",
+        "description": "Scherpe snapshots van recente scans, prachtig weergegeven in de on-prem console.",
+        "privateWorkspace": "Alleen privéwerkruimte",
+        "shots": {
+          "scanOverview": {
+            "title": "Scanoverzicht",
+            "description": "Zie problemen gegroepeerd op ernst voordat de code uw netwerk verlaat."
+          },
+          "misconfigurations": {
+            "title": "Detectie van verkeerde configuraties",
+            "description": "Onze AI-aangedreven code-analysator vindt zelfs misconfiguraties in de code."
+          },
+          "inlineDiffs": {
+            "title": "Inline diffs",
+            "description": "Bekijk voorgestelde patches in lijn met de beveiligingscontext."
+          }
+        }
+      }
+    },
+    "industries": {
+      "title": "Gebouwd voor gereguleerde, impactvolle sectoren",
+      "subtitle": "Waar we inzetten",
+      "oilGas": {
+        "title": "Olie en gas",
+        "description": "Boren, raffineren, leidingcontrole"
+      },
+      "energy": {
+        "title": "Energie",
+        "description": "Net, distributie en EMS"
+      },
+      "nuclear": {
+        "title": "Nucleair",
+        "description": "Reactorbesturing en veiligheid"
+      },
+      "manufacturing": {
+        "title": "Productie",
+        "description": "ICS, OT en robotica"
+      },
+      "government": {
+        "title": "Overheid",
+        "description": "Ministeries, defensie, kritische instanties"
+      }
+    }
   }
 }

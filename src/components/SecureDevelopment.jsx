@@ -17,11 +17,41 @@ export default function SecureDevelopmentPage() {
     const closeModal = () => setIsModalOpen(false);
 
     const impactTimeline = [
-        { year: "2010", attack: "Stuxnet", target: "Natanz enrichment facility", impact: "Destroyed ~1,000 centrifuges", severity: "Critical" },
-        { year: "2015", attack: "BlackEnergy", target: "Ukraine power grid", impact: "230k customers lost power", severity: "High" },
-        { year: "2017", attack: "TRITON", target: "Saudi petrochemical plant", impact: "Safety systems disabled", severity: "Critical" },
-        { year: "2021", attack: "Colonial Pipeline", target: "US fuel pipeline", impact: "6-day fuel paralysis", severity: "High" },
-        { year: "2025", attack: "PDVSA", target: "Venezuela refining", impact: "Refinery operations disrupted", severity: "Medium" },
+        { 
+            year: "2010", 
+            attack: t("secureDevelopment.timeline.stuxnet.attack", "Stuxnet"), 
+            target: t("secureDevelopment.timeline.stuxnet.target", "Natanz enrichment facility"), 
+            impact: t("secureDevelopment.timeline.stuxnet.impact", "Destroyed ~1,000 centrifuges"), 
+            severity: t("secureDevelopment.timeline.stuxnet.severity", "Critical") 
+        },
+        { 
+            year: "2015", 
+            attack: t("secureDevelopment.timeline.blackEnergy.attack", "BlackEnergy"), 
+            target: t("secureDevelopment.timeline.blackEnergy.target", "Ukraine power grid"), 
+            impact: t("secureDevelopment.timeline.blackEnergy.impact", "230k customers lost power"), 
+            severity: t("secureDevelopment.timeline.blackEnergy.severity", "High") 
+        },
+        { 
+            year: "2017", 
+            attack: t("secureDevelopment.timeline.triton.attack", "TRITON"), 
+            target: t("secureDevelopment.timeline.triton.target", "Saudi petrochemical plant"), 
+            impact: t("secureDevelopment.timeline.triton.impact", "Safety systems disabled"), 
+            severity: t("secureDevelopment.timeline.triton.severity", "Critical") 
+        },
+        { 
+            year: "2021", 
+            attack: t("secureDevelopment.timeline.colonialPipeline.attack", "Colonial Pipeline"), 
+            target: t("secureDevelopment.timeline.colonialPipeline.target", "US fuel pipeline"), 
+            impact: t("secureDevelopment.timeline.colonialPipeline.impact", "6-day fuel paralysis"), 
+            severity: t("secureDevelopment.timeline.colonialPipeline.severity", "High") 
+        },
+        { 
+            year: "2025", 
+            attack: t("secureDevelopment.timeline.pdvsa.attack", "PDVSA"), 
+            target: t("secureDevelopment.timeline.pdvsa.target", "Venezuela refining"), 
+            impact: t("secureDevelopment.timeline.pdvsa.impact", "Refinery operations disrupted"), 
+            severity: t("secureDevelopment.timeline.pdvsa.severity", "Medium") 
+        },
     ];
 
     const severityStyles = {
@@ -243,10 +273,26 @@ export default function SecureDevelopmentPage() {
 
                     <div className="grid md:grid-cols-2 gap-5">
                         {[
-                            { title: "Automatic code quality", desc: "Structure, style, and best-practice checks tuned for safety-critical code", icon: "✨" },
-                            { title: "Vulnerability sweeps", desc: "SQLi, XSS, auth bypass, and insecure dependencies surfaced instantly", icon: "🛡️" },
-                            { title: "Secrets guard", desc: "Keys, tokens, and credentials blocked at commit time", icon: "🔑" },
-                            { title: "Config hardening", desc: "Docker/K8s, IAM, and network policies scanned for privilege creep", icon: "⚙️" },
+                            { 
+                                title: t("secureDevelopment.analyzer.features.quality.title", "Automatic code quality"), 
+                                desc: t("secureDevelopment.analyzer.features.quality.description", "Structure, style, and best-practice checks tuned for safety-critical code"), 
+                                icon: "✨" 
+                            },
+                            { 
+                                title: t("secureDevelopment.analyzer.features.vulnerability.title", "Vulnerability sweeps"), 
+                                desc: t("secureDevelopment.analyzer.features.vulnerability.description", "SQLi, XSS, auth bypass, and insecure dependencies surfaced instantly"), 
+                                icon: "🛡️" 
+                            },
+                            { 
+                                title: t("secureDevelopment.analyzer.features.secrets.title", "Secrets guard"), 
+                                desc: t("secureDevelopment.analyzer.features.secrets.description", "Keys, tokens, and credentials blocked at commit time"), 
+                                icon: "🔑" 
+                            },
+                            { 
+                                title: t("secureDevelopment.analyzer.features.config.title", "Config hardening"), 
+                                desc: t("secureDevelopment.analyzer.features.config.description", "Docker/K8s, IAM, and network policies scanned for privilege creep"), 
+                                icon: "⚙️" 
+                            },
                         ].map((item, idx) => (
                             <motion.div
                                 key={item.title}
@@ -272,24 +318,24 @@ export default function SecureDevelopmentPage() {
                         <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-emerald-500/8 to-transparent" />
                         <div className="relative grid gap-4 md:grid-cols-3 p-5">
                             <div className="md:col-span-2 space-y-2">
-                                <p className="text-xs uppercase tracking-[0.2em] text-slate-300">Beyond CodeQL</p>
-                                <h3 className="text-xl font-bold text-white">Finds what static queries miss</h3>
+                                <p className="text-xs uppercase tracking-[0.2em] text-slate-300">{t("secureDevelopment.analyzer.beyondCodeQL.subtitle", "Beyond CodeQL")}</p>
+                                <h3 className="text-xl font-bold text-white">{t("secureDevelopment.analyzer.beyondCodeQL.title", "Finds what static queries miss")}</h3>
                                 <p className="text-sm text-slate-200 leading-relaxed">
-                                    Finds misconfigs and vulnerable packages faster than CodeQL and offers fixes, not just alerts.
+                                    {t("secureDevelopment.analyzer.beyondCodeQL.description", "Finds misconfigs and vulnerable packages faster than CodeQL and offers fixes, not just alerts.")}
                                 </p>
                             </div>
                             <div className="space-y-2 text-sm text-slate-200">
                                 <div className="flex items-start gap-2">
                                     <span className="mt-1 h-2 w-2 rounded-full bg-emerald-400" />
-                                    <p>Knows package graphs and flags risky dependencies in seconds.</p>
+                                    <p>{t("secureDevelopment.analyzer.beyondCodeQL.points.packages", "Knows package graphs and flags risky dependencies in seconds.")}</p>
                                 </div>
                                 <div className="flex items-start gap-2">
                                     <span className="mt-1 h-2 w-2 rounded-full bg-sky-400" />
-                                    <p>Spots config drift and privilege creep—beyond static rules.</p>
+                                    <p>{t("secureDevelopment.analyzer.beyondCodeQL.points.config", "Spots config drift and privilege creep—beyond static rules.")}</p>
                                 </div>
                                 <div className="flex items-start gap-2">
                                     <span className="mt-1 h-2 w-2 rounded-full bg-amber-400" />
-                                    <p>Each finding comes with a suggested patch and owner.</p>
+                                    <p>{t("secureDevelopment.analyzer.beyondCodeQL.points.patches", "Each finding comes with a suggested patch and owner.")}</p>
                                 </div>
                             </div>
                         </div>
@@ -301,39 +347,55 @@ export default function SecureDevelopmentPage() {
 
                         <div className="flex flex-wrap items-center justify-between gap-4 relative">
                             <div className="space-y-1">
-                                <p className="text-xs uppercase tracking-[0.2em] text-slate-400">Visualizer</p>
-                                <h3 className="text-2xl font-bold text-white">Code analyzer in action</h3>
-                                <p className="text-sm text-slate-300">Crisp snapshots from recent scans, rendered beautifully inside the on-prem console.</p>
+                                <p className="text-xs uppercase tracking-[0.2em] text-slate-400">{t("secureDevelopment.analyzer.visualizer.subtitle", "Visualizer")}</p>
+                                <h3 className="text-2xl font-bold text-white">{t("secureDevelopment.analyzer.visualizer.title", "Code analyzer in action")}</h3>
+                                <p className="text-sm text-slate-300">{t("secureDevelopment.analyzer.visualizer.description", "Crisp snapshots from recent scans, rendered beautifully inside the on-prem console.")}</p>
                             </div>
-                            <span className="rounded-full bg-white/5 px-3 py-1 text-xs font-semibold text-slate-300 border border-white/10">Private workspace only</span>
+                            <span className="rounded-full bg-white/5 px-3 py-1 text-xs font-semibold text-slate-300 border border-white/10">
+                                {t("secureDevelopment.analyzer.visualizer.privateWorkspace", "Private workspace only")}
+                            </span>
                         </div>
 
                         <div className="relative mt-8 grid gap-5 md:grid-cols-3">
-                            {analyzerShots.map((shot, idx) => (
-                                <div
-                                    key={shot.src}
-                                    className="group overflow-hidden rounded-2xl border border-white/10 bg-slate-950/60 shadow-xl backdrop-blur-sm"
-                                    style={{ boxShadow: "0 20px 50px -28px rgba(15,23,42,0.9)" }}
-                                >
-                                    <div className="relative aspect-[4/3] overflow-hidden">
-                                        <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-white/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                                        <img
-                                            src={shot.src}
-                                            alt={shot.title}
-                                            className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                                            loading="lazy"
-                                        />
-                                    </div>
-                                    <div className="p-4 space-y-1">
-                                        <div className="flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-slate-400">
-                                            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-                                            Frame {idx + 1}
+                            {analyzerShots.map((shot, idx) => {
+                                let titleKey = "";
+                                let descKey = "";
+                                if (shot.title === "Scan overview") {
+                                    titleKey = "secureDevelopment.analyzer.visualizer.shots.scanOverview.title";
+                                    descKey = "secureDevelopment.analyzer.visualizer.shots.scanOverview.description";
+                                } else if (shot.title === "Detection of misconfigurations") {
+                                    titleKey = "secureDevelopment.analyzer.visualizer.shots.misconfigurations.title";
+                                    descKey = "secureDevelopment.analyzer.visualizer.shots.misconfigurations.description";
+                                } else if (shot.title === "Inline diffs") {
+                                    titleKey = "secureDevelopment.analyzer.visualizer.shots.inlineDiffs.title";
+                                    descKey = "secureDevelopment.analyzer.visualizer.shots.inlineDiffs.description";
+                                }
+                                return (
+                                    <div
+                                        key={shot.src}
+                                        className="group overflow-hidden rounded-2xl border border-white/10 bg-slate-950/60 shadow-xl backdrop-blur-sm"
+                                        style={{ boxShadow: "0 20px 50px -28px rgba(15,23,42,0.9)" }}
+                                    >
+                                        <div className="relative aspect-[4/3] overflow-hidden">
+                                            <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-white/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                            <img
+                                                src={shot.src}
+                                                alt={t(titleKey, shot.title)}
+                                                className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                                                loading="lazy"
+                                            />
                                         </div>
-                                        <h4 className="text-lg font-semibold text-white">{shot.title}</h4>
-                                        <p className="text-sm text-slate-300 leading-relaxed">{shot.desc}</p>
+                                        <div className="p-4 space-y-1">
+                                            <div className="flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-slate-400">
+                                                <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                                                Frame {idx + 1}
+                                            </div>
+                                            <h4 className="text-lg font-semibold text-white">{t(titleKey, shot.title)}</h4>
+                                            <p className="text-sm text-slate-300 leading-relaxed">{t(descKey, shot.desc)}</p>
+                                        </div>
                                     </div>
-                                </div>
-                            ))}
+                                );
+                            })}
                         </div>
                     </div>
                 </section>
@@ -351,7 +413,33 @@ export default function SecureDevelopmentPage() {
                         </div>
 
                     <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                        {[{ icon: "🛢️", title: "Oil & Gas", text: "Drilling, refining, pipeline control" }, { icon: "⚡", title: "Energy", text: "Grid, distribution, and EMS" }, { icon: "⚛️", title: "Nuclear", text: "Reactor controls and safety" }, { icon: "🏭", title: "Manufacturing", text: "ICS, OT, and robotics" }, { icon: "🏛️", title: "Government", text: "Ministries, defense, critical agencies" }].map((item) => (
+                        {[
+                            { 
+                                icon: "🛢️", 
+                                title: t("secureDevelopment.industries.oilGas.title", "Oil & Gas"), 
+                                text: t("secureDevelopment.industries.oilGas.description", "Drilling, refining, pipeline control") 
+                            }, 
+                            { 
+                                icon: "⚡", 
+                                title: t("secureDevelopment.industries.energy.title", "Energy"), 
+                                text: t("secureDevelopment.industries.energy.description", "Grid, distribution, and EMS") 
+                            }, 
+                            { 
+                                icon: "⚛️", 
+                                title: t("secureDevelopment.industries.nuclear.title", "Nuclear"), 
+                                text: t("secureDevelopment.industries.nuclear.description", "Reactor controls and safety") 
+                            }, 
+                            { 
+                                icon: "🏭", 
+                                title: t("secureDevelopment.industries.manufacturing.title", "Manufacturing"), 
+                                text: t("secureDevelopment.industries.manufacturing.description", "ICS, OT, and robotics") 
+                            }, 
+                            { 
+                                icon: "🏛️", 
+                                title: t("secureDevelopment.industries.government.title", "Government"), 
+                                text: t("secureDevelopment.industries.government.description", "Ministries, defense, critical agencies") 
+                            }
+                        ].map((item) => (
                             <motion.div key={item.title} {...cardHover}>
                                 <EdgeGlowCard className="h-full">
                                     <div className="p-6 text-center space-y-2">
