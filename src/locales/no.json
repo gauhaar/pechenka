@@ -1,16 +1,30 @@
 {
   "languageSelector": {
     "triggerLabel": "Velg språk",
-    "menuLabel": "Velg et språk"
+    "menuLabel": "Velg et språk",
+    "searchLabel": "Search languages",
+    "searchPlaceholder": "Search by name or native script",
+    "searchResults": "Search results",
+    "noMatches": "No languages match your search.",
+    "popular": "Most popular",
+    "allLanguages": "All languages"
   },
   "header": {
     "nav": {
       "main": "Hjem",
       "mail": "E-post",
       "affiliate": "Partnerprogram",
-      "instructions": "Instruksjoner"
+      "instructions": "Instruksjoner",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC Code",
+      "developerServices": "Developer Services"
     },
-    "login": "Logg inn"
+    "login": "Logg inn",
+    "cta": {
+      "contact": "Contact",
+      "download": "Download",
+      "requestDemo": "Request Demo"
+    }
   },
   "affiliate": {
     "hero": {
@@ -95,6 +109,60 @@
       "statistics": {
         "question": "Når ser jeg statistikken for henvisningene mine?",
         "answer": "Så snart en bruker registrerer seg med din promokode eller lenke, vises e-posten og belønningen i dashbordet ditt."
+      }
+    },
+    "termsAff": {
+      "label": "Affiliate Program",
+      "title": "Affiliate Terms of Service",
+      "notice": "This policy is available only in English",
+      "intro": "These terms describe how rewards are issued and paid to partners participating in the Silence AI affiliate program.",
+      "meta": {
+        "effective": "Effective date: 10 November 2024",
+        "lastUpdated": "Last updated: 10 November 2024"
+      },
+      "sections": {
+        "overview": {
+          "title": "1. Program Overview",
+          "body1": "1.1 Agreement Scope: These Affiliate Terms of Service (\"Terms\") govern your participation in the Silence AI affiliate program operated by Silence AI LLC (\"Silence AI,\" \"we,\" \"us,\" or \"our\"). These Terms apply to you, the individual or entity enrolling as an affiliate partner (\"you\" or \"your\"), and, where applicable, your employer, principal, or organization if you act on their behalf.",
+          "body2": "1.2 Program Summary: Under this program, qualified partners earn commission-based rewards when referred customers purchase or top up the AI-SOC 1 product. Participation in the affiliate program also requires compliance with the general Silence AI Terms of Service."
+        },
+        "eligibility": {
+          "title": "2. Partner Eligibility",
+          "item1": "You must maintain an active Silence AI affiliate account with accurate business and payment details.",
+          "item2": "Referrals must complete registration through your issued link or promo code.",
+          "item3": "Accounts found to be fraudulent, self-referred, or in breach of applicable law are not eligible for rewards."
+        },
+        "commission": {
+          "title": "3. Commission Structure",
+          "body1": "You earn a 10% reward on every balance top-up completed by an account registered through your invitation.",
+          "body2": "Commission is calculated from the net top-up amount after payment processing fees are deducted."
+        },
+        "rewardPosting": {
+          "title": "4. Reward Posting",
+          "body1": "Rewards post to your partner balance within one minute after the transaction successfully clears. There is no manual approval queue.",
+          "body2": "Notifications appear in your affiliate dashboard alongside the customer identifier and top-up amount."
+        },
+        "withdrawals": {
+          "title": "5. Withdrawals",
+          "body1": "Withdrawal requests are processed within two business days and paid out using the settlement method on file.",
+          "body2": "Minimum withdrawal thresholds and supported payout networks are published inside the affiliate dashboard."
+        },
+        "productScope": {
+          "title": "6. Product Scope",
+          "body1": "Rewards are only provided for the AI-SOC 1 product. Other Silence AI services are excluded from the affiliate program unless explicitly stated otherwise in writing.",
+          "body2": "If additional products become eligible, Silence AI will publish an updated list inside these terms."
+        },
+        "compliance": {
+          "title": "7. Partner Conduct & Compliance",
+          "item1": "Partners must represent Silence AI accurately and avoid misleading claims about features or pricing.",
+          "item2": "Marketing communications must comply with applicable anti-spam, privacy, and advertising regulations.",
+          "item3": "Silence AI may suspend or terminate accounts that violate these obligations or harm the brand."
+        },
+        "changes": {
+          "title": "8. Changes & Contact",
+          "body1": "Silence AI may update these affiliate terms to reflect changes in the program or applicable law. Updated versions take effect upon publication on this page.",
+          "body2": "Questions about the affiliate program can be sent to info@silenceai.net."
+        }
       }
     }
   },
@@ -216,7 +284,46 @@
           "reports": "Enkle og forståelige sikkerhetsrapporter",
           "intelligence": "Intelligensrapport"
         }
+      },
+      "basic": {
+        "name": "Basic",
+        "features": {
+          "fix": "Critical Bug Fixes (48h SLA)",
+          "updates": "Monthly Updates",
+          "audit": "Quarterly Security Audits",
+          "manager": "Dedicated Manager"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Most Popular",
+        "features": {
+          "fix": "Critical Bug Fixes (24h SLA)",
+          "updates": "10h Monthly Updates",
+          "audit": "Monthly Security Audits",
+          "manager": "Dedicated Manager"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "badge": "Best Value",
+        "features": {
+          "fix": "Critical Bug Fixes (4h SLA)",
+          "updates": "Unlimited Updates + Roadmap",
+          "audit": "Weekly Audits + Backups",
+          "manager": "Dedicated Manager"
+        }
       }
+    },
+    "subtitle": "Mobile-first plans built to scale with your product.",
+    "percentMaintenance": "{percent}% yearly maintenance",
+    "planEstimate": "${value}",
+    "perYear": "per year (est.)",
+    "calculator": {
+      "title": "Project Cost Calculator",
+      "subtitle": "Slide to see your yearly maintenance",
+      "projectCost": "Project Cost:",
+      "projectValue": "${value}"
     }
   },
   "solution": {
@@ -318,26 +425,27 @@
       "termsUse": "Bruksvilkår",
       "termsService": "Tjenestevilkår",
       "privacy": "Personvernerklæring",
-      "cookies": "Retningslinjer for informasjonskapsler"
+      "cookies": "Retningslinjer for informasjonskapsler",
+      "affiliateTerms": "Affiliate Terms of Service"
     },
     "copyright": "© {year} Silence AI. Alle rettigheter forbeholdes."
   },
   "notFound": {
     "title": "Side ikke funnet",
-    "description": "Vi lette overalt, men fant ikke denne siden.",
-    "cta": "Tilbake til hjemmesiden"
+    "description": "Vi lette overalt, men kunne ikke finne denne siden.",
+    "cta": "Tilbake til forsiden"
   },
   "heroSection": {
     "badge": "Produksjonsklar AI og programvare",
-    "title": "Tilpasset AI- og programvareutvikling",
-    "description": "Vi bygger produksjonsklare AI-agenter og tilpasset programvare.",
+    "title": "Skreddersydd AI og programvareutvikling",
+    "description": "Vi bygger produksjonsklare AI-agenter og skreddersydd programvare.",
     "country": "Kasakhstan",
-    "market": "globalt marked",
+    "market": "det globale markedet",
     "startProject": "Start et prosjekt",
     "liveDemo": "Live demo — AI-agent",
     "live": "Live",
     "aiAgent": "AI-agent v2.1",
-    "processing": "Behandler forespørsler...",
+    "processing": "Behandler forespørgsler...",
     "active": "Aktiv",
     "userMessage": "Analyser kundedatatrender",
     "aiResponse": "Analyserer",
@@ -496,6 +604,285 @@
       "government": {
         "title": "Government",
         "description": "Ministries, defense, critical agencies"
+      }
+    }
+  },
+  "pricingCta": {
+    "requestSystem": "Request System"
+  },
+  "contactForm": {
+    "title": "Contact Us",
+    "success": "Thanks! Your message has been sent. We will contact you shortly.",
+    "errorRequired": "Please fill in your name, email and a short message.",
+    "errorSend": "Unable to send message. Please try again later.",
+    "placeholders": {
+      "name": "Your name",
+      "email": "Email",
+      "type": "Project Type (optional)",
+      "budget": "Budget (optional)",
+      "message": "Tell us about your project..."
+    },
+    "submit": {
+      "idle": "Send Message",
+      "loading": "Sending…"
+    }
+  },
+  "consulting": {
+    "title": "Consulting Questionnaire",
+    "searchPlaceholder": "Search questions...",
+    "noResults": "No questions found.",
+    "questions": [
+      {
+        "question": "What is your company's core value proposition beyond competitive pricing?",
+        "answer": "Security is our primary differentiator. We position ourselves as a company that builds highly secure systems with enterprise-grade security practices embedded throughout the development lifecycle."
+      },
+      {
+        "question": "How long has your company been in business, and what is your track record?",
+        "answer": "We have successfully delivered major projects including: NAK (Nur Astana Kurylys) - AI-powered team management platform, and Chic Flowers - Complete digital platform for a major flower retail company."
+      },
+      {
+        "question": "What differentiates your technical capabilities and service quality from EPAM and other competitors?",
+        "answer": "Our key differentiator is our security-first development approach. We integrate security practices from project inception through deployment and maintenance."
+      },
+      {
+        "question": "How do you maintain quality while offering competitive pricing?",
+        "answer": "We offer services at 15% below market rates while maintaining exceptional quality through optimized operations, strategic talent sourcing, and efficient project management methodologies."
+      },
+      {
+        "question": "What specific software development services do you provide?",
+        "answer": "End-to-end software development: custom applications, AI-powered solutions, cybersecurity product development (Silence AI-SOC), system integration, cloud migration, and DevOps. We also offer dedicated product development and staff augmentation."
+      },
+      {
+        "question": "Which industries and domains do you specialize in?",
+        "answer": "Construction, retail, fintech, cybersecurity, and digital platforms — including AI-driven team management, e-commerce, and enterprise security solutions."
+      },
+      {
+        "question": "What technology stacks and platforms does your team have expertise in?",
+        "answer": "GO, Swift, Flutter, cloud platforms (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript, and AI/ML frameworks. We build proprietary security tools like Silence AI-SOC."
+      },
+      {
+        "question": "Do you offer end-to-end product development or specific services only?",
+        "answer": "We offer both: MVPs, full-cycle product delivery, staff augmentation, and cybersecurity integration."
+      },
+      {
+        "question": "Can you provide both staff augmentation and dedicated team models?",
+        "answer": "Yes, we provide flexible engagement models: staff augmentation, dedicated teams, and project-based outsourcing."
+      },
+      {
+        "question": "Do you offer consulting, architecture, and advisory services beyond development?",
+        "answer": "Yes: cybersecurity consulting, system architecture design, technology advisory, and security compliance assessments using Silence AI-SOC."
+      }
+    ]
+  },
+  "requestDemoModal": {
+    "title": "Request System",
+    "name": "Name",
+    "email": "Corporate Email",
+    "company": "Company Name",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Send Request",
+    "successTitle": "Request Sent!",
+    "successBody": "Thank you for your interest. We will be in touch shortly.",
+    "close": "Close"
+  },
+  "requestSystemModal": {
+    "title": "Request System",
+    "name": "Name",
+    "email": "Corporate Email",
+    "company": "Company Name",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Download",
+    "successTitle": "Request Sent!",
+    "successBody": "Thank you. The system download instructions will be sent to your email.",
+    "close": "Close"
+  },
+  "policySidebar": {
+    "tableOfContents": "Table of Contents"
+  },
+  "whyChooseUs": {
+    "badge": "Resultatorientert ingeniørkunst",
+    "title": "Hvorfor velge oss",
+    "subtitle": "Stolt på av team fra",
+    "subtitleHighlight": "milliardorganisasjoner",
+    "subtitleTail": "— og levert med oppstartshastighet.",
+    "learnMore": "Lær mer",
+    "logos": {
+      "kmg": "KazMunayGas",
+      "nak": "Nur Astana Kurylys"
+    },
+    "features": {
+      "fast": {
+        "title": "Rask levering med bedriftskvalitet",
+        "description": "Raske, iterative leveringssykluser som oppfyller bedriftskrav, pålitelighet og samsvar.",
+        "pill": "Hastighet + Kvalitet"
+      },
+      "ai": {
+        "title": "AI-først produktudvikling",
+        "description": "Fra prototyper til produksjons-AI-agenter — vi designer, trener og distribuerer modeller som løser virkelige forretningsproblemer.",
+        "pill": "AI-ingeniørkunst"
+      },
+      "local": {
+        "title": "Lokal ekspertise, global rekkevidde",
+        "description": "Dyp kunnskap om Kasakhstans marked og reguleringer kombinert med internasjonal beste praksis.",
+        "pill": "KZ + Global"
+      }
+    }
+  },
+  "servicesBlock": {
+    "badge": "Hva vi tilbyr",
+    "title": "Våre tjenester",
+    "description": "Premium UI, sterk ingeniørkunst og rask levering — alt du trenger for å lansere et produkt som ser ut og fungerer som et toppmerke.",
+    "learnMore": "Lær mer",
+    "learnMoreAria": "Lær mer om denne tjenesten",
+    "services": {
+      "aiAgents": {
+        "title": "AI-agenter",
+        "description": "Skreddersydde samtale- og autonome agenter for support, drift og analyse.",
+        "tag": "Automatisering"
+      },
+      "customSoftware": {
+        "title": "Skreddersydd programvare",
+        "description": "End-to-end web- og skrivebordsapper skreddersydd til dine arbeidsflyter.",
+        "tag": "Bygg"
+      },
+      "cybersecurity": {
+        "title": "Cybersikkerhet",
+        "description": "Revisjoner, penetrasjonstesting og kontinuerlig overvåking.",
+        "tag": "Beskytt"
+      },
+      "backend": {
+        "title": "Backend / DevOps",
+        "description": "Skalerbare API-er, CI/CD-rørledninger og skyinfrastruktur.",
+        "tag": "Skaler"
+      },
+      "mobile": {
+        "title": "Mobil",
+        "description": "Apper på tvers av plattformer med naturlig ytelse og polert UX.",
+        "tag": "Levering"
+      }
+    }
+  },
+  "caseStudies": {
+    "badge": "Bevist effekt",
+    "title": "Casestudier",
+    "subtitle": "Vi leverer ikke funksjoner. Vi leverer resultater.",
+    "problem": "Problem:",
+    "solution": "Løsning:",
+    "liveImpact": "Live effekt",
+    "before": "Før",
+    "after": "Etter",
+    "buildCta": "Bygg noe lignende →",
+    "caseStudy": "Casestudie",
+    "items": {
+      "nak": {
+        "title": "NAK — Team Management AI",
+        "problem": "Manuell ressursallokering",
+        "solution": "AI-drevet planleggingsagent",
+        "result": "+32% produktivitet",
+        "metricLabel": "Team-output indeks"
+      },
+      "chic": {
+        "title": "Chic Flowers — e-handel",
+        "problem": "Lave nettsalgskonverteringer",
+        "solution": "Personlig anbefaling + UX-overhaling",
+        "result": "+45% nettsalg",
+        "metricLabel": "Konverteringsvekst"
+      },
+      "silence": {
+        "title": "Silence AI-SOC",
+        "problem": "Høy alarmstøy",
+        "solution": "AI-deteksjon og automatisert respons",
+        "result": "−68% falske positiver",
+        "metricLabel": "Falsk alarmvolum"
+      }
+    }
+  },
+  "howWeWork": {
+    "title": "Hvordan vi jobber",
+    "subtitle": "Lynrask leveringsrørledning — optimalisert for hastighet.",
+    "steps": {
+      "discovery": {
+        "title": "Oppdagelse",
+        "desc": "Krav, interessenter, suksessmålinger."
+      },
+      "design": {
+        "title": "Design",
+        "desc": "UX, arkitektur, prototype."
+      },
+      "poc": {
+        "title": "Proof of Concept",
+        "desc": "Rask validering med målbare KPI-er."
+      },
+      "build": {
+        "title": "Bygg",
+        "desc": "Iterative sprints, automatiserte tester."
+      },
+      "deploy": {
+        "title": "Distribuer",
+        "desc": "CI/CD, overvåking, sikkerhetsherding."
+      },
+      "support": {
+        "title": "Support & Skalering",
+        "desc": "Vedlikehold, veikart, kontinuerlig forbedring."
+      }
+    }
+  },
+  "technologyStack": {
+    "title": "Teknologistack",
+    "subtitle": "En nøye utvalgt, produksjonsklar stack utviklet for hastighet, skalerbarhet og vakre brukeropplevelser."
+  },
+  "backToTop": {
+    "label": "Tilbake til toppen"
+  },
+  "pricingCustom": {
+    "title": "Gjennomsiktige priser",
+    "subtitle": "Mobil-først planer bygget for å skalere med produktet ditt.",
+    "percentMaintenance": "{percent}% årlig vedlikehold",
+    "planEstimate": "${value}",
+    "perYear": "per år (estimert)",
+    "calculator": {
+      "title": "Prosjektkostnadskalkulator",
+      "subtitle": "Skyv for å se årlig vedlikehold",
+      "projectCost": "Prosjektkostnad:",
+      "projectValue": "${value}"
+    },
+    "plans": {
+      "basic": {
+        "name": "Grunnleggende",
+        "features": {
+          "fix": "Kritiske feilrettinger (48t SLA)",
+          "updates": "Månedlige oppdateringer",
+          "audit": "Kvartalsvise sikkerhetsrevisjoner",
+          "manager": "Dedikert leder"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Mest populær",
+        "features": {
+          "fix": "Kritiske feilrettinger (24t SLA)",
+          "updates": "10t månedlige oppdateringer",
+          "audit": "Månedlige sikkerhetsrevisjoner",
+          "manager": "Dedikert leder"
+        }
+      },
+      "enterprise": {
+        "name": "Bedrift",
+        "badge": "Best verdi",
+        "features": {
+          "fix": "Kritiske feilrettinger (4t SLA)",
+          "updates": "Ubegrensede oppdateringer + Veikart",
+          "audit": "Ukentlige revisjoner + Sikkerhetskopier",
+          "manager": "Dedikert leder"
+        }
       }
     }
   }

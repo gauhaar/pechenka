@@ -1,16 +1,30 @@
 {
   "languageSelector": {
     "triggerLabel": "Выбрать язык",
-    "menuLabel": "Выберите язык"
+    "menuLabel": "Выберите язык",
+    "searchLabel": "Поиск языков",
+    "searchPlaceholder": "Искать по названию или на родном языке",
+    "searchResults": "Результаты поиска",
+    "noMatches": "Нет языков, соответствующих запросу.",
+    "popular": "Популярные",
+    "allLanguages": "Все языки"
   },
   "header": {
     "nav": {
       "main": "Главная",
       "mail": "Почта",
       "affiliate": "Партнёрская программа",
-      "instructions": "Инструкции"
+      "instructions": "Инструкции",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC Code",
+      "developerServices": "Разработка"
     },
-    "login": "Войти"
+    "login": "Запросить демо",
+    "cta": {
+      "contact": "Связаться",
+      "download": "Скачать",
+      "requestDemo": "Запросить демо"
+    }
   },
   "affiliate": {
     "hero": {
@@ -96,6 +110,60 @@
         "question": "Когда я увижу статистику рекомендаций?",
         "answer": "Как только пользователь зарегистрируется по вашему коду или ссылке, его электронная почта и начисленная награда появятся в панели."
       }
+    },
+    "termsAff": {
+      "label": "Affiliate Program",
+      "title": "Affiliate Terms of Service",
+      "notice": "This policy is available only in English",
+      "intro": "These terms describe how rewards are issued and paid to partners participating in the Silence AI affiliate program.",
+      "meta": {
+        "effective": "Effective date: 10 November 2024",
+        "lastUpdated": "Last updated: 10 November 2024"
+      },
+      "sections": {
+        "overview": {
+          "title": "1. Program Overview",
+          "body1": "1.1 Agreement Scope: These Affiliate Terms of Service (\"Terms\") govern your participation in the Silence AI affiliate program operated by Silence AI LLC (\"Silence AI,\" \"we,\" \"us,\" or \"our\"). These Terms apply to you, the individual or entity enrolling as an affiliate partner (\"you\" or \"your\"), and, where applicable, your employer, principal, or organization if you act on their behalf.",
+          "body2": "1.2 Program Summary: Under this program, qualified partners earn commission-based rewards when referred customers purchase or top up the AI-SOC 1 product. Participation in the affiliate program also requires compliance with the general Silence AI Terms of Service."
+        },
+        "eligibility": {
+          "title": "2. Partner Eligibility",
+          "item1": "You must maintain an active Silence AI affiliate account with accurate business and payment details.",
+          "item2": "Referrals must complete registration through your issued link or promo code.",
+          "item3": "Accounts found to be fraudulent, self-referred, or in breach of applicable law are not eligible for rewards."
+        },
+        "commission": {
+          "title": "3. Commission Structure",
+          "body1": "You earn a 10% reward on every balance top-up completed by an account registered through your invitation.",
+          "body2": "Commission is calculated from the net top-up amount after payment processing fees are deducted."
+        },
+        "rewardPosting": {
+          "title": "4. Reward Posting",
+          "body1": "Rewards post to your partner balance within one minute after the transaction successfully clears. There is no manual approval queue.",
+          "body2": "Notifications appear in your affiliate dashboard alongside the customer identifier and top-up amount."
+        },
+        "withdrawals": {
+          "title": "5. Withdrawals",
+          "body1": "Withdrawal requests are processed within two business days and paid out using the settlement method on file.",
+          "body2": "Minimum withdrawal thresholds and supported payout networks are published inside the affiliate dashboard."
+        },
+        "productScope": {
+          "title": "6. Product Scope",
+          "body1": "Rewards are only provided for the AI-SOC 1 product. Other Silence AI services are excluded from the affiliate program unless explicitly stated otherwise in writing.",
+          "body2": "If additional products become eligible, Silence AI will publish an updated list inside these terms."
+        },
+        "compliance": {
+          "title": "7. Partner Conduct & Compliance",
+          "item1": "Partners must represent Silence AI accurately and avoid misleading claims about features or pricing.",
+          "item2": "Marketing communications must comply with applicable anti-spam, privacy, and advertising regulations.",
+          "item3": "Silence AI may suspend or terminate accounts that violate these obligations or harm the brand."
+        },
+        "changes": {
+          "title": "8. Changes & Contact",
+          "body1": "Silence AI may update these affiliate terms to reflect changes in the program or applicable law. Updated versions take effect upon publication on this page.",
+          "body2": "Questions about the affiliate program can be sent to info@silenceai.net."
+        }
+      }
     }
   },
   "hero": {
@@ -139,7 +207,7 @@
     "link": "Политике cookie",
     "ok": "OK"
   },
-  "pricing": {
+  "pricingCustom": {
     "title": "Тарифы",
     "tooltips": {
       "cmcGlobal": {
@@ -216,8 +284,147 @@
           "reports": "Понятные отчёты о безопасности",
           "intelligence": "Отчёт разведки"
         }
+      },
+      "basic": {
+        "name": "Basic",
+        "features": {
+          "fix": "Critical Bug Fixes (48h SLA)",
+          "updates": "Monthly Updates",
+          "audit": "Quarterly Security Audits",
+          "manager": "Dedicated Manager"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Most Popular",
+        "features": {
+          "fix": "Critical Bug Fixes (24h SLA)",
+          "updates": "10h Monthly Updates",
+          "audit": "Monthly Security Audits",
+          "manager": "Dedicated Manager"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "badge": "Best Value",
+        "features": {
+          "fix": "Critical Bug Fixes (4h SLA)",
+          "updates": "Unlimited Updates + Roadmap",
+          "audit": "Weekly Audits + Backups",
+          "manager": "Dedicated Manager"
+        }
       }
+    },
+    "subtitle": "Mobile-first plans built to scale with your product.",
+    "percentMaintenance": "{percent}% yearly maintenance",
+    "planEstimate": "${value}",
+    "perYear": "per year (est.)",
+    "calculator": {
+      "title": "Project Cost Calculator",
+      "subtitle": "Slide to see your yearly maintenance",
+      "projectCost": "Project Cost:",
+      "projectValue": "${value}"
     }
+  },
+  "pricingCta": {
+    "requestSystem": "Запросить систему"
+  },
+  "contactForm": {
+    "title": "Свяжитесь с нами",
+    "success": "Спасибо! Ваше сообщение отправлено. Мы свяжемся с вами в ближайшее время.",
+    "errorRequired": "Заполните имя, email и короткое сообщение.",
+    "errorSend": "Не удалось отправить сообщение. Повторите попытку позже.",
+    "placeholders": {
+      "name": "Ваше имя",
+      "email": "Email",
+      "type": "Тип проекта (опционально)",
+      "budget": "Бюджет (опционально)",
+      "message": "Расскажите о проекте..."
+    },
+    "submit": {
+      "idle": "Отправить сообщение",
+      "loading": "Отправка…"
+    }
+  },
+  "consulting": {
+    "title": "Анкета для консультации",
+    "searchPlaceholder": "Искать вопросы...",
+    "noResults": "Вопросы не найдены.",
+    "questions": [
+      {
+        "question": "В чем главное ценностное предложение вашей компании, помимо цены?",
+        "answer": "Безопасность — наш главный дифференциатор. Мы строим системы с практиками корпоративной безопасности на всех этапах разработки."
+      },
+      {
+        "question": "Сколько лет вы на рынке и каков ваш трек-рекорд?",
+        "answer": "Мы успешно реализовали крупные проекты: NAK (Nur Astana Kurylys) — AI-платформа для управления командами, Chic Flowers — цифровая платформа для крупного розничного продавца цветов."
+      },
+      {
+        "question": "Чем ваши технологии и качество услуг отличаются от EPAM и других конкурентов?",
+        "answer": "Мы отличаемся подходом security-first: интегрируем безопасность с этапа замысла до деплоя и поддержки."
+      },
+      {
+        "question": "Как сохраняете качество при конкурентной цене?",
+        "answer": "Мы работаем на 15% ниже рынка, сохраняя качество за счет оптимизации процессов, подбора талантов и эффективного управления проектами."
+      },
+      {
+        "question": "Какие услуги разработки вы предоставляете?",
+        "answer": "Полный цикл: кастомные приложения, AI-решения, разработка продуктов кибербезопасности (Silence AI-SOC), интеграция, миграция в облако, DevOps; а также выделенная разработка и аутстафф."
+      },
+      {
+        "question": "В каких отраслях вы сильны?",
+        "answer": "Строительство, ритейл, финтех, кибербезопасность, цифровые платформы — включая AI-управление командами, e-commerce и enterprise security."
+      },
+      {
+        "question": "Какие технологии и платформы вы используете?",
+        "answer": "GO, Swift, Flutter, облака (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript, AI/ML. Собственные продукты безопасности, например Silence AI-SOC."
+      },
+      {
+        "question": "Вы делаете полный продукт или точечные услуги?",
+        "answer": "Делаем и то и другое: MVP, полный цикл, аутстафф, интеграцию кибербезопасности."
+      },
+      {
+        "question": "Предоставляете аутстафф и выделенные команды?",
+        "answer": "Да: аутстафф, выделенные команды и проектная модель."
+      },
+      {
+        "question": "Делаете консалтинг и архитектуру, помимо разработки?",
+        "answer": "Да: консалтинг по безопасности, архитектура, техсовет, комплаенс-аудиты с Silence AI-SOC."
+      }
+    ]
+  },
+  "requestDemoModal": {
+    "title": "Запросить систему",
+    "name": "Имя",
+    "email": "Корпоративный email",
+    "company": "Компания",
+    "placeholders": {
+      "name": "Иван Иванов",
+      "email": "ivan@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Отправить запрос",
+    "successTitle": "Запрос отправлен!",
+    "successBody": "Спасибо за интерес. Мы скоро свяжемся с вами.",
+    "close": "Закрыть"
+  },
+  "requestSystemModal": {
+    "title": "Запросить систему",
+    "name": "Имя",
+    "email": "Корпоративный email",
+    "company": "Компания",
+    "placeholders": {
+      "name": "Иван Иванов",
+      "email": "ivan@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Скачать",
+    "successTitle": "Запрос отправлен!",
+    "successBody": "Инструкции по загрузке системы будут отправлены на ваш email.",
+    "close": "Закрыть"
+  },
+  "policySidebar": {
+    "tableOfContents": "Оглавление"
   },
   "solution": {
     "sectionTitle": "Наше решение",
@@ -317,6 +524,7 @@
     "links": {
       "termsUse": "Условия использования",
       "termsService": "Условия обслуживания",
+      "affiliateTerms": "Партнёрские условия",
       "privacy": "Политика конфиденциальности",
       "cookies": "Политика cookie"
     },
@@ -355,6 +563,41 @@
         "heading": "Утечка DeepSeek выложила исходный код и промпты в открытый интернет",
         "description": "Держите вывод и сканирование локально. Без исходящего трафика внешних моделей. Трассы аудита по умолчанию.",
         "seePlan": "Посмотреть план сдерживания"
+      },
+      "stuxnet": {
+        "year": "2010",
+        "attack": "Stuxnet",
+        "target": "Завод по обогащению в Натанзе",
+        "impact": "Уничтожено ~1,000 центрифуг",
+        "severity": "Критическая"
+      },
+      "blackEnergy": {
+        "year": "2015",
+        "attack": "BlackEnergy",
+        "target": "Энергосеть Украины",
+        "impact": "230 тыс. потребителей остались без света",
+        "severity": "Высокая"
+      },
+      "triton": {
+        "year": "2017",
+        "attack": "TRITON",
+        "target": "Нефтехимический завод в Саудовской Аравии",
+        "impact": "Системы безопасности отключены",
+        "severity": "Критическая"
+      },
+      "colonialPipeline": {
+        "year": "2021",
+        "attack": "Colonial Pipeline",
+        "target": "Топливный трубопровод США",
+        "impact": "6 дней паралича поставок топлива",
+        "severity": "Высокая"
+      },
+      "pdvsa": {
+        "year": "2025",
+        "attack": "PDVSA",
+        "target": "НПЗ Венесуэлы",
+        "impact": "Нарушение работы НПЗ",
+        "severity": "Средняя"
       }
     },
     "analyzer": {
@@ -433,5 +676,170 @@
         "description": "Министерства, оборона, критические агентства"
       }
     }
+  },
+  "notFound": {
+    "title": "Страница не найдена",
+    "description": "Мы искали везде, но не смогли найти эту страницу.",
+    "cta": "Вернуться на главную"
+  },
+  "heroSection": {
+    "badge": "Готовый к продакшену AI и ПО",
+    "title": "Кастомная разработка AI и ПО",
+    "description": "Мы создаем готовых к работе AI-агентов и кастомное программное обеспечение.",
+    "country": "Казахстан",
+    "market": "мировой рынок",
+    "startProject": "Начать проект",
+    "liveDemo": "Живое демо — AI Агент",
+    "live": "Live",
+    "aiAgent": "AI Агент v2.1",
+    "processing": "Обработка запросов...",
+    "active": "Активен",
+    "userMessage": "Проанализировать тренды данных клиентов",
+    "aiResponse": "Анализирую",
+    "tasks": {
+      "dataCollection": "Сбор данных",
+      "aiAnalysis": "AI Анализ",
+      "reportGeneration": "Генерация отчета"
+    },
+    "stats": {
+      "tasks": "Задачи",
+      "success": "Успех",
+      "speed": "Скорость"
+    }
+  },
+  "whyChooseUs": {
+    "badge": "Разработка, ориентированная на результат",
+    "title": "Почему выбирают нас",
+    "subtitle": "Нам доверяют команды из",
+    "subtitleHighlight": "организаций с миллиардными оборотами",
+    "subtitleTail": "— и доставляем со скоростью стартапов.",
+    "learnMore": "Узнать больше",
+    "logos": {
+      "kmg": "KazMunayGas",
+      "nak": "Nur Astana Kurylys"
+    },
+    "features": {
+      "fast": {
+        "title": "Быстрая доставка с качеством Enterprise",
+        "description": "Быстрые, итеративные циклы доставки, соответствующие надежности и требованиям корпоративного уровня.",
+        "pill": "Скорость + Качество"
+      },
+      "ai": {
+        "title": "AI-first разработка продуктов",
+        "description": "От прототипов до AI-агентов в продакшене — мы проектируем, обучаем и внедряем модели, которые решают реальные бизнес-задачи.",
+        "pill": "AI Инжиниринг"
+      },
+      "local": {
+        "title": "Локальная экспертиза, глобальный охват",
+        "description": "Глубокое знание рынка Казахстана и законодательства в сочетании с лучшими международными практиками.",
+        "pill": "KZ + Global"
+      }
+    }
+  },
+  "servicesBlock": {
+    "badge": "Что мы предлагаем",
+    "title": "Наши услуги",
+    "description": "Премиальный UI, сильная инженерия и быстрая доставка — всё, что нужно для запуска продукта, который выглядит и работает как топ-бренд.",
+    "learnMore": "Узнать больше",
+    "learnMoreAria": "Узнать больше об этой услуге",
+    "services": {
+      "aiAgents": {
+        "title": "AI Агенты",
+        "description": "Кастомные разговорные и автономные агенты для поддержки, операций и аналитики.",
+        "tag": "Автоматизация"
+      },
+      "customSoftware": {
+        "title": "Кастомное ПО",
+        "description": "Веб и десктоп приложения полного цикла, адаптированные под ваши процессы.",
+        "tag": "Разработка"
+      },
+      "cybersecurity": {
+        "title": "Кибербезопасность",
+        "description": "Аудиты, пентесты и непрерывный мониторинг.",
+        "tag": "Защита"
+      },
+      "backend": {
+        "title": "Backend / DevOps",
+        "description": "Масштабируемые API, CI/CD пайплайны и облачная инфраструктура.",
+        "tag": "Масштабирование"
+      },
+      "mobile": {
+        "title": "Мобильная разработка",
+        "description": "Кроссплатформенные приложения с нативной производительностью и отточенным UX.",
+        "tag": "Релиз"
+      }
+    }
+  },
+  "caseStudies": {
+    "badge": "Доказанное влияние",
+    "title": "Кейсы",
+    "subtitle": "Мы не просто выпускаем фичи. Мы доставляем результаты.",
+    "problem": "Проблема:",
+    "solution": "Решение:",
+    "liveImpact": "Живой результат",
+    "before": "До",
+    "after": "После",
+    "buildCta": "Создать что-то похожее →",
+    "caseStudy": "Кейс",
+    "items": {
+      "nak": {
+        "title": "NAK — AI управления командой",
+        "problem": "Ручное распределение ресурсов",
+        "solution": "Агент планирования на AI",
+        "result": "+32% к продуктивности",
+        "metricLabel": "Индекс выработки команды"
+      },
+      "chic": {
+        "title": "Chic Flowers — eCommerce",
+        "problem": "Низкая онлайн-конверсия",
+        "solution": "Персонализированные рекомендации + обновление UX",
+        "result": "+45% к онлайн-продажам",
+        "metricLabel": "Рост конверсии"
+      },
+      "silence": {
+        "title": "Silence AI-SOC",
+        "problem": "Высокий шум оповещений",
+        "solution": "AI детекция и авто-реагирование",
+        "result": "−68% ложных срабатываний",
+        "metricLabel": "Объем ложных тревог"
+      }
+    }
+  },
+  "howWeWork": {
+    "title": "Как мы работаем",
+    "subtitle": "Сверхбыстрый пайплайн доставки — оптимизирован для скорости.",
+    "steps": {
+      "discovery": {
+        "title": "Исследование",
+        "desc": "Требования, стейкхолдеры, метрики успеха."
+      },
+      "design": {
+        "title": "Дизайн",
+        "desc": "UX, архитектура, прототип."
+      },
+      "poc": {
+        "title": "PoC",
+        "desc": "Быстрая валидация с измеримыми KPI."
+      },
+      "build": {
+        "title": "Разработка",
+        "desc": "Итеративные спринты, автотесты."
+      },
+      "deploy": {
+        "title": "Деплой",
+        "desc": "CI/CD, мониторинг, усиление безопасности."
+      },
+      "support": {
+        "title": "Поддержка и развитие",
+        "desc": "Обслуживание, roadmap, непрерывное улучшение."
+      }
+    }
+  },
+  "technologyStack": {
+    "title": "Технологический стек",
+    "subtitle": "Тщательно подобранный стек уровня production, спроектированный для скорости, масштабируемости и прекрасного пользовательского опыта."
+  },
+  "backToTop": {
+    "label": "Наверх"
   }
 }

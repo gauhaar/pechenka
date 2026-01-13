@@ -1,16 +1,30 @@
 {
   "languageSelector": {
     "triggerLabel": "Dil seçin",
-    "menuLabel": "Lütfen dili seçiniz"
+    "menuLabel": "Lütfen dili seçiniz",
+    "searchLabel": "Search languages",
+    "searchPlaceholder": "Search by name or native script",
+    "searchResults": "Search results",
+    "noMatches": "No languages match your search.",
+    "popular": "Most popular",
+    "allLanguages": "All languages"
   },
   "header": {
     "nav": {
       "main": "Ana sayfa",
       "mail": "E-posta",
       "affiliate": "Ortaklık programı",
-      "instructions": "Talimatlar"
+      "instructions": "Talimatlar",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC Code",
+      "developerServices": "Developer Services"
     },
-    "login": "Giriş yap"
+    "login": "Giriş yap",
+    "cta": {
+      "contact": "Contact",
+      "download": "Download",
+      "requestDemo": "Request Demo"
+    }
   },
   "affiliate": {
     "hero": {
@@ -96,6 +110,60 @@
         "question": "Yönlendirme istatistiklerimi ne zaman görürüm?",
         "answer": "Bir kullanıcı promosyon kodunuzu veya bağlantınızı kullanarak kaydolduğunda, e-postası ve ilgili ödül panelinizde görünür."
       }
+    },
+    "termsAff": {
+      "label": "Affiliate Program",
+      "title": "Affiliate Terms of Service",
+      "notice": "This policy is available only in English",
+      "intro": "These terms describe how rewards are issued and paid to partners participating in the Silence AI affiliate program.",
+      "meta": {
+        "effective": "Effective date: 10 November 2024",
+        "lastUpdated": "Last updated: 10 November 2024"
+      },
+      "sections": {
+        "overview": {
+          "title": "1. Program Overview",
+          "body1": "1.1 Agreement Scope: These Affiliate Terms of Service (\"Terms\") govern your participation in the Silence AI affiliate program operated by Silence AI LLC (\"Silence AI,\" \"we,\" \"us,\" or \"our\"). These Terms apply to you, the individual or entity enrolling as an affiliate partner (\"you\" or \"your\"), and, where applicable, your employer, principal, or organization if you act on their behalf.",
+          "body2": "1.2 Program Summary: Under this program, qualified partners earn commission-based rewards when referred customers purchase or top up the AI-SOC 1 product. Participation in the affiliate program also requires compliance with the general Silence AI Terms of Service."
+        },
+        "eligibility": {
+          "title": "2. Partner Eligibility",
+          "item1": "You must maintain an active Silence AI affiliate account with accurate business and payment details.",
+          "item2": "Referrals must complete registration through your issued link or promo code.",
+          "item3": "Accounts found to be fraudulent, self-referred, or in breach of applicable law are not eligible for rewards."
+        },
+        "commission": {
+          "title": "3. Commission Structure",
+          "body1": "You earn a 10% reward on every balance top-up completed by an account registered through your invitation.",
+          "body2": "Commission is calculated from the net top-up amount after payment processing fees are deducted."
+        },
+        "rewardPosting": {
+          "title": "4. Reward Posting",
+          "body1": "Rewards post to your partner balance within one minute after the transaction successfully clears. There is no manual approval queue.",
+          "body2": "Notifications appear in your affiliate dashboard alongside the customer identifier and top-up amount."
+        },
+        "withdrawals": {
+          "title": "5. Withdrawals",
+          "body1": "Withdrawal requests are processed within two business days and paid out using the settlement method on file.",
+          "body2": "Minimum withdrawal thresholds and supported payout networks are published inside the affiliate dashboard."
+        },
+        "productScope": {
+          "title": "6. Product Scope",
+          "body1": "Rewards are only provided for the AI-SOC 1 product. Other Silence AI services are excluded from the affiliate program unless explicitly stated otherwise in writing.",
+          "body2": "If additional products become eligible, Silence AI will publish an updated list inside these terms."
+        },
+        "compliance": {
+          "title": "7. Partner Conduct & Compliance",
+          "item1": "Partners must represent Silence AI accurately and avoid misleading claims about features or pricing.",
+          "item2": "Marketing communications must comply with applicable anti-spam, privacy, and advertising regulations.",
+          "item3": "Silence AI may suspend or terminate accounts that violate these obligations or harm the brand."
+        },
+        "changes": {
+          "title": "8. Changes & Contact",
+          "body1": "Silence AI may update these affiliate terms to reflect changes in the program or applicable law. Updated versions take effect upon publication on this page.",
+          "body2": "Questions about the affiliate program can be sent to info@silenceai.net."
+        }
+      }
     }
   },
   "hero": {
@@ -143,78 +211,78 @@
     "title": "Fiyatlandırma",
     "tooltips": {
       "cmcGlobal": {
-        "title": "Küresel trafik izlemeli CMC",
-        "content": "Merkezi Yönetim Konsolu (CMC) diğer güvenlik sistemleriyle sorunsuz şekilde entegre olur ve Global Shield ile Security Tester ile aynı alan adını ve arayüzü kullanır. Buradan ülkeleri kara listeye alabilir, portları kapatabilir ve diğer işlemleri yönetebilirsiniz"
+        "title": "Küresel Trafik İzleme ile CMC",
+        "content": "CMC (Merkezi Yönetim Konsolu), diğer güvenlik sistemleriyle sorunsuz bir şekilde bütünleşir ve Global Shield ve Security Tester ile aynı alan adı ve arayüz altında mevcuttur, bu da ağ güvenliğini ölçekli bir şekilde yönetmenizi sağlar. Buradan ülkeleri kara listeye alabilir, portları kapatabilir ve diğer işlemleri gerçekleştirebilirsiniz."
       },
       "countryBlacklisting": {
-        "title": "Ülke bazlı engelleme",
+        "title": "Ülke Kara Listeye Alma",
         "content": "Belirli bir ülkeden gelen tüm trafiği engelleyin"
       },
       "portManagement": {
-        "title": "Port yönetimi",
-        "content": "Saldırı yüzeyini azaltmak için kullanılmayan portları kapatın. Örneğin SSH gerekmiyorsa 22 numaralı portu devre dışı bırakın"
+        "title": "Port Yönetimi",
+        "content": "Saldırı yüzeyini azaltmak için kullanılmayan portları kapatın. Örneğin, SSH erişimi gerekmediğinde 22. portun devre dışı bırakılması. Sistemin tehlikeye girme riskini en aza indirmek için."
       },
       "cmcEmail": {
-        "title": "Gelişmiş e-posta akışı görselleştiricili CMC",
-        "content": "CMC, diğer güvenlik sistemleriyle entegredir ve eklediğiniz tüm kurumsal kullanıcıların e-posta akışlarını izlemenize ve incelemenize imkân tanır"
+        "title": "Gelişmiş E-posta Akışı Görselleştirici ile CMC",
+        "content": "CMC (Merkezi Yönetim Konsolu), diğer güvenlik sistemleriyle sorunsuz bir şekilde bütünleşir ve Global Shield ve Security Tester ile aynı alan adı ve arayüz altında mevcuttur. Bu konsol içinde, eklediğiniz tüm kurumsal kullanıcılar için e-posta akışlarını izleyebilir ve e-postaları inceleyebilirsiniz."
       },
       "dynamicVulnerability": {
-        "title": "Dinamik zafiyet bulucu",
-        "content": "Sitenizle etkileşim kurarak zafiyetleri tespit eder; istihbarat sistemi desteği içerir"
+        "title": "Dinamik Güvenlik Açığı Bulucu",
+        "content": "İstihbarat sistemi aracılığıyla güvenlik açığı bulma yolu dahil olmak üzere, web sitenizle etkileşime girerek güvenlik açıklarını tespit eder."
       },
       "codeAnalyzer": {
-        "title": "Kod analizörü",
-        "content": "VS Code eklentisi aracılığıyla kod tabanınızdaki güvenlik sorunlarını doğrudan belirler ve yayına almadan önce düzeltmenize yardımcı olur"
+        "title": "Kod Analizcisi",
+        "content": "Bir VS Code eklentisi aracılığıyla güvenlik sorunlarını doğrudan kod tabanınızda tanımlar ve dağıtımdan önce sorunları düzeltmenize yardımcı olur."
       },
       "intelligenceReport": {
-        "title": "İstihbarat raporu",
-        "content": "Hedefiniz hakkında ayrıntılı içgörüler sunar: açık portlar, çalışan servisler, alt alan adları ve aksiyon gerektiren diğer hassas bilgiler"
+        "title": "İstihbarat Raporu",
+        "content": "Açık portlar, çalışan hizmetler, alt alan adları ve eylem gerektirebilecek diğer hassas bilgiler dahil olmak üzere hedefiniz hakkında ayrıntılı bilgiler oluşturur."
       },
       "fullVulnerability": {
-        "title": "TAM zafiyet denetimi",
-        "content": "Tam denetim hem dinamik taramayı hem de kod taramasını içerir"
+        "title": "TAM Güvenlik Açığı Kontrolü",
+        "content": "Bir TAM güvenlik açığı kontrolü, hem dinamik bir güvenlik açığı taramasını hem de kod tabanı güvenlik açığı taramasını içerir."
       }
     },
     "plans": {
       "globalShield": {
-        "title": "Web güvenliği ve trafik yönetimi",
+        "title": "Web Güvenliği ve Trafik Yönetimi",
         "price": "$0.06/GB",
-        "description": "Sınırsız\nEk ücret yok",
-        "button": "Web uygulamalarını ve API'leri koru",
+        "description": "Limit yok\nEk ücret yok",
+        "button": "Web uygulamasını ve API'leri güvene al",
         "features": {
-          "webProtection": "İş mantığı açıkları hariç tüm web saldırılarına karşı koruma",
+          "webProtection": "İş mantığı güvenlik açığı istismarı hariç, her türlü web saldırısına karşı koruma",
           "ddosProtection": "Gerçek zamanlı DDoS koruması",
-          "cmc": "Küresel trafik izlemeli CMC",
-          "country": "Ülke engelleme özelliği",
+          "cmc": "Küresel trafik izleme sistemli CMC",
+          "country": "Ülke kara listeye alma özelliği",
           "port": "Port kapatma özelliği"
         }
       },
       "emailProtector": {
-        "title": "E-posta güvenliği",
+        "title": "E-posta Güvenliği ve Görselleştirme",
         "price": "$10/ay/hesap",
-        "description": "Günde 10 e-postaya kadar\nEk e-postalar: adet başına $0.035",
-        "button": "E-postayı koru",
+        "description": "Günde 10 e-postaya kadar\nEk e-postalar: her e-posta için $0.035",
+        "button": "E-postayı Güvene Al",
         "features": {
-          "cmcEmail": "CMC'deki en gelişmiş e-posta akışı görselleştirici",
-          "visibility": "Tüm hesapların gelen/giden e-postalarına tam görünürlük ve otomatik tehdit sınıflandırması",
-          "webClient": "Güvenli web posta istemcisi",
-          "phishing": "Phishing koruması",
-          "malware": "Zararlı ek taraması",
+          "cmcEmail": "En gelişmiş e-posta akışı görselleştiricisine sahip CMC",
+          "visibility": "CMC'de, otomatik tehdit sınıflandırması ile tüm e-posta hesaplarının gönderilen ve alınan e-postalarının tam görünürlüğü",
+          "webClient": "Güvenli WebMail istemcisi",
+          "phishing": "Kimlik avı koruması",
+          "malware": "Kötü amaçlı yazılım eki taraması",
           "links": "Tehlikeli bağlantı tespiti",
-          "spam": "Spam filtresi",
-          "fakeSender": "Sahte göndericiye karşı koruma"
+          "spam": "Spam filtreleme",
+          "fakeSender": "Sahte Gönderen Koruması"
         }
       },
       "securityTester": {
-        "title": "Zafiyet bulucu",
+        "title": "Güvenlik Açığı Bulucu",
         "price": "$25/ay",
-        "description": "Ayda 50 TAM denetime kadar\nEk denetimler: tanesi $0.5",
-        "button": "Testi başlat",
+        "description": "Ayda 50 TAM güvenlik açığı kontrolüne kadar\nEk TAM kontroller: her biri $0.5",
+        "button": "Testi Başlat",
         "features": {
-          "dynamic": "Dinamik zafiyet bulucu",
-          "codeAnalyzer": "Kod analizörü",
-          "reports": "Kolay anlaşılır güvenlik raporları",
-          "intelligence": "İstihbarat raporu"
+          "dynamic": "Dinamik güvenlik açığı bulucu",
+          "codeAnalyzer": "Kod analizcisi",
+          "reports": "Kolay anlaşılır güvenlik değerlendirme raporları",
+          "intelligence": "İstihbarat Raporu"
         }
       }
     }
@@ -318,7 +386,8 @@
       "termsUse": "Kullanım şartları",
       "termsService": "Hizmet şartları",
       "privacy": "Gizlilik politikası",
-      "cookies": "Çerez politikası"
+      "cookies": "Çerez politikası",
+      "affiliateTerms": "Affiliate Terms of Service"
     },
     "copyright": "© {year} Silence AI. Tüm hakları saklıdır."
   },
@@ -355,15 +424,427 @@
         "heading": "DeepSeek sızıntısı kaynak kodu ve prompt'ları açık internete koydu",
         "description": "Çıkarım ve taramayı yerelde tutun. Harici model çıkışı yok. Varsayılan denetim izleri.",
         "seePlan": "Kontrol planını görüntüle"
+      },
+      "stuxnet": {
+        "year": "2010",
+        "attack": "Stuxnet",
+        "target": "Natanz enrichment facility",
+        "impact": "Destroyed ~1,000 centrifuges",
+        "severity": "Critical"
+      },
+      "blackEnergy": {
+        "year": "2015",
+        "attack": "BlackEnergy",
+        "target": "Ukraine power grid",
+        "impact": "230k customers lost power",
+        "severity": "High"
+      },
+      "triton": {
+        "year": "2017",
+        "attack": "TRITON",
+        "target": "Saudi petrochemical plant",
+        "impact": "Safety systems disabled",
+        "severity": "Critical"
+      },
+      "colonialPipeline": {
+        "year": "2021",
+        "attack": "Colonial Pipeline",
+        "target": "US fuel pipeline",
+        "impact": "6-day fuel paralysis",
+        "severity": "High"
+      },
+      "pdvsa": {
+        "year": "2025",
+        "attack": "PDVSA",
+        "target": "Venezuela refining",
+        "impact": "Refinery operations disrupted",
+        "severity": "Medium"
       }
     },
     "analyzer": {
       "title": "CodeQL'i geride bırakan analizör",
-      "subtitle": "Canlı güvence"
+      "subtitle": "Canlı güvence",
+      "features": {
+        "quality": {
+          "title": "Automatic code quality",
+          "description": "Structure, style, and best-practice checks tuned for safety-critical code"
+        },
+        "vulnerability": {
+          "title": "Vulnerability sweeps",
+          "description": "SQLi, XSS, auth bypass, and insecure dependencies surfaced instantly"
+        },
+        "secrets": {
+          "title": "Secrets guard",
+          "description": "Keys, tokens, and credentials blocked at commit time"
+        },
+        "config": {
+          "title": "Config hardening",
+          "description": "Docker/K8s, IAM, and network policies scanned for privilege creep"
+        }
+      },
+      "beyondCodeQL": {
+        "title": "Finds what static queries miss",
+        "subtitle": "Beyond CodeQL",
+        "description": "Finds misconfigs and vulnerable packages faster than CodeQL and offers fixes, not just alerts.",
+        "points": {
+          "packages": "Knows package graphs and flags risky dependencies in seconds.",
+          "config": "Spots config drift and privilege creep—beyond static rules.",
+          "patches": "Each finding comes with a suggested patch and owner."
+        }
+      },
+      "visualizer": {
+        "title": "Code analyzer in action",
+        "subtitle": "Visualizer",
+        "description": "Crisp snapshots from recent scans, rendered beautifully inside the on-prem console.",
+        "privateWorkspace": "Private workspace only",
+        "shots": {
+          "scanOverview": {
+            "title": "Scan overview",
+            "description": "See issues grouped by severity before code leaves your network."
+          },
+          "misconfigurations": {
+            "title": "Detection of misconfigurations",
+            "description": "Our AI-powered code analyzer even finds misconfigurations within the code."
+          },
+          "inlineDiffs": {
+            "title": "Inline diffs",
+            "description": "Review suggested patches inline with security context."
+          }
+        }
+      }
     },
     "industries": {
       "title": "Düzenlenmiş, yüksek etkili sektörler için inşa edildi",
-      "subtitle": "Nereye konuşlandırıyoruz"
+      "subtitle": "Nereye konuşlandırıyoruz",
+      "oilGas": {
+        "title": "Oil & Gas",
+        "description": "Drilling, refining, pipeline control"
+      },
+      "energy": {
+        "title": "Energy",
+        "description": "Grid, distribution, and EMS"
+      },
+      "nuclear": {
+        "title": "Nuclear",
+        "description": "Reactor controls and safety"
+      },
+      "manufacturing": {
+        "title": "Manufacturing",
+        "description": "ICS, OT, and robotics"
+      },
+      "government": {
+        "title": "Government",
+        "description": "Ministries, defense, critical agencies"
+      }
+    }
+  },
+  "pricingCta": {
+    "requestSystem": "Request System"
+  },
+  "contactForm": {
+    "title": "Contact Us",
+    "success": "Thanks! Your message has been sent. We will contact you shortly.",
+    "errorRequired": "Please fill in your name, email and a short message.",
+    "errorSend": "Unable to send message. Please try again later.",
+    "placeholders": {
+      "name": "Your name",
+      "email": "Email",
+      "type": "Project Type (optional)",
+      "budget": "Budget (optional)",
+      "message": "Tell us about your project..."
+    },
+    "submit": {
+      "idle": "Send Message",
+      "loading": "Sending…"
+    }
+  },
+  "consulting": {
+    "title": "Consulting Questionnaire",
+    "searchPlaceholder": "Search questions...",
+    "noResults": "No questions found.",
+    "questions": [
+      {
+        "question": "What is your company's core value proposition beyond competitive pricing?",
+        "answer": "Security is our primary differentiator. We position ourselves as a company that builds highly secure systems with enterprise-grade security practices embedded throughout the development lifecycle."
+      },
+      {
+        "question": "How long has your company been in business, and what is your track record?",
+        "answer": "We have successfully delivered major projects including: NAK (Nur Astana Kurylys) - AI-powered team management platform, and Chic Flowers - Complete digital platform for a major flower retail company."
+      },
+      {
+        "question": "What differentiates your technical capabilities and service quality from EPAM and other competitors?",
+        "answer": "Our key differentiator is our security-first development approach. We integrate security practices from project inception through deployment and maintenance."
+      },
+      {
+        "question": "How do you maintain quality while offering competitive pricing?",
+        "answer": "We offer services at 15% below market rates while maintaining exceptional quality through optimized operations, strategic talent sourcing, and efficient project management methodologies."
+      },
+      {
+        "question": "What specific software development services do you provide?",
+        "answer": "End-to-end software development: custom applications, AI-powered solutions, cybersecurity product development (Silence AI-SOC), system integration, cloud migration, and DevOps. We also offer dedicated product development and staff augmentation."
+      },
+      {
+        "question": "Which industries and domains do you specialize in?",
+        "answer": "Construction, retail, fintech, cybersecurity, and digital platforms — including AI-driven team management, e-commerce, and enterprise security solutions."
+      },
+      {
+        "question": "What technology stacks and platforms does your team have expertise in?",
+        "answer": "GO, Swift, Flutter, cloud platforms (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript, and AI/ML frameworks. We build proprietary security tools like Silence AI-SOC."
+      },
+      {
+        "question": "Do you offer end-to-end product development or specific services only?",
+        "answer": "We offer both: MVPs, full-cycle product delivery, staff augmentation, and cybersecurity integration."
+      },
+      {
+        "question": "Can you provide both staff augmentation and dedicated team models?",
+        "answer": "Yes, we provide flexible engagement models: staff augmentation, dedicated teams, and project-based outsourcing."
+      },
+      {
+        "question": "Do you offer consulting, architecture, and advisory services beyond development?",
+        "answer": "Yes: cybersecurity consulting, system architecture design, technology advisory, and security compliance assessments using Silence AI-SOC."
+      }
+    ]
+  },
+  "requestDemoModal": {
+    "title": "Request System",
+    "name": "Name",
+    "email": "Corporate Email",
+    "company": "Company Name",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Send Request",
+    "successTitle": "Request Sent!",
+    "successBody": "Thank you for your interest. We will be in touch shortly.",
+    "close": "Close"
+  },
+  "requestSystemModal": {
+    "title": "Request System",
+    "name": "Name",
+    "email": "Corporate Email",
+    "company": "Company Name",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Download",
+    "successTitle": "Request Sent!",
+    "successBody": "Thank you. The system download instructions will be sent to your email.",
+    "close": "Close"
+  },
+  "policySidebar": {
+    "tableOfContents": "Table of Contents"
+  },
+  "notFound": {
+    "title": "Sayfa bulunamadı",
+    "description": "Her yere baktık ama bu sayfayı bulamadık.",
+    "cta": "Ana sayfaya dön"
+  },
+  "heroSection": {
+    "badge": "Üretime Hazır Yapay Zeka ve Yazılım",
+    "title": "Özel Yapay Zeka ve Yazılım Geliştirme",
+    "description": "{country} ve {market} için üretime hazır yapay zeka ajanları ve özel yazılımlar geliştiriyoruz.",
+    "country": "Kazakistan",
+    "market": "küresel pazar",
+    "startProject": "Proje Başlat",
+    "liveDemo": "Canlı Demo — YZ Ajanı",
+    "live": "Canlı",
+    "aiAgent": "YZ Ajanı v2.1",
+    "processing": "İstekler işleniyor...",
+    "active": "Aktif",
+    "userMessage": "Müşteri veri trendlerini analiz et",
+    "aiResponse": "Analiz ediliyor",
+    "tasks": {
+      "dataCollection": "Veri Toplama",
+      "aiAnalysis": "YZ Analizi",
+      "reportGeneration": "Rapor Oluşturma"
+    },
+    "stats": {
+      "tasks": "Görevler",
+      "success": "Başarı",
+      "speed": "Hız"
+    }
+  },
+  "whyChooseUs": {
+    "badge": "Sonuç odaklı mühendislik",
+    "title": "Neden Biz",
+    "subtitle": "Güvenen ekipler:",
+    "subtitleHighlight": "milyar dolarlık kuruluşlar",
+    "subtitleTail": "— ve startup hızında teslimat.",
+    "learnMore": "Daha fazla bilgi",
+    "logos": {
+      "kmg": "KazMunayGas",
+      "nak": "Nur Astana Kurylys"
+    },
+    "features": {
+      "fast": {
+        "title": "Kurumsal Kalitede Hızlı Teslimat",
+        "description": "Kurumsal düzeyde güvenilirlik ve uyumluluğu karşılayan hızlı, yinelemeli teslimat döngüleri.",
+        "pill": "Hız + Kalite"
+      },
+      "ai": {
+        "title": "Önce Yapay Zeka Ürün Mühendisliği",
+        "description": "Prototip aşamasından üretim yapay zeka ajanlarına kadar — gerçek iş sorunlarını çözen modeller tasarlıyor, eğitiyor ve dağıtıyoruz.",
+        "pill": "YZ Mühendisliği"
+      },
+      "local": {
+        "title": "Yerel Uzmanlık, Küresel Erişim",
+        "description": "Kazakistan pazarı ve düzenlemeleri hakkında derin bilgi ile uluslararası en iyi uygulamaların birleşimi.",
+        "pill": "KZ + Küresel"
+      }
+    }
+  },
+  "servicesBlock": {
+    "badge": "Ne sunuyoruz",
+    "title": "Hizmetlerimiz",
+    "description": "Birinci sınıf arayüz, güçlü mühendislik ve hızlı teslimat — üst düzey bir marka gibi görünen ve performans gösteren bir ürünü piyasaya sürmek için ihtiyacınız olan her şey.",
+    "learnMore": "Daha fazla bilgi",
+    "learnMoreAria": "Bu hizmet hakkında daha fazla bilgi",
+    "services": {
+      "aiAgents": {
+        "title": "YZ Ajanları",
+        "description": "Destek, operasyon ve analiz için özel konuşma ve otonom ajanları.",
+        "tag": "Otomasyon"
+      },
+      "customSoftware": {
+        "title": "Özel Yazılım",
+        "description": "İş akışlarınıza göre uyarlanmış uçtan uca web ve masaüstü uygulamaları.",
+        "tag": "İnşa"
+      },
+      "cybersecurity": {
+        "title": "Siber Güvenlik",
+        "description": "Denetimler, sızma testleri ve sürekli izleme.",
+        "tag": "Koruma"
+      },
+      "backend": {
+        "title": "Backend / DevOps",
+        "description": "Ölçeklenebilir API'ler, CI/CD süreçleri ve bulut altyapısı.",
+        "tag": "Ölçek"
+      },
+      "mobile": {
+        "title": "Mobil",
+        "description": "Yerel performans ve şık kullanıcı deneyimi sunan çapraz platform uygulamalar.",
+        "tag": "Yayınla"
+      }
+    }
+  },
+  "caseStudies": {
+    "badge": "Kanıtlanmış Etki",
+    "title": "Örnek Olaylar",
+    "subtitle": "Biz özellik teslim etmiyoruz. Biz sonuç teslim ediyoruz.",
+    "problem": "Sorun:",
+    "solution": "Çözüm:",
+    "liveImpact": "Canlı Etki",
+    "before": "Önce",
+    "after": "Sonra",
+    "buildCta": "Buna benzer bir şey oluştur →",
+    "caseStudy": "Örnek Olay",
+    "items": {
+      "nak": {
+        "title": "NAK — Ekip Yönetimi YZ",
+        "problem": "Manuel kaynak tahsisi",
+        "solution": "YZ destekli planlama ajanı",
+        "result": "+%32 üretkenlik",
+        "metricLabel": "Ekip Çıktı Endeksi"
+      },
+      "chic": {
+        "title": "Chic Flowers — E-ticaret",
+        "problem": "Düşük çevrimiçi dönüşüm",
+        "solution": "Kişiselleştirilmiş öneriler + UX yenileme",
+        "result": "+%45 çevrimiçi satış",
+        "metricLabel": "Dönüşüm Oranı Artışı"
+      },
+      "silence": {
+        "title": "Silence AI-SOC",
+        "problem": "Yüksek alarm gürültüsü",
+        "solution": "YZ tespiti ve otomatik yanıt",
+        "result": "−%68 yanlış pozitif",
+        "metricLabel": "Yanlış Alarm Hacmi"
+      }
+    }
+  },
+  "howWeWork": {
+    "title": "Çalışma Şeklimiz",
+    "subtitle": "Ultra hızlı teslimat süreci — hız için optimize edilmiştir.",
+    "steps": {
+      "discovery": {
+        "title": "Keşif",
+        "desc": "Gereksinimler, paydaşlar, başarı ölçütleri."
+      },
+      "design": {
+        "title": "Tasarım",
+        "desc": "UX, mimari, prototip."
+      },
+      "poc": {
+        "title": "Kavram Kanıtı (PoC)",
+        "desc": "Ölçülebilir KPI'lar ile hızlı doğrulama."
+      },
+      "build": {
+        "title": "İnşa",
+        "desc": "Yinelemeli sprintler, otomatik testler."
+      },
+      "deploy": {
+        "title": "Dağıtım",
+        "desc": "CI/CD, izleme, güvenlik sıkılaştırma."
+      },
+      "support": {
+        "title": "Destek ve Ölçekleme",
+        "desc": "Bakım, yol haritası, sürekli iyileştirme."
+      }
+    }
+  },
+  "technologyStack": {
+    "title": "Teknoloji Yığını",
+    "subtitle": "Hız, ölçeklenebilirlik ve güzel kullanıcı deneyimleri için tasarlanmış özenle seçilmiş üretim sınıfı yığın."
+  },
+  "backToTop": {
+    "label": "Başa dön"
+  },
+  "pricingCustom": {
+    "title": "Şeffaf Fiyatlandırma",
+    "subtitle": "Ürününüzle ölçeklenen mobil öncelikli planlar.",
+    "percentMaintenance": "{percent}% yıllık bakım",
+    "planEstimate": "${value}",
+    "perYear": "yıllık (tahmini)",
+    "calculator": {
+      "title": "Proje Maliyet Hesaplayıcı",
+      "subtitle": "Yıllık bakım ücretini görmek için kaydırın",
+      "projectCost": "Proje Maliyeti:",
+      "projectValue": "${value}"
+    },
+    "plans": {
+      "basic": {
+        "name": "Temel",
+        "features": {
+          "fix": "Kritik Hata Düzeltmeleri (48s SLA)",
+          "updates": "Aylık Güncellemeler",
+          "audit": "Üç Aylık Güvenlik Denetimleri",
+          "manager": "Özel Yönetici"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "En Popüler",
+        "features": {
+          "fix": "Kritik Hata Düzeltmeleri (24s SLA)",
+          "updates": "10 Saat Aylık Güncelleme",
+          "audit": "Aylık Güvenlik Denetimleri",
+          "manager": "Özel Yönetici"
+        }
+      },
+      "enterprise": {
+        "name": "Kurumsal",
+        "badge": "En İyi Değer",
+        "features": {
+          "fix": "Kritik Hata Düzeltmeleri (4s SLA)",
+          "updates": "Sınırsız Güncelleme + Yol Haritası",
+          "audit": "Haftalık Denetimler + Yedekleme",
+          "manager": "Özel Yönetici"
+        }
+      }
     }
   }
 }

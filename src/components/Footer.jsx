@@ -5,7 +5,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 const Footer = () => {
   const { t } = useLanguage();
   const year = new Date().getFullYear();
-  const copyright = t("footer.copyright", `© ${year} Silence AI. All rights reserved.`).replace(
+  const copyright = t("footer.copyright").replace(
     "{year}",
     year
   );
@@ -19,15 +19,12 @@ const Footer = () => {
           </div>
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 items-center text-gray-400">
             <div>
-              <span className="font-semibold text-white">{t("footer.contactLabel", "Contact:")}</span>{" "}
-              {t("footer.contactValue", "info@silenceai.net")}
+              <span className="font-semibold text-white">{t("footer.contactLabel")}</span>{" "}
+              {t("footer.contactValue")}
             </div>
             <div>
-              <span className="font-semibold text-white">{t("footer.addressLabel", "Address:")}</span>{" "}
-              {t(
-                "footer.addressValue",
-                "Media City Free Zone, Al Messaned, Sharjah, UAE"
-              )}
+              <span className="font-semibold text-white">{t("footer.addressLabel")}</span>{" "}
+              {t("footer.addressValue")}
             </div>
           </div>
         </div>
@@ -35,16 +32,16 @@ const Footer = () => {
           <p className="text-gray-500 text-sm mb-4 sm:mb-0">{copyright}</p>
           <div className="flex space-x-4 items-center text-gray-400">
             <a href="/policies/terms_of_use" className="hover:text-white transition-colors duration-300">
-              {t("footer.links.termsUse", "Terms of Use")}
+              {t("footer.links.termsUse")}
             </a>
             <a href="/policies/terms_of_service" className="hover:text-white transition-colors duration-300">
-              {t("footer.links.termsService", "Terms of Service")}
+              {t("footer.links.termsService")}
             </a>
             <a href="/policies/privacy" className="hover:text-white transition-colors duration-300">
-              {t("footer.links.privacy", "Privacy Policy")}
+              {t("footer.links.privacy")}
             </a>
             <a href="/policies/cookies" className="hover:text-white transition-colors duration-300">
-              {t("footer.links.cookies", "Cookies Policy")}
+              {t("footer.links.cookies")}
             </a>
           </div>
         </div>

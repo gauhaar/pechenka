@@ -11,26 +11,17 @@ const Hero = ({ onOpenModal }) => {
   const playgroundRef = useRef(null);
   const playgroundHeadingRef = useRef(null);
   const { t } = useLanguage();
-  const fullText = t(
-    "hero.headline",
-    "AI-SOC 1: Cybersecurity is neither expensive nor complicated anymore"
-  );
-  const playgroundHeading = t("hero.playgroundHeading", "60 seconds tour");
+  const fullText = t("hero.headline");
+  const playgroundHeading = t("hero.playgroundHeading");
 
   const tooltipContent = {
     "web-attack-protection": {
-      title: t("hero.tooltips.web.title", "Web Attack Protection"),
-      content: t(
-        "hero.tooltips.web.content",
-        "System can protect against ALL types of web attacks, such as DDoS, SQLi, and others, except business logic vulnerabilities"
-      ),
+      title: t("hero.tooltips.web.title"),
+      content: t("hero.tooltips.web.content"),
     },
     "email-attack-protection": {
-      title: t("hero.tooltips.email.title", "Email Attack Protection"),
-      content: t(
-        "hero.tooltips.email.content",
-        "System can protect against ALL types of email attacks, such as phishing, malware attachment, dangerous links, etc."
-      ),
+      title: t("hero.tooltips.email.title"),
+      content: t("hero.tooltips.email.content"),
     },
   };
 
@@ -106,20 +97,17 @@ const Hero = ({ onOpenModal }) => {
           {fullText}
         </h1>
         <p className="font-bold mb-4 text-base sm:text-lg">
-          {t(
-            "hero.subheading",
-            "The all in one, AI-based cybersecurity system that combines:"
-          )}
+          {t("hero.subheading")}
         </p>
         <div className="space-y-4 mb-8">
           {[
             {
               key: "web-attack-protection",
-              label: t("hero.bullets.web", "Real time web attack protection"),
+              label: t("hero.bullets.web"),
             },
             {
               key: "email-attack-protection",
-              label: t("hero.bullets.email", "Email attacks protection"),
+              label: t("hero.bullets.email"),
             },
           ].map((item) => (
             <div key={item.key} className="flex items-start sm:items-center gap-2 text-sm sm:text-base">
@@ -145,7 +133,7 @@ const Hero = ({ onOpenModal }) => {
         </div>
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto">
           <GlowButton onClick={onOpenModal} className="w-full sm:w-auto">
-            {t("hero.buttons.connect", "Request Demo")}
+            {t("hero.buttons.connect")}
           </GlowButton>
         </div>
       </div>

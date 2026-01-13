@@ -1,10 +1,22 @@
+import createNextIntlPlugin from 'next-intl/plugin';
+import { supportedLocales, defaultLocale } from "./src/i18n/locales.mjs";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Server build (not static export) so `next start` under PM2 handles routing and avoids EISDIR from nginx.
 const nextConfig = {
-  output: 'export',  // Enables static export
   images: {
-    unoptimized: true,  // Disables heavy image optimization
+    unoptimized: true, // Keep lightweight image handling
   },
-  trailingSlash: true,  // Ensures proper static file generation
-  distDir: 'out'
+  trailingSlash: true, // Preserve trailing slashes for existing URLs
+  turbopack: {
+    root: __dirname, // Silence root inference warning; this is the project root
+  },
 };
 
-export default nextConfig;
+const withNextIntl = createNextIntlPlugin('./src/i18n/request.js');
+
+export default withNextIntl(nextConfig);

@@ -10,8 +10,8 @@ import EdgeGlowCard from "./EdgeGlowCard";
 export function StickyScrollSolution() {
   const { t } = useLanguage();
   const localizedContent = solutionContent.map((item) => {
-    const title = t(`stickySolution.${item.id}.title`, item.id);
-    const description = t(`stickySolution.${item.id}.description`, "");
+    const title = t(`stickySolution.${item.id}.title`);
+    const description = t(`stickySolution.${item.id}.description`);
 
     return {
       ...item,

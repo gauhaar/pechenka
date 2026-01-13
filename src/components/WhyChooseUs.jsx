@@ -9,8 +9,10 @@ import {
   Sparkles,
 } from "lucide-react";
 import EdgeGlowCard from "./EdgeGlowCard";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const WhyChooseUs = () => {
+  const { t } = useLanguage();
   const defaultGlowPalette = {
     glowColor: "#FF00B7",
     secondaryGlowColor: "rgba(32,140,255,0.45)",
@@ -24,46 +26,61 @@ const WhyChooseUs = () => {
     () => [
       {
         fallbackIcon: Rocket,
-        title: "Fast Delivery with Enterprise Quality",
-        description:
-          "Rapid, iterative delivery cycles that meet enterprise-grade reliability and compliance.",
+        title: t(
+          "whyChooseUs.features.fast.title",
+          "Fast Delivery with Enterprise Quality"
+        ),
+        description: t(
+          "whyChooseUs.features.fast.description",
+          "Rapid, iterative delivery cycles that meet enterprise-grade reliability and compliance."
+        ),
         accent: "#FF00B7",
-        pill: "Speed + Quality",
+        pill: t("whyChooseUs.features.fast.pill", "Speed + Quality"),
       },
       {
         fallbackIcon: BrainCircuit,
-        title: "AI-first Product Engineering",
-        description:
-          "From prototypes to production AI agents — we design, train, and deploy models that solve real business problems.",
+        title: t(
+          "whyChooseUs.features.ai.title",
+          "AI-first Product Engineering"
+        ),
+        description: t(
+          "whyChooseUs.features.ai.description",
+          "From prototypes to production AI agents — we design, train, and deploy models that solve real business problems."
+        ),
         accent: "#00BFFF",
-        pill: "AI Engineering",
+        pill: t("whyChooseUs.features.ai.pill", "AI Engineering"),
       },
       {
         fallbackIcon: Globe2,
-        title: "Local Expertise, Global Reach",
-        description:
-          "Deep knowledge of Kazakhstan's market and regulations combined with international best practices.",
+        title: t(
+          "whyChooseUs.features.local.title",
+          "Local Expertise, Global Reach"
+        ),
+        description: t(
+          "whyChooseUs.features.local.description",
+          "Deep knowledge of Kazakhstan's market and regulations combined with international best practices."
+        ),
         accent: "#37FF8B",
-        pill: "KZ + Global",
+        pill: t("whyChooseUs.features.local.pill", "KZ + Global"),
       },
     ],
-    []
+    [t]
   );
 
   const logos = useMemo(
     () => [
       {
         src: "/kmg-logo.png",
-        alt: "KazMunayGas",
+        alt: t("whyChooseUs.logos.kmg", "KazMunayGas"),
         fallbackIcon: Building2,
       },
       {
         src: "/nak-logo.png",
-        alt: "Nur Astana Kurylys",
+        alt: t("whyChooseUs.logos.nak", "Nur Astana Kurylys"),
         fallbackIcon: Sparkles,
       },
     ],
-    []
+    [t]
   );
 
   const container = {
@@ -123,12 +140,12 @@ const WhyChooseUs = () => {
       <div className="relative space-y-3 pt-8 text-center sm:pt-12">
         <div className="mx-auto inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70 shadow-[0_12px_36px_rgba(0,0,0,0.25)]">
           <span className="h-2 w-2 rounded-full bg-white/60" />
-          Results-driven engineering
+          {t("whyChooseUs.badge", "Results-driven engineering")}
         </div>
 
         <h2 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl md:text-6xl">
           <span className="relative inline-block">
-            Why Choose Us
+            {t("whyChooseUs.title", "Why Choose Us")}
             {/* animated underline */}
             <span className="absolute left-1/2 top-[105%] h-[2px] w-[70%] -translate-x-1/2 overflow-hidden rounded-full bg-white/10">
               <motion.span
@@ -146,9 +163,9 @@ const WhyChooseUs = () => {
         </h2>
 
         <p className="mx-auto max-w-2xl text-base text-white/70 sm:text-xl">
-          Trusted by teams from{" "}
-          <span className="text-white">billion-dollar organizations</span> — and
-          shipped with startup speed.
+          {t("whyChooseUs.subtitle", "Trusted by teams from")}{" "}
+          <span className="text-white">{t("whyChooseUs.subtitleHighlight", "billion-dollar organizations")}</span>{" "}
+          {t("whyChooseUs.subtitleTail", "— and shipped with startup speed.")}
         </p>
       </div>
 
@@ -179,6 +196,7 @@ const WhyChooseUs = () => {
             feature={feature}
             defaultGlowPalette={defaultGlowPalette}
             itemVariant={item}
+            t={t}
           />
         ))}
       </motion.div>
@@ -186,7 +204,7 @@ const WhyChooseUs = () => {
   );
 };
 
-function FeatureCard({ feature, defaultGlowPalette, itemVariant }) {
+function FeatureCard({ feature, defaultGlowPalette, itemVariant, t }) {
   const [pos, setPos] = useState({ x: 18, y: 18 });
 
   return (
@@ -298,7 +316,7 @@ function FeatureCard({ feature, defaultGlowPalette, itemVariant }) {
                       "linear-gradient(90deg, transparent, rgba(255,255,255,0.22), transparent)",
                   }}
                 />
-                <span className="relative">Learn more</span>
+                <span className="relative">{t("whyChooseUs.learnMore", "Learn more")}</span>
                 <span
                   className="relative h-1.5 w-1.5 rounded-full transition-transform duration-300 group-hover/cta:scale-125"
                   style={{ background: feature.accent }}

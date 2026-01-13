@@ -1,7 +1,13 @@
 {
   "languageSelector": {
     "triggerLabel": "اختر اللغة",
-    "menuLabel": "يرجى اختيار اللغة"
+    "menuLabel": "يرجى اختيار اللغة",
+    "searchLabel": "Search languages",
+    "searchPlaceholder": "Search by name or native script",
+    "searchResults": "Search results",
+    "noMatches": "No languages match your search.",
+    "popular": "Most popular",
+    "allLanguages": "All languages"
   },
   "header": {
     "nav": {
@@ -13,7 +19,12 @@
       "secureDevelopment": "SLNC Code",
       "developerServices": "خدمات المطورين"
     },
-    "login": "طلب عرض تجريبي"
+    "login": "طلب عرض تجريبي",
+    "cta": {
+      "contact": "Contact",
+      "download": "Download",
+      "requestDemo": "Request Demo"
+    }
   },
   "affiliate": {
     "hero": {
@@ -99,6 +110,60 @@
         "question": "متى أرى إحصائيات الإحالات الخاصة بي؟",
         "answer": "بمجرد أن يسجل المستخدم باستخدام رمزك الترويجي أو رابط الإحالة، يظهر عنوان بريده الإلكتروني والمكافأة المقابلة في لوحة التحكم."
       }
+    },
+    "termsAff": {
+      "label": "Affiliate Program",
+      "title": "Affiliate Terms of Service",
+      "notice": "This policy is available only in English",
+      "intro": "These terms describe how rewards are issued and paid to partners participating in the Silence AI affiliate program.",
+      "meta": {
+        "effective": "Effective date: 10 November 2024",
+        "lastUpdated": "Last updated: 10 November 2024"
+      },
+      "sections": {
+        "overview": {
+          "title": "1. Program Overview",
+          "body1": "1.1 Agreement Scope: These Affiliate Terms of Service (\"Terms\") govern your participation in the Silence AI affiliate program operated by Silence AI LLC (\"Silence AI,\" \"we,\" \"us,\" or \"our\"). These Terms apply to you, the individual or entity enrolling as an affiliate partner (\"you\" or \"your\"), and, where applicable, your employer, principal, or organization if you act on their behalf.",
+          "body2": "1.2 Program Summary: Under this program, qualified partners earn commission-based rewards when referred customers purchase or top up the AI-SOC 1 product. Participation in the affiliate program also requires compliance with the general Silence AI Terms of Service."
+        },
+        "eligibility": {
+          "title": "2. Partner Eligibility",
+          "item1": "You must maintain an active Silence AI affiliate account with accurate business and payment details.",
+          "item2": "Referrals must complete registration through your issued link or promo code.",
+          "item3": "Accounts found to be fraudulent, self-referred, or in breach of applicable law are not eligible for rewards."
+        },
+        "commission": {
+          "title": "3. Commission Structure",
+          "body1": "You earn a 10% reward on every balance top-up completed by an account registered through your invitation.",
+          "body2": "Commission is calculated from the net top-up amount after payment processing fees are deducted."
+        },
+        "rewardPosting": {
+          "title": "4. Reward Posting",
+          "body1": "Rewards post to your partner balance within one minute after the transaction successfully clears. There is no manual approval queue.",
+          "body2": "Notifications appear in your affiliate dashboard alongside the customer identifier and top-up amount."
+        },
+        "withdrawals": {
+          "title": "5. Withdrawals",
+          "body1": "Withdrawal requests are processed within two business days and paid out using the settlement method on file.",
+          "body2": "Minimum withdrawal thresholds and supported payout networks are published inside the affiliate dashboard."
+        },
+        "productScope": {
+          "title": "6. Product Scope",
+          "body1": "Rewards are only provided for the AI-SOC 1 product. Other Silence AI services are excluded from the affiliate program unless explicitly stated otherwise in writing.",
+          "body2": "If additional products become eligible, Silence AI will publish an updated list inside these terms."
+        },
+        "compliance": {
+          "title": "7. Partner Conduct & Compliance",
+          "item1": "Partners must represent Silence AI accurately and avoid misleading claims about features or pricing.",
+          "item2": "Marketing communications must comply with applicable anti-spam, privacy, and advertising regulations.",
+          "item3": "Silence AI may suspend or terminate accounts that violate these obligations or harm the brand."
+        },
+        "changes": {
+          "title": "8. Changes & Contact",
+          "body1": "Silence AI may update these affiliate terms to reflect changes in the program or applicable law. Updated versions take effect upon publication on this page.",
+          "body2": "Questions about the affiliate program can be sent to info@silenceai.net."
+        }
+      }
     }
   },
   "hero": {
@@ -143,81 +208,81 @@
     "ok": "حسنًا"
   },
   "pricing": {
-    "title": "الأسعار",
+    "title": "التسعير",
     "tooltips": {
       "cmcGlobal": {
-        "title": "‏CMC مع مراقبة عالمية للحركة",
-        "content": "يتكامل مركز الإدارة المركزي (CMC) بسلاسة مع الأنظمة الأمنية الأخرى ويستخدم نفس النطاق والواجهة الخاصة بـ Global Shield وSecurity Tester، ما يتيح إدارة الأمن على نطاق واسع مثل حظر الدول وإغلاق المنافذ"
+        "title": "CMC مع مراقبة حركة المرور العالمية",
+        "content": "تتكامل CMC (وحدة التحكم الإدارية المركزية) بسلاسة مع أنظمة الأمان الأخرى وتتوفر تحت نفس النطاق والواجهة مثل Global Shield و Security Tester، مما يسمح لك بإدارة أمان الشبكة على نطاق واسع. من هنا، يمكنك وضع البلدان في القائمة السوداء، وإغلاق المنافذ، وتنفيذ عمليات أخرى."
       },
       "countryBlacklisting": {
-        "title": "حظر حسب الدولة",
-        "content": "احظر كل الحركة الواردة من دولة محددة"
+        "title": "القائمة السوداء للبلدان",
+        "content": "حظر جميع حركات المرور الصادرة من بلد معين"
       },
       "portManagement": {
         "title": "إدارة المنافذ",
-        "content": "أغلق المنافذ غير المستخدمة لتقليل سطح الهجوم. على سبيل المثال، عطِّل المنفذ 22 عندما لا تكون هناك حاجة لاتصال SSH لتقليل مخاطر الاختراق"
+        "content": "إغلاق المنافذ غير المستخدمة لتقليل سطح الهجوم. على سبيل المثال، تعطيل المنفذ 22 عند عدم الحاجة إلى وصول SSH. لتقليل مخاطر اختراق النظام."
       },
       "cmcEmail": {
-        "title": "CMC مع أداة متقدمة لتصور تدفق البريد",
-        "content": "يتكامل CMC مع الأنظمة الأمنية الأخرى ويتيح مراقبة تدفق البريد لجميع المستخدمين الذين تضيفهم ومراجعة الرسائل الخاصة بهم"
+        "title": "CMC مع مصور تدفق البريد الإلكتروني المتقدم",
+        "content": "تتكامل CMC (وحدة التحكم الإدارية المركزية) بسلاسة مع أنظمة الأمان الأخرى وتتوفر تحت نفس النطاق والواجهة مثل Global Shield و Security Tester. داخل هذه الوحدة، يمكنك مراقبة تدفقات البريد الإلكتروني ومراجعة رسائل البريد الإلكتروني لجميع مستخدمي الشركة الذين أضفتهم."
       },
       "dynamicVulnerability": {
-        "title": "اكتشاف ديناميكي للثغرات",
-        "content": "يكتشف الثغرات عن طريق التفاعل مع موقعك الإلكتروني، بما في ذلك استخدام نظام الاستخبارات"
+        "title": "مكتشف الثغرات الديناميكي",
+        "content": "يكتشف الثغرات من خلال التفاعل مع موقع الويب الخاص بك، بما في ذلك طريقة العثور على الثغرات من خلال نظام الاستخبارات."
       },
       "codeAnalyzer": {
-        "title": "محلل الشيفرة",
-        "content": "يحدد مشكلات الأمان مباشرة في قاعدة الشيفرة من خلال إضافة VS Code، ما يساعدك على إصلاحها قبل النشر"
+        "title": "محلل الكود",
+        "content": "يحدد مشكلات الأمان مباشرة في قاعدة التعليمات البرمجية الخاصة بك من خلال مكون إضافي لـ VS Code، مما يساعدك على إصلاح المشكلات قبل النشر."
       },
       "intelligenceReport": {
-        "title": "تقرير استخباراتي",
-        "content": "يوفر رؤى تفصيلية عن الهدف، بما في ذلك المنافذ المفتوحة والخدمات المشغلة والنطاقات الفرعية وغيرها من المعلومات الحساسة"
+        "title": "تقرير الاستخبارات",
+        "content": "يولد رؤى تفصيلية حول هدفك، بما في ذلك المنافذ المفتوحة، والخدمات قيد التشغيل، والنطاقات الفرعية، وغيرها من المعلومات الحساسة التي قد تتطلب إجراءً."
       },
       "fullVulnerability": {
         "title": "فحص كامل للثغرات",
-        "content": "يتضمن الفحص الكامل مسحًا ديناميكيًا ومسحًا لقاعدة الشيفرة"
+        "content": "يشمل الفحص الكامل للثغرات كلاً من فحص الثغرات الديناميكي وفحص ثغرات قاعدة التعليمات البرمجية."
       }
     },
     "plans": {
       "globalShield": {
-        "title": "أمن الويب وإدارة الحركة",
-        "price": "$0.06/GB",
-        "description": "دون حدود\nدون رسوم إضافية",
-        "button": "حماية التطبيقات والواجهات",
+        "title": "أمان الويب وإدارة حركة المرور",
+        "price": "$0.06/جيجابايت",
+        "description": "بلا حدود\nبدون رسوم إضافية",
+        "button": "تأمين تطبيق الويب وواجهات برمجة التطبيقات",
         "features": {
-          "webProtection": "حماية من جميع هجمات الويب باستثناء استغلال منطق الأعمال",
-          "ddosProtection": "حماية DDoS في الوقت الفعلي",
-          "cmc": "CMC مع مراقبة عالمية للحركة",
-          "country": "ميزة حظر الدول",
+          "webProtection": "حماية ضد جميع أنواع هجمات الويب، باستثناء استغلال ثغرات منطق العمل",
+          "ddosProtection": "حماية من هجمات DDoS في الوقت الفعلي",
+          "cmc": "CMC مع نظام مراقبة حركة المرور العالمية",
+          "country": "ميزة القائمة السوداء للبلدان",
           "port": "ميزة إغلاق المنافذ"
         }
       },
       "emailProtector": {
-        "title": "أمن البريد الإلكتروني والتصور",
-        "price": "$10/شهريًا/حساب",
-        "description": "حتى 10 رسائل يوميًا\nالرسائل الإضافية: ‎$0.035 لكل رسالة",
-        "button": "تأمين البريد",
+        "title": "أمان البريد الإلكتروني والتصور",
+        "price": "$10/شهر/حساب",
+        "description": "ما يصل إلى 10 رسائل بريد إلكتروني يوميًا\nرسائل بريد إلكتروني إضافية: $0.035 لكل بريد إلكتروني",
+        "button": "تأمين البريد الإلكتروني",
         "features": {
-          "cmcEmail": "CMC مع أكثر أداة متقدمة لتصور تدفق البريد",
-          "visibility": "رؤية كاملة للرسائل المرسلة والمستلمة مع تصنيف تلقائي للتهديدات",
-          "webClient": "عميل بريد ويب آمن",
-          "phishing": "حماية من التصيد",
-          "malware": "فحص للمرفقات الخبيثة",
+          "cmcEmail": "CMC مع أحدث مصور لتدفق البريد الإلكتروني",
+          "visibility": "رؤية كاملة لرسائل البريد الإلكتروني المرسلة والمستلمة لجميع حسابات البريد الإلكتروني، في CMC، مع تصنيف التهديدات التلقائي",
+          "webClient": "عميل WebMail آمن",
+          "phishing": "حماية من التصيد الاحتيالي",
+          "malware": "فحص مرفقات البرامج الضارة",
           "links": "كشف الروابط الخطرة",
           "spam": "تصفية البريد العشوائي",
-          "fakeSender": "حماية من المُرسِل المزيف"
+          "fakeSender": "حماية من المرسل المزيف"
         }
       },
       "securityTester": {
-        "title": "كاشف الثغرات",
-        "price": "$25/شهريًا",
-        "description": "حتى 50 فحصًا كاملًا شهريًا\nالفحوص الإضافية: ‎$0.5 لكل فحص",
+        "title": "مكتشف الثغرات",
+        "price": "$25/شهر",
+        "description": "ما يصل إلى 50 فحصًا كاملاً للثغرات شهريًا\nفحوصات كاملة إضافية: $0.5 لكل منها",
         "button": "بدء الاختبار",
         "features": {
-          "dynamic": "اكتشاف ديناميكي للثغرات",
-          "codeAnalyzer": "محلل الشيفرة",
-          "reports": "تقارير أمان سهلة الفهم",
-          "intelligence": "تقرير استخباراتي"
+          "dynamic": "مكتشف الثغرات الديناميكي",
+          "codeAnalyzer": "محلل الكود",
+          "reports": "تقارير تقييم الأمان سهلة الفهم",
+          "intelligence": "تقرير الاستخبارات"
         }
       }
     }
@@ -321,7 +386,8 @@
       "termsUse": "شروط الاستخدام",
       "termsService": "شروط الخدمة",
       "privacy": "سياسة الخصوصية",
-      "cookies": "سياسة ملفات تعريف الارتباط"
+      "cookies": "سياسة ملفات تعريف الارتباط",
+      "affiliateTerms": "Affiliate Terms of Service"
     },
     "copyright": "© {year} ‎Silence AI‎. جميع الحقوق محفوظة."
   },
@@ -388,6 +454,41 @@
         "heading": "تسريب DeepSeek وضع الرمز المصدر والتوجيهات على الإنترنت المفتوح",
         "description": "احتفظ بالاستدلال والفحص محليًا. لا خروج للنماذج الخارجية. مسارات التدقيق افتراضيًا.",
         "seePlan": "عرض خطة الاحتواء"
+      },
+      "stuxnet": {
+        "year": "2010",
+        "attack": "Stuxnet",
+        "target": "Natanz enrichment facility",
+        "impact": "Destroyed ~1,000 centrifuges",
+        "severity": "Critical"
+      },
+      "blackEnergy": {
+        "year": "2015",
+        "attack": "BlackEnergy",
+        "target": "Ukraine power grid",
+        "impact": "230k customers lost power",
+        "severity": "High"
+      },
+      "triton": {
+        "year": "2017",
+        "attack": "TRITON",
+        "target": "Saudi petrochemical plant",
+        "impact": "Safety systems disabled",
+        "severity": "Critical"
+      },
+      "colonialPipeline": {
+        "year": "2021",
+        "attack": "Colonial Pipeline",
+        "target": "US fuel pipeline",
+        "impact": "6-day fuel paralysis",
+        "severity": "High"
+      },
+      "pdvsa": {
+        "year": "2025",
+        "attack": "PDVSA",
+        "target": "Venezuela refining",
+        "impact": "Refinery operations disrupted",
+        "severity": "Medium"
       }
     },
     "analyzer": {
@@ -464,6 +565,285 @@
       "government": {
         "title": "الحكومة",
         "description": "الوزارات، الدفاع، الوكالات الحرجة"
+      }
+    }
+  },
+  "pricingCta": {
+    "requestSystem": "Request System"
+  },
+  "contactForm": {
+    "title": "Contact Us",
+    "success": "Thanks! Your message has been sent. We will contact you shortly.",
+    "errorRequired": "Please fill in your name, email and a short message.",
+    "errorSend": "Unable to send message. Please try again later.",
+    "placeholders": {
+      "name": "Your name",
+      "email": "Email",
+      "type": "Project Type (optional)",
+      "budget": "Budget (optional)",
+      "message": "Tell us about your project..."
+    },
+    "submit": {
+      "idle": "Send Message",
+      "loading": "Sending…"
+    }
+  },
+  "consulting": {
+    "title": "Consulting Questionnaire",
+    "searchPlaceholder": "Search questions...",
+    "noResults": "No questions found.",
+    "questions": [
+      {
+        "question": "What is your company's core value proposition beyond competitive pricing?",
+        "answer": "Security is our primary differentiator. We position ourselves as a company that builds highly secure systems with enterprise-grade security practices embedded throughout the development lifecycle."
+      },
+      {
+        "question": "How long has your company been in business, and what is your track record?",
+        "answer": "We have successfully delivered major projects including: NAK (Nur Astana Kurylys) - AI-powered team management platform, and Chic Flowers - Complete digital platform for a major flower retail company."
+      },
+      {
+        "question": "What differentiates your technical capabilities and service quality from EPAM and other competitors?",
+        "answer": "Our key differentiator is our security-first development approach. We integrate security practices from project inception through deployment and maintenance."
+      },
+      {
+        "question": "How do you maintain quality while offering competitive pricing?",
+        "answer": "We offer services at 15% below market rates while maintaining exceptional quality through optimized operations, strategic talent sourcing, and efficient project management methodologies."
+      },
+      {
+        "question": "What specific software development services do you provide?",
+        "answer": "End-to-end software development: custom applications, AI-powered solutions, cybersecurity product development (Silence AI-SOC), system integration, cloud migration, and DevOps. We also offer dedicated product development and staff augmentation."
+      },
+      {
+        "question": "Which industries and domains do you specialize in?",
+        "answer": "Construction, retail, fintech, cybersecurity, and digital platforms — including AI-driven team management, e-commerce, and enterprise security solutions."
+      },
+      {
+        "question": "What technology stacks and platforms does your team have expertise in?",
+        "answer": "GO, Swift, Flutter, cloud platforms (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript, and AI/ML frameworks. We build proprietary security tools like Silence AI-SOC."
+      },
+      {
+        "question": "Do you offer end-to-end product development or specific services only?",
+        "answer": "We offer both: MVPs, full-cycle product delivery, staff augmentation, and cybersecurity integration."
+      },
+      {
+        "question": "Can you provide both staff augmentation and dedicated team models?",
+        "answer": "Yes, we provide flexible engagement models: staff augmentation, dedicated teams, and project-based outsourcing."
+      },
+      {
+        "question": "Do you offer consulting, architecture, and advisory services beyond development?",
+        "answer": "Yes: cybersecurity consulting, system architecture design, technology advisory, and security compliance assessments using Silence AI-SOC."
+      }
+    ]
+  },
+  "requestDemoModal": {
+    "title": "Request System",
+    "name": "Name",
+    "email": "Corporate Email",
+    "company": "Company Name",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Send Request",
+    "successTitle": "Request Sent!",
+    "successBody": "Thank you for your interest. We will be in touch shortly.",
+    "close": "Close"
+  },
+  "requestSystemModal": {
+    "title": "Request System",
+    "name": "Name",
+    "email": "Corporate Email",
+    "company": "Company Name",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Download",
+    "successTitle": "Request Sent!",
+    "successBody": "Thank you. The system download instructions will be sent to your email.",
+    "close": "Close"
+  },
+  "policySidebar": {
+    "tableOfContents": "Table of Contents"
+  },
+  "whyChooseUs": {
+    "badge": "هندسة موجهة بالنتائج",
+    "title": "لماذا تختارنا",
+    "subtitle": "موثوق من قبل فرق من",
+    "subtitleHighlight": "مؤسسات بمليارات الدولارات",
+    "subtitleTail": "— ويتم التسليم بسرعة الشركات الناشئة.",
+    "learnMore": "اعرف المزيد",
+    "logos": {
+      "kmg": "KazMunayGas",
+      "nak": "Nur Astana Kurylys"
+    },
+    "features": {
+      "fast": {
+        "title": "تسليم سريع بجودة المؤسسات",
+        "description": "دورات تسليم سريعة ومتكررة تلبي موثوقية المؤسسات والامتثال.",
+        "pill": "السرعة + الجودة"
+      },
+      "ai": {
+        "title": "هندسة المنتجات التي تعطي الأولوية للذكاء الاصطناعي",
+        "description": "من النماذج الأولية إلى وكلاء الذكاء الاصطناعي في الإنتاج — نقوم بتصميم وتدريب ونشر النماذج التي تحل مشاكل العمل الحقيقية.",
+        "pill": "هندسة AI"
+      },
+      "local": {
+        "title": "خبرة محلية، وصول عالمي",
+        "description": "معرفة عميقة بسوق كازاخستان ولوائحه مقترنة بأفضل الممارسات الدولية.",
+        "pill": "KZ + عالمي"
+      }
+    }
+  },
+  "servicesBlock": {
+    "badge": "ماذا نقدم",
+    "title": "خدماتنا",
+    "description": "واجهة مستخدم متميزة، وهندسة قوية، وتسليم سريع — كل ما تحتاجه لإطلاق منتج يبدو وكأنه علامة تجارية من الطراز الأول.",
+    "learnMore": "اعرف المزيد",
+    "learnMoreAria": "اعرف المزيد عن هذه الخدمة",
+    "services": {
+      "aiAgents": {
+        "title": "وكلاء الذكاء الاصطناعي",
+        "description": "وكلاء محادثة ومستقلون مخصصون للدعم والعمليات والتحليلات.",
+        "tag": "أتمتة"
+      },
+      "customSoftware": {
+        "title": "برمجيات مخصصة",
+        "description": "تطبيقات ويب وسطح مكتب شاملة مصممة لسير عملك.",
+        "tag": "بناء"
+      },
+      "cybersecurity": {
+        "title": "الأمن السيبراني",
+        "description": "تدقيق، واختبار الاختراق، والمراقبة المستمرة.",
+        "tag": "حماية"
+      },
+      "backend": {
+        "title": "الواجهة الخلفية / DevOps",
+        "description": "واجهات برمجة تطبيقات قابلة للتطوير، وخطوط أنابيب CI/CD، وبنية تحتية سحابية.",
+        "tag": "توسع"
+      },
+      "mobile": {
+        "title": "تطبيقات الهاتف المحمول",
+        "description": "تطبيقات متعددة المنصات بأداء أصلي وتجربة مستخدم مصقولة.",
+        "tag": "إطلاق"
+      }
+    }
+  },
+  "caseStudies": {
+    "badge": "تأثير مثبت",
+    "title": "دراسات الحالة",
+    "subtitle": "نحن لا نسلم ميزات فقط. نحن نسلم نتائج.",
+    "problem": "المشكلة:",
+    "solution": "الحل:",
+    "liveImpact": "تأثير مباشر",
+    "before": "قبل",
+    "after": "بعد",
+    "buildCta": "بناء شيء مثل هذا ←",
+    "caseStudy": "دراسة حالة",
+    "items": {
+      "nak": {
+        "title": "NAK — الذكاء الاصطناعي لإدارة الفريق",
+        "problem": "تخصيص الموارد يدوياً",
+        "solution": "وكيل جدولة مدعوم بالذكاء الاصطناعي",
+        "result": "+32% إنتاجية",
+        "metricLabel": "مؤشر إنتاج الفريق"
+      },
+      "chic": {
+        "title": "Chic Flowers — التجارة الإلكترونية",
+        "problem": "تحويلات منخفضة عبر الإنترنت",
+        "solution": "توصيات مخصصة + تحسين تجربة المستخدم",
+        "result": "+45% مبيعات عبر الإنترنت",
+        "metricLabel": "نمو معدل التحويل"
+      },
+      "silence": {
+        "title": "Silence AI-SOC",
+        "problem": "ضوضاء تنبيهات عالية",
+        "solution": "اكتشاف الذكاء الاصطناعي والاستجابة الآلية",
+        "result": "−68% نتائج إيجابية كاذبة",
+        "metricLabel": "حجم التنبيهات الكاذبة"
+      }
+    }
+  },
+  "howWeWork": {
+    "title": "كيف نعمل",
+    "subtitle": "خط أنابيب تسليم فائق السرعة — محسن للسرعة.",
+    "steps": {
+      "discovery": {
+        "title": "الاكتشاف",
+        "desc": "المتطلبات، أصحاب المصلحة، مقاييس النجاح."
+      },
+      "design": {
+        "title": "التصميم",
+        "desc": "تجربة المستخدم، الهندسة المعمارية، النموذج الأولي."
+      },
+      "poc": {
+        "title": "إثبات المفهوم",
+        "desc": "تحقق سريع مع مؤشرات أداء رئيسية قابلة للقياس."
+      },
+      "build": {
+        "title": "البناء",
+        "desc": "سباقات متكررة، اختبارات آلية."
+      },
+      "deploy": {
+        "title": "النشر",
+        "desc": "CI/CD، المراقبة، تعزيز الأمن."
+      },
+      "support": {
+        "title": "الدعم والتوسع",
+        "desc": "الصيانة، خارطة الطريق، التحسين المستمر."
+      }
+    }
+  },
+  "technologyStack": {
+    "title": "كومة التكنولوجيا",
+    "subtitle": "مجموعة مختارة بعناية من الدرجة الإنتاجية مصممة للسرعة وقابلية التوسع وتجارب مستخدم جميلة."
+  },
+  "backToTop": {
+    "label": "العودة إلى الأعلى"
+  },
+  "pricingCustom": {
+    "title": "أسعار شفافة",
+    "subtitle": "خطط مصممة للجوال لتنمو مع منتجك.",
+    "percentMaintenance": "{percent}% صيانة سنوية",
+    "planEstimate": "${value}",
+    "perYear": "سنوياً (تقريبي)",
+    "calculator": {
+      "title": "حاسبة تكلفة المشروع",
+      "subtitle": "حرك المؤشر لمعرفة تكلفة الصيانة السنوية",
+      "projectCost": "تكلفة المشروع:",
+      "projectValue": "${value}"
+    },
+    "plans": {
+      "basic": {
+        "name": "أساسي",
+        "features": {
+          "fix": "إصلاح الأخطاء الحرجة (48 ساعة)",
+          "updates": "تحديثات شهرية",
+          "audit": "تدقيق أمني فصلي",
+          "manager": "مدير مخصص"
+        }
+      },
+      "pro": {
+        "name": "احترافي",
+        "badge": "الأكثر شيوعاً",
+        "features": {
+          "fix": "إصلاح الأخطاء الحرجة (24 ساعة)",
+          "updates": "10 ساعات تحديثات شهرية",
+          "audit": "تدقيق أمني شهري",
+          "manager": "مدير مخصص"
+        }
+      },
+      "enterprise": {
+        "name": "مؤسسات",
+        "badge": "أفضل قيمة",
+        "features": {
+          "fix": "إصلاح الأخطاء الحرجة (4 ساعات)",
+          "updates": "تحديثات غير محدودة + خارطة طريق",
+          "audit": "تدقيق أسبوعي + نسخ احتياطي",
+          "manager": "مدير مخصص"
+        }
       }
     }
   }

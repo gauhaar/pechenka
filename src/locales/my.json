@@ -1,7 +1,13 @@
 {
   "languageSelector": {
     "triggerLabel": "ဘာသာစကားရွေးပါ",
-    "menuLabel": "ဘာသာစကားတစ်ခုရွေးပါ"
+    "menuLabel": "ဘာသာစကားတစ်ခုရွေးပါ",
+    "searchLabel": "Search languages",
+    "searchPlaceholder": "Search by name or native script",
+    "searchResults": "Search results",
+    "noMatches": "No languages match your search.",
+    "popular": "Most popular",
+    "allLanguages": "All languages"
   },
   "header": {
     "nav": {
@@ -13,7 +19,12 @@
       "secureDevelopment": "SLNC Code",
       "developerServices": "Developer Services"
     },
-    "login": "ဝင်ရောက်ရန်"
+    "login": "ဝင်ရောက်ရန်",
+    "cta": {
+      "contact": "Contact",
+      "download": "Download",
+      "requestDemo": "Request Demo"
+    }
   },
   "affiliate": {
     "hero": {
@@ -98,6 +109,60 @@
       "statistics": {
         "question": "ငါ့ ဖိတ်ကြားရေး စာاحွာများကို ဘယ်အချိန် ကြည့်ရှုနိုင်မလဲ?",
         "answer": "အသုံးပြုသူတစ်ဦးက သင့် ပရိုမိုကုဒ် သို့မဟုတ် ဖိတ်ကြားလင့်ခ် ဖြင့် ပြန်လည်မှတ်ပုံတင်သလို စာရင်းတွင် ထည့်သွင်းပြီး မိမိတို့ အီးမေးလ်လိပ်စာနှင့် ဆုကြေးကို သင်၏ ဒက်ရှ်ဘုတ်တွင် ကြည့်ရှုနိုင်ပါသည်။"
+      }
+    },
+    "termsAff": {
+      "label": "Affiliate Program",
+      "title": "Affiliate Terms of Service",
+      "notice": "This policy is available only in English",
+      "intro": "These terms describe how rewards are issued and paid to partners participating in the Silence AI affiliate program.",
+      "meta": {
+        "effective": "Effective date: 10 November 2024",
+        "lastUpdated": "Last updated: 10 November 2024"
+      },
+      "sections": {
+        "overview": {
+          "title": "1. Program Overview",
+          "body1": "1.1 Agreement Scope: These Affiliate Terms of Service (\"Terms\") govern your participation in the Silence AI affiliate program operated by Silence AI LLC (\"Silence AI,\" \"we,\" \"us,\" or \"our\"). These Terms apply to you, the individual or entity enrolling as an affiliate partner (\"you\" or \"your\"), and, where applicable, your employer, principal, or organization if you act on their behalf.",
+          "body2": "1.2 Program Summary: Under this program, qualified partners earn commission-based rewards when referred customers purchase or top up the AI-SOC 1 product. Participation in the affiliate program also requires compliance with the general Silence AI Terms of Service."
+        },
+        "eligibility": {
+          "title": "2. Partner Eligibility",
+          "item1": "You must maintain an active Silence AI affiliate account with accurate business and payment details.",
+          "item2": "Referrals must complete registration through your issued link or promo code.",
+          "item3": "Accounts found to be fraudulent, self-referred, or in breach of applicable law are not eligible for rewards."
+        },
+        "commission": {
+          "title": "3. Commission Structure",
+          "body1": "You earn a 10% reward on every balance top-up completed by an account registered through your invitation.",
+          "body2": "Commission is calculated from the net top-up amount after payment processing fees are deducted."
+        },
+        "rewardPosting": {
+          "title": "4. Reward Posting",
+          "body1": "Rewards post to your partner balance within one minute after the transaction successfully clears. There is no manual approval queue.",
+          "body2": "Notifications appear in your affiliate dashboard alongside the customer identifier and top-up amount."
+        },
+        "withdrawals": {
+          "title": "5. Withdrawals",
+          "body1": "Withdrawal requests are processed within two business days and paid out using the settlement method on file.",
+          "body2": "Minimum withdrawal thresholds and supported payout networks are published inside the affiliate dashboard."
+        },
+        "productScope": {
+          "title": "6. Product Scope",
+          "body1": "Rewards are only provided for the AI-SOC 1 product. Other Silence AI services are excluded from the affiliate program unless explicitly stated otherwise in writing.",
+          "body2": "If additional products become eligible, Silence AI will publish an updated list inside these terms."
+        },
+        "compliance": {
+          "title": "7. Partner Conduct & Compliance",
+          "item1": "Partners must represent Silence AI accurately and avoid misleading claims about features or pricing.",
+          "item2": "Marketing communications must comply with applicable anti-spam, privacy, and advertising regulations.",
+          "item3": "Silence AI may suspend or terminate accounts that violate these obligations or harm the brand."
+        },
+        "changes": {
+          "title": "8. Changes & Contact",
+          "body1": "Silence AI may update these affiliate terms to reflect changes in the program or applicable law. Updated versions take effect upon publication on this page.",
+          "body2": "Questions about the affiliate program can be sent to info@silenceai.net."
+        }
       }
     }
   },
@@ -219,7 +284,46 @@
           "reports": "နားလည်ရလွယ်ကူသော လုံခြုံရေး သုံးသပ်ချက်များ",
           "intelligence": "ထောက်လှမ်းရေးအစီရင်ခံစာ"
         }
+      },
+      "basic": {
+        "name": "Basic",
+        "features": {
+          "fix": "Critical Bug Fixes (48h SLA)",
+          "updates": "Monthly Updates",
+          "audit": "Quarterly Security Audits",
+          "manager": "Dedicated Manager"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Most Popular",
+        "features": {
+          "fix": "Critical Bug Fixes (24h SLA)",
+          "updates": "10h Monthly Updates",
+          "audit": "Monthly Security Audits",
+          "manager": "Dedicated Manager"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "badge": "Best Value",
+        "features": {
+          "fix": "Critical Bug Fixes (4h SLA)",
+          "updates": "Unlimited Updates + Roadmap",
+          "audit": "Weekly Audits + Backups",
+          "manager": "Dedicated Manager"
+        }
       }
+    },
+    "subtitle": "Mobile-first plans built to scale with your product.",
+    "percentMaintenance": "{percent}% yearly maintenance",
+    "planEstimate": "${value}",
+    "perYear": "per year (est.)",
+    "calculator": {
+      "title": "Project Cost Calculator",
+      "subtitle": "Slide to see your yearly maintenance",
+      "projectCost": "Project Cost:",
+      "projectValue": "${value}"
     }
   },
   "solution": {
@@ -321,38 +425,39 @@
       "termsUse": "အသုံးပြုမှု စည်းမျဉ်း",
       "termsService": "ဝန်ဆောင်မှု စည်းမျဉ်း",
       "privacy": "ကိုယ်ရေးလုံခြုံမှုမူဝါဒ",
-      "cookies": "ကွတ်ကီးမူဝါဒ"
+      "cookies": "ကွတ်ကီးမူဝါဒ",
+      "affiliateTerms": "Affiliate Terms of Service"
     },
     "copyright": "© {year} Silence AI. မူပိုင်ခွင့်များ ရှိသည်။"
   },
   "notFound": {
-    "title": "စာမျက်နှာမတွေ့ပါ",
-    "description": "နေရာတိုင်းကိုရှာဖွေခဲ့ပါသည်။ သို့သော် ဤစာမျက်နှာကို ရှာမတွေ့ပါ။",
-    "cta": "မူလစာမျက်နှာသို့ ပြန်သွားရန်"
+    "title": "စာမျက်နှာ ရှာမတွေ့ပါ",
+    "description": "ကျွန်ုပ်တို့ နေရာတိုင်း ရှာဖွေခဲ့သော်လည်း ဤစာမျက်နှာကို ရှာမတွေ့ပါ။",
+    "cta": "ပင်မစာမျက်နှာသို့ ပြန်သွားရန်"
   },
   "heroSection": {
-    "badge": "ထုတ်လုပ်ရန်အဆင်သင့်ဖြစ်သော AI နှင့် ဆော့ဖ်ဝဲ",
-    "title": "စိတ်ကြိုက် AI နှင့် ဆော့ဖ်ဝဲဖွံ့ဖြိုးရေး",
-    "description": "ကျွန်ုပ်တို့သည် {country} နှင့် {market} အတွက် ထုတ်လုပ်ရန်အဆင်သင့်ဖြစ်သော AI အေဂျင့်များနှင့် စိတ်ကြိုက်ဆော့ဖ်ဝဲများကို တည်ဆောက်ပေးပါသည်။",
+    "badge": "လုပ်ငန်းသုံးအဆင်သင့် AI နှင့် ဆော့ဖ်ဝဲ",
+    "title": "စိတ်ကြိုက် AI နှင့် ဆော့ဖ်ဝဲ ဖွံ့ဖြိုးတိုးတက်ရေး",
+    "description": "ကျွန်ုပ်တို့သည် လုပ်ငန်းသုံးအဆင်သင့် AI အေးဂျင့်များနှင့် စိတ်ကြိုက်ဆော့ဖ်ဝဲများကို တည်ဆောက်ပါသည်။",
     "country": "ကာဇက်စတန်",
-    "market": "ကမ္ဘာလုံးဆိုင်ရာဈေးကွက်",
+    "market": "ကမ္ဘာ့ဈေးကွက်",
     "startProject": "ပရောဂျက်စတင်ရန်",
-    "liveDemo": "တိုက်ရိုက်ပြသချက် — AI အေဂျင့်",
+    "liveDemo": "တိုက်ရိုက်သရုပ်ပြ — AI အေးဂျင့်",
     "live": "တိုက်ရိုက်",
-    "aiAgent": "AI အေဂျင့် v2.1",
-    "processing": "တောင်းဆိုချက်များကို လုပ်ဆောင်နေသည်...",
-    "active": "အသက်ဝင်သည်",
-    "userMessage": "ဖောက်သည်ဒေတာ ဦးတည်ချက်များကို ခွဲခြမ်းစိတ်ဖြာပါ",
+    "aiAgent": "AI အေးဂျင့် v2.1",
+    "processing": "တောင်းဆိုမှုများကို လုပ်ဆောင်နေသည်...",
+    "active": "တက်ကြွသည်",
+    "userMessage": "ဖောက်သည်ဒေတာ လမ်းကြောင်းများကို ခွဲခြမ်းစိတ်ဖြာပါ",
     "aiResponse": "ခွဲခြမ်းစိတ်ဖြာနေသည်",
     "tasks": {
       "dataCollection": "ဒေတာစုဆောင်းခြင်း",
       "aiAnalysis": "AI ခွဲခြမ်းစိတ်ဖြာခြင်း",
-      "reportGeneration": "အစီရင်ခံစာထုတ်လုပ်ခြင်း"
+      "reportGeneration": "အစီရင်ခံစာ ထုတ်ပြန်ခြင်း"
     },
     "stats": {
-      "tasks": "လုပ်ငန်းများ",
+      "tasks": "အလုပ်များ",
       "success": "အောင်မြင်မှု",
-      "speed": "မြန်နှုန်း"
+      "speed": "အမြန်နှုန်း"
     }
   },
   "secureDevelopment": {
@@ -499,6 +604,285 @@
       "government": {
         "title": "Government",
         "description": "Ministries, defense, critical agencies"
+      }
+    }
+  },
+  "pricingCta": {
+    "requestSystem": "Request System"
+  },
+  "contactForm": {
+    "title": "Contact Us",
+    "success": "Thanks! Your message has been sent. We will contact you shortly.",
+    "errorRequired": "Please fill in your name, email and a short message.",
+    "errorSend": "Unable to send message. Please try again later.",
+    "placeholders": {
+      "name": "Your name",
+      "email": "Email",
+      "type": "Project Type (optional)",
+      "budget": "Budget (optional)",
+      "message": "Tell us about your project..."
+    },
+    "submit": {
+      "idle": "Send Message",
+      "loading": "Sending…"
+    }
+  },
+  "consulting": {
+    "title": "Consulting Questionnaire",
+    "searchPlaceholder": "Search questions...",
+    "noResults": "No questions found.",
+    "questions": [
+      {
+        "question": "What is your company's core value proposition beyond competitive pricing?",
+        "answer": "Security is our primary differentiator. We position ourselves as a company that builds highly secure systems with enterprise-grade security practices embedded throughout the development lifecycle."
+      },
+      {
+        "question": "How long has your company been in business, and what is your track record?",
+        "answer": "We have successfully delivered major projects including: NAK (Nur Astana Kurylys) - AI-powered team management platform, and Chic Flowers - Complete digital platform for a major flower retail company."
+      },
+      {
+        "question": "What differentiates your technical capabilities and service quality from EPAM and other competitors?",
+        "answer": "Our key differentiator is our security-first development approach. We integrate security practices from project inception through deployment and maintenance."
+      },
+      {
+        "question": "How do you maintain quality while offering competitive pricing?",
+        "answer": "We offer services at 15% below market rates while maintaining exceptional quality through optimized operations, strategic talent sourcing, and efficient project management methodologies."
+      },
+      {
+        "question": "What specific software development services do you provide?",
+        "answer": "End-to-end software development: custom applications, AI-powered solutions, cybersecurity product development (Silence AI-SOC), system integration, cloud migration, and DevOps. We also offer dedicated product development and staff augmentation."
+      },
+      {
+        "question": "Which industries and domains do you specialize in?",
+        "answer": "Construction, retail, fintech, cybersecurity, and digital platforms — including AI-driven team management, e-commerce, and enterprise security solutions."
+      },
+      {
+        "question": "What technology stacks and platforms does your team have expertise in?",
+        "answer": "GO, Swift, Flutter, cloud platforms (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript, and AI/ML frameworks. We build proprietary security tools like Silence AI-SOC."
+      },
+      {
+        "question": "Do you offer end-to-end product development or specific services only?",
+        "answer": "We offer both: MVPs, full-cycle product delivery, staff augmentation, and cybersecurity integration."
+      },
+      {
+        "question": "Can you provide both staff augmentation and dedicated team models?",
+        "answer": "Yes, we provide flexible engagement models: staff augmentation, dedicated teams, and project-based outsourcing."
+      },
+      {
+        "question": "Do you offer consulting, architecture, and advisory services beyond development?",
+        "answer": "Yes: cybersecurity consulting, system architecture design, technology advisory, and security compliance assessments using Silence AI-SOC."
+      }
+    ]
+  },
+  "requestDemoModal": {
+    "title": "Request System",
+    "name": "Name",
+    "email": "Corporate Email",
+    "company": "Company Name",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Send Request",
+    "successTitle": "Request Sent!",
+    "successBody": "Thank you for your interest. We will be in touch shortly.",
+    "close": "Close"
+  },
+  "requestSystemModal": {
+    "title": "Request System",
+    "name": "Name",
+    "email": "Corporate Email",
+    "company": "Company Name",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Download",
+    "successTitle": "Request Sent!",
+    "successBody": "Thank you. The system download instructions will be sent to your email.",
+    "close": "Close"
+  },
+  "policySidebar": {
+    "tableOfContents": "Table of Contents"
+  },
+  "whyChooseUs": {
+    "badge": "ရလဒ်ကို အဓိကထားသော အင်ဂျင်နီယာ",
+    "title": "ဘာကြောင့် ကျွန်ုပ်တို့ကို ရွေးချယ်သင့်သလဲ",
+    "subtitle": "ယုံကြည်စိတ်ချရသော အဖွဲ့များမှ",
+    "subtitleHighlight": "ဒေါ်လာ ဘီလီယံချီသော အဖွဲ့အစည်းများ",
+    "subtitleTail": "— နှင့် စတင်လုပ်ကိုင်သည့် အမြန်နှုန်းဖြင့် ပို့ဆောင်သည်။",
+    "learnMore": "ပိုမိုလေ့လာရန်",
+    "logos": {
+      "kmg": "KazMunayGas",
+      "nak": "Nur Astana Kurylys"
+    },
+    "features": {
+      "fast": {
+        "title": "လုပ်ငန်းအဆင့် အရည်အသွေးဖြင့် လျင်မြန်စွာ ပို့ဆောင်ခြင်း",
+        "description": "လုပ်ငန်းအဆင့် ယုံကြည်စိတ်ချရမှုနှင့် လိုက်နာမှုတို့ကို ပြည့်မီသော လျင်မြန်ပြီး ထပ်ခါတလဲလဲ ပို့ဆောင်မှု သံသရာများ။",
+        "pill": "အမြန်နှုန်း + အရည်အသွေး"
+      },
+      "ai": {
+        "title": "AI-ပထမ ထုတ်ကုန် အင်ဂျင်နီယာ",
+        "description": "နမူနာပုံစံများမှ ထုတ်လုပ်မှု AI အေးဂျင့်များအထိ — ကျွန်ုပ်တို့သည် စစ်မှန်သော စီးပွားရေးပြဿနာများကို ဖြေရှင်းပေးသော မော်ဒယ်များကို ဒီဇိုင်းဆွဲ၊ လေ့ကျင့်ပေးပြီး ဖြန့်ကျက်ထားပါသည်။",
+        "pill": "AI အင်ဂျင်နီယာ"
+      },
+      "local": {
+        "title": "ဒေသတွင်း ကျွမ်းကျင်မှု၊ ကမ္ဘာလုံးဆိုင်ရာ လက်လှမ်းမီမှု",
+        "description": "ကာဇက်စတန်ဈေးကွက်နှင့် စည်းမျဉ်းများအကြောင်း နက်နဲသော အသိပညာကို နိုင်ငံတကာ အကောင်းဆုံး အလေ့အကျင့်များနှင့် ပေါင်းစပ်ထားသည်။",
+        "pill": "KZ + ကမ္ဘာလုံးဆိုင်ရာ"
+      }
+    }
+  },
+  "servicesBlock": {
+    "badge": "ကျွန်ုပ်တို့ ကမ်းလှမ်းသောအရာ",
+    "title": "ကျွန်ုပ်တို့၏ ဝန်ဆောင်မှုများ",
+    "description": "ပရီမီယံ UI၊ ခိုင်မာသော အင်ဂျင်နီယာနှင့် လျင်မြန်သော ပို့ဆောင်မှု — ထိပ်တန်းအမှတ်တံဆိပ်တစ်ခုကဲ့သို့ ကြည့်ရှုပြီး လုပ်ဆောင်နိုင်သော ထုတ်ကုန်တစ်ခုကို စတင်ရန် သင်လိုအပ်သမျှ။",
+    "learnMore": "ပိုမိုလေ့လာရန်",
+    "learnMoreAria": "ဤဝန်ဆောင်မှုအကြောင်း ပိုမိုလေ့လာရန်",
+    "services": {
+      "aiAgents": {
+        "title": "AI အေးဂျင့်များ",
+        "description": "ပံ့ပိုးမှု၊ လုပ်ငန်းလည်ပတ်မှုများနှင့် ခွဲခြမ်းစိတ်ဖြာမှုများအတွက် စိတ်ကြိုက် စကားပြောနှင့် အလိုအလျောက် အေးဂျင့်များ။",
+        "tag": "အလိုအလျောက်စနစ်"
+      },
+      "customSoftware": {
+        "title": "စိတ်ကြိုက် ဆော့ဖ်ဝဲ",
+        "description": "သင့်လုပ်ငန်းအသွားအလာများနှင့် ကိုက်ညီသော ဝဘ်နှင့် ဒက်စ်တော့ အက်ပ်များ။",
+        "tag": "တည်ဆောက်"
+      },
+      "cybersecurity": {
+        "title": "ဆိုက်ဘာလုံခြုံရေး",
+        "description": "စာရင်းစစ်များ၊ ထိုးဖောက်စမ်းသပ်မှုနှင့် စဉ်ဆက်မပြတ် စောင့်ကြည့်ခြင်း။",
+        "tag": "ကာကွယ်"
+      },
+      "backend": {
+        "title": "Backend / DevOps",
+        "description": "အတိုင်းအတာ ချဲ့ထွင်နိုင်သော API များ၊ CI/CD ပိုက်လိုင်းများနှင့် cloud အခြေခံအဆောက်အအုံ။",
+        "tag": "အတိုင်းအတာ"
+      },
+      "mobile": {
+        "title": "မိုဘိုင်း",
+        "description": "မူရင်း စွမ်းဆောင်ရည်နှင့် ကောင်းမွန်သော UX ပါရှိသော ပလပ်ဖောင်းစုံ အက်ပ်များ။",
+        "tag": "ပို့ဆောင်"
+      }
+    }
+  },
+  "caseStudies": {
+    "badge": "သက်သေပြထားသော သက်ရောက်မှု",
+    "title": "ဖြစ်ရပ်လေ့လာမှုများ",
+    "subtitle": "ကျွန်ုပ်တို့သည် အင်္ဂါရပ်များကို မပို့ဆောင်ပါ။ ကျွန်ုပ်တို့သည် ရလဒ်များကို ပို့ဆောင်ပါသည်။",
+    "problem": "ပြဿနာ-",
+    "solution": "ဖြေရှင်းချက်-",
+    "liveImpact": "တိုက်ရိုက် သက်ရောက်မှု",
+    "before": "မတိုင်မီ",
+    "after": "ပြီးနောက်",
+    "buildCta": "ဤကဲ့သို့ တစ်ခုခု တည်ဆောက်ပါ →",
+    "caseStudy": "ဖြစ်ရပ်လေ့လာမှု",
+    "items": {
+      "nak": {
+        "title": "NAK — အဖွဲ့ စီမံခန့်ခွဲမှု AI",
+        "problem": "လက်ဖြင့် အရင်းအမြစ် ခွဲဝေမှု",
+        "solution": "AI စွမ်းအားသုံး အချိန်ဇယားဆွဲ အေးဂျင့်",
+        "result": "+32% ကုန်ထုတ်စွမ်းအား",
+        "metricLabel": "အဖွဲ့ ထုတ်လုပ်မှု အညွှန်းကိန်း"
+      },
+      "chic": {
+        "title": "Chic Flowers — အီလက်ထရွန်နစ် ကုန်သွယ်မှု",
+        "problem": "အွန်လိုင်း ပြောင်းလဲမှု နည်းပါးခြင်း",
+        "solution": "စိတ်ကြိုက် အကြံပြုသူ + UX ပြုပြင်မွမ်းမံမှု",
+        "result": "+45% အွန်လိုင်း ရောင်းအား",
+        "metricLabel": "ပြောင်းလဲမှုနှုန်း တိုးတက်မှု"
+      },
+      "silence": {
+        "title": "Silence AI-SOC",
+        "problem": "သတိပေးချက် ဆူညံသံ များခြင်း",
+        "solution": "AI ရှာဖွေတွေ့ရှိမှုနှင့် အလိုအလျောက် တုံ့ပြန်မှု",
+        "result": "−68% အမှား ပြသမှု",
+        "metricLabel": "အမှား သတိပေးချက် ပမာဏ"
+      }
+    }
+  },
+  "howWeWork": {
+    "title": "ကျွန်ုပ်တို့ လုပ်ဆောင်ပုံ",
+    "subtitle": "အလွန်မြန်ဆန်သော ပို့ဆောင်မှု ပိုက်လိုင်း — အမြန်နှုန်းအတွက် အကောင်းဆုံးဖြစ်အောင် ပြုလုပ်ထားသည်။",
+    "steps": {
+      "discovery": {
+        "title": "ရှာဖွေတွေ့ရှိမှု",
+        "desc": "လိုအပ်ချက်များ၊ သက်ဆိုင်သူများ၊ အောင်မြင်မှု တိုင်းတာချက်များ။"
+      },
+      "design": {
+        "title": "ဒီဇိုင်း",
+        "desc": "UX၊ ဗိသုကာ၊ နမူနာပုံစံ။"
+      },
+      "poc": {
+        "title": "အယူအဆ သက်သေပြချက်",
+        "desc": "တိုင်းတာနိုင်သော KPI များဖြင့် လျင်မြန်စွာ အတည်ပြုခြင်း။"
+      },
+      "build": {
+        "title": "တည်ဆောက်",
+        "desc": "ထပ်ခါတလဲလဲ အပြေးအလွှားများ၊ အလိုအလျောက် စမ်းသပ်မှုများ။"
+      },
+      "deploy": {
+        "title": "ဖြန့်ကျက်",
+        "desc": "CI/CD၊ စောင့်ကြည့်ခြင်း၊ လုံခြုံရေး ခိုင်မာစေခြင်း။"
+      },
+      "support": {
+        "title": "ပံ့ပိုးမှုနှင့် အတိုင်းအတာ",
+        "desc": "ပြုပြင်ထိန်းသိမ်းမှု၊ လမ်းပြမြေပုံ၊ စဉ်ဆက်မပြတ် တိုးတက်မှု။"
+      }
+    }
+  },
+  "technologyStack": {
+    "title": "နည်းပညာ အစုအဝေး",
+    "subtitle": "အမြန်နှုန်း၊ အတိုင်းအတာနှင့် လှပသော သုံးစွဲသူ အတွေ့အကြုံများအတွက် အင်ဂျင်နီယာပိုင်းဆိုင်ရာ ဂရုတစိုက် ရွေးချယ်ထားသော ထုတ်လုပ်မှုအဆင့် အစုအဝေး။"
+  },
+  "backToTop": {
+    "label": "ထိပ်ဆုံးသို့ ပြန်သွားရန်"
+  },
+  "pricingCustom": {
+    "title": "ပွင့်လင်းမြင်သာသော ဈေးနှုန်း",
+    "subtitle": "သင့်ထုတ်ကုန်နှင့်အတူ ကြီးထွားရန် တည်ဆောက်ထားသော မိုဘိုင်း-ဦးစားပေး အစီအစဉ်များ။",
+    "percentMaintenance": "{percent}% နှစ်စဉ် ထိန်းသိမ်းမှု",
+    "planEstimate": "${value}",
+    "perYear": "တစ်နှစ်လျှင် (ခန့်မှန်း)",
+    "calculator": {
+      "title": "စီမံကိန်း ကုန်ကျစရိတ် တွက်ချက်စက်",
+      "subtitle": "သင့်နှစ်စဉ် ထိန်းသိမ်းမှုကို ကြည့်ရန် ဆွဲပါ",
+      "projectCost": "စီမံကိန်း ကုန်ကျစရိတ်:",
+      "projectValue": "${value}"
+    },
+    "plans": {
+      "basic": {
+        "name": "အခြေခံ",
+        "features": {
+          "fix": "အရေးကြီး အမှား ပြင်ဆင်မှုများ (၄၈နာရီ SLA)",
+          "updates": "လစဉ် မွမ်းမံမှုများ",
+          "audit": "သုံးလတစ်ကြိမ် လုံခြုံရေး စစ်ဆေးမှုများ",
+          "manager": "သီးသန့် မန်နေဂျာ"
+        }
+      },
+      "pro": {
+        "name": "ပရို",
+        "badge": "လူကြိုက်အများဆုံး",
+        "features": {
+          "fix": "အရေးကြီး အမှား ပြင်ဆင်မှုများ (၂၄နာရီ SLA)",
+          "updates": "၁၀နာရီ လစဉ် မွမ်းမံမှုများ",
+          "audit": "လစဉ် လုံခြုံရေး စစ်ဆေးမှုများ",
+          "manager": "သီးသန့် မန်နေဂျာ"
+        }
+      },
+      "enterprise": {
+        "name": "လုပ်ငန်း",
+        "badge": "အကောင်းဆုံး တန်ဖိုး",
+        "features": {
+          "fix": "အရေးကြီး အမှား ပြင်ဆင်မှုများ (၄နာရီ SLA)",
+          "updates": "ကန့်သတ်မဲ့ မွမ်းမံမှုများ + လမ်းပြမြေပုံ",
+          "audit": "အပတ်စဉ် စစ်ဆေးမှုများ + အရန်သိမ်းဆည်းမှုများ",
+          "manager": "သီးသန့် မန်နေဂျာ"
+        }
       }
     }
   }

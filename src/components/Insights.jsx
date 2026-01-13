@@ -21,10 +21,7 @@ const Insights = () => {
     return {
       icon: item.icon,
       title: translation.title || "",
-      description:
-        translation.description ||
-        ['There is a hacker attack every 39 seconds', '20.5M DDoS attacks in Q1 2025 alone', '30 000 websites get hacked every single day'][index] ||
-        "",
+      description: translation.description || "",
     };
   });
 

@@ -1,9 +1,11 @@
 "use client";
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const RequestSystemModal = ({ isOpen, onClose }) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const { t } = useLanguage();
 
   if (!isOpen) return null;
 
@@ -47,55 +49,55 @@ const RequestSystemModal = ({ isOpen, onClose }) => {
 
             {isSubmitted ? (
                <div className="text-center py-10">
-                 <h2 className="text-2xl font-bold mb-4">Request Sent!</h2>
+                 <h2 className="text-2xl font-bold mb-4">{t("requestSystemModal.successTitle")}</h2>
                  <p className="text-gray-300 mb-6">
-                   Thank you. The system download instructions will be sent to your email.
+                   {t("requestSystemModal.successBody")}
                  </p>
                  <button
                    onClick={handleClose}
                    className="px-6 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold rounded-lg transition-all"
                  >
-                   Close
+                   {t("requestSystemModal.close")}
                  </button>
                </div>
             ) : (
               <>
-                <h2 className="text-2xl font-bold mb-6 text-center">Request System</h2>
+                <h2 className="text-2xl font-bold mb-6 text-center">{t("requestSystemModal.title")}</h2>
                 
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
                     <label className="block text-sm font-medium text-gray-300 mb-1">
-                      Name
+                      {t("requestSystemModal.name")}
                     </label>
                     <input
                       type="text"
                       required
                       className="w-full px-4 py-2 bg-slate-900/50 border border-white/10 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-white placeholder-gray-500"
-                      placeholder="John Doe"
+                      placeholder={t("requestSystemModal.placeholders.name")}
                     />
                   </div>
 
                   <div>
                     <label className="block text-sm font-medium text-gray-300 mb-1">
-                      Corporate Email
+                      {t("requestSystemModal.email")}
                     </label>
                     <input
                       type="email"
                       required
                       className="w-full px-4 py-2 bg-slate-900/50 border border-white/10 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-white placeholder-gray-500"
-                      placeholder="john@company.com"
+                      placeholder={t("requestSystemModal.placeholders.email")}
                     />
                   </div>
 
                   <div>
                     <label className="block text-sm font-medium text-gray-300 mb-1">
-                      Company Name
+                      {t("requestSystemModal.company")}
                     </label>
                     <input
                       type="text"
                       required
                       className="w-full px-4 py-2 bg-slate-900/50 border border-white/10 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-white placeholder-gray-500"
-                      placeholder="Acme Corp"
+                      placeholder={t("requestSystemModal.placeholders.company")}
                     />
                   </div>
 
@@ -104,7 +106,7 @@ const RequestSystemModal = ({ isOpen, onClose }) => {
                       type="submit"
                       className="w-full py-3 px-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold rounded-lg transition-all transform hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-blue-500/25"
                     >
-                      Download
+                      {t("requestSystemModal.submit")}
                     </button>
                   </div>
                 </form>

@@ -1,16 +1,30 @@
 {
   "languageSelector": {
     "triggerLabel": "Chọn ngôn ngữ",
-    "menuLabel": "Vui lòng chọn ngôn ngữ"
+    "menuLabel": "Vui lòng chọn ngôn ngữ",
+    "searchLabel": "Search languages",
+    "searchPlaceholder": "Search by name or native script",
+    "searchResults": "Search results",
+    "noMatches": "No languages match your search.",
+    "popular": "Most popular",
+    "allLanguages": "All languages"
   },
   "header": {
     "nav": {
       "main": "Trang chủ",
       "mail": "Thư",
       "affiliate": "Chương trình liên kết",
-      "instructions": "Hướng dẫn"
+      "instructions": "Hướng dẫn",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC Code",
+      "developerServices": "Developer Services"
     },
-    "login": "Đăng nhập"
+    "login": "Đăng nhập",
+    "cta": {
+      "contact": "Contact",
+      "download": "Download",
+      "requestDemo": "Request Demo"
+    }
   },
   "affiliate": {
     "hero": {
@@ -96,6 +110,60 @@
         "question": "Khi nào tôi xem thống kê giới thiệu?",
         "answer": "Khi người dùng đăng ký bằng mã hoặc liên kết của bạn, email và phần thưởng tương ứng sẽ hiển thị trong bảng điều khiển."
       }
+    },
+    "termsAff": {
+      "label": "Affiliate Program",
+      "title": "Affiliate Terms of Service",
+      "notice": "This policy is available only in English",
+      "intro": "These terms describe how rewards are issued and paid to partners participating in the Silence AI affiliate program.",
+      "meta": {
+        "effective": "Effective date: 10 November 2024",
+        "lastUpdated": "Last updated: 10 November 2024"
+      },
+      "sections": {
+        "overview": {
+          "title": "1. Program Overview",
+          "body1": "1.1 Agreement Scope: These Affiliate Terms of Service (\"Terms\") govern your participation in the Silence AI affiliate program operated by Silence AI LLC (\"Silence AI,\" \"we,\" \"us,\" or \"our\"). These Terms apply to you, the individual or entity enrolling as an affiliate partner (\"you\" or \"your\"), and, where applicable, your employer, principal, or organization if you act on their behalf.",
+          "body2": "1.2 Program Summary: Under this program, qualified partners earn commission-based rewards when referred customers purchase or top up the AI-SOC 1 product. Participation in the affiliate program also requires compliance with the general Silence AI Terms of Service."
+        },
+        "eligibility": {
+          "title": "2. Partner Eligibility",
+          "item1": "You must maintain an active Silence AI affiliate account with accurate business and payment details.",
+          "item2": "Referrals must complete registration through your issued link or promo code.",
+          "item3": "Accounts found to be fraudulent, self-referred, or in breach of applicable law are not eligible for rewards."
+        },
+        "commission": {
+          "title": "3. Commission Structure",
+          "body1": "You earn a 10% reward on every balance top-up completed by an account registered through your invitation.",
+          "body2": "Commission is calculated from the net top-up amount after payment processing fees are deducted."
+        },
+        "rewardPosting": {
+          "title": "4. Reward Posting",
+          "body1": "Rewards post to your partner balance within one minute after the transaction successfully clears. There is no manual approval queue.",
+          "body2": "Notifications appear in your affiliate dashboard alongside the customer identifier and top-up amount."
+        },
+        "withdrawals": {
+          "title": "5. Withdrawals",
+          "body1": "Withdrawal requests are processed within two business days and paid out using the settlement method on file.",
+          "body2": "Minimum withdrawal thresholds and supported payout networks are published inside the affiliate dashboard."
+        },
+        "productScope": {
+          "title": "6. Product Scope",
+          "body1": "Rewards are only provided for the AI-SOC 1 product. Other Silence AI services are excluded from the affiliate program unless explicitly stated otherwise in writing.",
+          "body2": "If additional products become eligible, Silence AI will publish an updated list inside these terms."
+        },
+        "compliance": {
+          "title": "7. Partner Conduct & Compliance",
+          "item1": "Partners must represent Silence AI accurately and avoid misleading claims about features or pricing.",
+          "item2": "Marketing communications must comply with applicable anti-spam, privacy, and advertising regulations.",
+          "item3": "Silence AI may suspend or terminate accounts that violate these obligations or harm the brand."
+        },
+        "changes": {
+          "title": "8. Changes & Contact",
+          "body1": "Silence AI may update these affiliate terms to reflect changes in the program or applicable law. Updated versions take effect upon publication on this page.",
+          "body2": "Questions about the affiliate program can be sent to info@silenceai.net."
+        }
+      }
     }
   },
   "hero": {
@@ -140,81 +208,81 @@
     "ok": "Đồng ý"
   },
   "pricing": {
-    "title": "Bảng giá",
+    "title": "Định giá",
     "tooltips": {
       "cmcGlobal": {
-        "title": "CMC với giám sát lưu lượng toàn cầu",
-        "content": "Bảng điều khiển quản lý tập trung (CMC) tích hợp chặt chẽ với các hệ thống bảo mật khác và dùng chung miền, giao diện với Global Shield và Security Tester. Tại đây bạn có thể chặn quốc gia, đóng port và vận hành ở quy mô lớn"
+        "title": "CMC với Giám sát Lưu lượng Toàn cầu",
+        "content": "CMC (Bảng điều khiển quản lý tập trung) tích hợp liền mạch với các hệ thống bảo mật khác và có sẵn dưới cùng một tên miền và giao diện như Global Shield và Security Tester, cho phép bạn quản lý bảo mật mạng ở quy mô lớn. Từ đây, bạn có thể đưa các quốc gia vào danh sách đen, đóng các cổng và thực hiện các thao tác khác."
       },
       "countryBlacklisting": {
-        "title": "Chặn theo quốc gia",
-        "content": "Chặn toàn bộ lưu lượng đến từ một quốc gia cụ thể"
+        "title": "Danh sách đen quốc gia",
+        "content": "Chặn tất cả lưu lượng truy cập bắt nguồn từ một quốc gia cụ thể"
       },
       "portManagement": {
-        "title": "Quản lý port",
-        "content": "Đóng các port không dùng để giảm bề mặt tấn công. Ví dụ, vô hiệu hóa port 22 khi không cần SSH"
+        "title": "Quản lý Cổng",
+        "content": "Đóng các cổng không sử dụng để giảm bề mặt tấn công. Ví dụ, vô hiệu hóa cổng 22 khi không cần truy cập SSH. Để giảm thiểu rủi ro hệ thống bị xâm phạm."
       },
       "cmcEmail": {
-        "title": "CMC với trình trực quan hoá luồng email nâng cao",
-        "content": "CMC tích hợp với các hệ thống bảo mật khác và cho phép bạn giám sát, xem xét luồng email của mọi người dùng doanh nghiệp đã thêm"
+        "title": "CMC với Trình trực quan hóa Luồng Email Nâng cao",
+        "content": "CMC (Bảng điều khiển quản lý tập trung) tích hợp liền mạch với các hệ thống bảo mật khác và có sẵn dưới cùng một tên miền và giao diện như Global Shield và Security Tester. Trong bảng điều khiển này, bạn có thể giám sát các luồng email và xem xét email cho tất cả người dùng doanh nghiệp mà bạn đã thêm."
       },
       "dynamicVulnerability": {
-        "title": "Trình tìm lỗ hổng động",
-        "content": "Dò tìm lỗ hổng thông qua tương tác với website của bạn, bao gồm hỗ trợ từ hệ thống tình báo"
+        "title": "Trình tìm kiếm lỗ hổng động",
+        "content": "Phát hiện các lỗ hổng bằng cách tương tác với trang web của bạn, bao gồm cả cách tìm lỗ hổng thông qua hệ thống tình báo."
       },
       "codeAnalyzer": {
         "title": "Trình phân tích mã",
-        "content": "Xác định vấn đề bảo mật ngay trong mã nguồn bằng tiện ích VS Code, giúp sửa trước khi triển khai"
+        "content": "Xác định các vấn đề bảo mật trực tiếp trong cơ sở mã của bạn thông qua plugin VS Code, giúp bạn khắc phục sự cố trước khi triển khai."
       },
       "intelligenceReport": {
-        "title": "Báo cáo tình báo",
-        "content": "Cung cấp thông tin chi tiết về mục tiêu: port mở, dịch vụ đang chạy, tên miền con và dữ liệu nhạy cảm cần xử lý"
+        "title": "Báo cáo Tình báo",
+        "content": "Tạo thông tin chi tiết về mục tiêu của bạn, bao gồm các cổng mở, dịch vụ đang chạy, tên miền phụ và thông tin nhạy cảm khác có thể yêu cầu hành động."
       },
       "fullVulnerability": {
-        "title": "Kiểm tra lỗ hổng TOÀN DIỆN",
-        "content": "Một lần kiểm tra toàn diện bao gồm quét động và quét mã"
+        "title": "Kiểm tra lỗ hổng ĐẦY ĐỦ",
+        "content": "Kiểm tra lỗ hổng ĐẦY ĐỦ bao gồm cả quét lỗ hổng động và quét lỗ hổng cơ sở mã."
       }
     },
     "plans": {
       "globalShield": {
-        "title": "An ninh web & quản lý lưu lượng",
+        "title": "Bảo mật Web & Quản lý Lưu lượng",
         "price": "$0.06/GB",
-        "description": "Không giới hạn\nKhông phụ phí",
-        "button": "Bảo vệ ứng dụng web & API",
+        "description": "Không giới hạn\nKhông phí bổ sung",
+        "button": "Bảo vệ ứng dụng web và API",
         "features": {
-          "webProtection": "Bảo vệ mọi kiểu tấn công web (trừ khai thác logic nghiệp vụ)",
-          "ddosProtection": "Bảo vệ DDoS theo thời gian thực",
-          "cmc": "CMC với giám sát lưu lượng toàn cầu",
-          "country": "Tính năng chặn quốc gia",
-          "port": "Tính năng đóng port"
+          "webProtection": "Bảo vệ chống lại mọi loại tấn công web, ngoại trừ khai thác lỗ hổng logic nghiệp vụ",
+          "ddosProtection": "Bảo vệ DDoS thời gian thực",
+          "cmc": "CMC với hệ thống giám sát lưu lượng toàn cầu",
+          "country": "Tính năng danh sách đen quốc gia",
+          "port": "Tính năng đóng cổng"
         }
       },
       "emailProtector": {
-        "title": "An ninh email",
+        "title": "Bảo mật Email & Trực quan hóa",
         "price": "$10/tháng/tài khoản",
-        "description": "Tối đa 10 email mỗi ngày\nEmail thêm: $0.035/email",
-        "button": "Bảo vệ email",
+        "description": "Lên đến 10 email mỗi ngày\nEmail bổ sung: $0.035 mỗi email",
+        "button": "Bảo vệ Email",
         "features": {
-          "cmcEmail": "CMC với trình trực quan hoá luồng email tiên tiến nhất",
-          "visibility": "Nhìn thấy toàn bộ email gửi/nhận và phân loại mối đe doạ tự động",
-          "webClient": "Khách webmail an toàn",
-          "phishing": "Chống phishing",
-          "malware": "Quét tệp độc hại",
+          "cmcEmail": "CMC với trình trực quan hóa luồng email tiên tiến nhất",
+          "visibility": "Hiển thị đầy đủ các email đã gửi và nhận của tất cả các tài khoản email, trong CMC, với phân loại mối đe dọa tự động",
+          "webClient": "Máy khách WebMail an toàn",
+          "phishing": "Bảo vệ chống lừa đảo",
+          "malware": "Quét tệp đính kèm phần mềm độc hại",
           "links": "Phát hiện liên kết nguy hiểm",
-          "spam": "Lọc spam",
-          "fakeSender": "Bảo vệ khỏi người gửi giả"
+          "spam": "Lọc thư rác",
+          "fakeSender": "Bảo vệ chống người gửi giả mạo"
         }
       },
       "securityTester": {
-        "title": "Trình tìm lỗ hổng",
+        "title": "Trình tìm kiếm lỗ hổng",
         "price": "$25/tháng",
-        "description": "Tối đa 50 kiểm tra TOÀN DIỆN mỗi tháng\nKiểm tra thêm: $0.5/lần",
-        "button": "Bắt đầu kiểm tra",
+        "description": "Lên đến 50 lần kiểm tra lỗ hổng ĐẦY ĐỦ mỗi tháng\nKiểm tra ĐẦY ĐỦ bổ sung: $0.5 mỗi lần",
+        "button": "Bắt đầu Kiểm tra",
         "features": {
-          "dynamic": "Trình tìm lỗ hổng động",
+          "dynamic": "Trình tìm kiếm lỗ hổng động",
           "codeAnalyzer": "Trình phân tích mã",
-          "reports": "Báo cáo bảo mật dễ hiểu",
-          "intelligence": "Báo cáo tình báo"
+          "reports": "Báo cáo đánh giá bảo mật dễ hiểu",
+          "intelligence": "Báo cáo Tình báo"
         }
       }
     }
@@ -318,7 +386,8 @@
       "termsUse": "Điều khoản sử dụng",
       "termsService": "Điều khoản dịch vụ",
       "privacy": "Chính sách bảo mật",
-      "cookies": "Chính sách Cookie"
+      "cookies": "Chính sách Cookie",
+      "affiliateTerms": "Affiliate Terms of Service"
     },
     "copyright": "© {year} Silence AI. Đã đăng ký bản quyền."
   },
@@ -466,6 +535,315 @@
       "government": {
         "title": "Government",
         "description": "Ministries, defense, critical agencies"
+      }
+    }
+  },
+  "pricingCta": {
+    "requestSystem": "Request System"
+  },
+  "contactForm": {
+    "title": "Contact Us",
+    "success": "Thanks! Your message has been sent. We will contact you shortly.",
+    "errorRequired": "Please fill in your name, email and a short message.",
+    "errorSend": "Unable to send message. Please try again later.",
+    "placeholders": {
+      "name": "Your name",
+      "email": "Email",
+      "type": "Project Type (optional)",
+      "budget": "Budget (optional)",
+      "message": "Tell us about your project..."
+    },
+    "submit": {
+      "idle": "Send Message",
+      "loading": "Sending…"
+    }
+  },
+  "consulting": {
+    "title": "Consulting Questionnaire",
+    "searchPlaceholder": "Search questions...",
+    "noResults": "No questions found.",
+    "questions": [
+      {
+        "question": "What is your company's core value proposition beyond competitive pricing?",
+        "answer": "Security is our primary differentiator. We position ourselves as a company that builds highly secure systems with enterprise-grade security practices embedded throughout the development lifecycle."
+      },
+      {
+        "question": "How long has your company been in business, and what is your track record?",
+        "answer": "We have successfully delivered major projects including: NAK (Nur Astana Kurylys) - AI-powered team management platform, and Chic Flowers - Complete digital platform for a major flower retail company."
+      },
+      {
+        "question": "What differentiates your technical capabilities and service quality from EPAM and other competitors?",
+        "answer": "Our key differentiator is our security-first development approach. We integrate security practices from project inception through deployment and maintenance."
+      },
+      {
+        "question": "How do you maintain quality while offering competitive pricing?",
+        "answer": "We offer services at 15% below market rates while maintaining exceptional quality through optimized operations, strategic talent sourcing, and efficient project management methodologies."
+      },
+      {
+        "question": "What specific software development services do you provide?",
+        "answer": "End-to-end software development: custom applications, AI-powered solutions, cybersecurity product development (Silence AI-SOC), system integration, cloud migration, and DevOps. We also offer dedicated product development and staff augmentation."
+      },
+      {
+        "question": "Which industries and domains do you specialize in?",
+        "answer": "Construction, retail, fintech, cybersecurity, and digital platforms — including AI-driven team management, e-commerce, and enterprise security solutions."
+      },
+      {
+        "question": "What technology stacks and platforms does your team have expertise in?",
+        "answer": "GO, Swift, Flutter, cloud platforms (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript, and AI/ML frameworks. We build proprietary security tools like Silence AI-SOC."
+      },
+      {
+        "question": "Do you offer end-to-end product development or specific services only?",
+        "answer": "We offer both: MVPs, full-cycle product delivery, staff augmentation, and cybersecurity integration."
+      },
+      {
+        "question": "Can you provide both staff augmentation and dedicated team models?",
+        "answer": "Yes, we provide flexible engagement models: staff augmentation, dedicated teams, and project-based outsourcing."
+      },
+      {
+        "question": "Do you offer consulting, architecture, and advisory services beyond development?",
+        "answer": "Yes: cybersecurity consulting, system architecture design, technology advisory, and security compliance assessments using Silence AI-SOC."
+      }
+    ]
+  },
+  "requestDemoModal": {
+    "title": "Request System",
+    "name": "Name",
+    "email": "Corporate Email",
+    "company": "Company Name",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Send Request",
+    "successTitle": "Request Sent!",
+    "successBody": "Thank you for your interest. We will be in touch shortly.",
+    "close": "Close"
+  },
+  "requestSystemModal": {
+    "title": "Request System",
+    "name": "Name",
+    "email": "Corporate Email",
+    "company": "Company Name",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Download",
+    "successTitle": "Request Sent!",
+    "successBody": "Thank you. The system download instructions will be sent to your email.",
+    "close": "Close"
+  },
+  "policySidebar": {
+    "tableOfContents": "Table of Contents"
+  },
+  "notFound": {
+    "title": "Không tìm thấy trang",
+    "description": "Chúng tôi đã tìm khắp nơi nhưng không thấy trang này.",
+    "cta": "Trở về trang chủ"
+  },
+  "heroSection": {
+    "badge": "AI & Phần mềm sẵn sàng sản xuất",
+    "title": "Phát triển AI & Phần mềm tùy chỉnh",
+    "description": "Chúng tôi xây dựng các tác nhân AI sẵn sàng sản xuất và phần mềm tùy chỉnh.",
+    "country": "Kazakhstan",
+    "market": "thị trường toàn cầu",
+    "startProject": "Bắt đầu dự án",
+    "liveDemo": "Demo trực tiếp — Tác nhân AI",
+    "live": "Trực tiếp",
+    "aiAgent": "Tác nhân AI v2.1",
+    "processing": "Đang xử lý yêu cầu...",
+    "active": "Hoạt động",
+    "userMessage": "Phân tích xu hướng dữ liệu khách hàng",
+    "aiResponse": "Đang phân tích",
+    "tasks": {
+      "dataCollection": "Thu thập dữ liệu",
+      "aiAnalysis": "Phân tích AI",
+      "reportGeneration": "Tạo báo cáo"
+    },
+    "stats": {
+      "tasks": "Nhiệm vụ",
+      "success": "Thành công",
+      "speed": "Tốc độ"
+    }
+  },
+  "whyChooseUs": {
+    "badge": "Kỹ thuật hướng đến kết quả",
+    "title": "Tại sao chọn chúng tôi",
+    "subtitle": "Được tin cậy bởi các nhóm từ",
+    "subtitleHighlight": "các tổ chức tỷ đô",
+    "subtitleTail": "— và giao hàng với tốc độ khởi nghiệp.",
+    "learnMore": "Tìm hiểu thêm",
+    "logos": {
+      "kmg": "KazMunayGas",
+      "nak": "Nur Astana Kurylys"
+    },
+    "features": {
+      "fast": {
+        "title": "Giao hàng nhanh với chất lượng doanh nghiệp",
+        "description": "Chu kỳ giao hàng nhanh, lặp lại đáp ứng độ tin cậy và tuân thủ cấp doanh nghiệp.",
+        "pill": "Tốc độ + Chất lượng"
+      },
+      "ai": {
+        "title": "Kỹ thuật sản phẩm ưu tiên AI",
+        "description": "Từ nguyên mẫu đến các tác nhân AI sản xuất — chúng tôi thiết kế, đào tạo và triển khai các mô hình giải quyết các vấn đề kinh doanh thực tế.",
+        "pill": "Kỹ thuật AI"
+      },
+      "local": {
+        "title": "Chuyên môn địa phương, Vươn tầm toàn cầu",
+        "description": "Kiến thức sâu rộng về thị trường và quy định của Kazakhstan kết hợp với các thực tiễn tốt nhất quốc tế.",
+        "pill": "KZ + Toàn cầu"
+      }
+    }
+  },
+  "servicesBlock": {
+    "badge": "Chúng tôi cung cấp gì",
+    "title": "Dịch vụ của chúng tôi",
+    "description": "UI cao cấp, kỹ thuật mạnh mẽ và giao hàng nhanh — mọi thứ bạn cần để ra mắt sản phẩm trông và hoạt động như một thương hiệu hàng đầu.",
+    "learnMore": "Tìm hiểu thêm",
+    "learnMoreAria": "Tìm hiểu thêm về dịch vụ này",
+    "services": {
+      "aiAgents": {
+        "title": "Tác nhân AI",
+        "description": "Các tác nhân đàm thoại và tự chủ tùy chỉnh để hỗ trợ, vận hành và phân tích.",
+        "tag": "Tự động hóa"
+      },
+      "customSoftware": {
+        "title": "Phần mềm tùy chỉnh",
+        "description": "Ứng dụng web và máy tính để bàn đầu cuối phù hợp với quy trình làm việc của bạn.",
+        "tag": "Xây dựng"
+      },
+      "cybersecurity": {
+        "title": "An ninh mạng",
+        "description": "Kiểm toán, kiểm thử xâm nhập và giám sát liên tục.",
+        "tag": "Bảo vệ"
+      },
+      "backend": {
+        "title": "Backend / DevOps",
+        "description": "API có thể mở rộng, đường ống CI/CD và cơ sở hạ tầng đám mây.",
+        "tag": "Quy mô"
+      },
+      "mobile": {
+        "title": "Di động",
+        "description": "Ứng dụng đa nền tảng với hiệu suất gốc và UX bóng bẩy.",
+        "tag": "Giao hàng"
+      }
+    }
+  },
+  "caseStudies": {
+    "badge": "Tác động đã được chứng minh",
+    "title": "Nghiên cứu điển hình",
+    "subtitle": "Chúng tôi không giao tính năng. Chúng tôi giao kết quả.",
+    "problem": "Vấn đề:",
+    "solution": "Giải pháp:",
+    "liveImpact": "Tác động thực tế",
+    "before": "Trước",
+    "after": "Sau",
+    "buildCta": "Xây dựng thứ gì đó như thế này →",
+    "caseStudy": "Nghiên cứu điển hình",
+    "items": {
+      "nak": {
+        "title": "NAK — AI quản lý đội nhóm",
+        "problem": "Phân bổ nguồn lực thủ công",
+        "solution": "Tác nhân lập lịch trình dựa trên AI",
+        "result": "+32% năng suất",
+        "metricLabel": "Chỉ số đầu ra của nhóm"
+      },
+      "chic": {
+        "title": "Chic Flowers — Thương mại điện tử",
+        "problem": "Chuyển đổi trực tuyến thấp",
+        "solution": "Đề xuất cá nhân hóa + cải tiến UX",
+        "result": "+45% doanh số trực tuyến",
+        "metricLabel": "Tăng trưởng tỷ lệ chuyển đổi"
+      },
+      "silence": {
+        "title": "Silence AI-SOC",
+        "problem": "Tiếng ồn cảnh báo cao",
+        "solution": "Phát hiện AI & phản hồi tự động",
+        "result": "−68% dương tính giả",
+        "metricLabel": "Khối lượng cảnh báo giả"
+      }
+    }
+  },
+  "howWeWork": {
+    "title": "Cách chúng tôi làm việc",
+    "subtitle": "Đường ống giao hàng siêu tốc — được tối ưu hóa cho tốc độ.",
+    "steps": {
+      "discovery": {
+        "title": "Khám phá",
+        "desc": "Yêu cầu, các bên liên quan, chỉ số thành công."
+      },
+      "design": {
+        "title": "Thiết kế",
+        "desc": "UX, kiến trúc, nguyên mẫu."
+      },
+      "poc": {
+        "title": "Bằng chứng khái niệm",
+        "desc": "Xác thực nhanh với các KPI đo lường được."
+      },
+      "build": {
+        "title": "Xây dựng",
+        "desc": "Các sprint lặp lại, kiểm thử tự động."
+      },
+      "deploy": {
+        "title": "Triển khai",
+        "desc": "CI/CD, giám sát, tăng cường bảo mật."
+      },
+      "support": {
+        "title": "Hỗ trợ & Qúy mô",
+        "desc": "Bảo trì, lộ trình, cải tiến liên tục."
+      }
+    }
+  },
+  "technologyStack": {
+    "title": "Ngăn xếp công nghệ",
+    "subtitle": "Một ngăn xếp cấp sản xuất được lựa chọn cẩn thận được thiết kế cho tốc độ, khả năng mở rộng và trải nghiệm người dùng đẹp mắt."
+  },
+  "backToTop": {
+    "label": "Lên đầu trang"
+  },
+  "pricingCustom": {
+    "title": "Giá Cả Minh Bạch",
+    "subtitle": "Các gói ưu tiên di động được xây dựng để mở rộng cùng sản phẩm của bạn.",
+    "percentMaintenance": "{percent}% bảo trì hàng năm",
+    "planEstimate": "${value}",
+    "perYear": "mỗi năm (ước tính)",
+    "calculator": {
+      "title": "Công cụ Tính Chi Phí Dự Án",
+      "subtitle": "Trượt để xem chi phí bảo trì hàng năm của bạn",
+      "projectCost": "Chi Phí Dự Án:",
+      "projectValue": "${value}"
+    },
+    "plans": {
+      "basic": {
+        "name": "Cơ Bản",
+        "features": {
+          "fix": "Sửa Lỗi Nghiêm Trọng (SLA 48h)",
+          "updates": "Cập Nhật Hàng Tháng",
+          "audit": "Kiểm Toán Bảo Mật Hàng Quý",
+          "manager": "Quản Lý Riêng"
+        }
+      },
+      "pro": {
+        "name": "Chuyên Nghiệp",
+        "badge": "Phổ Biến Nhất",
+        "features": {
+          "fix": "Sửa Lỗi Nghiêm Trọng (SLA 24h)",
+          "updates": "10h Cập Nhật Hàng Tháng",
+          "audit": "Kiểm Toán Bảo Mật Hàng Tháng",
+          "manager": "Quản Lý Riêng"
+        }
+      },
+      "enterprise": {
+        "name": "Doanh Nghiệp",
+        "badge": "Giá Trị Tốt Nhất",
+        "features": {
+          "fix": "Sửa Lỗi Nghiêm Trọng (SLA 4h)",
+          "updates": "Cập Nhật Không Giới Hạn + Lộ Trình",
+          "audit": "Kiểm Toán Hàng Tuần + Sao Lưu",
+          "manager": "Quản Lý Riêng"
+        }
       }
     }
   }

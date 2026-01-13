@@ -1,57 +1,65 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import EdgeGlowCard from "./EdgeGlowCard";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const PricingSection = () => {
+  const { t } = useLanguage();
   const [projectCost, setProjectCost] = useState(25000);
 
-  const plans = [
-    {
-      name: "Basic",
-      percent: 0.15,
-      badge: null,
-      accent: "#FF00B7",
-      features: [
-        { label: "Critical Bug Fixes (48h SLA)", enabled: true },
-        { label: "Monthly Updates", enabled: false },
-        { label: "Quarterly Security Audits", enabled: true },
-        { label: "Dedicated Manager", enabled: false },
-      ],
-    },
-    {
-      name: "Pro",
-      percent: 0.2,
-      badge: "Most Popular",
-      accent: "#00BFFF",
-      features: [
-        { label: "Critical Bug Fixes (24h SLA)", enabled: true },
-        { label: "10h Monthly Updates", enabled: true },
-        { label: "Monthly Security Audits", enabled: true },
-        { label: "Dedicated Manager", enabled: false },
-      ],
-    },
-    {
-      name: "Enterprise",
-      percent: 0.25,
-      badge: "Best Value",
-      accent: "#37FF8B",
-      features: [
-        { label: "Critical Bug Fixes (4h SLA)", enabled: true },
-        { label: "Unlimited Updates + Roadmap", enabled: true },
-        { label: "Weekly Audits + Backups", enabled: true },
-        { label: "Dedicated Manager", enabled: true },
-      ],
-    },
-  ];
+  const plans = useMemo(
+    () => [
+      {
+        name: t("pricingCustom.plans.basic.name", "Basic"),
+        percent: 0.15,
+        badge: null,
+        accent: "#FF00B7",
+        features: [
+          { label: t("pricingCustom.plans.basic.features.fix", "Critical Bug Fixes (48h SLA)"), enabled: true },
+          { label: t("pricingCustom.plans.basic.features.updates", "Monthly Updates"), enabled: false },
+          { label: t("pricingCustom.plans.basic.features.audit", "Quarterly Security Audits"), enabled: true },
+          { label: t("pricingCustom.plans.basic.features.manager", "Dedicated Manager"), enabled: false },
+        ],
+      },
+      {
+        name: t("pricingCustom.plans.pro.name", "Pro"),
+        percent: 0.2,
+        badge: t("pricingCustom.plans.pro.badge", "Most Popular"),
+        accent: "#00BFFF",
+        features: [
+          { label: t("pricingCustom.plans.pro.features.fix", "Critical Bug Fixes (24h SLA)"), enabled: true },
+          { label: t("pricingCustom.plans.pro.features.updates", "10h Monthly Updates"), enabled: true },
+          { label: t("pricingCustom.plans.pro.features.audit", "Monthly Security Audits"), enabled: true },
+          { label: t("pricingCustom.plans.pro.features.manager", "Dedicated Manager"), enabled: false },
+        ],
+      },
+      {
+        name: t("pricingCustom.plans.enterprise.name", "Enterprise"),
+        percent: 0.25,
+        badge: t("pricingCustom.plans.enterprise.badge", "Best Value"),
+        accent: "#37FF8B",
+        features: [
+          { label: t("pricingCustom.plans.enterprise.features.fix", "Critical Bug Fixes (4h SLA)"), enabled: true },
+          { label: t("pricingCustom.plans.enterprise.features.updates", "Unlimited Updates + Roadmap"), enabled: true },
+          { label: t("pricingCustom.plans.enterprise.features.audit", "Weekly Audits + Backups"), enabled: true },
+          { label: t("pricingCustom.plans.enterprise.features.manager", "Dedicated Manager"), enabled: true },
+        ],
+      },
+    ],
+    [t]
+  );
 
   return (
     <section className="relative px-4 sm:px-6 lg:px-10 py-14 space-y-16">
       {/* Header */}
       <div className="text-center space-y-4">
         <h2 className="text-3xl sm:text-4xl font-bold text-white">
-          Transparent Pricing
+          {t("pricingCustom.title", "Transparent Pricing")}
         </h2>
         <p className="text-white/60 text-sm sm:text-base max-w-xl mx-auto">
-          Mobile-first plans built to scale with your product.
+          {t(
+            "pricing.subtitle",
+            "Mobile-first plans built to scale with your product."
+          )}
         </p>
       </div>
 
@@ -93,7 +101,11 @@ const PricingSection = () => {
                   {plan.name}
                 </h3>
                 <p className="text-sm text-white/50">
-                  {(plan.percent * 100).toFixed(0)}% yearly maintenance
+                  {t(
+                    "pricing.percentMaintenance",
+                    "{percent}% yearly maintenance",
+                    { percent: (plan.percent * 100).toFixed(0) }
+                  )}
                 </p>
               </div>
 
@@ -103,10 +115,14 @@ const PricingSection = () => {
                   className="text-3xl sm:text-4xl font-bold"
                   style={{ color: plan.accent }}
                 >
-                  ${(projectCost * plan.percent).toLocaleString()}
+                  {t(
+                    "pricing.planEstimate",
+                    "${value}",
+                    { value: (projectCost * plan.percent).toLocaleString() }
+                  )}
                 </div>
                 <p className="text-xs sm:text-sm text-white/50">
-                  per year (est.)
+                  {t("pricingCustom.perYear", "per year (est.)")}
                 </p>
               </div>
 
@@ -153,10 +169,13 @@ const PricingSection = () => {
         >
           <div className="text-center space-y-2">
             <h3 className="text-xl sm:text-2xl font-semibold text-white">
-              Project Cost Calculator
+              {t("pricingCustom.calculator.title", "Project Cost Calculator")}
             </h3>
             <p className="text-white/60 text-sm">
-              Slide to see your yearly maintenance
+              {t(
+                "pricing.calculator.subtitle",
+                "Slide to see your yearly maintenance"
+              )}
             </p>
           </div>
 
@@ -173,9 +192,13 @@ const PricingSection = () => {
 
           {/* Sticky-like value */}
           <div className="text-center text-lg font-medium text-white">
-            Project Cost:{" "}
+            {t("pricingCustom.calculator.projectCost", "Project Cost:")}{" "}
             <span className="text-pink-400">
-              ${projectCost.toLocaleString()}
+              {t(
+                "pricing.calculator.projectValue",
+                "${value}",
+                { value: projectCost.toLocaleString() }
+              )}
             </span>
           </div>
 
@@ -191,7 +214,11 @@ const PricingSection = () => {
                   className="text-xl font-semibold"
                   style={{ color: plan.accent }}
                 >
-                  ${(projectCost * plan.percent).toLocaleString()}
+                  {t(
+                    "pricing.planEstimate",
+                    "${value}",
+                    { value: (projectCost * plan.percent).toLocaleString() }
+                  )}
                 </div>
               </div>
             ))}

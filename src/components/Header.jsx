@@ -58,25 +58,25 @@ const Header = ({ onOpenModal }) => {
   const condensedShift = isCondensed ? (isDesktop ? 24 : 16) : 0;
 
   const navItems = [
-    { key: "mail", label: t("header.nav.mail", "Mail"), onClick: () => setComingSoonOpen(true) },
+    { key: "mail", label: t("header.nav.mail"), onClick: () => setComingSoonOpen(true) },
     {
       key: "affiliate",
-      label: t("header.nav.affiliate", "Affiliate program"),
+      label: t("header.nav.affiliate"),
       href: "/affiliate",
     },
     {
       key: "instructions",
-      label: t("header.nav.instructions", "Instructions"),
+      label: t("header.nav.instructions"),
       onClick: () => setComingSoonOpen(true),
     },
     {
       key: "product",
-      label: t("header.nav.product", "AI-SOC"),
+      label: t("header.nav.product"),
       href: "/ai-soc",
     },
     {
       key: "secure-development",
-      label: t("header.nav.secureDevelopment", "SLNC Code"),
+      label: t("header.nav.secureDevelopment"),
       href: "/slnc-code",
     },
   ];
@@ -137,7 +137,7 @@ const Header = ({ onOpenModal }) => {
                       }}
                       className="w-full"
                     >
-                      {isSlncCodePage ? "Download" : t("header.login", "Request Demo")}
+                      {isSlncCodePage ? t("header.cta.download") : t("header.cta.requestDemo")}
                     </GlowButton>
                   )}
                 </div>
@@ -237,12 +237,12 @@ const Header = ({ onOpenModal }) => {
                 </div>
                 {isDesktop && isMainPage && (
                   <GlowButton onClick={scrollToContact}>
-                    Contact
+                    {t("header.cta.contact")}
                   </GlowButton>
                 )}
                 {isDesktop && !isMainPage && (
                   <GlowButton onClick={onOpenModal}>
-                    {isSlncCodePage ? "Download" : t("header.login", "Request Demo")}
+                    {isSlncCodePage ? t("header.cta.download") : t("header.cta.requestDemo")}
                   </GlowButton>
                 )}
               </motion.div>

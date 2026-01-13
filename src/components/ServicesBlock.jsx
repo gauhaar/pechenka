@@ -2,8 +2,10 @@ import React, { useMemo, useState } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import { Bot, Code2, ShieldCheck, ServerCog, Smartphone } from "lucide-react";
 import EdgeGlowCard from "./EdgeGlowCard";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const ServicesBlock = () => {
+  const { t } = useLanguage();
   const defaultGlowPalette = {
     glowColor: "#FF00B7",
     secondaryGlowColor: "rgba(32,140,255,0.45)",
@@ -16,48 +18,62 @@ const ServicesBlock = () => {
   const services = useMemo(
     () => [
       {
-        icon: "/icons/ai-agents-icon.png",
+        icon: null,
         fallbackIcon: Bot,
-        title: "AI Agents",
-        description:
-          "Custom conversational and autonomous agents for support, ops, and analytics.",
+        title: t("servicesBlock.services.aiAgents.title", "AI Agents"),
+        description: t(
+          "servicesBlock.services.aiAgents.description",
+          "Custom conversational and autonomous agents for support, ops, and analytics."
+        ),
         accent: "#FF00B7",
-        tag: "Automation",
+        tag: t("servicesBlock.services.aiAgents.tag", "Automation"),
       },
       {
-        icon: "/icons/custom-software-icon.png",
+        icon: null,
         fallbackIcon: Code2,
-        title: "Custom Software",
-        description: "End-to-end web and desktop apps tailored to your workflows.",
+        title: t("servicesBlock.services.customSoftware.title", "Custom Software"),
+        description: t(
+          "servicesBlock.services.customSoftware.description",
+          "End-to-end web and desktop apps tailored to your workflows."
+        ),
         accent: "#00BFFF",
-        tag: "Build",
+        tag: t("servicesBlock.services.customSoftware.tag", "Build"),
       },
       {
-        icon: "/icons/cybersecurity-icon.png",
+        icon: null,
         fallbackIcon: ShieldCheck,
-        title: "Cybersecurity",
-        description: "Audits, penetration testing, and continuous monitoring.",
+        title: t("servicesBlock.services.cybersecurity.title", "Cybersecurity"),
+        description: t(
+          "servicesBlock.services.cybersecurity.description",
+          "Audits, penetration testing, and continuous monitoring."
+        ),
         accent: "#37FF8B",
-        tag: "Protect",
+        tag: t("servicesBlock.services.cybersecurity.tag", "Protect"),
       },
       {
-        icon: "/icons/backend-devops-icon.png",
+        icon: null,
         fallbackIcon: ServerCog,
-        title: "Backend / DevOps",
-        description: "Scalable APIs, CI/CD pipelines, and cloud infrastructure.",
+        title: t("servicesBlock.services.backend.title", "Backend / DevOps"),
+        description: t(
+          "servicesBlock.services.backend.description",
+          "Scalable APIs, CI/CD pipelines, and cloud infrastructure."
+        ),
         accent: "#FFB800",
-        tag: "Scale",
+        tag: t("servicesBlock.services.backend.tag", "Scale"),
       },
       {
-        icon: "/icons/mobile-icon.png",
+        icon: null,
         fallbackIcon: Smartphone,
-        title: "Mobile",
-        description: "Cross-platform apps with native performance and polished UX.",
+        title: t("servicesBlock.services.mobile.title", "Mobile"),
+        description: t(
+          "servicesBlock.services.mobile.description",
+          "Cross-platform apps with native performance and polished UX."
+        ),
         accent: "#FF00B7",
-        tag: "Ship",
+        tag: t("servicesBlock.services.mobile.tag", "Ship"),
       },
     ],
-    []
+    [t]
   );
 
   const container = {
@@ -129,7 +145,7 @@ const ServicesBlock = () => {
       <div className="relative mx-auto max-w-3xl text-center">
         <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70 shadow-[0_10px_30px_rgba(0,0,0,0.25)]">
           <span className="h-2 w-2 rounded-full bg-white/60" />
-          What we offer
+          {t("servicesBlock.badge", "What we offer")}
         </div>
 
         <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
@@ -139,7 +155,7 @@ const ServicesBlock = () => {
               filter: "drop-shadow(0 12px 28px rgba(0,0,0,0.40))",
             }}
           >
-            Our Services
+            {t("servicesBlock.title", "Our Services")}
           </span>
         </h2>
 
@@ -158,8 +174,10 @@ const ServicesBlock = () => {
         </div>
 
         <p className="mt-4 text-sm leading-relaxed text-white/60 sm:text-base">
-          Premium UI, strong engineering, and fast delivery — everything you need
-          to launch a product that looks and performs like a top-tier brand.
+          {t(
+            "servicesBlock.description",
+            "Premium UI, strong engineering, and fast delivery — everything you need to launch a product that looks and performs like a top-tier brand."
+          )}
         </p>
       </div>
 
@@ -177,6 +195,7 @@ const ServicesBlock = () => {
             service={service}
             defaultGlowPalette={defaultGlowPalette}
             itemVariant={item}
+            t={t}
           />
         ))}
       </motion.div>
@@ -184,7 +203,7 @@ const ServicesBlock = () => {
   );
 };
 
-function ServiceCard({ service, defaultGlowPalette, itemVariant }) {
+function ServiceCard({ service, defaultGlowPalette, itemVariant, t }) {
   // 3D tilt
   const mx = useMotionValue(0);
   const my = useMotionValue(0);
@@ -312,10 +331,10 @@ function ServiceCard({ service, defaultGlowPalette, itemVariant }) {
                 href="#contact-form"
                 className="group/cta inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-medium text-white/80 transition-all hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/10"
                 style={{ boxShadow: `0 14px 36px ${service.accent}14` }}
-                aria-label={`Learn more about ${service.title}`}
+                aria-label={t("servicesBlock.learnMoreAria", "Learn more about this service")}
               >
                 <span className="relative">
-                  Learn more
+                  {t("servicesBlock.learnMore", "Learn more")}
                   <span
                     className="pointer-events-none absolute -bottom-[6px] left-0 h-[2px] w-0 rounded-full transition-all duration-300 group-hover/cta:w-full"
                     style={{ background: service.accent }}
