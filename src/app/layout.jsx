@@ -45,6 +45,7 @@ const detectRequestLocale = async () => {
   return defaultLocale;
 };
 
+
 export default async function RootLayout({ children }) {
   const locale = await detectRequestLocale();
   const messages = LOCALES[locale] ?? LOCALES[defaultLocale] ?? {};

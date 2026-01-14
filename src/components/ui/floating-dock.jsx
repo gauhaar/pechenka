@@ -18,18 +18,20 @@ export const FloatingDock = ({
 
 const FloatingDockMobile = ({ items, className }) => {
   return (
-    <div className={cn("flex w-full flex-col items-center gap-4 md:hidden", className)}>
+    <div className={cn("flex w-auto flex-row items-center justify-center gap-3 md:hidden", className)}>
       {items.map((item, idx) => (
         <motion.a
           key={item.title}
           href={item.href}
-          className="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-xl border border-white/30"
+          target={item.target || "_blank"}
+          rel={item.rel || "noreferrer noopener"}
+          className="flex h-14 w-14 items-center justify-center rounded-full bg-white shadow-xl border border-white/30"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: idx * 0.05 }}
         >
           <span className="sr-only">{item.title}</span>
-          <div className="h-7 w-7">{item.icon}</div>
+          <div className="h-6 w-6">{item.icon}</div>
         </motion.a>
       ))}
     </div>
@@ -62,7 +64,9 @@ function IconContainer({
   mouseX,
   title,
   icon,
-  href
+  href,
+  target,
+  rel
 }) {
   let ref = useRef(null);
 
@@ -103,7 +107,7 @@ function IconContainer({
   const [hovered, setHovered] = useState(false);
 
   return (
-    <a href={href}>
+    <a href={href} target={target || "_blank"} rel={rel || "noreferrer noopener"}>
       <motion.div
         ref={ref}
         style={{ width, height }}

@@ -193,7 +193,7 @@ const Header = ({ onOpenModal }) => {
 
             <nav
               className={clsx(
-                "relative items-center space-x-8",
+                "relative items-center gap-8",
                 isDesktop ? "flex" : "hidden"
               )}
             >
