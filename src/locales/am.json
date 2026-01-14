@@ -16,7 +16,7 @@
       "affiliate": "አጋር ፕሮግራም",
       "instructions": "መመሪያዎች",
       "product": "AI-SOC",
-      "secureDevelopment": "SLNC Code",
+      "secureDevelopment": "SLNC-env",
       "developerServices": "የልማት አገልግሎቶች"
     },
     "login": "ዲሞ ይጠይቁ",
@@ -462,7 +462,7 @@
   },
   "secureDevelopment": {
     "hero": {
-      "badge": "SLNC Code · ደህንነቱ የተጠበቀ የልማት አካባቢ",
+      "badge": "SLNC-env · ደህንነቱ የተጠበቀ የልማት አካባቢ",
       "title": "ደህንነቱ የተጠበቀ እና ግላዊ ኮድ ያላቸውን ስርዓቶች ይገንቡ",
       "description": "ለድርጅቶች ግላዊ የልማት አካባቢ፣ ኮድ ከድርጅታዊ ኔትወርክዎ ውጭ አይወጣም። በተመሳሳይ ጊዜ የቅርብ ጊዜ በAI የሚመራ ቴክኖሎጂ ያቀርባል",
       "requestSystem": "ስርዓት ይጠይቁ"
@@ -470,7 +470,7 @@
     "components": {
       "title": "ሁሉም ነገር በውስጥ ይቆያል",
       "subtitle": "ሶስት አካላት፣ አንድ የታሸገ ዑደት",
-      "description": "ኮድ፣ ፕሮምፕቶች እና ግንባታዎች ከኔትወርክዎ ውጭ አይወጡም። SLNC Code የAI እርዳታ፣ ግምገማዎች እና አቅርቦት ለደመና አቅራቢዎች፣ የመንግስት ቡድኖች እና የኢንዱስትሪ ፋብሪካዎች ግላዊ ያደርጋል።",
+      "description": "ኮድ፣ ፕሮምፕቶች እና ግንባታዎች ከኔትወርክዎ ውጭ አይወጡም። SLNC-env የAI እርዳታ፣ ግምገማዎች እና አቅርቦት ለደመና አቅራቢዎች፣ የመንግስት ቡድኖች እና የኢንዱስትሪ ፋብሪካዎች ግላዊ ያደርጋል።",
       "sithub": {
         "title": "Sithub አገልጋይ",
         "tag": "አካባቢያዊ የተለዋጭ ቁጥጥር"

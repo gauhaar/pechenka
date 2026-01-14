@@ -67,9 +67,9 @@ export default function SecureDevelopmentPage() {
     ];
 
     const analyzerShots = [
-        { src: "/slnc-code-analyzer/slnc-code-analyzer1.png", title: "Scan overview", desc: "See issues grouped by severity before code leaves your network." },
-        { src: "/slnc-code-analyzer/slnc-code-analyzer2.png", title: "Detection of misconfigurations", desc: "Our AI-powered code analyzer even finds misconfigurations within the code." },
-        { src: "/slnc-code-analyzer/slnc-code-analyzer3.png", title: "Inline diffs", desc: "Review suggested patches inline with security context." },
+        { src: "/slnc-env-analyzer/slnc-env-analyzer1.png", title: "Scan overview", desc: "See issues grouped by severity before code leaves your network." },
+        { src: "/slnc-env-analyzer/slnc-env-analyzer2.png", title: "Detection of misconfigurations", desc: "Our AI-powered code analyzer even finds misconfigurations within the code." },
+        { src: "/slnc-env-analyzer/slnc-env-analyzer3.png", title: "Inline diffs", desc: "Review suggested patches inline with security context." },
     ];
 
     const cardHover = { whileHover: { y: -4, scale: 1.01 }, transition: { duration: 0.25, ease: "easeOut" } };
@@ -128,7 +128,7 @@ export default function SecureDevelopmentPage() {
                                 animate={{ opacity: 1, y: 0 }}
                                 className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.15em] text-slate-200"
                             >
-                                {t("secureDevelopment.hero.badge", "SLNC Code · Secure Development Environment")}
+                                {t("secureDevelopment.hero.badge", "SLNC-env · Secure Development Environment")}
                             </motion.p>
                             <motion.h1 initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
                                 {t("secureDevelopment.hero.title", "Build systems with secure and private code")}
@@ -162,7 +162,7 @@ export default function SecureDevelopmentPage() {
                             </div>
                             <h2 className="text-3xl md:text-4xl font-bold text-white">{t("secureDevelopment.components.title", "Everything stays inside")}</h2>
                             <p className="text-slate-100 text-base md:text-lg leading-relaxed">
-                                {t("secureDevelopment.components.description", "Code, prompts, and builds never leave your network. SLNC Code keeps AI help, reviews, and delivery private for cloud providers, government teams, and industrial plants.")}
+                                {t("secureDevelopment.components.description", "Code, prompts, and builds never leave your network. SLNC-env keeps AI help, reviews, and delivery private for cloud providers, government teams, and industrial plants.")}
                             </p>
 
                             <div className="grid gap-5 md:grid-cols-3">

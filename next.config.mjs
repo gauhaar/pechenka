@@ -1,5 +1,4 @@
 import createNextIntlPlugin from 'next-intl/plugin';
-import { supportedLocales, defaultLocale } from "./src/i18n/locales.mjs";
 import path from "path";
 import { fileURLToPath } from "url";
 
@@ -14,6 +13,30 @@ const nextConfig = {
   trailingSlash: true, // Preserve trailing slashes for existing URLs
   turbopack: {
     root: __dirname, // Silence root inference warning; this is the project root
+  },
+  async redirects() {
+    return [
+      {
+        source: "/slnc-code",
+        destination: "/slnc-env",
+        permanent: true,
+      },
+      {
+        source: "/slnc-code/:path*",
+        destination: "/slnc-env/:path*",
+        permanent: true,
+      },
+      {
+        source: "/secure-development",
+        destination: "/slnc-env",
+        permanent: true,
+      },
+      {
+        source: "/secure-development/:path*",
+        destination: "/slnc-env/:path*",
+        permanent: true,
+      },
+    ];
   },
 };
 

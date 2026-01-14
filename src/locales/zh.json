@@ -16,7 +16,7 @@
       "affiliate": "联盟计划",
       "instructions": "使用指南",
       "product": "AI-SOC",
-      "secureDevelopment": "SLNC Code",
+      "secureDevelopment": "SLNC-env",
       "developerServices": "开发者服务"
     },
     "login": "登录",
@@ -423,7 +423,7 @@
   },
   "secureDevelopment": {
     "hero": {
-      "badge": "SLNC Code · 安全开发环境",
+      "badge": "SLNC-env · 安全开发环境",
       "title": "使用安全私密的代码构建系统",
       "description": "企业私有开发环境，代码永不离开您的企业网络。同时提供最新的人工智能技术",
       "requestSystem": "请求系统"
@@ -431,7 +431,7 @@
     "components": {
       "title": "一切都在内部",
       "subtitle": "三个组件，一个封闭循环",
-      "description": "代码、提示和构建永不离开您的网络。SLNC Code 为云提供商、政府团队和工业工厂保持人工智能帮助、审查和交付的私密性。",
+      "description": "代码、提示和构建永不离开您的网络。SLNC-env 为云提供商、政府团队和工业工厂保持人工智能帮助、审查和交付的私密性。",
       "sithub": {
         "title": "Sithub 服务器",
         "tag": "本地版本控制"

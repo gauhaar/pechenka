@@ -59,7 +59,7 @@ pm2 logs             # verify no runtime errors
 ```
 
 ## 3) Verify refresh and logs
-- In a browser, refresh root and nested routes (`/affiliate`, `/ai-soc`, `/slnc-code`, `/policies/*`, `/secure-development`).
+- In a browser, refresh root and nested routes (`/affiliate`, `/ai-soc`, `/slnc-env`, `/policies/*`, `/secure-development`).
 - Watch Nginx errors while refreshing:
 ```
 sudo tail -f /var/log/nginx/error.log

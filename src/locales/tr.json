@@ -16,7 +16,7 @@
       "affiliate": "Ortaklık programı",
       "instructions": "Talimatlar",
       "product": "AI-SOC",
-      "secureDevelopment": "SLNC Code",
+      "secureDevelopment": "SLNC-env",
       "developerServices": "Developer Services"
     },
     "login": "Giriş yap",
@@ -393,7 +393,7 @@
   },
   "secureDevelopment": {
     "hero": {
-      "badge": "SLNC Code · Güvenli Geliştirme Ortamı",
+      "badge": "SLNC-env · Güvenli Geliştirme Ortamı",
       "title": "Güvenli ve özel kodla sistemler oluşturun",
       "description": "Kodun kurumsal ağınızdan asla çıkmadığı, işletmeler için özel geliştirme ortamı. Aynı zamanda en son yapay zeka destekli teknolojiyi sunar",
       "requestSystem": "Sistem Talep Et"
@@ -401,7 +401,7 @@
     "components": {
       "title": "Her şey içeride kalır",
       "subtitle": "Üç bileşen, bir kapalı döngü",
-      "description": "Kod, prompt'lar ve derlemeler ağınızdan asla çıkmaz. SLNC Code, bulut sağlayıcıları, devlet ekipleri ve endüstriyel tesisler için yapay zeka yardımını, incelemeleri ve teslimatı özel tutar.",
+      "description": "Kod, prompt'lar ve derlemeler ağınızdan asla çıkmaz. SLNC-env, bulut sağlayıcıları, devlet ekipleri ve endüstriyel tesisler için yapay zeka yardımını, incelemeleri ve teslimatı özel tutar.",
       "sithub": {
         "title": "Sithub Sunucusu",
         "tag": "Yerel sürüm kontrolü"

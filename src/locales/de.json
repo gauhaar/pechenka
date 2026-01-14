@@ -16,7 +16,7 @@
       "affiliate": "Partnerprogramm",
       "instructions": "Anleitungen",
       "product": "AI-SOC",
-      "secureDevelopment": "SLNC Code",
+      "secureDevelopment": "SLNC-env",
       "developerServices": "Entwicklerdienste"
     },
     "login": "Anmelden",
@@ -423,7 +423,7 @@
   },
   "secureDevelopment": {
     "hero": {
-      "badge": "SLNC Code · Sichere Entwicklungsumgebung",
+      "badge": "SLNC-env · Sichere Entwicklungsumgebung",
       "title": "Erstellen Sie Systeme mit sicherem und privatem Code",
       "description": "Private Entwicklungsumgebung für Unternehmen, in der Code niemals Ihr Unternehmensnetzwerk verlässt. Gleichzeitig bietet sie die neueste KI-gestützte Technologie",
       "requestSystem": "System anfordern"
@@ -431,7 +431,7 @@
     "components": {
       "title": "Alles bleibt intern",
       "subtitle": "Drei Komponenten, ein geschlossener Kreislauf",
-      "description": "Code, Prompts und Builds verlassen niemals Ihr Netzwerk. SLNC Code hält KI-Hilfe, Reviews und Auslieferung privat für Cloud-Anbieter, Regierungsteams und Industrieanlagen.",
+      "description": "Code, Prompts und Builds verlassen niemals Ihr Netzwerk. SLNC-env hält KI-Hilfe, Reviews und Auslieferung privat für Cloud-Anbieter, Regierungsteams und Industrieanlagen.",
       "sithub": {
         "title": "Sithub-Server",
         "tag": "Lokale Versionskontrolle"

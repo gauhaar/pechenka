@@ -17,7 +17,7 @@ const DESKTOP_WIDTH = 1130;
 const Header = ({ onOpenModal }) => {
   const pathname = usePathname();
   const isMainPage = pathname === "/";
-  const isSlncCodePage = pathname === "/slnc-code";
+  const isSlncEnvPage = pathname === "/slnc-env";
   const [isCondensed, setIsCondensed] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -77,7 +77,7 @@ const Header = ({ onOpenModal }) => {
     {
       key: "secure-development",
       label: t("header.nav.secureDevelopment"),
-      href: "/slnc-code",
+      href: "/slnc-env",
     },
   ];
 
@@ -137,7 +137,7 @@ const Header = ({ onOpenModal }) => {
                       }}
                       className="w-full"
                     >
-                      {isSlncCodePage ? t("header.cta.download") : t("header.cta.requestDemo")}
+                      {isSlncEnvPage ? t("header.cta.download") : t("header.cta.requestDemo")}
                     </GlowButton>
                   )}
                 </div>
@@ -242,7 +242,7 @@ const Header = ({ onOpenModal }) => {
                 )}
                 {isDesktop && !isMainPage && (
                   <GlowButton onClick={onOpenModal}>
-                    {isSlncCodePage ? t("header.cta.download") : t("header.cta.requestDemo")}
+                    {isSlncEnvPage ? t("header.cta.download") : t("header.cta.requestDemo")}
                   </GlowButton>
                 )}
               </motion.div>

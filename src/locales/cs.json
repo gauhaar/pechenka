@@ -16,7 +16,7 @@
       "affiliate": "Partnerský program",
       "instructions": "Instrukce",
       "product": "AI-SOC",
-      "secureDevelopment": "SLNC Code",
+      "secureDevelopment": "SLNC-env",
       "developerServices": "Vývojářské služby"
     },
     "login": "Přihlásit se",
@@ -470,7 +470,7 @@
     "components": {
       "title": "Vše zůstane uvnitř",
       "subtitle": "Tři komponenty, jedna uzavřená smyčka",
-      "description": "Kód, výzvy a buildy nikdy neopouštějí vaši síť. SLNC Code uchovává nápovědu, recenze a dodávky AI soukromé pro poskytovatele cloudu, vládní týmy a průmyslové závody.",
+      "description": "Kód, výzvy a buildy nikdy neopouštějí vaši síť. SLNC-env uchovává nápovědu, recenze a dodávky AI soukromé pro poskytovatele cloudu, vládní týmy a průmyslové závody.",
       "sithub": {
         "title": "Sithub Server",
         "tag": "Místní správa verzí"

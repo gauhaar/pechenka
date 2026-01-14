@@ -16,7 +16,7 @@
       "affiliate": "Партнерська програма",
       "instructions": "Інструкції",
       "product": "AI-SOC",
-      "secureDevelopment": "SLNC Code",
+      "secureDevelopment": "SLNC-env",
       "developerServices": "Developer Services"
     },
     "login": "Увійти",
@@ -432,7 +432,7 @@
   },
   "secureDevelopment": {
     "hero": {
-      "badge": "SLNC Code · Secure Development Environment",
+      "badge": "SLNC-env · Secure Development Environment",
       "title": "Build systems with secure and private code",
       "description": "Private development environment for enterprises, where code never leaves your corporate network. Meanwhile offering the latest AI-powered technology",
       "requestSystem": "Request System"
@@ -440,7 +440,7 @@
     "components": {
       "title": "Everything stays inside",
       "subtitle": "Three components, one sealed loop",
-      "description": "Code, prompts, and builds never leave your network. SLNC Code keeps AI help, reviews, and delivery private for cloud providers, government teams, and industrial plants.",
+      "description": "Code, prompts, and builds never leave your network. SLNC-env keeps AI help, reviews, and delivery private for cloud providers, government teams, and industrial plants.",
       "sithub": {
         "title": "Sithub Server",
         "tag": "Local version control"

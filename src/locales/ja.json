@@ -16,7 +16,7 @@
       "affiliate": "アフィリエイト",
       "instructions": "手順",
       "product": "AI-SOC",
-      "secureDevelopment": "SLNC Code",
+      "secureDevelopment": "SLNC-env",
       "developerServices": "開発者向けサービス"
     },
     "login": "ログイン",
@@ -462,7 +462,7 @@
   },
   "secureDevelopment": {
     "hero": {
-      "badge": "SLNC Code · セキュア開発環境",
+      "badge": "SLNC-env · セキュア開発環境",
       "title": "安全でプライベートなコードでシステムを構築",
       "description": "コードが企業ネットワークを離れることのない、企業向けプライベート開発環境。最新のAI技術を提供します",
       "requestSystem": "システムをリクエスト"
@@ -470,7 +470,7 @@
     "components": {
       "title": "すべてが内部に留まる",
       "subtitle": "3つのコンポーネント、1つの閉じたループ",
-      "description": "コード、プロンプト、ビルドはネットワークを離れません。SLNC CodeはAI支援、レビュー、配信をクラウドプロバイダー、政府チーム、産業プラント向けにプライベートに保ちます。",
+      "description": "コード、プロンプト、ビルドはネットワークを離れません。SLNC-envはAI支援、レビュー、配信をクラウドプロバイダー、政府チーム、産業プラント向けにプライベートに保ちます。",
       "sithub": {
         "title": "Sithubサーバー",
         "tag": "ローカルバージョン管理"

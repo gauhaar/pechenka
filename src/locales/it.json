@@ -16,7 +16,7 @@
       "affiliate": "Programma affiliati",
       "instructions": "Istruzioni",
       "product": "AI-SOC",
-      "secureDevelopment": "SLNC Code",
+      "secureDevelopment": "SLNC-env",
       "developerServices": "Servizi per sviluppatori"
     },
     "login": "Accedi",
@@ -423,7 +423,7 @@
   },
   "secureDevelopment": {
     "hero": {
-      "badge": "SLNC Code · Ambiente di sviluppo sicuro",
+      "badge": "SLNC-env · Ambiente di sviluppo sicuro",
       "title": "Costruisci sistemi con codice sicuro e privato",
       "description": "Ambiente di sviluppo privato per le aziende, dove il codice non lascia mai la tua rete aziendale. Offre intanto la tecnologia più recente alimentata dall'IA",
       "requestSystem": "Richiedi sistema"
@@ -431,7 +431,7 @@
     "components": {
       "title": "Tutto rimane all'interno",
       "subtitle": "Tre componenti, un ciclo sigillato",
-      "description": "Codice, prompt e build non lasciano mai la tua rete. SLNC Code mantiene l'aiuto dell'IA, le revisioni e la consegna privati per provider cloud, team governativi e impianti industriali.",
+      "description": "Codice, prompt e build non lasciano mai la tua rete. SLNC-env mantiene l'aiuto dell'IA, le revisioni e la consegna privati per provider cloud, team governativi e impianti industriali.",
       "sithub": {
         "title": "Server Sithub",
         "tag": "Controllo versione locale"

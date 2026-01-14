@@ -16,7 +16,7 @@
       "affiliate": "Affiliateprogramma",
       "instructions": "Instructies",
       "product": "AI-SOC",
-      "secureDevelopment": "SLNC Code",
+      "secureDevelopment": "SLNC-env",
       "developerServices": "Ontwikkelaarsdiensten"
     },
     "login": "Inloggen",
@@ -218,7 +218,7 @@
         "title": "Landblokkering",
         "content": "Blokkeer al het verkeer uit een specifiek land"
       },
-      "portManagement": {
+      "badge": "SLNC-env · Veilige ontwikkelomgeving",
         "title": "Poortbeheer",
         "content": "Sluit ongebruikte poorten om het aanvalsoppervlak te verkleinen. Schakel bijvoorbeeld poort 22 uit als SSH niet nodig is"
       },
@@ -462,7 +462,7 @@
   },
   "secureDevelopment": {
     "hero": {
-      "badge": "SLNC-code · Veilige ontwikkelomgeving",
+      "badge": "SLNC-env · Veilige ontwikkelomgeving",
       "title": "Systemen bouwen met veilige en private code",
       "description": "Private ontwikkelomgeving voor ondernemingen, waar code nooit uw bedrijfsnetwerk verlaat. Ondertussen het aanbieden van de nieuwste AI-aangedreven technologie",
       "requestSystem": "Aanvraagsysteem"
@@ -470,7 +470,7 @@
     "components": {
       "title": "Alles blijft binnen",
       "subtitle": "Drie componenten, één verzegelde lus",
-      "description": "Code, prompts en builds verlaten nooit uw netwerk. SLNC-code houdt AI-hulp, beoordelingen en levering privé voor cloudproviders, overheidsteams en industriële fabrieken.",
+      "description": "Code, prompts en builds verlaten nooit uw netwerk. SLNC-env houdt AI-hulp, beoordelingen en levering privé voor cloudproviders, overheidsteams en industriële fabrieken.",
       "sithub": {
         "title": "Sithub-server",
         "tag": "Lokaal versiebeheer"

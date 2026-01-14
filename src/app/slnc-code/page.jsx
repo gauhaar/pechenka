@@ -1,9 +1,5 @@
-import SecureDevelopmentPage from "@/components/SecureDevelopment";
-
-export const metadata = {
-  title: "SLNC Code",
-};
+import { redirect } from "next/navigation";
 
 export default function Page() {
-  return <SecureDevelopmentPage />;
+  redirect("/slnc-env");
 }

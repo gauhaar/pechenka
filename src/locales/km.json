@@ -16,7 +16,7 @@
       "affiliate": "Affiliate program",
       "instructions": "Instructions",
       "product": "AI-SOC",
-      "secureDevelopment": "SLNC Code",
+      "secureDevelopment": "SLNC-env",
       "developerServices": "សេវាកម្មអ្នកអភិវឌ្ឍន៍"
     },
     "login": "ស្នើសុំការបង្ហាញ",
@@ -470,7 +470,7 @@
     "components": {
       "title": "គ្រប់យ៉ាងបានលេចធ្លោនៅក្នុង",
       "subtitle": "សមាសភាគបី រង្វិលជុំបិទជិតមួយ",
-      "description": "Code, prompts, និង builds មិនដែលចាកចេញពីបណ្តាញរបស់អ្នក. SLNC Code រក្សា AI ជំនួយ ការពិនិត្យ និងការចែកចាយឯកជនសម្រាប់អ្នកផ្តល់ពពក ក្រុមការងាររដ្ឋាភិបាល និងរោងចក្រឧស្សាហកម្ម ។",
+      "description": "Code, prompts, និង builds មិនដែលចាកចេញពីបណ្តាញរបស់អ្នក. SLNC-env រក្សា AI ជំនួយ ការពិនិត្យ និងការចែកចាយឯកជនសម្រាប់អ្នកផ្តល់ពពក ក្រុមការងាររដ្ឋាភិបាល និងរោងចក្រឧស្សាហកម្ម ។",
       "sithub": {
         "title": "ម៉ាស៊ីន បម្រើ Sithub",
         "tag": "ការ គ្រប់គ្រង កំណែ មូលដ្ឋាន"
