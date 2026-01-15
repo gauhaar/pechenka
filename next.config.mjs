@@ -17,6 +17,16 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: "/developer-services",
+        destination: "/services",
+        permanent: true,
+      },
+      {
+        source: "/developer-services/:path*",
+        destination: "/services/:path*",
+        permanent: true,
+      },
+      {
         source: "/slnc-code",
         destination: "/slnc-env",
         permanent: true,

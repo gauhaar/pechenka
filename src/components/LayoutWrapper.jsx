@@ -1,22 +1,17 @@
 'use client';
 
-import { usePathname, useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import Footer from "@/components/Footer";
 import ParallaxGlobe from "@/components/ParallaxGlobe";
-import LoadingSpinner from "@/components/LoadingSpinner";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import CookieConsent from "@/components/CookieConsent";
 import SocialDock from "@/components/SocialDock";
 
-export default function LayoutWrapper({ children }) {
+export default function LayoutWrapper({ children, initialLanguage }) {
   const pathname = usePathname();
-  const router = useRouter();
-  const [isLoading, setIsLoading] = useState(false);
   const isPolicyPage = pathname.startsWith('/policies');
   const isAffiliatePage = pathname.startsWith('/affiliate');
-  // Treat root '/' as the Developer Services page now, along with the old route if kept
-  const isDeveloperServicesPage = pathname.startsWith('/developer-services') || pathname === '/';
+  const isServicesPage = pathname.startsWith('/services') || pathname.startsWith('/developer-services');
   // Old homepage content is now moved to /ai-soc
   const isProductPage = pathname === '/ai-soc';
   const showSocialDock = !isPolicyPage;
@@ -24,54 +19,15 @@ export default function LayoutWrapper({ children }) {
   // Restrict globe to the product page only (was main page)
   const showParallaxGlobe = isProductPage;
 
-  // Handle page navigation loading
-  useEffect(() => {
-    const handleRouteChangeStart = () => setIsLoading(true);
-    const handleRouteChangeComplete = () => setIsLoading(false);
-    const handleRouteChangeError = () => setIsLoading(false);
-
-    // Listen to route changes
-    window.addEventListener('beforeunload', handleRouteChangeStart);
-    
-    // Simulate route changes for logo clicks and internal links
-    const handleLinkClick = (e) => {
-      const target = e.target.closest('a');
-      if (target && target.href && target.href.startsWith(window.location.origin)) {
-        // Don't show loading for anchor links (table of contents)
-        const isAnchorLink = target.href.includes('#') && 
-                            target.href.replace(/#.*$/, '') === window.location.href.replace(/#.*$/, '');
-        if (!isAnchorLink) {
-          setIsLoading(true);
-        }
-      }
-    };
-
-    document.addEventListener('click', handleLinkClick);
-
-    return () => {
-      window.removeEventListener('beforeunload', handleRouteChangeStart);
-      document.removeEventListener('click', handleLinkClick);
-    };
-  }, []);
-
-  // Auto-hide loading after 500ms (fallback)
-  useEffect(() => {
-    if (isLoading) {
-      const timer = setTimeout(() => setIsLoading(false), 800);
-      return () => clearTimeout(timer);
-    }
-  }, [isLoading]);
-
   return (
-    <LanguageProvider>
-      <LoadingSpinner isLoading={isLoading} />
+    <LanguageProvider initialLanguage={initialLanguage}>
       {showParallaxGlobe && <ParallaxGlobe />}
       <div className={!isPolicyPage ? "default-content-wrapper pt-20" : "default-content-wrapper"}>
         {children}
       </div>
       {showSocialDock && <SocialDock />}
       <div className={isPolicyPage ? "bg-black" : "relative w-full"}>
-        {!isPolicyPage && !isAffiliatePage && !isDeveloperServicesPage && (
+        {!isPolicyPage && !isAffiliatePage && !isServicesPage && (
           <div className="absolute inset-0 -z-10 layout-background">
             <img
               src="/moonrise.webp"
@@ -80,7 +36,7 @@ export default function LayoutWrapper({ children }) {
             />
           </div>
         )}
-        {!isAffiliatePage && !isDeveloperServicesPage && <Footer />}
+        {!isAffiliatePage && !isServicesPage && <Footer />}
       </div>
       <CookieConsent />
     </LanguageProvider>

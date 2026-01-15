@@ -2,12 +2,12 @@
   "languageSelector": {
     "triggerLabel": "Dil seçin",
     "menuLabel": "Lütfen dili seçiniz",
-    "searchLabel": "Search languages",
-    "searchPlaceholder": "Search by name or native script",
-    "searchResults": "Search results",
-    "noMatches": "No languages match your search.",
-    "popular": "Most popular",
-    "allLanguages": "All languages"
+    "searchLabel": "Dilleri ara",
+    "searchPlaceholder": "İsme veya yazıya göre ara",
+    "searchResults": "Arama sonuçları",
+    "noMatches": "Aramanıza uyan dil yok.",
+    "popular": "En popüler",
+    "allLanguages": "Tüm diller"
   },
   "header": {
     "nav": {
@@ -17,13 +17,18 @@
       "instructions": "Talimatlar",
       "product": "AI-SOC",
       "secureDevelopment": "SLNC-env",
-      "developerServices": "Developer Services"
+      "developerServices": "Geliştirici Hizmetleri",
+      "home": "Ana sayfa",
+      "systems": "Sistemler",
+      "systemsAiSoc": "AI-SOC",
+      "systemsSlncEnv": "SLNC-env",
+      "services": "Hizmetler"
     },
     "login": "Giriş yap",
     "cta": {
-      "contact": "Contact",
-      "download": "Download",
-      "requestDemo": "Request Demo"
+      "contact": "İletişim",
+      "download": "İndir",
+      "requestDemo": "Demo iste"
     }
   },
   "affiliate": {
@@ -85,7 +90,7 @@
         "description": "Ödüller işlem tamamlandıktan sonra bir dakika içinde ortak bakiyenize yansır—manuel onay kuyruğu yok."
       },
       "withdrawal": {
-        "title": "Withdrawals processed in 2 business days",
+        "title": "Ödemeler 2 iş gününde işlenir",
         "description": "Çekim talepleri otomatik olarak incelenir ve iki iş günü içinde banka hesabınıza ulaşır."
       },
       "sample": {
@@ -112,56 +117,56 @@
       }
     },
     "termsAff": {
-      "label": "Affiliate Program",
-      "title": "Affiliate Terms of Service",
-      "notice": "This policy is available only in English",
-      "intro": "These terms describe how rewards are issued and paid to partners participating in the Silence AI affiliate program.",
+      "label": "Ortaklık Programı",
+      "title": "Ortaklık Hizmet Şartları",
+      "notice": "Bu politika yalnızca İngilizce mevcuttur",
+      "intro": "Bu şartlar, Silence AI ortaklık programına katılan iş ortaklarına ödüllerin nasıl verildiğini ve ödendiğini açıklar.",
       "meta": {
-        "effective": "Effective date: 10 November 2024",
-        "lastUpdated": "Last updated: 10 November 2024"
+        "effective": "Yürürlük tarihi: 10 Kasım 2024",
+        "lastUpdated": "Son güncelleme: 10 Kasım 2024"
       },
       "sections": {
         "overview": {
-          "title": "1. Program Overview",
-          "body1": "1.1 Agreement Scope: These Affiliate Terms of Service (\"Terms\") govern your participation in the Silence AI affiliate program operated by Silence AI LLC (\"Silence AI,\" \"we,\" \"us,\" or \"our\"). These Terms apply to you, the individual or entity enrolling as an affiliate partner (\"you\" or \"your\"), and, where applicable, your employer, principal, or organization if you act on their behalf.",
-          "body2": "1.2 Program Summary: Under this program, qualified partners earn commission-based rewards when referred customers purchase or top up the AI-SOC 1 product. Participation in the affiliate program also requires compliance with the general Silence AI Terms of Service."
+          "title": "1. Program Özeti",
+          "body1": "1.1 Sözleşmenin Kapsamı: Bu Ortaklık Hizmet Şartları (\"Şartlar\"), Silence AI LLC tarafından yürütülen Silence AI ortaklık programına katılımınızı düzenler. Bu Şartlar, ortak olarak kaydolan gerçek veya tüzel kişiyi ve gerekiyorsa onun adına hareket ediyorsanız işvereninizi/organizasyonunuzu kapsar.",
+          "body2": "1.2 Program Özeti: Bu programda, yönlendirdiğiniz müşteriler AI-SOC 1 ürününü satın aldığında veya bakiyelerini doldurduğunda komisyon bazlı ödül kazanırsınız. Ortaklık programı katılımı, genel Silence AI Hizmet Şartlarına uyumu da gerektirir."
         },
         "eligibility": {
-          "title": "2. Partner Eligibility",
-          "item1": "You must maintain an active Silence AI affiliate account with accurate business and payment details.",
-          "item2": "Referrals must complete registration through your issued link or promo code.",
-          "item3": "Accounts found to be fraudulent, self-referred, or in breach of applicable law are not eligible for rewards."
+          "title": "2. İş Ortağı Uygunluğu",
+          "item1": "Doğru iş ve ödeme bilgileriyle aktif bir Silence AI ortak hesabı tutmalısınız.",
+          "item2": "Yönlendirmeler, sizin linkiniz veya promosyon kodunuz üzerinden kayıtı tamamlamalıdır.",
+          "item3": "Sahte, kendi kendini yönlendiren veya yasalara aykırı hesaplar ödül alamaz."
         },
         "commission": {
-          "title": "3. Commission Structure",
-          "body1": "You earn a 10% reward on every balance top-up completed by an account registered through your invitation.",
-          "body2": "Commission is calculated from the net top-up amount after payment processing fees are deducted."
+          "title": "3. Komisyon Yapısı",
+          "body1": "Davetinizle kayıtlı hesapların yaptığı her bakiye yüklemesinden %10 ödül kazanırsınız.",
+          "body2": "Komisyon, ödeme işlem ücretleri düşüldükten sonra net tutar üzerinden hesaplanır."
         },
         "rewardPosting": {
-          "title": "4. Reward Posting",
-          "body1": "Rewards post to your partner balance within one minute after the transaction successfully clears. There is no manual approval queue.",
-          "body2": "Notifications appear in your affiliate dashboard alongside the customer identifier and top-up amount."
+          "title": "4. Ödül İşleme",
+          "body1": "İşlem başarılı olduktan sonraki bir dakika içinde ödüller ortak bakiyenize yansır; manuel onay kuyruğu yoktur.",
+          "body2": "Bildirimler, müşteri kimliği ve yükleme tutarıyla birlikte ortak panelinizde görünür."
         },
         "withdrawals": {
-          "title": "5. Withdrawals",
-          "body1": "Withdrawal requests are processed within two business days and paid out using the settlement method on file.",
-          "body2": "Minimum withdrawal thresholds and supported payout networks are published inside the affiliate dashboard."
+          "title": "5. Ödemeler",
+          "body1": "Çekim talepleri iki iş günü içinde işlenir ve kayıtlı ödeme yöntemine yapılır.",
+          "body2": "Minimum çekim eşikleri ve desteklenen ağlar ortak panelinde yayımlanır."
         },
         "productScope": {
-          "title": "6. Product Scope",
-          "body1": "Rewards are only provided for the AI-SOC 1 product. Other Silence AI services are excluded from the affiliate program unless explicitly stated otherwise in writing.",
-          "body2": "If additional products become eligible, Silence AI will publish an updated list inside these terms."
+          "title": "6. Ürün Kapsamı",
+          "body1": "Ödüller yalnızca AI-SOC 1 ürünü için verilir. Yazılı olarak belirtilmedikçe diğer Silence AI hizmetleri hariçtir.",
+          "body2": "Yeni ürünler eklendiğinde Silence AI bu Şartlarda güncel listeyi yayımlar."
         },
         "compliance": {
-          "title": "7. Partner Conduct & Compliance",
-          "item1": "Partners must represent Silence AI accurately and avoid misleading claims about features or pricing.",
-          "item2": "Marketing communications must comply with applicable anti-spam, privacy, and advertising regulations.",
-          "item3": "Silence AI may suspend or terminate accounts that violate these obligations or harm the brand."
+          "title": "7. Davranış ve Uyumluluk",
+          "item1": "İş ortakları Silence AI'ı doğru yansıtmalı, özellikler veya fiyatlandırma hakkında yanıltıcı iddialardan kaçınmalıdır.",
+          "item2": "Pazarlama iletişimi ilgili anti-spam, gizlilik ve reklam mevzuatına uymalıdır.",
+          "item3": "Silence AI bu yükümlülükleri ihlal eden veya markaya zarar veren hesapları askıya alabilir/sonlandırabilir."
         },
         "changes": {
-          "title": "8. Changes & Contact",
-          "body1": "Silence AI may update these affiliate terms to reflect changes in the program or applicable law. Updated versions take effect upon publication on this page.",
-          "body2": "Questions about the affiliate program can be sent to info@silenceai.net."
+          "title": "8. Değişiklikler ve İletişim",
+          "body1": "Silence AI, programdaki veya yürürlükteki hukuktaki değişiklikleri yansıtmak için bu şartları güncelleyebilir. Yayınlandığında yürürlüğe girer.",
+          "body2": "Ortaklık programı soruları için info@silenceai.net adresine yazabilirsiniz."
         }
       }
     }
@@ -197,7 +202,7 @@
   "playground": {
     "options": {
       "globeShield": "Web güvenliği ve trafik yönetimi",
-      "emailSecurity": "Email Security"
+      "emailSecurity": "E-posta Güvenliği"
     }
   },
   "cookie": {
@@ -346,7 +351,7 @@
   },
   "modal": {
     "title": "Aktif geliştirme aşamasında",
-    "body": "The system is expected to be launched on October 10"
+    "body": "Sistemin 10 Ekim'de başlatılması bekleniyor"
   },
   "lamp": {
     "title": "Siber saldırıların gerçekliği"
@@ -387,7 +392,7 @@
       "termsService": "Hizmet şartları",
       "privacy": "Gizlilik politikası",
       "cookies": "Çerez politikası",
-      "affiliateTerms": "Affiliate Terms of Service"
+      "affiliateTerms": "Ortaklık Hizmet Şartları"
     },
     "copyright": "© {year} Silence AI. Tüm hakları saklıdır."
   },
@@ -428,37 +433,37 @@
       "stuxnet": {
         "year": "2010",
         "attack": "Stuxnet",
-        "target": "Natanz enrichment facility",
-        "impact": "Destroyed ~1,000 centrifuges",
-        "severity": "Critical"
+        "target": "Natanz zenginleştirme tesisi",
+        "impact": "~1.000 santrifüj imha edildi",
+        "severity": "Kritik"
       },
       "blackEnergy": {
         "year": "2015",
         "attack": "BlackEnergy",
-        "target": "Ukraine power grid",
-        "impact": "230k customers lost power",
-        "severity": "High"
+        "target": "Ukrayna enerji şebekesi",
+        "impact": "230 bin müşteri elektriksiz kaldı",
+        "severity": "Yüksek"
       },
       "triton": {
         "year": "2017",
         "attack": "TRITON",
-        "target": "Saudi petrochemical plant",
-        "impact": "Safety systems disabled",
-        "severity": "Critical"
+        "target": "Suudi petrokimya tesisi",
+        "impact": "Güvenlik sistemleri devre dışı",
+        "severity": "Kritik"
       },
       "colonialPipeline": {
         "year": "2021",
         "attack": "Colonial Pipeline",
-        "target": "US fuel pipeline",
-        "impact": "6-day fuel paralysis",
-        "severity": "High"
+        "target": "ABD yakıt boru hattı",
+        "impact": "6 günlük yakıt paralizisi",
+        "severity": "Yüksek"
       },
       "pdvsa": {
         "year": "2025",
         "attack": "PDVSA",
-        "target": "Venezuela refining",
-        "impact": "Refinery operations disrupted",
-        "severity": "Medium"
+        "target": "Venezuela rafinajı",
+        "impact": "Rafineri operasyonları aksadı",
+        "severity": "Orta"
       }
     },
     "analyzer": {
@@ -466,49 +471,49 @@
       "subtitle": "Canlı güvence",
       "features": {
         "quality": {
-          "title": "Automatic code quality",
-          "description": "Structure, style, and best-practice checks tuned for safety-critical code"
+          "title": "Otomatik kod kalitesi",
+          "description": "Güvenlik kritik kod için yapı, stil ve en iyi uygulama kontrolleri"
         },
         "vulnerability": {
-          "title": "Vulnerability sweeps",
-          "description": "SQLi, XSS, auth bypass, and insecure dependencies surfaced instantly"
+          "title": "Zafiyet taramaları",
+          "description": "SQLi, XSS, kimlik doğrulama atlama ve güvensiz bağımlılıklar anında ortaya çıkar"
         },
         "secrets": {
-          "title": "Secrets guard",
-          "description": "Keys, tokens, and credentials blocked at commit time"
+          "title": "Gizli anahtar koruması",
+          "description": "Anahtarlar, tokenlar ve kimlik bilgileri commit sırasında engellenir"
         },
         "config": {
-          "title": "Config hardening",
-          "description": "Docker/K8s, IAM, and network policies scanned for privilege creep"
+          "title": "Konfigürasyon güçlendirme",
+          "description": "Docker/K8s, IAM ve ağ politikaları ayrıcalık sızıntısı için taranır"
         }
       },
       "beyondCodeQL": {
-        "title": "Finds what static queries miss",
-        "subtitle": "Beyond CodeQL",
-        "description": "Finds misconfigs and vulnerable packages faster than CodeQL and offers fixes, not just alerts.",
+        "title": "Statik sorguların kaçırdığını bulur",
+        "subtitle": "CodeQL Ötesinde",
+        "description": "Yanlış konfigürasyonları ve zafiyetli paketleri CodeQL'den hızlı bulur; sadece uyarmaz, düzeltme önerir.",
         "points": {
-          "packages": "Knows package graphs and flags risky dependencies in seconds.",
-          "config": "Spots config drift and privilege creep—beyond static rules.",
-          "patches": "Each finding comes with a suggested patch and owner."
+          "packages": "Paket grafini bilir ve riskli bağımlılıkları saniyeler içinde işaretler.",
+          "config": "Konfigürasyon kaymasını ve ayrıcalık artışını statik kuralların ötesinde fark eder.",
+          "patches": "Her bulgu önerilen yamayla ve sorumlusuyla gelir."
         }
       },
       "visualizer": {
-        "title": "Code analyzer in action",
-        "subtitle": "Visualizer",
-        "description": "Crisp snapshots from recent scans, rendered beautifully inside the on-prem console.",
-        "privateWorkspace": "Private workspace only",
+        "title": "Kod analizörü iş başında",
+        "subtitle": "Görselleştirici",
+        "description": "Son taramalardan net ekran görüntüleri, yerel konsolda şık şekilde sunulur.",
+        "privateWorkspace": "Yalnızca özel çalışma alanı",
         "shots": {
           "scanOverview": {
-            "title": "Scan overview",
-            "description": "See issues grouped by severity before code leaves your network."
+            "title": "Tarama özeti",
+            "description": "Kod ağınızdan çıkmadan önce sorunları önem derecesine göre görün."
           },
           "misconfigurations": {
-            "title": "Detection of misconfigurations",
-            "description": "Our AI-powered code analyzer even finds misconfigurations within the code."
+            "title": "Yanlış konfigürasyon tespiti",
+            "description": "Yapay zeka destekli analizör, kod içindeki konfigürasyon hatalarını dahi bulur."
           },
           "inlineDiffs": {
-            "title": "Inline diffs",
-            "description": "Review suggested patches inline with security context."
+            "title": "Satır içi karşılaştırmalar",
+            "description": "Önerilen yamaları güvenlik bağlamında satır içi inceleyin."
           }
         }
       }
@@ -517,126 +522,126 @@
       "title": "Düzenlenmiş, yüksek etkili sektörler için inşa edildi",
       "subtitle": "Nereye konuşlandırıyoruz",
       "oilGas": {
-        "title": "Oil & Gas",
-        "description": "Drilling, refining, pipeline control"
+        "title": "Petrol ve Gaz",
+        "description": "Sondaj, rafinaj, boru hattı kontrolü"
       },
       "energy": {
-        "title": "Energy",
-        "description": "Grid, distribution, and EMS"
+        "title": "Enerji",
+        "description": "Şebeke, dağıtım ve EMS"
       },
       "nuclear": {
-        "title": "Nuclear",
-        "description": "Reactor controls and safety"
+        "title": "Nükleer",
+        "description": "Reaktör kontrolü ve güvenlik"
       },
       "manufacturing": {
-        "title": "Manufacturing",
-        "description": "ICS, OT, and robotics"
+        "title": "Üretim",
+        "description": "ICS, OT ve robotik"
       },
       "government": {
-        "title": "Government",
-        "description": "Ministries, defense, critical agencies"
+        "title": "Kamu",
+        "description": "Bakanlıklar, savunma, kritik kurumlar"
       }
     }
   },
   "pricingCta": {
-    "requestSystem": "Request System"
+    "requestSystem": "Sistem Talep Et"
   },
   "contactForm": {
-    "title": "Contact Us",
-    "success": "Thanks! Your message has been sent. We will contact you shortly.",
-    "errorRequired": "Please fill in your name, email and a short message.",
-    "errorSend": "Unable to send message. Please try again later.",
+    "title": "Bize Ulaşın",
+    "success": "Teşekkürler! Mesajınız gönderildi. En kısa sürede iletişime geçeceğiz.",
+    "errorRequired": "Lütfen adınızı, e-postanızı ve kısa bir mesajı doldurun.",
+    "errorSend": "Mesaj gönderilemedi. Lütfen daha sonra tekrar deneyin.",
     "placeholders": {
-      "name": "Your name",
-      "email": "Email",
-      "type": "Project Type (optional)",
-      "budget": "Budget (optional)",
-      "message": "Tell us about your project..."
+      "name": "Adınız",
+      "email": "E-posta",
+      "type": "Proje Türü (isteğe bağlı)",
+      "budget": "Bütçe (isteğe bağlı)",
+      "message": "Projenizi anlatın..."
     },
     "submit": {
-      "idle": "Send Message",
-      "loading": "Sending…"
+      "idle": "Mesaj Gönder",
+      "loading": "Gönderiliyor…"
     }
   },
   "consulting": {
-    "title": "Consulting Questionnaire",
-    "searchPlaceholder": "Search questions...",
-    "noResults": "No questions found.",
+    "title": "Danışmanlık Anketi",
+    "searchPlaceholder": "Sorularda ara...",
+    "noResults": "Soru bulunamadı.",
     "questions": [
       {
-        "question": "What is your company's core value proposition beyond competitive pricing?",
-        "answer": "Security is our primary differentiator. We position ourselves as a company that builds highly secure systems with enterprise-grade security practices embedded throughout the development lifecycle."
+        "question": "Rekabetçi fiyatlandırma dışında şirketinizin temel değer önerisi nedir?",
+        "answer": "Güvenlik bizim temel farkımız. Geliştirme yaşam döngüsü boyunca kurumsal seviye güvenlik uygulamalarıyla yüksek güvenli sistemler kuruyoruz."
       },
       {
-        "question": "How long has your company been in business, and what is your track record?",
-        "answer": "We have successfully delivered major projects including: NAK (Nur Astana Kurylys) - AI-powered team management platform, and Chic Flowers - Complete digital platform for a major flower retail company."
+        "question": "Şirketiniz ne zamandır faaliyet gösteriyor ve geçmişteki başarılarınız neler?",
+        "answer": "Başarılı projelerimiz arasında şunlar var: NAK (Nur Astana Kurylys) — yapay zeka destekli ekip yönetimi platformu ve Chic Flowers — büyük bir çiçek perakendecisi için uçtan uca dijital platform."
       },
       {
-        "question": "What differentiates your technical capabilities and service quality from EPAM and other competitors?",
-        "answer": "Our key differentiator is our security-first development approach. We integrate security practices from project inception through deployment and maintenance."
+        "question": "Teknik yetenekleriniz ve hizmet kaliteniz EPAM ve diğer rakiplerden nasıl ayrılıyor?",
+        "answer": "En büyük farkımız security-first yaklaşımımız. Güvenliği proje başlangıcından canlıya alım ve bakıma kadar entegre ediyoruz."
       },
       {
-        "question": "How do you maintain quality while offering competitive pricing?",
-        "answer": "We offer services at 15% below market rates while maintaining exceptional quality through optimized operations, strategic talent sourcing, and efficient project management methodologies."
+        "question": "Rekabetçi fiyat sunarken kaliteyi nasıl koruyorsunuz?",
+        "answer": "Pazarın ~%15 altında fiyat sunarken, optimize operasyonlar, stratejik yetenek edinimi ve verimli proje yönetimiyle kaliteyi yüksek tutuyoruz."
       },
       {
-        "question": "What specific software development services do you provide?",
-        "answer": "End-to-end software development: custom applications, AI-powered solutions, cybersecurity product development (Silence AI-SOC), system integration, cloud migration, and DevOps. We also offer dedicated product development and staff augmentation."
+        "question": "Hangi yazılım geliştirme hizmetlerini sağlıyorsunuz?",
+        "answer": "Uçtan uca geliştirme: özel uygulamalar, yapay zeka çözümleri, siber güvenlik ürün geliştirme (Silence AI-SOC), sistem entegrasyonu, buluta geçiş ve DevOps. Ayrıca özel ürün geliştirme ve ekip genişletme sunuyoruz."
       },
       {
-        "question": "Which industries and domains do you specialize in?",
-        "answer": "Construction, retail, fintech, cybersecurity, and digital platforms — including AI-driven team management, e-commerce, and enterprise security solutions."
+        "question": "Hangi sektör ve alanlarda uzmanlaştınız?",
+        "answer": "İnşaat, perakende, fintech, siber güvenlik ve dijital platformlar — AI destekli ekip yönetimi, e-ticaret ve kurumsal güvenlik çözümleri dahil."
       },
       {
-        "question": "What technology stacks and platforms does your team have expertise in?",
-        "answer": "GO, Swift, Flutter, cloud platforms (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript, and AI/ML frameworks. We build proprietary security tools like Silence AI-SOC."
+        "question": "Hangi teknoloji yığınları ve platformlarda uzmansınız?",
+        "answer": "GO, Swift, Flutter, bulut (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript ve AI/ML çerçeveleri. Silence AI-SOC gibi kendi güvenlik araçlarımızı geliştiriyoruz."
       },
       {
-        "question": "Do you offer end-to-end product development or specific services only?",
-        "answer": "We offer both: MVPs, full-cycle product delivery, staff augmentation, and cybersecurity integration."
+        "question": "Uçtan uca ürün geliştirme mi yoksa belirli hizmetler mi sunuyorsunuz?",
+        "answer": "Her ikisi de: MVP, tam döngü ürün teslimi, ekip genişletme ve siber güvenlik entegrasyonu."
       },
       {
-        "question": "Can you provide both staff augmentation and dedicated team models?",
-        "answer": "Yes, we provide flexible engagement models: staff augmentation, dedicated teams, and project-based outsourcing."
+        "question": "Ekip genişletme ve özel ekip modellerini sunabiliyor musunuz?",
+        "answer": "Evet, esnek modeller sunuyoruz: ekip genişletme, özel ekipler ve proje bazlı outsourcing."
       },
       {
-        "question": "Do you offer consulting, architecture, and advisory services beyond development?",
-        "answer": "Yes: cybersecurity consulting, system architecture design, technology advisory, and security compliance assessments using Silence AI-SOC."
+        "question": "Geliştirme dışında danışmanlık, mimari ve tavsiye hizmetleri sağlıyor musunuz?",
+        "answer": "Evet: siber güvenlik danışmanlığı, sistem mimarisi tasarımı, teknoloji danışmanlığı ve Silence AI-SOC ile güvenlik uyumluluk değerlendirmeleri."
       }
     ]
   },
   "requestDemoModal": {
-    "title": "Request System",
-    "name": "Name",
-    "email": "Corporate Email",
-    "company": "Company Name",
+    "title": "Sistem Talep Et",
+    "name": "İsim",
+    "email": "Kurumsal E-posta",
+    "company": "Şirket Adı",
     "placeholders": {
       "name": "John Doe",
       "email": "john@company.com",
       "company": "Acme Corp"
     },
-    "submit": "Send Request",
-    "successTitle": "Request Sent!",
-    "successBody": "Thank you for your interest. We will be in touch shortly.",
-    "close": "Close"
+    "submit": "Talep Gönder",
+    "successTitle": "Talep Gönderildi!",
+    "successBody": "İlginiz için teşekkürler. Kısa süre içinde iletişime geçeceğiz.",
+    "close": "Kapat"
   },
   "requestSystemModal": {
-    "title": "Request System",
-    "name": "Name",
-    "email": "Corporate Email",
-    "company": "Company Name",
+    "title": "Sistem Talep Et",
+    "name": "İsim",
+    "email": "Kurumsal E-posta",
+    "company": "Şirket Adı",
     "placeholders": {
       "name": "John Doe",
       "email": "john@company.com",
       "company": "Acme Corp"
     },
-    "submit": "Download",
-    "successTitle": "Request Sent!",
-    "successBody": "Thank you. The system download instructions will be sent to your email.",
-    "close": "Close"
+    "submit": "İndir",
+    "successTitle": "Talep Gönderildi!",
+    "successBody": "Teşekkürler. Sistem indirme talimatları e-postanıza gönderilecek.",
+    "close": "Kapat"
   },
   "policySidebar": {
-    "tableOfContents": "Table of Contents"
+    "tableOfContents": "İçindekiler"
   },
   "notFound": {
     "title": "Sayfa bulunamadı",
@@ -845,6 +850,63 @@
           "manager": "Özel Yönetici"
         }
       }
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "YZ güvenliği ve geliştirme",
+      "title": "Güvenle geliştir. Rahatça dağıt.",
+      "subtitle": "İki abonelik sistemi (AI-SOC, SLNC-env) artı kurumsal ekipler için özel YZ ve yazılım teslimi.",
+      "ctaPrimary": "Demo iste",
+      "ctaSecondary": "Sistemlere göz at",
+      "highlights": {
+        "coverage": "7/24 YZ destekli SOC",
+        "onPrem": "0 çıkışlı on-prem",
+        "deploy": "4 dakikada güvenli dağıtım"
+      },
+      "metrics": {
+        "title": "Uyumlu ekipler için üretildi",
+        "soc": "YZ destekli SOC kapsamı",
+        "egress": "Tamamı on-prem — kod, prompt, build",
+        "deployment": "ilk güvenli dağıtıma",
+        "locales": "kutudan çıkan dil sayısı"
+      }
+    },
+    "systems": {
+      "title": "Sistemler",
+      "subtitle": "Uyan aboneliği seçin: tespit için AI-SOC, kapalı geliştirme için SLNC-env.",
+      "cta": "Detayları gör",
+      "aiSoc": {
+        "title": "AI-SOC",
+        "desc": "SOC ekipleri için YZ eş pilotlarla yönetilen tespit ve müdahale.",
+        "badge": "Abonelik"
+      },
+      "slncEnv": {
+        "title": "SLNC-env",
+        "desc": "Kodu, prompt'u ve build'i on-prem tutan kapalı geliştirme bulutu.",
+        "badge": "Abonelik"
+      }
+    },
+    "services": {
+      "title": "Özel geliştirme hizmetleri",
+      "subtitle": "YZ ajanları, entegrasyonlar ve güvenliği ilk günden gömülü tam döngü yazılım teslimi.",
+      "cta": "Hizmetleri gör",
+      "cards": {
+        "agents": "Guardrail, RAG ve güvenli konektörlü üretim sınıfı YZ ajanları.",
+        "integrations": "Yığınınız, IAM ve veri yönetişimiyle tedarikçiden bağımsız entegrasyonlar.",
+        "delivery": "Güvenilirlik SLO'ları, gözlemlenebilirlik ve güvenlik incelemeleriyle tam döngü teslimat."
+      },
+      "cardsTitle": {
+        "agents": "Ajanlar",
+        "integrations": "Entegrasyonlar",
+        "delivery": "Teslimat"
+      }
+    },
+    "contact": {
+      "title": "AI-SOC ve SLNC-env'i birleştirmeye hazır mısınız?",
+      "subtitle": "Bize güvenlik ve teslimat hedeflerinizi söyleyin — doğru sistem ve hizmetleri hizalayalım.",
+      "cta": "Demo iste",
+      "ctaSecondary": "Hizmet ekibiyle konuş"
     }
   }
 }

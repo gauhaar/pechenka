@@ -2,12 +2,12 @@
   "languageSelector": {
     "triggerLabel": "Sprache wählen",
     "menuLabel": "Sprache auswählen",
-    "searchLabel": "Search languages",
-    "searchPlaceholder": "Search by name or native script",
-    "searchResults": "Search results",
-    "noMatches": "No languages match your search.",
-    "popular": "Most popular",
-    "allLanguages": "All languages"
+    "searchLabel": "Sprachen suchen",
+    "searchPlaceholder": "Suche nach Name oder Schrift",
+    "searchResults": "Suchergebnisse",
+    "noMatches": "Keine Sprache passt zu deiner Suche.",
+    "popular": "Am beliebtesten",
+    "allLanguages": "Alle Sprachen"
   },
   "header": {
     "nav": {
@@ -17,13 +17,18 @@
       "instructions": "Anleitungen",
       "product": "AI-SOC",
       "secureDevelopment": "SLNC-env",
-      "developerServices": "Entwicklerdienste"
+      "developerServices": "Entwicklerdienste",
+      "home": "Home",
+      "systems": "Systeme",
+      "systemsAiSoc": "AI-SOC",
+      "systemsSlncEnv": "SLNC-env",
+      "services": "Services"
     },
     "login": "Anmelden",
     "cta": {
-      "contact": "Contact",
+      "contact": "Kontakt",
       "download": "Download",
-      "requestDemo": "Request Demo"
+      "requestDemo": "Demo anfragen"
     }
   },
   "affiliate": {
@@ -85,7 +90,7 @@
         "description": "Belohnungen erscheinen innerhalb einer Minute nach Abschluss der Transaktion auf Ihrem Partnerkonto – ohne manuelle Freigabe."
       },
       "withdrawal": {
-        "title": "Withdrawals processed in 2 business days",
+        "title": "Auszahlungen werden in 2 Werktagen bearbeitet",
         "description": "Auszahlungsanfragen werden automatisch geprüft und erreichen Ihr Bankkonto innerhalb von zwei Werktagen."
       },
       "sample": {
@@ -112,56 +117,56 @@
       }
     },
     "termsAff": {
-      "label": "Affiliate Program",
-      "title": "Affiliate Terms of Service",
-      "notice": "This policy is available only in English",
-      "intro": "These terms describe how rewards are issued and paid to partners participating in the Silence AI affiliate program.",
+      "label": "Partnerprogramm",
+      "title": "Nutzungsbedingungen Partnerprogramm",
+      "notice": "Diese Richtlinie ist nur auf Englisch verfügbar",
+      "intro": "Diese Bedingungen beschreiben, wie Prämien an Partner im Silence AI Partnerprogramm vergeben und ausgezahlt werden.",
       "meta": {
-        "effective": "Effective date: 10 November 2024",
-        "lastUpdated": "Last updated: 10 November 2024"
+        "effective": "Gültig ab: 10. November 2024",
+        "lastUpdated": "Zuletzt aktualisiert: 10. November 2024"
       },
       "sections": {
         "overview": {
-          "title": "1. Program Overview",
-          "body1": "1.1 Agreement Scope: These Affiliate Terms of Service (\"Terms\") govern your participation in the Silence AI affiliate program operated by Silence AI LLC (\"Silence AI,\" \"we,\" \"us,\" or \"our\"). These Terms apply to you, the individual or entity enrolling as an affiliate partner (\"you\" or \"your\"), and, where applicable, your employer, principal, or organization if you act on their behalf.",
-          "body2": "1.2 Program Summary: Under this program, qualified partners earn commission-based rewards when referred customers purchase or top up the AI-SOC 1 product. Participation in the affiliate program also requires compliance with the general Silence AI Terms of Service."
+          "title": "1. Programmübersicht",
+          "body1": "1.1 Umfang: Diese Bedingungen regeln deine Teilnahme am Partnerprogramm von Silence AI LLC (\"Silence AI\", \"wir\", \"uns\", \"unser\"). Sie gelten für dich als teilnehmende Person oder Organisation und gegebenenfalls deinen Arbeitgeber, wenn du in dessen Namen handelst.",
+          "body2": "1.2 Zusammenfassung: Qualifizierte Partner erhalten provisionsbasierte Prämien, wenn geworbene Kunden das Produkt AI-SOC 1 kaufen oder Guthaben aufladen. Die Teilnahme setzt zudem die Einhaltung der allgemeinen Silence AI Nutzungsbedingungen voraus."
         },
         "eligibility": {
-          "title": "2. Partner Eligibility",
-          "item1": "You must maintain an active Silence AI affiliate account with accurate business and payment details.",
-          "item2": "Referrals must complete registration through your issued link or promo code.",
-          "item3": "Accounts found to be fraudulent, self-referred, or in breach of applicable law are not eligible for rewards."
+          "title": "2. Teilnahmeberechtigung",
+          "item1": "Du benötigst ein aktives Silence AI Partnerkonto mit korrekten Unternehmens- und Zahlungsdaten.",
+          "item2": "Geworbene Kunden müssen die Registrierung über deinen Link oder Promo-Code abschließen.",
+          "item3": "Konten, die betrügerisch, selbstgeworben oder rechtswidrig sind, sind nicht prämienberechtigt."
         },
         "commission": {
-          "title": "3. Commission Structure",
-          "body1": "You earn a 10% reward on every balance top-up completed by an account registered through your invitation.",
-          "body2": "Commission is calculated from the net top-up amount after payment processing fees are deducted."
+          "title": "3. Provisionsstruktur",
+          "body1": "Du erhältst 10 % Prämie für jede Saldoaufladung eines Kontos, das sich über deine Einladung registriert hat.",
+          "body2": "Die Provision wird aus dem Nettobetrag nach Abzug der Zahlungsgebühren berechnet."
         },
         "rewardPosting": {
-          "title": "4. Reward Posting",
-          "body1": "Rewards post to your partner balance within one minute after the transaction successfully clears. There is no manual approval queue.",
-          "body2": "Notifications appear in your affiliate dashboard alongside the customer identifier and top-up amount."
+          "title": "4. Verbuchung von Prämien",
+          "body1": "Prämien werden innerhalb einer Minute nach erfolgreicher Transaktion deinem Partnerkonto gutgeschrieben. Keine manuelle Freigabe nötig.",
+          "body2": "Benachrichtigungen erscheinen im Partner-Dashboard mit Kundenkennung und Aufladebetrag."
         },
         "withdrawals": {
-          "title": "5. Withdrawals",
-          "body1": "Withdrawal requests are processed within two business days and paid out using the settlement method on file.",
-          "body2": "Minimum withdrawal thresholds and supported payout networks are published inside the affiliate dashboard."
+          "title": "5. Auszahlungen",
+          "body1": "Auszahlungsanfragen werden binnen zwei Werktagen bearbeitet und über die hinterlegte Methode ausgezahlt.",
+          "body2": "Mindestbeträge und unterstützte Auszahlungsnetze sind im Partner-Dashboard veröffentlicht."
         },
         "productScope": {
-          "title": "6. Product Scope",
-          "body1": "Rewards are only provided for the AI-SOC 1 product. Other Silence AI services are excluded from the affiliate program unless explicitly stated otherwise in writing.",
-          "body2": "If additional products become eligible, Silence AI will publish an updated list inside these terms."
+          "title": "6. Produktumfang",
+          "body1": "Prämien gelten ausschließlich für das Produkt AI-SOC 1. Andere Silence AI Services sind ausgeschlossen, sofern nicht schriftlich anders angegeben.",
+          "body2": "Werden weitere Produkte zulässig, veröffentlicht Silence AI eine aktualisierte Liste in diesen Bedingungen."
         },
         "compliance": {
-          "title": "7. Partner Conduct & Compliance",
-          "item1": "Partners must represent Silence AI accurately and avoid misleading claims about features or pricing.",
-          "item2": "Marketing communications must comply with applicable anti-spam, privacy, and advertising regulations.",
-          "item3": "Silence AI may suspend or terminate accounts that violate these obligations or harm the brand."
+          "title": "7. Verhalten & Compliance",
+          "item1": "Partner müssen Silence AI korrekt darstellen und irreführende Aussagen zu Funktionen oder Preisen vermeiden.",
+          "item2": "Marketing muss Anti-Spam-, Datenschutz- und Werbevorgaben einhalten.",
+          "item3": "Silence AI kann Konten sperren oder kündigen, die diese Pflichten verletzen oder der Marke schaden."
         },
         "changes": {
-          "title": "8. Changes & Contact",
-          "body1": "Silence AI may update these affiliate terms to reflect changes in the program or applicable law. Updated versions take effect upon publication on this page.",
-          "body2": "Questions about the affiliate program can be sent to info@silenceai.net."
+          "title": "8. Änderungen & Kontakt",
+          "body1": "Silence AI kann diese Partnerbedingungen bei Programm- oder Gesetzesänderungen aktualisieren. Änderungen gelten ab Veröffentlichung auf dieser Seite.",
+          "body2": "Fragen zum Partnerprogramm an info@silenceai.net."
         }
       }
     }
@@ -346,7 +351,7 @@
   },
   "modal": {
     "title": "In aktiver Entwicklung",
-    "body": "The system is expected to be launched on October 10"
+    "body": "Das System soll am 10. Oktober starten"
   },
   "lamp": {
     "title": "Realität von Cyberangriffen"
@@ -387,7 +392,7 @@
       "termsService": "Dienstleistungsbedingungen",
       "privacy": "Datenschutzerklärung",
       "cookies": "Cookie-Richtlinie",
-      "affiliateTerms": "Affiliate Terms of Service"
+      "affiliateTerms": "Partnerprogramm-Bedingungen"
     },
     "copyright": "© {year} Silence AI. Alle Rechte vorbehalten."
   },
@@ -458,36 +463,36 @@
       "stuxnet": {
         "year": "2010",
         "attack": "Stuxnet",
-        "target": "Natanz enrichment facility",
-        "impact": "Destroyed ~1,000 centrifuges",
+        "target": "Urananreicherungsanlage Natanz",
+        "impact": "Zerstörte ca. 1.000 Zentrifugen",
         "severity": "Critical"
       },
       "blackEnergy": {
         "year": "2015",
         "attack": "BlackEnergy",
-        "target": "Ukraine power grid",
-        "impact": "230k customers lost power",
+        "target": "Stromnetz der Ukraine",
+        "impact": "230.000 Haushalte ohne Strom",
         "severity": "High"
       },
       "triton": {
         "year": "2017",
         "attack": "TRITON",
-        "target": "Saudi petrochemical plant",
-        "impact": "Safety systems disabled",
+        "target": "Saudische petrochemische Anlage",
+        "impact": "Sicherheits­systeme außer Kraft gesetzt",
         "severity": "Critical"
       },
       "colonialPipeline": {
         "year": "2021",
         "attack": "Colonial Pipeline",
-        "target": "US fuel pipeline",
-        "impact": "6-day fuel paralysis",
+        "target": "US-Treibstoffpipeline",
+        "impact": "6 Tage Kraftstoffstillstand",
         "severity": "High"
       },
       "pdvsa": {
         "year": "2025",
         "attack": "PDVSA",
-        "target": "Venezuela refining",
-        "impact": "Refinery operations disrupted",
+        "target": "Venezolanische Raffinerien",
+        "impact": "Raffineriebetrieb gestört",
         "severity": "Medium"
       }
     },
@@ -569,104 +574,104 @@
     }
   },
   "pricingCta": {
-    "requestSystem": "Request System"
+    "requestSystem": "System anfordern"
   },
   "contactForm": {
-    "title": "Contact Us",
-    "success": "Thanks! Your message has been sent. We will contact you shortly.",
-    "errorRequired": "Please fill in your name, email and a short message.",
-    "errorSend": "Unable to send message. Please try again later.",
+    "title": "Kontakt aufnehmen",
+    "success": "Danke! Ihre Nachricht wurde gesendet. Wir melden uns in Kürze.",
+    "errorRequired": "Bitte fülle Name, E-Mail und eine kurze Nachricht aus.",
+    "errorSend": "Nachricht konnte nicht gesendet werden. Bitte später erneut versuchen.",
     "placeholders": {
-      "name": "Your name",
-      "email": "Email",
-      "type": "Project Type (optional)",
+      "name": "Ihr Name",
+      "email": "E-Mail",
+      "type": "Projekttyp (optional)",
       "budget": "Budget (optional)",
-      "message": "Tell us about your project..."
+      "message": "Erzählen Sie uns von Ihrem Projekt..."
     },
     "submit": {
-      "idle": "Send Message",
-      "loading": "Sending…"
+      "idle": "Nachricht senden",
+      "loading": "Senden…"
     }
   },
   "consulting": {
-    "title": "Consulting Questionnaire",
-    "searchPlaceholder": "Search questions...",
-    "noResults": "No questions found.",
+    "title": "Beratungsfragebogen",
+    "searchPlaceholder": "Fragen durchsuchen...",
+    "noResults": "Keine Fragen gefunden.",
     "questions": [
       {
-        "question": "What is your company's core value proposition beyond competitive pricing?",
-        "answer": "Security is our primary differentiator. We position ourselves as a company that builds highly secure systems with enterprise-grade security practices embedded throughout the development lifecycle."
+        "question": "Was ist Ihr zentrales Wertversprechen über wettbewerbsfähige Preise hinaus?",
+        "answer": "Sicherheit ist unser wichtigstes Unterscheidungsmerkmal. Wir positionieren uns als Unternehmen, das hochsichere Systeme baut und Security-Praktiken mit Enterprise-Anspruch in den gesamten Entwicklungszyklus einbettet."
       },
       {
-        "question": "How long has your company been in business, and what is your track record?",
-        "answer": "We have successfully delivered major projects including: NAK (Nur Astana Kurylys) - AI-powered team management platform, and Chic Flowers - Complete digital platform for a major flower retail company."
+        "question": "Wie lange besteht Ihr Unternehmen und welche Referenzen haben Sie?",
+        "answer": "Wir haben erfolgreich große Projekte geliefert, darunter: NAK (Nur Astana Kurylys) – KI-gestützte Team-Management-Plattform, und Chic Flowers – vollständige digitale Plattform für einen großen Blumenhändler."
       },
       {
-        "question": "What differentiates your technical capabilities and service quality from EPAM and other competitors?",
-        "answer": "Our key differentiator is our security-first development approach. We integrate security practices from project inception through deployment and maintenance."
+        "question": "Wodurch unterscheiden sich Ihre technischen Fähigkeiten und Servicequalität von EPAM und anderen Wettbewerbern?",
+        "answer": "Unser Hauptunterscheidungsmerkmal ist unser Security-First-Ansatz. Wir integrieren Sicherheitspraktiken von Projektstart über Deployment bis zur Wartung."
       },
       {
-        "question": "How do you maintain quality while offering competitive pricing?",
-        "answer": "We offer services at 15% below market rates while maintaining exceptional quality through optimized operations, strategic talent sourcing, and efficient project management methodologies."
+        "question": "Wie halten Sie Qualität, während Sie wettbewerbsfähige Preise anbieten?",
+        "answer": "Wir bieten Leistungen etwa 15 % unter Marktpreis und halten gleichzeitig hohe Qualität durch optimierte Abläufe, strategisches Talent-Sourcing und effiziente Projektmanagement-Methoden."
       },
       {
-        "question": "What specific software development services do you provide?",
-        "answer": "End-to-end software development: custom applications, AI-powered solutions, cybersecurity product development (Silence AI-SOC), system integration, cloud migration, and DevOps. We also offer dedicated product development and staff augmentation."
+        "question": "Welche konkreten Software-Services bieten Sie an?",
+        "answer": "End-to-End-Softwareentwicklung: individuelle Anwendungen, KI-Lösungen, Entwicklung von Cybersicherheitsprodukten (Silence AI-SOC), Systemintegration, Cloud-Migration und DevOps. Außerdem bieten wir dedizierte Produktentwicklung und Team-Erweiterung."
       },
       {
-        "question": "Which industries and domains do you specialize in?",
-        "answer": "Construction, retail, fintech, cybersecurity, and digital platforms — including AI-driven team management, e-commerce, and enterprise security solutions."
+        "question": "In welchen Branchen und Domänen sind Sie spezialisiert?",
+        "answer": "Bauwesen, Einzelhandel, Fintech, Cybersicherheit und digitale Plattformen – einschließlich KI-gestütztem Team-Management, E-Commerce und Enterprise-Sicherheitslösungen."
       },
       {
-        "question": "What technology stacks and platforms does your team have expertise in?",
-        "answer": "GO, Swift, Flutter, cloud platforms (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript, and AI/ML frameworks. We build proprietary security tools like Silence AI-SOC."
+        "question": "Welche Technologie-Stacks und Plattformen beherrscht Ihr Team?",
+        "answer": "Go, Swift, Flutter, Cloud-Plattformen (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript sowie KI/ML-Frameworks. Wir entwickeln eigene Sicherheitstools wie Silence AI-SOC."
       },
       {
-        "question": "Do you offer end-to-end product development or specific services only?",
-        "answer": "We offer both: MVPs, full-cycle product delivery, staff augmentation, and cybersecurity integration."
+        "question": "Bieten Sie End-to-End-Produktentwicklung oder nur einzelne Services?",
+        "answer": "Wir bieten beides: MVPs, vollständige Produktlieferung, Team-Erweiterung und Integration von Cybersicherheit."
       },
       {
-        "question": "Can you provide both staff augmentation and dedicated team models?",
-        "answer": "Yes, we provide flexible engagement models: staff augmentation, dedicated teams, and project-based outsourcing."
+        "question": "Stellen Sie sowohl Team-Erweiterung als auch dedizierte Teams bereit?",
+        "answer": "Ja, wir bieten flexible Modelle: Team-Erweiterung, dedizierte Teams und projektbasiertes Outsourcing."
       },
       {
-        "question": "Do you offer consulting, architecture, and advisory services beyond development?",
-        "answer": "Yes: cybersecurity consulting, system architecture design, technology advisory, and security compliance assessments using Silence AI-SOC."
+        "question": "Bieten Sie Beratung, Architektur und Advisory über die Entwicklung hinaus?",
+        "answer": "Ja: Cybersicherheitsberatung, Systemarchitektur, Technologie-Advisory und Compliance-Bewertungen mit Silence AI-SOC."
       }
     ]
   },
   "requestDemoModal": {
-    "title": "Request System",
+    "title": "System anfordern",
     "name": "Name",
-    "email": "Corporate Email",
-    "company": "Company Name",
+    "email": "Unternehmens-E-Mail",
+    "company": "Firmenname",
     "placeholders": {
       "name": "John Doe",
       "email": "john@company.com",
       "company": "Acme Corp"
     },
-    "submit": "Send Request",
-    "successTitle": "Request Sent!",
-    "successBody": "Thank you for your interest. We will be in touch shortly.",
-    "close": "Close"
+    "submit": "Anfrage senden",
+    "successTitle": "Anfrage gesendet!",
+    "successBody": "Vielen Dank für Ihr Interesse. Wir melden uns in Kürze.",
+    "close": "Schließen"
   },
   "requestSystemModal": {
-    "title": "Request System",
+    "title": "System anfordern",
     "name": "Name",
-    "email": "Corporate Email",
-    "company": "Company Name",
+    "email": "Unternehmens-E-Mail",
+    "company": "Firmenname",
     "placeholders": {
       "name": "John Doe",
       "email": "john@company.com",
       "company": "Acme Corp"
     },
     "submit": "Download",
-    "successTitle": "Request Sent!",
-    "successBody": "Thank you. The system download instructions will be sent to your email.",
-    "close": "Close"
+    "successTitle": "Anfrage gesendet!",
+    "successBody": "Danke. Die Download-Anweisungen werden an Ihre E-Mail gesendet.",
+    "close": "Schließen"
   },
   "policySidebar": {
-    "tableOfContents": "Table of Contents"
+    "tableOfContents": "Inhaltsverzeichnis"
   },
   "whyChooseUs": {
     "badge": "Ergebnisorientierte Entwicklung",
@@ -845,6 +850,63 @@
           "manager": "Dedizierter Manager"
         }
       }
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "KI-Sicherheit & Entwicklung",
+      "title": "Sicher entwickeln. Souverän bereitstellen.",
+      "subtitle": "Zwei Abonnement-Systeme (AI-SOC, SLNC-env) plus maßgeschneiderte KI- und Softwarelieferung für Enterprise-Teams.",
+      "ctaPrimary": "Demo anfragen",
+      "ctaSecondary": "Systeme ansehen",
+      "highlights": {
+        "coverage": "24/7 KI-gestütztes SOC",
+        "onPrem": "0-Egress On-Prem",
+        "deploy": "Sichere Bereitstellung in 4 Min"
+      },
+      "metrics": {
+        "title": "Für regulierte Teams gebaut",
+        "soc": "KI-unterstützte SOC-Abdeckung",
+        "egress": "Alles on-prem – Code, Prompts, Builds",
+        "deployment": "bis zur ersten sicheren Bereitstellung",
+        "locales": "Sprachen sofort verfügbar"
+      }
+    },
+    "systems": {
+      "title": "Systeme",
+      "subtitle": "Wählen Sie das passende Abonnement: AI-SOC für Detection und SLNC-env für abgeschottete Entwicklung.",
+      "cta": "Details ansehen",
+      "aiSoc": {
+        "title": "AI-SOC",
+        "desc": "Managed Detection & Response mit KI-Copilots für SOC-Teams.",
+        "badge": "Abonnement"
+      },
+      "slncEnv": {
+        "title": "SLNC-env",
+        "desc": "Abgeschottete Entwicklungs-Cloud, die Code, Prompts und Builds on-prem hält.",
+        "badge": "Abonnement"
+      }
+    },
+    "services": {
+      "title": "Maßgeschneiderte Entwicklungsservices",
+      "subtitle": "KI-Agenten, Integrationen und vollständige Softwarelieferung – Sicherheit von Tag eins an eingebaut.",
+      "cta": "Services ansehen",
+      "cards": {
+        "agents": "Produktionsreife KI-Agenten mit Guardrails, RAG und sicheren Connectors.",
+        "integrations": "Anbieterneutrale Integrationen mit Ihrem Stack, IAM und Data Governance.",
+        "delivery": "Full-Cycle-Delivery mit Zuverlässigkeits-SLOs, Observability und Security-Reviews."
+      },
+      "cardsTitle": {
+        "agents": "Agenten",
+        "integrations": "Integrationen",
+        "delivery": "Auslieferung"
+      }
+    },
+    "contact": {
+      "title": "Bereit, AI-SOC und SLNC-env zu kombinieren?",
+      "subtitle": "Sagen Sie uns Ihre Sicherheits- und Delivery-Ziele – wir stellen das passende System und die Services zusammen.",
+      "cta": "Demo anfragen",
+      "ctaSecondary": "Mit dem Serviceteam sprechen"
     }
   }
 }

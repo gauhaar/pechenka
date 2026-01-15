@@ -2,12 +2,12 @@
   "languageSelector": {
     "triggerLabel": "Chọn ngôn ngữ",
     "menuLabel": "Vui lòng chọn ngôn ngữ",
-    "searchLabel": "Search languages",
-    "searchPlaceholder": "Search by name or native script",
-    "searchResults": "Search results",
-    "noMatches": "No languages match your search.",
-    "popular": "Most popular",
-    "allLanguages": "All languages"
+    "searchLabel": "Tìm ngôn ngữ",
+    "searchPlaceholder": "Tìm theo tên hoặc chữ viết",
+    "searchResults": "Kết quả tìm kiếm",
+    "noMatches": "Không có ngôn ngữ phù hợp.",
+    "popular": "Phổ biến nhất",
+    "allLanguages": "Tất cả ngôn ngữ"
   },
   "header": {
     "nav": {
@@ -17,13 +17,18 @@
       "instructions": "Hướng dẫn",
       "product": "AI-SOC",
       "secureDevelopment": "SLNC-env",
-      "developerServices": "Developer Services"
+      "developerServices": "Dịch vụ cho nhà phát triển",
+      "home": "Trang chính",
+      "systems": "Hệ thống",
+      "systemsAiSoc": "AI-SOC",
+      "systemsSlncEnv": "SLNC-env",
+      "services": "Dịch vụ"
     },
     "login": "Đăng nhập",
     "cta": {
-      "contact": "Contact",
-      "download": "Download",
-      "requestDemo": "Request Demo"
+      "contact": "Liên hệ",
+      "download": "Tải xuống",
+      "requestDemo": "Yêu cầu demo"
     }
   },
   "affiliate": {
@@ -85,7 +90,7 @@
         "description": "Phần thưởng xuất hiện trên số dư đối tác trong vòng một phút sau giao dịch—không cần duyệt thủ công."
       },
       "withdrawal": {
-        "title": "Withdrawals processed in 2 business days",
+        "title": "Rút tiền xử lý trong 2 ngày làm việc",
         "description": "Yêu cầu rút tiền được kiểm tra tự động và chuyển vào tài khoản ngân hàng của bạn trong hai ngày làm việc."
       },
       "sample": {
@@ -112,56 +117,56 @@
       }
     },
     "termsAff": {
-      "label": "Affiliate Program",
-      "title": "Affiliate Terms of Service",
-      "notice": "This policy is available only in English",
-      "intro": "These terms describe how rewards are issued and paid to partners participating in the Silence AI affiliate program.",
+      "label": "Chương trình liên kết",
+      "title": "Điều khoản dịch vụ cho đối tác liên kết",
+      "notice": "Chính sách này chỉ có bản tiếng Anh",
+      "intro": "Các điều khoản này mô tả cách phát hành và chi trả phần thưởng cho đối tác tham gia chương trình liên kết của Silence AI.",
       "meta": {
-        "effective": "Effective date: 10 November 2024",
-        "lastUpdated": "Last updated: 10 November 2024"
+        "effective": "Ngày hiệu lực: 10/11/2024",
+        "lastUpdated": "Cập nhật lần cuối: 10/11/2024"
       },
       "sections": {
         "overview": {
-          "title": "1. Program Overview",
-          "body1": "1.1 Agreement Scope: These Affiliate Terms of Service (\"Terms\") govern your participation in the Silence AI affiliate program operated by Silence AI LLC (\"Silence AI,\" \"we,\" \"us,\" or \"our\"). These Terms apply to you, the individual or entity enrolling as an affiliate partner (\"you\" or \"your\"), and, where applicable, your employer, principal, or organization if you act on their behalf.",
-          "body2": "1.2 Program Summary: Under this program, qualified partners earn commission-based rewards when referred customers purchase or top up the AI-SOC 1 product. Participation in the affiliate program also requires compliance with the general Silence AI Terms of Service."
+          "title": "1. Tổng quan chương trình",
+          "body1": "1.1 Phạm vi thỏa thuận: Điều khoản dịch vụ liên kết (\"Điều khoản\") điều chỉnh việc bạn tham gia chương trình liên kết của Silence AI do Silence AI LLC vận hành. Điều khoản áp dụng cho bạn — cá nhân hoặc tổ chức đăng ký làm đối tác — và nếu bạn đại diện cho người sử dụng lao động hay tổ chức, cũng áp dụng tương tự.",
+          "body2": "1.2 Tóm tắt chương trình: Đối tác đủ điều kiện sẽ nhận thưởng hoa hồng khi khách hàng được giới thiệu mua hoặc nạp sản phẩm AI-SOC 1. Việc tham gia yêu cầu tuân thủ Điều khoản dịch vụ chung của Silence AI."
         },
         "eligibility": {
-          "title": "2. Partner Eligibility",
-          "item1": "You must maintain an active Silence AI affiliate account with accurate business and payment details.",
-          "item2": "Referrals must complete registration through your issued link or promo code.",
-          "item3": "Accounts found to be fraudulent, self-referred, or in breach of applicable law are not eligible for rewards."
+          "title": "2. Điều kiện đối tác",
+          "item1": "Duy trì tài khoản đối tác Silence AI đang hoạt động với thông tin doanh nghiệp và thanh toán chính xác.",
+          "item2": "Khách hàng được giới thiệu phải đăng ký bằng liên kết hoặc mã bạn cung cấp.",
+          "item3": "Tài khoản gian lận, tự giới thiệu hoặc vi phạm pháp luật không đủ điều kiện nhận thưởng."
         },
         "commission": {
-          "title": "3. Commission Structure",
-          "body1": "You earn a 10% reward on every balance top-up completed by an account registered through your invitation.",
-          "body2": "Commission is calculated from the net top-up amount after payment processing fees are deducted."
+          "title": "3. Cấu trúc hoa hồng",
+          "body1": "Bạn nhận 10% cho mỗi lần nạp của tài khoản đăng ký qua lời mời của bạn.",
+          "body2": "Hoa hồng được tính trên giá trị ròng sau khi trừ phí xử lý thanh toán."
         },
         "rewardPosting": {
-          "title": "4. Reward Posting",
-          "body1": "Rewards post to your partner balance within one minute after the transaction successfully clears. There is no manual approval queue.",
-          "body2": "Notifications appear in your affiliate dashboard alongside the customer identifier and top-up amount."
+          "title": "4. Ghi nhận thưởng",
+          "body1": "Phần thưởng được cộng vào số dư đối tác trong vòng một phút sau khi giao dịch hoàn tất, không cần duyệt thủ công.",
+          "body2": "Thông báo hiển thị trong bảng điều khiển cùng định danh khách hàng và số tiền nạp."
         },
         "withdrawals": {
-          "title": "5. Withdrawals",
-          "body1": "Withdrawal requests are processed within two business days and paid out using the settlement method on file.",
-          "body2": "Minimum withdrawal thresholds and supported payout networks are published inside the affiliate dashboard."
+          "title": "5. Rút tiền",
+          "body1": "Yêu cầu rút tiền được xử lý trong hai ngày làm việc và thanh toán theo phương thức đã lưu.",
+          "body2": "Ngưỡng rút tối thiểu và các mạng thanh toán hỗ trợ được công bố trong bảng điều khiển đối tác."
         },
         "productScope": {
-          "title": "6. Product Scope",
-          "body1": "Rewards are only provided for the AI-SOC 1 product. Other Silence AI services are excluded from the affiliate program unless explicitly stated otherwise in writing.",
-          "body2": "If additional products become eligible, Silence AI will publish an updated list inside these terms."
+          "title": "6. Phạm vi sản phẩm",
+          "body1": "Phần thưởng chỉ áp dụng cho sản phẩm AI-SOC 1. Các dịch vụ Silence AI khác bị loại trừ trừ khi có thông báo bằng văn bản.",
+          "body2": "Nếu có sản phẩm bổ sung đủ điều kiện, Silence AI sẽ cập nhật danh sách trong điều khoản này."
         },
         "compliance": {
-          "title": "7. Partner Conduct & Compliance",
-          "item1": "Partners must represent Silence AI accurately and avoid misleading claims about features or pricing.",
-          "item2": "Marketing communications must comply with applicable anti-spam, privacy, and advertising regulations.",
-          "item3": "Silence AI may suspend or terminate accounts that violate these obligations or harm the brand."
+          "title": "7. Ứng xử & tuân thủ",
+          "item1": "Đối tác phải mô tả đúng về Silence AI, tránh tuyên bố sai lệch về tính năng hay giá.",
+          "item2": "Truyền thông marketing phải tuân thủ quy định chống spam, quyền riêng tư và quảng cáo.",
+          "item3": "Silence AI có thể tạm ngưng hoặc chấm dứt tài khoản vi phạm hoặc gây hại thương hiệu."
         },
         "changes": {
-          "title": "8. Changes & Contact",
-          "body1": "Silence AI may update these affiliate terms to reflect changes in the program or applicable law. Updated versions take effect upon publication on this page.",
-          "body2": "Questions about the affiliate program can be sent to info@silenceai.net."
+          "title": "8. Thay đổi & liên hệ",
+          "body1": "Silence AI có thể cập nhật điều khoản để phản ánh thay đổi của chương trình hoặc luật áp dụng. Phiên bản cập nhật có hiệu lực ngay khi đăng trên trang này.",
+          "body2": "Mọi câu hỏi về chương trình liên kết gửi tới info@silenceai.net."
         }
       }
     }
@@ -197,7 +202,7 @@
   "playground": {
     "options": {
       "globeShield": "An ninh web & quản lý lưu lượng",
-      "emailSecurity": "Email Security"
+      "emailSecurity": "Bảo mật Email"
     }
   },
   "cookie": {
@@ -346,7 +351,7 @@
   },
   "modal": {
     "title": "Đang phát triển",
-    "body": "The system is expected to be launched on October 10"
+    "body": "Hệ thống dự kiến ra mắt vào ngày 10/10"
   },
   "lamp": {
     "title": "Thực trạng tấn công mạng"
@@ -387,256 +392,256 @@
       "termsService": "Điều khoản dịch vụ",
       "privacy": "Chính sách bảo mật",
       "cookies": "Chính sách Cookie",
-      "affiliateTerms": "Affiliate Terms of Service"
+      "affiliateTerms": "Điều khoản đối tác liên kết"
     },
     "copyright": "© {year} Silence AI. Đã đăng ký bản quyền."
   },
   "secureDevelopment": {
     "hero": {
-      "badge": "SLNC-env · Secure Development Environment",
-      "title": "Build systems with secure and private code",
-      "description": "Private development environment for enterprises, where code never leaves your corporate network. Meanwhile offering the latest AI-powered technology",
-      "requestSystem": "Request System"
+      "badge": "SLNC-env · Môi trường phát triển an toàn",
+      "title": "Xây hệ thống với mã an toàn và riêng tư",
+      "description": "Môi trường phát triển riêng cho doanh nghiệp, nơi mã không rời mạng nội bộ nhưng vẫn có AI mới nhất hỗ trợ",
+      "requestSystem": "Yêu cầu hệ thống"
     },
     "components": {
-      "title": "Everything stays inside",
-      "subtitle": "Three components, one sealed loop",
-      "description": "Code, prompts, and builds never leave your network. SLNC-env keeps AI help, reviews, and delivery private for cloud providers, government teams, and industrial plants.",
+      "title": "Mọi thứ ở trong nội bộ",
+      "subtitle": "Ba thành phần, một vòng kín",
+      "description": "Mã, prompt và build không rời mạng của bạn. SLNC-env giữ việc hỗ trợ AI, review và bàn giao ở chế độ riêng cho nhà cung cấp đám mây, đội ngũ chính phủ và nhà máy công nghiệp.",
       "sithub": {
-        "title": "Sithub Server",
-        "tag": "Local version control"
+        "title": "Máy chủ Sithub",
+        "tag": "Quản lý phiên bản nội bộ"
       },
       "llm": {
-        "title": "LLM Server (Qwen-Code)",
-        "tag": "On-prem intelligence"
+        "title": "Máy chủ LLM (Qwen-Code)",
+        "tag": "Trí tuệ on-prem"
       },
       "ide": {
-        "title": "IDE with Local Copilot",
-        "tag": "Cursor-class experience"
+        "title": "IDE với Copilot nội bộ",
+        "tag": "Trải nghiệm cấp Cursor"
       },
-      "staysOnPrem": "Stays on-prem. No egress."
+      "staysOnPrem": "Ở trên on-prem. Không thoát dữ liệu."
     },
     "timeline": {
-      "title": "Why isolated, checked code matters",
-      "subtitle": "Recent wake-up calls",
+      "title": "Vì sao mã cô lập và kiểm duyệt quan trọng",
+      "subtitle": "Những cảnh báo gần đây",
       "incident": {
-        "title": "Critical incident — leaked code",
-        "heading": "DeepSeek breach put source and prompts on the open internet",
-        "description": "Keep inference and scanning on-prem. No external model egress. Audit trails by default.",
-        "seePlan": "See containment plan"
+        "title": "Sự cố nghiêm trọng — rò rỉ mã",
+        "heading": "Sự cố DeepSeek làm lộ mã nguồn và prompt ra internet",
+        "description": "Giữ suy luận và quét trên on-prem. Không thoát ra mô hình bên ngoài. Mặc định có vết audit.",
+        "seePlan": "Xem kế hoạch ngăn chặn"
       },
       "stuxnet": {
         "year": "2010",
         "attack": "Stuxnet",
-        "target": "Natanz enrichment facility",
-        "impact": "Destroyed ~1,000 centrifuges",
-        "severity": "Critical"
+        "target": "Cơ sở làm giàu Natanz",
+        "impact": "Phá hủy khoảng 1.000 máy ly tâm",
+        "severity": "Nghiêm trọng"
       },
       "blackEnergy": {
         "year": "2015",
         "attack": "BlackEnergy",
-        "target": "Ukraine power grid",
-        "impact": "230k customers lost power",
-        "severity": "High"
+        "target": "Lưới điện Ukraine",
+        "impact": "230 nghìn khách hàng mất điện",
+        "severity": "Cao"
       },
       "triton": {
         "year": "2017",
         "attack": "TRITON",
-        "target": "Saudi petrochemical plant",
-        "impact": "Safety systems disabled",
-        "severity": "Critical"
+        "target": "Nhà máy hóa dầu Saudi",
+        "impact": "Hệ thống an toàn bị vô hiệu",
+        "severity": "Nghiêm trọng"
       },
       "colonialPipeline": {
         "year": "2021",
         "attack": "Colonial Pipeline",
-        "target": "US fuel pipeline",
-        "impact": "6-day fuel paralysis",
-        "severity": "High"
+        "target": "Đường ống nhiên liệu Mỹ",
+        "impact": "Tê liệt nhiên liệu 6 ngày",
+        "severity": "Cao"
       },
       "pdvsa": {
         "year": "2025",
         "attack": "PDVSA",
-        "target": "Venezuela refining",
-        "impact": "Refinery operations disrupted",
-        "severity": "Medium"
+        "target": "Lọc dầu Venezuela",
+        "impact": "Hoạt động lọc dầu bị gián đoạn",
+        "severity": "Trung bình"
       }
     },
     "analyzer": {
-      "title": "Analyzer that beats CodeQL",
-      "subtitle": "Live assurance",
+      "title": "Trình phân tích vượt CodeQL",
+      "subtitle": "Đảm bảo thời gian thực",
       "features": {
         "quality": {
-          "title": "Automatic code quality",
-          "description": "Structure, style, and best-practice checks tuned for safety-critical code"
+          "title": "Chất lượng mã tự động",
+          "description": "Kiểm tra cấu trúc, phong cách và best-practice cho mã quan trọng về an toàn"
         },
         "vulnerability": {
-          "title": "Vulnerability sweeps",
-          "description": "SQLi, XSS, auth bypass, and insecure dependencies surfaced instantly"
+          "title": "Quét lỗ hổng",
+          "description": "SQLi, XSS, bỏ qua xác thực và phụ thuộc không an toàn được hiển thị tức thì"
         },
         "secrets": {
-          "title": "Secrets guard",
-          "description": "Keys, tokens, and credentials blocked at commit time"
+          "title": "Bảo vệ bí mật",
+          "description": "Chặn khóa, token và thông tin đăng nhập ngay lúc commit"
         },
         "config": {
-          "title": "Config hardening",
-          "description": "Docker/K8s, IAM, and network policies scanned for privilege creep"
+          "title": "Cứng hóa cấu hình",
+          "description": "Quét Docker/K8s, IAM và chính sách mạng để phát hiện leo thang đặc quyền"
         }
       },
       "beyondCodeQL": {
-        "title": "Finds what static queries miss",
-        "subtitle": "Beyond CodeQL",
-        "description": "Finds misconfigs and vulnerable packages faster than CodeQL and offers fixes, not just alerts.",
+        "title": "Tìm ra thứ truy vấn tĩnh bỏ lỡ",
+        "subtitle": "Vượt CodeQL",
+        "description": "Phát hiện cấu hình sai và gói dễ tổn thương nhanh hơn CodeQL, đưa ra bản vá chứ không chỉ cảnh báo.",
         "points": {
-          "packages": "Knows package graphs and flags risky dependencies in seconds.",
-          "config": "Spots config drift and privilege creep—beyond static rules.",
-          "patches": "Each finding comes with a suggested patch and owner."
+          "packages": "Biết đồ thị gói và đánh dấu phụ thuộc rủi ro trong vài giây.",
+          "config": "Phát hiện trôi cấu hình và leo thang đặc quyền — vượt ra ngoài quy tắc tĩnh.",
+          "patches": "Mỗi phát hiện đi kèm bản vá đề xuất và người phụ trách."
         }
       },
       "visualizer": {
-        "title": "Code analyzer in action",
-        "subtitle": "Visualizer",
-        "description": "Crisp snapshots from recent scans, rendered beautifully inside the on-prem console.",
-        "privateWorkspace": "Private workspace only",
+        "title": "Trình phân tích mã đang chạy",
+        "subtitle": "Trực quan",
+        "description": "Ảnh chụp rõ nét từ các lần quét gần đây, hiển thị đẹp trong console on-prem.",
+        "privateWorkspace": "Chỉ không gian làm việc riêng",
         "shots": {
           "scanOverview": {
-            "title": "Scan overview",
-            "description": "See issues grouped by severity before code leaves your network."
+            "title": "Tổng quan quét",
+            "description": "Xem vấn đề được nhóm theo mức độ trước khi mã rời mạng của bạn."
           },
           "misconfigurations": {
-            "title": "Detection of misconfigurations",
-            "description": "Our AI-powered code analyzer even finds misconfigurations within the code."
+            "title": "Phát hiện cấu hình sai",
+            "description": "Trình phân tích mã dùng AI còn tìm ra lỗi cấu hình ngay trong mã."
           },
           "inlineDiffs": {
-            "title": "Inline diffs",
-            "description": "Review suggested patches inline with security context."
+            "title": "So sánh inline",
+            "description": "Xem và duyệt bản vá đề xuất ngay trong ngữ cảnh bảo mật."
           }
         }
       }
     },
     "industries": {
-      "title": "Built for regulated, high-impact sectors",
-      "subtitle": "Where we deploy",
+      "title": "Xây cho các ngành tuân thủ, tác động cao",
+      "subtitle": "Nơi chúng tôi triển khai",
       "oilGas": {
-        "title": "Oil & Gas",
-        "description": "Drilling, refining, pipeline control"
+        "title": "Dầu khí",
+        "description": "Khai thác, lọc dầu, điều khiển đường ống"
       },
       "energy": {
-        "title": "Energy",
-        "description": "Grid, distribution, and EMS"
+        "title": "Năng lượng",
+        "description": "Lưới điện, phân phối và EMS"
       },
       "nuclear": {
-        "title": "Nuclear",
-        "description": "Reactor controls and safety"
+        "title": "Hạt nhân",
+        "description": "Điều khiển lò phản ứng và an toàn"
       },
       "manufacturing": {
-        "title": "Manufacturing",
-        "description": "ICS, OT, and robotics"
+        "title": "Sản xuất",
+        "description": "ICS, OT và robot"
       },
       "government": {
-        "title": "Government",
-        "description": "Ministries, defense, critical agencies"
+        "title": "Chính phủ",
+        "description": "Bộ ngành, quốc phòng, cơ quan trọng yếu"
       }
     }
   },
   "pricingCta": {
-    "requestSystem": "Request System"
+    "requestSystem": "Yêu cầu hệ thống"
   },
   "contactForm": {
-    "title": "Contact Us",
-    "success": "Thanks! Your message has been sent. We will contact you shortly.",
-    "errorRequired": "Please fill in your name, email and a short message.",
-    "errorSend": "Unable to send message. Please try again later.",
+    "title": "Liên hệ",
+    "success": "Cảm ơn! Chúng tôi đã nhận được tin nhắn và sẽ liên hệ sớm.",
+    "errorRequired": "Vui lòng nhập họ tên, email và tin nhắn ngắn.",
+    "errorSend": "Không gửi được tin nhắn. Vui lòng thử lại sau.",
     "placeholders": {
-      "name": "Your name",
+      "name": "Họ tên",
       "email": "Email",
-      "type": "Project Type (optional)",
-      "budget": "Budget (optional)",
-      "message": "Tell us about your project..."
+      "type": "Loại dự án (tuỳ chọn)",
+      "budget": "Ngân sách (tuỳ chọn)",
+      "message": "Hãy giới thiệu về dự án của bạn..."
     },
     "submit": {
-      "idle": "Send Message",
-      "loading": "Sending…"
+      "idle": "Gửi tin nhắn",
+      "loading": "Đang gửi…"
     }
   },
   "consulting": {
-    "title": "Consulting Questionnaire",
-    "searchPlaceholder": "Search questions...",
-    "noResults": "No questions found.",
+    "title": "Bộ câu hỏi tư vấn",
+    "searchPlaceholder": "Tìm kiếm câu hỏi...",
+    "noResults": "Không tìm thấy câu hỏi nào.",
     "questions": [
       {
-        "question": "What is your company's core value proposition beyond competitive pricing?",
-        "answer": "Security is our primary differentiator. We position ourselves as a company that builds highly secure systems with enterprise-grade security practices embedded throughout the development lifecycle."
+        "question": "Giá trị cốt lõi ngoài mức giá cạnh tranh của công ty bạn là gì?",
+        "answer": "Bảo mật là điểm khác biệt chính. Chúng tôi xây dựng hệ thống bảo mật cao với thực hành an ninh cấp doanh nghiệp xuyên suốt vòng đời phát triển."
       },
       {
-        "question": "How long has your company been in business, and what is your track record?",
-        "answer": "We have successfully delivered major projects including: NAK (Nur Astana Kurylys) - AI-powered team management platform, and Chic Flowers - Complete digital platform for a major flower retail company."
+        "question": "Công ty hoạt động bao lâu và có thành tích gì?",
+        "answer": "Chúng tôi đã hoàn thành các dự án lớn: NAK (Nur Astana Kurylys) — nền tảng quản lý đội nhóm bằng AI, và Chic Flowers — nền tảng số trọn vẹn cho một nhà bán lẻ hoa lớn."
       },
       {
-        "question": "What differentiates your technical capabilities and service quality from EPAM and other competitors?",
-        "answer": "Our key differentiator is our security-first development approach. We integrate security practices from project inception through deployment and maintenance."
+        "question": "Năng lực kỹ thuật và chất lượng dịch vụ của bạn khác gì so với EPAM hay đối thủ?",
+        "answer": "Chúng tôi phát triển với ưu tiên bảo mật. Thực hành an ninh được tích hợp từ lúc khởi động đến triển khai và vận hành."
       },
       {
-        "question": "How do you maintain quality while offering competitive pricing?",
-        "answer": "We offer services at 15% below market rates while maintaining exceptional quality through optimized operations, strategic talent sourcing, and efficient project management methodologies."
+        "question": "Làm sao giữ chất lượng khi giá cạnh tranh?",
+        "answer": "Chúng tôi cung cấp thấp hơn thị trường ~15% nhưng vẫn đảm bảo chất lượng nhờ vận hành tối ưu, tuyển dụng chiến lược và quản lý dự án hiệu quả."
       },
       {
-        "question": "What specific software development services do you provide?",
-        "answer": "End-to-end software development: custom applications, AI-powered solutions, cybersecurity product development (Silence AI-SOC), system integration, cloud migration, and DevOps. We also offer dedicated product development and staff augmentation."
+        "question": "Bạn cung cấp những dịch vụ phát triển phần mềm nào?",
+        "answer": "Phát triển đầu-cuối: ứng dụng tùy chỉnh, giải pháp AI, phát triển sản phẩm an ninh mạng (Silence AI-SOC), tích hợp hệ thống, chuyển đổi lên đám mây và DevOps. Chúng tôi cũng cung cấp phát triển sản phẩm chuyên biệt và bổ sung nhân sự."
       },
       {
-        "question": "Which industries and domains do you specialize in?",
-        "answer": "Construction, retail, fintech, cybersecurity, and digital platforms — including AI-driven team management, e-commerce, and enterprise security solutions."
+        "question": "Bạn chuyên về ngành và lĩnh vực nào?",
+        "answer": "Xây dựng, bán lẻ, fintech, an ninh mạng và nền tảng số — gồm quản lý đội nhóm bằng AI, thương mại điện tử và giải pháp bảo mật doanh nghiệp."
       },
       {
-        "question": "What technology stacks and platforms does your team have expertise in?",
-        "answer": "GO, Swift, Flutter, cloud platforms (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript, and AI/ML frameworks. We build proprietary security tools like Silence AI-SOC."
+        "question": "Đội ngũ thành thạo công nghệ và nền tảng nào?",
+        "answer": "GO, Swift, Flutter, các nền tảng đám mây (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript và khung AI/ML. Chúng tôi cũng tự phát triển công cụ bảo mật như Silence AI-SOC."
       },
       {
-        "question": "Do you offer end-to-end product development or specific services only?",
-        "answer": "We offer both: MVPs, full-cycle product delivery, staff augmentation, and cybersecurity integration."
+        "question": "Bạn cung cấp phát triển sản phẩm trọn gói hay chỉ dịch vụ lẻ?",
+        "answer": "Cả hai: MVP, giao hàng toàn vòng đời, bổ sung nhân sự và tích hợp an ninh mạng."
       },
       {
-        "question": "Can you provide both staff augmentation and dedicated team models?",
-        "answer": "Yes, we provide flexible engagement models: staff augmentation, dedicated teams, and project-based outsourcing."
+        "question": "Có cung cấp mô hình tăng cường nhân sự và đội ngũ chuyên trách không?",
+        "answer": "Có. Chúng tôi có mô hình linh hoạt: tăng cường nhân sự, đội ngũ chuyên trách và thuê ngoài theo dự án."
       },
       {
-        "question": "Do you offer consulting, architecture, and advisory services beyond development?",
-        "answer": "Yes: cybersecurity consulting, system architecture design, technology advisory, and security compliance assessments using Silence AI-SOC."
+        "question": "Ngoài phát triển, bạn có tư vấn, kiến trúc và cố vấn không?",
+        "answer": "Có: tư vấn an ninh mạng, thiết kế kiến trúc hệ thống, cố vấn công nghệ và đánh giá tuân thủ bảo mật với Silence AI-SOC."
       }
     ]
   },
   "requestDemoModal": {
-    "title": "Request System",
-    "name": "Name",
-    "email": "Corporate Email",
-    "company": "Company Name",
+    "title": "Yêu cầu hệ thống",
+    "name": "Họ tên",
+    "email": "Email công ty",
+    "company": "Tên công ty",
     "placeholders": {
       "name": "John Doe",
       "email": "john@company.com",
       "company": "Acme Corp"
     },
-    "submit": "Send Request",
-    "successTitle": "Request Sent!",
-    "successBody": "Thank you for your interest. We will be in touch shortly.",
-    "close": "Close"
+    "submit": "Gửi yêu cầu",
+    "successTitle": "Đã gửi yêu cầu!",
+    "successBody": "Cảm ơn bạn. Chúng tôi sẽ liên hệ sớm.",
+    "close": "Đóng"
   },
   "requestSystemModal": {
-    "title": "Request System",
-    "name": "Name",
-    "email": "Corporate Email",
-    "company": "Company Name",
+    "title": "Yêu cầu hệ thống",
+    "name": "Họ tên",
+    "email": "Email công ty",
+    "company": "Tên công ty",
     "placeholders": {
       "name": "John Doe",
       "email": "john@company.com",
       "company": "Acme Corp"
     },
-    "submit": "Download",
-    "successTitle": "Request Sent!",
-    "successBody": "Thank you. The system download instructions will be sent to your email.",
-    "close": "Close"
+    "submit": "Tải xuống",
+    "successTitle": "Đã gửi yêu cầu!",
+    "successBody": "Cảm ơn bạn. Hướng dẫn tải hệ thống sẽ được gửi qua email.",
+    "close": "Đóng"
   },
   "policySidebar": {
-    "tableOfContents": "Table of Contents"
+    "tableOfContents": "Mục lục"
   },
   "notFound": {
     "title": "Không tìm thấy trang",
@@ -733,8 +738,8 @@
   },
   "caseStudies": {
     "badge": "Tác động đã được chứng minh",
-    "title": "Nghiên cứu điển hình",
-    "subtitle": "Chúng tôi không giao tính năng. Chúng tôi giao kết quả.",
+    "title": "Case Study",
+    "subtitle": "Chúng tôi không chỉ giao tính năng — chúng tôi giao kết quả.",
     "problem": "Vấn đề:",
     "solution": "Giải pháp:",
     "liveImpact": "Tác động thực tế",
@@ -845,6 +850,63 @@
           "manager": "Quản Lý Riêng"
         }
       }
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "An ninh & phát triển AI",
+      "title": "Xây an toàn. Triển khai tự tin.",
+      "subtitle": "Hai hệ thống đăng ký (AI-SOC, SLNC-env) cùng dịch vụ AI và phần mềm tùy chỉnh cho đội ngũ doanh nghiệp.",
+      "ctaPrimary": "Yêu cầu demo",
+      "ctaSecondary": "Khám phá hệ thống",
+      "highlights": {
+        "coverage": "SOC 24/7 có AI hỗ trợ",
+        "onPrem": "0 thoát dữ liệu on-prem",
+        "deploy": "Triển khai an toàn trong 4 phút"
+      },
+      "metrics": {
+        "title": "Xây cho đội ngũ tuân thủ",
+        "soc": "Phạm vi SOC có AI hỗ trợ",
+        "egress": "Tất cả on-prem — mã, prompt, build",
+        "deployment": "đến lần triển khai an toàn đầu tiên",
+        "locales": "ngôn ngữ hỗ trợ sẵn"
+      }
+    },
+    "systems": {
+      "title": "Hệ thống",
+      "subtitle": "Chọn gói đăng ký phù hợp: AI-SOC cho phát hiện, SLNC-env cho phát triển kín.",
+      "cta": "Xem chi tiết",
+      "aiSoc": {
+        "title": "AI-SOC",
+        "desc": "Phát hiện & phản hồi được quản lý với AI trợ lý cho đội SOC.",
+        "badge": "Đăng ký"
+      },
+      "slncEnv": {
+        "title": "SLNC-env",
+        "desc": "Đám mây phát triển kín giữ mã, prompt và build trên on-prem.",
+        "badge": "Đăng ký"
+      }
+    },
+    "services": {
+      "title": "Dịch vụ phát triển tùy chỉnh",
+      "subtitle": "Tác nhân AI, tích hợp và giao phần mềm toàn vòng đời với bảo mật từ ngày đầu.",
+      "cta": "Xem dịch vụ",
+      "cards": {
+        "agents": "Tác nhân AI cấp sản xuất với guardrail, RAG và kết nối an toàn.",
+        "integrations": "Tích hợp trung lập nhà cung cấp với stack, IAM và quản trị dữ liệu của bạn.",
+        "delivery": "Giao hàng toàn vòng đời với SLO tin cậy, khả năng quan sát và rà soát bảo mật."
+      },
+      "cardsTitle": {
+        "agents": "Tác nhân",
+        "integrations": "Tích hợp",
+        "delivery": "Giao hàng"
+      }
+    },
+    "contact": {
+      "title": "Sẵn sàng kết hợp AI-SOC và SLNC-env?",
+      "subtitle": "Hãy cho chúng tôi mục tiêu bảo mật và giao hàng — chúng tôi sẽ ghép hệ thống và dịch vụ phù hợp.",
+      "cta": "Yêu cầu demo",
+      "ctaSecondary": "Trao đổi với đội dịch vụ"
     }
   }
 }

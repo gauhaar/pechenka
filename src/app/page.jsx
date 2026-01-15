@@ -1,6 +1,6 @@
-import DeveloperServicesPage from '@/components/DeveloperServices';
+import HomeLanding from '@/components/HomeLanding';
 
 export default function Page() {
-  return <DeveloperServicesPage />;
+  return <HomeLanding />;
 }
 

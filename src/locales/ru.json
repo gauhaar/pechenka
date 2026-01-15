@@ -17,13 +17,75 @@
       "instructions": "Инструкции",
       "product": "AI-SOC",
       "secureDevelopment": "SLNC-env",
-      "developerServices": "Разработка"
+      "developerServices": "Разработка",
+      "home": "Главная",
+      "systems": "Системы",
+      "systemsAiSoc": "AI-SOC",
+      "systemsSlncEnv": "SLNC-env",
+      "services": "Услуги"
     },
     "login": "Запросить демо",
     "cta": {
       "contact": "Связаться",
       "download": "Скачать",
       "requestDemo": "Запросить демо"
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "Безопасность и разработка AI",
+      "title": "Стройте безопасно. Доставляйте уверенно.",
+      "subtitle": "Два подписочных продукта (AI-SOC, SLNC-env) плюс кастомные AI-агенты и разработка ПО для корпораций.",
+      "ctaPrimary": "Запросить демо",
+      "ctaSecondary": "Посмотреть системы",
+      "highlights": {
+        "coverage": "24/7 AI-поддержка SOC",
+        "onPrem": "0-выгрузок on-prem",
+        "deploy": "Безопасный деплой за 4 мин"
+      },
+      "metrics": {
+        "title": "Для регулируемых команд",
+        "soc": "AI-поддержка 24/7 для SOC",
+        "egress": "Всё on-prem: код, промпты и сборки",
+        "deployment": "до первого защищённого деплоя",
+        "locales": "локалей из коробки"
+      }
+    },
+    "systems": {
+      "title": "Системы",
+      "subtitle": "Выберите подписку: AI-SOC для детекта и SLNC-env для закрытой разработки.",
+      "cta": "Подробнее",
+      "aiSoc": {
+        "title": "AI-SOC",
+        "desc": "Управляемый детект и ответ с AI-ассистентами для SOC-команд.",
+        "badge": "Подписка"
+      },
+      "slncEnv": {
+        "title": "SLNC-env",
+        "desc": "Закрытое облако разработки: код, промпты и сборки не покидают периметр.",
+        "badge": "Подписка"
+      }
+    },
+    "services": {
+      "title": "Кастомная разработка",
+      "subtitle": "AI-агенты, интеграции и полный цикл разработки с безопасностью по умолчанию.",
+      "cta": "Посмотреть услуги",
+      "cards": {
+        "agents": "Продукционные AI-агенты с guardrails, RAG и защищёнными коннекторами.",
+        "integrations": "Интеграции с вашим стеком, IAM и политиками данных без привязки к вендору.",
+        "delivery": "Полный цикл с SLO по надёжности, наблюдаемостью и безопасными ревью."
+      },
+      "cardsTitle": {
+        "agents": "Агенты",
+        "integrations": "Интеграции",
+        "delivery": "Доставка"
+      }
+    },
+    "contact": {
+      "title": "Готовы объединить AI-SOC и SLNC-env?",
+      "subtitle": "Расскажите о целях по безопасности и доставке — подберём систему и услуги.",
+      "cta": "Запросить демо",
+      "ctaSecondary": "Связаться с командой услуг"
     }
   },
   "affiliate": {
@@ -85,7 +147,7 @@
         "description": "Награды поступают на партнёрский баланс в течение минуты после сделки — без ручного одобрения."
       },
       "withdrawal": {
-        "title": "Withdrawals processed in 2 business days",
+        "title": "Вывод средств обрабатывается за 2 рабочих дня",
         "description": "Запросы на вывод проверяются автоматически и поступают на ваш банковский счёт максимум за два рабочих дня."
       },
       "sample": {
@@ -112,56 +174,56 @@
       }
     },
     "termsAff": {
-      "label": "Affiliate Program",
-      "title": "Affiliate Terms of Service",
-      "notice": "This policy is available only in English",
-      "intro": "These terms describe how rewards are issued and paid to partners participating in the Silence AI affiliate program.",
+      "label": "Партнёрская программа",
+      "title": "Партнёрские условия использования",
+      "notice": "Эта политика доступна только на английском",
+      "intro": "Эти условия описывают, как начисляются и выплачиваются вознаграждения партнёрам Silence AI.",
       "meta": {
-        "effective": "Effective date: 10 November 2024",
-        "lastUpdated": "Last updated: 10 November 2024"
+        "effective": "Дата вступления в силу: 10 ноября 2024",
+        "lastUpdated": "Последнее обновление: 10 ноября 2024"
       },
       "sections": {
         "overview": {
-          "title": "1. Program Overview",
-          "body1": "1.1 Agreement Scope: These Affiliate Terms of Service (\"Terms\") govern your participation in the Silence AI affiliate program operated by Silence AI LLC (\"Silence AI,\" \"we,\" \"us,\" or \"our\"). These Terms apply to you, the individual or entity enrolling as an affiliate partner (\"you\" or \"your\"), and, where applicable, your employer, principal, or organization if you act on their behalf.",
-          "body2": "1.2 Program Summary: Under this program, qualified partners earn commission-based rewards when referred customers purchase or top up the AI-SOC 1 product. Participation in the affiliate program also requires compliance with the general Silence AI Terms of Service."
+          "title": "1. Обзор программы",
+          "body1": "1.1 Область соглашения: эти Партнёрские условия (\"Условия\") регулируют ваше участие в партнёрской программе Silence AI, управляемой Silence AI LLC (\"Silence AI\", \"мы\", \"нас\" или \"наш\"). Условия применимы к вам — физическому или юридическому лицу, присоединяющемуся как партнёр, а при необходимости — к вашему работодателю или организации, от имени которых вы действуете.",
+          "body2": "1.2 Кратко о программе: квалифицированные партнёры получают вознаграждение, когда приглашённые ими клиенты покупают или пополняют продукт AI-SOC 1. Участие требует соблюдения общих условий Silence AI."
         },
         "eligibility": {
-          "title": "2. Partner Eligibility",
-          "item1": "You must maintain an active Silence AI affiliate account with accurate business and payment details.",
-          "item2": "Referrals must complete registration through your issued link or promo code.",
-          "item3": "Accounts found to be fraudulent, self-referred, or in breach of applicable law are not eligible for rewards."
+          "title": "2. Требования к партнёрам",
+          "item1": "Нужно поддерживать активный партнёрский аккаунт Silence AI с актуальными данными бизнеса и выплат.",
+          "item2": "Приглашённые пользователи должны регистрироваться по выданной вам ссылке или промокоду.",
+          "item3": "Фрод, саморефералы или нарушения закона лишают права на вознаграждение."
         },
         "commission": {
-          "title": "3. Commission Structure",
-          "body1": "You earn a 10% reward on every balance top-up completed by an account registered through your invitation.",
-          "body2": "Commission is calculated from the net top-up amount after payment processing fees are deducted."
+          "title": "3. Структура вознаграждений",
+          "body1": "Вы получаете 10% от каждого пополнения баланса аккаунтом, зарегистрированным по вашей ссылке.",
+          "body2": "Комиссия рассчитывается от чистой суммы пополнения после вычета платёжных комиссий."
         },
         "rewardPosting": {
-          "title": "4. Reward Posting",
-          "body1": "Rewards post to your partner balance within one minute after the transaction successfully clears. There is no manual approval queue.",
-          "body2": "Notifications appear in your affiliate dashboard alongside the customer identifier and top-up amount."
+          "title": "4. Начисление вознаграждений",
+          "body1": "Вознаграждения появляются на партнёрском балансе в течение минуты после успешной транзакции. Ручного одобрения нет.",
+          "body2": "Уведомления отображаются в кабинете с идентификатором клиента и суммой пополнения."
         },
         "withdrawals": {
-          "title": "5. Withdrawals",
-          "body1": "Withdrawal requests are processed within two business days and paid out using the settlement method on file.",
-          "body2": "Minimum withdrawal thresholds and supported payout networks are published inside the affiliate dashboard."
+          "title": "5. Вывод средств",
+          "body1": "Запросы на вывод обрабатываются до двух рабочих дней и выплачиваются по указанному способу.",
+          "body2": "Минимальные пороги и поддерживаемые сети выплат указаны в партнёрском кабинете."
         },
         "productScope": {
-          "title": "6. Product Scope",
-          "body1": "Rewards are only provided for the AI-SOC 1 product. Other Silence AI services are excluded from the affiliate program unless explicitly stated otherwise in writing.",
-          "body2": "If additional products become eligible, Silence AI will publish an updated list inside these terms."
+          "title": "6. Охват продуктов",
+          "body1": "Вознаграждения действуют только для продукта AI-SOC 1. Другие сервисы Silence AI не входят, если отдельно не оговорено письменно.",
+          "body2": "Если появятся дополнительные продукты, Silence AI опубликует обновлённый список в этих условиях."
         },
         "compliance": {
-          "title": "7. Partner Conduct & Compliance",
-          "item1": "Partners must represent Silence AI accurately and avoid misleading claims about features or pricing.",
-          "item2": "Marketing communications must comply with applicable anti-spam, privacy, and advertising regulations.",
-          "item3": "Silence AI may suspend or terminate accounts that violate these obligations or harm the brand."
+          "title": "7. Поведение и комплаенс",
+          "item1": "Партнёры должны точно представлять Silence AI и избегать вводящих в заблуждение заявлений о функциях или ценах.",
+          "item2": "Коммуникации должны соответствовать законам об антиспаме, приватности и рекламе.",
+          "item3": "Silence AI может приостановить или прекратить аккаунты, нарушающие эти обязательства или вредящие бренду."
         },
         "changes": {
-          "title": "8. Changes & Contact",
-          "body1": "Silence AI may update these affiliate terms to reflect changes in the program or applicable law. Updated versions take effect upon publication on this page.",
-          "body2": "Questions about the affiliate program can be sent to info@silenceai.net."
+          "title": "8. Изменения и контакты",
+          "body1": "Silence AI может обновлять условия партнёрской программы при изменениях программы или законодательства. Обновления действуют с момента публикации на этой странице.",
+          "body2": "Вопросы по партнёрской программе: info@silenceai.net"
         }
       }
     }
@@ -197,7 +259,7 @@
   "playground": {
     "options": {
       "globeShield": "Веб-безопасность и управление трафиком",
-      "emailSecurity": "Email Security"
+      "emailSecurity": "Безопасность и визуализация почты"
     }
   },
   "cookie": {
@@ -286,43 +348,43 @@
         }
       },
       "basic": {
-        "name": "Basic",
+        "name": "Базовый",
         "features": {
-          "fix": "Critical Bug Fixes (48h SLA)",
-          "updates": "Monthly Updates",
-          "audit": "Quarterly Security Audits",
-          "manager": "Dedicated Manager"
+          "fix": "Критические исправления (SLA 48ч)",
+          "updates": "Ежемесячные обновления",
+          "audit": "Квартальные аудиты безопасности",
+          "manager": "Выделенный менеджер"
         }
       },
       "pro": {
         "name": "Pro",
-        "badge": "Most Popular",
+        "badge": "Популярный",
         "features": {
-          "fix": "Critical Bug Fixes (24h SLA)",
-          "updates": "10h Monthly Updates",
-          "audit": "Monthly Security Audits",
-          "manager": "Dedicated Manager"
+          "fix": "Критические исправления (SLA 24ч)",
+          "updates": "10 часов доработок в месяц",
+          "audit": "Ежемесячные аудиты безопасности",
+          "manager": "Выделенный менеджер"
         }
       },
       "enterprise": {
         "name": "Enterprise",
-        "badge": "Best Value",
+        "badge": "Максимальная ценность",
         "features": {
-          "fix": "Critical Bug Fixes (4h SLA)",
-          "updates": "Unlimited Updates + Roadmap",
-          "audit": "Weekly Audits + Backups",
-          "manager": "Dedicated Manager"
+          "fix": "Критические исправления (SLA 4ч)",
+          "updates": "Безлимитные обновления + roadmap",
+          "audit": "Еженедельные аудиты и бэкапы",
+          "manager": "Выделенный менеджер"
         }
       }
     },
-    "subtitle": "Mobile-first plans built to scale with your product.",
-    "percentMaintenance": "{percent}% yearly maintenance",
+    "subtitle": "Мобильные тарифы, которые растут вместе с вашим продуктом.",
+    "percentMaintenance": "{percent}% ежегодного сопровождения",
     "planEstimate": "${value}",
-    "perYear": "per year (est.)",
+    "perYear": "в год (оценка)",
     "calculator": {
-      "title": "Project Cost Calculator",
-      "subtitle": "Slide to see your yearly maintenance",
-      "projectCost": "Project Cost:",
+      "title": "Калькулятор стоимости проекта",
+      "subtitle": "Передвиньте, чтобы увидеть стоимость сопровождения в год",
+      "projectCost": "Стоимость проекта:",
       "projectValue": "${value}"
     }
   },
@@ -475,7 +537,7 @@
       },
       {
         "title": "Каждый день",
-        "description": "30 000 сайтов взломываются ежедневно"
+        "description": "30 000 сайтов взламываются ежедневно"
       }
     ]
   },
@@ -485,7 +547,7 @@
   },
   "modal": {
     "title": "Активная разработка",
-    "body": "The system is expected to be launched on October 10"
+    "body": "Запуск системы запланирован на 10 октября"
   },
   "lamp": {
     "title": "Реальность кибератак"
@@ -841,5 +903,85 @@
   },
   "backToTop": {
     "label": "Наверх"
+  },
+  "pricing": {
+    "title": "Цены",
+    "tooltips": {
+      "cmcGlobal": {
+        "title": "CMC с глобальным мониторингом трафика",
+        "content": "Централизованная консоль (CMC) бесшовно интегрируется с другими системами безопасности и использует тот же домен и интерфейс, что Global Shield и Security Tester. Здесь вы можете блокировать страны, закрывать порты и управлять безопасностью в масштабе."
+      },
+      "countryBlacklisting": {
+        "title": "Блокировка по стране",
+        "content": "Блокируйте весь трафик, исходящий из выбранной страны."
+      },
+      "portManagement": {
+        "title": "Управление портами",
+        "content": "Закрывайте неиспользуемые порты, чтобы уменьшить поверхность атаки (например, отключите 22-й порт, если SSH не нужен)."
+      },
+      "cmcEmail": {
+        "title": "CMC с продвинутой визуализацией почты",
+        "content": "CMC интегрирована с остальными системами безопасности и позволяет мониторить почтовые потоки и просматривать письма всех добавленных корпоративных пользователей."
+      },
+      "dynamicVulnerability": {
+        "title": "Динамический поиск уязвимостей",
+        "content": "Находит уязвимости при взаимодействии с вашим сайтом, включая поиск через интеллект-систему."
+      },
+      "codeAnalyzer": {
+        "title": "Анализатор кода",
+        "content": "Находит проблемы безопасности прямо в кодовой базе через плагин VS Code, помогая устранить их до релиза."
+      },
+      "intelligenceReport": {
+        "title": "Отчёт разведки",
+        "content": "Даёт детальные сведения о цели: открытые порты, сервисы, поддомены и другую чувствительную информацию, требующую действий."
+      },
+      "fullVulnerability": {
+        "title": "Полная проверка уязвимостей",
+        "content": "Полная проверка включает динамическое сканирование и анализ кодовой базы."
+      }
+    },
+    "plans": {
+      "globalShield": {
+        "title": "Веб-безопасность и управление трафиком",
+        "price": "$0.06/GB",
+        "description": "Без ограничений\nБез доплат",
+        "button": "Защитить веб-приложения и API",
+        "features": {
+          "webProtection": "Защита от всех типов веб-атак, кроме эксплуатации логики бизнеса",
+          "ddosProtection": "Защита от DDoS в реальном времени",
+          "cmc": "CMC с глобальным мониторингом трафика",
+          "country": "Блокировка по странам",
+          "port": "Закрытие портов"
+        }
+      },
+      "emailProtector": {
+        "title": "Безопасность и визуализация почты",
+        "price": "$10/месяц/аккаунт",
+        "description": "До 10 писем в день\nДополнительно: $0.035 за письмо",
+        "button": "Защитить почту",
+        "features": {
+          "cmcEmail": "CMC с продвинутым визуализатором почтовых потоков",
+          "visibility": "Полная видимость входящих и исходящих писем всех аккаунтов в CMC с автокатегоризацией угроз",
+          "webClient": "Защищённый веб-клиент",
+          "phishing": "Защита от фишинга",
+          "malware": "Проверка вредоносных вложений",
+          "links": "Обнаружение опасных ссылок",
+          "spam": "Фильтрация спама",
+          "fakeSender": "Защита от поддельных отправителей"
+        }
+      },
+      "securityTester": {
+        "title": "Поиск уязвимостей",
+        "price": "$25/месяц",
+        "description": "До 50 ПОЛНЫХ проверок в месяц\nДополнительные проверки: $0.5 каждая",
+        "button": "Начать тестирование",
+        "features": {
+          "dynamic": "Динамический поиск уязвимостей",
+          "codeAnalyzer": "Анализатор кода",
+          "reports": "Понятные отчёты о безопасности",
+          "intelligence": "Отчёт разведки"
+        }
+      }
+    }
   }
 }

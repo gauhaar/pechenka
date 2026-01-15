@@ -2,28 +2,33 @@
   "languageSelector": {
     "triggerLabel": "Valige keel",
     "menuLabel": "Valige keel",
-    "searchLabel": "Search languages",
-    "searchPlaceholder": "Search by name or native script",
-    "searchResults": "Search results",
-    "noMatches": "No languages match your search.",
-    "popular": "Most popular",
-    "allLanguages": "All languages"
+    "searchLabel": "Otsi keeli",
+    "searchPlaceholder": "Otsi nime või kirjaviisi järgi",
+    "searchResults": "Otsingutulemused",
+    "noMatches": "Ükski keel otsingule ei vasta.",
+    "popular": "Populaarseimad",
+    "allLanguages": "Kõik keeled"
   },
   "header": {
     "nav": {
-      "main": "Main",
+      "main": "Pealeht",
       "mail": "Mail",
-      "affiliate": "Affiliate program",
-      "instructions": "Instructions",
+      "affiliate": "Partnerprogramm",
+      "instructions": "Juhised",
       "product": "AI-SOC",
       "secureDevelopment": "SLNC-env",
-      "developerServices": "Arendajate teenused"
+      "developerServices": "Arendajate teenused",
+      "home": "Avaleht",
+      "systems": "Süsteemid",
+      "systemsAiSoc": "AI-SOC",
+      "systemsSlncEnv": "SLNC-env",
+      "services": "Teenused"
     },
-    "login": "Taotle demo",
+    "login": "Logi sisse",
     "cta": {
-      "contact": "Contact",
-      "download": "Download",
-      "requestDemo": "Request Demo"
+      "contact": "Kontakt",
+      "download": "Laadi alla",
+      "requestDemo": "Taotle demo"
     }
   },
   "affiliate": {
@@ -85,7 +90,7 @@
         "description": "Preemiad kantakse partneri saldole ühe minuti jooksul pärast tehingu kinnitamist – käsitsi heakskiitu pole tarvis."
       },
       "withdrawal": {
-        "title": "Withdrawals processed in 2 business days",
+        "title": "Väljamaksed töödeldakse 2 tööpäevaga",
         "description": "Esitatud väljamakse taotlused kontrollitakse automaatselt ja jõuavad sinu panka kahe tööpäeva jooksul."
       },
       "sample": {
@@ -112,323 +117,323 @@
       }
     },
     "termsAff": {
-      "label": "Affiliate Program",
-      "title": "Affiliate Terms of Service",
-      "notice": "This policy is available only in English",
-      "intro": "These terms describe how rewards are issued and paid to partners participating in the Silence AI affiliate program.",
+      "label": "Partnerprogramm",
+      "title": "Partnerprogrammi teenusetingimused",
+      "notice": "See poliitika on saadaval ainult inglise keeles",
+      "intro": "Need tingimused kirjeldavad, kuidas preemiad määratakse ja makstakse Silence AI partnerprogrammis osalevatele partneritele.",
       "meta": {
-        "effective": "Effective date: 10 November 2024",
-        "lastUpdated": "Last updated: 10 November 2024"
+        "effective": "Jõustumiskuupäev: 10. november 2024",
+        "lastUpdated": "Viimati uuendatud: 10. november 2024"
       },
       "sections": {
         "overview": {
-          "title": "1. Program Overview",
-          "body1": "1.1 Agreement Scope: These Affiliate Terms of Service (\"Terms\") govern your participation in the Silence AI affiliate program operated by Silence AI LLC (\"Silence AI,\" \"we,\" \"us,\" or \"our\"). These Terms apply to you, the individual or entity enrolling as an affiliate partner (\"you\" or \"your\"), and, where applicable, your employer, principal, or organization if you act on their behalf.",
-          "body2": "1.2 Program Summary: Under this program, qualified partners earn commission-based rewards when referred customers purchase or top up the AI-SOC 1 product. Participation in the affiliate program also requires compliance with the general Silence AI Terms of Service."
+          "title": "1. Programmi ülevaade",
+          "body1": "1.1 Ulatus: Need tingimused reguleerivad sinu osalemist Silence AI LLC partnerprogrammis (\"Silence AI\", \"meie\"). Tingimused kehtivad sulle kui partnerile ja vajadusel sinu tööandjale või organisatsioonile, kui tegutsed nende nimel.",
+          "body2": "1.2 Kokkuvõte: Kvalifitseerunud partnerid teenivad komisjonipõhiseid preemiaid, kui viidatud kliendid ostavad või laadivad toodet AI-SOC 1. Osalemine eeldab Silence AI üldtingimuste järgimist."
         },
         "eligibility": {
-          "title": "2. Partner Eligibility",
-          "item1": "You must maintain an active Silence AI affiliate account with accurate business and payment details.",
-          "item2": "Referrals must complete registration through your issued link or promo code.",
-          "item3": "Accounts found to be fraudulent, self-referred, or in breach of applicable law are not eligible for rewards."
+          "title": "2. Partneri sobivus",
+          "item1": "Sul peab olema aktiivne partnerikonto korrektsete ettevõtte- ja makseandmetega.",
+          "item2": "Viidatud kliendid peavad registreeruma sinu lingi või promokoodi kaudu.",
+          "item3": "Võltsitud, iseviidatud või õigusaktide rikkumisega kontod ei kvalifitseeru preemiatele."
         },
         "commission": {
-          "title": "3. Commission Structure",
-          "body1": "You earn a 10% reward on every balance top-up completed by an account registered through your invitation.",
-          "body2": "Commission is calculated from the net top-up amount after payment processing fees are deducted."
+          "title": "3. Komisjoni struktuur",
+          "body1": "Saad 10% preemia igalt saldo laadimiselt, mille teeb sinu kutse kaudu registreeritud konto.",
+          "body2": "Komisjon arvutatakse netosummalt pärast maksetasude mahaarvamist."
         },
         "rewardPosting": {
-          "title": "4. Reward Posting",
-          "body1": "Rewards post to your partner balance within one minute after the transaction successfully clears. There is no manual approval queue.",
-          "body2": "Notifications appear in your affiliate dashboard alongside the customer identifier and top-up amount."
+          "title": "4. Preemiate kajastamine",
+          "body1": "Preemiad kantakse partneri saldole ühe minuti jooksul pärast tehingut; käsitsi kinnitamist pole.",
+          "body2": "Teavitused kuvatakse partneri paneelis koos kliendi tunnuse ja laadimissummaga."
         },
         "withdrawals": {
-          "title": "5. Withdrawals",
-          "body1": "Withdrawal requests are processed within two business days and paid out using the settlement method on file.",
-          "body2": "Minimum withdrawal thresholds and supported payout networks are published inside the affiliate dashboard."
+          "title": "5. Väljamaksed",
+          "body1": "Väljamakse taotlused töödeldakse kahe tööpäevaga ja makstakse registreeritud meetodile.",
+          "body2": "Miinimumsummad ja toetatud väljamaksed on avaldatud partneri paneelis."
         },
         "productScope": {
-          "title": "6. Product Scope",
-          "body1": "Rewards are only provided for the AI-SOC 1 product. Other Silence AI services are excluded from the affiliate program unless explicitly stated otherwise in writing.",
-          "body2": "If additional products become eligible, Silence AI will publish an updated list inside these terms."
+          "title": "6. Toote ulatus",
+          "body1": "Preemiad kehtivad ainult tootele AI-SOC 1. Teised Silence AI teenused on välja arvatud, kui pole kirjalikult öeldud teisiti.",
+          "body2": "Kui lisandub uusi tooteid, avaldab Silence AI värskendatud loetelu nendes tingimustes."
         },
         "compliance": {
-          "title": "7. Partner Conduct & Compliance",
-          "item1": "Partners must represent Silence AI accurately and avoid misleading claims about features or pricing.",
-          "item2": "Marketing communications must comply with applicable anti-spam, privacy, and advertising regulations.",
-          "item3": "Silence AI may suspend or terminate accounts that violate these obligations or harm the brand."
+          "title": "7. Käitumine ja vastavus",
+          "item1": "Partner peab Silence AI-d esitama täpselt ja vältima eksitavaid väiteid funktsioonide või hindade kohta.",
+          "item2": "Turundus peab järgima rämpsposti, privaatsuse ja reklaami reegleid.",
+          "item3": "Silence AI võib peatada või lõpetada kontod, mis rikuvad neid kohustusi või kahjustavad brändi."
         },
         "changes": {
-          "title": "8. Changes & Contact",
-          "body1": "Silence AI may update these affiliate terms to reflect changes in the program or applicable law. Updated versions take effect upon publication on this page.",
-          "body2": "Questions about the affiliate program can be sent to info@silenceai.net."
+          "title": "8. Muudatused ja kontakt",
+          "body1": "Silence AI võib tingimusi uuendada programmi või seaduse muutumisel. Uued versioonid jõustuvad avaldamisel sel lehel.",
+          "body2": "Küsimused partnerprogrammi kohta: info@silenceai.net"
         }
       }
     }
   },
   "hero": {
-    "headline": "AI-SOC 1: Cybersecurity is neither expensive nor complicated anymore",
-    "subheading": "The all in one, AI-based cybersecurity system that combines:",
+    "headline": "AI-SOC 1: Küberkaitse pole enam kallis ega keeruline",
+    "subheading": "Üks terviklik, tehisintellektil põhinev küberkaitsesüsteem, mis ühendab:",
     "playgroundHeading": "60-sekundiline tutvustus",
     "bullets": {
-      "web": "Real time web attack protection",
-      "email": "Email attacks protection",
-      "vulnerability": "Vulnerability-finder"
+      "web": "Reaalajas kaitse veebirünnete vastu",
+      "email": "Kaitse e-posti rünnete vastu",
+      "vulnerability": "Haavatavuste leidja"
     },
     "buttons": {
-      "connect": "Connect in 4 minutes",
-      "tour": "Watch 90-sec Tour"
+      "connect": "Ühenda 4 minutiga",
+      "tour": "Vaata 90 s tuuri"
     },
     "tooltips": {
       "web": {
-        "title": "Web Attack Protection",
-        "content": "System can protect against ALL types of web attacks, such as DDoS, SQLi, and others, except business logic vulnerabilities"
+        "title": "Kaitse veebirünnakute vastu",
+        "content": "Süsteem kaitseb KÕIGI veebirünnakute vastu (DDoS, SQLi jms), välja arvatud äriloogika haavatavused"
       },
       "email": {
-        "title": "Email Attack Protection",
-        "content": "System can protect against ALL types of email attacks, such as phishing, malware attachment, dangerous links, etc."
+        "title": "Kaitse e-posti rünnakute vastu",
+        "content": "Süsteem kaitseb KÕIGI e-posti rünnete vastu, nt phishing, pahavara manus, ohtlikud lingid"
       },
       "vulnerability": {
-        "title": "Vulnerability Finder",
-        "content": "System can find the vulnerabilities within the code of the application and by dynamically interacting with your website/API, including the way of finding vulnerabilities through the intelligence system"
+        "title": "Haavatavuste leidja",
+        "content": "Süsteem leiab haavatavusi rakenduse koodis ja dünaamilisel suhtlusel sinu veebisaidi/API-ga, kasutades ka intelligentsüsteemi"
       }
     }
   },
   "playground": {
     "options": {
-      "globeShield": "Web Security & Traffic Management",
-      "emailSecurity": "Email Security"
+      "globeShield": "Veebiturve ja liikluse haldus",
+      "emailSecurity": "E-posti turve"
     }
   },
   "cookie": {
-    "title": "Technical Cookies Notice",
-    "description": "This website uses only first-party technical cookies that are set by us to remember your language preferences and ensure the cookie notice is not shown again on your next visit. No tracking or third-party cookies are used.",
-    "more": "Learn more in our",
-    "link": "Cookie Policy",
+    "title": "Tehniliste küpsiste teade",
+    "description": "See veebisait kasutab ainult tehnilisi esmaseid küpsiseid, et meelde jätta sinu keele-eelistus ja mitte näidata teavitust järgmisel külastusel. Jälgimis- ega kolmandate osapoolte küpsiseid ei kasutata.",
+    "more": "Loe lähemalt meie",
+    "link": "Küpsisepoliitikast",
     "ok": "OK"
   },
   "pricing": {
-    "title": "Pricing",
+    "title": "Hinnakiri",
     "tooltips": {
       "cmcGlobal": {
-        "title": "CMC with Global Traffic Monitoring",
-        "content": "CMC (Centralized Management Console) integrates seamlessly with other security systems and is available under the same domain and interface as Global Shield and Security Tester allows you to manage network security at scale. From here, you can blacklist countries, close ports, and perform other operations"
+        "title": "CMC globaalse liiklusjälgimisega",
+        "content": "CMC (tsentraliseeritud halduskonsool) integreerub teiste turvasüsteemidega ja on sama domeeni/liidesega nagu Global Shield ja Security Tester, võimaldades hallata võrgu turvet suurel skaalal. Siit saab panna riike musta nimekirja, sulgeda porte jms"
       },
       "countryBlacklisting": {
-        "title": "Country Blacklisting",
-        "content": "Block all traffic originating from a specific country"
+        "title": "Riikide blokeerimine",
+        "content": "Blokeeri kogu liiklus kindlast riigist"
       },
       "portManagement": {
-        "title": "Port Management",
-        "content": "Close unused ports to reduce attack surface. For example, disabling port 22 when SSH access is not needed. To minimize the risk of system getting compromised"
+        "title": "Portide haldus",
+        "content": "Sulge kasutamata pordid, et vähendada rünnapinda. Nt keela port 22, kui SSH-d pole vaja, et minimeerida kompromiteerimise riski"
       },
       "cmcEmail": {
-        "title": "CMC with Advanced Email Flow Visualizer",
-        "content": "CMC (Centralized Management Console) integrates seamlessly with other security systems and is available under the same domain and interface as Global Shield and Security Tester. Within this console, you can monitor email flows and review emails for all corporate users you've added"
+        "title": "CMC täiustatud e-posti voo visualiseerijaga",
+        "content": "CMC integreerub teiste turvasüsteemidega ja on sama domeeni/liidesega nagu Global Shield ja Security Tester. Selles konsoolis saad jälgida e-posti vooge ja vaadata e-kirju kõigile lisatud ettevõttekasutajatele"
       },
       "dynamicVulnerability": {
-        "title": "Dynamic Vulnerability Finder",
-        "content": "Detects vulnerabilities by interacting with your website, including the way of finding vulnerabilities through the intelligence system"
+        "title": "Dünaamiline haavatavuste leidja",
+        "content": "Tuvastab haavatavusi, suheldes sinu veebiga, sh intelligentsüsteemi abil"
       },
       "codeAnalyzer": {
-        "title": "Code Analyzer",
-        "content": "Identifies security issues directly in your codebase through a VS Code plugin, helping you fix problems before deployment"
+        "title": "Koodianalüsaator",
+        "content": "Leiab turvaprobleeme otse koodibaasis VS Code plugina kaudu, aidates need enne deploy'd lahendada"
       },
       "intelligenceReport": {
-        "title": "Intelligence Report",
-        "content": "Generates detailed insights about your target, including open ports, running services, subdomains, and other sensitive information that may require action"
+        "title": "Luurearuanne",
+        "content": "Koostab detailse ülevaate sihtmärgist: avatud pordid, teenused, alamdomeenid ja muu tundlik info, mis vajab reageerimist"
       },
       "fullVulnerability": {
-        "title": "FULL Vulnerability Check",
-        "content": "A FULL vulnerability check includes both a dynamic vulnerability scan and a codebase vulnerability scan"
+        "title": "Täielik haavatavuskontroll",
+        "content": "Täielik kontroll sisaldab nii dünaamilist kui koodibaasi skanni"
       }
     },
     "plans": {
       "globalShield": {
-        "title": "Web Security & Traffic Management",
+        "title": "Veebiturve ja liikluse haldus",
         "price": "$0.06/GB",
-        "description": "No limits\nNo additional fees",
-        "button": "Secure web-app and APIs",
+        "description": "Piiranguteta\nLisatasusid pole",
+        "button": "Kaitse veebirakendus ja API-d",
         "features": {
-          "webProtection": "Protection against all types of web attacks, except business logic vulnerability exploitation",
-          "ddosProtection": "Real-time DDoS protection",
-          "cmc": "CMC with Global traffic monitoring system",
-          "country": "Country blacklisting feature",
-          "port": "Closing ports feature"
+          "webProtection": "Kaitse kõigi veebirünnete vastu, v.a äriloogika haavatavused",
+          "ddosProtection": "Reaalajas DDoS-kaitse",
+          "cmc": "CMC globaalse liiklusjälgimisega",
+          "country": "Riikide blokeerimise funktsioon",
+          "port": "Portide sulgemise funktsioon"
         }
       },
       "emailProtector": {
-        "title": "Email Security",
+        "title": "E-posti turve",
         "price": "$10/month/account",
-        "description": "Up to 10 emails per day\nAdditional emails: $0.035 each email",
-        "button": "Secure Email",
+        "description": "Kuni 10 e-kirja päevas\nLisakirjad: $0.035 tükk",
+        "button": "Kaitse e-post",
         "features": {
-          "cmcEmail": "CMC with most advanced email flow visualizer",
-          "visibility": "Complete visibility of sent and received emails of all the email accounts, in CMC, with automatic threat categorization",
-          "webClient": "Secure WebMail-client",
-          "phishing": "Phishing protection",
-          "malware": "Malware attachment scanning",
-          "links": "Dangerous link detection",
-          "spam": "Spam filtering",
-          "fakeSender": "Fake Sender Protection"
+          "cmcEmail": "CMC kõige arenenuma e-posti voo visualiseerijaga",
+          "visibility": "Täielik nähtavus kõigi kontode saadetud ja saadud kirjades, automaatse ohuklassifikatsiooniga",
+          "webClient": "Turvaline veebimeiliklient",
+          "phishing": "Phishingu kaitse",
+          "malware": "Pahavara manuste skannimine",
+          "links": "Ohtlike linkide tuvastus",
+          "spam": "Spämmi filtreerimine",
+          "fakeSender": "Võltsitud saatja kaitse"
         }
       },
       "securityTester": {
-        "title": "Vulnerability Finder",
+        "title": "Haavatavuste leidja",
         "price": "$25/month",
-        "description": "Up to 50 FULL vulnerability checks per month\nAdditional FULL checks: $0.5 each",
-        "button": "Start Testing",
+        "description": "Kuni 50 täielikku haavatavuskontrolli kuus\nLisakontrollid: $0.5 tk",
+        "button": "Alusta testimist",
         "features": {
-          "dynamic": "Dynamic vulnerability finder",
-          "codeAnalyzer": "Code analyzer",
-          "reports": "Easily understandable security assessment reports",
-          "intelligence": "Intelligence Report"
+          "dynamic": "Dünaamiline haavatavuste leidja",
+          "codeAnalyzer": "Koodianalüsaator",
+          "reports": "Lihtsalt mõistetavad turvaraportid",
+          "intelligence": "Luurearuanne"
         }
       },
       "basic": {
-        "name": "Basic",
+        "name": "Baas",
         "features": {
-          "fix": "Critical Bug Fixes (48h SLA)",
-          "updates": "Monthly Updates",
-          "audit": "Quarterly Security Audits",
-          "manager": "Dedicated Manager"
+          "fix": "Kriitiliste vigade parandus (48h SLA)",
+          "updates": "Igakuised uuendused",
+          "audit": "Kvartaalsed turvaauditid",
+          "manager": "Pühendunud haldur"
         }
       },
       "pro": {
         "name": "Pro",
-        "badge": "Most Popular",
+        "badge": "Kõige populaarsem",
         "features": {
-          "fix": "Critical Bug Fixes (24h SLA)",
-          "updates": "10h Monthly Updates",
-          "audit": "Monthly Security Audits",
-          "manager": "Dedicated Manager"
+          "fix": "Kriitiliste vigade parandus (24h SLA)",
+          "updates": "10h igakuiseid uuendusi",
+          "audit": "Igakuised turvaauditid",
+          "manager": "Pühendunud haldur"
         }
       },
       "enterprise": {
-        "name": "Enterprise",
-        "badge": "Best Value",
+        "name": "Ettevõte",
+        "badge": "Parim väärtus",
         "features": {
-          "fix": "Critical Bug Fixes (4h SLA)",
-          "updates": "Unlimited Updates + Roadmap",
-          "audit": "Weekly Audits + Backups",
-          "manager": "Dedicated Manager"
+          "fix": "Kriitiliste vigade parandus (4h SLA)",
+          "updates": "Piiramatud uuendused + Tegevuskava",
+          "audit": "Iganädalased auditid + Varukoopiad",
+          "manager": "Pühendunud haldur"
         }
       }
     },
-    "subtitle": "Mobile-first plans built to scale with your product.",
-    "percentMaintenance": "{percent}% yearly maintenance",
+    "subtitle": "Mobiilile orienteeritud plaanid, mis kasvavad koos sinu tootega.",
+    "percentMaintenance": "{percent}% iga-aastane hooldus",
     "planEstimate": "${value}",
-    "perYear": "per year (est.)",
+    "perYear": "aastas (hinnanguline)",
     "calculator": {
-      "title": "Project Cost Calculator",
-      "subtitle": "Slide to see your yearly maintenance",
-      "projectCost": "Project Cost:",
+      "title": "Projekti maksumuse kalkulaator",
+      "subtitle": "Libista, et näha oma aastast hooldust",
+      "projectCost": "Projekti maksumus:",
       "projectValue": "${value}"
     }
   },
   "solution": {
-    "sectionTitle": "Our Solution",
-    "sectionSubtitle": "Ready in 4 minutes and usable by any IT professional—no cybersecurity expertise required. We offer advanced visualization and affordability.",
+    "sectionTitle": "Meie lahendus",
+    "sectionSubtitle": "Valmis 4 minutiga ja kasutatav iga IT-spetsialisti poolt – küberkaitse kogemust pole vaja. Pakume tipptasemel visualiseerimist ja taskukohasust.",
     "cards": {
       "globalShield": {
-        "title": "Global Shield - CIA-Level Traffic Monitoring",
-        "description": "Our interactive 3D globe provides a stunning visualization of your web traffic, showing requests per second, active users, and traffic volume in bytes.",
+        "title": "Global Shield – CIA tasemel liiklusjälgimine",
+        "description": "Interaktiivne 3D maakera pakub muljetavaldavat vaadet veebiliiklusele: taotlused sekundis, aktiivsed kasutajad ja mahud baitides.",
         "bullets": {
-          "one": "Easy setup: just specify your IP and domain.",
-          "two": "Receive an agent IP to add to your DNS.",
-          "three": "Port closing for zero exposure."
+          "one": "Lihtne seadistus: määra IP ja domeen.",
+          "two": "Saad agent IP, mille lisad DNS-i.",
+          "three": "Portide sulgemine null-ekspositsiooniks."
         }
       },
       "emailProtector": {
-        "title": "Email Protector - World's First AI Email Protection",
-        "description": "The world's first AI-based email protection system. Our vector view makes it easy to track email flow over time and identify threats.",
+        "title": "Email Protector – maailma esimene AI e-posti kaitse",
+        "description": "Maailma esimene AI-põhine e-posti kaitsesüsteem. Vektorvaade teeb e-posti voo jälgimise ja ohtude tuvastamise lihtsaks.",
         "bullets": {
-          "one": "Detects spoofing, spam, phishing, and malware.",
-          "two": "Admin can add email accounts for protection.",
-          "three": "Most advanced commercial mail flow visualizer."
+          "one": "Tuvastab spoofingu, spämmi, phishingu ja pahavara.",
+          "two": "Admin saab lisada kaitstavaid e-posti kontosid.",
+          "three": "Kõige arenenum kommertslik meili voo visualiseerija."
         }
       },
       "securityTester": {
-        "title": "Security Tester - Next-Gen Vulnerability Testing",
-        "description": "Our system provides a One-Time-Token (OTT) for full-coverage security checks. Simply connect via our browser or VSCode extension.",
+        "title": "Security Tester – uus põlvkond haavatavuste testimiseks",
+        "description": "Süsteem annab One-Time-Tokeni (OTT) täielikeks turvakontrollideks. Ühenda brauseri või VSCode laiendusega.",
         "bullets": {
-          "one": "Specify security scope and target in the CMC.",
-          "two": "Paste the OTT and start the security check.",
-          "three": "Intelligence-driven risk insights."
+          "one": "Määra CMC-s turvaskoop ja sihtmärk.",
+          "two": "Aseta OTT ja käivita kontroll.",
+          "three": "Luurepõhised riskiteadmised."
         }
       }
     },
     "cmc": {
-      "title": "Centralized Management Console (CMC)",
-      "description": "All three components are managed through a unified console that provides centralized visualization, easy configuration and monitoring, and comprehensive security reporting."
+      "title": "Tsentraliseeritud halduskonsool (CMC)",
+      "description": "Kõiki kolme komponenti juhitakse ühest konsoolist: tsentraliseeritud visualiseerimine, lihtne seadistus/jälgimine ja põhjalikud turvaraportid."
     }
   },
   "insights": {
     "items": [
       {
         "title": "39 seconds",
-        "description": "There is a hacker attack every 39 seconds"
+        "description": "Iga 39 sekundi järel toimub häkkimisrünnak"
       },
       {
         "title": "20M DDoS attacks",
-        "description": "20.5M DDoS attacks in Q1 2025 alone"
+        "description": "Ainuüksi 2025 Q1 toimus 20,5M DDoS-rünnakut"
       },
       {
         "title": "Every day",
-        "description": "30 000 websites get hacked every single day"
+        "description": "Iga päev häkitakse 30 000 veebisaiti"
       }
     ]
   },
   "floatingText": {
-    "headline": "Discover how hackers think",
-    "description": "Follow us for daily research on real attack methods and cyber threats"
+    "headline": "Avasta, kuidas häkkerid mõtlevad",
+    "description": "Jälgi meid, et saada igapäevast uurimust päris rünnakumeetoditest ja küberohtudest"
   },
   "modal": {
-    "title": "Under active development",
-    "body": "The system is expected to be launched on October 10"
+    "title": "Aktiivses arenduses",
+    "body": "Süsteemi käivitamine on plaanis 10. oktoobril"
   },
   "lamp": {
-    "title": "Reality of Cyberattacks"
+    "title": "Küberründe reaalsus"
   },
   "stickySolution": {
     "webSecurity": {
-      "title": "Web security system: Website/API can be connected in 2 minutes",
-      "description": "Protection against web attacks such as DDoS, SQLi, etc. There is also ability to close ports, it is very good practice to close port 22, when it is not being used"
+      "title": "Veebiturbe süsteem: veebileht/API saab ühendada 2 minutiga",
+      "description": "Kaitse veebirünnete (DDoS, SQLi jms) vastu. Saad porte sulgeda; hea tava on sulgeda port 22, kui seda ei kasutata"
     },
     "ciaMonitoring": {
-      "title": "CIA-Level Traffic Monitoring",
-      "description": "Our interactive 3D globe shows traffic volume by requests, users, and volume. The ability to see the history in the change of the number of users"
+      "title": "CIA tasemel liiklusjälgimine",
+      "description": "Interaktiivne 3D maakera näitab liiklust päringute, kasutajate ja mahu järgi. Saab vaadata kasutajate arvu muutuste ajalugu"
     },
     "userGrowth": {
-      "title": "Useful insights on the increase in the number of users",
-      "description": "The ability to see the history of changes of the number of users"
+      "title": "Tähtsad teadmised kasutajate arvu kasvust",
+      "description": "Võimalus vaadata kasutajate arvu muutuste ajalugu"
     },
     "aiEmailProtection": {
-      "title": "World's First AI-based Email Protection system: Email network can be connected in 2 minutes",
-      "description": "For the admins, there is the CMC that shows complete visibility into all sent and received emails for accounts added by the administrator, with automatic threat categorization like spoofing, spam, phishing, dangerous link, and malware."
+      "title": "Maailma esimene AI-põhine e-posti kaitse: e-posti võrk ühendub 2 minutiga",
+      "description": "Adminidele on CMC, mis annab täieliku nähtavuse kõikidele kontodele lisatud saadetud/saadud e-kirjadele ja automaatse ohuklassifikatsiooni (spoofing, spämmi, phishing, ohtlik link, pahavara)."
     },
     "emailVisualization": {
-      "title": "Visualization of the sent and received emails",
-      "description": "CMC with the most advanced, commercially available email flow visualizer"
+      "title": "Saadetud ja saadud kirjade visualiseerimine",
+      "description": "CMC kõige arenenuma kommertsliku e-posti voo visualiseerijaga"
     },
     "secureWebmail": {
-      "title": "Secure Webmail Client",
-      "description": "For email accounts added by admin, there is the most secure webmail client. Detects and categorizes threats like spoofing, spam, phishing, and malware."
+      "title": "Turvaline veebimeili klient",
+      "description": "Admini lisatud kontodele on kõige turvalisem veebimeiliklient. Tuvastab ja klassifitseerib ohud (spoofing, spämmi, phishing, pahavara)."
     }
   },
   "footer": {
-    "contactLabel": "Contact:",
+    "contactLabel": "Kontakt:",
     "contactValue": "info@silenceai.net",
-    "addressLabel": "Address:",
+    "addressLabel": "Aadress:",
     "addressValue": "Media City Free Zone, Al Messaned, Sharjah, UAE",
     "links": {
-      "termsUse": "Terms of Use",
-      "termsService": "Terms of Service",
-      "privacy": "Privacy Policy",
-      "cookies": "Cookies Policy",
-      "affiliateTerms": "Affiliate Terms of Service"
+      "termsUse": "Kasutustingimused",
+      "termsService": "Teenuse tingimused",
+      "privacy": "Privaatsuspoliitika",
+      "cookies": "Küpsisepoliitika",
+      "affiliateTerms": "Partnerprogrammi tingimused"
     },
-    "copyright": "© {year} Silence AI. All rights reserved."
+    "copyright": "© {year} Silence AI. Kõik õigused kaitstud."
   },
   "notFound": {
     "title": "Lehte ei leitud",
@@ -462,385 +467,385 @@
   },
   "secureDevelopment": {
     "hero": {
-      "badge": "SLNC-env · Secure Development Environment",
-      "title": "Build systems with secure and private code",
-      "description": "Private development environment for enterprises, where code never leaves your corporate network. Meanwhile offering the latest AI-powered technology",
-      "requestSystem": "Request System"
+      "badge": "SLNC-env · Turvaline arenduskeskkond",
+      "title": "Ehita süsteeme turvalise ja privaatse koodiga",
+      "description": "Eraisese arenduskeskkond ettevõtetele, kus kood ei lahku ettevõtte võrgust, pakkudes samal ajal uusimat AI-tehnoloogiat",
+      "requestSystem": "Taotle süsteemi"
     },
     "components": {
-      "title": "Everything stays inside",
-      "subtitle": "Three components, one sealed loop",
-      "description": "Code, prompts, and builds never leave your network. SLNC-env keeps AI help, reviews, and delivery private for cloud providers, government teams, and industrial plants.",
+      "title": "Kõik jääb sisse",
+      "subtitle": "Kolm komponenti, üks suletud tsükkel",
+      "description": "Kood, promptid ja build'id ei lahku võrgust. SLNC-env hoiab AI abi, koodikontrolli ja tarned privaatsena pilveteenuse pakkujatele, riigimeeskondadele ja tööstusele.",
       "sithub": {
         "title": "Sithub Server",
-        "tag": "Local version control"
+        "tag": "Kohalik versioonihaldus"
       },
       "llm": {
         "title": "LLM Server (Qwen-Code)",
-        "tag": "On-prem intelligence"
+        "tag": "Kohapealne intelligents"
       },
       "ide": {
-        "title": "IDE with Local Copilot",
-        "tag": "Cursor-class experience"
+        "title": "IDE Local Copilotiga",
+        "tag": "Cursor-klassi kogemus"
       },
-      "staysOnPrem": "Stays on-prem. No egress."
+      "staysOnPrem": "Jääb on-prem. Väljaminekut pole."
     },
     "timeline": {
-      "title": "Why isolated, checked code matters",
-      "subtitle": "Recent wake-up calls",
+      "title": "Miks isoleeritud ja kontrollitud kood on oluline",
+      "subtitle": "Hiljutised äratused",
       "incident": {
-        "title": "Critical incident — leaked code",
-        "heading": "DeepSeek breach put source and prompts on the open internet",
-        "description": "Keep inference and scanning on-prem. No external model egress. Audit trails by default.",
-        "seePlan": "See containment plan"
+        "title": "Kriitiline intsident — lekkinud kood",
+        "heading": "DeepSeek lekke käigus jõudsid lähtekood ja promptid avalikku internetti",
+        "description": "Hoia inference ja skaneerimine on-prem. Välistele mudelitele väljaminekut pole. Vaikimisi auditilogid.",
+        "seePlan": "Vaata tõkestusplaani"
       },
       "stuxnet": {
         "year": "2010",
         "attack": "Stuxnet",
-        "target": "Natanz enrichment facility",
-        "impact": "Destroyed ~1,000 centrifuges",
+        "target": "Natanzi rikastustehas",
+        "impact": "Hävitati u 1000 tsentrifuugi",
         "severity": "Critical"
       },
       "blackEnergy": {
         "year": "2015",
         "attack": "BlackEnergy",
-        "target": "Ukraine power grid",
-        "impact": "230k customers lost power",
+        "target": "Ukraina elektrivõrk",
+        "impact": "230k klienti jäi vooluta",
         "severity": "High"
       },
       "triton": {
         "year": "2017",
         "attack": "TRITON",
-        "target": "Saudi petrochemical plant",
-        "impact": "Safety systems disabled",
+        "target": "Saudi naftakeemiatehas",
+        "impact": "Ohutussüsteemid keelati",
         "severity": "Critical"
       },
       "colonialPipeline": {
         "year": "2021",
         "attack": "Colonial Pipeline",
-        "target": "US fuel pipeline",
-        "impact": "6-day fuel paralysis",
+        "target": "USA kütusetorustik",
+        "impact": "6 päeva kütuse katkestus",
         "severity": "High"
       },
       "pdvsa": {
         "year": "2025",
         "attack": "PDVSA",
-        "target": "Venezuela refining",
-        "impact": "Refinery operations disrupted",
+        "target": "Venezuela rafineerimine",
+        "impact": "Rafineerimistegevus häiritud",
         "severity": "Medium"
       }
     },
     "analyzer": {
-      "title": "Analyzer that beats CodeQL",
-      "subtitle": "Live assurance",
+      "title": "Analyzer, mis edestab CodeQL-i",
+      "subtitle": "Reaalajas kindlus",
       "features": {
         "quality": {
-          "title": "Automatic code quality",
-          "description": "Structure, style, and best-practice checks tuned for safety-critical code"
+          "title": "Automaatne koodikvaliteet",
+          "description": "Struktuuri, stiili ja parimate tavade kontrollid turvakriitilisele koodile"
         },
         "vulnerability": {
-          "title": "Vulnerability sweeps",
-          "description": "SQLi, XSS, auth bypass, and insecure dependencies surfaced instantly"
+          "title": "Haavatavuste skaneerimine",
+          "description": "SQLi, XSS, auth bypass ja ebaturvalised sõltuvused tuvastatakse kohe"
         },
         "secrets": {
-          "title": "Secrets guard",
-          "description": "Keys, tokens, and credentials blocked at commit time"
+          "title": "Saladuste kaitse",
+          "description": "Võtmed, tokenid ja mandaadid blokeeritakse commit'i ajal"
         },
         "config": {
-          "title": "Config hardening",
-          "description": "Docker/K8s, IAM, and network policies scanned for privilege creep"
+          "title": "Seadistuste karmistamine",
+          "description": "Docker/K8s, IAM ja võrgupoliitikad skannitakse õiguste kuhjumise tuvastamiseks"
         }
       },
       "beyondCodeQL": {
-        "title": "Finds what static queries miss",
-        "subtitle": "Beyond CodeQL",
-        "description": "Finds misconfigs and vulnerable packages faster than CodeQL and offers fixes, not just alerts.",
+        "title": "Leiame, mis staatilistel päringutel kahe silma vahele jääb",
+        "subtitle": "Rohkem kui CodeQL",
+        "description": "Leiame valesti seadistused ja haavatavad paketid kiiremini kui CodeQL ning pakume parandusi, mitte ainult hoiatusi.",
         "points": {
-          "packages": "Knows package graphs and flags risky dependencies in seconds.",
-          "config": "Spots config drift and privilege creep—beyond static rules.",
-          "patches": "Each finding comes with a suggested patch and owner."
+          "packages": "Tunneb paketigraafe ja märgib riskantsed sõltuvused sekunditega.",
+          "config": "Tuvastab seadistuse triivi ja õiguste kuhjumise — kaugemal kui staatilised reeglid.",
+          "patches": "Iga leid tuleb soovitatud paranduse ja vastutajaga."
         }
       },
       "visualizer": {
-        "title": "Code analyzer in action",
-        "subtitle": "Visualizer",
-        "description": "Crisp snapshots from recent scans, rendered beautifully inside the on-prem console.",
-        "privateWorkspace": "Private workspace only",
+        "title": "Koodianalüsaator töös",
+        "subtitle": "Visualiseerija",
+        "description": "Selged hetktõmmised viimastest skannidest, kenasti esitatud on-prem konsoolis.",
+        "privateWorkspace": "Ainult privaatne tööruum",
         "shots": {
           "scanOverview": {
-            "title": "Scan overview",
-            "description": "See issues grouped by severity before code leaves your network."
+            "title": "Skanni ülevaade",
+            "description": "Näe probleeme raskusastme järgi, enne kui kood võrgust lahkub."
           },
           "misconfigurations": {
-            "title": "Detection of misconfigurations",
-            "description": "Our AI-powered code analyzer even finds misconfigurations within the code."
+            "title": "Vale seadistuste tuvastamine",
+            "description": "AI-toega analüsaator leiab valed seadistused ka koodis."
           },
           "inlineDiffs": {
-            "title": "Inline diffs",
-            "description": "Review suggested patches inline with security context."
+            "title": "Reasiseste erinevuste vaatamine",
+            "description": "Vaata soovitatud parandusi koos turvakontekstiga."
           }
         }
       }
     },
     "industries": {
-      "title": "Built for regulated, high-impact sectors",
-      "subtitle": "Where we deploy",
+      "title": "Mõeldud reguleeritud ja kõrge mõjuga sektoritele",
+      "subtitle": "Kus me rakendame",
       "oilGas": {
-        "title": "Oil & Gas",
-        "description": "Drilling, refining, pipeline control"
+        "title": "Nafta ja gaas",
+        "description": "Puurimine, rafineerimine, torustike juhtimine"
       },
       "energy": {
-        "title": "Energy",
-        "description": "Grid, distribution, and EMS"
+        "title": "Energia",
+        "description": "Võrk, jaotus, EMS"
       },
       "nuclear": {
-        "title": "Nuclear",
-        "description": "Reactor controls and safety"
+        "title": "Tuumaenergia",
+        "description": "Reaktori juhtimine ja turvalisus"
       },
       "manufacturing": {
-        "title": "Manufacturing",
-        "description": "ICS, OT, and robotics"
+        "title": "Tööstus",
+        "description": "ICS, OT ja robootika"
       },
       "government": {
-        "title": "Government",
-        "description": "Ministries, defense, critical agencies"
+        "title": "Valitsus",
+        "description": "Ministeeriumid, kaitse, kriitilised agentuurid"
       }
     }
   },
   "pricingCta": {
-    "requestSystem": "Request System"
+    "requestSystem": "Taotle süsteemi"
   },
   "contactForm": {
-    "title": "Contact Us",
-    "success": "Thanks! Your message has been sent. We will contact you shortly.",
-    "errorRequired": "Please fill in your name, email and a short message.",
-    "errorSend": "Unable to send message. Please try again later.",
+    "title": "Võta meiega ühendust",
+    "success": "Aitäh! Sinu sõnum on saadetud. Võtame peagi ühendust.",
+    "errorRequired": "Palun täida oma nimi, e-post ja lühike sõnum.",
+    "errorSend": "Saatmine ebaõnnestus. Palun proovi hiljem uuesti.",
     "placeholders": {
-      "name": "Your name",
-      "email": "Email",
-      "type": "Project Type (optional)",
-      "budget": "Budget (optional)",
-      "message": "Tell us about your project..."
+      "name": "Sinu nimi",
+      "email": "E-post",
+      "type": "Projekti tüüp (valikuline)",
+      "budget": "Eelarve (valikuline)",
+      "message": "Räägi oma projektist..."
     },
     "submit": {
-      "idle": "Send Message",
-      "loading": "Sending…"
+      "idle": "Saada sõnum",
+      "loading": "Saadan…"
     }
   },
   "consulting": {
-    "title": "Consulting Questionnaire",
-    "searchPlaceholder": "Search questions...",
-    "noResults": "No questions found.",
+    "title": "Nõustamise küsimustik",
+    "searchPlaceholder": "Otsi küsimusi...",
+    "noResults": "Küsimusi ei leitud.",
     "questions": [
       {
-        "question": "What is your company's core value proposition beyond competitive pricing?",
-        "answer": "Security is our primary differentiator. We position ourselves as a company that builds highly secure systems with enterprise-grade security practices embedded throughout the development lifecycle."
+        "question": "Mis on teie ettevõtte põhiväärtus peale konkurentsivõimelise hinna?",
+        "answer": "Turvalisus on meie peamine eristaja. Ehitatame väga turvalisi süsteeme, kus ettevõttekvaliteediga turvapraktikad on kogu arendustsüklisse sisse põimitud."
       },
       {
-        "question": "How long has your company been in business, and what is your track record?",
-        "answer": "We have successfully delivered major projects including: NAK (Nur Astana Kurylys) - AI-powered team management platform, and Chic Flowers - Complete digital platform for a major flower retail company."
+        "question": "Kui kaua olete tegutsenud ja milline on teie kogemus?",
+        "answer": "Oleme edukalt tarninud suuri projekte, nt NAK (Nur Astana Kurylys) – AI-toega meeskonnajuhtimise platvorm, ja Chic Flowers – täielik digitaalne platvorm suurele lillejaekaubandusettevõttele."
       },
       {
-        "question": "What differentiates your technical capabilities and service quality from EPAM and other competitors?",
-        "answer": "Our key differentiator is our security-first development approach. We integrate security practices from project inception through deployment and maintenance."
+        "question": "Mis eristab teie tehnilisi võimeid ja teenusekvaliteeti EPAMist ja teistest konkurentidest?",
+        "answer": "Meie võtmeerinevus on turvalisus esikohal arendus. Lisame turvapraktikad alates projektikäivitusest kuni deploy ja hoolduseni."
       },
       {
-        "question": "How do you maintain quality while offering competitive pricing?",
-        "answer": "We offer services at 15% below market rates while maintaining exceptional quality through optimized operations, strategic talent sourcing, and efficient project management methodologies."
+        "question": "Kuidas hoiate kvaliteeti, kui pakute konkurentsivõimelist hinda?",
+        "answer": "Pakume teenuseid u 15% turuhinnast soodsamalt, hoides kvaliteeti tänu optimeeritud tööle, strateegilisele talentide värbamisele ja efektiivsele projektijuhtimisele."
       },
       {
-        "question": "What specific software development services do you provide?",
-        "answer": "End-to-end software development: custom applications, AI-powered solutions, cybersecurity product development (Silence AI-SOC), system integration, cloud migration, and DevOps. We also offer dedicated product development and staff augmentation."
+        "question": "Milliseid tarkvaraarenduse teenuseid te konkreetselt pakute?",
+        "answer": "Täielik arendus: kohandatud rakendused, AI-lahendused, küberkaitsetoodete arendus (Silence AI-SOC), süsteemide integratsioon, pilvemigratsioon ja DevOps. Pakume ka pühendatud tootearendust ja meeskonna laiendamist."
       },
       {
-        "question": "Which industries and domains do you specialize in?",
-        "answer": "Construction, retail, fintech, cybersecurity, and digital platforms — including AI-driven team management, e-commerce, and enterprise security solutions."
+        "question": "Millistes valdkondades ja tööstustes olete spetsialiseerunud?",
+        "answer": "Ehituses, jaekaubanduses, fintehis, küberkaitses ja digiplatvormides – sh AI-põhine meeskonnajuhtimine, e-kaubandus ja ettevõtte turvalahendused."
       },
       {
-        "question": "What technology stacks and platforms does your team have expertise in?",
-        "answer": "GO, Swift, Flutter, cloud platforms (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript, and AI/ML frameworks. We build proprietary security tools like Silence AI-SOC."
+        "question": "Millistes tehnoloogiates ja platvormides teie meeskond tugev on?",
+        "answer": "GO, Swift, Flutter, pilveplatvormid (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript ja AI/ML raamistikud. Ehitatame ka oma turvatööriistu nagu Silence AI-SOC."
       },
       {
-        "question": "Do you offer end-to-end product development or specific services only?",
-        "answer": "We offer both: MVPs, full-cycle product delivery, staff augmentation, and cybersecurity integration."
+        "question": "Kas pakute nii end-to-end tootearendust kui ka üksikuid teenuseid?",
+        "answer": "Pakume mõlemat: MVP-sid, täistsükli tootearendust, meeskonna laiendamist ja küberkaitse integreerimist."
       },
       {
-        "question": "Can you provide both staff augmentation and dedicated team models?",
-        "answer": "Yes, we provide flexible engagement models: staff augmentation, dedicated teams, and project-based outsourcing."
+        "question": "Kas saate pakkuda nii meeskonna laiendust kui ka pühendatud tiimi mudeleid?",
+        "answer": "Jah. Meil on paindlikud koostöövormid: meeskonna laiendus, pühendatud tiimid ja projektipõhine outsource."
       },
       {
-        "question": "Do you offer consulting, architecture, and advisory services beyond development?",
-        "answer": "Yes: cybersecurity consulting, system architecture design, technology advisory, and security compliance assessments using Silence AI-SOC."
+        "question": "Kas pakute arenduse kõrval ka nõustamist ja arhitektuuri teenuseid?",
+        "answer": "Jah: küberkaitse nõustamine, süsteemiarhitektuuri disain, tehnoloogianõu ja turvastandardite hindamine Silence AI-SOC abil."
       }
     ]
   },
   "requestDemoModal": {
-    "title": "Request System",
-    "name": "Name",
-    "email": "Corporate Email",
-    "company": "Company Name",
+    "title": "Taotle süsteemi",
+    "name": "Nimi",
+    "email": "Ettevõtte e-post",
+    "company": "Ettevõtte nimi",
     "placeholders": {
-      "name": "John Doe",
-      "email": "john@company.com",
+      "name": "Mati Maasikas",
+      "email": "mati@company.com",
       "company": "Acme Corp"
     },
-    "submit": "Send Request",
-    "successTitle": "Request Sent!",
-    "successBody": "Thank you for your interest. We will be in touch shortly.",
-    "close": "Close"
+    "submit": "Saada päring",
+    "successTitle": "Päring saadetud!",
+    "successBody": "Aitäh huvi eest. Võtame sinuga peagi ühendust.",
+    "close": "Sulge"
   },
   "requestSystemModal": {
-    "title": "Request System",
-    "name": "Name",
-    "email": "Corporate Email",
-    "company": "Company Name",
+    "title": "Taotle süsteemi",
+    "name": "Nimi",
+    "email": "Ettevõtte e-post",
+    "company": "Ettevõtte nimi",
     "placeholders": {
-      "name": "John Doe",
-      "email": "john@company.com",
+      "name": "Mati Maasikas",
+      "email": "mati@company.com",
       "company": "Acme Corp"
     },
-    "submit": "Download",
-    "successTitle": "Request Sent!",
-    "successBody": "Thank you. The system download instructions will be sent to your email.",
-    "close": "Close"
+    "submit": "Laadi alla",
+    "successTitle": "Päring saadetud!",
+    "successBody": "Aitäh. Süsteemi allalaadimise juhised saadetakse sinu e-postile.",
+    "close": "Sulge"
   },
   "policySidebar": {
-    "tableOfContents": "Table of Contents"
+    "tableOfContents": "Sisukord"
   },
   "whyChooseUs": {
-    "badge": "Results-driven engineering",
-    "title": "Why Choose Us",
-    "subtitle": "Trusted by teams from",
-    "subtitleHighlight": "billion-dollar organizations",
-    "subtitleTail": "— and shipped with startup speed.",
-    "learnMore": "Learn more",
+    "badge": "Tulemusele suunatud inseneeria",
+    "title": "Miks valida meid",
+    "subtitle": "Usaldavad meeskonnad",
+    "subtitleHighlight": "miljardiettevõtetest",
+    "subtitleTail": "— ja tarnime idu kiirusega.",
+    "learnMore": "Loe lähemalt",
     "logos": {
       "kmg": "KazMunayGas",
       "nak": "Nur Astana Kurylys"
     },
     "features": {
       "fast": {
-        "title": "Fast Delivery with Enterprise Quality",
-        "description": "Rapid, iterative delivery cycles that meet enterprise-grade reliability and compliance.",
-        "pill": "Speed + Quality"
+        "title": "Kiire tarne ettevõtte kvaliteediga",
+        "description": "Kiired iteratiivsed tarnekäigud, mis vastavad ettevõtte töökindluse ja vastavuse nõuetele.",
+        "pill": "Kiirus + Kvaliteet"
       },
       "ai": {
-        "title": "AI-first Product Engineering",
-        "description": "From prototypes to production AI agents — we design, train, and deploy models that solve real business problems.",
-        "pill": "AI Engineering"
+        "title": "AI-esmane tooteinseneeria",
+        "description": "Alates prototüüpidest kuni tootmis-AGI agentideni – disainime, treenime ja juurutame mudeleid, mis lahendavad päris äriprobleeme.",
+        "pill": "AI-inseneeria"
       },
       "local": {
-        "title": "Local Expertise, Global Reach",
-        "description": "Deep knowledge of Kazakhstan's market and regulations combined with international best practices.",
+        "title": "Kohalik kompetents, globaalne ulatus",
+        "description": "Sügav teadmine Kasahstani turust ja regulatsioonidest koos rahvusvaheliste parimate tavadega.",
         "pill": "KZ + Global"
       }
     }
   },
   "servicesBlock": {
-    "badge": "What we offer",
-    "title": "Our Services",
-    "description": "Premium UI, strong engineering, and fast delivery — everything you need to launch a product that looks and performs like a top-tier brand.",
-    "learnMore": "Learn more",
-    "learnMoreAria": "Learn more about this service",
+    "badge": "Mida pakume",
+    "title": "Meie teenused",
+    "description": "Kvaliteetne UI, tugev inseneeria ja kiire tarne — kõik, et lansseerida toode, mis näeb välja ja toimib tippbrändina.",
+    "learnMore": "Loe lähemalt",
+    "learnMoreAria": "Loe selle teenuse kohta",
     "services": {
       "aiAgents": {
-        "title": "AI Agents",
-        "description": "Custom conversational and autonomous agents for support, ops, and analytics.",
-        "tag": "Automation"
+        "title": "AI agendid",
+        "description": "Kohandatud vestlus- ja autonoomsed agendid toe, operatsioonide ja analüütika jaoks.",
+        "tag": "Automatiseerimine"
       },
       "customSoftware": {
-        "title": "Custom Software",
-        "description": "End-to-end web and desktop apps tailored to your workflows.",
-        "tag": "Build"
+        "title": "Kohandatud tarkvara",
+        "description": "Täielikud veebi- ja töölauarakendused sinu töövoogude järgi.",
+        "tag": "Ehita"
       },
       "cybersecurity": {
-        "title": "Cybersecurity",
-        "description": "Audits, penetration testing, and continuous monitoring.",
-        "tag": "Protect"
+        "title": "Küberkaitse",
+        "description": "Auditid, pentest ja pidev monitooring.",
+        "tag": "Kaitse"
       },
       "backend": {
-        "title": "Backend / DevOps",
-        "description": "Scalable APIs, CI/CD pipelines, and cloud infrastructure.",
-        "tag": "Scale"
+        "title": "Back-end / DevOps",
+        "description": "Skaleeruvad API-d, CI/CD vood ja pilveinfrastruktuur.",
+        "tag": "Skaleeri"
       },
       "mobile": {
-        "title": "Mobile",
-        "description": "Cross-platform apps with native performance and polished UX.",
-        "tag": "Ship"
+        "title": "Mobiil",
+        "description": "Platvormideülesed rakendused natiivse jõudluse ja lihvitud UX-iga.",
+        "tag": "Tarni"
       }
     }
   },
   "caseStudies": {
-    "badge": "Proven Impact",
-    "title": "Case Studies",
-    "subtitle": "We don’t ship features. We ship outcomes.",
-    "problem": "Problem:",
-    "solution": "Solution:",
-    "liveImpact": "Live Impact",
-    "before": "Before",
-    "after": "After",
-    "buildCta": "Build something like this →",
-    "caseStudy": "Case Study",
+    "badge": "Tõestatud mõju",
+    "title": "Juhtumiuuringud",
+    "subtitle": "Me ei saada funktsioone, vaid tulemusi.",
+    "problem": "Probleem:",
+    "solution": "Lahendus:",
+    "liveImpact": "Reaalne mõju",
+    "before": "Enne",
+    "after": "Pärast",
+    "buildCta": "Ehita midagi sarnast →",
+    "caseStudy": "Juhtumiuuring",
     "items": {
       "nak": {
-        "title": "NAK — Team Management AI",
-        "problem": "Manual resource allocation",
-        "solution": "AI-powered scheduling agent",
-        "result": "+32% productivity",
-        "metricLabel": "Team Output Index"
+        "title": "NAK — meeskonnajuhtimise AI",
+        "problem": "Käsitsi ressursijaotus",
+        "solution": "AI-ga graafikuagent",
+        "result": "+32% tootlikkus",
+        "metricLabel": "Meeskonna väljundindeks"
       },
       "chic": {
-        "title": "Chic Flowers — eCommerce",
-        "problem": "Low online conversions",
-        "solution": "Personalized recommender + UX overhaul",
-        "result": "+45% online sales",
-        "metricLabel": "Conversion Rate Growth"
+        "title": "Chic Flowers — e-pood",
+        "problem": "Madalad konversioonid veebis",
+        "solution": "Isikupärastatud soovitaja + UX uuendus",
+        "result": "+45% veebimüük",
+        "metricLabel": "Konversioonimäära kasv"
       },
       "silence": {
         "title": "Silence AI-SOC",
-        "problem": "High alert noise",
-        "solution": "AI detection & automated response",
-        "result": "−68% false positives",
-        "metricLabel": "False Alert Volume"
+        "problem": "Kõrge häirede müra",
+        "solution": "AI tuvastus ja automaatne reageerimine",
+        "result": "−68% valehäireid",
+        "metricLabel": "Valehäirete maht"
       }
     }
   },
   "howWeWork": {
-    "title": "How We Work",
-    "subtitle": "Ultra-fast delivery pipeline — optimized for velocity.",
+    "title": "Kuidas töötame",
+    "subtitle": "Ülikiire tarneahel — optimeeritud kiirusele.",
     "steps": {
       "discovery": {
-        "title": "Discovery",
-        "desc": "Requirements, stakeholders, success metrics."
+        "title": "Analüüs",
+        "desc": "Nõuded, osapooled, edu mõõdikud."
       },
       "design": {
-        "title": "Design",
-        "desc": "UX, architecture, prototype."
+        "title": "Disain",
+        "desc": "UX, arhitektuur, prototüüp."
       },
       "poc": {
-        "title": "Proof of Concept",
-        "desc": "Rapid validation with measurable KPIs."
+        "title": "Kontseptsiooni tõestus",
+        "desc": "Kiire valideerimine mõõdetavate KPI-dega."
       },
       "build": {
-        "title": "Build",
-        "desc": "Iterative sprints, automated tests."
+        "title": "Ehitus",
+        "desc": "Iteratiivsed sprindid, automatiseeritud testid."
       },
       "deploy": {
-        "title": "Deploy",
-        "desc": "CI/CD, monitoring, security hardening."
+        "title": "Juurutamine",
+        "desc": "CI/CD, monitooring, turva karmistamine."
       },
       "support": {
-        "title": "Support & Scale",
-        "desc": "Maintenance, roadmap, continuous improvement."
+        "title": "Tugi ja skaleerimine",
+        "desc": "Hooldus, tegevuskava, pidev parendus."
       }
     }
   },
   "technologyStack": {
-    "title": "Technology Stack",
-    "subtitle": "A carefully selected, production-grade stack engineered for speed, scalability, and beautiful user experiences."
+    "title": "Tehnoloogiakomplekt",
+    "subtitle": "Hoolikalt valitud tootmisklassi stack kiiruse, skaleeritavuse ja esmaklassilise UX jaoks."
   },
   "backToTop": {
-    "label": "Back to top"
+    "label": "Tagasi üles"
   },
   "pricingCustom": {
     "title": "Läbipaistev hinnakujundus",
@@ -884,6 +889,63 @@
           "manager": "Pühendunud haldur"
         }
       }
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "AI turve ja arendus",
+      "title": "Ehita turvaliselt. Deploee kindlalt.",
+      "subtitle": "Kaks tellimuspõhist süsteemi (AI-SOC, SLNC-env) + kohandatud AI ja tarkvara suurtele meeskondadele.",
+      "ctaPrimary": "Taotle demo",
+      "ctaSecondary": "Ava süsteemid",
+      "highlights": {
+        "coverage": "24/7 AI-ga toetatud SOC",
+        "onPrem": "0-egress on-prem",
+        "deploy": "Turvaline deploy 4 minutiga"
+      },
+      "metrics": {
+        "title": "Ehitatud reguleeritud meeskondadele",
+        "soc": "AI-ga toetatud SOC katvus",
+        "egress": "Kõik on-prem — kood, promptid, build'id",
+        "deployment": "esimese turvalise deploy'ni",
+        "locales": "lokalisatsioone kohe saadaval"
+      }
+    },
+    "systems": {
+      "title": "Süsteemid",
+      "subtitle": "Vali sobiv tellimusteenus: AI-SOC tuvastuseks ja SLNC-env suletud arenduseks.",
+      "cta": "Vaata detaile",
+      "aiSoc": {
+        "title": "AI-SOC",
+        "desc": "Hallatud tuvastus ja reageerimine AI kaaspilootidega SOC-tiimidele.",
+        "badge": "Tellimus"
+      },
+      "slncEnv": {
+        "title": "SLNC-env",
+        "desc": "Suletud arenduspilv, mis hoiab koodi, prompte ja build'e on-prem.",
+        "badge": "Tellimus"
+      }
+    },
+    "services": {
+      "title": "Kohandatud arendusteenused",
+      "subtitle": "AI agendid, integratsioonid ja täistsükli arendus, kus turve on algusest peale sees.",
+      "cta": "Vaata teenuseid",
+      "cards": {
+        "agents": "Tootmisklassi AI agendid koos kaitsemehhanismide, RAG ja turvaliste ühendustega.",
+        "integrations": "Tarnijatest sõltumatud integratsioonid sinu stacki, IAM-i ja andmehaldusega.",
+        "delivery": "Täistsükli tarne töökindluse SLO-de, jälgitavuse ja turvakontrollidega."
+      },
+      "cardsTitle": {
+        "agents": "Agendid",
+        "integrations": "Integratsioonid",
+        "delivery": "Tarne"
+      }
+    },
+    "contact": {
+      "title": "Valmis ühendama AI-SOCi ja SLNC-envi?",
+      "subtitle": "Räägi oma turva- ja tarneeesmärkidest — paneme kokku õiged süsteemid ja teenused.",
+      "cta": "Taotle demo",
+      "ctaSecondary": "Räägi teenindustiimiga"
     }
   }
 }

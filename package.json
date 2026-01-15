@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "i18n:sync": "node scripts/i18n-sync.mjs"
   },
   "dependencies": {
     "@tabler/icons-react": "^3.34.1",

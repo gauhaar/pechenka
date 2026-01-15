@@ -137,16 +137,16 @@
   left: 0;
   border-radius: inherit;
   background: radial-gradient(
-    1300px circle at var(--x) var(--y),
-    var(--glow-color),
-    transparent 30%
+    950px circle at var(--x) var(--y),
+    color-mix(in srgb, var(--glow-color) 75%, transparent),
+    transparent 45%
   );
   opacity: 0;
   transition: all 0.2s ease-in-out;
 }
 
 .card-glow:hover::before {
-  opacity: 1;
+  opacity: 0.6;
 }
 
 .inner-glow {
@@ -173,7 +173,7 @@
 }
 
 .card-glow:hover .inner-glow::after {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .recon-card-inner {

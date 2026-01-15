@@ -1,13 +1,13 @@
 {
   "languageSelector": {
     "triggerLabel": "اختر اللغة",
-    "menuLabel": "يرجى اختيار اللغة",
-    "searchLabel": "Search languages",
-    "searchPlaceholder": "Search by name or native script",
-    "searchResults": "Search results",
-    "noMatches": "No languages match your search.",
-    "popular": "Most popular",
-    "allLanguages": "All languages"
+    "menuLabel": "اختر اللغة",
+    "searchLabel": "بحث عن اللغات",
+    "searchPlaceholder": "ابحث بالاسم أو بالخط الأصلي",
+    "searchResults": "نتائج البحث",
+    "noMatches": "لا توجد لغات مطابقة للبحث.",
+    "popular": "الأكثر شيوعاً",
+    "allLanguages": "جميع اللغات"
   },
   "header": {
     "nav": {
@@ -17,13 +17,18 @@
       "instructions": "الإرشادات",
       "product": "AI-SOC",
       "secureDevelopment": "SLNC-env",
-      "developerServices": "خدمات المطورين"
+      "developerServices": "خدمات المطورين",
+      "home": "الرئيسية",
+      "systems": "الأنظمة",
+      "systemsAiSoc": "AI-SOC",
+      "systemsSlncEnv": "SLNC-env",
+      "services": "الخدمات"
     },
     "login": "طلب عرض تجريبي",
     "cta": {
-      "contact": "Contact",
-      "download": "Download",
-      "requestDemo": "Request Demo"
+      "contact": "تواصل",
+      "download": "تنزيل",
+      "requestDemo": "طلب عرض تجريبي"
     }
   },
   "affiliate": {
@@ -85,7 +90,7 @@
         "description": "تضاف المكافآت إلى رصيد شريكك خلال دقيقة بعد إتمام المعاملة—من دون قوائم مراجعة يدوية."
       },
       "withdrawal": {
-        "title": "Withdrawals processed in 2 business days",
+        "title": "يتم تنفيذ السحوبات خلال يومي عمل",
         "description": "تتم مراجعة طلبات السحب تلقائياً وتصل إلى حسابك البنكي خلال يومي عمل."
       },
       "sample": {
@@ -112,56 +117,56 @@
       }
     },
     "termsAff": {
-      "label": "Affiliate Program",
-      "title": "Affiliate Terms of Service",
-      "notice": "This policy is available only in English",
-      "intro": "These terms describe how rewards are issued and paid to partners participating in the Silence AI affiliate program.",
+      "label": "برنامج الشركاء",
+      "title": "شروط خدمة برنامج الشركاء",
+      "notice": "هذه السياسة متاحة باللغة الإنجليزية فقط",
+      "intro": "توضح هذه الشروط كيفية منح ودفع المكافآت للشركاء المشاركين في برنامج إحالة Silence AI.",
       "meta": {
-        "effective": "Effective date: 10 November 2024",
-        "lastUpdated": "Last updated: 10 November 2024"
+        "effective": "تاريخ السريان: 10 نوفمبر 2024",
+        "lastUpdated": "آخر تحديث: 10 نوفمبر 2024"
       },
       "sections": {
         "overview": {
-          "title": "1. Program Overview",
-          "body1": "1.1 Agreement Scope: These Affiliate Terms of Service (\"Terms\") govern your participation in the Silence AI affiliate program operated by Silence AI LLC (\"Silence AI,\" \"we,\" \"us,\" or \"our\"). These Terms apply to you, the individual or entity enrolling as an affiliate partner (\"you\" or \"your\"), and, where applicable, your employer, principal, or organization if you act on their behalf.",
-          "body2": "1.2 Program Summary: Under this program, qualified partners earn commission-based rewards when referred customers purchase or top up the AI-SOC 1 product. Participation in the affiliate program also requires compliance with the general Silence AI Terms of Service."
+          "title": "1. نظرة عامة على البرنامج",
+          "body1": "1.1 نطاق الاتفاقية: تحكم هذه الشروط مشاركتك في برنامج الشركاء لدى Silence AI الذي تديره Silence AI LLC. تنطبق الشروط عليك أنت (الفرد أو الكيان المنضم كشريك)، وعلى جهة عملك أو منظمتك إن كنت تتصرف نيابة عنها.",
+          "body2": "1.2 ملخص البرنامج: يحصل الشركاء المؤهلون على عمولات عندما يشتري العملاء المحالون منتج AI-SOC 1 أو يشحنون الرصيد. يتطلب الانضمام الامتثال لشروط خدمة Silence AI العامة."
         },
         "eligibility": {
-          "title": "2. Partner Eligibility",
-          "item1": "You must maintain an active Silence AI affiliate account with accurate business and payment details.",
-          "item2": "Referrals must complete registration through your issued link or promo code.",
-          "item3": "Accounts found to be fraudulent, self-referred, or in breach of applicable law are not eligible for rewards."
+          "title": "2. أهلية الشريك",
+          "item1": "يجب أن تحافظ على حساب شريك نشط لدى Silence AI ببيانات عمل ودفع دقيقة.",
+          "item2": "يجب أن يكمل العملاء التسجيل عبر الرابط أو الرمز الترويجي الصادر لك.",
+          "item3": "الحسابات الاحتيالية أو الذاتية أو المخالفة للقانون غير مؤهلة للمكافآت."
         },
         "commission": {
-          "title": "3. Commission Structure",
-          "body1": "You earn a 10% reward on every balance top-up completed by an account registered through your invitation.",
-          "body2": "Commission is calculated from the net top-up amount after payment processing fees are deducted."
+          "title": "3. هيكل العمولة",
+          "body1": "تحصل على مكافأة 10٪ على كل عملية شحن رصيد تتم عبر حساب مسجّل من خلال دعوتك.",
+          "body2": "تُحتسب العمولة من صافي مبلغ الشحن بعد خصم رسوم المعالجة."
         },
         "rewardPosting": {
-          "title": "4. Reward Posting",
-          "body1": "Rewards post to your partner balance within one minute after the transaction successfully clears. There is no manual approval queue.",
-          "body2": "Notifications appear in your affiliate dashboard alongside the customer identifier and top-up amount."
+          "title": "4. تسجيل المكافآت",
+          "body1": "تُسجَّل المكافآت في رصيد الشريك خلال دقيقة من إتمام العملية بنجاح، ولا توجد طوابير موافقة يدوية.",
+          "body2": "تظهر الإشعارات في لوحة تحكم الشريك مع معرف العميل ومبلغ الشحن."
         },
         "withdrawals": {
-          "title": "5. Withdrawals",
-          "body1": "Withdrawal requests are processed within two business days and paid out using the settlement method on file.",
-          "body2": "Minimum withdrawal thresholds and supported payout networks are published inside the affiliate dashboard."
+          "title": "5. السحوبات",
+          "body1": "تُعالج طلبات السحب خلال يومي عمل وتُدفع بوسيلة التسوية المسجلة.",
+          "body2": "يتم نشر حدود السحب الدنيا والشبكات المدعومة داخل لوحة التحكم."
         },
         "productScope": {
-          "title": "6. Product Scope",
-          "body1": "Rewards are only provided for the AI-SOC 1 product. Other Silence AI services are excluded from the affiliate program unless explicitly stated otherwise in writing.",
-          "body2": "If additional products become eligible, Silence AI will publish an updated list inside these terms."
+          "title": "6. نطاق المنتجات",
+          "body1": "المكافآت مخصصة لمنتج AI-SOC 1 فقط. تستثنى الخدمات الأخرى ما لم يُذكر خلاف ذلك كتابياً.",
+          "body2": "إذا أصبحت منتجات إضافية مؤهلة، ستنشر Silence AI قائمة محدثة ضمن هذه الشروط."
         },
         "compliance": {
-          "title": "7. Partner Conduct & Compliance",
-          "item1": "Partners must represent Silence AI accurately and avoid misleading claims about features or pricing.",
-          "item2": "Marketing communications must comply with applicable anti-spam, privacy, and advertising regulations.",
-          "item3": "Silence AI may suspend or terminate accounts that violate these obligations or harm the brand."
+          "title": "7. سلوك الشريك والامتثال",
+          "item1": "يجب على الشركاء تمثيل Silence AI بدقة وتجنب الادعاءات المضللة حول المزايا أو الأسعار.",
+          "item2": "يجب أن تلتزم الاتصالات التسويقية بالقوانين المعمول بها لمكافحة البريد المزعج والخصوصية والإعلانات.",
+          "item3": "يجوز لـ Silence AI تعليق أو إنهاء الحسابات التي تنتهك هذه الالتزامات أو تضر بالعلامة."
         },
         "changes": {
-          "title": "8. Changes & Contact",
-          "body1": "Silence AI may update these affiliate terms to reflect changes in the program or applicable law. Updated versions take effect upon publication on this page.",
-          "body2": "Questions about the affiliate program can be sent to info@silenceai.net."
+          "title": "8. التغييرات والتواصل",
+          "body1": "قد تُحدَّث شروط الشركاء لتعكس تغييرات البرنامج أو القوانين. يسري الإصدار المحدث عند نشره في هذه الصفحة.",
+          "body2": "للاستفسارات حول برنامج الشركاء يمكن المراسلة على info@silenceai.net."
         }
       }
     }
@@ -346,7 +351,7 @@
   },
   "modal": {
     "title": "قيد التطوير النشط",
-    "body": "The system is expected to be launched on October 10"
+    "body": "من المتوقع إطلاق النظام في 10 أكتوبر"
   },
   "lamp": {
     "title": "واقع الهجمات السيبرانية"
@@ -569,104 +574,104 @@
     }
   },
   "pricingCta": {
-    "requestSystem": "Request System"
+    "requestSystem": "طلب النظام"
   },
   "contactForm": {
-    "title": "Contact Us",
-    "success": "Thanks! Your message has been sent. We will contact you shortly.",
-    "errorRequired": "Please fill in your name, email and a short message.",
-    "errorSend": "Unable to send message. Please try again later.",
+    "title": "تواصل معنا",
+    "success": "شكرًا لك! تم إرسال رسالتك. سنتواصل معك قريبًا.",
+    "errorRequired": "يرجى إدخال الاسم والبريد الإلكتروني ورسالة قصيرة.",
+    "errorSend": "تعذّر إرسال الرسالة. حاول مرة أخرى لاحقًا.",
     "placeholders": {
-      "name": "Your name",
-      "email": "Email",
-      "type": "Project Type (optional)",
-      "budget": "Budget (optional)",
-      "message": "Tell us about your project..."
+      "name": "اسمك",
+      "email": "البريد الإلكتروني",
+      "type": "نوع المشروع (اختياري)",
+      "budget": "الميزانية (اختياري)",
+      "message": "أخبرنا عن مشروعك..."
     },
     "submit": {
-      "idle": "Send Message",
-      "loading": "Sending…"
+      "idle": "إرسال الرسالة",
+      "loading": "جارٍ الإرسال…"
     }
   },
   "consulting": {
-    "title": "Consulting Questionnaire",
-    "searchPlaceholder": "Search questions...",
-    "noResults": "No questions found.",
+    "title": "استبيان الاستشارات",
+    "searchPlaceholder": "ابحث في الأسئلة...",
+    "noResults": "لم يتم العثور على أسئلة.",
     "questions": [
       {
-        "question": "What is your company's core value proposition beyond competitive pricing?",
-        "answer": "Security is our primary differentiator. We position ourselves as a company that builds highly secure systems with enterprise-grade security practices embedded throughout the development lifecycle."
+        "question": "ما هي القيمة الجوهرية لشركتكم إلى جانب التسعير التنافسي؟",
+        "answer": "الأمن هو الفارق الأساسي لدينا. نضع أنفسنا كشركة تبني أنظمة آمنة للغاية مع ممارسات أمان على مستوى المؤسسات طوال دورة التطوير."
       },
       {
-        "question": "How long has your company been in business, and what is your track record?",
-        "answer": "We have successfully delivered major projects including: NAK (Nur Astana Kurylys) - AI-powered team management platform, and Chic Flowers - Complete digital platform for a major flower retail company."
+        "question": "منذ متى تعمل شركتكم، وما سجل الإنجازات؟",
+        "answer": "نفذنا مشاريع كبرى بنجاح مثل: NAK (منصة إدارة فرق بالذكاء الاصطناعي) و Chic Flowers (منصة رقمية متكاملة لتجزئة الزهور)."
       },
       {
-        "question": "What differentiates your technical capabilities and service quality from EPAM and other competitors?",
-        "answer": "Our key differentiator is our security-first development approach. We integrate security practices from project inception through deployment and maintenance."
+        "question": "ما الذي يميز قدراتكم التقنية وجودة الخدمة عن EPAM وغيرهم؟",
+        "answer": "نهج التطوير الموجه بالأمن هو الفارق؛ ندمج الأمان من الفكرة إلى الإطلاق والصيانة."
       },
       {
-        "question": "How do you maintain quality while offering competitive pricing?",
-        "answer": "We offer services at 15% below market rates while maintaining exceptional quality through optimized operations, strategic talent sourcing, and efficient project management methodologies."
+        "question": "كيف تحافظون على الجودة مع تقديم أسعار تنافسية؟",
+        "answer": "نقدم الخدمات بـ 15٪ أقل من السوق مع جودة عالية بفضل العمليات المحسّنة، واختيار المواهب الاستراتيجي، وإدارة المشاريع الفعالة."
       },
       {
-        "question": "What specific software development services do you provide?",
-        "answer": "End-to-end software development: custom applications, AI-powered solutions, cybersecurity product development (Silence AI-SOC), system integration, cloud migration, and DevOps. We also offer dedicated product development and staff augmentation."
+        "question": "ما الخدمات البرمجية المحددة التي تقدمونها؟",
+        "answer": "تطوير برمجيات شامل: تطبيقات مخصصة، حلول ذكاء اصطناعي، تطوير منتجات أمن سيبراني (Silence AI-SOC)، تكامل الأنظمة، الهجرة السحابية، وDevOps."
       },
       {
-        "question": "Which industries and domains do you specialize in?",
-        "answer": "Construction, retail, fintech, cybersecurity, and digital platforms — including AI-driven team management, e-commerce, and enterprise security solutions."
+        "question": "ما الصناعات أو المجالات التي تتخصصون فيها؟",
+        "answer": "الإنشاءات، التجزئة، التكنولوجيا المالية، الأمن السيبراني، والمنصات الرقمية — بما في ذلك إدارة الفرق بالذكاء الاصطناعي والتجارة الإلكترونية وحلول أمان المؤسسات."
       },
       {
-        "question": "What technology stacks and platforms does your team have expertise in?",
-        "answer": "GO, Swift, Flutter, cloud platforms (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript, and AI/ML frameworks. We build proprietary security tools like Silence AI-SOC."
+        "question": "ما هي التقنيات والمنصات التي تتقنونها؟",
+        "answer": "GO وSwift وFlutter، والمنصات السحابية (AWS/Azure/GCP)، وDocker/Kubernetes، وFastAPI، وJavaScript، وأطر الذكاء الاصطناعي/التعلم الآلي. نبني أدوات أمنية خاصة مثل Silence AI-SOC."
       },
       {
-        "question": "Do you offer end-to-end product development or specific services only?",
-        "answer": "We offer both: MVPs, full-cycle product delivery, staff augmentation, and cybersecurity integration."
+        "question": "هل تقدمون تطوير منتج متكامل أم خدمات محددة فقط؟",
+        "answer": "نقدم الاثنين: نماذج أولية وMVP، وتسليم منتج كامل، ودعم فرق، وتكامل أمن سيبراني."
       },
       {
-        "question": "Can you provide both staff augmentation and dedicated team models?",
-        "answer": "Yes, we provide flexible engagement models: staff augmentation, dedicated teams, and project-based outsourcing."
+        "question": "هل يمكنكم توفير نماذج تعزيز فرق وأيضًا فرق مخصصة؟",
+        "answer": "نعم، نوفر نماذج مرنة: تعزيز فرق، فرق مخصصة، وتعهيد قائم على المشاريع."
       },
       {
-        "question": "Do you offer consulting, architecture, and advisory services beyond development?",
-        "answer": "Yes: cybersecurity consulting, system architecture design, technology advisory, and security compliance assessments using Silence AI-SOC."
+        "question": "هل تقدمون استشارات وتصميماً معمارياً ونصحاً تقنياً إلى جانب التطوير؟",
+        "answer": "نعم: استشارات أمن سيبراني، وتصميم معماريات الأنظمة، واستشارات تقنية، وتقييم امتثال أمني باستخدام Silence AI-SOC."
       }
     ]
   },
   "requestDemoModal": {
-    "title": "Request System",
-    "name": "Name",
-    "email": "Corporate Email",
-    "company": "Company Name",
+    "title": "طلب النظام",
+    "name": "الاسم",
+    "email": "بريد الشركة",
+    "company": "اسم الشركة",
     "placeholders": {
-      "name": "John Doe",
+      "name": "محمد أحمد",
       "email": "john@company.com",
       "company": "Acme Corp"
     },
-    "submit": "Send Request",
-    "successTitle": "Request Sent!",
-    "successBody": "Thank you for your interest. We will be in touch shortly.",
-    "close": "Close"
+    "submit": "إرسال الطلب",
+    "successTitle": "تم إرسال الطلب!",
+    "successBody": "شكرًا لاهتمامك. سنتواصل معك قريبًا.",
+    "close": "إغلاق"
   },
   "requestSystemModal": {
-    "title": "Request System",
-    "name": "Name",
-    "email": "Corporate Email",
-    "company": "Company Name",
+    "title": "طلب النظام",
+    "name": "الاسم",
+    "email": "بريد الشركة",
+    "company": "اسم الشركة",
     "placeholders": {
-      "name": "John Doe",
+      "name": "محمد أحمد",
       "email": "john@company.com",
       "company": "Acme Corp"
     },
-    "submit": "Download",
-    "successTitle": "Request Sent!",
-    "successBody": "Thank you. The system download instructions will be sent to your email.",
-    "close": "Close"
+    "submit": "تنزيل",
+    "successTitle": "تم إرسال الطلب!",
+    "successBody": "شكرًا لك. ستصلك تعليمات تنزيل النظام عبر البريد الإلكتروني.",
+    "close": "إغلاق"
   },
   "policySidebar": {
-    "tableOfContents": "Table of Contents"
+    "tableOfContents": "جدول المحتويات"
   },
   "whyChooseUs": {
     "badge": "هندسة موجهة بالنتائج",
@@ -797,21 +802,28 @@
     }
   },
   "technologyStack": {
-    "title": "كومة التكنولوجيا",
-    "subtitle": "مجموعة مختارة بعناية من الدرجة الإنتاجية مصممة للسرعة وقابلية التوسع وتجارب مستخدم جميلة."
+    "title": "حزمة التقنيات",
+    "subtitle": "حزمة مختارة بعناية بمستوى الإنتاج، مصممة للسرعة، والقابلية للتوسع، وتجارب مستخدم مميزة."
+  },
+  "backToTop": {
+    "label": "العودة إلى الأعلى"
+  },
+  "technologyStack": {
+    "title": "حزمة التقنيات",
+    "subtitle": "حزمة مختارة بعناية بمستوى الإنتاج، مصممة للسرعة، والقابلية للتوسع، وتجارب مستخدم مميزة."
   },
   "backToTop": {
     "label": "العودة إلى الأعلى"
   },
   "pricingCustom": {
     "title": "أسعار شفافة",
-    "subtitle": "خطط مصممة للجوال لتنمو مع منتجك.",
+    "subtitle": "خطط ملائمة للهواتف تُبنى لتكبر مع منتجك.",
     "percentMaintenance": "{percent}% صيانة سنوية",
     "planEstimate": "${value}",
-    "perYear": "سنوياً (تقريبي)",
+    "perYear": "سنوياً (تقديري)",
     "calculator": {
       "title": "حاسبة تكلفة المشروع",
-      "subtitle": "حرك المؤشر لمعرفة تكلفة الصيانة السنوية",
+      "subtitle": "حرّك الشريط لمعرفة الصيانة السنوية",
       "projectCost": "تكلفة المشروع:",
       "projectValue": "${value}"
     },
@@ -830,7 +842,7 @@
         "badge": "الأكثر شيوعاً",
         "features": {
           "fix": "إصلاح الأخطاء الحرجة (24 ساعة)",
-          "updates": "10 ساعات تحديثات شهرية",
+          "updates": "10 ساعات تحديث شهري",
           "audit": "تدقيق أمني شهري",
           "manager": "مدير مخصص"
         }
@@ -845,6 +857,63 @@
           "manager": "مدير مخصص"
         }
       }
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "أمن وتطوير مدعوم بالذكاء الاصطناعي",
+      "title": "ابنِ بأمان. انشر بثقة.",
+      "subtitle": "نظامان باشتراك (AI-SOC وSLNC-env) بالإضافة إلى تطوير مخصص للذكاء الاصطناعي والبرمجيات لفرق المؤسسات.",
+      "ctaPrimary": "طلب عرض تجريبي",
+      "ctaSecondary": "استكشف الأنظمة",
+      "highlights": {
+        "coverage": "مركز عمليات أمنية مدعوم بالذكاء الاصطناعي 24/7",
+        "onPrem": "0 تسريب بيانات — على البنية الداخلية",
+        "deploy": "نشر آمن خلال 4 دقائق"
+      },
+      "metrics": {
+        "title": "مصمم للفرق المنظمة",
+        "soc": "تغطية مركز العمليات الأمنية بالذكاء الاصطناعي",
+        "egress": "كل شيء داخلياً — الكود والتعليمات والبناء",
+        "deployment": "حتى أول نشر آمن",
+        "locales": "عدد اللغات المدعومة جاهزاً"
+      }
+    },
+    "systems": {
+      "title": "الأنظمة",
+      "subtitle": "اختر منتج الاشتراك المناسب: AI-SOC للاكتشاف وSLNC-env للتطوير المغلق.",
+      "cta": "عرض التفاصيل",
+      "aiSoc": {
+        "title": "AI-SOC",
+        "desc": "اكتشاف واستجابة مُدارة مع مساعدين ذكاء اصطناعي لفرق الأمن.",
+        "badge": "اشتراك"
+      },
+      "slncEnv": {
+        "title": "SLNC-env",
+        "desc": "سحابة تطوير مغلقة تبقي الكود والتعليمات والبناء داخل منشأتك.",
+        "badge": "اشتراك"
+      }
+    },
+    "services": {
+      "title": "خدمات تطوير مخصصة",
+      "subtitle": "وكلاء ذكاء اصطناعي، تكاملات، وتسليم برمجي كامل مع أمان مدمج من اليوم الأول.",
+      "cta": "عرض الخدمات",
+      "cards": {
+        "agents": "وكلاء ذكاء اصطناعي بمستوى إنتاج مع ضوابط، وRAG، وروابط آمنة.",
+        "integrations": "تكاملات محايدة للمورّدين مع بنيتك وIAM وحوكمة البيانات.",
+        "delivery": "تسليم دورة كاملة مع مستويات موثوقية، وقابلية مراقبة، ومراجعات أمان."
+      },
+      "cardsTitle": {
+        "agents": "وكلاء",
+        "integrations": "تكاملات",
+        "delivery": "تسليم"
+      }
+    },
+    "contact": {
+      "title": "جاهز لدمج AI-SOC وSLNC-env؟",
+      "subtitle": "أخبرنا بأهدافك الأمنية والتسليم لنضبط النظام والخدمات الأنسب.",
+      "cta": "طلب عرض تجريبي",
+      "ctaSecondary": "تحدث مع فريق الخدمات"
     }
   }
 }

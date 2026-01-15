@@ -22,12 +22,27 @@ const Header = ({ onOpenModal }) => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [comingSoonOpen, setComingSoonOpen] = useState(false);
+  const [isSystemsOpen, setIsSystemsOpen] = useState(false);
   const { t } = useLanguage();
 
   const scrollToContact = () => {
     const contactSection = document.getElementById("contact-form");
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleContactLink = (e) => {
+                <Link
+                  href="/#contact-form"
+                  onClick={handleContactLink}
+                  className="text-sm font-semibold text-white/80 transition hover:text-white"
+                >
+                  {t("header.cta.contact")}
+                </Link>
+    if (pathname === "/") {
+      e.preventDefault();
+      scrollToContact();
     }
   };
 
@@ -51,34 +66,27 @@ const Header = ({ onOpenModal }) => {
     };
   }, []);
 
-  const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
+  const toggleMobileMenu = () =>
+    setIsMobileMenuOpen((prev) => {
+      const next = !prev;
+      if (!next) setIsSystemsOpen(false);
+      return next;
+    });
 
   const widthTarget = "100%";
 
   const condensedShift = isCondensed ? (isDesktop ? 24 : 16) : 0;
 
+  const systemsItems = [
+    { key: "ai-soc", label: t("header.nav.systemsAiSoc", "AI-SOC"), href: "/ai-soc" },
+    { key: "slnc-env", label: t("header.nav.systemsSlncEnv", "SLNC-env"), href: "/slnc-env" },
+  ];
+
   const navItems = [
-    { key: "mail", label: t("header.nav.mail"), onClick: () => setComingSoonOpen(true) },
-    {
-      key: "affiliate",
-      label: t("header.nav.affiliate"),
-      href: "/affiliate",
-    },
-    {
-      key: "instructions",
-      label: t("header.nav.instructions"),
-      onClick: () => setComingSoonOpen(true),
-    },
-    {
-      key: "product",
-      label: t("header.nav.product"),
-      href: "/ai-soc",
-    },
-    {
-      key: "secure-development",
-      label: t("header.nav.secureDevelopment"),
-      href: "/slnc-env",
-    },
+    { key: "home", label: t("header.nav.home", "Home"), href: "/" },
+    { key: "services", label: t("header.nav.services", "Services"), href: "/services" },
+    { key: "affiliate", label: t("header.nav.affiliate", "Affiliate Program"), href: "/affiliate" },
+    { key: "systems", label: t("header.nav.systems", "Systems"), children: systemsItems },
   ];
 
   return (
@@ -102,8 +110,60 @@ const Header = ({ onOpenModal }) => {
               onClick={(e) => e.stopPropagation()}
             >
               <nav className="mx-auto flex max-w-sm flex-col space-y-6 text-lg">
-                {navItems.map((item) =>
-                  item.href ? (
+                {navItems.map((item) => {
+                  if (item.children) {
+                    const expanded = isSystemsOpen;
+                    return (
+                      <div key={item.key} className="border-b border-white/20 pb-2 text-white">
+                        <button
+                          type="button"
+                          className="flex w-full items-center justify-between py-2 text-left"
+                          onClick={() => setIsSystemsOpen((prev) => !prev)}
+                          aria-expanded={expanded}
+                        >
+                          <span>{item.label}</span>
+                          <svg
+                            className={clsx("h-4 w-4 transition", expanded && "rotate-180")}
+                            viewBox="0 0 12 8"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true"
+                          >
+                            <path
+                              d="M10.59 0.589966L6 5.16997L1.41 0.589966L0 1.99997L6 7.99997L12 1.99997L10.59 0.589966Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </button>
+                        <AnimatePresence initial={false}>
+                          {expanded && (
+                            <motion.div
+                              initial={{ opacity: 0, y: -6 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              exit={{ opacity: 0, y: -4 }}
+                              className="mt-2 space-y-2 pl-2"
+                            >
+                              {item.children.map((child) => (
+                                <Link
+                                  key={child.key}
+                                  href={child.href}
+                                  className="block rounded-lg px-3 py-2 text-white/90 hover:bg-white/10"
+                                  onClick={() => {
+                                    setIsSystemsOpen(false);
+                                    setIsMobileMenuOpen(false);
+                                  }}
+                                >
+                                  {child.label}
+                                </Link>
+                              ))}
+                            </motion.div>
+                          )}
+                        </AnimatePresence>
+                      </div>
+                    );
+                  }
+
+                  return item.href ? (
                     <Link
                       key={item.key}
                       href={item.href}
@@ -125,8 +185,8 @@ const Header = ({ onOpenModal }) => {
                     >
                       {item.label}
                     </button>
-                  )
-                )}
+                  );
+                })}
                 <div className="pt-4 flex flex-col gap-4">
                   <LanguageSelector align="left" />
                   {!isMainPage && (
@@ -148,7 +208,7 @@ const Header = ({ onOpenModal }) => {
       </AnimatePresence>
 
       <motion.header
-        className="fixed left-0 top-2 z-50 w-full px-3"
+        className="fixed left-0 top-2 z-50 w-full px-4"
         initial={{ opacity: 0, y: -16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.35, ease: "easeOut" }}
@@ -172,7 +232,7 @@ const Header = ({ onOpenModal }) => {
           style={{ minWidth: isDesktop || isCondensed ? undefined : "100%" }}
         >
           <motion.div
-            className="flex items-center justify-between px-4 py-3 sm:px-6 lg:px-8"
+            className="flex items-center justify-between px-5 py-3 sm:px-7 lg:px-9"
             transition={{ duration: 0.3, ease: "easeOut" }}
           >
             <motion.div
@@ -197,8 +257,62 @@ const Header = ({ onOpenModal }) => {
                 isDesktop ? "flex" : "hidden"
               )}
             >
-              {navItems.map((item) =>
-                item.href ? (
+              {navItems.map((item) => {
+                if (item.children) {
+                  return (
+                    <div
+                      key={item.key}
+                      className="relative"
+                      onMouseEnter={() => setIsSystemsOpen(true)}
+                      onMouseLeave={() => setIsSystemsOpen(false)}
+                    >
+                      <button
+                        type="button"
+                        className="nav-link inline-flex items-center gap-1 text-white bg-transparent appearance-none focus:outline-none"
+                        aria-haspopup="true"
+                        aria-expanded={isSystemsOpen}
+                        onClick={() => setIsSystemsOpen((prev) => !prev)}
+                      >
+                        <span>{item.label}</span>
+                        <svg
+                          className={clsx("h-4 w-4 transition", isSystemsOpen && "rotate-180")}
+                          viewBox="0 0 12 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                        >
+                          <path
+                            d="M10.59 0.589966L6 5.16997L1.41 0.589966L0 1.99997L6 7.99997L12 1.99997L10.59 0.589966Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </button>
+                      <AnimatePresence>
+                        {isSystemsOpen && (
+                          <motion.div
+                            initial={{ opacity: 0, y: 6 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: 6 }}
+                            transition={{ duration: 0.15, ease: "easeOut" }}
+                            className="absolute left-0 mt-2 w-48 overflow-hidden rounded-xl border border-white/10 bg-black/85 p-2 shadow-2xl backdrop-blur-xl"
+                          >
+                            {item.children.map((child) => (
+                              <Link
+                                key={child.key}
+                                href={child.href}
+                                className="block rounded-lg px-3 py-2 text-sm text-white hover:bg-white/10"
+                              >
+                                {child.label}
+                              </Link>
+                            ))}
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
+                  );
+                }
+
+                return item.href ? (
                   <Link
                     key={item.key}
                     href={item.href}
@@ -215,8 +329,8 @@ const Header = ({ onOpenModal }) => {
                   >
                     {item.label}
                   </button>
-                )
-              )}
+                );
+              })}
             </nav>
 
             <div className="flex items-center gap-3">

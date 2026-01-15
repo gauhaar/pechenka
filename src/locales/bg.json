@@ -2,12 +2,12 @@
   "languageSelector": {
     "triggerLabel": "Изберете език",
     "menuLabel": "Изберете език",
-    "searchLabel": "Search languages",
-    "searchPlaceholder": "Search by name or native script",
-    "searchResults": "Search results",
-    "noMatches": "No languages match your search.",
-    "popular": "Most popular",
-    "allLanguages": "All languages"
+    "searchLabel": "Търсене на езици",
+    "searchPlaceholder": "Търсете по име или по оригинален скрипт",
+    "searchResults": "Резултати от търсенето",
+    "noMatches": "Нито един език не отговаря на търсенето.",
+    "popular": "Най-популярни",
+    "allLanguages": "Всички езици"
   },
   "header": {
     "nav": {
@@ -17,13 +17,18 @@
       "instructions": "Инструкции",
       "product": "AI-SOC",
       "secureDevelopment": "SLNC-env",
-      "developerServices": "Услуги за разработчици"
+      "developerServices": "Услуги за разработчици",
+      "home": "Начало",
+      "systems": "Системи",
+      "systemsAiSoc": "AI-SOC",
+      "systemsSlncEnv": "SLNC-env",
+      "services": "Услуги"
     },
     "login": "Вход",
     "cta": {
-      "contact": "Contact",
-      "download": "Download",
-      "requestDemo": "Request Demo"
+      "contact": "Контакт",
+      "download": "Изтегляне",
+      "requestDemo": "Заявете демо"
     }
   },
   "affiliate": {
@@ -34,8 +39,8 @@
       "earnings": "$2,940.00",
       "growth": "+18% спрямо миналия месец",
       "snapshot": {
-        "label": "Жив преглед",
-        "caption": "Производителността се обновява на всеки 60 секунди, а потвърдените плащания се синхронизират мигновено."
+        "label": "Наблюдение в реално време",
+        "caption": "Показателите се обновяват на всеки 60 секунди, а потвърдените плащания се синхронизират мигновено."
       },
       "graph": {
         "label": "Тенденция на приходите",
@@ -74,7 +79,7 @@
     "commission": {
       "heading": "Награди за баланс",
       "highlight": {
-        "label": "Защо партньорите го обичат"
+        "label": "Защо партньорите ни харесват"
       },
       "reward": {
         "title": "10% награда за всяко зареждане",
@@ -85,12 +90,12 @@
         "description": "Наградите се добавят към партньорския баланс до минута след финализиране на транзакцията — без ръчни опашки за одобрение."
       },
       "withdrawal": {
-        "title": "Withdrawals processed in 2 business days",
+        "title": "Тегления, обработвани до 2 работни дни",
         "description": "Подадените заявки за теглене се проверяват автоматично и достигат банковата ви сметка до два работни дни."
       },
       "sample": {
         "label": "Примери за зареждане",
-        "caption": "Партньорските приходи растат с всяко зареждане — без рестарт на нивата и без продуктови съпоставяния.",
+        "caption": "Партньорските приходи растат с всяко зареждане — без рестартиране на нивата и без задължителни продуктови продажби.",
         "topup": "$250 зареждане → $25 награда",
         "topupHigher": "$1,000 зареждане → $100 награда"
       },
@@ -112,56 +117,56 @@
       }
     },
     "termsAff": {
-      "label": "Affiliate Program",
-      "title": "Affiliate Terms of Service",
-      "notice": "This policy is available only in English",
-      "intro": "These terms describe how rewards are issued and paid to partners participating in the Silence AI affiliate program.",
+      "label": "Партньорска програма",
+      "title": "Условия за партньорската програма",
+      "notice": "Тази политика е налична само на английски език",
+      "intro": "Тези условия описват как се начисляват и изплащат награди на партньорите, участващи в партньорската програма на Silence AI.",
       "meta": {
-        "effective": "Effective date: 10 November 2024",
-        "lastUpdated": "Last updated: 10 November 2024"
+        "effective": "В сила от: 10 ноември 2024 г.",
+        "lastUpdated": "Последна актуализация: 10 ноември 2024 г."
       },
       "sections": {
         "overview": {
-          "title": "1. Program Overview",
-          "body1": "1.1 Agreement Scope: These Affiliate Terms of Service (\"Terms\") govern your participation in the Silence AI affiliate program operated by Silence AI LLC (\"Silence AI,\" \"we,\" \"us,\" or \"our\"). These Terms apply to you, the individual or entity enrolling as an affiliate partner (\"you\" or \"your\"), and, where applicable, your employer, principal, or organization if you act on their behalf.",
-          "body2": "1.2 Program Summary: Under this program, qualified partners earn commission-based rewards when referred customers purchase or top up the AI-SOC 1 product. Participation in the affiliate program also requires compliance with the general Silence AI Terms of Service."
+          "title": "1. Преглед на програмата",
+          "body1": "1.1 Обхват на споразумението: Тези Условия на партньорската програма (\"Условия\") уреждат участието ви в партньорската програма на Silence AI, управлявана от Silence AI LLC (\"Silence AI\", \"ние\", \"нас\" или \"наш\"). Тези Условия се прилагат за вас като физическо или юридическо лице, което се регистрира като партньор (\"вие\" или \"ваш\"), както и, когато е приложимо, за вашия работодател или организация, от чието име действате.",
+          "body2": "1.2 Резюме на програмата: По тази програма одобрените партньори получават комисионни, когато препоръчани от тях клиенти закупят или заредят продукта AI-SOC 1. Участието в партньорската програма изисква и спазване на общите Условия за ползване на Silence AI."
         },
         "eligibility": {
-          "title": "2. Partner Eligibility",
-          "item1": "You must maintain an active Silence AI affiliate account with accurate business and payment details.",
-          "item2": "Referrals must complete registration through your issued link or promo code.",
-          "item3": "Accounts found to be fraudulent, self-referred, or in breach of applicable law are not eligible for rewards."
+          "title": "2. Право на участие",
+          "item1": "Трябва да поддържате активен партньорски акаунт в Silence AI с коректни данни за бизнеса и плащанията.",
+          "item2": "Препоръките трябва да завършват регистрацията си чрез вашия уникален линк или промо код.",
+          "item3": "Акаунти, установени като измамни, самопрепоръчани или в нарушение на приложимото законодателство, не отговарят на условията за награди."
         },
         "commission": {
-          "title": "3. Commission Structure",
-          "body1": "You earn a 10% reward on every balance top-up completed by an account registered through your invitation.",
-          "body2": "Commission is calculated from the net top-up amount after payment processing fees are deducted."
+          "title": "3. Структура на комисионите",
+          "body1": "Получавате 10% награда за всяко зареждане на баланс, извършено от акаунт, регистриран чрез ваша покана.",
+          "body2": "Комисионата се изчислява върху нетната сума от зареждането след приспадане на таксите за обработка на плащането."
         },
         "rewardPosting": {
-          "title": "4. Reward Posting",
-          "body1": "Rewards post to your partner balance within one minute after the transaction successfully clears. There is no manual approval queue.",
-          "body2": "Notifications appear in your affiliate dashboard alongside the customer identifier and top-up amount."
+          "title": "4. Отразяване на наградите",
+          "body1": "Наградите се добавят към партньорския ви баланс до една минута след успешно приключване на транзакцията. Няма ръчна опашка за одобрение.",
+          "body2": "Известията се показват в партньорското табло заедно с идентификатора на клиента и сумата на зареждането."
         },
         "withdrawals": {
-          "title": "5. Withdrawals",
-          "body1": "Withdrawal requests are processed within two business days and paid out using the settlement method on file.",
-          "body2": "Minimum withdrawal thresholds and supported payout networks are published inside the affiliate dashboard."
+          "title": "5. Тегления",
+          "body1": "Заявките за теглене се обработват в рамките на два работни дни и се изплащат чрез запаметения в системата метод на разплащане.",
+          "body2": "Минималните суми за теглене и поддържаните мрежи за плащане са описани в партньорското табло."
         },
         "productScope": {
-          "title": "6. Product Scope",
-          "body1": "Rewards are only provided for the AI-SOC 1 product. Other Silence AI services are excluded from the affiliate program unless explicitly stated otherwise in writing.",
-          "body2": "If additional products become eligible, Silence AI will publish an updated list inside these terms."
+          "title": "6. Обхват на продукта",
+          "body1": "Награди се изплащат само за продукта AI-SOC 1. Други услуги на Silence AI са изключени от партньорската програма, освен ако изрично не е посочено друго в писмена форма.",
+          "body2": "Ако допълнителни продукти станат допустими, Silence AI ще публикува актуализиран списък в тези условия."
         },
         "compliance": {
-          "title": "7. Partner Conduct & Compliance",
-          "item1": "Partners must represent Silence AI accurately and avoid misleading claims about features or pricing.",
-          "item2": "Marketing communications must comply with applicable anti-spam, privacy, and advertising regulations.",
-          "item3": "Silence AI may suspend or terminate accounts that violate these obligations or harm the brand."
+          "title": "7. Поведение на партньора и съответствие",
+          "item1": "Партньорите трябва да представят Silence AI коректно и да избягват подвеждащи твърдения относно функционалности или цени.",
+          "item2": "Маркетинговите комуникации трябва да съответстват на приложимите изисквания за защита на личните данни, реклама и анти-спам регулации.",
+          "item3": "Silence AI може да прекрати или временно да спре акаунти, които нарушават тези задължения или вредят на марката."
         },
         "changes": {
-          "title": "8. Changes & Contact",
-          "body1": "Silence AI may update these affiliate terms to reflect changes in the program or applicable law. Updated versions take effect upon publication on this page.",
-          "body2": "Questions about the affiliate program can be sent to info@silenceai.net."
+          "title": "8. Промени и контакт",
+          "body1": "Silence AI може да актуализира тези условия на партньорската програма, за да отразява промени в програмата или законодателството. Актуализираните версии влизат в сила след публикуването им на тази страница.",
+          "body2": "Въпроси относно партньорската програма могат да бъдат изпращани на [info@silenceai.net](mailto:info@silenceai.net)."
         }
       }
     }
@@ -182,22 +187,22 @@
     "tooltips": {
       "web": {
         "title": "Защита от уеб атаки",
-        "content": "Системата защитава от ВСИЧКИ видове уеб атаки като DDoS, SQLi и други, с изключение на уязвимости в бизнес логиката"
+        "content": "Системата защитава от всички видове уеб атаки като DDoS, SQLi и други, с изключение на уязвимости в бизнес логиката."
       },
       "email": {
         "title": "Защита от имейл атаки",
-        "content": "Системата защитава от ВСИЧКИ видове имейл атаки като фишинг, зловредни прикачени файлове, опасни връзки и др."
+        "content": "Системата защитава от всички видове имейл атаки като фишинг, зловредни прикачени файлове, опасни връзки и др."
       },
       "vulnerability": {
         "title": "Откриване на уязвимости",
-        "content": "Системата намира уязвимости в кода на приложението и чрез динамично взаимодействие с вашия уебсайт/API, включително с помощта на интелигентната система"
+        "content": "Системата намира уязвимости в кода на приложението и чрез динамично взаимодействие с вашия уебсайт/API, включително с помощта на интелигентна система за знания."
       }
     }
   },
   "playground": {
     "options": {
       "globeShield": "Уеб сигурност и управление на трафика",
-      "emailSecurity": "Email Security"
+      "emailSecurity": "Имейл сигурност"
     }
   },
   "cookie": {
@@ -212,35 +217,35 @@
     "tooltips": {
       "cmcGlobal": {
         "title": "CMC с глобален мониторинг на трафика",
-        "content": "CMC (Централизирана конзола за управление) се интегрира безпроблемно с други системи за сигурност и е достъпна под същия домейн и интерфейс като Global Shield и Security Tester. Оттук можете да блокирате цели държави, да затваряте портове и да изпълнявате други операции"
+        "content": "CMC (Централизирана конзола за управление) се интегрира безпроблемно с други системи за сигурност и е достъпна под същия домейн и интерфейс като Global Shield и Security Tester. Оттук можете да блокирате цели държави, да затваряте портове и да изпълнявате други операции."
       },
       "countryBlacklisting": {
         "title": "Блокиране по държава",
-        "content": "Блокирайте целия трафик, идващ от определена държава"
+        "content": "Блокирайте целия трафик, идващ от определена държава."
       },
       "portManagement": {
         "title": "Управление на портове",
-        "content": "Затворете неупотребяваните портове, за да намалите повърхността за атака. Например деактивирайте порт 22, когато SSH достъп не е необходим"
+        "content": "Затворете неупотребяваните портове, за да намалите повърхността за атака. Например деактивирайте порт 22, когато SSH достъп не е необходим."
       },
       "cmcEmail": {
         "title": "CMC с усъвършенстван визуализатор на имейл потока",
-        "content": "CMC се интегрира с останалите системи за сигурност и ви позволява да наблюдавате имейл потоците и да преглеждате кореспонденцията на всички корпоративни потребители, които сте добавили"
+        "content": "CMC се интегрира с останалите системи за сигурност и ви позволява да наблюдавате имейл потоците и да преглеждате кореспонденцията на всички корпоративни потребители, които сте добавили."
       },
       "dynamicVulnerability": {
         "title": "Динамично откриване на уязвимости",
-        "content": "Открива уязвимости чрез взаимодействие с вашия сайт, включително чрез интелигентната система"
+        "content": "Открива уязвимости чрез взаимодействие с вашия сайт, включително чрез интелигентна система за анализ."
       },
       "codeAnalyzer": {
         "title": "Анализатор на код",
-        "content": "Идентифицира проблеми със сигурността директно в кодовата база чрез разширение за VS Code, което ви помага да ги отстраните преди внедряване"
+        "content": "Идентифицира проблеми със сигурността директно в кодовата база чрез разширение за VS Code, което ви помага да ги отстраните преди внедряване."
       },
       "intelligenceReport": {
         "title": "Информационен отчет",
-        "content": "Генерира подробни сведения за вашата цел – отворени портове, активни услуги, поддомейни и друга чувствителна информация, изискваща действие"
+        "content": "Генерира подробни сведения за вашата цел — отворени портове, активни услуги, поддомейни и друга чувствителна информация, изискваща действие."
       },
       "fullVulnerability": {
         "title": "Пълна проверка за уязвимости",
-        "content": "Пълната проверка включва както динамично сканиране, така и сканиране на кодовата база"
+        "content": "Пълната проверка включва както динамично сканиране, така и сканиране на кодовата база."
       }
     },
     "plans": {
@@ -276,7 +281,7 @@
       "securityTester": {
         "title": "Откриване на уязвимости",
         "price": "$25/месец",
-        "description": "До 50 ПЪЛНИ проверки месечно\nДопълнителни пълни проверки: $0.5 всяка",
+        "description": "До 50 пълни проверки месечно\nДопълнителни пълни проверки: $0.5 всяка",
         "button": "Започнете тестове",
         "features": {
           "dynamic": "Динамично откриване на уязвимости",
@@ -315,20 +320,20 @@
         }
       }
     },
-    "subtitle": "Mobile-first plans built to scale with your product.",
-    "percentMaintenance": "{percent}% yearly maintenance",
+    "subtitle": "Планове, ориентирани към мобилни устройства, създадени да мащабират заедно с вашия продукт.",
+    "percentMaintenance": "{percent}% годишна поддръжка",
     "planEstimate": "${value}",
-    "perYear": "per year (est.)",
+    "perYear": "на година (приблиз.)",
     "calculator": {
-      "title": "Project Cost Calculator",
-      "subtitle": "Slide to see your yearly maintenance",
-      "projectCost": "Project Cost:",
+      "title": "Калкулатор за разходите",
+      "subtitle": "Плъзнете, за да видите годишната си поддръжка",
+      "projectCost": "Цена на проекта:",
       "projectValue": "${value}"
     }
   },
   "solution": {
     "sectionTitle": "Нашето решение",
-    "sectionSubtitle": "Готово за 4 минути и приложимо от всеки IT специалист без опит в киберсигурността. Предлагаме усъвършенствана визуализация и достъпна цена.",
+    "sectionSubtitle": "Готово за 4 минути и приложимо от всеки IT специалист, без допълнително обучение по киберсигурност. Предлагаме усъвършенствана визуализация и достъпна цена.",
     "cards": {
       "globalShield": {
         "title": "Global Shield – мониторинг на трафика с ниво CIA",
@@ -367,25 +372,25 @@
     "items": [
       {
         "title": "39 секунди",
-        "description": "На всеки 39 секунди се извършва хакерска атака"
+        "description": "На всеки 39 секунди се извършва хакерска атака."
       },
       {
-        "title": "20 млн. DDoS атаки",
+        "title": "20.5 млн. DDoS атаки",
         "description": "20.5 млн. DDoS атаки само през първото тримесечие на 2025 г."
       },
       {
         "title": "Всеки ден",
-        "description": "30 000 уебсайта се хакват всеки ден"
+        "description": "30 000 уебсайта се хакват всеки ден."
       }
     ]
   },
   "floatingText": {
     "headline": "Открийте как мислят хакерите",
-    "description": "Следвайте ни за ежедневни изследвания на реални методи за атака и кибер заплахи"
+    "description": "Следвайте ни за ежедневни изследвания на реални методи за атака и кибер заплахи."
   },
   "modal": {
     "title": "В активно развитие",
-    "body": "The system is expected to be launched on October 10"
+    "body": "Системата се очаква да бъде пусната на 10 октомври."
   },
   "lamp": {
     "title": "Реалността на кибератаките"
@@ -393,15 +398,15 @@
   "stickySolution": {
     "webSecurity": {
       "title": "Система за уеб сигурност: сайт/API могат да бъдат свързани за 2 минути",
-      "description": "Защита срещу уеб атаки като DDoS, SQLi и др. Предлага възможност за затваряне на портове; добра практика е порт 22 да бъде изключен, когато не се използва"
+      "description": "Защита срещу уеб атаки като DDoS, SQLi и др. Предлага възможност за затваряне на портове; добра практика е порт 22 да бъде изключен, когато не се използва."
     },
     "ciaMonitoring": {
       "title": "Мониторинг на трафика на ниво CIA",
-      "description": "Нашият интерактивен 3D глобус показва обема на трафика по заявки, потребители и данни и позволява да видите историята на промяната в броя на потребителите"
+      "description": "Нашият интерактивен 3D глобус показва обема на трафика по заявки, потребители и данни и позволява да видите историята на промяната в броя на потребителите."
     },
     "userGrowth": {
       "title": "Полезни прозрения за растежа на потребителите",
-      "description": "Възможност да се проследи историята на промени в броя потребители"
+      "description": "Възможност да се проследи историята на промени в броя потребители."
     },
     "aiEmailProtection": {
       "title": "Първата AI система за защита на имейл в света: мрежата се свързва за 2 минути",
@@ -409,7 +414,7 @@
     },
     "emailVisualization": {
       "title": "Визуализация на изпратени и получени имейли",
-      "description": "CMC с най-напредналия търговски визуализатор на имейл потоци"
+      "description": "CMC с най-напредналия търговски визуализатор на имейл потоци."
     },
     "secureWebmail": {
       "title": "Сигурен webmail клиент",
@@ -426,7 +431,7 @@
       "termsService": "Условия на услугата",
       "privacy": "Политика за поверителност",
       "cookies": "Политика за бисквитки",
-      "affiliateTerms": "Affiliate Terms of Service"
+      "affiliateTerms": "Условия за партньорската програма"
     },
     "copyright": "© {year} Silence AI. Всички права запазени."
   },
@@ -436,19 +441,19 @@
     "cta": "Обратно към началната страница"
   },
   "heroSection": {
-    "badge": "AI и софтуер, готови за производство",
+    "badge": "AI и софтуер, готови за продукция",
     "title": "Персонализирана разработка на AI и софтуер",
-    "description": "Ние изграждаме AI агенти, готови за производство, и персонализиран софтуер за {country} и {market}.",
+    "description": "Изграждаме AI агенти, готови за реална употреба, и персонализиран софтуер за {country} и {market}.",
     "country": "Казахстан",
     "market": "глобалния пазар",
     "startProject": "Започнете проект",
-    "liveDemo": "На живо демо — AI агент",
+    "liveDemo": "Демо на живо — AI агент",
     "live": "На живо",
     "aiAgent": "AI агент v2.1",
     "processing": "Обработка на заявки...",
     "active": "Активен",
     "userMessage": "Анализирайте тенденциите в данните на клиентите",
-    "aiResponse": "Анализира се",
+    "aiResponse": "Извършва се анализ",
     "tasks": {
       "dataCollection": "Събиране на данни",
       "aiAnalysis": "AI анализ",
@@ -462,394 +467,394 @@
   },
   "secureDevelopment": {
     "hero": {
-      "badge": "SLNC-env · Secure Development Environment",
-      "title": "Build systems with secure and private code",
-      "description": "Private development environment for enterprises, where code never leaves your corporate network. Meanwhile offering the latest AI-powered technology",
-      "requestSystem": "Request System"
+      "badge": "SLNC-env · Среда за сигурна разработка",
+      "title": "Създавайте системи със защитен и частен код",
+      "description": "Частна среда за разработка за предприятия, в която кодът никога не напуска корпоративната ви мрежа, и едновременно с това разполагате с най-новите AI технологии.",
+      "requestSystem": "Заявете система"
     },
     "components": {
-      "title": "Everything stays inside",
-      "subtitle": "Three components, one sealed loop",
-      "description": "Code, prompts, and builds never leave your network. SLNC-env keeps AI help, reviews, and delivery private for cloud providers, government teams, and industrial plants.",
+      "title": "Всичко остава вътре",
+      "subtitle": "Три компонента, един затворен цикъл",
+      "description": "Код, промптове и билдове никога не напускат вашата мрежа. SLNC-env запазва AI помощта, прегледите и доставката частни за облачни доставчици, правителствени екипи и индустриални обекти.",
       "sithub": {
-        "title": "Sithub Server",
-        "tag": "Local version control"
+        "title": "Sithub сървър",
+        "tag": "Локален контрол на версиите"
       },
       "llm": {
-        "title": "LLM Server (Qwen-Code)",
-        "tag": "On-prem intelligence"
+        "title": "LLM сървър (Qwen-Code)",
+        "tag": "Интелигентност на място"
       },
       "ide": {
-        "title": "IDE with Local Copilot",
-        "tag": "Cursor-class experience"
+        "title": "IDE с локален Copilot",
+        "tag": "Изживяване от клас Cursor"
       },
-      "staysOnPrem": "Stays on-prem. No egress."
+      "staysOnPrem": "Остава on‑prem. Без изтичане на данни."
     },
     "timeline": {
-      "title": "Why isolated, checked code matters",
-      "subtitle": "Recent wake-up calls",
+      "title": "Защо изолираният и проверен код има значение",
+      "subtitle": "Скорошни предупреждения",
       "incident": {
-        "title": "Critical incident — leaked code",
-        "heading": "DeepSeek breach put source and prompts on the open internet",
-        "description": "Keep inference and scanning on-prem. No external model egress. Audit trails by default.",
-        "seePlan": "See containment plan"
+        "title": "Критичен инцидент — изтекъл код",
+        "heading": "Пробивът в DeepSeek изведе сорс кода и промптовете в отворения интернет",
+        "description": "Запазете инференцията и сканирането локално. Без външен износ към модели. Одитна следа по подразбиране.",
+        "seePlan": "Вижте плана за овладяване"
       },
       "stuxnet": {
         "year": "2010",
         "attack": "Stuxnet",
-        "target": "Natanz enrichment facility",
-        "impact": "Destroyed ~1,000 centrifuges",
-        "severity": "Critical"
+        "target": "Инсталацията за обогатяване в Natanz",
+        "impact": "Унищожени ~1 000 центрофуги",
+        "severity": "Критично"
       },
       "blackEnergy": {
         "year": "2015",
         "attack": "BlackEnergy",
-        "target": "Ukraine power grid",
-        "impact": "230k customers lost power",
-        "severity": "High"
+        "target": "Енергийната мрежа на Украйна",
+        "impact": "230 000 клиенти останаха без ток",
+        "severity": "Високо"
       },
       "triton": {
         "year": "2017",
         "attack": "TRITON",
-        "target": "Saudi petrochemical plant",
-        "impact": "Safety systems disabled",
-        "severity": "Critical"
+        "target": "Саудитски петрохимически завод",
+        "impact": "Системите за безопасност бяха изключени",
+        "severity": "Критично"
       },
       "colonialPipeline": {
         "year": "2021",
         "attack": "Colonial Pipeline",
-        "target": "US fuel pipeline",
-        "impact": "6-day fuel paralysis",
-        "severity": "High"
+        "target": "Тръбопровод за гориво в САЩ",
+        "impact": "6-дневно прекъсване на доставките",
+        "severity": "Високо"
       },
       "pdvsa": {
         "year": "2025",
         "attack": "PDVSA",
-        "target": "Venezuela refining",
-        "impact": "Refinery operations disrupted",
-        "severity": "Medium"
+        "target": "Рафинерии във Венецуела",
+        "impact": "Нарушени рафинерийни операции",
+        "severity": "Средно"
       }
     },
     "analyzer": {
-      "title": "Analyzer that beats CodeQL",
-      "subtitle": "Live assurance",
+      "title": "Анализатор, който превъзхожда CodeQL",
+      "subtitle": "Гаранция в реално време",
       "features": {
         "quality": {
-          "title": "Automatic code quality",
-          "description": "Structure, style, and best-practice checks tuned for safety-critical code"
+          "title": "Автоматично качество на кода",
+          "description": "Проверки на структура, стил и добри практики, настроени за критичен за безопасността код."
         },
         "vulnerability": {
-          "title": "Vulnerability sweeps",
-          "description": "SQLi, XSS, auth bypass, and insecure dependencies surfaced instantly"
+          "title": "Пълно сканиране за уязвимости",
+          "description": "SQLi, XSS, заобикаляне на автентикация и несигурни зависимости се откриват мигновено."
         },
         "secrets": {
-          "title": "Secrets guard",
-          "description": "Keys, tokens, and credentials blocked at commit time"
+          "title": "Защита на тайни",
+          "description": "Ключове, токени и идентификационни данни се блокират още при commit."
         },
         "config": {
-          "title": "Config hardening",
-          "description": "Docker/K8s, IAM, and network policies scanned for privilege creep"
+          "title": "Укрепване на конфигурации",
+          "description": "Docker/K8s, IAM и мрежови политики се сканират за излишни привилегии."
         }
       },
       "beyondCodeQL": {
-        "title": "Finds what static queries miss",
-        "subtitle": "Beyond CodeQL",
-        "description": "Finds misconfigs and vulnerable packages faster than CodeQL and offers fixes, not just alerts.",
+        "title": "Намира това, което статичните заявки пропускат",
+        "subtitle": "Отвъд CodeQL",
+        "description": "Намира грешни конфигурации и уязвими пакети по-бързо от CodeQL и предлага решения, не само предупреждения.",
         "points": {
-          "packages": "Knows package graphs and flags risky dependencies in seconds.",
-          "config": "Spots config drift and privilege creep—beyond static rules.",
-          "patches": "Each finding comes with a suggested patch and owner."
+          "packages": "Познае графите на пакетите и маркира рискови зависимости за секунди.",
+          "config": "Открива дрейф в конфигурациите и натрупване на привилегии — отвъд статичните правила.",
+          "patches": "Всяка находка идва с предложен patch и отговорен собственик."
         }
       },
       "visualizer": {
-        "title": "Code analyzer in action",
-        "subtitle": "Visualizer",
-        "description": "Crisp snapshots from recent scans, rendered beautifully inside the on-prem console.",
-        "privateWorkspace": "Private workspace only",
+        "title": "Code анализатор в действие",
+        "subtitle": "Визуализатор",
+        "description": "Ясни snapshot-и от последни сканирания, визуализирани директно в локалната конзола.",
+        "privateWorkspace": "Само за частни работни пространства",
         "shots": {
           "scanOverview": {
-            "title": "Scan overview",
-            "description": "See issues grouped by severity before code leaves your network."
+            "title": "Преглед на сканирането",
+            "description": "Вижте проблемите групирани по критичност преди кодът да напусне мрежата ви."
           },
           "misconfigurations": {
-            "title": "Detection of misconfigurations",
-            "description": "Our AI-powered code analyzer even finds misconfigurations within the code."
+            "title": "Откриване на грешни конфигурации",
+            "description": "Нашият AI анализатор на код открива дори грешни конфигурации вътре в кода."
           },
           "inlineDiffs": {
-            "title": "Inline diffs",
-            "description": "Review suggested patches inline with security context."
+            "title": "Inline разлики",
+            "description": "Преглеждайте предложените поправки в контекст на сигурността, директно върху кода."
           }
         }
       }
     },
     "industries": {
-      "title": "Built for regulated, high-impact sectors",
-      "subtitle": "Where we deploy",
+      "title": "Създаден за регулирани сектори с висок риск",
+      "subtitle": "Къде внедряваме",
       "oilGas": {
-        "title": "Oil & Gas",
-        "description": "Drilling, refining, pipeline control"
+        "title": "Нефт и газ",
+        "description": "Сондажи, рафиниране, контрол на тръбопроводи"
       },
       "energy": {
-        "title": "Energy",
-        "description": "Grid, distribution, and EMS"
+        "title": "Енергетика",
+        "description": "Мрежа, дистрибуция и EMS"
       },
       "nuclear": {
-        "title": "Nuclear",
-        "description": "Reactor controls and safety"
+        "title": "Ядрена енергетика",
+        "description": "Контрол на реактори и безопасност"
       },
       "manufacturing": {
-        "title": "Manufacturing",
-        "description": "ICS, OT, and robotics"
+        "title": "Производство",
+        "description": "ICS, OT и роботика"
       },
       "government": {
-        "title": "Government",
-        "description": "Ministries, defense, critical agencies"
+        "title": "Държавен сектор",
+        "description": "Министерства, отбрана, критична инфраструктура"
       }
     }
   },
   "pricingCta": {
-    "requestSystem": "Request System"
+    "requestSystem": "Заявете система"
   },
   "contactForm": {
-    "title": "Contact Us",
-    "success": "Thanks! Your message has been sent. We will contact you shortly.",
-    "errorRequired": "Please fill in your name, email and a short message.",
-    "errorSend": "Unable to send message. Please try again later.",
+    "title": "Свържете се с нас",
+    "success": "Благодарим! Вашето съобщение беше изпратено. Ще се свържем с вас скоро.",
+    "errorRequired": "Моля, попълнете име, имейл и кратко съобщение.",
+    "errorSend": "Съобщението не можа да бъде изпратено. Опитайте отново по-късно.",
     "placeholders": {
-      "name": "Your name",
-      "email": "Email",
-      "type": "Project Type (optional)",
-      "budget": "Budget (optional)",
-      "message": "Tell us about your project..."
+      "name": "Вашето име",
+      "email": "Имейл",
+      "type": "Тип проект (по избор)",
+      "budget": "Бюджет (по избор)",
+      "message": "Разкажете ни за вашия проект..."
     },
     "submit": {
-      "idle": "Send Message",
-      "loading": "Sending…"
+      "idle": "Изпратете съобщение",
+      "loading": "Изпращане…"
     }
   },
   "consulting": {
-    "title": "Consulting Questionnaire",
-    "searchPlaceholder": "Search questions...",
-    "noResults": "No questions found.",
+    "title": "Въпросник за консултации",
+    "searchPlaceholder": "Търсене в въпросите...",
+    "noResults": "Няма намерени въпроси.",
     "questions": [
       {
-        "question": "What is your company's core value proposition beyond competitive pricing?",
-        "answer": "Security is our primary differentiator. We position ourselves as a company that builds highly secure systems with enterprise-grade security practices embedded throughout the development lifecycle."
+        "question": "Какво е основното ви ценностно предложение отвъд конкурентните цени?",
+        "answer": "Сигурността е нашият основен диференциатор. Позиционираме се като компания, която изгражда силно защитени системи с практики за сигурност на ниво предприятие, интегрирани във всеки етап от жизнения цикъл на разработката."
       },
       {
-        "question": "How long has your company been in business, and what is your track record?",
-        "answer": "We have successfully delivered major projects including: NAK (Nur Astana Kurylys) - AI-powered team management platform, and Chic Flowers - Complete digital platform for a major flower retail company."
+        "question": "От колко време съществува компанията ви и какъв е досегашният ви опит?",
+        "answer": "Успешно сме реализирали ключови проекти, включително: NAK (Nur Astana Kurylys) – платформа за управление на екипи, задвижвана от AI, и Chic Flowers – цялостна дигитална платформа за голяма компания за продажба на цветя."
       },
       {
-        "question": "What differentiates your technical capabilities and service quality from EPAM and other competitors?",
-        "answer": "Our key differentiator is our security-first development approach. We integrate security practices from project inception through deployment and maintenance."
+        "question": "С какво техническите ви възможности и качеството на услугите ви се отличават от EPAM и други конкуренти?",
+        "answer": "Нашият ключов диференциатор е подходът „сигурност на първо място“. Интегрираме практики за сигурност от началото на проекта до внедряването и поддръжката."
       },
       {
-        "question": "How do you maintain quality while offering competitive pricing?",
-        "answer": "We offer services at 15% below market rates while maintaining exceptional quality through optimized operations, strategic talent sourcing, and efficient project management methodologies."
+        "question": "Как поддържате качество, докато предлагате конкурентни цени?",
+        "answer": "Предлагаме услуги с около 15% под средните пазарни цени, като поддържаме високо качество чрез оптимизирани операции, стратегически подбор на таланти и ефективни методологии за управление на проекти."
       },
       {
-        "question": "What specific software development services do you provide?",
-        "answer": "End-to-end software development: custom applications, AI-powered solutions, cybersecurity product development (Silence AI-SOC), system integration, cloud migration, and DevOps. We also offer dedicated product development and staff augmentation."
+        "question": "Какви конкретни услуги за разработка на софтуер предоставяте?",
+        "answer": "Цялостна разработка на софтуер: персонализирани приложения, AI базирани решения, разработка на продукти за киберсигурност (Silence AI-SOC), системна интеграция, миграция към облака и DevOps. Предлагаме също и наети продуктови екипи и staff augmentation."
       },
       {
-        "question": "Which industries and domains do you specialize in?",
-        "answer": "Construction, retail, fintech, cybersecurity, and digital platforms — including AI-driven team management, e-commerce, and enterprise security solutions."
+        "question": "В кои индустрии и домейни сте специализирани?",
+        "answer": "Строителство, търговия на дребно, финтех, киберсигурност и дигитални платформи — включително AI-базирано управление на екипи, електронна търговия и решения за сигурност на предприятия."
       },
       {
-        "question": "What technology stacks and platforms does your team have expertise in?",
-        "answer": "GO, Swift, Flutter, cloud platforms (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript, and AI/ML frameworks. We build proprietary security tools like Silence AI-SOC."
+        "question": "В кои технологични стекове и платформи имате експертиза?",
+        "answer": "Go, Swift, Flutter, облачни платформи (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript и AI/ML фреймуъркове. Разработваме и собствени инструменти за сигурност като Silence AI-SOC."
       },
       {
-        "question": "Do you offer end-to-end product development or specific services only?",
-        "answer": "We offer both: MVPs, full-cycle product delivery, staff augmentation, and cybersecurity integration."
+        "question": "Предлагате ли цялостна разработка на продукти или само конкретни услуги?",
+        "answer": "Предлагаме и двете: MVP-та, пълноциклово доставяне на продукти, staff augmentation и интеграция на решения за киберсигурност."
       },
       {
-        "question": "Can you provide both staff augmentation and dedicated team models?",
-        "answer": "Yes, we provide flexible engagement models: staff augmentation, dedicated teams, and project-based outsourcing."
+        "question": "Можете ли да предоставяте както staff augmentation, така и модели с отделени екипи?",
+        "answer": "Да, предоставяме гъвкави модели на работа: staff augmentation, отделени екипи и аутсорсинг по проект."
       },
       {
-        "question": "Do you offer consulting, architecture, and advisory services beyond development?",
-        "answer": "Yes: cybersecurity consulting, system architecture design, technology advisory, and security compliance assessments using Silence AI-SOC."
+        "question": "Предлагате ли консултации, архитектура и стратегически съвети отвъд чистата разработка?",
+        "answer": "Да: консултации по киберсигурност, проектиране на архитектура, технологично консултиране и оценки за съответствие със стандартите за сигурност с помощта на Silence AI-SOC."
       }
     ]
   },
   "requestDemoModal": {
-    "title": "Request System",
-    "name": "Name",
-    "email": "Corporate Email",
-    "company": "Company Name",
+    "title": "Заявете система",
+    "name": "Име",
+    "email": "Корпоративен имейл",
+    "company": "Име на компания",
     "placeholders": {
       "name": "John Doe",
       "email": "john@company.com",
       "company": "Acme Corp"
     },
-    "submit": "Send Request",
-    "successTitle": "Request Sent!",
-    "successBody": "Thank you for your interest. We will be in touch shortly.",
-    "close": "Close"
+    "submit": "Изпрати заявка",
+    "successTitle": "Заявката е изпратена!",
+    "successBody": "Благодарим за интереса. Ще се свържем с вас скоро.",
+    "close": "Затвори"
   },
   "requestSystemModal": {
-    "title": "Request System",
-    "name": "Name",
-    "email": "Corporate Email",
-    "company": "Company Name",
+    "title": "Заявете система",
+    "name": "Име",
+    "email": "Корпоративен имейл",
+    "company": "Име на компания",
     "placeholders": {
       "name": "John Doe",
       "email": "john@company.com",
       "company": "Acme Corp"
     },
-    "submit": "Download",
-    "successTitle": "Request Sent!",
-    "successBody": "Thank you. The system download instructions will be sent to your email.",
-    "close": "Close"
+    "submit": "Изтегляне",
+    "successTitle": "Заявката е изпратена!",
+    "successBody": "Благодарим. Инструкции за изтегляне на системата ще бъдат изпратени на вашия имейл.",
+    "close": "Затвори"
   },
   "policySidebar": {
-    "tableOfContents": "Table of Contents"
+    "tableOfContents": "Съдържание"
   },
   "whyChooseUs": {
-    "badge": "Results-driven engineering",
-    "title": "Why Choose Us",
-    "subtitle": "Trusted by teams from",
-    "subtitleHighlight": "billion-dollar organizations",
-    "subtitleTail": "— and shipped with startup speed.",
-    "learnMore": "Learn more",
+    "badge": "Инженеринг, воден от резултати",
+    "title": "Защо да изберете нас",
+    "subtitle": "Доверен партньор на екипи от",
+    "subtitleHighlight": "мултимилиардни организации",
+    "subtitleTail": "— и доставяме с бързината на стартъп.",
+    "learnMore": "Научете повече",
     "logos": {
       "kmg": "KazMunayGas",
       "nak": "Nur Astana Kurylys"
     },
     "features": {
       "fast": {
-        "title": "Fast Delivery with Enterprise Quality",
-        "description": "Rapid, iterative delivery cycles that meet enterprise-grade reliability and compliance.",
-        "pill": "Speed + Quality"
+        "title": "Бърза доставка с корпоративно качество",
+        "description": "Бързи, итеративни цикли на разработка, които покриват изискванията за надеждност и съответствие на ниво предприятие.",
+        "pill": "Скорост + Качество"
       },
       "ai": {
-        "title": "AI-first Product Engineering",
-        "description": "From prototypes to production AI agents — we design, train, and deploy models that solve real business problems.",
-        "pill": "AI Engineering"
+        "title": "AI‑ориентиран продуктов инженеринг",
+        "description": "От прототипи до AI агенти в продукция — проектираме, обучаваме и внедряваме модели, които решават реални бизнес проблеми.",
+        "pill": "AI инженеринг"
       },
       "local": {
-        "title": "Local Expertise, Global Reach",
-        "description": "Deep knowledge of Kazakhstan's market and regulations combined with international best practices.",
+        "title": "Локална експертиза, глобален обхват",
+        "description": "Дълбоко познаване на пазара и регулациите в Казахстан, комбинирано с международни добри практики.",
         "pill": "KZ + Global"
       }
     }
   },
   "servicesBlock": {
-    "badge": "What we offer",
-    "title": "Our Services",
-    "description": "Premium UI, strong engineering, and fast delivery — everything you need to launch a product that looks and performs like a top-tier brand.",
-    "learnMore": "Learn more",
-    "learnMoreAria": "Learn more about this service",
+    "badge": "Какво предлагаме",
+    "title": "Нашите услуги",
+    "description": "Премиум UI, стабилен инженеринг и бърза доставка — всичко необходимо, за да стартирате продукт, който изглежда и работи като на топ бранд.",
+    "learnMore": "Научете повече",
+    "learnMoreAria": "Научете повече за тази услуга",
     "services": {
       "aiAgents": {
-        "title": "AI Agents",
-        "description": "Custom conversational and autonomous agents for support, ops, and analytics.",
-        "tag": "Automation"
+        "title": "AI агенти",
+        "description": "Персонализирани разговорни и автономни агенти за поддръжка, операции и анализи.",
+        "tag": "Автоматизация"
       },
       "customSoftware": {
-        "title": "Custom Software",
-        "description": "End-to-end web and desktop apps tailored to your workflows.",
-        "tag": "Build"
+        "title": "Персонализиран софтуер",
+        "description": "Пълноциклови уеб и десктоп приложения, съобразени с вашите процеси.",
+        "tag": "Разработка"
       },
       "cybersecurity": {
-        "title": "Cybersecurity",
-        "description": "Audits, penetration testing, and continuous monitoring.",
-        "tag": "Protect"
+        "title": "Киберсигурност",
+        "description": "Одити, тестове за проникване и непрекъснат мониторинг.",
+        "tag": "Защита"
       },
       "backend": {
         "title": "Backend / DevOps",
-        "description": "Scalable APIs, CI/CD pipelines, and cloud infrastructure.",
-        "tag": "Scale"
+        "description": "Мащабируеми API услуги, CI/CD пайплайни и облачна инфраструктура.",
+        "tag": "Скалиране"
       },
       "mobile": {
-        "title": "Mobile",
-        "description": "Cross-platform apps with native performance and polished UX.",
-        "tag": "Ship"
+        "title": "Мобилни приложения",
+        "description": "Кросплатформени приложения с нативна производителност и изпипан UX.",
+        "tag": "Пускане"
       }
     }
   },
   "caseStudies": {
-    "badge": "Proven Impact",
-    "title": "Case Studies",
-    "subtitle": "We don’t ship features. We ship outcomes.",
-    "problem": "Problem:",
-    "solution": "Solution:",
-    "liveImpact": "Live Impact",
-    "before": "Before",
-    "after": "After",
-    "buildCta": "Build something like this →",
-    "caseStudy": "Case Study",
+    "badge": "Доказан ефект",
+    "title": "Казуси",
+    "subtitle": "Не доставяме просто функции. Доставяме резултати.",
+    "problem": "Проблем:",
+    "solution": "Решение:",
+    "liveImpact": "Реален ефект",
+    "before": "Преди",
+    "after": "След",
+    "buildCta": "Създайте нещо подобно →",
+    "caseStudy": "Казус",
     "items": {
       "nak": {
-        "title": "NAK — Team Management AI",
-        "problem": "Manual resource allocation",
-        "solution": "AI-powered scheduling agent",
-        "result": "+32% productivity",
-        "metricLabel": "Team Output Index"
+        "title": "NAK — AI за управление на екипи",
+        "problem": "Ръчно разпределяне на ресурси",
+        "solution": "AI агент за планиране на графици",
+        "result": "+32% продуктивност",
+        "metricLabel": "Индекс на изхода на екипа"
       },
       "chic": {
         "title": "Chic Flowers — eCommerce",
-        "problem": "Low online conversions",
-        "solution": "Personalized recommender + UX overhaul",
-        "result": "+45% online sales",
-        "metricLabel": "Conversion Rate Growth"
+        "problem": "Ниска конверсия онлайн",
+        "solution": "Персонализирани препоръки + обновен UX",
+        "result": "+45% онлайн продажби",
+        "metricLabel": "Ръст на конверсиите"
       },
       "silence": {
         "title": "Silence AI-SOC",
-        "problem": "High alert noise",
-        "solution": "AI detection & automated response",
-        "result": "−68% false positives",
-        "metricLabel": "False Alert Volume"
+        "problem": "Шум от прекалено много аларми",
+        "solution": "AI откриване и автоматизиран отговор",
+        "result": "−68% фалшиви позитиви",
+        "metricLabel": "Обем на фалшивите аларми"
       }
     }
   },
   "howWeWork": {
-    "title": "How We Work",
-    "subtitle": "Ultra-fast delivery pipeline — optimized for velocity.",
+    "title": "Как работим",
+    "subtitle": "Свръхбърз pipeline за доставка — оптимизиран за скорост.",
     "steps": {
       "discovery": {
-        "title": "Discovery",
-        "desc": "Requirements, stakeholders, success metrics."
+        "title": "Откриване",
+        "desc": "Изисквания, заинтересовани страни, метрики за успех."
       },
       "design": {
-        "title": "Design",
-        "desc": "UX, architecture, prototype."
+        "title": "Дизайн",
+        "desc": "UX, архитектура, прототип."
       },
       "poc": {
         "title": "Proof of Concept",
-        "desc": "Rapid validation with measurable KPIs."
+        "desc": "Бърза валидация с измерими KPI."
       },
       "build": {
-        "title": "Build",
-        "desc": "Iterative sprints, automated tests."
+        "title": "Разработка",
+        "desc": "Итеративни спринтове, автоматизирани тестове."
       },
       "deploy": {
-        "title": "Deploy",
-        "desc": "CI/CD, monitoring, security hardening."
+        "title": "Внедряване",
+        "desc": "CI/CD, мониторинг, укрепване на сигурността."
       },
       "support": {
-        "title": "Support & Scale",
-        "desc": "Maintenance, roadmap, continuous improvement."
+        "title": "Поддръжка и мащабиране",
+        "desc": "Поддръжка, пътна карта, непрекъснато подобрение."
       }
     }
   },
   "technologyStack": {
-    "title": "Technology Stack",
-    "subtitle": "A carefully selected, production-grade stack engineered for speed, scalability, and beautiful user experiences."
+    "title": "Технологичен стек",
+    "subtitle": "Внимателно подбран, продукционен стек, създаден за скорост, мащабируемост и отлични потребителски преживявания."
   },
   "backToTop": {
-    "label": "Back to top"
+    "label": "Обратно нагоре"
   },
   "pricingCustom": {
     "title": "Прозрачно ценообразуване",
-    "subtitle": "Мобилни планове, създадени да мащабират с вашия продукт.",
+    "subtitle": "Адаптивни планове, създадени да растат заедно с вашия продукт.",
     "percentMaintenance": "{percent}% годишна поддръжка",
     "planEstimate": "${value}",
     "perYear": "на година (приблиз.)",
     "calculator": {
-      "title": "Калкулатор за разходите",
+      "title": "Калкулатор за разходите по проекта",
       "subtitle": "Плъзнете, за да видите годишната си поддръжка",
       "projectCost": "Цена на проекта:",
       "projectValue": "${value}"
@@ -879,11 +884,68 @@
         "badge": "Най-добра стойност",
         "features": {
           "fix": "Критични корекции (4ч SLA)",
-          "updates": "Неограничени актуализации + Пътна карта",
-          "audit": "Седмични одити + Архиви",
+          "updates": "Неограничени актуализации + пътна карта",
+          "audit": "Седмични одити + резервни копия",
           "manager": "Специален мениджър"
         }
       }
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "AI сигурност и разработка",
+      "title": "Разработвайте сигурно. Внедрявайте уверено.",
+      "subtitle": "Две абонаментни системи (AI-SOC, SLNC-env) плюс персонализирана AI и софтуерна разработка за корпоративни екипи.",
+      "ctaPrimary": "Заявете демо",
+      "ctaSecondary": "Разгледайте системите",
+      "highlights": {
+        "coverage": "24/7 SOC с AI асистенция",
+        "onPrem": "0‑egress on‑prem",
+        "deploy": "Сигурно внедряване за 4 минути"
+      },
+      "metrics": {
+        "title": "Създадено за регулирани екипи",
+        "soc": "SOC покритие с AI асистенция",
+        "egress": "Всичко on‑prem — код, промптове, билдове",
+        "deployment": "До първото сигурно внедряване",
+        "locales": "Локализации, налични по подразбиране"
+      }
+    },
+    "systems": {
+      "title": "Системи",
+      "subtitle": "Изберете подходящия абонамент: AI-SOC за откриване и SLNC-env за изолирана разработка.",
+      "cta": "Вижте детайли",
+      "aiSoc": {
+        "title": "AI-SOC",
+        "desc": "Управлявано откриване и реакция с AI copilots за SOC екипи.",
+        "badge": "Абонамент"
+      },
+      "slncEnv": {
+        "title": "SLNC-env",
+        "desc": "Облак за изолирана разработка, който пази кода, промптовете и билдовете on‑prem.",
+        "badge": "Абонамент"
+      }
+    },
+    "services": {
+      "title": "Услуги за персонализирана разработка",
+      "subtitle": "AI агенти, интеграции и пълноциклов софтуерен delivery с вградена сигурност от първия ден.",
+      "cta": "Вижте услугите",
+      "cards": {
+        "agents": "AI агенти за продукционна употреба с guardrails, RAG и защитени конектори.",
+        "integrations": "Интеграции, независими от доставчик, с вашия стек, IAM и управлението на данни.",
+        "delivery": "Пълноциклово доставяне с цели за надеждност, наблюдаемост и проверки за сигурност."
+      },
+      "cardsTitle": {
+        "agents": "Агенти",
+        "integrations": "Интеграции",
+        "delivery": "Доставяне"
+      }
+    },
+    "contact": {
+      "title": "Готови ли сте да комбинирате AI-SOC и SLNC-env?",
+      "subtitle": "Разкажете ни за целите си в сигурността и доставката — ние ще подберем точната система и услуги.",
+      "cta": "Заявете демо",
+      "ctaSecondary": "Говорете с екипа по услуги"
     }
   }
 }

@@ -31,7 +31,7 @@ const GlowButton = ({
     >
       <div
         className={clsx(
-          "relative z-10 flex items-center justify-center whitespace-nowrap rounded-full bg-white px-8 py-4 text-lg font-semibold text-black transition-colors hover:bg-gray-200",
+          "relative z-10 flex items-center justify-center whitespace-nowrap rounded-full bg-white px-7 py-3 text-base font-semibold text-black transition-colors hover:bg-gray-100",
           innerClassName
         )}
       >

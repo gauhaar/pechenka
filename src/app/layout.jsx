@@ -57,7 +57,7 @@ export default async function RootLayout({ children }) {
         style={{ backgroundColor: "#01091C" }}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <LayoutWrapper>{children}</LayoutWrapper>
+          <LayoutWrapper initialLanguage={locale}>{children}</LayoutWrapper>
         </NextIntlClientProvider>
       </body>
     </html>
