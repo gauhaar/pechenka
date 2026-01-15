@@ -1,8 +1,10 @@
 import React, { useEffect, useMemo, useState } from "react";
 import EdgeGlowCard from "./EdgeGlowCard";
 import { motion, AnimatePresence } from "framer-motion";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const HowWeWork = () => {
+  const { t } = useLanguage();
   const defaultGlowPalette = {
     glowColor: "#FF00B7",
     secondaryGlowColor: "rgba(32,140,255,0.45)",
@@ -12,14 +14,17 @@ const HowWeWork = () => {
     bottomColor: "rgba(32,140,255,0.45)",
   };
 
-  const steps = [
-    { key: "discovery", title: "Discovery", desc: "Requirements, stakeholders, success metrics.", accent: "#FF00B7" },
-    { key: "design", title: "Design", desc: "UX, architecture, prototype.", accent: "#00BFFF" },
-    { key: "poc", title: "Proof of Concept", desc: "Rapid validation with measurable KPIs.", accent: "#37FF8B" },
-    { key: "build", title: "Build", desc: "Iterative sprints, automated tests.", accent: "#FFB800" },
-    { key: "deploy", title: "Deploy", desc: "CI/CD, monitoring, security hardening.", accent: "#FF00B7" },
-    { key: "support", title: "Support & Scale", desc: "Maintenance, roadmap, continuous improvement.", accent: "#00BFFF" },
-  ];
+  const steps = useMemo(
+    () => [
+      { key: "discovery", title: t("howWeWork.steps.discovery.title", "Discovery"), desc: t("howWeWork.steps.discovery.desc", "Requirements, stakeholders, success metrics."), accent: "#FF00B7" },
+      { key: "design", title: t("howWeWork.steps.design.title", "Design"), desc: t("howWeWork.steps.design.desc", "UX, architecture, prototype."), accent: "#00BFFF" },
+      { key: "poc", title: t("howWeWork.steps.poc.title", "Proof of Concept"), desc: t("howWeWork.steps.poc.desc", "Rapid validation with measurable KPIs."), accent: "#37FF8B" },
+      { key: "build", title: t("howWeWork.steps.build.title", "Build"), desc: t("howWeWork.steps.build.desc", "Iterative sprints, automated tests."), accent: "#FFB800" },
+      { key: "deploy", title: t("howWeWork.steps.deploy.title", "Deploy"), desc: t("howWeWork.steps.deploy.desc", "CI/CD, monitoring, security hardening."), accent: "#FF00B7" },
+      { key: "support", title: t("howWeWork.steps.support.title", "Support & Scale"), desc: t("howWeWork.steps.support.desc", "Maintenance, roadmap, continuous improvement."), accent: "#00BFFF" },
+    ],
+    [t]
+  );
 
   const [activeIndex, setActiveIndex] = useState(0);
   const [paused, setPaused] = useState(false);
@@ -64,10 +69,13 @@ const HowWeWork = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-bold text-white">
-            How We Work
+            {t("howWeWork.title", "How We Work")}
           </h2>
           <p className="mt-4 text-white/60 max-w-xl mx-auto">
-            Ultra-fast delivery pipeline — optimized for velocity.
+            {t(
+              "howWeWork.subtitle",
+              "Ultra-fast delivery pipeline — optimized for velocity."
+            )}
           </p>
         </motion.div>
 

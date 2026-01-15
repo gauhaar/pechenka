@@ -1,7 +1,13 @@
 {
   "languageSelector": {
     "triggerLabel": "ভাষা নির্বাচন করুন",
-    "menuLabel": "দয়া করে ভাষা বেছে নিন"
+    "menuLabel": "দয়া করে ভাষা বেছে নিন",
+    "searchLabel": "Search languages",
+    "searchPlaceholder": "Search by name or native script",
+    "searchResults": "Search results",
+    "noMatches": "No languages match your search.",
+    "popular": "Most popular",
+    "allLanguages": "All languages"
   },
   "header": {
     "nav": {
@@ -10,10 +16,20 @@
       "affiliate": "অ্যাফিলিয়েট প্রোগ্রাম",
       "instructions": "নির্দেশনা",
       "product": "AI-SOC",
-      "secureDevelopment": "SLNC Code",
-      "developerServices": "ডেভেলপার সার্ভিস"
+      "secureDevelopment": "SLNC-env",
+      "developerServices": "ডেভেলপার সার্ভিস",
+      "home": "Home",
+      "systems": "Systems",
+      "systemsAiSoc": "AI-SOC",
+      "systemsSlncEnv": "SLNC-env",
+      "services": "Services"
     },
-    "login": "লগইন"
+    "login": "লগইন",
+    "cta": {
+      "contact": "Contact",
+      "download": "Download",
+      "requestDemo": "Request Demo"
+    }
   },
   "affiliate": {
     "hero": {
@@ -98,6 +114,60 @@
       "statistics": {
         "question": "আমি কখন আমার রেফারেল পরিসংখ্যান দেখব?",
         "answer": "কেউ আপনার প্রোমো কোড বা রেফারেল লিংক ব্যবহার করে নিবন্ধন করলেই, তাদের ইমেল ঠিকানা এবং সংশ্লিষ্ট পুরস্কার ড্যাশবোর্ডে দেখা যাবে।"
+      }
+    },
+    "termsAff": {
+      "label": "Affiliate Program",
+      "title": "Affiliate Terms of Service",
+      "notice": "This policy is available only in English",
+      "intro": "These terms describe how rewards are issued and paid to partners participating in the Silence AI affiliate program.",
+      "meta": {
+        "effective": "Effective date: 10 November 2024",
+        "lastUpdated": "Last updated: 10 November 2024"
+      },
+      "sections": {
+        "overview": {
+          "title": "1. Program Overview",
+          "body1": "1.1 Agreement Scope: These Affiliate Terms of Service (\"Terms\") govern your participation in the Silence AI affiliate program operated by Silence AI LLC (\"Silence AI,\" \"we,\" \"us,\" or \"our\"). These Terms apply to you, the individual or entity enrolling as an affiliate partner (\"you\" or \"your\"), and, where applicable, your employer, principal, or organization if you act on their behalf.",
+          "body2": "1.2 Program Summary: Under this program, qualified partners earn commission-based rewards when referred customers purchase or top up the AI-SOC 1 product. Participation in the affiliate program also requires compliance with the general Silence AI Terms of Service."
+        },
+        "eligibility": {
+          "title": "2. Partner Eligibility",
+          "item1": "You must maintain an active Silence AI affiliate account with accurate business and payment details.",
+          "item2": "Referrals must complete registration through your issued link or promo code.",
+          "item3": "Accounts found to be fraudulent, self-referred, or in breach of applicable law are not eligible for rewards."
+        },
+        "commission": {
+          "title": "3. Commission Structure",
+          "body1": "You earn a 10% reward on every balance top-up completed by an account registered through your invitation.",
+          "body2": "Commission is calculated from the net top-up amount after payment processing fees are deducted."
+        },
+        "rewardPosting": {
+          "title": "4. Reward Posting",
+          "body1": "Rewards post to your partner balance within one minute after the transaction successfully clears. There is no manual approval queue.",
+          "body2": "Notifications appear in your affiliate dashboard alongside the customer identifier and top-up amount."
+        },
+        "withdrawals": {
+          "title": "5. Withdrawals",
+          "body1": "Withdrawal requests are processed within two business days and paid out using the settlement method on file.",
+          "body2": "Minimum withdrawal thresholds and supported payout networks are published inside the affiliate dashboard."
+        },
+        "productScope": {
+          "title": "6. Product Scope",
+          "body1": "Rewards are only provided for the AI-SOC 1 product. Other Silence AI services are excluded from the affiliate program unless explicitly stated otherwise in writing.",
+          "body2": "If additional products become eligible, Silence AI will publish an updated list inside these terms."
+        },
+        "compliance": {
+          "title": "7. Partner Conduct & Compliance",
+          "item1": "Partners must represent Silence AI accurately and avoid misleading claims about features or pricing.",
+          "item2": "Marketing communications must comply with applicable anti-spam, privacy, and advertising regulations.",
+          "item3": "Silence AI may suspend or terminate accounts that violate these obligations or harm the brand."
+        },
+        "changes": {
+          "title": "8. Changes & Contact",
+          "body1": "Silence AI may update these affiliate terms to reflect changes in the program or applicable law. Updated versions take effect upon publication on this page.",
+          "body2": "Questions about the affiliate program can be sent to info@silenceai.net."
+        }
       }
     }
   },
@@ -219,7 +289,46 @@
           "reports": "সহজবোধ্য নিরাপত্তা প্রতিবেদন",
           "intelligence": "ইন্টেলিজেন্স রিপোর্ট"
         }
+      },
+      "basic": {
+        "name": "Basic",
+        "features": {
+          "fix": "Critical Bug Fixes (48h SLA)",
+          "updates": "Monthly Updates",
+          "audit": "Quarterly Security Audits",
+          "manager": "Dedicated Manager"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Most Popular",
+        "features": {
+          "fix": "Critical Bug Fixes (24h SLA)",
+          "updates": "10h Monthly Updates",
+          "audit": "Monthly Security Audits",
+          "manager": "Dedicated Manager"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "badge": "Best Value",
+        "features": {
+          "fix": "Critical Bug Fixes (4h SLA)",
+          "updates": "Unlimited Updates + Roadmap",
+          "audit": "Weekly Audits + Backups",
+          "manager": "Dedicated Manager"
+        }
       }
+    },
+    "subtitle": "Mobile-first plans built to scale with your product.",
+    "percentMaintenance": "{percent}% yearly maintenance",
+    "planEstimate": "${value}",
+    "perYear": "per year (est.)",
+    "calculator": {
+      "title": "Project Cost Calculator",
+      "subtitle": "Slide to see your yearly maintenance",
+      "projectCost": "Project Cost:",
+      "projectValue": "${value}"
     }
   },
   "solution": {
@@ -321,32 +430,33 @@
       "termsUse": "ব্যবহারের শর্তাবলী",
       "termsService": "সেবার শর্তাবলী",
       "privacy": "গোপনীয়তা নীতি",
-      "cookies": "কুকি নীতি"
+      "cookies": "কুকি নীতি",
+      "affiliateTerms": "Affiliate Terms of Service"
     },
     "copyright": "© {year} Silence AI. সর্বস্বত্ব সংরক্ষিত।"
   },
   "notFound": {
     "title": "পৃষ্ঠা পাওয়া যায়নি",
-    "description": "আমরা সব জায়গায় খুঁজেছি কিন্তু এই পৃষ্ঠাটি খুঁজে পাইনি।",
+    "description": "আমরা সর্বত্র খুঁজেছি কিন্তু এই পৃষ্ঠাটি পাইনি।",
     "cta": "হোমপেজে ফিরে যান"
   },
   "heroSection": {
-    "badge": "উৎপাদন-প্রস্তুত AI এবং সফ্টওয়্যার",
-    "title": "কাস্টম AI এবং সফ্টওয়্যার ডেভেলপমেন্ট",
-    "description": "আমরা {country} এবং {market} এর জন্য উৎপাদন-প্রস্তুত AI এজেন্ট এবং কাস্টম সফ্টওয়্যার তৈরি করি।",
+    "badge": "উৎপাদন-প্রস্তুত এআই এবং সফটওয়্যার",
+    "title": "কাস্টম এআই এবং সফটওয়্যার ডেভেলপমেন্ট",
+    "description": "আমরা উৎপাদন-প্রস্তুত এআই এজেন্ট এবং কাস্টম সফটওয়্যার তৈরি করি।",
     "country": "কাজাখস্তান",
-    "market": "বৈশ্বিক বাজার",
-    "startProject": "একটি প্রকল্প শুরু করুন",
-    "liveDemo": "লাইভ ডেমো — AI এজেন্ট",
+    "market": "বিশ্বব্যাপী বাজার",
+    "startProject": "প্রজেক্ট শুরু করুন",
+    "liveDemo": "লাইভ ডেমো — এআই এজেন্ট",
     "live": "লাইভ",
-    "aiAgent": "AI এজেন্ট v2.1",
-    "processing": "অনুরোধ প্রক্রিয়াকরণ হচ্ছে...",
+    "aiAgent": "এআই এজেন্ট v2.1",
+    "processing": "অনুরোধ প্রক্রিয়া করা হচ্ছে...",
     "active": "সক্রিয়",
-    "userMessage": "গ্রাহক ডেটা ট্রেন্ড বিশ্লেষণ করুন",
+    "userMessage": "গ্রাহকের ডেটা ট্রেন্ড বিশ্লেষণ করুন",
     "aiResponse": "বিশ্লেষণ করা হচ্ছে",
     "tasks": {
       "dataCollection": "ডেটা সংগ্রহ",
-      "aiAnalysis": "AI বিশ্লেষণ",
+      "aiAnalysis": "এআই বিশ্লেষণ",
       "reportGeneration": "রিপোর্ট তৈরি"
     },
     "stats": {
@@ -357,7 +467,7 @@
   },
   "secureDevelopment": {
     "hero": {
-      "badge": "SLNC Code · Secure Development Environment",
+      "badge": "SLNC-env · Secure Development Environment",
       "title": "Build systems with secure and private code",
       "description": "Private development environment for enterprises, where code never leaves your corporate network. Meanwhile offering the latest AI-powered technology",
       "requestSystem": "Request System"
@@ -365,7 +475,7 @@
     "components": {
       "title": "Everything stays inside",
       "subtitle": "Three components, one sealed loop",
-      "description": "Code, prompts, and builds never leave your network. SLNC Code keeps AI help, reviews, and delivery private for cloud providers, government teams, and industrial plants.",
+      "description": "Code, prompts, and builds never leave your network. SLNC-env keeps AI help, reviews, and delivery private for cloud providers, government teams, and industrial plants.",
       "sithub": {
         "title": "Sithub Server",
         "tag": "Local version control"
@@ -500,6 +610,342 @@
         "title": "Government",
         "description": "Ministries, defense, critical agencies"
       }
+    }
+  },
+  "pricingCta": {
+    "requestSystem": "Request System"
+  },
+  "contactForm": {
+    "title": "Contact Us",
+    "success": "Thanks! Your message has been sent. We will contact you shortly.",
+    "errorRequired": "Please fill in your name, email and a short message.",
+    "errorSend": "Unable to send message. Please try again later.",
+    "placeholders": {
+      "name": "Your name",
+      "email": "Email",
+      "type": "Project Type (optional)",
+      "budget": "Budget (optional)",
+      "message": "Tell us about your project..."
+    },
+    "submit": {
+      "idle": "Send Message",
+      "loading": "Sending…"
+    }
+  },
+  "consulting": {
+    "title": "Consulting Questionnaire",
+    "searchPlaceholder": "Search questions...",
+    "noResults": "No questions found.",
+    "questions": [
+      {
+        "question": "What is your company's core value proposition beyond competitive pricing?",
+        "answer": "Security is our primary differentiator. We position ourselves as a company that builds highly secure systems with enterprise-grade security practices embedded throughout the development lifecycle."
+      },
+      {
+        "question": "How long has your company been in business, and what is your track record?",
+        "answer": "We have successfully delivered major projects including: NAK (Nur Astana Kurylys) - AI-powered team management platform, and Chic Flowers - Complete digital platform for a major flower retail company."
+      },
+      {
+        "question": "What differentiates your technical capabilities and service quality from EPAM and other competitors?",
+        "answer": "Our key differentiator is our security-first development approach. We integrate security practices from project inception through deployment and maintenance."
+      },
+      {
+        "question": "How do you maintain quality while offering competitive pricing?",
+        "answer": "We offer services at 15% below market rates while maintaining exceptional quality through optimized operations, strategic talent sourcing, and efficient project management methodologies."
+      },
+      {
+        "question": "What specific software development services do you provide?",
+        "answer": "End-to-end software development: custom applications, AI-powered solutions, cybersecurity product development (Silence AI-SOC), system integration, cloud migration, and DevOps. We also offer dedicated product development and staff augmentation."
+      },
+      {
+        "question": "Which industries and domains do you specialize in?",
+        "answer": "Construction, retail, fintech, cybersecurity, and digital platforms — including AI-driven team management, e-commerce, and enterprise security solutions."
+      },
+      {
+        "question": "What technology stacks and platforms does your team have expertise in?",
+        "answer": "GO, Swift, Flutter, cloud platforms (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript, and AI/ML frameworks. We build proprietary security tools like Silence AI-SOC."
+      },
+      {
+        "question": "Do you offer end-to-end product development or specific services only?",
+        "answer": "We offer both: MVPs, full-cycle product delivery, staff augmentation, and cybersecurity integration."
+      },
+      {
+        "question": "Can you provide both staff augmentation and dedicated team models?",
+        "answer": "Yes, we provide flexible engagement models: staff augmentation, dedicated teams, and project-based outsourcing."
+      },
+      {
+        "question": "Do you offer consulting, architecture, and advisory services beyond development?",
+        "answer": "Yes: cybersecurity consulting, system architecture design, technology advisory, and security compliance assessments using Silence AI-SOC."
+      }
+    ]
+  },
+  "requestDemoModal": {
+    "title": "Request System",
+    "name": "Name",
+    "email": "Corporate Email",
+    "company": "Company Name",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Send Request",
+    "successTitle": "Request Sent!",
+    "successBody": "Thank you for your interest. We will be in touch shortly.",
+    "close": "Close"
+  },
+  "requestSystemModal": {
+    "title": "Request System",
+    "name": "Name",
+    "email": "Corporate Email",
+    "company": "Company Name",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Download",
+    "successTitle": "Request Sent!",
+    "successBody": "Thank you. The system download instructions will be sent to your email.",
+    "close": "Close"
+  },
+  "policySidebar": {
+    "tableOfContents": "Table of Contents"
+  },
+  "whyChooseUs": {
+    "badge": "ফলাফল-চালিত ইঞ্জিনিয়ারিং",
+    "title": "কেন আমাদের বেছে নেবেন",
+    "subtitle": "বিশ্বস্ত",
+    "subtitleHighlight": "বিলিয়ন ডলারের প্রতিষ্ঠান",
+    "subtitleTail": "— এবং স্টার্টআপ গতিতে সরবরাহ করা হয়।",
+    "learnMore": "আরও জানুন",
+    "logos": {
+      "kmg": "KazMunayGas",
+      "nak": "Nur Astana Kurylys"
+    },
+    "features": {
+      "fast": {
+        "title": "এন্টারপ্রাইজ মানের সাথে দ্রুত ডেলিভারি",
+        "description": "দ্রুত, পুনরাবৃত্ত কেলিভারি চক্র যা এন্টারপ্রাইজ-গ্রেডের নির্ভরযোগ্যতা এবং সম্মতি পূরণ করে।",
+        "pill": "গতি + গুণমান"
+      },
+      "ai": {
+        "title": "এআই-প্রথম পণ্য ইঞ্জিনিয়ারিং",
+        "description": "প্রোটোটাইপ থেকে উৎপাদন এআই এজেন্ট পর্যন্ত — আমরা এমন মডেলগুলি ডিজাইন, প্রশিক্ষণ এবং স্থাপন করি যা বাস্তব ব্যবসায়িক সমস্যার সমাধান করে।",
+        "pill": "এআই ইঞ্জিনিয়ারিং"
+      },
+      "local": {
+        "title": "স্থানীয় দক্ষতা, বিশ্বব্যাপী নাগাল",
+        "description": "আন্তর্জাতিক সেরা অনুশীলনের সাথে কাজাখস্তানের বাজার এবং প্রবিধানের গভীর জ্ঞান।",
+        "pill": "KZ + গ্লোবাল"
+      }
+    }
+  },
+  "servicesBlock": {
+    "badge": "আমরা যা অফার করি",
+    "title": "আমাদের পরিষেবাসমূহ",
+    "description": "প্রিমিয়াম ইউআই, শক্তিশালী ইঞ্জিনিয়ারিং এবং দ্রুত ডেলিভারি — একটি শীর্ষ-স্তরের ব্র্যান্ডের মতো দেখতে এবং কাজ করে এমন একটি পণ্য চালু করার জন্য আপনার যা কিছু প্রয়োজন।",
+    "learnMore": "আরও জানুন",
+    "learnMoreAria": "এই পরিষেবা সম্পর্কে আরও জানুন",
+    "services": {
+      "aiAgents": {
+        "title": "এআই এজেন্ট",
+        "description": "সমর্থন, অপারেশন এবং বিশ্লেষণের জন্য কাস্টম কথোপকথন এবং স্বায়ত্তশাসিত এজেন্ট।",
+        "tag": "অটোমেশন"
+      },
+      "customSoftware": {
+        "title": "কাস্টম সফটওয়্যার",
+        "description": "আপনার কর্মপ্রবাহের সাথে মানানসই এন্ড-টু-এন্ড ওয়েব এবং ডেস্কটপ অ্যাপ।",
+        "tag": "তৈরি"
+      },
+      "cybersecurity": {
+        "title": "সাইবার নিরাপত্তা",
+        "description": "অডিট, পেনিট্রেশন টেস্টিং এবং অবিরাম পর্যবেক্ষণ।",
+        "tag": "সুরক্ষা"
+      },
+      "backend": {
+        "title": "ব্যাকএন্ড / ডেভঅপস",
+        "description": "স্কেলেবল এপিআই, সিআই/সিডি পাইপলাইন এবং ক্লাউড অবকাঠামো।",
+        "tag": "স্কেল"
+      },
+      "mobile": {
+        "title": "মোবাইল",
+        "description": "নেটিভ পারফরম্যান্স এবং পালিশ ইউএক্স সহ ক্রস-প্ল্যাটফর্ম অ্যাপ।",
+        "tag": "শিপ"
+      }
+    }
+  },
+  "caseStudies": {
+    "badge": "প্রমাণিত প্রভাব",
+    "title": "Case Studies",
+    "subtitle": "আমরা শুধু বৈশিষ্ট্য পাঠাই না। আমরা ফলাফল পাঠাই।",
+    "problem": "সমস্যা:",
+    "solution": "সমাধান:",
+    "liveImpact": "লাইভ প্রভাব",
+    "before": "আগে",
+    "after": "পরে",
+    "buildCta": "এরকম কিছু তৈরি করুন →",
+    "caseStudy": "Case Study",
+    "items": {
+      "nak": {
+        "title": "NAK — টিম ম্যানেজমেন্ট এআই",
+        "problem": "ম্যানুয়াল রিসোর্স বরাদ্দ",
+        "solution": "এআই-চালিত শিডিউলিং এজেন্ট",
+        "result": "+32% উৎপাদনশীলতা",
+        "metricLabel": "টিম আউটপুট ইনডেক্স"
+      },
+      "chic": {
+        "title": "Chic Flowers — ই-কমার্স",
+        "problem": "কম অনলাইন কনভার্সন",
+        "solution": "ব্যক্তিগতকৃত রিকমেন্ডার + ইউএক্স ওভারহাল",
+        "result": "+45% অনলাইন বিক্রয়",
+        "metricLabel": "কনভার্সন রেট বৃদ্ধি"
+      },
+      "silence": {
+        "title": "Silence AI-SOC",
+        "problem": "উচ্চ সতর্কতা শব্দ",
+        "solution": "এআই শনাক্তকরণ এবং স্বয়ংক্রিয় প্রতিক্রিয়া",
+        "result": "−68% মিথ্যা পজিটিভ",
+        "metricLabel": "মিথ্যা সতর্কতা ভলিউম"
+      }
+    }
+  },
+  "howWeWork": {
+    "title": "আমরা কিভাবে কাজ করি",
+    "subtitle": "আল্ট্রা-ফাস্ট ডেলিভারি পাইপলাইন — গতির জন্য অপ্টিমাইজ করা।",
+    "steps": {
+      "discovery": {
+        "title": "আবিষ্কার",
+        "desc": "প্রয়োজনীয়তা, স্টেকহোল্ডার, সাফল্যের মেট্রিক্স।"
+      },
+      "design": {
+        "title": "ডিজাইন",
+        "desc": "ইউএক্স, আর্কিটেকচার, প্রোটোটাইপ।"
+      },
+      "poc": {
+        "title": "ধারণার প্রমাণ (PoC)",
+        "desc": "পরিমাপযোগ্য কেপিআই সহ দ্রুত বৈধতা।"
+      },
+      "build": {
+        "title": "তৈরি",
+        "desc": "পুনরাবৃত্ত স্প্রিন্ট, স্বয়ংক্রিয় পরীক্ষা।"
+      },
+      "deploy": {
+        "title": "ডিপ্লয়",
+        "desc": "সিআই/সিডি, মনিটরিং, নিরাপত্তা শক্ত করা।"
+      },
+      "support": {
+        "title": "সমর্থন এবং স্কেল",
+        "desc": "রক্ষণাবেক্ষণ, রোডম্যাপ, ক্রমাগত উন্নতি।"
+      }
+    }
+  },
+  "technologyStack": {
+    "title": "প্রযুক্তি স্ট্যাক",
+    "subtitle": "গতি, স্কেলেবিলিটি এবং সুন্দর ব্যবহারকারীর অভিজ্ঞতার জন্য সাবধানে নির্বাচিত, উৎপাদন-গ্রেড স্ট্যাক।"
+  },
+  "backToTop": {
+    "label": "উপরে ফিরে যান"
+  },
+  "pricingCustom": {
+    "title": "স্বচ্ছ মূল্য নির্ধারণ",
+    "subtitle": "আপনার পণ্যের সাথে মানানসই মোবাইল-ফার্স্ট পরিকল্পনা।",
+    "percentMaintenance": "{percent}% বার্ষিক রক্ষণাবেক্ষণ",
+    "planEstimate": "${value}",
+    "perYear": "প্রতি বছর (আনুমানিক)",
+    "calculator": {
+      "title": "প্রকল্প ব্যয় ক্যালকুলেটর",
+      "subtitle": "আপনার বার্ষিক রক্ষণাবেক্ষণ দেখতে স্লাইড করুন",
+      "projectCost": "প্রকল্প ব্যয়:",
+      "projectValue": "${value}"
+    },
+    "plans": {
+      "basic": {
+        "name": "বেসিক",
+        "features": {
+          "fix": "জরুরী বাগ ফিক্স (৪৮ ঘণ্টা SLA)",
+          "updates": "মাসিক আপডেট",
+          "audit": "ত্রৈমাসিক নিরাপত্তা অডিট",
+          "manager": "নিবেদিত ম্যানেজার"
+        }
+      },
+      "pro": {
+        "name": "প্রো",
+        "badge": "সবচেয়ে জনপ্রিয়",
+        "features": {
+          "fix": "জরুরী বাগ ফিক্স (২৪ ঘণ্টা SLA)",
+          "updates": "১০ ঘণ্টা মাসিক আপডেট",
+          "audit": "মাসিক নিরাপত্তা অডিট",
+          "manager": "নিবেদিত ম্যানেজার"
+        }
+      },
+      "enterprise": {
+        "name": "এন্টারপ্রাইজ",
+        "badge": "সেরা মূল্য",
+        "features": {
+          "fix": "জরুরী বাগ ফিক্স (৪ ঘণ্টা SLA)",
+          "updates": "অসীমিত আপডেট + রোডম্যাপ",
+          "audit": "সাপ্তাহিক অডিট + ব্যাকআপ",
+          "manager": "নিবেদিত ম্যানেজার"
+        }
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "AI security & development",
+      "title": "Build securely. Deploy confidently.",
+      "subtitle": "Two subscription systems (AI-SOC, SLNC-env) plus custom AI and software delivery for enterprise teams.",
+      "ctaPrimary": "Request demo",
+      "ctaSecondary": "Explore systems",
+      "highlights": {
+        "coverage": "24/7 AI-assisted SOC",
+        "onPrem": "0-egress on-prem",
+        "deploy": "Secure deploy in 4 min"
+      },
+      "metrics": {
+        "title": "Built for regulated teams",
+        "soc": "AI-assisted SOC coverage",
+        "egress": "All on-prem—code, prompts, builds",
+        "deployment": "to first secure deployment",
+        "locales": "locales supported out-of-box"
+      }
+    },
+    "systems": {
+      "title": "Systems",
+      "subtitle": "Choose the subscription product that fits: AI-SOC for detection and SLNC-env for sealed development.",
+      "cta": "View details",
+      "aiSoc": {
+        "title": "AI-SOC",
+        "desc": "Managed detection & response with AI copilots for SOC teams.",
+        "badge": "Subscription"
+      },
+      "slncEnv": {
+        "title": "SLNC-env",
+        "desc": "Sealed development cloud that keeps code, prompts, and builds on-prem.",
+        "badge": "Subscription"
+      }
+    },
+    "services": {
+      "title": "Custom development services",
+      "subtitle": "AI agents, integrations, and full-cycle software delivery with security baked in from day one.",
+      "cta": "View services",
+      "cards": {
+        "agents": "Production-grade AI agents with guardrails, RAG, and secure connectors.",
+        "integrations": "Vendor-neutral integrations with your stack, IAM, and data governance.",
+        "delivery": "Full-cycle delivery with reliability SLOs, observability, and security reviews."
+      },
+      "cardsTitle": {
+        "agents": "Agents",
+        "integrations": "Integrations",
+        "delivery": "Delivery"
+      }
+    },
+    "contact": {
+      "title": "Ready to combine AI-SOC and SLNC-env?",
+      "subtitle": "Tell us your security and delivery goals—we'll align the right system and services.",
+      "cta": "Request demo",
+      "ctaSecondary": "Talk to services team"
     }
   }
 }

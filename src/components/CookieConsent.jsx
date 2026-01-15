@@ -42,19 +42,16 @@ const CookieConsent = () => {
         <div className="flex flex-col gap-6 p-6 sm:p-8 text-white">
           <div className="space-y-2">
             <h2 className="text-lg font-semibold sm:text-xl">
-              {t("cookie.title", "Technical Cookies Notice")}
+              {t("cookie.title")}
             </h2>
             <p className="text-sm leading-relaxed text-white/80 sm:text-base">
-              {t(
-                "cookie.description",
-                "This website uses only first-party technical cookies that are set by us to remember your language preferences and ensure the cookie notice is not shown again on your next visit. No tracking or third-party cookies are used."
-              )}{" "}
-              {t("cookie.more", "Learn more in our")}{" "}
+              {t("cookie.description")}{" "}
+              {t("cookie.more")}{" "}
               <Link
                 href="/policies/cookies"
                 className="text-white underline decoration-purple-400 decoration-2 underline-offset-4 hover:text-purple-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-400/70 rounded-sm"
               >
-                {t("cookie.link", "Cookie Policy")}
+                {t("cookie.link")}
               </Link>
               .
             </p>
@@ -73,7 +70,7 @@ const CookieConsent = () => {
                 }
               }}
             >
-              {t("cookie.ok", "OK")}
+              {t("cookie.ok")}
             </GlowButton>
           </div>
         </div>

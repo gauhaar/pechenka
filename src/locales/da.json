@@ -1,7 +1,13 @@
 {
   "languageSelector": {
     "triggerLabel": "Vælg sprog",
-    "menuLabel": "Vælg et sprog"
+    "menuLabel": "Vælg et sprog",
+    "searchLabel": "Søg i sprog",
+    "searchPlaceholder": "Søg efter navn eller skriftsystem",
+    "searchResults": "Søgeresultater",
+    "noMatches": "Ingen sprog matcher din søgning.",
+    "popular": "Mest populære",
+    "allLanguages": "Alle sprog"
   },
   "header": {
     "nav": {
@@ -10,10 +16,20 @@
       "affiliate": "Partnerprogram",
       "instructions": "Vejledninger",
       "product": "AI-SOC",
-      "secureDevelopment": "SLNC Code",
-      "developerServices": "Udviklertjenester"
+      "secureDevelopment": "SLNC-env",
+      "developerServices": "Udviklertjenester",
+      "home": "Hjem",
+      "systems": "Systemer",
+      "systemsAiSoc": "AI-SOC",
+      "systemsSlncEnv": "SLNC-env",
+      "services": "Tjenester"
     },
-    "login": "Log ind"
+    "login": "Log ind",
+    "cta": {
+      "contact": "Kontakt",
+      "download": "Download",
+      "requestDemo": "Book demo"
+    }
   },
   "affiliate": {
     "hero": {
@@ -74,7 +90,7 @@
         "description": "Belønninger bogføres på din partnerkonto inden for ét minut efter, at transaktionen er afsluttet – ingen manuel godkendelse nødvendig."
       },
       "withdrawal": {
-        "title": "Withdrawals processed in 2 business days",
+        "title": "Udbetalinger behandles på 2 hverdage",
         "description": "Indsendte udbetalingsanmodninger valideres automatisk og når din bankkonto inden for to arbejdsdage."
       },
       "sample": {
@@ -98,6 +114,60 @@
       "statistics": {
         "question": "Hvornår ser jeg henvisningsstatistikker?",
         "answer": "Så snart en bruger registrerer sig med din kampagnekode eller dit link, vises deres e-mail og tilknyttede belønning i dit dashboard."
+      }
+    },
+    "termsAff": {
+      "label": "Partnerprogram",
+      "title": "Vilkår for partnerprogram",
+      "notice": "Denne politik er kun tilgængelig på engelsk",
+      "intro": "Disse vilkår beskriver, hvordan belønninger udstedes og udbetales til partnere i Silence AI's partnerprogram.",
+      "meta": {
+        "effective": "Ikrafttræden: 10. november 2024",
+        "lastUpdated": "Senest opdateret: 10. november 2024"
+      },
+      "sections": {
+        "overview": {
+          "title": "1. Programoverblik",
+          "body1": "1.1 Aftalens omfang: Disse vilkår for partnerprogrammet (\"Vilkår\") regulerer din deltagelse i Silence AI's program, som drives af Silence AI LLC (\"Silence AI\", \"vi\", \"os\" eller \"vores\"). Vilkårene gælder for dig som person eller virksomhed, der tilmelder sig som partner, og hvor det er relevant, din arbejdsgiver eller organisation, hvis du handler på deres vegne.",
+          "body2": "1.2 Programresumé: Kvalificerede partnere tjener provisionsbaserede belønninger, når henviste kunder køber eller fylder saldo på AI-SOC 1. Deltagelse kræver også overholdelse af Silence AI's generelle servicevilkår."
+        },
+        "eligibility": {
+          "title": "2. Partnerberettigelse",
+          "item1": "Du skal have en aktiv Silence AI-partnerkonto med korrekte virksomheds- og betalingsoplysninger.",
+          "item2": "Henvisninger skal gennemføre registreringen via dit link eller din kampagnekode.",
+          "item3": "Kontoer, der er svigagtige, selvhenviste eller overtræder lovgivning, er ikke berettiget til belønninger."
+        },
+        "commission": {
+          "title": "3. Provisionsstruktur",
+          "body1": "Du tjener 10 % i belønning for hver saldoopfyldning fra en konto, der er registreret via din invitation.",
+          "body2": "Provisionen beregnes ud fra nettobeløbet efter betalingsgebyrer."
+        },
+        "rewardPosting": {
+          "title": "4. Bogføring af belønninger",
+          "body1": "Belønninger bogføres på din partnerkonto inden for ét minut efter en gennemført transaktion. Ingen manuel godkendelse kræves.",
+          "body2": "Notifikationer vises i partnerdashboardet sammen med kundens id og opfyldningsbeløb."
+        },
+        "withdrawals": {
+          "title": "5. Udbetalinger",
+          "body1": "Udbetalingsanmodninger behandles inden for to hverdage og udbetales via den registrerede metode.",
+          "body2": "Minimumsgrænser og understøttede udbetalingsnetværk findes i partnerdashboardet."
+        },
+        "productScope": {
+          "title": "6. Produktscope",
+          "body1": "Belønninger gælder kun for produktet AI-SOC 1. Andre Silence AI-tjenester er udelukket, medmindre andet er angivet skriftligt.",
+          "body2": "Hvis yderligere produkter bliver omfattet, offentliggør Silence AI en opdateret liste i disse vilkår."
+        },
+        "compliance": {
+          "title": "7. Adfærd og compliance",
+          "item1": "Partnere skal repræsentere Silence AI korrekt og undgå vildledende udsagn om funktioner eller priser.",
+          "item2": "Markedsføring skal overholde gældende regler om spam, privatliv og reklame.",
+          "item3": "Silence AI kan suspendere eller lukke konti, der overtræder disse krav eller skader brandet."
+        },
+        "changes": {
+          "title": "8. Ændringer og kontakt",
+          "body1": "Silence AI kan opdatere disse partnerbetingelser ved ændringer i programmet eller lovgivningen. Opdateringer træder i kraft ved offentliggørelse på denne side.",
+          "body2": "Spørgsmål om partnerprogrammet kan sendes til info@silenceai.net."
+        }
       }
     }
   },
@@ -132,7 +202,7 @@
   "playground": {
     "options": {
       "globeShield": "Websikkerhed og trafikstyring",
-      "emailSecurity": "Email Security"
+      "emailSecurity": "E-mail-sikkerhed"
     }
   },
   "cookie": {
@@ -219,7 +289,46 @@
           "reports": "Letforståelige sikkerhedsrapporter",
           "intelligence": "Intelligensrapport"
         }
+      },
+      "basic": {
+        "name": "Basis",
+        "features": {
+          "fix": "Kritiske fejlrettelser (48t SLA)",
+          "updates": "Månedlige opdateringer",
+          "audit": "Kvartalsvise sikkerhedsaudits",
+          "manager": "Dedikeret manager"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Mest populær",
+        "features": {
+          "fix": "Kritiske fejlrettelser (24t SLA)",
+          "updates": "10t månedlige opdateringer",
+          "audit": "Månedlige sikkerhedsaudits",
+          "manager": "Dedikeret manager"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "badge": "Bedste værdi",
+        "features": {
+          "fix": "Kritiske fejlrettelser (4t SLA)",
+          "updates": "Ubegrænsede opdateringer + roadmap",
+          "audit": "Ugentlige audits + backups",
+          "manager": "Dedikeret manager"
+        }
       }
+    },
+    "subtitle": "Mobil-først planer bygget til at skalere med dit produkt.",
+    "percentMaintenance": "{percent}% årlig vedligeholdelse",
+    "planEstimate": "${value}",
+    "perYear": "pr. år (est.)",
+    "calculator": {
+      "title": "Projektomkostningsberegner",
+      "subtitle": "Træk for at se din årlige vedligeholdelse",
+      "projectCost": "Projektomkostninger:",
+      "projectValue": "${value}"
     }
   },
   "solution": {
@@ -281,7 +390,7 @@
   },
   "modal": {
     "title": "Under aktiv udvikling",
-    "body": "The system is expected to be launched on October 10"
+    "body": "Systemet forventes lanceret 10. oktober"
   },
   "lamp": {
     "title": "Virkeligheden bag cyberangreb"
@@ -321,28 +430,29 @@
       "termsUse": "Brugsbetingelser",
       "termsService": "Servicevilkår",
       "privacy": "Privatlivspolitik",
-      "cookies": "Cookiepolitik"
+      "cookies": "Cookiepolitik",
+      "affiliateTerms": "Vilkår for partnerprogram"
     },
     "copyright": "© {year} Silence AI. Alle rettigheder forbeholdes."
   },
   "notFound": {
     "title": "Siden blev ikke fundet",
-    "description": "Vi kiggede overalt, men kunne ikke finde denne side.",
-    "cta": "Tilbage til startsiden"
+    "description": "Vi ledte overalt, men kunne ikke finde denne side.",
+    "cta": "Tilbage til forsiden"
   },
   "heroSection": {
     "badge": "Produktionsklar AI og software",
-    "title": "Tilpasset AI og softwareudvikling",
-    "description": "Vi bygger produktionsklare AI-agenter og tilpasset software til {country} og {market}.",
+    "title": "Skræddersyet AI- og softwareudvikling",
+    "description": "Vi bygger produktionsklare AI-agenter og skræddersyet software.",
     "country": "Kasakhstan",
-    "market": "globalt marked",
+    "market": "det globale marked",
     "startProject": "Start et projekt",
     "liveDemo": "Live demo — AI-agent",
     "live": "Live",
     "aiAgent": "AI-agent v2.1",
-    "processing": "Behandler anmodninger...",
+    "processing": "Behandler forespørgsler...",
     "active": "Aktiv",
-    "userMessage": "Analyser kundedatatendenser",
+    "userMessage": "Analyser kundedatatrends",
     "aiResponse": "Analyserer",
     "tasks": {
       "dataCollection": "Dataindsamling",
@@ -357,149 +467,485 @@
   },
   "secureDevelopment": {
     "hero": {
-      "badge": "SLNC Code · Secure Development Environment",
-      "title": "Build systems with secure and private code",
-      "description": "Private development environment for enterprises, where code never leaves your corporate network. Meanwhile offering the latest AI-powered technology",
-      "requestSystem": "Request System"
+      "badge": "SLNC-env · Sikkert udviklingsmiljø",
+      "title": "Byg systemer med sikkert og privat kode",
+      "description": "Privat udviklingsmiljø til virksomheder, hvor koden aldrig forlader jeres netværk — samtidig med den nyeste AI-teknologi",
+      "requestSystem": "Bestil system"
     },
     "components": {
-      "title": "Everything stays inside",
-      "subtitle": "Three components, one sealed loop",
-      "description": "Code, prompts, and builds never leave your network. SLNC Code keeps AI help, reviews, and delivery private for cloud providers, government teams, and industrial plants.",
+      "title": "Alt bliver indenfor",
+      "subtitle": "Tre komponenter, én lukket sløjfe",
+      "description": "Kode, prompty og builds forlader aldrig dit netværk. SLNC-env holder AI-hjælp, code reviews og levering privat for cloududbydere, myndighedsteams og industri.",
       "sithub": {
         "title": "Sithub Server",
-        "tag": "Local version control"
+        "tag": "Lokal versionsstyring"
       },
       "llm": {
         "title": "LLM Server (Qwen-Code)",
-        "tag": "On-prem intelligence"
+        "tag": "On-prem intelligens"
       },
       "ide": {
-        "title": "IDE with Local Copilot",
-        "tag": "Cursor-class experience"
+        "title": "IDE med lokal Copilot",
+        "tag": "Oplevelse på Cursor-niveau"
       },
-      "staysOnPrem": "Stays on-prem. No egress."
+      "staysOnPrem": "Bliver on-prem. Ingen egress."
     },
     "timeline": {
-      "title": "Why isolated, checked code matters",
-      "subtitle": "Recent wake-up calls",
+      "title": "Hvorfor isoleret, kontrolleret kode er vigtig",
+      "subtitle": "Seneste advarsler",
       "incident": {
-        "title": "Critical incident — leaked code",
-        "heading": "DeepSeek breach put source and prompts on the open internet",
-        "description": "Keep inference and scanning on-prem. No external model egress. Audit trails by default.",
-        "seePlan": "See containment plan"
+        "title": "Kritisk hændelse — lækket kode",
+        "heading": "DeepSeek-brud lækkede kildekode og prompty til det åbne internet",
+        "description": "Hold inference og scanning on-prem. Ingen udgående trafik til eksterne modeller. Audit-log som standard.",
+        "seePlan": "Se inddæmningsplan"
       },
       "stuxnet": {
         "year": "2010",
         "attack": "Stuxnet",
-        "target": "Natanz enrichment facility",
-        "impact": "Destroyed ~1,000 centrifuges",
-        "severity": "Critical"
+        "target": "Natanz berigelsesanlæg",
+        "impact": "Ødelagde ca. 1.000 centrifuger",
+        "severity": "Kritisk"
       },
       "blackEnergy": {
         "year": "2015",
         "attack": "BlackEnergy",
-        "target": "Ukraine power grid",
-        "impact": "230k customers lost power",
-        "severity": "High"
+        "target": "Ukraines elnet",
+        "impact": "230k kunder mistede strømmen",
+        "severity": "Høj"
       },
       "triton": {
         "year": "2017",
         "attack": "TRITON",
-        "target": "Saudi petrochemical plant",
-        "impact": "Safety systems disabled",
-        "severity": "Critical"
+        "target": "Saudisk petrokemisk anlæg",
+        "impact": "Sikkerhedssystemer deaktiveret",
+        "severity": "Kritisk"
       },
       "colonialPipeline": {
         "year": "2021",
         "attack": "Colonial Pipeline",
-        "target": "US fuel pipeline",
-        "impact": "6-day fuel paralysis",
-        "severity": "High"
+        "target": "Amerikansk brændstofrørledning",
+        "impact": "6 dages brændstofstop",
+        "severity": "Høj"
       },
       "pdvsa": {
         "year": "2025",
         "attack": "PDVSA",
-        "target": "Venezuela refining",
-        "impact": "Refinery operations disrupted",
-        "severity": "Medium"
+        "target": "Venezuelansk raffinering",
+        "impact": "Raffinaderidrift forstyrret",
+        "severity": "Middel"
       }
     },
     "analyzer": {
-      "title": "Analyzer that beats CodeQL",
-      "subtitle": "Live assurance",
+      "title": "Analyser, der overgår CodeQL",
+      "subtitle": "Live garanti",
       "features": {
         "quality": {
-          "title": "Automatic code quality",
-          "description": "Structure, style, and best-practice checks tuned for safety-critical code"
+          "title": "Automatisk kodekvalitet",
+          "description": "Struktur-, stil- og best-practice-tjek, justeret til sikkerhedskritisk kode"
         },
         "vulnerability": {
-          "title": "Vulnerability sweeps",
-          "description": "SQLi, XSS, auth bypass, and insecure dependencies surfaced instantly"
+          "title": "Sårbarhedsscanning",
+          "description": "SQLi, XSS, auth-bypass og usikre afhængigheder finder vi med det samme"
         },
         "secrets": {
-          "title": "Secrets guard",
-          "description": "Keys, tokens, and credentials blocked at commit time"
+          "title": "Vagt for hemmeligheder",
+          "description": "Nøgler, tokens og credentials blokeres ved commit"
         },
         "config": {
-          "title": "Config hardening",
-          "description": "Docker/K8s, IAM, and network policies scanned for privilege creep"
+          "title": "Hærdning af konfiguration",
+          "description": "Docker/K8s, IAM og netværkspolitikker scannes for privilege creep"
         }
       },
       "beyondCodeQL": {
-        "title": "Finds what static queries miss",
-        "subtitle": "Beyond CodeQL",
-        "description": "Finds misconfigs and vulnerable packages faster than CodeQL and offers fixes, not just alerts.",
+        "title": "Finder det statiske forespørgsler overser",
+        "subtitle": "Ud over CodeQL",
+        "description": "Finder fejlkonfigurationer og sårbare pakker hurtigere end CodeQL og giver rettelser, ikke kun advarsler.",
         "points": {
-          "packages": "Knows package graphs and flags risky dependencies in seconds.",
-          "config": "Spots config drift and privilege creep—beyond static rules.",
-          "patches": "Each finding comes with a suggested patch and owner."
+          "packages": "Kender pakke-grafen og markerer risikable afhængigheder på sekunder.",
+          "config": "Finder konfig-drift og privilege creep — ud over statiske regler.",
+          "patches": "Hvert fund får et forslag til patch og ejer."
         }
       },
       "visualizer": {
-        "title": "Code analyzer in action",
+        "title": "Kodeanalysator i praksis",
         "subtitle": "Visualizer",
-        "description": "Crisp snapshots from recent scans, rendered beautifully inside the on-prem console.",
-        "privateWorkspace": "Private workspace only",
+        "description": "Skarpe udsnit fra nylige scanninger, flot gengivet i on-prem konsollen.",
+        "privateWorkspace": "Kun privat workspace",
         "shots": {
           "scanOverview": {
-            "title": "Scan overview",
-            "description": "See issues grouped by severity before code leaves your network."
+            "title": "Scan-overblik",
+            "description": "Se problemer grupperet efter alvor, før koden forlader dit netværk."
           },
           "misconfigurations": {
-            "title": "Detection of misconfigurations",
-            "description": "Our AI-powered code analyzer even finds misconfigurations within the code."
+            "title": "Registrering af fejlkonfigurationer",
+            "description": "Vores AI-drevne kodeanalysator finder også fejlkonfigurationer i koden."
           },
           "inlineDiffs": {
-            "title": "Inline diffs",
-            "description": "Review suggested patches inline with security context."
+            "title": "Inline-diffs",
+            "description": "Gennemse foreslåede patches inline med sikkerhedskontekst."
           }
         }
       }
     },
     "industries": {
-      "title": "Built for regulated, high-impact sectors",
-      "subtitle": "Where we deploy",
+      "title": "Bygget til regulerede, kritiske sektorer",
+      "subtitle": "Hvor vi udruller",
       "oilGas": {
-        "title": "Oil & Gas",
-        "description": "Drilling, refining, pipeline control"
+        "title": "Olie & gas",
+        "description": "Boring, raffinering, pipeline-kontrol"
       },
       "energy": {
         "title": "Energy",
-        "description": "Grid, distribution, and EMS"
+        "description": "Net, distribution og EMS"
       },
       "nuclear": {
-        "title": "Nuclear",
-        "description": "Reactor controls and safety"
+        "title": "Nuklear",
+        "description": "Reaktorkontrol og sikkerhed"
       },
       "manufacturing": {
-        "title": "Manufacturing",
-        "description": "ICS, OT, and robotics"
+        "title": "Fremstilling",
+        "description": "ICS, OT og robotik"
       },
       "government": {
-        "title": "Government",
-        "description": "Ministries, defense, critical agencies"
+        "title": "Offentlig sektor",
+        "description": "Ministerier, forsvar, kritiske myndigheder"
       }
+    }
+  },
+  "pricingCta": {
+    "requestSystem": "Bestil system"
+  },
+  "contactForm": {
+    "title": "Kontakt os",
+    "success": "Tak! Din besked er sendt. Vi kontakter dig snart.",
+    "errorRequired": "Udfyld venligst navn, e-mail og en kort besked.",
+    "errorSend": "Beskeden kunne ikke sendes. Prøv igen senere.",
+    "placeholders": {
+      "name": "Dit navn",
+      "email": "E-mail",
+      "type": "Projekttype (valgfrit)",
+      "budget": "Budget (valgfrit)",
+      "message": "Fortæl om dit projekt..."
+    },
+    "submit": {
+      "idle": "Send besked",
+      "loading": "Sender…"
+    }
+  },
+  "consulting": {
+    "title": "Konsulentspørgsmål",
+    "searchPlaceholder": "Søg i spørgsmål...",
+    "noResults": "Ingen spørgsmål fundet.",
+    "questions": [
+      {
+        "question": "Hvad er jeres vigtigste værditilbud udover konkurrencedygtige priser?",
+        "answer": "Sikkerhed er vores primære differentiering. Vi bygger højsikre systemer med enterprise-sikkerhed indlejret i hele udviklingscyklussen."
+      },
+      {
+        "question": "Hvor længe har jeres virksomhed eksisteret, og hvilke resultater har I?",
+        "answer": "Vi har leveret større projekter som NAK (Nur Astana Kurylys) — AI-baseret teamstyringsplatform, og Chic Flowers — komplet digital platform for en stor blomsterkæde."
+      },
+      {
+        "question": "Hvad adskiller jeres tekniske formåen og servicekvalitet fra EPAM og andre konkurrenter?",
+        "answer": "Vores nøgleforskel er et security-first udviklingsflow. Vi indbygger sikkerhed fra projektstart til deployment og drift."
+      },
+      {
+        "question": "Hvordan fastholder I kvaliteten med konkurrencedygtige priser?",
+        "answer": "Vi ligger 15 % under markedet og holder kvaliteten gennem optimerede processer, nøje talentudvælgelse og effektiv projektledelse."
+      },
+      {
+        "question": "Hvilke konkrete softwaretjenester leverer I?",
+        "answer": "End-to-end udvikling: skræddersyede apps, AI-løsninger, udvikling af sikkerhedsprodukter (Silence AI-SOC), systemintegration, cloud-migrering og DevOps. Vi tilbyder også dedikeret produktudvikling og teamforstærkning."
+      },
+      {
+        "question": "Hvilke brancher og domæner specialiserer I jer i?",
+        "answer": "Byggeri, detail, fintech, cybersikkerhed og digitale platforme — inkl. AI-teamstyring, e-handel og enterprise-sikkerhed."
+      },
+      {
+        "question": "Hvilke teknologistacks og platforme mestrer jeres team?",
+        "answer": "GO, Swift, Flutter, cloud (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript og AI/ML frameworks. Vi bygger også egne sikkerhedsværktøjer som Silence AI-SOC."
+      },
+      {
+        "question": "Tilbyder I end-to-end produktudvikling eller kun specifikke ydelser?",
+        "answer": "Begge dele: MVP'er, fuld produktleverance, teamforstærkning og integration af cybersikkerhed."
+      },
+      {
+        "question": "Kan I levere både teamforstærkning og dedikerede teams?",
+        "answer": "Ja, vi tilbyder fleksible modeller: teamforstærkning, dedikerede teams og projektbaseret outsourcing."
+      },
+      {
+        "question": "Tilbyder I rådgivning, arkitektur og advisory ud over udvikling?",
+        "answer": "Ja: cybersikkerhedsrådgivning, systemarkitektur, teknologisk advisory og compliance-vurderinger med Silence AI-SOC."
+      }
+    ]
+  },
+  "requestDemoModal": {
+    "title": "Bestil system",
+    "name": "Navn",
+    "email": "Firma-e-mail",
+    "company": "Firmanavn",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Send anmodning",
+    "successTitle": "Anmodning sendt!",
+    "successBody": "Tak for din interesse. Vi kontakter dig snart.",
+    "close": "Luk"
+  },
+  "requestSystemModal": {
+    "title": "Bestil system",
+    "name": "Navn",
+    "email": "Firma-e-mail",
+    "company": "Firmanavn",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Download",
+    "successTitle": "Anmodning sendt!",
+    "successBody": "Tak. Downloadvejledningen sendes til din e-mail.",
+    "close": "Luk"
+  },
+  "policySidebar": {
+    "tableOfContents": "Indholdsfortegnelse"
+  },
+  "whyChooseUs": {
+    "badge": "Resultatorienteret teknik",
+    "title": "Hvorfor vælge os",
+    "subtitle": "Betroet af teams fra",
+    "subtitleHighlight": "milliardorganisationer",
+    "subtitleTail": "— og leveret med opstartshastighed.",
+    "learnMore": "Lær mere",
+    "logos": {
+      "kmg": "KazMunayGas",
+      "nak": "Nur Astana Kurylys"
+    },
+    "features": {
+      "fast": {
+        "title": "Hurtig levering med virksomhedskvalitet",
+        "description": "Hurtige, iterative leveringscyklusser, der opfylder virksomhedskrav, pålidelighed og overholdelse.",
+        "pill": "Hastighed + Kvalitet"
+      },
+      "ai": {
+        "title": "AI-først produktudvikling",
+        "description": "Fra prototyper til produktions-AI-agenter — vi designer, træner og implementerer modeller, der løser reelle forretningsproblemer.",
+        "pill": "AI-udvikling"
+      },
+      "local": {
+        "title": "Lokal ekspertise, global rækkevidde",
+        "description": "Dybt kendskab til Kasakhstans marked og regler kombineret med international bedste praksis.",
+        "pill": "KZ + Global"
+      }
+    }
+  },
+  "servicesBlock": {
+    "badge": "Hvad vi tilbyder",
+    "title": "Vores tjenester",
+    "description": "Premium UI, stærk teknik og hurtig levering — alt hvad du behøver for at lancere et produkt, der ser ud og fungerer som et topmærke.",
+    "learnMore": "Lær mere",
+    "learnMoreAria": "Lær mere om denne tjeneste",
+    "services": {
+      "aiAgents": {
+        "title": "AI-agenter",
+        "description": "Skræddersyede konversations- og autonome agenter til support, drift og analyse.",
+        "tag": "Automatisering"
+      },
+      "customSoftware": {
+        "title": "Skræddersyet software",
+        "description": "End-to-end web- og desktop-apps skræddersyet til dine arbejdsgange.",
+        "tag": "Byg"
+      },
+      "cybersecurity": {
+        "title": "Cybersikkerhed",
+        "description": "Revisioner, penetrationstest og kontinuerlig overvågning.",
+        "tag": "Beskyt"
+      },
+      "backend": {
+        "title": "Backend / DevOps",
+        "description": "Skalerbare API'er, CI/CD-pipelines og cloud-infrastruktur.",
+        "tag": "Skalér"
+      },
+      "mobile": {
+        "title": "Mobil",
+        "description": "Apps på tværs af platforme med native ydeevne og poleret UX.",
+        "tag": "Levering"
+      }
+    }
+  },
+  "caseStudies": {
+    "badge": "Bevist effekt",
+    "title": "Casestudier",
+    "subtitle": "Vi leverer ikke funktioner. Vi leverer resultater.",
+    "problem": "Problem:",
+    "solution": "Løsning:",
+    "liveImpact": "Live effekt",
+    "before": "Før",
+    "after": "Efter",
+    "buildCta": "Byg noget lignende →",
+    "caseStudy": "Casestudie",
+    "items": {
+      "nak": {
+        "title": "NAK — Team Management AI",
+        "problem": "Manuel ressourceallokering",
+        "solution": "AI-drevet planlægningsagent",
+        "result": "+32% produktivitet",
+        "metricLabel": "Teamoutput-indeks"
+      },
+      "chic": {
+        "title": "Chic Flowers — e-handel",
+        "problem": "Lave online konverteringer",
+        "solution": "Personlig anbefaling + UX-overhaling",
+        "result": "+45% onlinesalg",
+        "metricLabel": "Konverteringsvækst"
+      },
+      "silence": {
+        "title": "Silence AI-SOC",
+        "problem": "Høj alarmstøj",
+        "solution": "AI-detektion & automatiseret respons",
+        "result": "−68% falske positiver",
+        "metricLabel": "Falsk alarmvolumen"
+      }
+    }
+  },
+  "howWeWork": {
+    "title": "Sådan arbejder vi",
+    "subtitle": "Lynhurtig leveringspipeline — optimeret til hastighed.",
+    "steps": {
+      "discovery": {
+        "title": "Opdagelse",
+        "desc": "Krav, interessenter, succesmålinger."
+      },
+      "design": {
+        "title": "Design",
+        "desc": "UX, arkitektur, prototype."
+      },
+      "poc": {
+        "title": "Proof of Concept",
+        "desc": "Hurtig validering med målbare KPI'er."
+      },
+      "build": {
+        "title": "Byg",
+        "desc": "Iterative sprints, automatiserede test."
+      },
+      "deploy": {
+        "title": "Implementer",
+        "desc": "CI/CD, overvågning, sikkerhedshærdning."
+      },
+      "support": {
+        "title": "Support & Skalering",
+        "desc": "Vedligeholdelse, roadmap, løbende forbedring."
+      }
+    }
+  },
+  "technologyStack": {
+    "title": "Teknologistack",
+    "subtitle": "En nøje udvalgt, produktionsklar stack udviklet til hastighed, skalerbarhed og smukke brugeroplevelser."
+  },
+  "backToTop": {
+    "label": "Tilbage til toppen"
+  },
+  "pricingCustom": {
+    "title": "Gennemsigtige priser",
+    "subtitle": "Mobil-først planer bygget til at skalere med dit produkt.",
+    "percentMaintenance": "{percent}% årlig vedligeholdelse",
+    "planEstimate": "${value}",
+    "perYear": "pr. år (anslået)",
+    "calculator": {
+      "title": "Projektomkostningsberegner",
+      "subtitle": "Skub for at se din årlige vedligeholdelse",
+      "projectCost": "Projektomkostninger:",
+      "projectValue": "${value}"
+    },
+    "plans": {
+      "basic": {
+        "name": "Basis",
+        "features": {
+          "fix": "Kritiske fejlrettelser (48t SLA)",
+          "updates": "Månedlige opdateringer",
+          "audit": "Kvartalsvise sikkerhedsaudits",
+          "manager": "Dedikeret manager"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Mest populær",
+        "features": {
+          "fix": "Kritiske fejlrettelser (24t SLA)",
+          "updates": "10t månedlige opdateringer",
+          "audit": "Månedlige sikkerhedsaudits",
+          "manager": "Dedikeret manager"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "badge": "Bedste værdi",
+        "features": {
+          "fix": "Kritiske fejlrettelser (4t SLA)",
+          "updates": "Ubegrænsede opdateringer + Roadmap",
+          "audit": "Ugentlige audits + Backups",
+          "manager": "Dedikeret manager"
+        }
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "AI-sikkerhed og udvikling",
+      "title": "Byg sikkert. Deploy med ro i sindet.",
+      "subtitle": "To abonnementsystemer (AI-SOC, SLNC-env) plus skræddersyet AI og softwarelevering til enterprise-teams.",
+      "ctaPrimary": "Book demo",
+      "ctaSecondary": "Udforsk systemer",
+      "highlights": {
+        "coverage": "24/7 SOC med AI-hjælp",
+        "onPrem": "0-egress — alt er on-prem",
+        "deploy": "Sikker deploy på 4 min"
+      },
+      "metrics": {
+        "title": "Bygget til regulerede teams",
+        "soc": "SOC-dækning med AI-støtte",
+        "egress": "Alt on-prem — kode, prompty, builds",
+        "deployment": "til første sikre deploy",
+        "locales": "sprog understøttet fra start"
+      }
+    },
+    "systems": {
+      "title": "Systemer",
+      "subtitle": "Vælg det abonnement, der passer: AI-SOC til detektion og SLNC-env til lukket udvikling.",
+      "cta": "Se detaljer",
+      "aiSoc": {
+        "title": "AI-SOC",
+        "desc": "Administreret detektion og respons med AI-copilots til SOC-teams.",
+        "badge": "Abonnement"
+      },
+      "slncEnv": {
+        "title": "SLNC-env",
+        "desc": "Lukket udviklingscloud, der holder kode, prompty og builds on-prem.",
+        "badge": "Abonnement"
+      }
+    },
+    "services": {
+      "title": "Skræddersyede udviklingstjenester",
+      "subtitle": "AI-agenter, integrationer og fuld softwareleverance med sikkerhed indbygget fra dag ét.",
+      "cta": "Se tjenester",
+      "cards": {
+        "agents": "Produktionsklare AI-agenter med guardrails, RAG og sikre connectorer.",
+        "integrations": "Leverandør-neutrale integrationer til jeres stack, IAM og datagovernance.",
+        "delivery": "Fuld leverance med SLO'er for pålidelighed, observability og sikkerhedsgennemgange."
+      },
+      "cardsTitle": {
+        "agents": "Agenter",
+        "integrations": "Integrationer",
+        "delivery": "Leverance"
+      }
+    },
+    "contact": {
+      "title": "Klar til at kombinere AI-SOC og SLNC-env?",
+      "subtitle": "Fortæl om jeres sikkerheds- og leverancemål — vi matcher system og tjenester.",
+      "cta": "Book demo",
+      "ctaSecondary": "Tal med serviceteamet"
     }
   }
 }

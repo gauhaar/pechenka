@@ -1,5 +1,6 @@
 import React, { useMemo, useRef, useState } from "react";
 import EdgeGlowCard from "./EdgeGlowCard";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 /* =========================
    3D TILT HOOK
@@ -93,7 +94,7 @@ const Sparkline = ({ data, accent }) => {
    IMAGE FALLBACK HERO
    (solves broken images)
 ========================= */
-const FallbackHero = ({ title, accent }) => {
+const FallbackHero = ({ title, accent, label }) => {
   const initials = useMemo(() => {
     const parts = title.replace(/—/g, " ").split(" ").filter(Boolean);
     const a = parts[0]?.[0] || "C";
@@ -144,7 +145,7 @@ const FallbackHero = ({ title, accent }) => {
             style={{ background: accent, boxShadow: `0 0 14px ${accent}` }}
           />
           <span className="text-xs tracking-widest text-white/70 uppercase">
-            Case Study
+            {label}
           </span>
         </div>
       </div>
@@ -168,7 +169,7 @@ const FallbackHero = ({ title, accent }) => {
   );
 };
 
-const CaseStudyCard = ({ study, glow }) => {
+const CaseStudyCard = ({ study, glow, t }) => {
   const tilt = useTilt(9);
   const [imgOk, setImgOk] = useState(true);
 
@@ -237,7 +238,7 @@ const CaseStudyCard = ({ study, glow }) => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
             </div>
           ) : (
-            <FallbackHero title={study.title} accent={study.accent} />
+            <FallbackHero title={study.title} accent={study.accent} label={t("caseStudies.caseStudy", "Case Study")} />
           )}
         </div>
 
@@ -258,14 +259,14 @@ const CaseStudyCard = ({ study, glow }) => {
             <div className="flex gap-3">
               <span className="mt-1 w-2 h-2 rounded-full" style={{ backgroundColor: study.accent }} />
               <p className="text-sm text-white/60">
-                <span className="text-white/80 font-medium">Problem:</span> {study.problem}
+                <span className="text-white/80 font-medium">{t("caseStudies.problem", "Problem:")}</span> {study.problem}
               </p>
             </div>
 
             <div className="flex gap-3">
               <span className="mt-1 w-2 h-2 rounded-full" style={{ backgroundColor: study.accent }} />
               <p className="text-sm text-white/60">
-                <span className="text-white/80 font-medium">Solution:</span> {study.solution}
+                <span className="text-white/80 font-medium">{t("caseStudies.solution", "Solution:")}</span> {study.solution}
               </p>
             </div>
 
@@ -283,7 +284,7 @@ const CaseStudyCard = ({ study, glow }) => {
             <div className="flex items-center justify-between mb-2">
               <span className="text-xs uppercase tracking-wide text-white/50">{study.metricLabel}</span>
               <span className="text-xs font-semibold" style={{ color: study.accent }}>
-                Live Impact
+                {t("caseStudies.liveImpact", "Live Impact")}
               </span>
             </div>
 
@@ -292,15 +293,15 @@ const CaseStudyCard = ({ study, glow }) => {
             </div>
 
             <div className="mt-2 flex items-center justify-between text-xs text-white/45">
-              <span>Before</span>
-              <span>After</span>
+              <span>{t("caseStudies.before", "Before")}</span>
+              <span>{t("caseStudies.after", "After")}</span>
             </div>
           </div>
 
           {/* CTA */}
           <div className="pt-6">
             <span className="text-sm text-white/70 underline group-hover:text-white transition">
-              Build something like this →
+              {t("caseStudies.buildCta", "Build something like this →")}
             </span>
           </div>
         </div>
@@ -319,6 +320,7 @@ const CaseStudyCard = ({ study, glow }) => {
    MAIN COMPONENT
 ========================= */
 const CaseStudies = () => {
+  const { t } = useLanguage();
   const glow = {
     glowColor: "#FF00B7",
     secondaryGlowColor: "rgba(32,140,255,0.45)",
@@ -330,38 +332,41 @@ const CaseStudies = () => {
 
   // ✅ Keep image paths if you have them.
   // ✅ If not, the component automatically shows the premium fallback hero instead.
-  const caseStudies = [
-    {
-      image: "/images/case-study-1.jpg",
-      title: "NAK — Team Management AI",
-      problem: "Manual resource allocation",
-      solution: "AI-powered scheduling agent",
-      result: "+32% productivity",
-      accent: "#FF00B7",
-      metrics: [42, 44, 46, 50, 58, 62],
-      metricLabel: "Team Output Index",
-    },
-    {
-      image: "/images/case-study-2.jpg",
-      title: "Chic Flowers — eCommerce",
-      problem: "Low online conversions",
-      solution: "Personalized recommender + UX overhaul",
-      result: "+45% online sales",
-      accent: "#00BFFF",
-      metrics: [18, 19, 21, 26, 30, 36],
-      metricLabel: "Conversion Rate Growth",
-    },
-    {
-      image: "/images/case-study-3.jpg",
-      title: "Silence AI-SOC",
-      problem: "High alert noise",
-      solution: "AI detection & automated response",
-      result: "−68% false positives",
-      accent: "#37FF8B",
-      metrics: [92, 88, 80, 60, 42, 30],
-      metricLabel: "False Alert Volume",
-    },
-  ];
+  const caseStudies = useMemo(
+    () => [
+      {
+        image: null,
+        title: t("caseStudies.items.nak.title", "NAK — Team Management AI"),
+        problem: t("caseStudies.items.nak.problem", "Manual resource allocation"),
+        solution: t("caseStudies.items.nak.solution", "AI-powered scheduling agent"),
+        result: t("caseStudies.items.nak.result", "+32% productivity"),
+        accent: "#FF00B7",
+        metrics: [42, 44, 46, 50, 58, 62],
+        metricLabel: t("caseStudies.items.nak.metricLabel", "Team Output Index"),
+      },
+      {
+        image: null,
+        title: t("caseStudies.items.chic.title", "Chic Flowers — eCommerce"),
+        problem: t("caseStudies.items.chic.problem", "Low online conversions"),
+        solution: t("caseStudies.items.chic.solution", "Personalized recommender + UX overhaul"),
+        result: t("caseStudies.items.chic.result", "+45% online sales"),
+        accent: "#00BFFF",
+        metrics: [18, 19, 21, 26, 30, 36],
+        metricLabel: t("caseStudies.items.chic.metricLabel", "Conversion Rate Growth"),
+      },
+      {
+        image: null,
+        title: t("caseStudies.items.silence.title", "Silence AI-SOC"),
+        problem: t("caseStudies.items.silence.problem", "High alert noise"),
+        solution: t("caseStudies.items.silence.solution", "AI detection & automated response"),
+        result: t("caseStudies.items.silence.result", "−68% false positives"),
+        accent: "#37FF8B",
+        metrics: [92, 88, 80, 60, 42, 30],
+        metricLabel: t("caseStudies.items.silence.metricLabel", "False Alert Volume"),
+      },
+    ],
+    [t]
+  );
 
   return (
     <section className="relative py-28 overflow-hidden">
@@ -374,18 +379,18 @@ const CaseStudies = () => {
         {/* Header */}
         <div className="text-center mb-20 space-y-6">
           <span className="inline-block text-sm tracking-widest text-white/50 uppercase">
-            Proven Impact
+            {t("caseStudies.badge", "Proven Impact")}
           </span>
-          <h2 className="text-4xl sm:text-5xl font-bold text-white">Case Studies</h2>
+          <h2 className="text-4xl sm:text-5xl font-bold text-white">{t("caseStudies.title", "Case Studies")}</h2>
           <p className="text-white/60 max-w-xl mx-auto text-lg">
-            We don’t ship features. We ship outcomes.
+            {t("caseStudies.subtitle", "We don’t ship features. We ship outcomes.")}
           </p>
         </div>
 
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {caseStudies.map((study, index) => (
-            <CaseStudyCard key={index} study={study} glow={glow} />
+            <CaseStudyCard key={index} study={study} glow={glow} t={t} />
           ))}
         </div>
       </div>

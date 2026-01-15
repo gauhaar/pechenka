@@ -1,4 +1,8 @@
+import { cookies, headers } from "next/headers";
+import { NextIntlClientProvider } from "next-intl";
 import { Geist, Geist_Mono } from "next/font/google";
+import { LOCALES } from "@/locales";
+import { defaultLocale, supportedLocales } from "@/i18n/locales.mjs";
 import "./globals.css";
 import LayoutWrapper from "@/components/LayoutWrapper";
 
@@ -13,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "SLNC Code",
-  description: "Sealed development cloud that keeps code, prompts, and builds inside your network.",
+  title: "SLNC-env",
+  description: "Sealed development cloud that keeps code, prompts, and builds inside your network with SLNC-env.",
   icons: {
     icon: '/logo.png',
   },
@@ -23,16 +27,38 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}) {
+const normalizeLocale = (value) => value?.split(/[,;]+/)[0]?.split("-")[0]?.toLowerCase();
+
+const detectRequestLocale = async () => {
+  const cookieStore = await cookies();
+  const cookieLocale = normalizeLocale(cookieStore.get("NEXT_LOCALE")?.value);
+  if (cookieLocale && supportedLocales.includes(cookieLocale)) {
+    return cookieLocale;
+  }
+
+  const headerStore = await headers();
+  const acceptLanguage = normalizeLocale(headerStore.get("accept-language"));
+  if (acceptLanguage && supportedLocales.includes(acceptLanguage)) {
+    return acceptLanguage;
+  }
+
+  return defaultLocale;
+};
+
+
+export default async function RootLayout({ children }) {
+  const locale = await detectRequestLocale();
+  const messages = LOCALES[locale] ?? LOCALES[defaultLocale] ?? {};
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}
-        style={{ backgroundColor: '#01091C' }}
+        style={{ backgroundColor: "#01091C" }}
       >
-        <LayoutWrapper>{children}</LayoutWrapper>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <LayoutWrapper initialLanguage={locale}>{children}</LayoutWrapper>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

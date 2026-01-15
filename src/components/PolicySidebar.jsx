@@ -1,10 +1,12 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const PolicySidebar = ({ sections }) => {
   const [activeSection, setActiveSection] = useState('');
   const [isScrolling, setIsScrolling] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -112,7 +114,7 @@ const PolicySidebar = ({ sections }) => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.1, duration: 0.3 }}
         >
-          Table of Contents
+          {t("policySidebar.tableOfContents")}
         </motion.h3>
         
         <div className="flex-1 overflow-y-auto">

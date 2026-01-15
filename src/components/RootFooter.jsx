@@ -11,7 +11,7 @@ const RootFooter = () => {
   );
 
   return (
-    <footer className="bg-transparent text-white pt-64 pb-32">
+    <footer className="bg-transparent text-white pt-24 pb-16 sm:pt-28 sm:pb-20">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">

@@ -1,7 +1,13 @@
 {
   "languageSelector": {
     "triggerLabel": "Επιλέξτε γλώσσα",
-    "menuLabel": "Επιλέξτε γλώσσα"
+    "menuLabel": "Επιλέξτε γλώσσα",
+    "searchLabel": "Αναζήτηση γλωσσών",
+    "searchPlaceholder": "Αναζήτηση με όνομα ή γραφή",
+    "searchResults": "Αποτελέσματα αναζήτησης",
+    "noMatches": "Καμία γλώσσα δεν ταιριάζει στην αναζήτηση.",
+    "popular": "Πιο δημοφιλείς",
+    "allLanguages": "Όλες οι γλώσσες"
   },
   "header": {
     "nav": {
@@ -10,10 +16,20 @@
       "affiliate": "Πρόγραμμα συνεργατών",
       "instructions": "Οδηγίες",
       "product": "AI-SOC",
-      "secureDevelopment": "SLNC Code",
-      "developerServices": "Υπηρεσίες προγραμματιστών"
+      "secureDevelopment": "SLNC-env",
+      "developerServices": "Υπηρεσίες προγραμματιστών",
+      "home": "Αρχική",
+      "systems": "Συστήματα",
+      "systemsAiSoc": "AI-SOC",
+      "systemsSlncEnv": "SLNC-env",
+      "services": "Υπηρεσίες"
     },
-    "login": "Σύνδεση"
+    "login": "Σύνδεση",
+    "cta": {
+      "contact": "Επικοινωνία",
+      "download": "Λήψη",
+      "requestDemo": "Αίτημα demo"
+    }
   },
   "affiliate": {
     "hero": {
@@ -74,7 +90,7 @@
         "description": "Οι ανταμοιβές εμφανίζονται στο υπόλοιπο συνεργάτη μέσα σε ένα λεπτό από την ολοκλήρωση της συναλλαγής — χωρίς χειροκίνητη έγκριση."
       },
       "withdrawal": {
-        "title": "Withdrawals processed in 2 business days",
+        "title": "Οι αναλήψεις διεκπεραιώνονται σε 2 εργάσιμες ημέρες",
         "description": "Τα αιτήματα ανάληψης ελέγχονται αυτόματα και κατατίθενται στον τραπεζικό σας λογαριασμό μέσα σε δύο εργάσιμες ημέρες."
       },
       "sample": {
@@ -98,6 +114,60 @@
       "statistics": {
         "question": "Πότε θα δω τα στατιστικά των παραπομπών;",
         "answer": "Μόλις ένας χρήστης εγγραφεί με τον κωδικό ή τον σύνδεσμο παραπομπής σας, το email και η σχετική ανταμοιβή εμφανίζονται στο ταμπλό σας."
+      }
+    },
+    "termsAff": {
+      "label": "Πρόγραμμα συνεργατών",
+      "title": "Όροι χρήσης προγράμματος συνεργατών",
+      "notice": "Αυτή η πολιτική είναι διαθέσιμη μόνο στα Αγγλικά",
+      "intro": "Οι όροι περιγράφουν πώς εκδίδονται και καταβάλλονται οι ανταμοιβές στους συνεργάτες που συμμετέχουν στο πρόγραμμα συνεργατών της Silence AI.",
+      "meta": {
+        "effective": "Ημερομηνία έναρξης: 10 Νοεμβρίου 2024",
+        "lastUpdated": "Τελευταία ενημέρωση: 10 Νοεμβρίου 2024"
+      },
+      "sections": {
+        "overview": {
+          "title": "1. Επισκόπηση προγράμματος",
+          "body1": "1.1 Πεδίο συμφωνίας: Οι παρόντες Όροι διέπουν τη συμμετοχή σας στο πρόγραμμα συνεργατών της Silence AI LLC (\"Silence AI\", \"εμείς\"). Ισχύουν για εσάς ως συνεργάτη και, όπου εφαρμόζεται, για τον εργοδότη ή τον οργανισμό σας εάν ενεργείτε για λογαριασμό του.",
+          "body2": "1.2 Σύνοψη: Οι επιλέξιμοι συνεργάτες κερδίζουν προμήθειες όταν οι παραπεμφθέντες πελάτες αγοράζουν ή φορτίζουν το AI-SOC 1. Η συμμετοχή απαιτεί συμμόρφωση με τους γενικούς Όρους Χρήσης της Silence AI."
+        },
+        "eligibility": {
+          "title": "2. Επιλεξιμότητα συνεργάτη",
+          "item1": "Απαιτείται ενεργός λογαριασμός συνεργάτη με σωστά επιχειρηματικά και πληρωτικά στοιχεία.",
+          "item2": "Οι παραπεμφθέντες πρέπει να ολοκληρώσουν εγγραφή μέσω του δικού σας συνδέσμου ή κωδικού.",
+          "item3": "Λογαριασμοί που θεωρούνται δόλιοι, αυτο-παραπομπές ή παραβιάζουν νόμο δεν δικαιούνται ανταμοιβή."
+        },
+        "commission": {
+          "title": "3. Δομή προμήθειας",
+          "body1": "Κερδίζετε 10% ανταμοιβή σε κάθε φόρτιση υπολοίπου λογαριασμού που γράφτηκε μέσω της πρόσκλησής σας.",
+          "body2": "Η προμήθεια υπολογίζεται στο καθαρό ποσό μετά τα έξοδα επεξεργασίας πληρωμής."
+        },
+        "rewardPosting": {
+          "title": "4. Καταχώριση ανταμοιβών",
+          "body1": "Οι ανταμοιβές πιστώνονται στο υπόλοιπο συνεργάτη μέσα σε ένα λεπτό μετά την επιτυχή συναλλαγή, χωρίς ουρά χειροκίνητης έγκρισης.",
+          "body2": "Ειδοποιήσεις εμφανίζονται στο ταμπλό συνεργάτη μαζί με το αναγνωριστικό πελάτη και το ποσό φόρτισης."
+        },
+        "withdrawals": {
+          "title": "5. Αναλήψεις",
+          "body1": "Αιτήματα ανάληψης διεκπεραιώνονται εντός δύο εργάσιμων ημερών και πληρώνονται με τη μέθοδο εξόφλησης που έχετε ορίσει.",
+          "body2": "Ελάχιστα όρια και υποστηριζόμενα δίκτυα πληρωμών δημοσιεύονται στο ταμπλό συνεργάτη."
+        },
+        "productScope": {
+          "title": "6. Πεδίο προϊόντος",
+          "body1": "Οι ανταμοιβές ισχύουν μόνο για το προϊόν AI-SOC 1. Άλλες υπηρεσίες Silence AI εξαιρούνται εκτός αν οριστεί εγγράφως.",
+          "body2": "Αν προστεθούν επιπλέον προϊόντα, η Silence AI θα δημοσιεύσει ενημερωμένη λίστα στους όρους."
+        },
+        "compliance": {
+          "title": "7. Συμπεριφορά & συμμόρφωση",
+          "item1": "Οι συνεργάτες οφείλουν να παρουσιάζουν με ακρίβεια τη Silence AI και να αποφεύγουν παραπλανητικούς ισχυρισμούς για δυνατότητες ή τιμές.",
+          "item2": "Το marketing πρέπει να τηρεί αντι-spam, κανονισμούς απορρήτου και διαφήμισης.",
+          "item3": "Η Silence AI μπορεί να αναστείλει ή να τερματίσει λογαριασμούς που παραβιάζουν αυτές τις υποχρεώσεις ή βλάπτουν το brand."
+        },
+        "changes": {
+          "title": "8. Αλλαγές & επικοινωνία",
+          "body1": "Η Silence AI μπορεί να ενημερώνει τους όρους συνεργατών για αλλαγές στο πρόγραμμα ή τη νομοθεσία. Ισχύουν από τη δημοσίευσή τους σε αυτή τη σελίδα.",
+          "body2": "Ερωτήσεις για το πρόγραμμα: info@silenceai.net."
+        }
       }
     }
   },
@@ -132,7 +202,7 @@
   "playground": {
     "options": {
       "globeShield": "Ασφάλεια Web & Διαχείριση κίνησης",
-      "emailSecurity": "Email Security"
+      "emailSecurity": "Ασφάλεια email"
     }
   },
   "cookie": {
@@ -219,7 +289,46 @@
           "reports": "Εύκολα κατανοητές αναφορές ασφάλειας",
           "intelligence": "Αναφορά πληροφοριών"
         }
+      },
+      "basic": {
+        "name": "Basic",
+        "features": {
+          "fix": "Διορθώσεις κρίσιμων σφαλμάτων (SLA 48h)",
+          "updates": "Μηνιαίες ενημερώσεις",
+          "audit": "Τριμηνιαίοι έλεγχοι ασφαλείας",
+          "manager": "Αποκλειστικός διαχειριστής"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Πιο δημοφιλές",
+        "features": {
+          "fix": "Διορθώσεις κρίσιμων σφαλμάτων (SLA 24h)",
+          "updates": "10 ώρες μηνιαίες ενημερώσεις",
+          "audit": "Μηνιαίοι έλεγχοι ασφαλείας",
+          "manager": "Αποκλειστικός διαχειριστής"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "badge": "Καλύτερη αξία",
+        "features": {
+          "fix": "Διορθώσεις κρίσιμων σφαλμάτων (SLA 4h)",
+          "updates": "Απεριόριστες ενημερώσεις + roadmap",
+          "audit": "Εβδομαδιαίοι έλεγχοι + backups",
+          "manager": "Αποκλειστικός διαχειριστής"
+        }
       }
+    },
+    "subtitle": "Σχέδια mobile-first φτιαγμένα να κλιμακώνονται με το προϊόν σας.",
+    "percentMaintenance": "{percent}% ετήσια συντήρηση",
+    "planEstimate": "${value}",
+    "perYear": "ανά έτος (εκτίμηση)",
+    "calculator": {
+      "title": "Υπολογιστής κόστους έργου",
+      "subtitle": "Σύρετε για να δείτε την ετήσια συντήρηση",
+      "projectCost": "Κόστος έργου:",
+      "projectValue": "${value}"
     }
   },
   "solution": {
@@ -281,7 +390,7 @@
   },
   "modal": {
     "title": "Υπό ενεργή ανάπτυξη",
-    "body": "The system is expected to be launched on October 10"
+    "body": "Το σύστημα αναμένεται να κυκλοφορήσει στις 10 Οκτωβρίου"
   },
   "lamp": {
     "title": "Η πραγματικότητα των κυβερνοεπιθέσεων"
@@ -321,33 +430,34 @@
       "termsUse": "Όροι χρήσης",
       "termsService": "Όροι υπηρεσίας",
       "privacy": "Πολιτική απορρήτου",
-      "cookies": "Πολιτική cookies"
+      "cookies": "Πολιτική cookies",
+      "affiliateTerms": "Όροι προγράμματος συνεργατών"
     },
     "copyright": "© {year} Silence AI. Όλα τα δικαιώματα διατηρούνται."
   },
   "notFound": {
     "title": "Η σελίδα δεν βρέθηκε",
-    "description": "Ψάξαμε παντού αλλά δεν μπορέσαμε να βρούμε αυτή τη σελίδα.",
+    "description": "Ψάξαμε παντού, αλλά δεν μπορέσαμε να βρούμε αυτή τη σελίδα.",
     "cta": "Επιστροφή στην αρχική σελίδα"
   },
   "heroSection": {
-    "badge": "Τεχνητή Νοημοσύνη και λογισμικό έτοιμα για παραγωγή",
-    "title": "Προσαρμοσμένη ανάπτυξη ΤΝ και λογισμικού",
-    "description": "Δημιουργούμε πράκτορες ΤΝ έτοιμους για παραγωγή και προσαρμοσμένο λογισμικό για την {country} και την {market}.",
+    "badge": "AI & Λογισμικό έτοιμο για παραγωγή",
+    "title": "Εξατομικευμένη Ανάπτυξη AI & Λογισμικού",
+    "description": "Κατασκευάζουμε πράκτορες AI έτοιμους για παραγωγή και προσαρμοσμένο λογισμικό.",
     "country": "Καζακστάν",
     "market": "παγκόσμια αγορά",
-    "startProject": "Ξεκινήστε ένα έργο",
-    "liveDemo": "Ζωντανή επίδειξη — Πράκτορας ΤΝ",
+    "startProject": "Έναρξη έργου",
+    "liveDemo": "Ζωντανή επίδειξη — Πράκτορας AI",
     "live": "Ζωντανά",
-    "aiAgent": "Πράκτορας ΤΝ v2.1",
+    "aiAgent": "Πράκτορας AI v2.1",
     "processing": "Επεξεργασία αιτημάτων...",
-    "active": "Ενεργό",
-    "userMessage": "Αναλύστε τις τάσεις δεδομένων πελατών",
-    "aiResponse": "Ανάλυση",
+    "active": "Ενεργός",
+    "userMessage": "Ανάλυση τάσεων δεδομένων πελατών",
+    "aiResponse": "Ανάλυση...",
     "tasks": {
-      "dataCollection": "Συλλογή δεδομένων",
-      "aiAnalysis": "Ανάλυση ΤΝ",
-      "reportGeneration": "Δημιουργία αναφορών"
+      "dataCollection": "Συλλογή Δεδομένων",
+      "aiAnalysis": "Ανάλυση AI",
+      "reportGeneration": "Δημιουργία Αναφορών"
     },
     "stats": {
       "tasks": "Εργασίες",
@@ -357,149 +467,485 @@
   },
   "secureDevelopment": {
     "hero": {
-      "badge": "SLNC Code · Secure Development Environment",
-      "title": "Build systems with secure and private code",
-      "description": "Private development environment for enterprises, where code never leaves your corporate network. Meanwhile offering the latest AI-powered technology",
-      "requestSystem": "Request System"
+      "badge": "SLNC-env · Ασφαλές περιβάλλον ανάπτυξης",
+      "title": "Χτίστε συστήματα με ασφαλή και ιδιωτικό κώδικα",
+      "description": "Ιδιωτικό περιβάλλον ανάπτυξης για επιχειρήσεις, όπου ο κώδικας δεν φεύγει ποτέ από το εταιρικό δίκτυο, με την πιο πρόσφατη AI τεχνολογία.",
+      "requestSystem": "Αίτημα συστήματος"
     },
     "components": {
-      "title": "Everything stays inside",
-      "subtitle": "Three components, one sealed loop",
-      "description": "Code, prompts, and builds never leave your network. SLNC Code keeps AI help, reviews, and delivery private for cloud providers, government teams, and industrial plants.",
+      "title": "Όλα μένουν εντός",
+      "subtitle": "Τρία στοιχεία, ένας κλειστός κύκλος",
+      "description": "Κώδικας, prompts και builds δεν φεύγουν από το δίκτυό σας. Το SLNC-env κρατά AI βοήθεια, ελέγχους και παράδοση ιδιωτικά για cloud, δημόσιους φορείς και βιομηχανία.",
       "sithub": {
         "title": "Sithub Server",
-        "tag": "Local version control"
+        "tag": "Τοπικός έλεγχος έκδοσης"
       },
       "llm": {
         "title": "LLM Server (Qwen-Code)",
-        "tag": "On-prem intelligence"
+        "tag": "Τοπική νοημοσύνη"
       },
       "ide": {
-        "title": "IDE with Local Copilot",
-        "tag": "Cursor-class experience"
+        "title": "IDE με Local Copilot",
+        "tag": "Εμπειρία τύπου Cursor"
       },
-      "staysOnPrem": "Stays on-prem. No egress."
+      "staysOnPrem": "Παραμένει on-prem. Καμία έξοδος."
     },
     "timeline": {
-      "title": "Why isolated, checked code matters",
-      "subtitle": "Recent wake-up calls",
+      "title": "Γιατί μετρά ο απομονωμένος, ελεγμένος κώδικας",
+      "subtitle": "Πρόσφατα wake-up calls",
       "incident": {
-        "title": "Critical incident — leaked code",
-        "heading": "DeepSeek breach put source and prompts on the open internet",
-        "description": "Keep inference and scanning on-prem. No external model egress. Audit trails by default.",
-        "seePlan": "See containment plan"
+        "title": "Κρίσιμο περιστατικό — διαρροή κώδικα",
+        "heading": "Η παραβίαση DeepSeek έβγαλε πηγαίο κώδικα και prompts στο διαδίκτυο",
+        "description": "Κρατήστε inference και σάρωση on-prem. Καμία έξοδος σε εξωτερικά μοντέλα. Audit logs από προεπιλογή.",
+        "seePlan": "Δείτε το σχέδιο περιορισμού"
       },
       "stuxnet": {
         "year": "2010",
         "attack": "Stuxnet",
-        "target": "Natanz enrichment facility",
-        "impact": "Destroyed ~1,000 centrifuges",
+        "target": "Εγκαταστάσεις εμπλουτισμού Natanz",
+        "impact": "Καταστροφή ~1.000 φυγοκεντρητών",
         "severity": "Critical"
       },
       "blackEnergy": {
         "year": "2015",
         "attack": "BlackEnergy",
-        "target": "Ukraine power grid",
-        "impact": "230k customers lost power",
+        "target": "Δίκτυο ηλεκτρισμού Ουκρανίας",
+        "impact": "230k καταναλωτές χωρίς ρεύμα",
         "severity": "High"
       },
       "triton": {
         "year": "2017",
         "attack": "TRITON",
-        "target": "Saudi petrochemical plant",
-        "impact": "Safety systems disabled",
+        "target": "Σαουδαραβικό πετροχημικό εργοστάσιο",
+        "impact": "Απενεργοποίηση συστημάτων ασφαλείας",
         "severity": "Critical"
       },
       "colonialPipeline": {
         "year": "2021",
         "attack": "Colonial Pipeline",
-        "target": "US fuel pipeline",
-        "impact": "6-day fuel paralysis",
+        "target": "Αγωγός καυσίμων στις ΗΠΑ",
+        "impact": "6 ημέρες διακοπή καυσίμων",
         "severity": "High"
       },
       "pdvsa": {
         "year": "2025",
         "attack": "PDVSA",
-        "target": "Venezuela refining",
-        "impact": "Refinery operations disrupted",
+        "target": "Διυλιστήρια Βενεζουέλας",
+        "impact": "Διακοπή λειτουργίας διυλιστηρίων",
         "severity": "Medium"
       }
     },
     "analyzer": {
-      "title": "Analyzer that beats CodeQL",
-      "subtitle": "Live assurance",
+      "title": "Analyzer καλύτερος από CodeQL",
+      "subtitle": "Ζωντανή διασφάλιση",
       "features": {
         "quality": {
-          "title": "Automatic code quality",
-          "description": "Structure, style, and best-practice checks tuned for safety-critical code"
+          "title": "Αυτόματη ποιότητα κώδικα",
+          "description": "Έλεγχοι δομής, στιλ και πρακτικών για κώδικα κρίσιμο για ασφάλεια"
         },
         "vulnerability": {
-          "title": "Vulnerability sweeps",
-          "description": "SQLi, XSS, auth bypass, and insecure dependencies surfaced instantly"
+          "title": "Σάρωση ευπαθειών",
+          "description": "SQLi, XSS, παρακάμψεις auth και μη ασφαλείς εξαρτήσεις εντοπίζονται άμεσα"
         },
         "secrets": {
-          "title": "Secrets guard",
-          "description": "Keys, tokens, and credentials blocked at commit time"
+          "title": "Προστασία μυστικών",
+          "description": "Κλειδιά, tokens και διαπιστευτήρια μπλοκάρονται στο commit"
         },
         "config": {
-          "title": "Config hardening",
-          "description": "Docker/K8s, IAM, and network policies scanned for privilege creep"
+          "title": "Σκλήρυνση ρυθμίσεων",
+          "description": "Docker/K8s, IAM και πολιτικές δικτύου σαρώνουν για αύξηση προνομίων"
         }
       },
       "beyondCodeQL": {
-        "title": "Finds what static queries miss",
-        "subtitle": "Beyond CodeQL",
-        "description": "Finds misconfigs and vulnerable packages faster than CodeQL and offers fixes, not just alerts.",
+        "title": "Βρίσκει ό,τι χάνουν τα στατικά queries",
+        "subtitle": "Πέρα από το CodeQL",
+        "description": "Εντοπίζει misconfigs και ευάλωτα packages γρηγορότερα από CodeQL και προτείνει διορθώσεις, όχι μόνο alerts.",
         "points": {
-          "packages": "Knows package graphs and flags risky dependencies in seconds.",
-          "config": "Spots config drift and privilege creep—beyond static rules.",
-          "patches": "Each finding comes with a suggested patch and owner."
+          "packages": "Γνωρίζει γράφους packages και επισημαίνει επικίνδυνες εξαρτήσεις σε δευτερόλεπτα.",
+          "config": "Βλέπει απόκλιση ρυθμίσεων και αύξηση προνομίων — πέρα από στατικούς κανόνες.",
+          "patches": "Κάθε εύρημα συνοδεύεται από προτεινόμενο patch και υπεύθυνο."
         }
       },
       "visualizer": {
-        "title": "Code analyzer in action",
+        "title": "Ο analyzer σε δράση",
         "subtitle": "Visualizer",
-        "description": "Crisp snapshots from recent scans, rendered beautifully inside the on-prem console.",
-        "privateWorkspace": "Private workspace only",
+        "description": "Καθαρά στιγμιότυπα πρόσφατων σαρώσεων, όμορφα αποτυπωμένα στην on-prem κονσόλα.",
+        "privateWorkspace": "Μόνο ιδιωτικός χώρος εργασίας",
         "shots": {
           "scanOverview": {
-            "title": "Scan overview",
-            "description": "See issues grouped by severity before code leaves your network."
+            "title": "Επισκόπηση σάρωσης",
+            "description": "Δείτε θέματα ομαδοποιημένα κατά σοβαρότητα πριν φύγει ο κώδικας."
           },
           "misconfigurations": {
-            "title": "Detection of misconfigurations",
-            "description": "Our AI-powered code analyzer even finds misconfigurations within the code."
+            "title": "Εντοπισμός misconfigurations",
+            "description": "Ο analyzer με AI βρίσκει ακόμη και λάθος ρυθμίσεις στον κώδικα."
           },
           "inlineDiffs": {
             "title": "Inline diffs",
-            "description": "Review suggested patches inline with security context."
+            "description": "Ελέγξτε προτεινόμενα patches inline με το security context."
           }
         }
       }
     },
     "industries": {
-      "title": "Built for regulated, high-impact sectors",
-      "subtitle": "Where we deploy",
+      "title": "Φτιαγμένο για ρυθμιζόμενους, κρίσιμους κλάδους",
+      "subtitle": "Πού υλοποιούμε",
       "oilGas": {
-        "title": "Oil & Gas",
-        "description": "Drilling, refining, pipeline control"
+        "title": "Πετρέλαιο & Αέριο",
+        "description": "Γεώτρηση, διύλιση, έλεγχος αγωγών"
       },
       "energy": {
         "title": "Energy",
-        "description": "Grid, distribution, and EMS"
+        "description": "Δίκτυο, διανομή, EMS"
       },
       "nuclear": {
         "title": "Nuclear",
-        "description": "Reactor controls and safety"
+        "description": "Έλεγχος αντιδραστήρων και ασφάλεια"
       },
       "manufacturing": {
         "title": "Manufacturing",
-        "description": "ICS, OT, and robotics"
+        "description": "ICS, OT και ρομποτική"
       },
       "government": {
         "title": "Government",
-        "description": "Ministries, defense, critical agencies"
+        "description": "Υπουργεία, άμυνα, κρίσιμες αρχές"
       }
+    }
+  },
+  "pricingCta": {
+    "requestSystem": "Αίτημα συστήματος"
+  },
+  "contactForm": {
+    "title": "Επικοινωνήστε μαζί μας",
+    "success": "Ευχαριστούμε! Το μήνυμα στάλθηκε. Θα επικοινωνήσουμε σύντομα.",
+    "errorRequired": "Συμπληρώστε όνομα, email και ένα σύντομο μήνυμα.",
+    "errorSend": "Αδυναμία αποστολής. Δοκιμάστε ξανά αργότερα.",
+    "placeholders": {
+      "name": "Το όνομά σας",
+      "email": "Email",
+      "type": "Τύπος έργου (προαιρετικό)",
+      "budget": "Προϋπολογισμός (προαιρετικό)",
+      "message": "Πείτε μας για το έργο σας..."
+    },
+    "submit": {
+      "idle": "Αποστολή μηνύματος",
+      "loading": "Αποστολή…"
+    }
+  },
+  "consulting": {
+    "title": "Ερωτηματολόγιο συμβουλευτικής",
+    "searchPlaceholder": "Αναζήτηση ερωτήσεων...",
+    "noResults": "Δεν βρέθηκαν ερωτήσεις.",
+    "questions": [
+      {
+        "question": "Ποια είναι η βασική αξία σας πέρα από ανταγωνιστικές τιμές;",
+        "answer": "Η ασφάλεια είναι το κύριο πλεονέκτημά μας. Χτίζουμε συστήματα υψηλής ασφάλειας με πρακτικές επιπέδου enterprise σε όλο τον κύκλο ανάπτυξης."
+      },
+      {
+        "question": "Πόσο καιρό δραστηριοποιείστε και ποιο είναι το ιστορικό σας;",
+        "answer": "Παραδώσαμε έργα όπως NAK (Nur Astana Kurylys) — πλατφόρμα διαχείρισης ομάδας με AI, και Chic Flowers — πλήρης ψηφιακή πλατφόρμα για μεγάλο retailer λουλουδιών."
+      },
+      {
+        "question": "Τι διαφοροποιεί τις τεχνικές δυνατότητες και την ποιότητα υπηρεσιών σας από EPAM και άλλους;",
+        "answer": "Το security-first μοντέλο μας. Ενσωματώνουμε ασφάλεια από την αρχή μέχρι την παράδοση και τη συντήρηση."
+      },
+      {
+        "question": "Πώς διατηρείτε ποιότητα με ανταγωνιστικές τιμές;",
+        "answer": "Προσφέρουμε ~15% κάτω από την αγορά, διατηρώντας ποιότητα μέσω βελτιστοποιημένων λειτουργιών, στρατηγικής στελέχωσης και αποδοτικού project management."
+      },
+      {
+        "question": "Ποιες υπηρεσίες ανάπτυξης λογισμικού παρέχετε;",
+        "answer": "End-to-end ανάπτυξη: custom εφαρμογές, λύσεις AI, ανάπτυξη προϊόντων κυβερνοασφάλειας (Silence AI-SOC), integration, cloud migration και DevOps. Προσφέρουμε επίσης dedicated development και ενίσχυση ομάδας."
+      },
+      {
+        "question": "Σε ποιους κλάδους ειδικεύεστε;",
+        "answer": "Κατασκευές, retail, fintech, κυβερνοασφάλεια και ψηφιακές πλατφόρμες — συμπεριλαμβανομένων AI διαχείρισης ομάδων, e-commerce και enterprise security λύσεων."
+      },
+      {
+        "question": "Σε ποιους τεχνολογικούς stacks και πλατφόρμες έχετε εμπειρία;",
+        "answer": "Go, Swift, Flutter, cloud (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript και AI/ML frameworks. Χτίζουμε ιδιόκτητα εργαλεία ασφαλείας όπως το Silence AI-SOC."
+      },
+      {
+        "question": "Προσφέρετε end-to-end ανάπτυξη ή μόνο επιμέρους υπηρεσίες;",
+        "answer": "Και τα δύο: MVPs, πλήρη παράδοση προϊόντος, ενίσχυση ομάδας και ενσωμάτωση κυβερνοασφάλειας."
+      },
+      {
+        "question": "Παρέχετε μοντέλα ενίσχυσης προσωπικού και dedicated ομάδων;",
+        "answer": "Ναι, προσφέρουμε ευέλικτα μοντέλα: staff augmentation, dedicated teams και project-based outsourcing."
+      },
+      {
+        "question": "Παρέχετε συμβουλευτική, αρχιτεκτονική και advisory πέρα από την ανάπτυξη;",
+        "answer": "Ναι: συμβουλευτική κυβερνοασφάλειας, σχεδίαση αρχιτεκτονικής, τεχνολογικό advisory και αξιολογήσεις συμμόρφωσης με Silence AI-SOC."
+      }
+    ]
+  },
+  "requestDemoModal": {
+    "title": "Αίτημα συστήματος",
+    "name": "Όνομα",
+    "email": "Εταιρικό Email",
+    "company": "Επωνυμία εταιρείας",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Αποστολή αιτήματος",
+    "successTitle": "Το αίτημα στάλθηκε!",
+    "successBody": "Ευχαριστούμε για το ενδιαφέρον. Θα επικοινωνήσουμε σύντομα.",
+    "close": "Κλείσιμο"
+  },
+  "requestSystemModal": {
+    "title": "Αίτημα συστήματος",
+    "name": "Όνομα",
+    "email": "Εταιρικό Email",
+    "company": "Επωνυμία εταιρείας",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Download",
+    "successTitle": "Το αίτημα στάλθηκε!",
+    "successBody": "Ευχαριστούμε. Οι οδηγίες λήψης θα σταλούν στο email σας.",
+    "close": "Κλείσιμο"
+  },
+  "policySidebar": {
+    "tableOfContents": "Πίνακας περιεχομένων"
+  },
+  "whyChooseUs": {
+    "badge": "Μηχανική με γνώμονα τα αποτελέσματα",
+    "title": "Γιατί να μας επιλέξετε",
+    "subtitle": "Μας εμπιστεύονται ομάδες από",
+    "subtitleHighlight": "οργανισμούς δισεκατομμυρίων",
+    "subtitleTail": "— και παραδίδουμε με ταχύτητα startup.",
+    "learnMore": "Μάθετε περισσότερα",
+    "logos": {
+      "kmg": "KazMunayGas",
+      "nak": "Nur Astana Kurylys"
+    },
+    "features": {
+      "fast": {
+        "title": "Γρήγορη Παράδοση με Εταιρική Ποιότητα",
+        "description": "Γρήγοροι, επαναληπτικοί κύκλοι παράδοσης που πληρούν τα πρότυπα αξιοπιστίας και συμμόρφωσης εταιρικού επιπέδου.",
+        "pill": "Ταχύτητα + Ποιότητα"
+      },
+      "ai": {
+        "title": "Μηχανική Προϊόντων AI-first",
+        "description": "Από πρωτότυπα σε πράκτορες AI παραγωγής — σχεδιάζουμε, εκπαιδεύουμε και αναπτύσσουμε μοντέλα που λύνουν πραγματικά επιχειρηματικά προβλήματα.",
+        "pill": "Μηχανική AI"
+      },
+      "local": {
+        "title": "Τοπική Εμπειρογνωμοσύνη, Παγκόσμια Εμβέλεια",
+        "description": "Βαθιά γνώση της αγοράς και των κανονισμών του Καζακστάν σε συνδυασμό με τις βέλτιστες διεθνείς πρακτικές.",
+        "pill": "KZ + Παγκόσμιο"
+      }
+    }
+  },
+  "servicesBlock": {
+    "badge": "Τι προσφέρουμε",
+    "title": "Οι Υπηρεσίες μας",
+    "description": "Premium UI, ισχυρή μηχανική και γρήγορη παράδοση — όλα όσα χρειάζεστε για να λανσάρετε ένα προϊόν που φαίνεται και αποδίδει σαν κορυφαία μάρκα.",
+    "learnMore": "Μάθετε περισσότερα",
+    "learnMoreAria": "Μάθετε περισσότερα για αυτή την υπηρεσία",
+    "services": {
+      "aiAgents": {
+        "title": "Πράκτορες AI",
+        "description": "Προσαρμοσμένοι συνομιλιακοί και αυτόνομοι πράκτορες για υποστήριξη, λειτουργίες και αναλυτικά στοιχεία.",
+        "tag": "Αυτοματισμός"
+      },
+      "customSoftware": {
+        "title": "Προσαρμοσμένο Λογισμικό",
+        "description": "Εφαρμογές ιστού και επιτραπέζιου υπολογιστή από άκρη σε άκρη, προσαρμοσμένες στις ροές εργασίας σας.",
+        "tag": "Κατασκευή"
+      },
+      "cybersecurity": {
+        "title": "Κυβερνοασφάλεια",
+        "description": "Έλεγχοι, δοκιμές διείσδυσης και συνεχή παρακολούθηση.",
+        "tag": "Προστασία"
+      },
+      "backend": {
+        "title": "Backend / DevOps",
+        "description": "Κλιμακούμενα API, αγωγοί CI/CD και υποδομή cloud.",
+        "tag": "Κλιμάκωση"
+      },
+      "mobile": {
+        "title": "Κινητά",
+        "description": "Εφαρμογές cross-platform με εγγενή απόδοση και προσεγμένο UX.",
+        "tag": "Αποστολή"
+      }
+    }
+  },
+  "caseStudies": {
+    "badge": "Αποδεδειγμένος Αντίκτυπος",
+    "title": "Μελέτες Περίπτωσης",
+    "subtitle": "Δεν παραδίδουμε χαρακτηριστικά. Παραδίδουμε αποτελέσματα.",
+    "problem": "Πρόβλημα:",
+    "solution": "Λύση:",
+    "liveImpact": "Ζωντανός Αντίκτυπος",
+    "before": "Πριν",
+    "after": "Μετά",
+    "buildCta": "Φτιάξτε κάτι παρόμοιο →",
+    "caseStudy": "Μελέτη Περίπτωσης",
+    "items": {
+      "nak": {
+        "title": "NAK — AI Διαχείρισης Ομάδας",
+        "problem": "Χειροκίνητη κατανομή πόρων",
+        "solution": "Πράκτορας προγραμματισμού με AI",
+        "result": "+32% παραγωγικότητα",
+        "metricLabel": "Δείκτης Απόδοσης Ομάδας"
+      },
+      "chic": {
+        "title": "Chic Flowers — eCommerce",
+        "problem": "Χαμηλές online μετατροπές",
+        "solution": "Εξατομικευμένες προτάσεις + ανανέωση UX",
+        "result": "+45% online πωλήσεις",
+        "metricLabel": "Αύξηση Ποσοστού Μετατροπών"
+      },
+      "silence": {
+        "title": "Silence AI-SOC",
+        "problem": "Υψηλός θόρυβος ειδοποιήσεων",
+        "solution": "Ανίχνευση AI και αυτόματη απόκριση",
+        "result": "−68% ψευδώς θετικά",
+        "metricLabel": "Όγκος Ψευδών Ειδοποιήσεων"
+      }
+    }
+  },
+  "howWeWork": {
+    "title": "Πώς Δουλεύουμε",
+    "subtitle": "Εξαιρετικά γρήγορος αγωγός παράδοσης — βελτιστοποιημένος για ταχύτητα.",
+    "steps": {
+      "discovery": {
+        "title": "Ανακάλυψη",
+        "desc": "Απαιτήσεις, ενδιαφερόμενα μέρη, μετρήσεις επιτυχίας."
+      },
+      "design": {
+        "title": "Σχεδιασμός",
+        "desc": "UX, αρχιτεκτονική, πρωτότυπο."
+      },
+      "poc": {
+        "title": "Απόδειξη της Ιδέας",
+        "desc": "Γρήγορη επικύρωση με μετρήσιμα KPI."
+      },
+      "build": {
+        "title": "Κατασκευή",
+        "desc": "Επαναληπτικά σπριντ, αυτοματοποιημένες δοκιμές."
+      },
+      "deploy": {
+        "title": "Ανάπτυξη",
+        "desc": "CI/CD, παρακολούθηση, ενίσχυση ασφάλειας."
+      },
+      "support": {
+        "title": "Υποστήριξη και Κλιμάκωση",
+        "desc": "Συντήρηση, οδικός χάρτης, συνεχή βελτίωση."
+      }
+    }
+  },
+  "technologyStack": {
+    "title": "Τεχνολογική Στοίβα",
+    "subtitle": "Μια προσεκτικά επιλεγμένη στοίβα, έτοιμη για παραγωγή, σχεδιασμένη για ταχύτητα, κλιμάκωση και όμορφες εμπειρίες χρήστη."
+  },
+  "backToTop": {
+    "label": "Επιστροφή στην κορυφή"
+  },
+  "pricingCustom": {
+    "title": "Διαφανής Τιμολόγηση",
+    "subtitle": "Σχέδια mobile-first που κλιμακώνονται με το προϊόν σας.",
+    "percentMaintenance": "{percent}% ετήσια συντήρηση",
+    "planEstimate": "${value}",
+    "perYear": "τον χρόνο (εκτίμηση)",
+    "calculator": {
+      "title": "Υπολογιστής κόστους έργου",
+      "subtitle": "Σύρετε για να δείτε την ετήσια συντήρηση",
+      "projectCost": "Κόστος έργου:",
+      "projectValue": "${value}"
+    },
+    "plans": {
+      "basic": {
+        "name": "Βασικό",
+        "features": {
+          "fix": "Διορθώσεις κρίσιμων σφαλμάτων (SLA 48h)",
+          "updates": "Μηνιαίες ενημερώσεις",
+          "audit": "Τριμηνιαίοι έλεγχοι ασφαλείας",
+          "manager": "Αποκλειστικός διαχειριστής"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Δημοφιλέστερο",
+        "features": {
+          "fix": "Διορθώσεις κρίσιμων σφαλμάτων (SLA 24h)",
+          "updates": "10 ώρες μηνιαίες ενημερώσεις",
+          "audit": "Μηνιαίοι έλεγχοι ασφαλείας",
+          "manager": "Αποκλειστικός διαχειριστής"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "badge": "Καλύτερη αξία",
+        "features": {
+          "fix": "Διορθώσεις κρίσιμων σφαλμάτων (SLA 4h)",
+          "updates": "Απεριόριστες ενημερώσεις + roadmap",
+          "audit": "Εβδομαδιαίοι έλεγχοι + αντίγραφα ασφαλείας",
+          "manager": "Αποκλειστικός διαχειριστής"
+        }
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "Ασφάλεια & ανάπτυξη AI",
+      "title": "Χτίστε με ασφάλεια. Κάντε deploy με σιγουριά.",
+      "subtitle": "Δύο συνδρομητικά συστήματα (AI-SOC, SLNC-env) συν custom AI και παράδοση λογισμικού για enterprise ομάδες.",
+      "ctaPrimary": "Αίτημα demo",
+      "ctaSecondary": "Δείτε τα συστήματα",
+      "highlights": {
+        "coverage": "24/7 SOC με AI",
+        "onPrem": "0-egress on-prem",
+        "deploy": "Ασφαλές deploy σε 4΄"
+      },
+      "metrics": {
+        "title": "Φτιαγμένο για ρυθμιζόμενες ομάδες",
+        "soc": "SOC κάλυψη με AI",
+        "egress": "Όλα on-prem — κώδικας, prompts, builds",
+        "deployment": "μέχρι το πρώτο ασφαλές deploy",
+        "locales": "γλώσσες έτοιμες προεγκατεστημένες"
+      }
+    },
+    "systems": {
+      "title": "Συστήματα",
+      "subtitle": "Επιλέξτε τη σωστή συνδρομή: AI-SOC για ανίχνευση και SLNC-env για κλειστή ανάπτυξη.",
+      "cta": "Δείτε λεπτομέρειες",
+      "aiSoc": {
+        "title": "AI-SOC",
+        "desc": "Managed detection & response με AI copilots για SOC.",
+        "badge": "Συνδρομή"
+      },
+      "slncEnv": {
+        "title": "SLNC-env",
+        "desc": "Κλειστό cloud ανάπτυξης που κρατά κώδικα, prompts και builds on-prem.",
+        "badge": "Συνδρομή"
+      }
+    },
+    "services": {
+      "title": "Υπηρεσίες custom ανάπτυξης",
+      "subtitle": "Πράκτορες AI, integrations και πλήρης κύκλος παράδοσης λογισμικού με ασφάλεια από την πρώτη μέρα.",
+      "cta": "Δείτε υπηρεσίες",
+      "cards": {
+        "agents": "Πράκτορες AI παραγωγικού επιπέδου με guardrails, RAG και ασφαλείς connectors.",
+        "integrations": "Vendor-neutral integrations με το stack, το IAM και τη διακυβέρνηση δεδομένων σας.",
+        "delivery": "Full-cycle delivery με SLOs αξιοπιστίας, observability και security reviews."
+      },
+      "cardsTitle": {
+        "agents": "Πράκτορες",
+        "integrations": "Integrations",
+        "delivery": "Παράδοση"
+      }
+    },
+    "contact": {
+      "title": "Έτοιμοι να συνδυάσετε AI-SOC και SLNC-env;",
+      "subtitle": "Πείτε μας τους στόχους ασφάλειας και παράδοσης — θα προτείνουμε το σωστό σύστημα και υπηρεσίες.",
+      "cta": "Αίτημα demo",
+      "ctaSecondary": "Μιλήστε με την ομάδα υπηρεσιών"
     }
   }
 }

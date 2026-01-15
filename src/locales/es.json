@@ -1,16 +1,35 @@
 {
   "languageSelector": {
     "triggerLabel": "Seleccionar idioma",
-    "menuLabel": "Elegir idioma"
+    "menuLabel": "Elegir idioma",
+    "searchLabel": "Buscar idiomas",
+    "searchPlaceholder": "Busca por nombre o escritura",
+    "searchResults": "Resultados de búsqueda",
+    "noMatches": "Ningún idioma coincide con tu búsqueda.",
+    "popular": "Más populares",
+    "allLanguages": "Todos los idiomas"
   },
   "header": {
     "nav": {
       "main": "Principal",
       "mail": "Correo",
       "affiliate": "Programa de afiliados",
-      "instructions": "Instrucciones"
+      "instructions": "Instrucciones",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC-env",
+      "developerServices": "Servicios para desarrolladores",
+      "home": "Inicio",
+      "systems": "Sistemas",
+      "systemsAiSoc": "AI-SOC",
+      "systemsSlncEnv": "SLNC-env",
+      "services": "Servicios"
     },
-    "login": "Iniciar sesión"
+    "login": "Iniciar sesión",
+    "cta": {
+      "contact": "Contacto",
+      "download": "Descargar",
+      "requestDemo": "Solicitar demo"
+    }
   },
   "affiliate": {
     "hero": {
@@ -71,7 +90,7 @@
         "description": "Las recompensas se registran en tu saldo de socio en menos de un minuto tras la transacción, sin cola de aprobación manual."
       },
       "withdrawal": {
-        "title": "Withdrawals processed in 2 business days",
+        "title": "Retiros procesados en 2 días hábiles",
         "description": "Las solicitudes de retiro se revisan automáticamente y llegan a tu cuenta bancaria en un máximo de dos días hábiles."
       },
       "sample": {
@@ -95,6 +114,60 @@
       "statistics": {
         "question": "¿Cuándo veré mis estadísticas de referencia?",
         "answer": "Cuando un usuario se registre con tu código o enlace, su correo y la recompensa correspondiente aparecerán en tu panel."
+      }
+    },
+    "termsAff": {
+      "label": "Programa de afiliados",
+      "title": "Términos del servicio de afiliados",
+      "notice": "Esta política está disponible solo en inglés",
+      "intro": "Estos términos describen cómo se otorgan y pagan las recompensas a los socios que participan en el programa de afiliados de Silence AI.",
+      "meta": {
+        "effective": "Fecha de vigencia: 10 de noviembre de 2024",
+        "lastUpdated": "Última actualización: 10 de noviembre de 2024"
+      },
+      "sections": {
+        "overview": {
+          "title": "1. Descripción general del programa",
+          "body1": "1.1 Alcance: Estos Términos regulan tu participación en el programa de afiliados de Silence AI LLC (\"Silence AI\", \"nosotros\"). Se aplican a ti como socio afiliado y, si corresponde, a tu empleador u organización si actúas en su nombre.",
+          "body2": "1.2 Resumen: Los socios elegibles ganan recompensas por comisión cuando los clientes referidos compran o recargan el producto AI-SOC 1. La participación requiere cumplir con los Términos de servicio generales de Silence AI."
+        },
+        "eligibility": {
+          "title": "2. Elegibilidad del socio",
+          "item1": "Debes mantener una cuenta de afiliado activa con datos de negocio y pago correctos.",
+          "item2": "Las referencias deben completar el registro usando tu enlace o código promocional.",
+          "item3": "Cuentas fraudulentas, auto-referidas o que violen la ley no califican para recompensas."
+        },
+        "commission": {
+          "title": "3. Estructura de comisión",
+          "body1": "Obtienes 10% de recompensa en cada recarga de saldo de un registro hecho con tu invitación.",
+          "body2": "La comisión se calcula sobre el importe neto después de las comisiones de pago."
+        },
+        "rewardPosting": {
+          "title": "4. Registro de recompensas",
+          "body1": "Las recompensas se acreditan en tu saldo de socio en menos de un minuto tras la transacción, sin cola de aprobación manual.",
+          "body2": "Las notificaciones aparecen en tu panel de afiliado con el identificador del cliente y el importe de recarga."
+        },
+        "withdrawals": {
+          "title": "5. Retiros",
+          "body1": "Las solicitudes de retiro se procesan en dos días hábiles y se pagan con el método registrado.",
+          "body2": "Los mínimos y redes de pago admitidas se publican en el panel de afiliado."
+        },
+        "productScope": {
+          "title": "6. Alcance del producto",
+          "body1": "Las recompensas aplican solo al producto AI-SOC 1. Otros servicios Silence AI quedan excluidos salvo indicación escrita en contrario.",
+          "body2": "Si se habilitan más productos, Silence AI publicará una lista actualizada en estos términos."
+        },
+        "compliance": {
+          "title": "7. Conducta y cumplimiento",
+          "item1": "Los socios deben representar a Silence AI con precisión y evitar afirmaciones engañosas sobre funciones o precios.",
+          "item2": "Las comunicaciones de marketing deben cumplir normativas anti-spam, privacidad y publicidad.",
+          "item3": "Silence AI puede suspender o cerrar cuentas que incumplan estas obligaciones o dañen la marca."
+        },
+        "changes": {
+          "title": "8. Cambios y contacto",
+          "body1": "Silence AI puede actualizar estos términos si cambia el programa o la ley. Las versiones nuevas aplican al publicarse en esta página.",
+          "body2": "Preguntas sobre el programa: info@silenceai.net."
+        }
       }
     }
   },
@@ -143,77 +216,77 @@
     "title": "Precios",
     "tooltips": {
       "cmcGlobal": {
-        "title": "CMC con monitorización global del tráfico",
-        "content": "La consola de gestión centralizada (CMC) se integra con el resto de sistemas de seguridad y comparte dominio e interfaz con Global Shield y Security Tester. Desde allí puedes bloquear países, cerrar puertos y realizar otras operaciones a escala"
+        "title": "CMC con monitoreo global de tráfico",
+        "content": "La CMC (Consola de Gestión Centralizada) se integra perfectamente con otros sistemas de seguridad y está disponible bajo el mismo dominio e interfaz que Global Shield y Security Tester, permitiéndote gestionar la seguridad de la red a escala. Desde aquí, puedes poner en lista negra países, cerrar puertos y realizar otras operaciones."
       },
       "countryBlacklisting": {
-        "title": "Bloqueo por país",
-        "content": "Bloquea todo el tráfico que provenga de un país concreto"
+        "title": "Lista negra de países",
+        "content": "Bloquea todo el tráfico proveniente de un país específico"
       },
       "portManagement": {
         "title": "Gestión de puertos",
-        "content": "Cierra los puertos que no se utilizan para reducir la superficie de ataque, por ejemplo deshabilitar el puerto 22 cuando no se necesita acceso SSH"
+        "content": "Cierra puertos no utilizados para reducir la superficie de ataque. Por ejemplo, deshabilitar el puerto 22 cuando no se necesita acceso SSH. Para minimizar el riesgo de que el sistema se vea comprometido."
       },
       "cmcEmail": {
-        "title": "CMC con visor avanzado del flujo de correo",
-        "content": "La CMC se integra con los demás sistemas de seguridad y comparte dominio e interfaz. Desde la consola es posible monitorizar y revisar el flujo de correo de todos los usuarios corporativos añadidos"
+        "title": "CMC con visualizador avanzado de flujo de correo",
+        "content": "La CMC (Consola de Gestión Centralizada) se integra perfectamente con otros sistemas de seguridad y está disponible bajo el mismo dominio e interfaz que Global Shield y Security Tester. Dentro de esta consola, puedes monitorear los flujos de correo y revisar correos para todos los usuarios corporativos que hayas agregado."
       },
       "dynamicVulnerability": {
         "title": "Buscador dinámico de vulnerabilidades",
-        "content": "Detecta vulnerabilidades interactuando con tu sitio web, incluida la búsqueda mediante el sistema de inteligencia"
+        "content": "Detecta vulnerabilidades interactuando con tu sitio web, incluyendo la forma de encontrar vulnerabilidades a través del sistema de inteligencia."
       },
       "codeAnalyzer": {
         "title": "Analizador de código",
-        "content": "Identifica problemas de seguridad directamente en tu base de código mediante el complemento para VS Code, ayudándote a corregirlos antes del despliegue"
+        "content": "Identifica problemas de seguridad directamente en tu base de código a través de un plugin de VS Code, ayudándote a solucionar problemas antes del despliegue."
       },
       "intelligenceReport": {
         "title": "Informe de inteligencia",
-        "content": "Genera información detallada sobre tu objetivo: puertos abiertos, servicios en ejecución, subdominios y otros datos sensibles que podrían requerir acción"
+        "content": "Genera información detallada sobre tu objetivo, incluyendo puertos abiertos, servicios en ejecución, subdominios y otra información sensible que pueda requerir acción."
       },
       "fullVulnerability": {
-        "title": "Revisión COMPLETA de vulnerabilidades",
-        "content": "Una revisión COMPLETA incluye un escaneo dinámico de vulnerabilidades y un escaneo del código"
+        "title": "Verificación COMPLETA de vulnerabilidades",
+        "content": "Una verificación COMPLETA de vulnerabilidades incluye tanto un escaneo dinámico de vulnerabilidades como un escaneo de vulnerabilidades del código base."
       }
     },
     "plans": {
       "globalShield": {
-        "title": "Seguridad web y gestión de tráfico",
+        "title": "Seguridad Web y Gestión de Tráfico",
         "price": "$0.06/GB",
-        "description": "Sin límites\nSin cargos adicionales",
-        "button": "Proteger aplicaciones y APIs",
+        "description": "Sin límites\nSin tarifas adicionales",
+        "button": "Asegurar aplicación web y APIs",
         "features": {
-          "webProtection": "Protección contra todo tipo de ataques web, salvo explotación de lógica de negocio",
+          "webProtection": "Protección contra todo tipo de ataques web, excepto explotación de vulnerabilidades de lógica de negocio",
           "ddosProtection": "Protección DDoS en tiempo real",
-          "cmc": "CMC con monitorización global del tráfico",
-          "country": "Bloqueo por país",
+          "cmc": "CMC con sistema de monitoreo global de tráfico",
+          "country": "Función de lista negra de países",
           "port": "Función de cierre de puertos"
         }
       },
       "emailProtector": {
-        "title": "Seguridad del correo electrónico y visualización",
+        "title": "Seguridad y Visualización de Correo Electrónico",
         "price": "$10/mes/cuenta",
-        "description": "Hasta 10 correos al día\nCorreos adicionales: $0.035 cada uno",
-        "button": "Proteger correo",
+        "description": "Hasta 10 correos por día\nCorreos adicionales: $0.035 cada correo",
+        "button": "Asegurar Correo",
         "features": {
-          "cmcEmail": "CMC con el visor de flujo de correo más avanzado",
-          "visibility": "Visibilidad total de los correos enviados y recibidos, con categorización automática de amenazas",
-          "webClient": "Cliente web seguro",
+          "cmcEmail": "CMC con visualizador de flujo de correo más avanzado",
+          "visibility": "Visibilidad completa de correos enviados y recibidos de todas las cuentas de correo, en CMC, con categorización automática de amenazas",
+          "webClient": "Cliente WebMail seguro",
           "phishing": "Protección contra phishing",
-          "malware": "Análisis de adjuntos maliciosos",
+          "malware": "Escaneo de adjuntos de malware",
           "links": "Detección de enlaces peligrosos",
-          "spam": "Filtro antispam",
-          "fakeSender": "Protección contra remitente falso"
+          "spam": "Filtrado de spam",
+          "fakeSender": "Protección contra remitentes falsos"
         }
       },
       "securityTester": {
-        "title": "Buscador de vulnerabilidades",
+        "title": "Buscador de Vulnerabilidades",
         "price": "$25/mes",
-        "description": "Hasta 50 revisiones COMPLETAS de vulnerabilidades al mes\nRevisiones COMPLETAS adicionales: $0.5 cada una",
-        "button": "Empezar a probar",
+        "description": "Hasta 50 verificaciones COMPLETAS de vulnerabilidades por mes\nVerificaciones COMPLETAS adicionales: $0.5 cada una",
+        "button": "Comenzar Pruebas",
         "features": {
           "dynamic": "Buscador dinámico de vulnerabilidades",
           "codeAnalyzer": "Analizador de código",
-          "reports": "Informes de seguridad fáciles de entender",
+          "reports": "Informes de evaluación de seguridad fáciles de entender",
           "intelligence": "Informe de inteligencia"
         }
       }
@@ -278,7 +351,7 @@
   },
   "modal": {
     "title": "En desarrollo activo",
-    "body": "The system is expected to be launched on October 10"
+    "body": "Se espera lanzar el sistema el 10 de octubre"
   },
   "lamp": {
     "title": "La realidad de los ciberataques"
@@ -318,33 +391,34 @@
       "termsUse": "Términos de uso",
       "termsService": "Términos del servicio",
       "privacy": "Política de privacidad",
-      "cookies": "Política de cookies"
+      "cookies": "Política de cookies",
+      "affiliateTerms": "Términos del programa de afiliados"
     },
     "copyright": "© {year} Silence AI. Todos los derechos reservados."
   },
   "notFound": {
     "title": "Página no encontrada",
-    "description": "Buscamos por todas partes, pero no encontramos esta página.",
-    "cta": "Volver a la página principal"
+    "description": "Buscamos por todas partes pero no pudimos encontrar esta página.",
+    "cta": "Volver al inicio"
   },
   "heroSection": {
-    "badge": "IA y software listo para producción",
-    "title": "Desarrollo personalizado de IA y software",
+    "badge": "IA y Software listos para producción",
+    "title": "Desarrollo de IA y Software a Medida",
     "description": "Construimos agentes de IA listos para producción y software personalizado.",
     "country": "Kazajistán",
     "market": "mercado global",
-    "startProject": "Iniciar un proyecto",
-    "liveDemo": "Demo en vivo — Agente de IA",
-    "live": "En vivo",
-    "aiAgent": "Agente de IA versión 2.1",
+    "startProject": "Iniciar un Proyecto",
+    "liveDemo": "Demo en Vivo — Agente IA",
+    "live": "En Vivo",
+    "aiAgent": "Agente IA v2.1",
     "processing": "Procesando solicitudes...",
     "active": "Activo",
     "userMessage": "Analizar tendencias de datos de clientes",
     "aiResponse": "Analizando",
     "tasks": {
-      "dataCollection": "Recopilación de datos",
+      "dataCollection": "Recolección de Datos",
       "aiAnalysis": "Análisis de IA",
-      "reportGeneration": "Generación de informes"
+      "reportGeneration": "Generación de Reportes"
     },
     "stats": {
       "tasks": "Tareas",
@@ -354,7 +428,7 @@
   },
   "secureDevelopment": {
     "hero": {
-      "badge": "SLNC Code · Entorno de desarrollo seguro",
+      "badge": "SLNC-env · Entorno de desarrollo seguro",
       "title": "Construye sistemas con código seguro y privado",
       "description": "Entorno de desarrollo privado para empresas, donde el código nunca sale de tu red corporativa. Mientras tanto, ofrece la última tecnología impulsada por IA",
       "requestSystem": "Solicitar sistema"
@@ -362,7 +436,7 @@
     "components": {
       "title": "Todo se queda dentro",
       "subtitle": "Tres componentes, un ciclo sellado",
-      "description": "El código, las indicaciones y las compilaciones nunca salen de tu red. SLNC Code mantiene la ayuda de IA, las revisiones y la entrega privadas para proveedores de nube, equipos gubernamentales y plantas industriales.",
+      "description": "El código, las indicaciones y las compilaciones nunca salen de tu red. SLNC-env mantiene la ayuda de IA, las revisiones y la entrega privadas para proveedores de nube, equipos gubernamentales y plantas industriales.",
       "sithub": {
         "title": "Servidor Sithub",
         "tag": "Control de versiones local"
@@ -390,31 +464,36 @@
         "attack": "Stuxnet",
         "target": "Instalación de enriquecimiento de Natanz",
         "impact": "Destruyó ~1.000 centrifugadoras",
-        "severity": "Crítico"
+        "severity": "Crítico",
+        "year": "2010"
       },
       "blackEnergy": {
         "attack": "BlackEnergy",
         "target": "Red eléctrica de Ucrania",
         "impact": "230.000 clientes sin electricidad",
-        "severity": "Alto"
+        "severity": "Alto",
+        "year": "2015"
       },
       "triton": {
         "attack": "TRITON",
         "target": "Planta petroquímica de Arabia Saudita",
         "impact": "Sistemas de seguridad desactivados",
-        "severity": "Crítico"
+        "severity": "Crítico",
+        "year": "2017"
       },
       "colonialPipeline": {
         "attack": "Colonial Pipeline",
         "target": "Oleoducto de combustible de EE. UU.",
         "impact": "Parálisis de combustible de 6 días",
-        "severity": "Alto"
+        "severity": "Alto",
+        "year": "2021"
       },
       "pdvsa": {
         "attack": "PDVSA",
         "target": "Refinación de Venezuela",
         "impact": "Operaciones de refinería interrumpidas",
-        "severity": "Medio"
+        "severity": "Medio",
+        "year": "2025"
       }
     },
     "analyzer": {
@@ -492,6 +571,342 @@
         "title": "Gobierno",
         "description": "Ministerios, defensa, agencias críticas"
       }
+    }
+  },
+  "pricingCta": {
+    "requestSystem": "Solicitar sistema"
+  },
+  "contactForm": {
+    "title": "Contáctanos",
+    "success": "¡Gracias! Tu mensaje ha sido enviado. Nos pondremos en contacto pronto.",
+    "errorRequired": "Completa tu nombre, email y un mensaje breve.",
+    "errorSend": "No se pudo enviar el mensaje. Inténtalo de nuevo más tarde.",
+    "placeholders": {
+      "name": "Tu nombre",
+      "email": "Correo electrónico",
+      "type": "Tipo de proyecto (opcional)",
+      "budget": "Presupuesto (opcional)",
+      "message": "Cuéntanos sobre tu proyecto..."
+    },
+    "submit": {
+      "idle": "Enviar mensaje",
+      "loading": "Enviando…"
+    }
+  },
+  "consulting": {
+    "title": "Cuestionario de consultoría",
+    "searchPlaceholder": "Buscar preguntas...",
+    "noResults": "No se encontraron preguntas.",
+    "questions": [
+      {
+        "question": "¿Cuál es la propuesta de valor principal de tu empresa además de precios competitivos?",
+        "answer": "La seguridad es nuestro principal diferenciador. Construimos sistemas altamente seguros con prácticas de seguridad de nivel empresarial en todo el ciclo de desarrollo."
+      },
+      {
+        "question": "¿Cuánto tiempo lleva tu empresa operando y cuál es su historial?",
+        "answer": "Hemos entregado con éxito proyectos como NAK (Nur Astana Kurylys) — plataforma de gestión de equipos con IA, y Chic Flowers — plataforma digital completa para un gran minorista de flores."
+      },
+      {
+        "question": "¿Qué diferencia tus capacidades técnicas y calidad de servicio de EPAM y otros competidores?",
+        "answer": "Nuestro diferenciador clave es el enfoque security-first. Integramos prácticas de seguridad desde el inicio hasta el despliegue y el mantenimiento."
+      },
+      {
+        "question": "¿Cómo mantienes la calidad ofreciendo precios competitivos?",
+        "answer": "Ofrecemos servicios ~15% por debajo del mercado manteniendo alta calidad gracias a operaciones optimizadas, captación estratégica de talento y gestión de proyectos eficiente."
+      },
+      {
+        "question": "¿Qué servicios específicos de desarrollo de software ofrecen?",
+        "answer": "Desarrollo end-to-end: aplicaciones a medida, soluciones de IA, desarrollo de productos de ciberseguridad (Silence AI-SOC), integración de sistemas, migración a la nube y DevOps. También ofrecemos desarrollo dedicado y ampliación de equipos."
+      },
+      {
+        "question": "¿En qué industrias y dominios se especializan?",
+        "answer": "Construcción, retail, fintech, ciberseguridad y plataformas digitales — incluyendo gestión de equipos con IA, e-commerce y soluciones de seguridad empresarial."
+      },
+      {
+        "question": "¿En qué stacks y plataformas tecnológicas tiene experiencia su equipo?",
+        "answer": "Go, Swift, Flutter, plataformas cloud (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript y frameworks de IA/ML. Desarrollamos herramientas de seguridad propias como Silence AI-SOC."
+      },
+      {
+        "question": "¿Ofrecen desarrollo de producto end-to-end o solo servicios específicos?",
+        "answer": "Ambos: MVPs, entrega completa de productos, ampliación de equipo e integración de ciberseguridad."
+      },
+      {
+        "question": "¿Pueden ofrecer modelos de ampliación de personal y equipos dedicados?",
+        "answer": "Sí, contamos con modelos flexibles: ampliación de personal, equipos dedicados y outsourcing por proyecto."
+      },
+      {
+        "question": "¿Ofrecen consultoría, arquitectura y asesoría más allá del desarrollo?",
+        "answer": "Sí: consultoría en ciberseguridad, diseño de arquitectura de sistemas, asesoría tecnológica y evaluaciones de cumplimiento de seguridad con Silence AI-SOC."
+      }
+    ]
+  },
+  "requestDemoModal": {
+    "title": "Solicitar sistema",
+    "name": "Nombre",
+    "email": "Correo corporativo",
+    "company": "Nombre de la empresa",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Enviar solicitud",
+    "successTitle": "¡Solicitud enviada!",
+    "successBody": "Gracias por tu interés. Nos pondremos en contacto pronto.",
+    "close": "Cerrar"
+  },
+  "requestSystemModal": {
+    "title": "Solicitar sistema",
+    "name": "Nombre",
+    "email": "Correo corporativo",
+    "company": "Nombre de la empresa",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Download",
+    "successTitle": "¡Solicitud enviada!",
+    "successBody": "Gracias. Las instrucciones de descarga se enviarán a tu correo.",
+    "close": "Cerrar"
+  },
+  "policySidebar": {
+    "tableOfContents": "Tabla de contenidos"
+  },
+  "whyChooseUs": {
+    "badge": "Ingeniería orientada a resultados",
+    "title": "Por qué elegirnos",
+    "subtitle": "Confiado por equipos de",
+    "subtitleHighlight": "organizaciones de mil millones de dólares",
+    "subtitleTail": "— y entregado con velocidad de startup.",
+    "learnMore": "Aprender más",
+    "logos": {
+      "kmg": "KazMunayGas",
+      "nak": "Nur Astana Kurylys"
+    },
+    "features": {
+      "fast": {
+        "title": "Entrega Rápida con Calidad Empresarial",
+        "description": "Ciclos de entrega rápidos e iterativos que cumplen con la confiabilidad y el cumplimiento de nivel empresarial.",
+        "pill": "Velocidad + Calidad"
+      },
+      "ai": {
+        "title": "Ingeniería de Producto AI-first",
+        "description": "Desde prototipos hasta agentes de IA en producción: diseñamos, entrenamos e implementamos modelos que resuelven problemas comerciales reales.",
+        "pill": "Ingeniería IA"
+      },
+      "local": {
+        "title": "Experiencia Local, Alcance Global",
+        "description": "Conocimiento profundo del mercado y las regulaciones de Kazajistán combinado con las mejores prácticas internacionales.",
+        "pill": "KZ + Global"
+      }
+    }
+  },
+  "servicesBlock": {
+    "badge": "Lo que ofrecemos",
+    "title": "Nuestros Servicios",
+    "description": "UI premium, ingeniería sólida y entrega rápida: todo lo que necesita para lanzar un producto que se vea y funcione como una marca de primer nivel.",
+    "learnMore": "Aprender más",
+    "learnMoreAria": "Aprender más sobre este servicio",
+    "services": {
+      "aiAgents": {
+        "title": "Agentes IA",
+        "description": "Agentes conversacionales y autónomos personalizados para soporte, operaciones y análisis.",
+        "tag": "Automatización"
+      },
+      "customSoftware": {
+        "title": "Software a Medida",
+        "description": "Aplicaciones web y de escritorio de extremo a extremo adaptadas a sus flujos de trabajo.",
+        "tag": "Construcción"
+      },
+      "cybersecurity": {
+        "title": "Ciberseguridad",
+        "description": "Auditorías, pruebas de penetración y monitoreo continuo.",
+        "tag": "Protección"
+      },
+      "backend": {
+        "title": "Backend / DevOps",
+        "description": "APIs escalables, pipelines CI/CD e infraestructura en la nube.",
+        "tag": "Escala"
+      },
+      "mobile": {
+        "title": "Móvil",
+        "description": "Aplicaciones multiplataforma con rendimiento nativo y UX pulida.",
+        "tag": "Envío"
+      }
+    }
+  },
+  "caseStudies": {
+    "badge": "Impacto Probado",
+    "title": "Estudios de Caso",
+    "subtitle": "No enviamos funciones. Enviamos resultados.",
+    "problem": "Problema:",
+    "solution": "Solución:",
+    "liveImpact": "Impacto en Vivo",
+    "before": "Antes",
+    "after": "Después",
+    "buildCta": "Construir algo así →",
+    "caseStudy": "Estudio de Caso",
+    "items": {
+      "nak": {
+        "title": "NAK — IA de Gestión de Equipos",
+        "problem": "Asignación manual de recursos",
+        "solution": "Agente de programación impulsado por IA",
+        "result": "+32% productividad",
+        "metricLabel": "Índice de Salida del Equipo"
+      },
+      "chic": {
+        "title": "Chic Flowers — Comercio Electrónico",
+        "problem": "Bajas conversiones en línea",
+        "solution": "Recomendador personalizado + revisión de UX",
+        "result": "+45% ventas en línea",
+        "metricLabel": "Crecimiento de Tasa de Conversión"
+      },
+      "silence": {
+        "title": "Silence AI-SOC",
+        "problem": "Alto ruido de alertas",
+        "solution": "Detección por IA y respuesta automatizada",
+        "result": "−68% falsos positivos",
+        "metricLabel": "Volumen de Falsas Alertas"
+      }
+    }
+  },
+  "howWeWork": {
+    "title": "Cómo Trabajamos",
+    "subtitle": "Tubería de entrega ultrarrápida — optimizada para velocidad.",
+    "steps": {
+      "discovery": {
+        "title": "Descubrimiento",
+        "desc": "Requisitos, partes interesadas, métricas de éxito."
+      },
+      "design": {
+        "title": "Diseño",
+        "desc": "UX, arquitectura, prototipo."
+      },
+      "poc": {
+        "title": "Prueba de Concepto",
+        "desc": "Validación rápida con KPIs medibles."
+      },
+      "build": {
+        "title": "Construcción",
+        "desc": "Sprints iterativos, pruebas automatizadas."
+      },
+      "deploy": {
+        "title": "Despliegue",
+        "desc": "CI/CD, monitoreo, endurecimiento de seguridad."
+      },
+      "support": {
+        "title": "Soporte y Escala",
+        "desc": "Mantenimiento, hoja de ruta, mejora continua."
+      }
+    }
+  },
+  "technologyStack": {
+    "title": "Stack Tecnológico",
+    "subtitle": "Un stack cuidadosamente seleccionado y de grado de producción, diseñado para velocidad, escalabilidad y hermosas experiencias de usuario."
+  },
+  "backToTop": {
+    "label": "Volver arriba"
+  },
+  "pricingCustom": {
+    "title": "Precios Transparentes",
+    "subtitle": "Planes mobile-first listos para escalar con tu producto.",
+    "percentMaintenance": "{percent}% de mantenimiento anual",
+    "planEstimate": "${value}",
+    "perYear": "al año (estimado)",
+    "calculator": {
+      "title": "Calculadora de costos del proyecto",
+      "subtitle": "Desliza para ver tu mantenimiento anual",
+      "projectCost": "Costo del proyecto:",
+      "projectValue": "${value}"
+    },
+    "plans": {
+      "basic": {
+        "name": "Básico",
+        "features": {
+          "fix": "Corrección de Errores Críticos (SLA 48h)",
+          "updates": "Actualizaciones Mensuales",
+          "audit": "Auditorías de Seguridad Trimestrales",
+          "manager": "Gerente Dedicado"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Más Popular",
+        "features": {
+          "fix": "Corrección de Errores Críticos (SLA 24h)",
+          "updates": "10h Actualizaciones Mensuales",
+          "audit": "Auditorías de Seguridad Mensuales",
+          "manager": "Gerente Dedicado"
+        }
+      },
+      "enterprise": {
+        "name": "Empresarial",
+        "badge": "Mejor Valor",
+        "features": {
+          "fix": "Corrección de Errores Críticos (SLA 4h)",
+          "updates": "Actualizaciones Ilimitadas + Hoja de Ruta",
+          "audit": "Auditorías Semanales + Copias de Seguridad",
+          "manager": "Gerente Dedicado"
+        }
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "Seguridad y desarrollo de IA",
+      "title": "Desarrolla seguro. Implementa con confianza.",
+      "subtitle": "Dos sistemas por suscripción (AI-SOC, SLNC-env) más entrega a medida de IA y software para equipos empresariales.",
+      "ctaPrimary": "Solicitar demo",
+      "ctaSecondary": "Ver sistemas",
+      "highlights": {
+        "coverage": "SOC 24/7 asistido por IA",
+        "onPrem": "0-egress on-prem",
+        "deploy": "Implementación segura en 4 min"
+      },
+      "metrics": {
+        "title": "Diseñado para equipos regulados",
+        "soc": "Cobertura SOC asistida por IA",
+        "egress": "Todo on-prem: código, prompts, builds",
+        "deployment": "hasta el primer despliegue seguro",
+        "locales": "idiomas listos de fábrica"
+      }
+    },
+    "systems": {
+      "title": "Sistemas",
+      "subtitle": "Elige la suscripción adecuada: AI-SOC para detección y SLNC-env para desarrollo aislado.",
+      "cta": "Ver detalles",
+      "aiSoc": {
+        "title": "AI-SOC",
+        "desc": "Detección y respuesta gestionadas con copilotos de IA para equipos SOC.",
+        "badge": "Suscripción"
+      },
+      "slncEnv": {
+        "title": "SLNC-env",
+        "desc": "Nube de desarrollo aislada que mantiene código, prompts y builds on-prem.",
+        "badge": "Suscripción"
+      }
+    },
+    "services": {
+      "title": "Servicios de desarrollo a medida",
+      "subtitle": "Agentes de IA, integraciones y entrega de software de ciclo completo con seguridad desde el día uno.",
+      "cta": "Ver servicios",
+      "cards": {
+        "agents": "Agentes de IA listos para producción con guardrails, RAG y conectores seguros.",
+        "integrations": "Integraciones neutrales con tu stack, IAM y gobierno de datos.",
+        "delivery": "Entrega de ciclo completo con SLOs de confiabilidad, observabilidad y revisiones de seguridad."
+      },
+      "cardsTitle": {
+        "agents": "Agentes",
+        "integrations": "Integraciones",
+        "delivery": "Entrega"
+      }
+    },
+    "contact": {
+      "title": "¿Listo para combinar AI-SOC y SLNC-env?",
+      "subtitle": "Cuéntanos tus metas de seguridad y entrega — alinearemos el sistema y servicios adecuados.",
+      "cta": "Solicitar demo",
+      "ctaSecondary": "Hablar con el equipo de servicios"
     }
   }
 }

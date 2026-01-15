@@ -1,7 +1,13 @@
 {
   "languageSelector": {
     "triggerLabel": "Vyberte jazyk",
-    "menuLabel": "Zvolte jazyk"
+    "menuLabel": "Zvolte jazyk",
+    "searchLabel": "Hledat jazyky",
+    "searchPlaceholder": "Hledejte podle názvu nebo původního písma",
+    "searchResults": "Výsledky hledání",
+    "noMatches": "Žádný jazyk neodpovídá vašemu dotazu.",
+    "popular": "Nejčastější",
+    "allLanguages": "Všechny jazyky"
   },
   "header": {
     "nav": {
@@ -10,10 +16,20 @@
       "affiliate": "Partnerský program",
       "instructions": "Instrukce",
       "product": "AI-SOC",
-      "secureDevelopment": "SLNC Code",
-      "developerServices": "Vývojářské služby"
+      "secureDevelopment": "SLNC-env",
+      "developerServices": "Vývojářské služby",
+      "home": "Domů",
+      "systems": "Systémy",
+      "systemsAiSoc": "AI-SOC",
+      "systemsSlncEnv": "SLNC-env",
+      "services": "Služby"
     },
-    "login": "Přihlásit se"
+    "login": "Přihlásit se",
+    "cta": {
+      "contact": "Kontakt",
+      "download": "Stáhnout",
+      "requestDemo": "Vyžádat demo"
+    }
   },
   "affiliate": {
     "hero": {
@@ -74,7 +90,7 @@
         "description": "Odměny se připisují na partnerský zůstatek do jedné minuty po dokončení transakce – bez ručního schvalování."
       },
       "withdrawal": {
-        "title": "Withdrawals processed in 2 business days",
+        "title": "Výplaty zpracujeme do 2 pracovních dnů",
         "description": "Žádosti o výplatu se zpracují automaticky a prostředky dorazí na váš účet do dvou pracovních dnů."
       },
       "sample": {
@@ -98,6 +114,60 @@
       "statistics": {
         "question": "Kdy uvidím statistiky doporučení?",
         "answer": "Jakmile se uživatel zaregistruje pomocí vašeho promo kódu nebo referral odkazu, jeho e-mail i odpovídající odměna se zobrazí v nástěnce."
+      }
+    },
+    "termsAff": {
+      "label": "Partnerský program",
+      "title": "Podmínky partnerského programu",
+      "notice": "Tato zásada je k dispozici pouze v angličtině",
+      "intro": "Tyto podmínky popisují, jak jsou vydávány a vypláceny odměny partnerům zapojeným do partnerského programu Silence AI.",
+      "meta": {
+        "effective": "Účinnost: 10. listopadu 2024",
+        "lastUpdated": "Poslední aktualizace: 10. listopadu 2024"
+      },
+      "sections": {
+        "overview": {
+          "title": "1. Přehled programu",
+          "body1": "1.1 Rozsah dohody: Tyto podmínky partnerského programu (\"Podmínky\") upravují vaši účast v programu, který provozuje Silence AI LLC (\"Silence AI\", \"my\", \"nás\" nebo \"naše\"). Platí pro vás jako jednotlivce či organizaci vstupující do programu a případně i pro vašeho zaměstnavatele či zadavatele, pokud jednáte jeho jménem.",
+          "body2": "1.2 Shrnutí programu: Oprávnění partneři získávají provizi pokaždé, když doporučený zákazník zakoupí nebo dobije produkt AI-SOC 1. Účast vyžaduje také dodržování obecných podmínek Silence AI."
+        },
+        "eligibility": {
+          "title": "2. Způsobilost partnera",
+          "item1": "Musíte mít aktivní partnerský účet Silence AI s přesnými údaji o firmě a platbách.",
+          "item2": "Doporučení musí dokončit registraci přes váš odkaz nebo promo kód.",
+          "item3": "Účty, které jsou podvodné, samodoporučené nebo porušují zákon, nejsou na odměny způsobilé."
+        },
+        "commission": {
+          "title": "3. Struktura provizí",
+          "body1": "Získáte 10% odměnu za každé dobití zůstatku účtem, který se registroval přes vaše pozvání.",
+          "body2": "Provize se počítá z čisté částky po odečtení poplatků za zpracování platby."
+        },
+        "rewardPosting": {
+          "title": "4. Připsání odměn",
+          "body1": "Odměny se připíší na partnerský zůstatek do jedné minuty po úspěšném zúčtování transakce. Není nutné žádné ruční schvalování.",
+          "body2": "Oznámení se zobrazí na vaší partnerské nástěnce spolu s identifikátorem zákazníka a výší dobití."
+        },
+        "withdrawals": {
+          "title": "5. Výběry",
+          "body1": "Žádosti o výběr zpracujeme do dvou pracovních dnů a vyplatíme způsobem uvedeným ve vašem profilu.",
+          "body2": "Minimální limity a podporované sítě jsou uvedeny v partnerské nástěnce."
+        },
+        "productScope": {
+          "title": "6. Rozsah produktů",
+          "body1": "Odměny se vztahují pouze na produkt AI-SOC 1. Ostatní služby Silence AI jsou z programu vyloučeny, pokud není písemně stanoveno jinak.",
+          "body2": "Pokud budou způsobilé další produkty, Silence AI zveřejní aktualizovaný seznam v těchto podmínkách."
+        },
+        "compliance": {
+          "title": "7. Chování a shoda partnera",
+          "item1": "Partneři musí Silence AI prezentovat přesně a vyhnout se zavádějícím tvrzením o funkcích či cenách.",
+          "item2": "Marketingová sdělení musí splňovat příslušné předpisy proti spamu, ochrany soukromí a reklamy.",
+          "item3": "Silence AI může pozastavit nebo ukončit účty, které tyto povinnosti poruší nebo poškodí značku."
+        },
+        "changes": {
+          "title": "8. Změny a kontakt",
+          "body1": "Silence AI může tyto podmínky upravit podle změn programu nebo legislativy. Aktualizovaná verze platí okamžikem zveřejnění na této stránce.",
+          "body2": "Dotazy k partnerskému programu posílejte na info@silenceai.net."
+        }
       }
     }
   },
@@ -132,7 +202,7 @@
   "playground": {
     "options": {
       "globeShield": "Webová bezpečnost a řízení provozu",
-      "emailSecurity": "Email Security"
+      "emailSecurity": "E-mailová bezpečnost"
     }
   },
   "cookie": {
@@ -219,7 +289,46 @@
           "reports": "Snadno srozumitelné bezpečnostní zprávy",
           "intelligence": "Zpravodajská zpráva"
         }
+      },
+      "basic": {
+        "name": "Základní",
+        "features": {
+          "fix": "Opravy kritických chyb (SLA 48 h)",
+          "updates": "Měsíční aktualizace",
+          "audit": "Čtvrtletní bezpečnostní audity",
+          "manager": "Vyhrazený manažer"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Nejoblíbenější",
+        "features": {
+          "fix": "Opravy kritických chyb (SLA 24 h)",
+          "updates": "10 h měsíčních aktualizací",
+          "audit": "Měsíční bezpečnostní audity",
+          "manager": "Vyhrazený manažer"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "badge": "Nejlepší hodnota",
+        "features": {
+          "fix": "Opravy kritických chyb (SLA 4 h)",
+          "updates": "Neomezené aktualizace + roadmapa",
+          "audit": "Týdenní audity + zálohy",
+          "manager": "Vyhrazený manažer"
+        }
       }
+    },
+    "subtitle": "Plány zaměřené na mobil, které škálují s vaším produktem.",
+    "percentMaintenance": "{percent}% roční údržba",
+    "planEstimate": "${value}",
+    "perYear": "za rok (odhad)",
+    "calculator": {
+      "title": "Kalkulačka nákladů projektu",
+      "subtitle": "Posuňte a uvidíte roční údržbu",
+      "projectCost": "Cena projektu:",
+      "projectValue": "${value}"
     }
   },
   "solution": {
@@ -281,7 +390,7 @@
   },
   "modal": {
     "title": "Aktivní vývoj",
-    "body": "The system is expected to be launched on October 10"
+    "body": "Systém bude spuštěn 10. října"
   },
   "lamp": {
     "title": "Realita kybernetických útoků"
@@ -321,7 +430,8 @@
       "termsUse": "Podmínky použití",
       "termsService": "Podmínky služby",
       "privacy": "Zásady ochrany soukromí",
-      "cookies": "Zásady cookies"
+      "cookies": "Zásady cookies",
+      "affiliateTerms": "Podmínky partnerského programu"
     },
     "copyright": "© {year} Silence AI. Všechna práva vyhrazena."
   },
@@ -331,23 +441,23 @@
     "cta": "Zpět na domovskou stránku"
   },
   "heroSection": {
-    "badge": "AI a software připravené pro výrobu",
-    "title": "Vlastní vývoj AI a softwaru",
-    "description": "Vytváříme AI agenty připravené pro výrobu a vlastní software pro {country} a {market}.",
+    "badge": "Produkční AI a software",
+    "title": "Zakázkový vývoj AI a softwaru",
+    "description": "Stavíme produkční AI agenty a zakázkový software.",
     "country": "Kazachstán",
     "market": "globální trh",
-    "startProject": "Spustit projekt",
-    "liveDemo": "Živá ukázka — AI agent",
+    "startProject": "Zahájit projekt",
+    "liveDemo": "Živé demo — AI agent",
     "live": "Živě",
-    "aiAgent": "AI agent v2.1",
+    "aiAgent": "AI Agent v2.1",
     "processing": "Zpracování požadavků...",
     "active": "Aktivní",
-    "userMessage": "Analyzujte trendy v datech zákazníků",
-    "aiResponse": "Analýza",
+    "userMessage": "Analyzuj trendy zákaznických dat",
+    "aiResponse": "Analyzuji",
     "tasks": {
-      "dataCollection": "Sbírání dat",
+      "dataCollection": "Sběr dat",
       "aiAnalysis": "AI analýza",
-      "reportGeneration": "Generování zpráv"
+      "reportGeneration": "Generování reportů"
     },
     "stats": {
       "tasks": "Úkoly",
@@ -360,33 +470,33 @@
       "badge": "Kód SLNC · Bezpečné vývojové prostředí",
       "title": "Vytvářejte systémy se zabezpečeným a soukromým kódem",
       "description": "Soukromé vývojové prostředí pro podniky, kde kód nikdy neopouští vaši firemní síť. Mezitím nabízí nejnovější technologii založenou na umělé inteligenci",
-      "requestSystem": "Žádost o systém"
+      "requestSystem": "Vyžádat systém"
     },
     "components": {
       "title": "Vše zůstane uvnitř",
       "subtitle": "Tři komponenty, jedna uzavřená smyčka",
-      "description": "Kód, výzvy a buildy nikdy neopouštějí vaši síť. SLNC Code uchovává nápovědu, recenze a dodávky AI soukromé pro poskytovatele cloudu, vládní týmy a průmyslové závody.",
+      "description": "Kód, prompty i buildy nikdy neopustí vaši síť. SLNC-env drží asistenci AI, code review i dodávky soukromé pro cloudové poskytovatele, státní týmy a průmyslové podniky.",
       "sithub": {
         "title": "Sithub Server",
         "tag": "Místní správa verzí"
       },
       "llm": {
         "title": "Server LLM (Qwen-Code)",
-        "tag": "On-prem intelligence"
+        "tag": "On-prem inteligence"
       },
       "ide": {
         "title": "IDE s místním kopilotem",
-        "tag": "Zkušenosti s kurzorovou třídou"
+        "tag": "Zážitek na úrovni Cursor"
       },
-      "staysOnPrem": "Zůstává on-prem. Žádný výstup."
+      "staysOnPrem": "Vše zůstává on-prem. Žádný egress."
     },
     "timeline": {
       "title": "Proč na izolovaném, zkontrolovaném kódu záleží",
       "subtitle": "Nedávné budíčky",
       "incident": {
         "title": "Kritický incident — uniklý kód",
-        "heading": "DeepSeek porušení dát zdroj a výzvy na otevřeném internetu",
-        "description": "Udržujte inferenci a skenování on-prem. Žádný výstup externího modelu. Auditní stopy ve výchozím nastavení.",
+        "heading": "Únik DeepSeek odkryl zdrojový kód a prompty v otevřené síti",
+        "description": "Držte inference i skeny on-prem. Bez výstupu do externích modelů. Auditní stopy jsou výchozí.",
         "seePlan": "Viz plán omezení úniku"
       },
       "stuxnet": {
@@ -420,40 +530,40 @@
       "pdvsa": {
         "year": "2025",
         "attack": "PDVSA",
-        "target": "Rafinace ve Venezue",
+        "target": "Rafinace ve Venezuele",
         "impact": "Rafinérské operace přerušeny",
         "severity": "Střední"
       }
     },
     "analyzer": {
       "title": "Analyzátor, který porazí CodeQL",
-      "subtitle": "Pojištění naživo",
+      "subtitle": "Živá záruka",
       "features": {
         "quality": {
           "title": "Automatická kvalita kódu",
           "description": "Kontroly struktury, stylu a osvědčených postupů vyladěné pro kód kritický z hlediska bezpečnosti"
         },
         "vulnerability": {
-          "title": "Zranitelnost zametá",
-          "description": "SQLi, XSS, autorizační bypass a nezabezpečené závislosti se objevily okamžitě"
+          "title": "Sken zranitelností",
+          "description": "SQLi, XSS, obcházení autorizace a zranitelné závislosti odhalí okamžitě"
         },
         "secrets": {
           "title": "Strážce tajemství",
           "description": "Klíče, tokeny a pověření blokovány v době odevzdání"
         },
         "config": {
-          "title": "Konfigurace kalení",
-          "description": "Docker/K8s, IAM a síťové zásady prověřeny na plíživost privilegií"
+          "title": "Zpevnění konfigurací",
+          "description": "Docker/K8s, IAM a síťové politiky kontrolovány na únik privilegií"
         }
       },
       "beyondCodeQL": {
         "title": "Zjistí, co statickým dotazům chybí",
-        "subtitle": "Beyond CodeQL",
-        "description": "Najde chybné konfigurace a zranitelné balíčky rychleji než CodeQL a nabízí opravy, nejen upozornění.",
+        "subtitle": "Za hranicí CodeQL",
+        "description": "Najde chybné konfigurace a zranitelné balíčky rychleji než CodeQL a nabídne opravy, nejen upozornění.",
         "points": {
-          "packages": "Zná grafy balíčků a označuje rizikové závislosti během několika sekund.",
-          "config": "Spoty konfigurují drift a privilegují plíživost - nad rámec statických pravidel.",
-          "patches": "Každý nález má navržený nášivku a majitele."
+          "packages": "Zná graf balíčků a během sekund označí rizikové závislosti.",
+          "config": "Odhalí konfigurační drift a zvyšování privilegií — nad rámec statických pravidel.",
+          "patches": "Každý nález přináší navrženou opravu i vlastníka."
         }
       },
       "visualizer": {
@@ -500,6 +610,342 @@
         "title": "Vláda",
         "description": "Ministerstva, obrana, kritické agentury"
       }
+    }
+  },
+  "pricingCta": {
+    "requestSystem": "Vyžádat systém"
+  },
+  "contactForm": {
+    "title": "Kontaktujte nás",
+    "success": "Děkujeme! Vaše zpráva byla odeslána. Brzy se vám ozveme.",
+    "errorRequired": "Vyplňte prosím jméno, e-mail a krátkou zprávu.",
+    "errorSend": "Zprávu se nepodařilo odeslat. Zkuste to prosím později.",
+    "placeholders": {
+      "name": "Vaše jméno",
+      "email": "E-mail",
+      "type": "Typ projektu (volitelné)",
+      "budget": "Rozpočet (volitelné)",
+      "message": "Povězte nám o projektu..."
+    },
+    "submit": {
+      "idle": "Odeslat zprávu",
+      "loading": "Odesílám…"
+    }
+  },
+  "consulting": {
+    "title": "Konzultační dotazník",
+    "searchPlaceholder": "Hledejte v otázkách...",
+    "noResults": "Nenalezeny žádné otázky.",
+    "questions": [
+      {
+        "question": "Jaká je hlavní přidaná hodnota vaší firmy nad rámec konkurenční ceny?",
+        "answer": "Bezpečnost je naše hlavní odlišnost. Stavíme se jako firma, která buduje vysoce zabezpečené systémy se zapracovanými enterprise bezpečnostními postupy v celém životním cyklu vývoje."
+      },
+      {
+        "question": "Jak dlouho vaše firma působí a jaké má výsledky?",
+        "answer": "Úspěšně jsme dodali klíčové projekty: NAK (Nur Astana Kurylys) — AI platforma pro řízení týmů, a Chic Flowers — kompletní digitální platforma pro velkého prodejce květin."
+      },
+      {
+        "question": "Čím se vaše technické schopnosti a kvalita služeb liší od EPAM a dalších konkurentů?",
+        "answer": "Klíčová odlišnost je bezpečnost-first přístup. Bezpečnost začleňujeme od počátku projektu až po nasazení a údržbu."
+      },
+      {
+        "question": "Jak udržíte kvalitu při konkurenční ceně?",
+        "answer": "Nabízíme služby o 15 % pod trhem a kvalitu držíme díky optimalizovaným procesům, pečlivému náboru talentů a efektivnímu projektovému řízení."
+      },
+      {
+        "question": "Jaké konkrétní služby vývoje softwaru poskytujete?",
+        "answer": "End-to-end vývoj: zakázkové aplikace, AI řešení, vývoj bezpečnostních produktů (Silence AI-SOC), integrace systémů, migrace do cloudu a DevOps. Nabízíme také samostatný produktový vývoj a posílení týmů."
+      },
+      {
+        "question": "Na jaká odvětví a domény se specializujete?",
+        "answer": "Stavebnictví, retail, fintech, kyberbezpečnost a digitální platformy — včetně AI řízení týmů, e‑commerce a enterprise bezpečnostních řešení."
+      },
+      {
+        "question": "Jaké technologické stacky a platformy vaše týmy ovládají?",
+        "answer": "GO, Swift, Flutter, cloud (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript a AI/ML frameworky. Stavíme i vlastní bezpečnostní nástroje jako Silence AI-SOC."
+      },
+      {
+        "question": "Nabízíte end-to-end vývoj produktu, nebo jen dílčí služby?",
+        "answer": "Obojí: MVP, plný dodací cyklus, posílení týmů i integraci kyberbezpečnosti."
+      },
+      {
+        "question": "Můžete poskytnout posílení týmu i dedikovaný tým?",
+        "answer": "Ano, nabízíme flexibilní modely: staff augmentation, dedikované týmy i projektový outsourcing."
+      },
+      {
+        "question": "Poskytujete konzultace, architekturu a poradenství nad rámec vývoje?",
+        "answer": "Ano: kyberbezpečnostní konzultace, návrh architektury, technologické poradenství a hodnocení souladu bezpečnosti pomocí Silence AI-SOC."
+      }
+    ]
+  },
+  "requestDemoModal": {
+    "title": "Vyžádat systém",
+    "name": "Jméno",
+    "email": "Firemní e-mail",
+    "company": "Název společnosti",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Odeslat žádost",
+    "successTitle": "Žádost odeslána!",
+    "successBody": "Děkujeme za váš zájem. Brzy se vám ozveme.",
+    "close": "Zavřít"
+  },
+  "requestSystemModal": {
+    "title": "Vyžádat systém",
+    "name": "Jméno",
+    "email": "Firemní e-mail",
+    "company": "Název společnosti",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Stáhnout",
+    "successTitle": "Žádost odeslána!",
+    "successBody": "Děkujeme. Pokyny ke stažení systému vám pošleme e-mailem.",
+    "close": "Zavřít"
+  },
+  "policySidebar": {
+    "tableOfContents": "Obsah"
+  },
+  "whyChooseUs": {
+    "badge": "Inženýrství zaměřené na výsledky",
+    "title": "Proč si vybrat nás",
+    "subtitle": "Důvěřují nám týmy z",
+    "subtitleHighlight": "miliardových organizací",
+    "subtitleTail": "— a dodáváme s rychlostí startupu.",
+    "learnMore": "Zjistit více",
+    "logos": {
+      "kmg": "KazMunayGas",
+      "nak": "Nur Astana Kurylys"
+    },
+    "features": {
+      "fast": {
+        "title": "Rychlé dodání s podnikovou kvalitou",
+        "description": "Rychlé, iterativní dodací cykly, které splňují podnikové standardy spolehlivosti a shody.",
+        "pill": "Rychlost + Kvalita"
+      },
+      "ai": {
+        "title": "AI-first produktové inženýrství",
+        "description": "Od prototypů po produkční AI agenty — navrhujeme, trénujeme a nasazujeme modely, které řeší skutečné obchodní problémy.",
+        "pill": "AI inženýrství"
+      },
+      "local": {
+        "title": "Místní expertíza, globální dosah",
+        "description": "Hluboké znalosti kazašského trhu a předpisů kombinované s mezinárodními osvědčenými postupy.",
+        "pill": "KZ + Globální"
+      }
+    }
+  },
+  "servicesBlock": {
+    "badge": "Co nabízíme",
+    "title": "Naše služby",
+    "description": "Prémiové UI, silné inženýrství a rychlé dodání — vše, co potřebujete ke spuštění produktu, který vypadá a funguje jako špičková značka.",
+    "learnMore": "Zjistit více",
+    "learnMoreAria": "Zjistit více o této službě",
+    "services": {
+      "aiAgents": {
+        "title": "AI agenti",
+        "description": "Zakázkoví konverzační a autonomní agenti pro podporu, provoz a analytiku.",
+        "tag": "Automatizace"
+      },
+      "customSoftware": {
+        "title": "Zakázkový software",
+        "description": "End-to-end webové a desktopové aplikace přizpůsobené vašim pracovním postupům.",
+        "tag": "Vývoj"
+      },
+      "cybersecurity": {
+        "title": "Kyberbezpečnost",
+        "description": "Audity, penetrační testy a nepřetržité monitorování.",
+        "tag": "Ochrana"
+      },
+      "backend": {
+        "title": "Backend / DevOps",
+        "description": "Škálovatelná API, CI/CD pipelines a cloudová infrastruktura.",
+        "tag": "Škálování"
+      },
+      "mobile": {
+        "title": "Mobilní",
+        "description": "Multiplatformní aplikace s nativním výkonem a vybroušeným UX.",
+        "tag": "Dodání"
+      }
+    }
+  },
+  "caseStudies": {
+    "badge": "Ověřený dopad",
+    "title": "Případové studie",
+    "subtitle": "Nedodáváme funkce. Dodáváme výsledky.",
+    "problem": "Problém:",
+    "solution": "Řešení:",
+    "liveImpact": "Živý dopad",
+    "before": "Před",
+    "after": "Po",
+    "buildCta": "Postavit něco podobného →",
+    "caseStudy": "Případová studie",
+    "items": {
+      "nak": {
+        "title": "NAK — Team Management AI",
+        "problem": "Manuální alokace zdrojů",
+        "solution": "AI plánovací agent",
+        "result": "+32% produktivita",
+        "metricLabel": "Index týmového výkonu"
+      },
+      "chic": {
+        "title": "Chic Flowers — e-commerce",
+        "problem": "Nízké online konverze",
+        "solution": "Personalizované doporučení + přepracování UX",
+        "result": "+45% online prodeje",
+        "metricLabel": "Růst konverzí"
+      },
+      "silence": {
+        "title": "Silence AI-SOC",
+        "problem": "Vysoký šum upozornění",
+        "solution": "AI detekce a automatizovaná reakce",
+        "result": "−68% falešných poplachů",
+        "metricLabel": "Objem falešných poplachů"
+      }
+    }
+  },
+  "howWeWork": {
+    "title": "Jak pracujeme",
+    "subtitle": "Ultra-rychlá dodací pipeline — optimalizovaná pro rychlost.",
+    "steps": {
+      "discovery": {
+        "title": "Objevování",
+        "desc": "Požadavky, zúčastněné strany, metriky úspěchu."
+      },
+      "design": {
+        "title": "Design",
+        "desc": "UX, architektura, prototyp."
+      },
+      "poc": {
+        "title": "Proof of Concept",
+        "desc": "Rychlá validace s měřitelnými KPI."
+      },
+      "build": {
+        "title": "Vývoj",
+        "desc": "Iterativní sprinty, automatizované testy."
+      },
+      "deploy": {
+        "title": "Nasazení",
+        "desc": "CI/CD, monitorování, bezpečnostní hardening."
+      },
+      "support": {
+        "title": "Podpora a škálování",
+        "desc": "Údržba, roadmapa, neustálé zlepšování."
+      }
+    }
+  },
+  "technologyStack": {
+    "title": "Technologický stack",
+    "subtitle": "Pečlivě vybraný, produkční stack navržený pro rychlost, škálovatelnost a krásné uživatelské zážitky."
+  },
+  "backToTop": {
+    "label": "Zpět nahoru"
+  },
+  "pricingCustom": {
+    "title": "Transparentní ceny",
+    "subtitle": "Plány zaměřené na mobilní zařízení, které rostou s vaším produktem.",
+    "percentMaintenance": "{percent}% roční údržba",
+    "planEstimate": "${value}",
+    "perYear": "za rok (odhad)",
+    "calculator": {
+      "title": "Kalkulačka nákladů projektu",
+      "subtitle": "Posuňte pro zobrazení roční údržby",
+      "projectCost": "Cena projektu:",
+      "projectValue": "${value}"
+    },
+    "plans": {
+      "basic": {
+        "name": "Základní",
+        "features": {
+          "fix": "Opravy kritických chyb (SLA 48h)",
+          "updates": "Měsíční aktualizace",
+          "audit": "Čtvrtletní bezpečnostní audity",
+          "manager": "Vyhrazený manažer"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Nejoblíbenější",
+        "features": {
+          "fix": "Opravy kritických chyb (SLA 24h)",
+          "updates": "10h měsíční aktualizace",
+          "audit": "Měsíční bezpečnostní audity",
+          "manager": "Vyhrazený manažer"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "badge": "Nejlepší hodnota",
+        "features": {
+          "fix": "Opravy kritických chyb (SLA 4h)",
+          "updates": "Neomezené aktualizace + Roadmapa",
+          "audit": "Týdenní audity + Zálohy",
+          "manager": "Vyhrazený manažer"
+        }
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "AI bezpečnost a vývoj",
+      "title": "Stavte bezpečně. Nasazujte s jistotou.",
+      "subtitle": "Dva předplatné systémy (AI-SOC, SLNC-env) a k tomu zakázková AI a software pro enterprise týmy.",
+      "ctaPrimary": "Vyžádat demo",
+      "ctaSecondary": "Prozkoumat systémy",
+      "highlights": {
+        "coverage": "24/7 SOC s pomocí AI",
+        "onPrem": "0-egress — vše on-prem",
+        "deploy": "Bezpečné nasazení za 4 min"
+      },
+      "metrics": {
+        "title": "Pro regulované týmy",
+        "soc": "Pokrytí SOC s podporou AI",
+        "egress": "Vše on-prem — kód, prompty, buildy",
+        "deployment": "k prvnímu bezpečnému nasazení",
+        "locales": "jazyků podporováno z krabice"
+      }
+    },
+    "systems": {
+      "title": "Systémy",
+      "subtitle": "Vyberte si vhodné předplatné: AI-SOC pro detekci a SLNC-env pro uzavřený vývoj.",
+      "cta": "Zobrazit detaily",
+      "aiSoc": {
+        "title": "AI-SOC",
+        "desc": "Řízená detekce a reakce s AI kopiloty pro SOC týmy.",
+        "badge": "Předplatné"
+      },
+      "slncEnv": {
+        "title": "SLNC-env",
+        "desc": "Uzavřený vývojový cloud, který drží kód, prompty i buildy on-prem.",
+        "badge": "Předplatné"
+      }
+    },
+    "services": {
+      "title": "Zakázkové vývojové služby",
+      "subtitle": "AI agenti, integrace a end-to-end dodávka softwaru se zabudovanou bezpečností od prvního dne.",
+      "cta": "Zobrazit služby",
+      "cards": {
+        "agents": "Produkční AI agenti s guardrails, RAG a bezpečnými konektory.",
+        "integrations": "Vendor‑neutrální integrace s vaším stackem, IAM a správou dat.",
+        "delivery": "Kompletní dodávka s SLO spolehlivosti, observabilitou a bezpečnostními kontrolami."
+      },
+      "cardsTitle": {
+        "agents": "Agenti",
+        "integrations": "Integrace",
+        "delivery": "Dodání"
+      }
+    },
+    "contact": {
+      "title": "Připraveni spojit AI-SOC a SLNC-env?",
+      "subtitle": "Řekněte nám bezpečnostní a dodací cíle — navrhneme správný systém i služby.",
+      "cta": "Vyžádat demo",
+      "ctaSecondary": "Promluvit si s týmem služeb"
     }
   }
 }

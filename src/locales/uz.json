@@ -1,16 +1,35 @@
 {
   "languageSelector": {
     "triggerLabel": "Tilni tanlang",
-    "menuLabel": "Tilni tanlash"
+    "menuLabel": "Tilni tanlash",
+    "searchLabel": "Tillardan qidiring",
+    "searchPlaceholder": "Nom yoki yozuv bo‘yicha qidiring",
+    "searchResults": "Qidiruv natijalari",
+    "noMatches": "Qidiruvingizga mos til topilmadi.",
+    "popular": "Eng mashhur",
+    "allLanguages": "Barcha tillar"
   },
   "header": {
     "nav": {
       "main": "Bosh sahifa",
       "mail": "Pochta",
       "affiliate": "Hamkorlik dasturi",
-      "instructions": "Ko‘rsatmalar"
+      "instructions": "Ko‘rsatmalar",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC-env",
+      "developerServices": "Dasturchilar xizmatlari",
+      "home": "Uy",
+      "systems": "Tizimlar",
+      "systemsAiSoc": "AI-SOC",
+      "systemsSlncEnv": "SLNC-env",
+      "services": "Xizmatlar"
     },
-    "login": "Kirish"
+    "login": "Kirish",
+    "cta": {
+      "contact": "Bog‘lanish",
+      "download": "Yuklab olish",
+      "requestDemo": "Demo so‘rash"
+    }
   },
   "affiliate": {
     "hero": {
@@ -71,7 +90,7 @@
         "description": "Tranzaksiya tugaganidan keyin bir daqiqa ichida mukofotlar hamkor balansiga yoziladi—qo‘lda tasdiqlash navbati yo‘q."
       },
       "withdrawal": {
-        "title": "Withdrawals processed in 2 business days",
+        "title": "Yechib olish 2 ish kunida ko‘rib chiqiladi",
         "description": "To‘lovni yechib olish so‘rovlari avtomatik ko‘rib chiqiladi va ikki ish kuni ichida bank hisobingizga yetib boradi."
       },
       "sample": {
@@ -95,6 +114,60 @@
       "statistics": {
         "question": "Tavsiyalar statistikasi qachon ko‘rinadi?",
         "answer": "Foydalanuvchi promo-kod yoki havolangiz orqali ro‘yxatdan o‘tgach, uning elektron pochtasi va tegishli mukofoti panelingizда ko‘rinadi."
+      }
+    },
+    "termsAff": {
+      "label": "Hamkorlik dasturi",
+      "title": "Hamkorlik xizmat ko‘rsatish shartlari",
+      "notice": "Ushbu siyosat faqat ingliz tilida mavjud",
+      "intro": "Ushbu shartlar Silence AI hamkorlik dasturida qatnashuvchi hamkorlarga mukofotlar qanday berilishi va to‘lanishini tushuntiradi.",
+      "meta": {
+        "effective": "Kuchga kirgan sana: 10 noyabr 2024",
+        "lastUpdated": "So‘nggi yangilanish: 10 noyabr 2024"
+      },
+      "sections": {
+        "overview": {
+          "title": "1. Dastur sharhi",
+          "body1": "1.1 Kelishuv doirasi: Ushbu Hamkorlik xizmat ko‘rsatish shartlari (\"Shartlar\") Silence AI LLC tomonidan boshqariladigan Silence AI hamkorlik dasturida ishtirokingizni tartibga soladi. Shartlar sizga — hamkor bo‘lib ro‘yxatdan o‘tayotgan shaxs yoki tashkilotga — va agar siz boshqalar nomidan ish yuritsangiz, ish beruvchingiz yoki tashkilotingizga tatbiq etiladi.",
+          "body2": "1.2 Dastur xulosasi: Ushbu dasturda malakali hamkorlar tavsiya qilingan mijozlar AI-SOC 1 mahsulotini xarid qilganda yoki balans to‘ldirganda komissiya asosidagi mukofot oladilar. Dasturda ishtirok etish Silence AI umumiy xizmat ko‘rsatish shartlariga rioya etishni talab qiladi."
+        },
+        "eligibility": {
+          "title": "2. Hamkorlik talablari",
+          "item1": "Aniq biznes va to‘lov ma’lumotlari bilan faol Silence AI hamkorlik hisobini saqlashingiz kerak.",
+          "item2": "Tavsiyalar faqat siz bergan havola yoki promo-kod orqali ro‘yxatdan o‘tganda qabul qilinadi.",
+          "item3": "Soxta, o‘zini-o‘zi tavsiya qilgan yoki qonunni buzgan hisoblar mukofot olish huquqiga ega emas."
+        },
+        "commission": {
+          "title": "3. Komissiya tuzilmasi",
+          "body1": "Sizning taklifingiz orqali ro‘yxatdan o‘tgan hisob har bir balans to‘ldirganida 10% mukofot olasiz.",
+          "body2": "Komissiya to‘lovni qayta ishlash to‘lovlari chegirilganidan keyingi sof summadan hisoblanadi."
+        },
+        "rewardPosting": {
+          "title": "4. Mukofotni hisoblash",
+          "body1": "Tranzaksiya muvaffaqiyatli yakunlangach, bir daqiqa ichida mukofot hamkor balansiga tushadi. Qo‘lda tasdiqlash navbati yo‘q.",
+          "body2": "Bildirishnomalar hamkor panelingizda mijoz identifikatori va to‘ldirish summasi bilan birga ko‘rsatiladi."
+        },
+        "withdrawals": {
+          "title": "5. Yechib olish",
+          "body1": "Yechib olish so‘rovlari ikki ish kunida ko‘rib chiqiladi va ro‘yxatdagi to‘lov usuli orqali amalga oshiriladi.",
+          "body2": "Minimal yechib olish miqdori va qo‘llab-quvvatlanadigan to‘lov tarmoqlari hamkorlik panelida e’lon qilinadi."
+        },
+        "productScope": {
+          "title": "6. Mahsulot doirasi",
+          "body1": "Mukofotlar faqat AI-SOC 1 mahsuloti uchun beriladi. Boshqa Silence AI xizmatlari yozma ravishda ko‘rsatilmagan bo‘lsa, dasturga kiritilmaydi.",
+          "body2": "Qo‘shimcha mahsulotlar kiritilsa, Silence AI ushbu shartlarda yangilangan ro‘yxatni e’lon qiladi."
+        },
+        "compliance": {
+          "title": "7. Xulq va muvofiqlik",
+          "item1": "Hamkorlar Silence AI’ni aniq ifodalashi, imkoniyat yoki narxlar haqida chalg‘ituvchi da’volardan qochishi kerak.",
+          "item2": "Marketing xabarlari tegishli anti-spam, maxfiylik va reklama qoidalariga mos bo‘lishi kerak.",
+          "item3": "Silence AI ushbu majburiyatlarni buzgan yoki brendga zarar yetkazgan hisoblarni to‘xtatishi yoki bekor qilishi mumkin."
+        },
+        "changes": {
+          "title": "8. O‘zgarishlar va aloqa",
+          "body1": "Silence AI dastur yoki qonundagi o‘zgarishlarga mos ravishda ushbu shartlarni yangilashi mumkin. Yangilangan talqin ushbu sahifada e’lon qilingach darhol kuchga kiradi.",
+          "body2": "Hamkorlik dasturi bo‘yicha savollarni info@silenceai.net manziliga yuborishingiz mumkin."
+        }
       }
     }
   },
@@ -129,7 +202,7 @@
   "playground": {
     "options": {
       "globeShield": "Web xavfsizligi va trafik boshqaruvi",
-      "emailSecurity": "Email Security"
+      "emailSecurity": "Email xavfsizligi"
     }
   },
   "cookie": {
@@ -216,7 +289,46 @@
           "reports": "Oson tushuniladigan xavfsizlik hisobotlari",
           "intelligence": "Razvedka hisoboti"
         }
+      },
+      "basic": {
+        "name": "Basic",
+        "features": {
+          "fix": "Critical Bug Fixes (48h SLA)",
+          "updates": "Monthly Updates",
+          "audit": "Quarterly Security Audits",
+          "manager": "Dedicated Manager"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Most Popular",
+        "features": {
+          "fix": "Critical Bug Fixes (24h SLA)",
+          "updates": "10h Monthly Updates",
+          "audit": "Monthly Security Audits",
+          "manager": "Dedicated Manager"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "badge": "Best Value",
+        "features": {
+          "fix": "Critical Bug Fixes (4h SLA)",
+          "updates": "Unlimited Updates + Roadmap",
+          "audit": "Weekly Audits + Backups",
+          "manager": "Dedicated Manager"
+        }
       }
+    },
+    "subtitle": "Mobile-first plans built to scale with your product.",
+    "percentMaintenance": "{percent}% yearly maintenance",
+    "planEstimate": "${value}",
+    "perYear": "per year (est.)",
+    "calculator": {
+      "title": "Project Cost Calculator",
+      "subtitle": "Slide to see your yearly maintenance",
+      "projectCost": "Project Cost:",
+      "projectValue": "${value}"
     }
   },
   "solution": {
@@ -278,7 +390,7 @@
   },
   "modal": {
     "title": "Faol ishlab chiqilmoqda",
-    "body": "The system is expected to be launched on October 10"
+    "body": "Tizim 10 oktyabrda ishga tushirilishi kutilmoqda"
   },
   "lamp": {
     "title": "Kiber hujumlarning haqiqatlari"
@@ -318,155 +430,522 @@
       "termsUse": "Foydalanish shartlari",
       "termsService": "Xizmat shartlari",
       "privacy": "Maxfiylik siyosati",
-      "cookies": "Cookie siyosati"
+      "cookies": "Cookie siyosati",
+      "affiliateTerms": "Hamkorlik shartlari"
     },
     "copyright": "© {year} Silence AI. Barcha huquqlar himoyalangan."
   },
   "secureDevelopment": {
     "hero": {
-      "badge": "SLNC Code · Secure Development Environment",
-      "title": "Build systems with secure and private code",
-      "description": "Private development environment for enterprises, where code never leaves your corporate network. Meanwhile offering the latest AI-powered technology",
-      "requestSystem": "Request System"
+      "badge": "SLNC-env · Xavfsiz ishlab chiqish muhiti",
+      "title": "Xavfsiz va maxfiy kod bilan tizimlar qurish",
+      "description": "Korxonalar uchun yopiq ishlab chiqish muhiti: kod hech qachon korporativ tarmog‘ingizdan chiqmaydi, shu bilan birga eng so‘nggi AI texnologiyalari taklif qilinadi",
+      "requestSystem": "Tizimni so‘rash"
     },
     "components": {
-      "title": "Everything stays inside",
-      "subtitle": "Three components, one sealed loop",
-      "description": "Code, prompts, and builds never leave your network. SLNC Code keeps AI help, reviews, and delivery private for cloud providers, government teams, and industrial plants.",
+      "title": "Hammasi ichkarida qoladi",
+      "subtitle": "Uchta komponent, bitta yopiq aylana",
+      "description": "Kod, promptlar va buildlar tarmog‘ingizdan chiqmaydi. SLNC-env AI yordamlarini, ko‘rib chiqish va yetkazib berishni provayderlar, davlat jamoalari va sanoat korxonalari uchun yopiq tutadi.",
       "sithub": {
-        "title": "Sithub Server",
-        "tag": "Local version control"
+        "title": "Sithub server",
+        "tag": "Mahalliy versiya nazorati"
       },
       "llm": {
-        "title": "LLM Server (Qwen-Code)",
-        "tag": "On-prem intelligence"
+        "title": "LLM server (Qwen-Code)",
+        "tag": "On-prem aql"
       },
       "ide": {
-        "title": "IDE with Local Copilot",
-        "tag": "Cursor-class experience"
+        "title": "Mahalliy Copilotli IDE",
+        "tag": "Cursor darajasidagi tajriba"
       },
-      "staysOnPrem": "Stays on-prem. No egress."
+      "staysOnPrem": "Hammasi on-prem. Chiqish yo‘q."
     },
     "timeline": {
-      "title": "Why isolated, checked code matters",
-      "subtitle": "Recent wake-up calls",
+      "title": "Izolyatsiya qilingan va tekshirilgan kod nega muhim",
+      "subtitle": "So‘nggi ogohlantiruvchi holatlar",
       "incident": {
-        "title": "Critical incident — leaked code",
-        "heading": "DeepSeek breach put source and prompts on the open internet",
-        "description": "Keep inference and scanning on-prem. No external model egress. Audit trails by default.",
-        "seePlan": "See containment plan"
+        "title": "Tanqidiy hodisa — kod sizib chiqishi",
+        "heading": "DeepSeek buzilishi manba va promptlarni ochiq internetga chiqardi",
+        "description": "Inferens va skanerlashni on-premda saqlang. Tashqi modelga chiqish yo‘q. Audit izi default.",
+        "seePlan": "Cheklash rejasini ko‘rish"
       },
       "stuxnet": {
         "year": "2010",
         "attack": "Stuxnet",
-        "target": "Natanz enrichment facility",
-        "impact": "Destroyed ~1,000 centrifuges",
-        "severity": "Critical"
+        "target": "Natanz boyitish majmuasi",
+        "impact": "Taxminan 1 000 sentrifuga ishdan chiqdi",
+        "severity": "Tanqidiy"
       },
       "blackEnergy": {
         "year": "2015",
         "attack": "BlackEnergy",
-        "target": "Ukraine power grid",
-        "impact": "230k customers lost power",
-        "severity": "High"
+        "target": "Ukraina elektr tarmog‘i",
+        "impact": "230 ming mijoz elektrsiz qoldi",
+        "severity": "Yuqori"
       },
       "triton": {
         "year": "2017",
         "attack": "TRITON",
-        "target": "Saudi petrochemical plant",
-        "impact": "Safety systems disabled",
-        "severity": "Critical"
+        "target": "Saudiya neft-kimyo zavodi",
+        "impact": "Xavfsizlik tizimlari o‘chirildi",
+        "severity": "Tanqidiy"
       },
       "colonialPipeline": {
         "year": "2021",
         "attack": "Colonial Pipeline",
-        "target": "US fuel pipeline",
-        "impact": "6-day fuel paralysis",
-        "severity": "High"
+        "target": "AQSh yoqilg‘i quvuri",
+        "impact": "6 kunlik yoqilg‘i falajligi",
+        "severity": "Yuqori"
       },
       "pdvsa": {
         "year": "2025",
         "attack": "PDVSA",
-        "target": "Venezuela refining",
-        "impact": "Refinery operations disrupted",
-        "severity": "Medium"
+        "target": "Venesuela qayta ishlash",
+        "impact": "Neftni qayta ishlash ishlari to‘xtadi",
+        "severity": "O‘rta"
       }
     },
     "analyzer": {
-      "title": "Analyzer that beats CodeQL",
-      "subtitle": "Live assurance",
+      "title": "CodeQLdan kuchli analizator",
+      "subtitle": "Jonli kafolat",
       "features": {
         "quality": {
-          "title": "Automatic code quality",
-          "description": "Structure, style, and best-practice checks tuned for safety-critical code"
+          "title": "Avtomatik kod sifati",
+          "description": "Xavfsizlikka sezgir kod uchun tuzilma, uslub va eng yaxshi amaliyot tekshiruvlari"
         },
         "vulnerability": {
-          "title": "Vulnerability sweeps",
-          "description": "SQLi, XSS, auth bypass, and insecure dependencies surfaced instantly"
+          "title": "Zaifliklarni tozalash",
+          "description": "SQLi, XSS, autentifikatsiyani chetlash va zaif qaramliklar darhol ko‘rsatiladi"
         },
         "secrets": {
-          "title": "Secrets guard",
-          "description": "Keys, tokens, and credentials blocked at commit time"
+          "title": "Maxfiylik qo‘riqchisi",
+          "description": "Kalitlar, tokenlar va hisob ma’lumotlari commit vaqtida bloklanadi"
         },
         "config": {
-          "title": "Config hardening",
-          "description": "Docker/K8s, IAM, and network policies scanned for privilege creep"
+          "title": "Konfiguratsiyani mustahkamlash",
+          "description": "Docker/K8s, IAM va tarmoq siyosatlari imtiyoz kengayishiga tekshiriladi"
         }
       },
       "beyondCodeQL": {
-        "title": "Finds what static queries miss",
-        "subtitle": "Beyond CodeQL",
-        "description": "Finds misconfigs and vulnerable packages faster than CodeQL and offers fixes, not just alerts.",
+        "title": "Statik so‘rovlar ko‘rmaydiganini topadi",
+        "subtitle": "CodeQLdan narida",
+        "description": "CodeQLdan tezroq xato konfiguratsiyalar va zaif paketlarni topadi, faqat ogohlantirish emas, yechim ham beradi.",
         "points": {
-          "packages": "Knows package graphs and flags risky dependencies in seconds.",
-          "config": "Spots config drift and privilege creep—beyond static rules.",
-          "patches": "Each finding comes with a suggested patch and owner."
+          "packages": "Paket grafigini biladi va xavfli qaramliklarni soniyalarda belgilaydi.",
+          "config": "Konfiguratsiya siljishi va imtiyoz kengayishini aniqlaydi — statik qoidalardan tashqari.",
+          "patches": "Har bir topilma taklif etilgan patch va mas’ul bilan birga keladi."
         }
       },
       "visualizer": {
-        "title": "Code analyzer in action",
-        "subtitle": "Visualizer",
-        "description": "Crisp snapshots from recent scans, rendered beautifully inside the on-prem console.",
-        "privateWorkspace": "Private workspace only",
+        "title": "Kod analizatori ish jarayonida",
+        "subtitle": "Vizualizator",
+        "description": "So‘nggi skanerlardan aniq suratlar, on-prem konsolda chiroyli ko‘rinishda.",
+        "privateWorkspace": "Faqat shaxsiy ish maydoni",
         "shots": {
           "scanOverview": {
-            "title": "Scan overview",
-            "description": "See issues grouped by severity before code leaves your network."
+            "title": "Skaner umumiy ko‘rinishi",
+            "description": "Kod tarmoqdan chiqishidan oldin muammolarni jiddiyligi bo‘yicha guruhlangan holda ko‘ring."
           },
           "misconfigurations": {
-            "title": "Detection of misconfigurations",
-            "description": "Our AI-powered code analyzer even finds misconfigurations within the code."
+            "title": "Xato konfiguratsiyalarni aniqlash",
+            "description": "AI asosidagi kod analizatori kodning o‘zida ham xato konfiguratsiyalarni topadi."
           },
           "inlineDiffs": {
-            "title": "Inline diffs",
-            "description": "Review suggested patches inline with security context."
+            "title": "Inline farqlar",
+            "description": "Xavfsizlik kontekstida taklif etilgan patchlarni inline ko‘rib chiqing."
           }
         }
       }
     },
     "industries": {
-      "title": "Built for regulated, high-impact sectors",
-      "subtitle": "Where we deploy",
+      "title": "Qoidaga bo‘ysunuvchi, yuqori ta’sirli sohalar uchun yaratilgan",
+      "subtitle": "Joylashtiradigan joylarimiz",
       "oilGas": {
-        "title": "Oil & Gas",
-        "description": "Drilling, refining, pipeline control"
+        "title": "Neft va gaz",
+        "description": "Qazib olish, qayta ishlash, quvur boshqaruvi"
       },
       "energy": {
-        "title": "Energy",
-        "description": "Grid, distribution, and EMS"
+        "title": "Energetika",
+        "description": "Tarmoq, taqsimot va EMS"
       },
       "nuclear": {
-        "title": "Nuclear",
-        "description": "Reactor controls and safety"
+        "title": "Yadro",
+        "description": "Reaktor boshqaruvi va xavfsizlik"
       },
       "manufacturing": {
-        "title": "Manufacturing",
-        "description": "ICS, OT, and robotics"
+        "title": "Ishlab chiqarish",
+        "description": "ICS, OT va robototexnika"
       },
       "government": {
-        "title": "Government",
-        "description": "Ministries, defense, critical agencies"
+        "title": "Hukumat",
+        "description": "Vazirliklar, mudofaa, muhim agentliklar"
       }
+    }
+  },
+  "pricingCta": {
+    "requestSystem": "Tizimni so‘rash"
+  },
+  "contactForm": {
+    "title": "Biz bilan bog‘laning",
+    "success": "Rahmat! Xabaringiz yuborildi. Tez orada aloqaga chiqamiz.",
+    "errorRequired": "Iltimos, ismingiz, emailingiz va qisqa xabarni kiriting.",
+    "errorSend": "Xabar yuborilmadi. Birozdan so‘ng qayta urinib ko‘ring.",
+    "placeholders": {
+      "name": "Ismingiz",
+      "email": "Email",
+      "type": "Loyiha turi (ixtiyoriy)",
+      "budget": "Byudjet (ixtiyoriy)",
+      "message": "Loyihangiz haqida yozing..."
+    },
+    "submit": {
+      "idle": "Xabar yuborish",
+      "loading": "Yuborilmoqda…"
+    }
+  },
+  "consulting": {
+    "title": "Konsalting so‘rovnomasi",
+    "searchPlaceholder": "Savollardan qidiring...",
+    "noResults": "Savollar topilmadi.",
+    "questions": [
+      {
+        "question": "Raqobatbardosh narxlardan tashqari kompaniyangizning asosiy qiymat taklifi nima?",
+        "answer": "Xavfsizlik bizning asosiy farqlovchimiz. Biz butun ishlab chiqish hayotiy tsikliga korporativ darajadagi xavfsizlik amaliyotlarini singdirgan holda, yuqori xavfsiz tizimlar quradigan kompaniya sifatida o‘zimizni joylashtiramiz."
+      },
+      {
+        "question": "Kompaniyangiz nechchi yildan beri ishlaydi va qanday tajribaga ega?",
+        "answer": "Biz yirik loyihalarni muvaffaqiyatli yakunlaganmiz: NAK (Nur Astana Kurylys) — AI asosidagi jamoa boshqaruvi platformasi va Chic Flowers — yirik gul chakana kompaniyasi uchun to‘liq raqamli platforma."
+      },
+      {
+        "question": "Texnik imkoniyatlaringiz va xizmat sifatingiz EPAM yoki boshqa raqobatchilardan nimasi bilan farq qiladi?",
+        "answer": "Bizning asosiy farqimiz — xavfsizlikni birinchi o‘ringa qo‘ygan rivojlantirish yondashuvi. Loyihaning boshidan joylashtirish va xizmat ko‘rsatishgacha xavfsizlik amaliyotlarini integratsiya qilamiz."
+      },
+      {
+        "question": "Raqobatbardosh narxda taklif etib, sifatni qanday saqlaysiz?",
+        "answer": "Biz bozor narxidan 15% past narxda xizmat ko‘rsatamiz, sifatni esa optimallashtirilgan operatsiyalar, strategik kadrlar tanlovi va samarali loyiha boshqaruvi orqali ta’minlaymiz."
+      },
+      {
+        "question": "Qaysi aniq dasturiy ta’minot xizmatlarini taklif qilasiz?",
+        "answer": "Boshidan oxirigacha ishlab chiqish: maxsus ilovalar, AI asosidagi yechimlar, kiberxavfsizlik mahsuloti (Silence AI-SOC) ishlab chiqish, tizim integratsiyasi, bulutga ko‘chirish va DevOps. Shuningdek, mahsulotni to‘liq rivojlantirish va jamoani kengaytirish xizmatlarini ham taklif qilamiz."
+      },
+      {
+        "question": "Qaysi soha va yo‘nalishlarda ixtisoslashgansiz?",
+        "answer": "Qurilish, retail, fintech, kiberxavfsizlik va raqamli platformalar — AI asosidagi jamoa boshqaruvi, e-commerce va korporativ xavfsizlik yechimlari jumlasidan."
+      },
+      {
+        "question": "Jamoangiz qaysi texnologiyalar va platformalarda tajribaga ega?",
+        "answer": "GO, Swift, Flutter, bulut platformalari (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript va AI/ML freymvorklari. Silence AI-SOC kabi mulkiy xavfsizlik vositalarini ham ishlab chiqamiz."
+      },
+      {
+        "question": "To‘liq mahsulot ishlab chiqishni ham, alohida xizmatlarni ham taklif qilasizmi?",
+        "answer": "Ha, ikkisini ham: MVP, to‘liq tsikl yetkazib berish, jamoani kengaytirish va kiberxavfsizlik integratsiyasi."
+      },
+      {
+        "question": "Kadrlar kengaytmasi va maxsus jamoa modelini ham bera olasizmi?",
+        "answer": "Ha, biz moslashuvchan hamkorlik modellarini taklif qilamiz: kadrlar kengaytmasi, maxsus jamoalar va loyiha asosidagi autsorsing."
+      },
+      {
+        "question": "Ishlab chiqishdan tashqari konsalting, arxitektura va maslahat xizmatlarini taklif qilasizmi?",
+        "answer": "Ha: kiberxavfsizlik bo‘yicha konsalting, tizim arxitekturasi dizayni, texnologik maslahat va Silence AI-SOC asosidagi muvofiqlik baholari."
+      }
+    ]
+  },
+  "requestDemoModal": {
+    "title": "Tizimni so‘rash",
+    "name": "Ism",
+    "email": "Korporativ email",
+    "company": "Kompaniya nomi",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "So‘rov yuborish",
+    "successTitle": "So‘rov yuborildi!",
+    "successBody": "Qiziqishingiz uchun rahmat. Tez orada bog‘lanamiz.",
+    "close": "Yopish"
+  },
+  "requestSystemModal": {
+    "title": "Tizimni so‘rash",
+    "name": "Ism",
+    "email": "Korporativ email",
+    "company": "Kompaniya nomi",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Yuklab olish",
+    "successTitle": "So‘rov yuborildi!",
+    "successBody": "Rahmat. Tizimni yuklab olish bo‘yicha ko‘rsatmalar emailingizga yuboriladi.",
+    "close": "Yopish"
+  },
+  "policySidebar": {
+    "tableOfContents": "Mundarija"
+  },
+  "notFound": {
+    "title": "Sahifa topilmadi",
+    "description": "Biz hamma joyni qidirdik, lekin bu sahifani topa olmadik.",
+    "cta": "Bosh sahifaga qaytish"
+  },
+  "heroSection": {
+    "badge": "Ishlab chiqarishga tayyor AI va Dasturiy ta'minot",
+    "title": "Maxsus AI va Dasturiy Ta'minotni Rivojlantirish",
+    "description": "Biz ishlab chiqarishga tayyor AI agentlarini va maxsus dasturiy ta'minotni quramiz.",
+    "country": "Qozog'iston",
+    "market": "global bozor",
+    "startProject": "Loyihani boshlash",
+    "liveDemo": "Jonli Demo — AI Agent",
+    "live": "Jonli",
+    "aiAgent": "AI Agent v2.1",
+    "processing": "So'rovlar ishlanmoqda...",
+    "active": "Faol",
+    "userMessage": "Mijoz ma'lumotlari tendentsiyalarini tahlil qilish",
+    "aiResponse": "Tahlil qilinmoqda",
+    "tasks": {
+      "dataCollection": "Ma'lumotlarni yig'ish",
+      "aiAnalysis": "AI tahlili",
+      "reportGeneration": "Hisobot yaratish"
+    },
+    "stats": {
+      "tasks": "Vazifalar",
+      "success": "Muvaffaqiyat",
+      "speed": "Tezlik"
+    }
+  },
+  "whyChooseUs": {
+    "badge": "Natijaga yo'naltirilgan muhandislik",
+    "title": "Nega Biz",
+    "subtitle": "Ishongan jamoalar",
+    "subtitleHighlight": "milliard dollarlik tashkilotlar",
+    "subtitleTail": "— va startap tezligida yetkazib beriladi.",
+    "learnMore": "Ko'proq o'rganing",
+    "logos": {
+      "kmg": "KazMunayGas",
+      "nak": "Nur Astana Kurylys"
+    },
+    "features": {
+      "fast": {
+        "title": "Korporativ sifat bilan tez yetkazib berish",
+        "description": "Korporativ darajadagi ishonchlilik va muvofiqlikka javob beradigan tezkor, iterativ yetkazib berish tsikllari.",
+        "pill": "Tezlik + Sifat"
+      },
+      "ai": {
+        "title": "AI-birinchi mahsulot muhandisligi",
+        "description": "Prototiplardan ishlab chiqarish AI agentlarigacha — biz haqiqiy biznes muammolarini hal qiladigan modellarni loyihalashtiramiz, o'rgatamiz va joylashtiramiz.",
+        "pill": "AI muhandisligi"
+      },
+      "local": {
+        "title": "Mahalliy tajriba, global qamrov",
+        "description": "Qozog'iston bozori va qoidalarini xalqaro eng yaxshi amaliyotlar bilan birlashtirilgan chuqur bilimi.",
+        "pill": "KZ + Global"
+      }
+    }
+  },
+  "servicesBlock": {
+    "badge": "Biz nima taklif qilamiz",
+    "title": "Bizning xizmatlar",
+    "description": "Premium UI, kuchli muhandislik va tez yetkazib berish — yuqori darajadagi brend kabi ko'rinadigan va ishlaydigan mahsulotni ishga tushirish uchun kerak bo'lgan hamma narsa.",
+    "learnMore": "Ko'proq o'rganing",
+    "learnMoreAria": "Ushbu xizmat haqida ko'proq bilib oling",
+    "services": {
+      "aiAgents": {
+        "title": "AI Agentlari",
+        "description": "Yordam, operatsiyalar va tahlil uchun maxsus suhbatdosh va avtonom agentlar.",
+        "tag": "Avtomatlashtirish"
+      },
+      "customSoftware": {
+        "title": "Maxsus Dasturiy Ta'minot",
+        "description": "Ish oqimlaringizga moslashtirilgan veb va ish stoli ilovalari.",
+        "tag": "Qurish"
+      },
+      "cybersecurity": {
+        "title": "Xavfsizlik",
+        "description": "Auditlar, penetratsion testlar va doimiy monitoring.",
+        "tag": "Himoya qilish"
+      },
+      "backend": {
+        "title": "Backend / DevOps",
+        "description": "Masshtablanadigan APIlar, CI/CD quvurlari va bulut infratuzilmasi.",
+        "tag": "Masshtablash"
+      },
+      "mobile": {
+        "title": "Mobil",
+        "description": "Mahalliy ishlash va silliqlangan UX bilan kross-platforma ilovalari.",
+        "tag": "Yetkazib berish"
+      }
+    }
+  },
+  "caseStudies": {
+    "badge": "Tasdiqlangan ta'sir",
+    "title": "Keyslar",
+    "subtitle": "Biz shunchaki funksiyalar emas, natijalarni yetkazib beramiz.",
+    "problem": "Muammo:",
+    "solution": "Yechim:",
+    "liveImpact": "Jonli ta'sir",
+    "before": "Oldin",
+    "after": "Keyin",
+    "buildCta": "Shunga o'xshash narsa quring →",
+    "caseStudy": "Case Study",
+    "items": {
+      "nak": {
+        "title": "NAK — Jamoani boshqarish AI",
+        "problem": "Resurslarni qo'lda taqsimlash",
+        "solution": "AI bilan ishlaydigan rejalashtirish agenti",
+        "result": "+32% samaradorlik",
+        "metricLabel": "Jamoa natijalari indeksi"
+      },
+      "chic": {
+        "title": "Chic Flowers — Elektron tijorat",
+        "problem": "Past onlayn konversiya",
+        "solution": "Shaxsiylashtirilgan tavsiya etuvchi + UX yangilanishi",
+        "result": "+45% onlayn savdo",
+        "metricLabel": "Konversiya darajasining o'sishi"
+      },
+      "silence": {
+        "title": "Silence AI-SOC",
+        "problem": "Yuqori ogohlantirish shovqini",
+        "solution": "AI aniqlash va avtomatlashtirilgan javob",
+        "result": "−68% noto'g'ri pozitivlar",
+        "metricLabel": "Noto'g'ri ogohlantirish hajmi"
+      }
+    }
+  },
+  "howWeWork": {
+    "title": "Biz qanday ishlaymiz",
+    "subtitle": "O'ta tez yetkazib berish quvuri — tezlik uchun optimallashtirilgan.",
+    "steps": {
+      "discovery": {
+        "title": "Kashfiyot",
+        "desc": "Talablar, manfaatdor tomonlar, muvaffaqiyat ko'rsatkichlari."
+      },
+      "design": {
+        "title": "Dizayn",
+        "desc": "UX, arxitektura, prototip."
+      },
+      "poc": {
+        "title": "Kontseptsiya isboti (PoC)",
+        "desc": "O'lchanadigan KPIlar bilan tezkor tekshirish."
+      },
+      "build": {
+        "title": "Qurish",
+        "desc": "Iterativ sprintlar, avtomatlashtirilgan testlar."
+      },
+      "deploy": {
+        "title": "Joylashtirish",
+        "desc": "CI/CD, monitoring, xavfsizlikni mustahkamlash."
+      },
+      "support": {
+        "title": "Qo'llab-quvvatlash va masshtablash",
+        "desc": "Xizmat ko'rsatish, yo'l xaritasi, doimiy takomillashtirish."
+      }
+    }
+  },
+  "technologyStack": {
+    "title": "Texnologiyalar",
+    "subtitle": "Tezlik, masshtablilik va chiroyli foydalanuvchi tajribalari uchun ehtiyotkorlik bilan tanlangan, ishlab chiqarish darajasidagi texnologiyalar."
+  },
+  "backToTop": {
+    "label": "Yuqoriga qaytish"
+  },
+  "pricingCustom": {
+    "title": "Shaffof narxlar",
+    "subtitle": "Mahsulotingiz bilan o'sish uchun mo'ljallangan mobil-birinchi rejalar.",
+    "percentMaintenance": "{percent}% yillik texnik xizmat",
+    "planEstimate": "${value}",
+    "perYear": "yiliga (tahminan)",
+    "calculator": {
+      "title": "Loyifa narxi kalkulyatori",
+      "subtitle": "Yillik texnik xizmatingizni ko'rish uchun suring",
+      "projectCost": "Loyiha narxi:",
+      "projectValue": "${value}"
+    },
+    "plans": {
+      "basic": {
+        "name": "Asosiy",
+        "features": {
+          "fix": "Muhim xatolarni tuzatish (48 soat SLA)",
+          "updates": "Oylik yangilanishlar",
+          "audit": "Choraklik xavfsizlik auditlari",
+          "manager": "Maxsus menejer"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Eng ommabop",
+        "features": {
+          "fix": "Muhim xatolarni tuzatish (24 soat SLA)",
+          "updates": "10 soat oylik yangilanishlar",
+          "audit": "Oylik xavfsizlik auditlari",
+          "manager": "Maxsus menejer"
+        }
+      },
+      "enterprise": {
+        "name": "Korxona",
+        "badge": "Eng yaxshi qiymat",
+        "features": {
+          "fix": "Muhim xatolarni tuzatish (4 soat SLA)",
+          "updates": "Cheksiz yangilanishlar + Yo'l xaritasi",
+          "audit": "Haftalik auditlar + Zaxira nusxalari",
+          "manager": "Maxsus menejer"
+        }
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "AI xavfsizlik va rivojlantirish",
+      "title": "Xavfsiz quring. Ishonch bilan joylashtiring.",
+      "subtitle": "Ikki obuna tizimi (AI-SOC, SLNC-env) va korporativ jamoalar uchun maxsus AI hamda dasturiy ta’minot yetkazib berish.",
+      "ctaPrimary": "Demo so‘rash",
+      "ctaSecondary": "Tizimlarni ko‘rish",
+      "highlights": {
+        "coverage": "24/7 AI yordamli SOC",
+        "onPrem": "0-chiqish on-prem",
+        "deploy": "4 daqiqada xavfsiz joylashtirish"
+      },
+      "metrics": {
+        "title": "Regulyatsiyadagi jamoalar uchun",
+        "soc": "AI yordamli SOC qamrovi",
+        "egress": "Hammasi on-prem — kod, prompt, buildlar",
+        "deployment": "birinchi xavfsiz joylashtirishgacha",
+        "locales": "tayyor tillar soni"
+      }
+    },
+    "systems": {
+      "title": "Tizimlar",
+      "subtitle": "Mos obunani tanlang: AI-SOC aniqlash uchun, SLNC-env yopiq rivojlantirish uchun.",
+      "cta": "Batafsil ko‘rish",
+      "aiSoc": {
+        "title": "AI-SOC",
+        "desc": "SOC jamoalari uchun AI yordamchilari bilan boshqariladigan aniqlash va javob berish.",
+        "badge": "Obuna"
+      },
+      "slncEnv": {
+        "title": "SLNC-env",
+        "desc": "Kod, prompt va buildlarni on-prem saqlaydigan yopiq rivojlantirish buluti.",
+        "badge": "Obuna"
+      }
+    },
+    "services": {
+      "title": "Maxsus rivojlantirish xizmatlari",
+      "subtitle": "AI agentlari, integratsiyalar va xavfsizlik birinchi kundan qo‘shilgan to‘liq tsikl dasturiy ta’minot yetkazib berish.",
+      "cta": "Xizmatlarni ko‘rish",
+      "cards": {
+        "agents": "Himoya choralari, RAG va xavfsiz konnektorli, ishlab chiqarishga tayyor AI agentlari.",
+        "integrations": "Stackingiz, IAM va ma’lumotlar boshqaruvi bilan vendor-ga bog‘liq bo‘lmagan integratsiyalar.",
+        "delivery": "Ishonchlilik SLOlari, kuzatuvchanlik va xavfsizlik ko‘rib chiqishlari bilan to‘liq tsikl yetkazib berish."
+      },
+      "cardsTitle": {
+        "agents": "Agentlar",
+        "integrations": "Integratsiyalar",
+        "delivery": "Yetkazib berish"
+      }
+    },
+    "contact": {
+      "title": "AI-SOC va SLNC-envni birlashtirishga tayyormisiz?",
+      "subtitle": "Xavfsizlik va yetkazib berish maqsadlaringizni ayting — biz mos tizim va xizmatlarni tanlab beramiz.",
+      "cta": "Demo so‘rash",
+      "ctaSecondary": "Xizmatlar jamoasi bilan gaplashing"
     }
   }
 }

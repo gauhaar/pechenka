@@ -1,7 +1,13 @@
 {
   "languageSelector": {
     "triggerLabel": "언어 선택",
-    "menuLabel": "언어를 선택하세요"
+    "menuLabel": "언어를 선택하세요",
+    "searchLabel": "Search languages",
+    "searchPlaceholder": "Search by name or native script",
+    "searchResults": "Search results",
+    "noMatches": "No languages match your search.",
+    "popular": "Most popular",
+    "allLanguages": "All languages"
   },
   "header": {
     "nav": {
@@ -10,10 +16,20 @@
       "affiliate": "제휴 프로그램",
       "instructions": "가이드",
       "product": "AI-SOC",
-      "secureDevelopment": "SLNC Code",
-      "developerServices": "개발자 서비스"
+      "secureDevelopment": "SLNC-env",
+      "developerServices": "개발자 서비스",
+      "home": "Home",
+      "systems": "Systems",
+      "systemsAiSoc": "AI-SOC",
+      "systemsSlncEnv": "SLNC-env",
+      "services": "Services"
     },
-    "login": "로그인"
+    "login": "로그인",
+    "cta": {
+      "contact": "Contact",
+      "download": "Download",
+      "requestDemo": "Request Demo"
+    }
   },
   "affiliate": {
     "hero": {
@@ -98,6 +114,60 @@
       "statistics": {
         "question": "추천 통계를 언제 볼 수 있나요?",
         "answer": "사용자가 프로모션 코드 또는 추천 링크로 가입하면 해당 이메일과 보상이 대시보드에 표시됩니다."
+      }
+    },
+    "termsAff": {
+      "label": "Affiliate Program",
+      "title": "Affiliate Terms of Service",
+      "notice": "This policy is available only in English",
+      "intro": "These terms describe how rewards are issued and paid to partners participating in the Silence AI affiliate program.",
+      "meta": {
+        "effective": "Effective date: 10 November 2024",
+        "lastUpdated": "Last updated: 10 November 2024"
+      },
+      "sections": {
+        "overview": {
+          "title": "1. Program Overview",
+          "body1": "1.1 Agreement Scope: These Affiliate Terms of Service (\"Terms\") govern your participation in the Silence AI affiliate program operated by Silence AI LLC (\"Silence AI,\" \"we,\" \"us,\" or \"our\"). These Terms apply to you, the individual or entity enrolling as an affiliate partner (\"you\" or \"your\"), and, where applicable, your employer, principal, or organization if you act on their behalf.",
+          "body2": "1.2 Program Summary: Under this program, qualified partners earn commission-based rewards when referred customers purchase or top up the AI-SOC 1 product. Participation in the affiliate program also requires compliance with the general Silence AI Terms of Service."
+        },
+        "eligibility": {
+          "title": "2. Partner Eligibility",
+          "item1": "You must maintain an active Silence AI affiliate account with accurate business and payment details.",
+          "item2": "Referrals must complete registration through your issued link or promo code.",
+          "item3": "Accounts found to be fraudulent, self-referred, or in breach of applicable law are not eligible for rewards."
+        },
+        "commission": {
+          "title": "3. Commission Structure",
+          "body1": "You earn a 10% reward on every balance top-up completed by an account registered through your invitation.",
+          "body2": "Commission is calculated from the net top-up amount after payment processing fees are deducted."
+        },
+        "rewardPosting": {
+          "title": "4. Reward Posting",
+          "body1": "Rewards post to your partner balance within one minute after the transaction successfully clears. There is no manual approval queue.",
+          "body2": "Notifications appear in your affiliate dashboard alongside the customer identifier and top-up amount."
+        },
+        "withdrawals": {
+          "title": "5. Withdrawals",
+          "body1": "Withdrawal requests are processed within two business days and paid out using the settlement method on file.",
+          "body2": "Minimum withdrawal thresholds and supported payout networks are published inside the affiliate dashboard."
+        },
+        "productScope": {
+          "title": "6. Product Scope",
+          "body1": "Rewards are only provided for the AI-SOC 1 product. Other Silence AI services are excluded from the affiliate program unless explicitly stated otherwise in writing.",
+          "body2": "If additional products become eligible, Silence AI will publish an updated list inside these terms."
+        },
+        "compliance": {
+          "title": "7. Partner Conduct & Compliance",
+          "item1": "Partners must represent Silence AI accurately and avoid misleading claims about features or pricing.",
+          "item2": "Marketing communications must comply with applicable anti-spam, privacy, and advertising regulations.",
+          "item3": "Silence AI may suspend or terminate accounts that violate these obligations or harm the brand."
+        },
+        "changes": {
+          "title": "8. Changes & Contact",
+          "body1": "Silence AI may update these affiliate terms to reflect changes in the program or applicable law. Updated versions take effect upon publication on this page.",
+          "body2": "Questions about the affiliate program can be sent to info@silenceai.net."
+        }
       }
     }
   },
@@ -219,7 +289,46 @@
           "reports": "이해하기 쉬운 보안 보고서",
           "intelligence": "인텔리전스 보고서"
         }
+      },
+      "basic": {
+        "name": "Basic",
+        "features": {
+          "fix": "Critical Bug Fixes (48h SLA)",
+          "updates": "Monthly Updates",
+          "audit": "Quarterly Security Audits",
+          "manager": "Dedicated Manager"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Most Popular",
+        "features": {
+          "fix": "Critical Bug Fixes (24h SLA)",
+          "updates": "10h Monthly Updates",
+          "audit": "Monthly Security Audits",
+          "manager": "Dedicated Manager"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "badge": "Best Value",
+        "features": {
+          "fix": "Critical Bug Fixes (4h SLA)",
+          "updates": "Unlimited Updates + Roadmap",
+          "audit": "Weekly Audits + Backups",
+          "manager": "Dedicated Manager"
+        }
       }
+    },
+    "subtitle": "Mobile-first plans built to scale with your product.",
+    "percentMaintenance": "{percent}% yearly maintenance",
+    "planEstimate": "${value}",
+    "perYear": "per year (est.)",
+    "calculator": {
+      "title": "Project Cost Calculator",
+      "subtitle": "Slide to see your yearly maintenance",
+      "projectCost": "Project Cost:",
+      "projectValue": "${value}"
     }
   },
   "solution": {
@@ -321,7 +430,8 @@
       "termsUse": "이용 약관",
       "termsService": "서비스 약관",
       "privacy": "개인정보 보호정책",
-      "cookies": "쿠키 정책"
+      "cookies": "쿠키 정책",
+      "affiliateTerms": "Affiliate Terms of Service"
     },
     "copyright": "© {year} Silence AI. 모든 권리 보유."
   },
@@ -500,6 +610,342 @@
         "title": "정부",
         "description": "Ministries, defense, critical agencies"
       }
+    }
+  },
+  "pricingCta": {
+    "requestSystem": "Request System"
+  },
+  "contactForm": {
+    "title": "Contact Us",
+    "success": "Thanks! Your message has been sent. We will contact you shortly.",
+    "errorRequired": "Please fill in your name, email and a short message.",
+    "errorSend": "Unable to send message. Please try again later.",
+    "placeholders": {
+      "name": "Your name",
+      "email": "Email",
+      "type": "Project Type (optional)",
+      "budget": "Budget (optional)",
+      "message": "Tell us about your project..."
+    },
+    "submit": {
+      "idle": "Send Message",
+      "loading": "Sending…"
+    }
+  },
+  "consulting": {
+    "title": "Consulting Questionnaire",
+    "searchPlaceholder": "Search questions...",
+    "noResults": "No questions found.",
+    "questions": [
+      {
+        "question": "What is your company's core value proposition beyond competitive pricing?",
+        "answer": "Security is our primary differentiator. We position ourselves as a company that builds highly secure systems with enterprise-grade security practices embedded throughout the development lifecycle."
+      },
+      {
+        "question": "How long has your company been in business, and what is your track record?",
+        "answer": "We have successfully delivered major projects including: NAK (Nur Astana Kurylys) - AI-powered team management platform, and Chic Flowers - Complete digital platform for a major flower retail company."
+      },
+      {
+        "question": "What differentiates your technical capabilities and service quality from EPAM and other competitors?",
+        "answer": "Our key differentiator is our security-first development approach. We integrate security practices from project inception through deployment and maintenance."
+      },
+      {
+        "question": "How do you maintain quality while offering competitive pricing?",
+        "answer": "We offer services at 15% below market rates while maintaining exceptional quality through optimized operations, strategic talent sourcing, and efficient project management methodologies."
+      },
+      {
+        "question": "What specific software development services do you provide?",
+        "answer": "End-to-end software development: custom applications, AI-powered solutions, cybersecurity product development (Silence AI-SOC), system integration, cloud migration, and DevOps. We also offer dedicated product development and staff augmentation."
+      },
+      {
+        "question": "Which industries and domains do you specialize in?",
+        "answer": "Construction, retail, fintech, cybersecurity, and digital platforms — including AI-driven team management, e-commerce, and enterprise security solutions."
+      },
+      {
+        "question": "What technology stacks and platforms does your team have expertise in?",
+        "answer": "GO, Swift, Flutter, cloud platforms (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript, and AI/ML frameworks. We build proprietary security tools like Silence AI-SOC."
+      },
+      {
+        "question": "Do you offer end-to-end product development or specific services only?",
+        "answer": "We offer both: MVPs, full-cycle product delivery, staff augmentation, and cybersecurity integration."
+      },
+      {
+        "question": "Can you provide both staff augmentation and dedicated team models?",
+        "answer": "Yes, we provide flexible engagement models: staff augmentation, dedicated teams, and project-based outsourcing."
+      },
+      {
+        "question": "Do you offer consulting, architecture, and advisory services beyond development?",
+        "answer": "Yes: cybersecurity consulting, system architecture design, technology advisory, and security compliance assessments using Silence AI-SOC."
+      }
+    ]
+  },
+  "requestDemoModal": {
+    "title": "Request System",
+    "name": "Name",
+    "email": "Corporate Email",
+    "company": "Company Name",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Send Request",
+    "successTitle": "Request Sent!",
+    "successBody": "Thank you for your interest. We will be in touch shortly.",
+    "close": "Close"
+  },
+  "requestSystemModal": {
+    "title": "Request System",
+    "name": "Name",
+    "email": "Corporate Email",
+    "company": "Company Name",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Download",
+    "successTitle": "Request Sent!",
+    "successBody": "Thank you. The system download instructions will be sent to your email.",
+    "close": "Close"
+  },
+  "policySidebar": {
+    "tableOfContents": "Table of Contents"
+  },
+  "whyChooseUs": {
+    "badge": "결과 중심의 엔지니어링",
+    "title": "우리를 선택해야 하는 이유",
+    "subtitle": "신뢰하는 팀들:",
+    "subtitleHighlight": "수십억 달러 규모 기업",
+    "subtitleTail": "— 그리고 스타트업 속도로 제공합니다.",
+    "learnMore": "더 알아보기",
+    "logos": {
+      "kmg": "KazMunayGas",
+      "nak": "Nur Astana Kurylys"
+    },
+    "features": {
+      "fast": {
+        "title": "엔터프라이즈 품질의 빠른 배송",
+        "description": "엔터프라이즈급 신뢰성과 규정 준수를 충족하는 신속하고 반복적인 배송 주기.",
+        "pill": "속도 + 품질"
+      },
+      "ai": {
+        "title": "AI 우선 제품 엔지니어링",
+        "description": "프로토타입부터 프로덕션 AI 에이전트까지 — 실제 비즈니스 문제를 해결하는 모델을 설계, 훈련 및 배포합니다.",
+        "pill": "AI 엔지니어링"
+      },
+      "local": {
+        "title": "현지 전문성, 글로벌 도달",
+        "description": "카자흐스탄 시장 및 규정에 대한 깊은 지식과 국제 모범 사례의 결합.",
+        "pill": "KZ + 글로벌"
+      }
+    }
+  },
+  "servicesBlock": {
+    "badge": "제공 서비스",
+    "title": "우리의 서비스",
+    "description": "프리미엄 UI, 강력한 엔지니어링, 빠른 배송 — 일류 브랜드처럼 보이고 작동하는 제품을 출시하는 데 필요한 모든 것.",
+    "learnMore": "더 알아보기",
+    "learnMoreAria": "이 서비스에 대해 더 알아보기",
+    "services": {
+      "aiAgents": {
+        "title": "AI 에이전트",
+        "description": "지원, 운영 및 분석을 위한 맞춤형 대화형 및 자율 에이전트.",
+        "tag": "자동화"
+      },
+      "customSoftware": {
+        "title": "맞춤형 소프트웨어",
+        "description": "귀하의 워크플로우에 맞춘 엔드투엔드 웹 및 데스크톱 앱.",
+        "tag": "빌드"
+      },
+      "cybersecurity": {
+        "title": "사이버 보안",
+        "description": "감사, 모의 해킹 및 지속적인 모니터링.",
+        "tag": "보호"
+      },
+      "backend": {
+        "title": "백엔드 / DevOps",
+        "description": "확장 가능한 API, CI/CD 파이프라인 및 클라우드 인프라.",
+        "tag": "확장"
+      },
+      "mobile": {
+        "title": "모바일",
+        "description": "네이티브 성능과 세련된 UX를 갖춘 크로스 플랫폼 앱.",
+        "tag": "배포"
+      }
+    }
+  },
+  "caseStudies": {
+    "badge": "검증된 임팩트",
+    "title": "사례 연구",
+    "subtitle": "우리는 기능을 배달하지 않습니다. 결과를 배달합니다.",
+    "problem": "문제:",
+    "solution": "해결책:",
+    "liveImpact": "실제 효과",
+    "before": "전",
+    "after": "후",
+    "buildCta": "이런 제품 구축하기 →",
+    "caseStudy": "사례 연구",
+    "items": {
+      "nak": {
+        "title": "NAK — 팀 관리 AI",
+        "problem": "수동 자원 할당",
+        "solution": "AI 기반 스케줄링 에이전트",
+        "result": "생산성 +32%",
+        "metricLabel": "팀 산출 지수"
+      },
+      "chic": {
+        "title": "Chic Flowers — 이커머스",
+        "problem": "낮은 온라인 전환율",
+        "solution": "개인화 추천 + UX 개편",
+        "result": "온라인 매출 +45%",
+        "metricLabel": "전환율 성장"
+      },
+      "silence": {
+        "title": "Silence AI-SOC",
+        "problem": "높은 알람 노이즈",
+        "solution": "AI 탐지 및 자동 대응",
+        "result": "오탐지 −68%",
+        "metricLabel": "거짓 경보 양"
+      }
+    }
+  },
+  "howWeWork": {
+    "title": "작업 방식",
+    "subtitle": "초고속 배송 파이프라인 — 속도에 최적화됨.",
+    "steps": {
+      "discovery": {
+        "title": "발견",
+        "desc": "요구 사항, 이해 관계자, 성공 지표."
+      },
+      "design": {
+        "title": "디자인",
+        "desc": "UX, 아키텍처, 프로토타입."
+      },
+      "poc": {
+        "title": "개념 증명 (PoC)",
+        "desc": "측정 가능한 KPI를 통한 빠른 검증."
+      },
+      "build": {
+        "title": "구축",
+        "desc": "반복 스프린트, 자동화 테스트."
+      },
+      "deploy": {
+        "title": "배포",
+        "desc": "CI/CD, 모니터링, 보안 강화."
+      },
+      "support": {
+        "title": "지원 및 확장",
+        "desc": "유지 보수, 로드맵, 지속적 개선."
+      }
+    }
+  },
+  "technologyStack": {
+    "title": "기술 스택",
+    "subtitle": "속도, 확장성 및 아름다운 사용자 경험을 위해 설계된 엄선된 프로덕션 등급 스택."
+  },
+  "backToTop": {
+    "label": "맨 위로"
+  },
+  "pricingCustom": {
+    "title": "투명한 가격 정책",
+    "subtitle": "제품과 함께 성장하는 모바일 우선 요금제.",
+    "percentMaintenance": "{percent}% 연간 유지보수",
+    "planEstimate": "${value}",
+    "perYear": "년 (예상)",
+    "calculator": {
+      "title": "프로젝트 비용 계산기",
+      "subtitle": "슬라이드하여 연간 유지보수 비용 확인",
+      "projectCost": "프로젝트 비용:",
+      "projectValue": "${value}"
+    },
+    "plans": {
+      "basic": {
+        "name": "베이직",
+        "features": {
+          "fix": "치명적 버그 수정 (48시간 SLA)",
+          "updates": "월간 업데이트",
+          "audit": "분기별 보안 감사",
+          "manager": "전담 매니저"
+        }
+      },
+      "pro": {
+        "name": "프로",
+        "badge": "인기",
+        "features": {
+          "fix": "치명적 버그 수정 (24시간 SLA)",
+          "updates": "월 10시간 업데이트",
+          "audit": "월간 보안 감사",
+          "manager": "전담 매니저"
+        }
+      },
+      "enterprise": {
+        "name": "엔터프라이즈",
+        "badge": "최고 가치",
+        "features": {
+          "fix": "치명적 버그 수정 (4시간 SLA)",
+          "updates": "무제한 업데이트 + 로드맵",
+          "audit": "주간 감사 + 백업",
+          "manager": "전담 매니저"
+        }
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "AI security & development",
+      "title": "Build securely. Deploy confidently.",
+      "subtitle": "Two subscription systems (AI-SOC, SLNC-env) plus custom AI and software delivery for enterprise teams.",
+      "ctaPrimary": "Request demo",
+      "ctaSecondary": "Explore systems",
+      "highlights": {
+        "coverage": "24/7 AI-assisted SOC",
+        "onPrem": "0-egress on-prem",
+        "deploy": "Secure deploy in 4 min"
+      },
+      "metrics": {
+        "title": "Built for regulated teams",
+        "soc": "AI-assisted SOC coverage",
+        "egress": "All on-prem—code, prompts, builds",
+        "deployment": "to first secure deployment",
+        "locales": "locales supported out-of-box"
+      }
+    },
+    "systems": {
+      "title": "Systems",
+      "subtitle": "Choose the subscription product that fits: AI-SOC for detection and SLNC-env for sealed development.",
+      "cta": "View details",
+      "aiSoc": {
+        "title": "AI-SOC",
+        "desc": "Managed detection & response with AI copilots for SOC teams.",
+        "badge": "Subscription"
+      },
+      "slncEnv": {
+        "title": "SLNC-env",
+        "desc": "Sealed development cloud that keeps code, prompts, and builds on-prem.",
+        "badge": "Subscription"
+      }
+    },
+    "services": {
+      "title": "Custom development services",
+      "subtitle": "AI agents, integrations, and full-cycle software delivery with security baked in from day one.",
+      "cta": "View services",
+      "cards": {
+        "agents": "Production-grade AI agents with guardrails, RAG, and secure connectors.",
+        "integrations": "Vendor-neutral integrations with your stack, IAM, and data governance.",
+        "delivery": "Full-cycle delivery with reliability SLOs, observability, and security reviews."
+      },
+      "cardsTitle": {
+        "agents": "Agents",
+        "integrations": "Integrations",
+        "delivery": "Delivery"
+      }
+    },
+    "contact": {
+      "title": "Ready to combine AI-SOC and SLNC-env?",
+      "subtitle": "Tell us your security and delivery goals—we'll align the right system and services.",
+      "cta": "Request demo",
+      "ctaSecondary": "Talk to services team"
     }
   }
 }

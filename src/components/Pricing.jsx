@@ -53,8 +53,8 @@ const Pricing = ({ onOpenModal }) => {
   const tooltipContent = TOOLTIP_KEYS.reduce((acc, key) => {
     const dictionaryKey = mapTooltipKeyToDictionaryKey(key);
     acc[key] = {
-      title: t(`pricing.tooltips.${dictionaryKey}.title`, key),
-      content: t(`pricing.tooltips.${dictionaryKey}.content`, ""),
+      title: t(`pricing.tooltips.${dictionaryKey}.title`),
+      content: t(`pricing.tooltips.${dictionaryKey}.content`),
     };
     return acc;
   }, {});
@@ -73,16 +73,16 @@ const Pricing = ({ onOpenModal }) => {
   return (
     <section className="w-full pt-14 sm:pt-22 relative px-4 sm:px-6 lg:px-8">
       <h2 className="absolute top-[-1.5rem] sm:top-2 lg:-top-12 left-0 w-full text-[72px] sm:text-[120px] lg:text-[200px] font-bold text-white text-center z-0 pointer-events-none px-6 leading-none">
-        {t("pricing.title", "Pricing")}
+        {t("pricing.title")}
       </h2>
 
       <div className="container mx-auto max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 relative z-10 justify-items-center">
           {PLAN_CONFIG.map((plan, index) => {
             const title = t(`pricing.plans.${plan.id}.title`, plan.id);
-            const price = t(plan.priceKey, "");
-            const description = t(plan.descriptionKey, "");
-            const buttonText = t(plan.buttonKey, "");
+            const price = t(plan.priceKey);
+            const description = t(plan.descriptionKey);
+            const buttonText = t(plan.buttonKey);
 
             return (
               <EdgeGlowCard
@@ -156,10 +156,7 @@ const Pricing = ({ onOpenModal }) => {
                   <ul className="space-y-2">
                     {plan.features.map((feature) => {
                       const tooltipId = feature.tooltip;
-                      const label = t(
-                        `pricing.plans.${plan.id}.features.${feature.id}`,
-                        feature.id
-                      );
+                      const label = t(`pricing.plans.${plan.id}.features.${feature.id}`);
 
                       return (
                         <li
@@ -221,7 +218,7 @@ const Pricing = ({ onOpenModal }) => {
                   innerClassName="w-full justify-center px-10 py-4"
                   onClick={onOpenModal}
                 >
-                  Request System
+                  {t("pricingCta.requestSystem")}
                 </GlowButton>
               </EdgeGlowCard>
             );

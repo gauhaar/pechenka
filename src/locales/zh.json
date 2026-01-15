@@ -1,7 +1,13 @@
 {
   "languageSelector": {
     "triggerLabel": "选择语言",
-    "menuLabel": "请选择语言"
+    "menuLabel": "请选择语言",
+    "searchLabel": "搜索语言",
+    "searchPlaceholder": "按名称或本地文字搜索",
+    "searchResults": "搜索结果",
+    "noMatches": "没有与搜索匹配的语言。",
+    "popular": "最受欢迎",
+    "allLanguages": "所有语言"
   },
   "header": {
     "nav": {
@@ -10,10 +16,20 @@
       "affiliate": "联盟计划",
       "instructions": "使用指南",
       "product": "AI-SOC",
-      "secureDevelopment": "SLNC Code",
-      "developerServices": "开发者服务"
+      "secureDevelopment": "SLNC-env",
+      "developerServices": "开发者服务",
+      "home": "主页",
+      "systems": "系统",
+      "systemsAiSoc": "AI-SOC",
+      "systemsSlncEnv": "SLNC-env",
+      "services": "服务"
     },
-    "login": "登录"
+    "login": "登录",
+    "cta": {
+      "contact": "联系我们",
+      "download": "下载",
+      "requestDemo": "预约演示"
+    }
   },
   "affiliate": {
     "hero": {
@@ -74,8 +90,8 @@
         "description": "交易完成后一分种内奖励会计入你的合作余额——无需手动审核。"
       },
       "withdrawal": {
-        "title": "Withdrawals processed in 2 business days",
-        "description": "提现申请将自动审核，并在两个工作日内到达你的银行账户。"
+        "title": "提现将在 2 个工作日内处理",
+        "description": "提现申请将自动审核，并在两个工作日内到账你的银行账户。"
       },
       "sample": {
         "label": "示例充值",
@@ -98,6 +114,60 @@
       "statistics": {
         "question": "推荐数据何时可见？",
         "answer": "一旦用户使用你的推广码或链接注册，他们的邮箱和相应奖励会显示在你的控制台中。"
+      }
+    },
+    "termsAff": {
+      "label": "联盟计划",
+      "title": "联盟服务条款",
+      "notice": "本政策仅提供英文版本",
+      "intro": "以下条款说明 Silence AI 联盟计划中合作伙伴的奖励发放与支付方式。",
+      "meta": {
+        "effective": "生效日期：2024 年 11 月 10 日",
+        "lastUpdated": "最后更新：2024 年 11 月 10 日"
+      },
+      "sections": {
+        "overview": {
+          "title": "1. 计划概述",
+          "body1": "1.1 协议范围：本《联盟服务条款》（“条款”）规范您参与由 Silence AI LLC（“Silence AI”“我们”）运营的 Silence AI 联盟计划。条款适用于报名成为联盟伙伴的个人或机构（“您”），若您代表雇主或组织行事，同样适用。",
+          "body2": "1.2 计划摘要：在本计划中，符合条件的伙伴在推荐客户购买或充值 AI-SOC 1 产品时可获得基于佣金的奖励。参与联盟计划还须遵守 Silence AI 通用服务条款。"
+        },
+        "eligibility": {
+          "title": "2. 伙伴资格",
+          "item1": "您需保持有效的 Silence AI 联盟账户，并提供准确的业务与付款信息。",
+          "item2": "被推荐客户必须通过您提供的链接或优惠码完成注册。",
+          "item3": "被认定为欺诈、自我推荐或违反适用法律的账户无权获得奖励。"
+        },
+        "commission": {
+          "title": "3. 佣金结构",
+          "body1": "通过您邀请注册的账户每次充值，您可获得 10% 的奖励。",
+          "body2": "佣金按扣除支付手续费后的净充值金额计算。"
+        },
+        "rewardPosting": {
+          "title": "4. 奖励入账",
+          "body1": "交易成功后 1 分钟内，奖励会计入您的合作伙伴余额，无需人工审核。",
+          "body2": "通知将在联盟控制台显示客户标识与充值金额。"
+        },
+        "withdrawals": {
+          "title": "5. 提现",
+          "body1": "提现申请将在两个工作日内处理，并按备案的结算方式付款。",
+          "body2": "最低提现门槛与支持的付款网络会在联盟控制台公布。"
+        },
+        "productScope": {
+          "title": "6. 产品范围",
+          "body1": "奖励仅适用于 AI-SOC 1 产品。除非另有书面说明，其他 Silence AI 服务不在联盟计划范围内。",
+          "body2": "若有其他产品纳入范围，Silence AI 将在本条款中发布更新列表。"
+        },
+        "compliance": {
+          "title": "7. 合规与行为",
+          "item1": "伙伴必须准确展示 Silence AI，不得对功能或定价作出误导性陈述。",
+          "item2": "营销沟通需遵守相关反垃圾邮件、隐私与广告法规。",
+          "item3": "Silence AI 可暂停或终止违反义务或损害品牌的账户。"
+        },
+        "changes": {
+          "title": "8. 变更与联系",
+          "body1": "Silence AI 可能因计划或法律变化更新本联盟条款，更新内容在本页发布后立即生效。",
+          "body2": "关于联盟计划的问题可发送至 info@silenceai.net。"
+        }
       }
     }
   },
@@ -132,7 +202,7 @@
   "playground": {
     "options": {
       "globeShield": "网络安全与流量管控",
-      "emailSecurity": "Email Security"
+      "emailSecurity": "邮件安全"
     }
   },
   "cookie": {
@@ -143,80 +213,80 @@
     "ok": "好的"
   },
   "pricing": {
-    "title": "价格方案",
+    "title": "定价",
     "tooltips": {
       "cmcGlobal": {
-        "title": "具备全球流量监控的 CMC",
-        "content": "集中管理控制台（CMC）与其他安全系统深度集成，并与 Global Shield 与 Security Tester 共用域名与界面，可用于大规模管理网络安全，如国家黑名单、端口关闭等"
+        "title": "带有全球流量监控的CMC",
+        "content": "CMC（集中管理控制台）与其他安全系统无缝集成，并且与Global Shield和Security Tester共享相同的域名和界面，允许您大规模管理网络安全。从这里，您可以将国家列入黑名单，关闭端口并执行其他操作。"
       },
       "countryBlacklisting": {
         "title": "国家黑名单",
-        "content": "屏蔽来自指定国家的所有流量"
+        "content": "阻止来自特定国家的所有流量"
       },
       "portManagement": {
         "title": "端口管理",
-        "content": "关闭未使用的端口以降低攻击面，例如若无需 SSH，则应禁用 22 号端口以减少被入侵风险"
+        "content": "关闭未使用的端口以减少攻击面。例如，在不需要SSH访问时禁用端口22。以最大程度地降低系统受损的风险。"
       },
       "cmcEmail": {
-        "title": "带高级邮件流可视化的 CMC",
-        "content": "CMC 与其他安全系统共享域名和界面，可视化监控您添加的所有企业用户的邮件流并进行审查"
+        "title": "带有高级邮件流可视化工具的CMC",
+        "content": "CMC（集中管理控制台）与其他安全系统无缝集成，并且与Global Shield和Security Tester共享相同的域名和界面。在此控制台内，您可以监控电子邮件流并查看您添加的所有企业用户的电子邮件。"
       },
       "dynamicVulnerability": {
-        "title": "动态漏洞侦测",
-        "content": "通过与您的网站交互来发现漏洞，并结合情报系统实现更全面的检测"
+        "title": "动态漏洞查找器",
+        "content": "通过与您的网站交互来检测漏洞，包括通过智能系统查找漏洞的方式。"
       },
       "codeAnalyzer": {
         "title": "代码分析器",
-        "content": "通过 VS Code 插件直接识别代码中的安全隐患，帮助您在上线前修复问题"
+        "content": "通过VS Code插件直接在您的代码库中识别安全问题，帮助您在部署前修复问题。"
       },
       "intelligenceReport": {
         "title": "情报报告",
-        "content": "生成有关目标的详细洞察，包括开放端口、运行中的服务、子域名及其他需要处理的敏感信息"
+        "content": "生成关于您的目标的详细见解，包括开放端口、正在运行的服务、子域名以及其他可能需要采取行动的敏感信息。"
       },
       "fullVulnerability": {
-        "title": "全面漏洞审查",
-        "content": "全面审查同时包含动态扫描与代码扫描"
+        "title": "全面漏洞检查",
+        "content": "全面漏洞检查包括动态漏洞扫描和代码库漏洞扫描。"
       }
     },
     "plans": {
       "globalShield": {
-        "title": "网络安全与流量管控",
+        "title": "Web安全与流量管理",
         "price": "$0.06/GB",
         "description": "无限制\n无额外费用",
-        "button": "保护 Web 应用与 API",
+        "button": "保护Web应用和API",
         "features": {
-          "webProtection": "防护所有类型的网络攻击（业务逻辑漏洞除外）",
-          "ddosProtection": "实时 DDoS 防护",
-          "cmc": "带全球流量监控的 CMC",
+          "webProtection": "防御所有类型的Web攻击，业务逻辑漏洞利用除外",
+          "ddosProtection": "实时DDoS保护",
+          "cmc": "带有全球流量监控系统的CMC",
           "country": "国家黑名单功能",
-          "port": "端口关闭功能"
+          "port": "关闭端口功能"
         }
       },
       "emailProtector": {
-        "title": "邮件安全",
-        "price": "$10/月/账号",
-        "description": "每天最多 10 封邮件\n额外邮件：每封 $0.035",
-        "button": "保护邮箱",
+        "title": "电子邮件安全与可视化",
+        "price": "$10/月/账户",
+        "description": "每天最多10封电子邮件\n额外电子邮件：每封$0.035",
+        "button": "保护电子邮件",
         "features": {
-          "cmcEmail": "CMC 搭载最先进的邮件流可视化",
-          "visibility": "在 CMC 中全面掌握所有账号的收发邮件，并自动分类威胁",
-          "webClient": "安全的 Web 邮件客户端",
-          "phishing": "防钓鱼攻击",
-          "malware": "恶意附件扫描",
+          "cmcEmail": "带有最先进电子邮件流可视化工具的CMC",
+          "visibility": "在CMC中完全可见所有电子邮件账户的发送和接收邮件，并具有自动威胁分类",
+          "webClient": "安全WebMail客户端",
+          "phishing": "网络钓鱼保护",
+          "malware": "恶意软件附件扫描",
           "links": "危险链接检测",
           "spam": "垃圾邮件过滤",
-          "fakeSender": "伪造发件人防护"
+          "fakeSender": "伪造发件人保护"
         }
       },
       "securityTester": {
-        "title": "漏洞侦测",
+        "title": "漏洞查找器",
         "price": "$25/月",
-        "description": "每月最多 50 次全面检查\n额外全面检查：每次 $0.5",
+        "description": "每月最多50次全面漏洞检查\n额外全面检查：每次$0.5",
         "button": "开始测试",
         "features": {
-          "dynamic": "动态漏洞侦测",
+          "dynamic": "动态漏洞查找器",
           "codeAnalyzer": "代码分析器",
-          "reports": "通俗易懂的安全评估报告",
+          "reports": "易于理解的安全评估报告",
           "intelligence": "情报报告"
         }
       }
@@ -321,7 +391,8 @@
       "termsUse": "使用条款",
       "termsService": "服务条款",
       "privacy": "隐私政策",
-      "cookies": "Cookie 政策"
+      "cookies": "Cookie 政策",
+      "affiliateTerms": "Affiliate Terms of Service"
     },
     "copyright": "© {year} Silence AI。保留所有权利。"
   },
@@ -357,7 +428,7 @@
   },
   "secureDevelopment": {
     "hero": {
-      "badge": "SLNC Code · 安全开发环境",
+      "badge": "SLNC-env · 安全开发环境",
       "title": "使用安全私密的代码构建系统",
       "description": "企业私有开发环境，代码永不离开您的企业网络。同时提供最新的人工智能技术",
       "requestSystem": "请求系统"
@@ -365,7 +436,7 @@
     "components": {
       "title": "一切都在内部",
       "subtitle": "三个组件，一个封闭循环",
-      "description": "代码、提示和构建永不离开您的网络。SLNC Code 为云提供商、政府团队和工业工厂保持人工智能帮助、审查和交付的私密性。",
+      "description": "代码、提示和构建永不离开您的网络。SLNC-env 为云提供商、政府团队和工业工厂保持人工智能帮助、审查和交付的私密性。",
       "sithub": {
         "title": "Sithub 服务器",
         "tag": "本地版本控制"
@@ -388,15 +459,454 @@
         "heading": "DeepSeek 泄露将源代码和提示放在开放互联网上",
         "description": "保持推理和扫描本地。无外部模型外流。默认审计跟踪。",
         "seePlan": "查看遏制计划"
+      },
+      "stuxnet": {
+        "year": "2010",
+        "attack": "Stuxnet",
+        "target": "纳坦兹浓缩设施",
+        "impact": "摧毁约 1,000 台离心机",
+        "severity": "关键"
+      },
+      "blackEnergy": {
+        "year": "2015",
+        "attack": "BlackEnergy",
+        "target": "乌克兰电网",
+        "impact": "23 万用户停电",
+        "severity": "高"
+      },
+      "triton": {
+        "year": "2017",
+        "attack": "TRITON",
+        "target": "沙特石化工厂",
+        "impact": "安全系统被禁用",
+        "severity": "关键"
+      },
+      "colonialPipeline": {
+        "year": "2021",
+        "attack": "Colonial Pipeline",
+        "target": "美国燃油管道",
+        "impact": "6 天燃料供应停摆",
+        "severity": "高"
+      },
+      "pdvsa": {
+        "year": "2025",
+        "attack": "PDVSA",
+        "target": "委内瑞拉炼油",
+        "impact": "炼油运营受阻",
+        "severity": "中"
       }
     },
     "analyzer": {
       "title": "超越 CodeQL 的分析器",
-      "subtitle": "实时保证"
+      "subtitle": "实时保证",
+      "features": {
+        "quality": {
+          "title": "自动化代码质量",
+          "description": "为安全关键代码调优的结构、风格与最佳实践检查"
+        },
+        "vulnerability": {
+          "title": "漏洞扫描",
+          "description": "即时呈现 SQLi、XSS、认证绕过与不安全依赖"
+        },
+        "secrets": {
+          "title": "密钥守卫",
+          "description": "在提交时阻断密钥、令牌与凭据泄露"
+        },
+        "config": {
+          "title": "配置加固",
+          "description": "扫描 Docker/K8s、IAM 与网络策略，防止权限蔓延"
+        }
+      },
+      "beyondCodeQL": {
+        "title": "发现静态查询遗漏的问题",
+        "subtitle": "超越 CodeQL",
+        "description": "比 CodeQL 更快发现错误配置和存在风险的包，提供修复方案而不仅是告警。",
+        "points": {
+          "packages": "理解包依赖关系，数秒内标记高风险依赖。",
+          "config": "识别配置漂移与权限膨胀，突破静态规则限制。",
+          "patches": "每条发现都附带推荐修复与责任人。"
+        }
+      },
+      "visualizer": {
+        "title": "代码分析器实景",
+        "subtitle": "可视化",
+        "description": "近期扫描的清晰快照，在本地控制台中精美呈现。",
+        "privateWorkspace": "仅限私有工作区",
+        "shots": {
+          "scanOverview": {
+            "title": "扫描总览",
+            "description": "在代码离开网络前按严重程度查看问题。"
+          },
+          "misconfigurations": {
+            "title": "配置错误检测",
+            "description": "AI 驱动的代码分析器甚至能在代码中发现配置失误。"
+          },
+          "inlineDiffs": {
+            "title": "行内差异",
+            "description": "在安全上下文中行内查看并审阅建议补丁。"
+          }
+        }
+      }
     },
     "industries": {
       "title": "为受监管、高影响力的行业构建",
-      "subtitle": "我们部署的地方"
+      "subtitle": "我们部署的地方",
+      "oilGas": {
+        "title": "石油与天然气",
+        "description": "钻探、炼化、管道控制"
+      },
+      "energy": {
+        "title": "能源",
+        "description": "电网、配电与 EMS"
+      },
+      "nuclear": {
+        "title": "核能",
+        "description": "反应堆控制与安全"
+      },
+      "manufacturing": {
+        "title": "制造业",
+        "description": "ICS、OT 与机器人"
+      },
+      "government": {
+        "title": "政府",
+        "description": "政府部门、国防与关键机构"
+      }
+    }
+  },
+  "pricingCta": {
+    "requestSystem": "请求系统"
+  },
+  "contactForm": {
+    "title": "联系我们",
+    "success": "感谢！您的消息已发送，我们将尽快与您联系。",
+    "errorRequired": "请填写姓名、邮箱和简短留言。",
+    "errorSend": "消息发送失败，请稍后再试。",
+    "placeholders": {
+      "name": "您的姓名",
+      "email": "邮箱",
+      "type": "项目类型（可选）",
+      "budget": "预算（可选）",
+      "message": "请介绍您的项目..."
+    },
+    "submit": {
+      "idle": "发送消息",
+      "loading": "发送中…"
+    }
+  },
+  "consulting": {
+    "title": "咨询问卷",
+    "searchPlaceholder": "搜索问题...",
+    "noResults": "未找到问题。",
+    "questions": [
+      {
+        "question": "除了有竞争力的定价，贵公司的核心价值主张是什么？",
+        "answer": "安全是我们的首要差异化优势。我们以高安全性系统建设者为定位，将企业级安全实践贯穿整个开发生命周期。"
+      },
+      {
+        "question": "公司运营了多长时间？有哪些成功案例？",
+        "answer": "我们已成功交付大型项目，包括：NAK（Nur Astana Kurylys）— AI 驱动的团队管理平台，以及 Chic Flowers — 面向大型花卉零售企业的全数字化平台。"
+      },
+      {
+        "question": "与 EPAM 等竞争对手相比，你们的技术与服务质量优势是什么？",
+        "answer": "我们的关键优势是安全优先的开发方式。从项目启动到部署与运维，我们都嵌入安全实践。"
+      },
+      {
+        "question": "在提供有竞争力价格的同时如何保持质量？",
+        "answer": "我们以低于市场约 15% 的价格提供服务，同时通过优化运营、战略性人才配置和高效项目管理确保卓越质量。"
+      },
+      {
+        "question": "你们提供哪些具体的软件开发服务？",
+        "answer": "端到端软件开发：定制应用、AI 解决方案、网络安全产品开发（Silence AI-SOC）、系统集成、上云和 DevOps。也提供专属产品开发与团队扩充。"
+      },
+      {
+        "question": "你们擅长哪些行业和领域？",
+        "answer": "建筑、零售、金融科技、网络安全与数字平台——涵盖 AI 驱动的团队管理、电商与企业安全解决方案。"
+      },
+      {
+        "question": "团队擅长哪些技术栈和平台？",
+        "answer": "GO、Swift、Flutter，云平台（AWS/Azure/GCP）、Docker/Kubernetes、FastAPI、JavaScript 以及 AI/ML 框架。我们也自研安全工具，如 Silence AI-SOC。"
+      },
+      {
+        "question": "你们提供端到端产品开发还是仅提供部分服务？",
+        "answer": "两者都提供：MVP、全生命周期交付、团队扩充以及网络安全集成。"
+      },
+      {
+        "question": "是否能提供人员扩充和专属团队模式？",
+        "answer": "可以。我们提供灵活合作模式：人员扩充、专属团队以及项目制外包。"
+      },
+      {
+        "question": "除开发外，是否提供咨询、架构与顾问服务？",
+        "answer": "是的：提供网络安全咨询、系统架构设计、技术顾问以及基于 Silence AI-SOC 的合规评估。"
+      }
+    ]
+  },
+  "requestDemoModal": {
+    "title": "请求系统",
+    "name": "姓名",
+    "email": "公司邮箱",
+    "company": "公司名称",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "发送请求",
+    "successTitle": "请求已发送！",
+    "successBody": "感谢关注，我们将尽快与您联系。",
+    "close": "关闭"
+  },
+  "requestSystemModal": {
+    "title": "请求系统",
+    "name": "姓名",
+    "email": "公司邮箱",
+    "company": "公司名称",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "下载",
+    "successTitle": "请求已发送！",
+    "successBody": "感谢，我们会将系统下载说明发送至您的邮箱。",
+    "close": "关闭"
+  },
+  "policySidebar": {
+    "tableOfContents": "目录"
+  },
+  "whyChooseUs": {
+    "badge": "结果导向的工程",
+    "title": "为什么选择我们",
+    "subtitle": "受来自",
+    "subtitleHighlight": "数十亿美元规模企业",
+    "subtitleTail": "的团队信任 — 并以创业公司的速度交付。",
+    "learnMore": "了解更多",
+    "logos": {
+      "kmg": "KazMunayGas",
+      "nak": "Nur Astana Kurylys"
+    },
+    "features": {
+      "fast": {
+        "title": "企业级质量的快速交付",
+        "description": "满足企业级可靠性和合规性的快速迭代交付周期。",
+        "pill": "速度 + 质量"
+      },
+      "ai": {
+        "title": "AI 优先的产品工程",
+        "description": "从原型到生产级 AI 代理 — 我们设计、训练并部署解决实际业务问题的模型。",
+        "pill": "AI 工程"
+      },
+      "local": {
+        "title": "本地专长，全球覆盖",
+        "description": "对哈萨克斯坦市场和法规的深刻理解，结合国际最佳实践。",
+        "pill": "KZ + 全球"
+      }
+    }
+  },
+  "servicesBlock": {
+    "badge": "我们提供什么",
+    "title": "我们的服务",
+    "description": "优质的用户界面、强大的工程能力和快速的交付 — 您发布外观和性能均属顶级品牌所需的一切。",
+    "learnMore": "了解更多",
+    "learnMoreAria": "了解有关此服务的更多信息",
+    "services": {
+      "aiAgents": {
+        "title": "AI 代理",
+        "description": "用于支持、运营和分析的定制对话与自主代理。",
+        "tag": "自动化"
+      },
+      "customSoftware": {
+        "title": "定制软件",
+        "description": "为您工作流程量身定制的端到端 Web 和桌面应用程序。",
+        "tag": "构建"
+      },
+      "cybersecurity": {
+        "title": "网络安全",
+        "description": "审计、渗透测试和持续监控。",
+        "tag": "保护"
+      },
+      "backend": {
+        "title": "后端 / DevOps",
+        "description": "可扩展的 API、CI/CD 管道和云基础设施。",
+        "tag": "扩展"
+      },
+      "mobile": {
+        "title": "移动端",
+        "description": "具有原生性能和精致体验的跨平台应用。",
+        "tag": "发布"
+      }
+    }
+  },
+  "caseStudies": {
+    "badge": "经过验证的影响",
+    "title": "案例研究",
+    "subtitle": "我们不只是交付功能。我们交付成果。",
+    "problem": "问题：",
+    "solution": "解决方案：",
+    "liveImpact": "实际影响",
+    "before": "之前",
+    "after": "之后",
+    "buildCta": "构建类似的产品 →",
+    "caseStudy": "案例研究",
+    "items": {
+      "nak": {
+        "title": "NAK — 团队管理 AI",
+        "problem": "人工资源分配",
+        "solution": "AI 驱动的调度代理",
+        "result": "+32% 生产力",
+        "metricLabel": "团队产出指数"
+      },
+      "chic": {
+        "title": "Chic Flowers — 电子商务",
+        "problem": "在线转化率低",
+        "solution": "个性化推荐 + 用户体验重构",
+        "result": "+45% 在线销售",
+        "metricLabel": "转化率增长"
+      },
+      "silence": {
+        "title": "Silence AI-SOC",
+        "problem": "高警报噪音",
+        "solution": "AI 检测与自动响应",
+        "result": "−68% 误报",
+        "metricLabel": "错误警报量"
+      }
+    }
+  },
+  "howWeWork": {
+    "title": "我们的工作方式",
+    "subtitle": "超快交付流程 — 为速度而优化。",
+    "steps": {
+      "discovery": {
+        "title": "发现",
+        "desc": "需求、利益相关者、成功指标。"
+      },
+      "design": {
+        "title": "设计",
+        "desc": "用户体验、架构、原型。"
+      },
+      "poc": {
+        "title": "概念验证",
+        "desc": "具有可衡量 KPI 的快速验证。"
+      },
+      "build": {
+        "title": "构建",
+        "desc": "迭代冲刺，自动化测试。"
+      },
+      "deploy": {
+        "title": "部署",
+        "desc": "CI/CD、监控、安全加固。"
+      },
+      "support": {
+        "title": "支持与扩展",
+        "desc": "维护、路线图、持续改进。"
+      }
+    }
+  },
+  "technologyStack": {
+    "title": "技术栈",
+    "subtitle": "精心挑选的生产级技术栈，专为速度、可扩展性和绝佳用户体验而设计。"
+  },
+  "backToTop": {
+    "label": "回到顶部"
+  },
+  "pricingCustom": {
+    "title": "透明定价",
+    "subtitle": "移动优先的计划，随您的产品扩展。",
+    "percentMaintenance": "{percent}% 年度维护费用",
+    "planEstimate": "${value}",
+    "perYear": "每年 (估算)",
+    "calculator": {
+      "title": "项目成本计算器",
+      "subtitle": "滑动查看您的年度维护费用",
+      "projectCost": "项目成本：",
+      "projectValue": "${value}"
+    },
+    "plans": {
+      "basic": {
+        "name": "基础版",
+        "features": {
+          "fix": "关键漏洞修复 (48小时 SLA)",
+          "updates": "每月更新",
+          "audit": "季度安全审计",
+          "manager": "专属经理"
+        }
+      },
+      "pro": {
+        "name": "专业版",
+        "badge": "最受欢迎",
+        "features": {
+          "fix": "关键漏洞修复 (24小时 SLA)",
+          "updates": "每月10小时更新",
+          "audit": "每月安全审计",
+          "manager": "专属经理"
+        }
+      },
+      "enterprise": {
+        "name": "企业版",
+        "badge": "最佳价值",
+        "features": {
+          "fix": "关键漏洞修复 (4小时 SLA)",
+          "updates": "无限更新 + 路线图",
+          "audit": "每周审计 + 备份",
+          "manager": "专属经理"
+        }
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "AI 安全与开发",
+      "title": "安全构建，自信交付。",
+      "subtitle": "两款订阅系统（AI-SOC、SLNC-env）+ 为企业团队定制的 AI 与软件交付。",
+      "ctaPrimary": "预约演示",
+      "ctaSecondary": "查看系统",
+      "highlights": {
+        "coverage": "7×24 AI 辅助 SOC",
+        "onPrem": "0 外流本地部署",
+        "deploy": "4 分钟安全上线"
+      },
+      "metrics": {
+        "title": "为受监管团队打造",
+        "soc": "AI 辅助 SOC 覆盖",
+        "egress": "全程本地——代码、提示、构建",
+        "deployment": "到首次安全部署",
+        "locales": "开箱支持的语言"
+      }
+    },
+    "systems": {
+      "title": "系统",
+      "subtitle": "选择合适的订阅产品：AI-SOC 负责检测，SLNC-env 提供密闭开发。",
+      "cta": "查看详情",
+      "aiSoc": {
+        "title": "AI-SOC",
+        "desc": "为 SOC 团队提供 AI 副驾的托管检测与响应。",
+        "badge": "订阅"
+      },
+      "slncEnv": {
+        "title": "SLNC-env",
+        "desc": "保持代码、提示与构建全程在本地的密闭开发云。",
+        "badge": "订阅"
+      }
+    },
+    "services": {
+      "title": "定制开发服务",
+      "subtitle": "AI 代理、集成与全周期交付，从第一天就内置安全。",
+      "cta": "查看服务",
+      "cards": {
+        "agents": "具备防护、RAG 与安全连接器的生产级 AI 代理。",
+        "integrations": "与您的技术栈、IAM 与数据治理的供应商无关集成。",
+        "delivery": "包含可靠性 SLO、可观测性与安全评审的全周期交付。"
+      },
+      "cardsTitle": {
+        "agents": "代理",
+        "integrations": "集成",
+        "delivery": "交付"
+      }
+    },
+    "contact": {
+      "title": "准备好组合 AI-SOC 与 SLNC-env 吗？",
+      "subtitle": "告诉我们您的安全与交付目标——我们将匹配合适的系统与服务。",
+      "cta": "预约演示",
+      "ctaSecondary": "与服务团队沟通"
     }
   }
 }

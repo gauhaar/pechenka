@@ -11,6 +11,7 @@ import {
   SiOpenai,
 } from "react-icons/si";
 import { FaPlug } from "react-icons/fa";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 /* =========================
    TRUE 3D TILT + MAGNETIC
@@ -67,6 +68,7 @@ const useInteractiveCard = ({
    COMPONENT
 ========================= */
 const TechnologyStack = () => {
+  const { t } = useLanguage();
   const defaultGlowPalette = {
     glowColor: "#FF00B7",
     secondaryGlowColor: "rgba(32,140,255,0.45)",
@@ -104,11 +106,13 @@ const TechnologyStack = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-bold text-white tracking-tight">
-            Technology Stack
+            {t("technologyStack.title", "Technology Stack")}
           </h2>
           <p className="mt-4 text-white/60 max-w-xl mx-auto">
-            A carefully selected, production-grade stack engineered for speed,
-            scalability, and beautiful user experiences.
+            {t(
+              "technologyStack.subtitle",
+              "A carefully selected, production-grade stack engineered for speed, scalability, and beautiful user experiences."
+            )}
           </p>
         </motion.div>
 

@@ -1,7 +1,9 @@
 import React from "react";
 import EdgeGlowCard from "./EdgeGlowCard";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const ConsultingQuestionnaire = ({ search, setSearch, openIndex, setOpenIndex }) => {
+  const { t } = useLanguage();
   const defaultGlowPalette = {
     glowColor: "#FF00B7",
     secondaryGlowColor: "rgba(32,140,255,0.45)",
@@ -18,63 +20,7 @@ const ConsultingQuestionnaire = ({ search, setSearch, openIndex, setOpenIndex })
     { color: "#FFB800", glow: "rgba(255,184,0,0.35)" },
   ];
 
-  const consultingQuestions = [
-    {
-      question:
-        "What is your company's core value proposition beyond competitive pricing?",
-      answer:
-        "Security is our primary differentiator. We position ourselves as a company that builds highly secure systems with enterprise-grade security practices embedded throughout the development lifecycle.",
-    },
-    {
-      question:
-        "How long has your company been in business, and what is your track record?",
-      answer:
-        "We have successfully delivered major projects including: NAK (Nur Astana Kurylys) - AI-powered team management platform, and Chic Flowers - Complete digital platform for a major flower retail company.",
-    },
-    {
-      question:
-        "What differentiates your technical capabilities and service quality from EPAM and other competitors?",
-      answer:
-        "Our key differentiator is our security-first development approach. We integrate security practices from project inception through deployment and maintenance.",
-    },
-    {
-      question: "How do you maintain quality while offering competitive pricing?",
-      answer:
-        "We offer services at 15% below market rates while maintaining exceptional quality through optimized operations, strategic talent sourcing, and efficient project management methodologies.",
-    },
-    {
-      question: "What specific software development services do you provide?",
-      answer:
-        "End-to-end software development: custom applications, AI-powered solutions, cybersecurity product development (Silence AI-SOC), system integration, cloud migration, and DevOps. We also offer dedicated product development and staff augmentation.",
-    },
-    {
-      question: "Which industries and domains do you specialize in?",
-      answer:
-        "Construction, retail, fintech, cybersecurity, and digital platforms — including AI-driven team management, e-commerce, and enterprise security solutions.",
-    },
-    {
-      question: "What technology stacks and platforms does your team have expertise in?",
-      answer:
-        "GO, Swift, Flutter, cloud platforms (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript, and AI/ML frameworks. We build proprietary security tools like Silence AI-SOC.",
-    },
-    {
-      question: "Do you offer end-to-end product development or specific services only?",
-      answer:
-        "We offer both: MVPs, full-cycle product delivery, staff augmentation, and cybersecurity integration.",
-    },
-    {
-      question:
-        "Can you provide both staff augmentation and dedicated team models?",
-      answer:
-        "Yes, we provide flexible engagement models: staff augmentation, dedicated teams, and project-based outsourcing.",
-    },
-    {
-      question:
-        "Do you offer consulting, architecture, and advisory services beyond development?",
-      answer:
-        "Yes: cybersecurity consulting, system architecture design, technology advisory, and security compliance assessments using Silence AI-SOC.",
-    },
-  ];
+  const consultingQuestions = t("consulting.questions") || [];
 
   const filteredQuestions = consultingQuestions.filter((q) =>
     q.question.toLowerCase().includes(search.toLowerCase())
@@ -84,7 +30,7 @@ const ConsultingQuestionnaire = ({ search, setSearch, openIndex, setOpenIndex })
     <section className="relative space-y-8">
       <div className="space-y-3 text-center">
         <h2 className="text-3xl font-semibold text-white sm:text-4xl">
-          Consulting Questionnaire
+          {t("consulting.title")}
         </h2>
       </div>
       <EdgeGlowCard
@@ -103,7 +49,7 @@ const ConsultingQuestionnaire = ({ search, setSearch, openIndex, setOpenIndex })
         >
           <input
             type="text"
-            placeholder="Search questions..."
+            placeholder={t("consulting.searchPlaceholder")}
             className="w-full px-4 py-3 border border-white/20 rounded-lg bg-black/40 text-white placeholder:text-white/40 focus:outline-none focus:border-[#FF00B7] transition-colors"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
@@ -169,7 +115,7 @@ const ConsultingQuestionnaire = ({ search, setSearch, openIndex, setOpenIndex })
               );
             })}
             {filteredQuestions.length === 0 && (
-              <div className="text-white/50 text-center py-8">No questions found.</div>
+              <div className="text-white/50 text-center py-8">{t("consulting.noResults")}</div>
             )}
           </div>
         </div>

@@ -1,19 +1,92 @@
 {
   "languageSelector": {
     "triggerLabel": "Select language",
-    "menuLabel": "Choose language"
+    "menuLabel": "Choose language",
+    "searchLabel": "Search languages",
+    "searchPlaceholder": "Search by name or native script",
+    "searchResults": "Search results",
+    "noMatches": "No languages match your search.",
+    "popular": "Most popular",
+    "allLanguages": "All languages"
   },
   "header": {
     "nav": {
       "main": "Main",
       "mail": "Mail",
-      "affiliate": "Affiliate program",
+      "affiliate": "Affiliate Program",
       "instructions": "Instructions",
       "product": "AI-SOC",
-      "secureDevelopment": "SLNC Code",
-      "developerServices": "Developer Services"
+      "secureDevelopment": "SLNC-env",
+      "developerServices": "Developer Services",
+      "home": "Home",
+      "systems": "Systems",
+      "systemsAiSoc": "AI-SOC",
+      "systemsSlncEnv": "SLNC-env",
+      "services": "Services"
     },
-    "login": "Request System"
+    "login": "Request Demo",
+    "cta": {
+      "contact": "Contact",
+      "download": "Download",
+      "requestDemo": "Request Demo"
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "AI security & development",
+      "title": "Build securely. Deploy confidently.",
+      "subtitle": "Two subscription systems (AI-SOC, SLNC-env) plus custom AI and software delivery for enterprise teams.",
+      "ctaPrimary": "Request demo",
+      "ctaSecondary": "Explore systems",
+      "highlights": {
+        "coverage": "24/7 AI-assisted SOC",
+        "onPrem": "0-egress on-prem",
+        "deploy": "Secure deploy in 4 min"
+      },
+      "metrics": {
+        "title": "Built for regulated teams",
+        "soc": "AI-assisted SOC coverage",
+        "egress": "All on-prem—code, prompts, builds",
+        "deployment": "to first secure deployment",
+        "locales": "locales supported out-of-box"
+      }
+    },
+    "systems": {
+      "title": "Systems",
+      "subtitle": "Choose the subscription product that fits: AI-SOC for detection and SLNC-env for sealed development.",
+      "cta": "View details",
+      "aiSoc": {
+        "title": "AI-SOC",
+        "desc": "Managed detection & response with AI copilots for SOC teams.",
+        "badge": "Subscription"
+      },
+      "slncEnv": {
+        "title": "SLNC-env",
+        "desc": "Sealed development cloud that keeps code, prompts, and builds on-prem.",
+        "badge": "Subscription"
+      }
+    },
+    "services": {
+      "title": "Custom development services",
+      "subtitle": "AI agents, integrations, and full-cycle software delivery with security baked in from day one.",
+      "cta": "View services",
+      "cards": {
+        "agents": "Production-grade AI agents with guardrails, RAG, and secure connectors.",
+        "integrations": "Vendor-neutral integrations with your stack, IAM, and data governance.",
+        "delivery": "Full-cycle delivery with reliability SLOs, observability, and security reviews."
+      },
+      "cardsTitle": {
+        "agents": "Agents",
+        "integrations": "Integrations",
+        "delivery": "Delivery"
+      }
+    },
+    "contact": {
+      "title": "Ready to combine AI-SOC and SLNC-env?",
+      "subtitle": "Tell us your security and delivery goals—we'll align the right system and services.",
+      "cta": "Request demo",
+      "ctaSecondary": "Talk to services team"
+    }
   },
   "affiliate": {
     "hero": {
@@ -276,6 +349,106 @@
       }
     }
   },
+  "pricingCta": {
+    "requestSystem": "Request System"
+  },
+  "contactForm": {
+    "title": "Contact Us",
+    "success": "Thanks! Your message has been sent. We will contact you shortly.",
+    "errorRequired": "Please fill in your name, email and a short message.",
+    "errorSend": "Unable to send message. Please try again later.",
+    "placeholders": {
+      "name": "Your name",
+      "email": "Email",
+      "type": "Project Type (optional)",
+      "budget": "Budget (optional)",
+      "message": "Tell us about your project..."
+    },
+    "submit": {
+      "idle": "Send Message",
+      "loading": "Sending…"
+    }
+  },
+  "consulting": {
+    "title": "Consulting Questionnaire",
+    "searchPlaceholder": "Search questions...",
+    "noResults": "No questions found.",
+    "questions": [
+      {
+        "question": "What is your company's core value proposition beyond competitive pricing?",
+        "answer": "Security is our primary differentiator. We position ourselves as a company that builds highly secure systems with enterprise-grade security practices embedded throughout the development lifecycle."
+      },
+      {
+        "question": "How long has your company been in business, and what is your track record?",
+        "answer": "We have successfully delivered major projects including: NAK (Nur Astana Kurylys) - AI-powered team management platform, and Chic Flowers - Complete digital platform for a major flower retail company."
+      },
+      {
+        "question": "What differentiates your technical capabilities and service quality from EPAM and other competitors?",
+        "answer": "Our key differentiator is our security-first development approach. We integrate security practices from project inception through deployment and maintenance."
+      },
+      {
+        "question": "How do you maintain quality while offering competitive pricing?",
+        "answer": "We offer services at 15% below market rates while maintaining exceptional quality through optimized operations, strategic talent sourcing, and efficient project management methodologies."
+      },
+      {
+        "question": "What specific software development services do you provide?",
+        "answer": "End-to-end software development: custom applications, AI-powered solutions, cybersecurity product development (Silence AI-SOC), system integration, cloud migration, and DevOps. We also offer dedicated product development and staff augmentation."
+      },
+      {
+        "question": "Which industries and domains do you specialize in?",
+        "answer": "Construction, retail, fintech, cybersecurity, and digital platforms — including AI-driven team management, e-commerce, and enterprise security solutions."
+      },
+      {
+        "question": "What technology stacks and platforms does your team have expertise in?",
+        "answer": "GO, Swift, Flutter, cloud platforms (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript, and AI/ML frameworks. We build proprietary security tools like Silence AI-SOC."
+      },
+      {
+        "question": "Do you offer end-to-end product development or specific services only?",
+        "answer": "We offer both: MVPs, full-cycle product delivery, staff augmentation, and cybersecurity integration."
+      },
+      {
+        "question": "Can you provide both staff augmentation and dedicated team models?",
+        "answer": "Yes, we provide flexible engagement models: staff augmentation, dedicated teams, and project-based outsourcing."
+      },
+      {
+        "question": "Do you offer consulting, architecture, and advisory services beyond development?",
+        "answer": "Yes: cybersecurity consulting, system architecture design, technology advisory, and security compliance assessments using Silence AI-SOC."
+      }
+    ]
+  },
+  "requestDemoModal": {
+    "title": "Request System",
+    "name": "Name",
+    "email": "Corporate Email",
+    "company": "Company Name",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Send Request",
+    "successTitle": "Request Sent!",
+    "successBody": "Thank you for your interest. We will be in touch shortly.",
+    "close": "Close"
+  },
+  "requestSystemModal": {
+    "title": "Request System",
+    "name": "Name",
+    "email": "Corporate Email",
+    "company": "Company Name",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Download",
+    "successTitle": "Request Sent!",
+    "successBody": "Thank you. The system download instructions will be sent to your email.",
+    "close": "Close"
+  },
+  "policySidebar": {
+    "tableOfContents": "Table of Contents"
+  },
   "solution": {
     "sectionTitle": "Our Solution",
     "sectionSubtitle": "Ready in 4 minutes and usable by any IT professional—no cybersecurity expertise required. We offer advanced visualization and affordability.",
@@ -412,7 +585,7 @@
   },
   "secureDevelopment": {
     "hero": {
-      "badge": "SLNC Code · Secure Development Environment",
+      "badge": "SLNC-env · Secure Development Environment",
       "title": "Build systems with secure and private code",
       "description": "Private development environment for enterprises, where code never leaves your corporate network. Meanwhile offering the latest AI-powered technology",
       "requestSystem": "Request System"
@@ -420,7 +593,7 @@
     "components": {
       "title": "Everything stays inside",
       "subtitle": "Three components, one sealed loop",
-      "description": "Code, prompts, and builds never leave your network. SLNC Code keeps AI help, reviews, and delivery private for cloud providers, government teams, and industrial plants.",
+      "description": "Code, prompts, and builds never leave your network. SLNC-env keeps AI help, reviews, and delivery private for cloud providers, government teams, and industrial plants.",
       "sithub": {
         "title": "Sithub Server",
         "tag": "Local version control"
@@ -556,5 +729,184 @@
         "description": "Ministries, defense, critical agencies"
       }
     }
+  },
+  "whyChooseUs": {
+    "badge": "Results-driven engineering",
+    "title": "Why Choose Us",
+    "subtitle": "Trusted by teams from",
+    "subtitleHighlight": "billion-dollar organizations",
+    "subtitleTail": "— and shipped with startup speed.",
+    "learnMore": "Learn more",
+    "logos": {
+      "kmg": "KazMunayGas",
+      "nak": "Nur Astana Kurylys"
+    },
+    "features": {
+      "fast": {
+        "title": "Fast Delivery with Enterprise Quality",
+        "description": "Rapid, iterative delivery cycles that meet enterprise-grade reliability and compliance.",
+        "pill": "Speed + Quality"
+      },
+      "ai": {
+        "title": "AI-first Product Engineering",
+        "description": "From prototypes to production AI agents — we design, train, and deploy models that solve real business problems.",
+        "pill": "AI Engineering"
+      },
+      "local": {
+        "title": "Local Expertise, Global Reach",
+        "description": "Deep knowledge of Kazakhstan's market and regulations combined with international best practices.",
+        "pill": "KZ + Global"
+      }
+    }
+  },
+  "servicesBlock": {
+    "badge": "What we offer",
+    "title": "Our Services",
+    "description": "Premium UI, strong engineering, and fast delivery — everything you need to launch a product that looks and performs like a top-tier brand.",
+    "learnMore": "Learn more",
+    "learnMoreAria": "Learn more about this service",
+    "services": {
+      "aiAgents": {
+        "title": "AI Agents",
+        "description": "Custom conversational and autonomous agents for support, ops, and analytics.",
+        "tag": "Automation"
+      },
+      "customSoftware": {
+        "title": "Custom Software",
+        "description": "End-to-end web and desktop apps tailored to your workflows.",
+        "tag": "Build"
+      },
+      "cybersecurity": {
+        "title": "Cybersecurity",
+        "description": "Audits, penetration testing, and continuous monitoring.",
+        "tag": "Protect"
+      },
+      "backend": {
+        "title": "Backend / DevOps",
+        "description": "Scalable APIs, CI/CD pipelines, and cloud infrastructure.",
+        "tag": "Scale"
+      },
+      "mobile": {
+        "title": "Mobile",
+        "description": "Cross-platform apps with native performance and polished UX.",
+        "tag": "Ship"
+      }
+    }
+  },
+  "pricingCustom": {
+    "title": "Transparent Pricing",
+    "subtitle": "Mobile-first plans built to scale with your product.",
+    "percentMaintenance": "{percent}% yearly maintenance",
+    "planEstimate": "${value}",
+    "perYear": "per year (est.)",
+    "calculator": {
+      "title": "Project Cost Calculator",
+      "subtitle": "Slide to see your yearly maintenance",
+      "projectCost": "Project Cost:",
+      "projectValue": "${value}"
+    },
+    "plans": {
+      "basic": {
+        "name": "Basic",
+        "features": {
+          "fix": "Critical Bug Fixes (48h SLA)",
+          "updates": "Monthly Updates",
+          "audit": "Quarterly Security Audits",
+          "manager": "Dedicated Manager"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Most Popular",
+        "features": {
+          "fix": "Critical Bug Fixes (24h SLA)",
+          "updates": "10h Monthly Updates",
+          "audit": "Monthly Security Audits",
+          "manager": "Dedicated Manager"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "badge": "Best Value",
+        "features": {
+          "fix": "Critical Bug Fixes (4h SLA)",
+          "updates": "Unlimited Updates + Roadmap",
+          "audit": "Weekly Audits + Backups",
+          "manager": "Dedicated Manager"
+        }
+      }
+    }
+  },
+  "caseStudies": {
+    "badge": "Proven Impact",
+    "title": "Case Studies",
+    "subtitle": "We don’t ship features. We ship outcomes.",
+    "problem": "Problem:",
+    "solution": "Solution:",
+    "liveImpact": "Live Impact",
+    "before": "Before",
+    "after": "After",
+    "buildCta": "Build something like this →",
+    "caseStudy": "Case Study",
+    "items": {
+      "nak": {
+        "title": "NAK — Team Management AI",
+        "problem": "Manual resource allocation",
+        "solution": "AI-powered scheduling agent",
+        "result": "+32% productivity",
+        "metricLabel": "Team Output Index"
+      },
+      "chic": {
+        "title": "Chic Flowers — eCommerce",
+        "problem": "Low online conversions",
+        "solution": "Personalized recommender + UX overhaul",
+        "result": "+45% online sales",
+        "metricLabel": "Conversion Rate Growth"
+      },
+      "silence": {
+        "title": "Silence AI-SOC",
+        "problem": "High alert noise",
+        "solution": "AI detection & automated response",
+        "result": "−68% false positives",
+        "metricLabel": "False Alert Volume"
+      }
+    }
+  },
+  "howWeWork": {
+    "title": "How We Work",
+    "subtitle": "Ultra-fast delivery pipeline — optimized for velocity.",
+    "steps": {
+      "discovery": {
+        "title": "Discovery",
+        "desc": "Requirements, stakeholders, success metrics."
+      },
+      "design": {
+        "title": "Design",
+        "desc": "UX, architecture, prototype."
+      },
+      "poc": {
+        "title": "Proof of Concept",
+        "desc": "Rapid validation with measurable KPIs."
+      },
+      "build": {
+        "title": "Build",
+        "desc": "Iterative sprints, automated tests."
+      },
+      "deploy": {
+        "title": "Deploy",
+        "desc": "CI/CD, monitoring, security hardening."
+      },
+      "support": {
+        "title": "Support & Scale",
+        "desc": "Maintenance, roadmap, continuous improvement."
+      }
+    }
+  },
+  "technologyStack": {
+    "title": "Technology Stack",
+    "subtitle": "A carefully selected, production-grade stack engineered for speed, scalability, and beautiful user experiences."
+  },
+  "backToTop": {
+    "label": "Back to top"
   }
 }

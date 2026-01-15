@@ -36,11 +36,8 @@ export function FloatingText({ className }) {
       href: "https://www.instagram.com/silenceai_en/",
     },
   ];
-  const text1 = t("floatingText.headline", "Discover how hackers think");
-  const text2 = t(
-    "floatingText.description",
-    "Follow us for daily research on real attack methods and cyber threats"
-  );
+  const text1 = t("floatingText.headline");
+  const text2 = t("floatingText.description");
   return (
     <div className={`flex flex-col items-center justify-center w-full ${className}`}>
       <p className="text-white text-3xl font-bold tracking-tighter sm:text-5xl text-center">

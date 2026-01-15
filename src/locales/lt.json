@@ -1,7 +1,13 @@
 {
   "languageSelector": {
     "triggerLabel": "Select language",
-    "menuLabel": "Choose language"
+    "menuLabel": "Choose language",
+    "searchLabel": "Search languages",
+    "searchPlaceholder": "Search by name or native script",
+    "searchResults": "Search results",
+    "noMatches": "No languages match your search.",
+    "popular": "Most popular",
+    "allLanguages": "All languages"
   },
   "header": {
     "nav": {
@@ -10,10 +16,20 @@
       "affiliate": "Affiliate program",
       "instructions": "Instructions",
       "product": "AI-SOC",
-      "secureDevelopment": "SLNC Code",
-      "developerServices": "Kūrėjų paslaugos"
+      "secureDevelopment": "SLNC-env",
+      "developerServices": "Kūrėjų paslaugos",
+      "home": "Home",
+      "systems": "Systems",
+      "systemsAiSoc": "AI-SOC",
+      "systemsSlncEnv": "SLNC-env",
+      "services": "Services"
     },
-    "login": "Užklausti demonstracijos"
+    "login": "Užklausti demonstracijos",
+    "cta": {
+      "contact": "Contact",
+      "download": "Download",
+      "requestDemo": "Request Demo"
+    }
   },
   "affiliate": {
     "hero": {
@@ -98,6 +114,60 @@
       "statistics": {
         "question": "Kada matysiu rekomendacijų statistiką?",
         "answer": "Kai naudotojas užsiregistruoja su jūsų promo kodu arba nuoroda, jo el. paštas ir atitinkama išmoka pasirodo jūsų skydelyje."
+      }
+    },
+    "termsAff": {
+      "label": "Affiliate Program",
+      "title": "Affiliate Terms of Service",
+      "notice": "This policy is available only in English",
+      "intro": "These terms describe how rewards are issued and paid to partners participating in the Silence AI affiliate program.",
+      "meta": {
+        "effective": "Effective date: 10 November 2024",
+        "lastUpdated": "Last updated: 10 November 2024"
+      },
+      "sections": {
+        "overview": {
+          "title": "1. Program Overview",
+          "body1": "1.1 Agreement Scope: These Affiliate Terms of Service (\"Terms\") govern your participation in the Silence AI affiliate program operated by Silence AI LLC (\"Silence AI,\" \"we,\" \"us,\" or \"our\"). These Terms apply to you, the individual or entity enrolling as an affiliate partner (\"you\" or \"your\"), and, where applicable, your employer, principal, or organization if you act on their behalf.",
+          "body2": "1.2 Program Summary: Under this program, qualified partners earn commission-based rewards when referred customers purchase or top up the AI-SOC 1 product. Participation in the affiliate program also requires compliance with the general Silence AI Terms of Service."
+        },
+        "eligibility": {
+          "title": "2. Partner Eligibility",
+          "item1": "You must maintain an active Silence AI affiliate account with accurate business and payment details.",
+          "item2": "Referrals must complete registration through your issued link or promo code.",
+          "item3": "Accounts found to be fraudulent, self-referred, or in breach of applicable law are not eligible for rewards."
+        },
+        "commission": {
+          "title": "3. Commission Structure",
+          "body1": "You earn a 10% reward on every balance top-up completed by an account registered through your invitation.",
+          "body2": "Commission is calculated from the net top-up amount after payment processing fees are deducted."
+        },
+        "rewardPosting": {
+          "title": "4. Reward Posting",
+          "body1": "Rewards post to your partner balance within one minute after the transaction successfully clears. There is no manual approval queue.",
+          "body2": "Notifications appear in your affiliate dashboard alongside the customer identifier and top-up amount."
+        },
+        "withdrawals": {
+          "title": "5. Withdrawals",
+          "body1": "Withdrawal requests are processed within two business days and paid out using the settlement method on file.",
+          "body2": "Minimum withdrawal thresholds and supported payout networks are published inside the affiliate dashboard."
+        },
+        "productScope": {
+          "title": "6. Product Scope",
+          "body1": "Rewards are only provided for the AI-SOC 1 product. Other Silence AI services are excluded from the affiliate program unless explicitly stated otherwise in writing.",
+          "body2": "If additional products become eligible, Silence AI will publish an updated list inside these terms."
+        },
+        "compliance": {
+          "title": "7. Partner Conduct & Compliance",
+          "item1": "Partners must represent Silence AI accurately and avoid misleading claims about features or pricing.",
+          "item2": "Marketing communications must comply with applicable anti-spam, privacy, and advertising regulations.",
+          "item3": "Silence AI may suspend or terminate accounts that violate these obligations or harm the brand."
+        },
+        "changes": {
+          "title": "8. Changes & Contact",
+          "body1": "Silence AI may update these affiliate terms to reflect changes in the program or applicable law. Updated versions take effect upon publication on this page.",
+          "body2": "Questions about the affiliate program can be sent to info@silenceai.net."
+        }
       }
     }
   },
@@ -219,7 +289,46 @@
           "reports": "Easily understandable security assessment reports",
           "intelligence": "Intelligence Report"
         }
+      },
+      "basic": {
+        "name": "Basic",
+        "features": {
+          "fix": "Critical Bug Fixes (48h SLA)",
+          "updates": "Monthly Updates",
+          "audit": "Quarterly Security Audits",
+          "manager": "Dedicated Manager"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Most Popular",
+        "features": {
+          "fix": "Critical Bug Fixes (24h SLA)",
+          "updates": "10h Monthly Updates",
+          "audit": "Monthly Security Audits",
+          "manager": "Dedicated Manager"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "badge": "Best Value",
+        "features": {
+          "fix": "Critical Bug Fixes (4h SLA)",
+          "updates": "Unlimited Updates + Roadmap",
+          "audit": "Weekly Audits + Backups",
+          "manager": "Dedicated Manager"
+        }
       }
+    },
+    "subtitle": "Mobile-first plans built to scale with your product.",
+    "percentMaintenance": "{percent}% yearly maintenance",
+    "planEstimate": "${value}",
+    "perYear": "per year (est.)",
+    "calculator": {
+      "title": "Project Cost Calculator",
+      "subtitle": "Slide to see your yearly maintenance",
+      "projectCost": "Project Cost:",
+      "projectValue": "${value}"
     }
   },
   "solution": {
@@ -321,7 +430,8 @@
       "termsUse": "Terms of Use",
       "termsService": "Terms of Service",
       "privacy": "Privacy Policy",
-      "cookies": "Cookies Policy"
+      "cookies": "Cookies Policy",
+      "affiliateTerms": "Affiliate Terms of Service"
     },
     "copyright": "© {year} Silence AI. All rights reserved."
   },
@@ -331,22 +441,22 @@
     "cta": "Grįžti į pagrindinį puslapį"
   },
   "heroSection": {
-    "badge": "Gamybai paruoštas AI ir programinė įranga",
-    "title": "Individualus AI ir programinės įrangos kūrimas",
-    "description": "Mes kuriam gamybai paruoštus AI agentus ir individualią programinę įrangą {country} ir {market}.",
+    "badge": "Gamybai paruošta DI ir programinė įranga",
+    "title": "Individualus DI ir programinės įrangos kūrimas",
+    "description": "Kuriame gamybai paruoštus DI agentus ir individualią programinę įrangą.",
     "country": "Kazachstanas",
     "market": "pasaulinė rinka",
     "startProject": "Pradėti projektą",
-    "liveDemo": "Tiesioginė demonstracija — AI agentas",
-    "live": "Tiesiogiai",
-    "aiAgent": "AI agentas v2.1",
-    "processing": "Apdorojami užklausimai...",
+    "liveDemo": "Tiesioginė demonstracija — DI agentas",
+    "live": "Gyvai",
+    "aiAgent": "DI agentas v2.1",
+    "processing": "Apdorojamos užklausos...",
     "active": "Aktyvus",
     "userMessage": "Analizuoti klientų duomenų tendencijas",
-    "aiResponse": "Analizuoja",
+    "aiResponse": "Analizuojama",
     "tasks": {
       "dataCollection": "Duomenų rinkimas",
-      "aiAnalysis": "AI analizė",
+      "aiAnalysis": "DI analizė",
       "reportGeneration": "Ataskaitų generavimas"
     },
     "stats": {
@@ -357,7 +467,7 @@
   },
   "secureDevelopment": {
     "hero": {
-      "badge": "SLNC Code · Secure Development Environment",
+      "badge": "SLNC-env · Secure Development Environment",
       "title": "Build systems with secure and private code",
       "description": "Private development environment for enterprises, where code never leaves your corporate network. Meanwhile offering the latest AI-powered technology",
       "requestSystem": "Request System"
@@ -365,7 +475,7 @@
     "components": {
       "title": "Everything stays inside",
       "subtitle": "Three components, one sealed loop",
-      "description": "Code, prompts, and builds never leave your network. SLNC Code keeps AI help, reviews, and delivery private for cloud providers, government teams, and industrial plants.",
+      "description": "Code, prompts, and builds never leave your network. SLNC-env keeps AI help, reviews, and delivery private for cloud providers, government teams, and industrial plants.",
       "sithub": {
         "title": "Sithub Server",
         "tag": "Local version control"
@@ -500,6 +610,342 @@
         "title": "Government",
         "description": "Ministries, defense, critical agencies"
       }
+    }
+  },
+  "pricingCta": {
+    "requestSystem": "Request System"
+  },
+  "contactForm": {
+    "title": "Contact Us",
+    "success": "Thanks! Your message has been sent. We will contact you shortly.",
+    "errorRequired": "Please fill in your name, email and a short message.",
+    "errorSend": "Unable to send message. Please try again later.",
+    "placeholders": {
+      "name": "Your name",
+      "email": "Email",
+      "type": "Project Type (optional)",
+      "budget": "Budget (optional)",
+      "message": "Tell us about your project..."
+    },
+    "submit": {
+      "idle": "Send Message",
+      "loading": "Sending…"
+    }
+  },
+  "consulting": {
+    "title": "Consulting Questionnaire",
+    "searchPlaceholder": "Search questions...",
+    "noResults": "No questions found.",
+    "questions": [
+      {
+        "question": "What is your company's core value proposition beyond competitive pricing?",
+        "answer": "Security is our primary differentiator. We position ourselves as a company that builds highly secure systems with enterprise-grade security practices embedded throughout the development lifecycle."
+      },
+      {
+        "question": "How long has your company been in business, and what is your track record?",
+        "answer": "We have successfully delivered major projects including: NAK (Nur Astana Kurylys) - AI-powered team management platform, and Chic Flowers - Complete digital platform for a major flower retail company."
+      },
+      {
+        "question": "What differentiates your technical capabilities and service quality from EPAM and other competitors?",
+        "answer": "Our key differentiator is our security-first development approach. We integrate security practices from project inception through deployment and maintenance."
+      },
+      {
+        "question": "How do you maintain quality while offering competitive pricing?",
+        "answer": "We offer services at 15% below market rates while maintaining exceptional quality through optimized operations, strategic talent sourcing, and efficient project management methodologies."
+      },
+      {
+        "question": "What specific software development services do you provide?",
+        "answer": "End-to-end software development: custom applications, AI-powered solutions, cybersecurity product development (Silence AI-SOC), system integration, cloud migration, and DevOps. We also offer dedicated product development and staff augmentation."
+      },
+      {
+        "question": "Which industries and domains do you specialize in?",
+        "answer": "Construction, retail, fintech, cybersecurity, and digital platforms — including AI-driven team management, e-commerce, and enterprise security solutions."
+      },
+      {
+        "question": "What technology stacks and platforms does your team have expertise in?",
+        "answer": "GO, Swift, Flutter, cloud platforms (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript, and AI/ML frameworks. We build proprietary security tools like Silence AI-SOC."
+      },
+      {
+        "question": "Do you offer end-to-end product development or specific services only?",
+        "answer": "We offer both: MVPs, full-cycle product delivery, staff augmentation, and cybersecurity integration."
+      },
+      {
+        "question": "Can you provide both staff augmentation and dedicated team models?",
+        "answer": "Yes, we provide flexible engagement models: staff augmentation, dedicated teams, and project-based outsourcing."
+      },
+      {
+        "question": "Do you offer consulting, architecture, and advisory services beyond development?",
+        "answer": "Yes: cybersecurity consulting, system architecture design, technology advisory, and security compliance assessments using Silence AI-SOC."
+      }
+    ]
+  },
+  "requestDemoModal": {
+    "title": "Request System",
+    "name": "Name",
+    "email": "Corporate Email",
+    "company": "Company Name",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Send Request",
+    "successTitle": "Request Sent!",
+    "successBody": "Thank you for your interest. We will be in touch shortly.",
+    "close": "Close"
+  },
+  "requestSystemModal": {
+    "title": "Request System",
+    "name": "Name",
+    "email": "Corporate Email",
+    "company": "Company Name",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Download",
+    "successTitle": "Request Sent!",
+    "successBody": "Thank you. The system download instructions will be sent to your email.",
+    "close": "Close"
+  },
+  "policySidebar": {
+    "tableOfContents": "Table of Contents"
+  },
+  "whyChooseUs": {
+    "badge": "Rezultatais grįsta inžinerija",
+    "title": "Kodėl rinktis mus",
+    "subtitle": "Pasitiki komandos iš",
+    "subtitleHighlight": "milijardinių organizacijų",
+    "subtitleTail": "— ir pristatoma startuolio greičiu.",
+    "learnMore": "Sužinoti daugiau",
+    "logos": {
+      "kmg": "KazMunayGas",
+      "nak": "Nur Astana Kurylys"
+    },
+    "features": {
+      "fast": {
+        "title": "Greitas pristatymas su įmonės lygio kokybe",
+        "description": "Greiti, iteraciniai pristatymo ciklai, atitinkantys įmonės lygio patikimumą ir atitiktį.",
+        "pill": "Greitis + Kokybė"
+      },
+      "ai": {
+        "title": "Pirmiausia DI produktų inžinerija",
+        "description": "Nuo prototipų iki gamybos DI agentų — mes projektuojame, apmokome ir diegiame modelius, sprendžiančius realias verslo problemas.",
+        "pill": "DI inžinerija"
+      },
+      "local": {
+        "title": "Vietinė patirtis, pasaulinis pasiekiamumas",
+        "description": "Gilios Kazachstano rinkos ir reglamentų žinios derinamos su tarptautine geriausia praktika.",
+        "pill": "KZ + Pasaulinis"
+      }
+    }
+  },
+  "servicesBlock": {
+    "badge": "Ką siūlome",
+    "title": "Mūsų paslaugos",
+    "description": "Aukščiausios kokybės vartotojo sąsaja, stipri inžinerija ir greitas pristatymas — viskas, ko reikia, kad paleistumėte produktą, kuris atrodo ir veikia kaip aukščiausio lygio prekės ženklas.",
+    "learnMore": "Sužinoti daugiau",
+    "learnMoreAria": "Sužinoti daugiau apie šią paslaugą",
+    "services": {
+      "aiAgents": {
+        "title": "DI agentai",
+        "description": "Individualūs pokalbių ir autonominiai agentai palaikymui, operacijoms ir analizei.",
+        "tag": "Automatizavimas"
+      },
+      "customSoftware": {
+        "title": "Individuali programinė įranga",
+        "description": "Nuo galo iki galo internetinės ir darbalaukio programos, pritaikytos jūsų darbo eigoms.",
+        "tag": "Kūrimas"
+      },
+      "cybersecurity": {
+        "title": "Kibernetinis saugumas",
+        "description": "Auditai, įsilaužimo testavimas ir nuolatinė stebėsena.",
+        "tag": "Apsauga"
+      },
+      "backend": {
+        "title": "Backend / DevOps",
+        "description": "Keičiamo dydžio API, CI/CD vamzdynai ir debesų infrastruktūra.",
+        "tag": "Mastelis"
+      },
+      "mobile": {
+        "title": "Mobilusis",
+        "description": "Kelių platformų programos su gimtuoju našumu ir nušlifuota vartotojo patirtimi.",
+        "tag": "Pristatymas"
+      }
+    }
+  },
+  "caseStudies": {
+    "badge": "Įrodytas poveikis",
+    "title": "Sėkmės istorijos",
+    "subtitle": "Mes nepristatome funkcijų. Mes pristatome rezultatus.",
+    "problem": "Problema:",
+    "solution": "Sprendimas:",
+    "liveImpact": "Tiesioginis poveikis",
+    "before": "Prieš",
+    "after": "Po",
+    "buildCta": "Sukurkite kažką panašaus →",
+    "caseStudy": "Atvejo analizė",
+    "items": {
+      "nak": {
+        "title": "NAK — Komandos valdymo DI",
+        "problem": "Rankinis išteklių paskirstymas",
+        "solution": "DI valdomas planavimo agentas",
+        "result": "+32% produktyvumas",
+        "metricLabel": "Komandos išvesties indeksas"
+      },
+      "chic": {
+        "title": "Chic Flowers — el. prekyba",
+        "problem": "Mažos internetinės konversijos",
+        "solution": "Asmeninis rekomendatorius + UX pertvarkymas",
+        "result": "+45% pardavimai internetu",
+        "metricLabel": "Konversijų rodiklio augimas"
+      },
+      "silence": {
+        "title": "Silence AI-SOC",
+        "problem": "Didelis įspėjimų triukšmas",
+        "solution": "DI aptikimas ir automatinis atsakas",
+        "result": "−68% klaidingų teigiamų",
+        "metricLabel": "Klaidingų įspėjimų apimtis"
+      }
+    }
+  },
+  "howWeWork": {
+    "title": "Kaip mes dirbame",
+    "subtitle": "Itin greitas pristatymo vamzdynas — optimizuotas greičiui.",
+    "steps": {
+      "discovery": {
+        "title": "Atradimas",
+        "desc": "Reikalavimai, suinteresuotosios šalys, sėkmės rodikliai."
+      },
+      "design": {
+        "title": "Dizainas",
+        "desc": "UX, architektūra, prototipas."
+      },
+      "poc": {
+        "title": "Koncepcijos įrodymas",
+        "desc": "Greitas patvirtinimas su išmatuojamais KPI."
+      },
+      "build": {
+        "title": "Kūrimas",
+        "desc": "Iteraciniai sprintai, automatiniai testai."
+      },
+      "deploy": {
+        "title": "Diegimas",
+        "desc": "CI/CD, stebėsena, saugumo stiprinimas."
+      },
+      "support": {
+        "title": "Palaikymas ir plėtra",
+        "desc": "Priežiūra, veiksmų planas, nuolatinis tobulinimas."
+      }
+    }
+  },
+  "technologyStack": {
+    "title": "Technologijų kaminas",
+    "subtitle": "Kruopščiai parinktas, gamybos lygio kaminas, sukurtas greičiui, masteliui ir gražioms vartotojo patirtims."
+  },
+  "backToTop": {
+    "label": "Atgal į viršų"
+  },
+  "pricingCustom": {
+    "title": "Skaidri kainodara",
+    "subtitle": "Mobiliesiems pritaikyti planai, augantys kartu su jūsų produktu.",
+    "percentMaintenance": "{percent}% metinė priežiūra",
+    "planEstimate": "${value}",
+    "perYear": "per metus (apytiksliai)",
+    "calculator": {
+      "title": "Projekto kainos skaičiuoklė",
+      "subtitle": "Slinkite, kad pamatytumėte metinę priežiūrą",
+      "projectCost": "Projekto kaina:",
+      "projectValue": "${value}"
+    },
+    "plans": {
+      "basic": {
+        "name": "Bazinis",
+        "features": {
+          "fix": "Kritinių klaidų taisymas (48 val. SLA)",
+          "updates": "Mėnesiniai atnaujinimai",
+          "audit": "Ketvirtiniai saugumo auditai",
+          "manager": "Dedikuotas vadybininkas"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Populiariausias",
+        "features": {
+          "fix": "Kritinių klaidų taisymas (24 val. SLA)",
+          "updates": "10 val. mėnesiniai atnaujinimai",
+          "audit": "Mėnesiniai saugumo auditai",
+          "manager": "Dedikuotas vadybininkas"
+        }
+      },
+      "enterprise": {
+        "name": "Įmonėms",
+        "badge": "Geriausia vertė",
+        "features": {
+          "fix": "Kritinių klaidų taisymas (4 val. SLA)",
+          "updates": "Neriboti atnaujinimai + Veiksmų planas",
+          "audit": "Savaitiniai auditai + Atsarginės kopijos",
+          "manager": "Dedikuotas vadybininkas"
+        }
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "AI security & development",
+      "title": "Build securely. Deploy confidently.",
+      "subtitle": "Two subscription systems (AI-SOC, SLNC-env) plus custom AI and software delivery for enterprise teams.",
+      "ctaPrimary": "Request demo",
+      "ctaSecondary": "Explore systems",
+      "highlights": {
+        "coverage": "24/7 AI-assisted SOC",
+        "onPrem": "0-egress on-prem",
+        "deploy": "Secure deploy in 4 min"
+      },
+      "metrics": {
+        "title": "Built for regulated teams",
+        "soc": "AI-assisted SOC coverage",
+        "egress": "All on-prem—code, prompts, builds",
+        "deployment": "to first secure deployment",
+        "locales": "locales supported out-of-box"
+      }
+    },
+    "systems": {
+      "title": "Systems",
+      "subtitle": "Choose the subscription product that fits: AI-SOC for detection and SLNC-env for sealed development.",
+      "cta": "View details",
+      "aiSoc": {
+        "title": "AI-SOC",
+        "desc": "Managed detection & response with AI copilots for SOC teams.",
+        "badge": "Subscription"
+      },
+      "slncEnv": {
+        "title": "SLNC-env",
+        "desc": "Sealed development cloud that keeps code, prompts, and builds on-prem.",
+        "badge": "Subscription"
+      }
+    },
+    "services": {
+      "title": "Custom development services",
+      "subtitle": "AI agents, integrations, and full-cycle software delivery with security baked in from day one.",
+      "cta": "View services",
+      "cards": {
+        "agents": "Production-grade AI agents with guardrails, RAG, and secure connectors.",
+        "integrations": "Vendor-neutral integrations with your stack, IAM, and data governance.",
+        "delivery": "Full-cycle delivery with reliability SLOs, observability, and security reviews."
+      },
+      "cardsTitle": {
+        "agents": "Agents",
+        "integrations": "Integrations",
+        "delivery": "Delivery"
+      }
+    },
+    "contact": {
+      "title": "Ready to combine AI-SOC and SLNC-env?",
+      "subtitle": "Tell us your security and delivery goals—we'll align the right system and services.",
+      "cta": "Request demo",
+      "ctaSecondary": "Talk to services team"
     }
   }
 }

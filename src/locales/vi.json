@@ -1,16 +1,35 @@
 {
   "languageSelector": {
     "triggerLabel": "Chọn ngôn ngữ",
-    "menuLabel": "Vui lòng chọn ngôn ngữ"
+    "menuLabel": "Vui lòng chọn ngôn ngữ",
+    "searchLabel": "Tìm ngôn ngữ",
+    "searchPlaceholder": "Tìm theo tên hoặc chữ viết",
+    "searchResults": "Kết quả tìm kiếm",
+    "noMatches": "Không có ngôn ngữ phù hợp.",
+    "popular": "Phổ biến nhất",
+    "allLanguages": "Tất cả ngôn ngữ"
   },
   "header": {
     "nav": {
       "main": "Trang chủ",
       "mail": "Thư",
       "affiliate": "Chương trình liên kết",
-      "instructions": "Hướng dẫn"
+      "instructions": "Hướng dẫn",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC-env",
+      "developerServices": "Dịch vụ cho nhà phát triển",
+      "home": "Trang chính",
+      "systems": "Hệ thống",
+      "systemsAiSoc": "AI-SOC",
+      "systemsSlncEnv": "SLNC-env",
+      "services": "Dịch vụ"
     },
-    "login": "Đăng nhập"
+    "login": "Đăng nhập",
+    "cta": {
+      "contact": "Liên hệ",
+      "download": "Tải xuống",
+      "requestDemo": "Yêu cầu demo"
+    }
   },
   "affiliate": {
     "hero": {
@@ -71,7 +90,7 @@
         "description": "Phần thưởng xuất hiện trên số dư đối tác trong vòng một phút sau giao dịch—không cần duyệt thủ công."
       },
       "withdrawal": {
-        "title": "Withdrawals processed in 2 business days",
+        "title": "Rút tiền xử lý trong 2 ngày làm việc",
         "description": "Yêu cầu rút tiền được kiểm tra tự động và chuyển vào tài khoản ngân hàng của bạn trong hai ngày làm việc."
       },
       "sample": {
@@ -95,6 +114,60 @@
       "statistics": {
         "question": "Khi nào tôi xem thống kê giới thiệu?",
         "answer": "Khi người dùng đăng ký bằng mã hoặc liên kết của bạn, email và phần thưởng tương ứng sẽ hiển thị trong bảng điều khiển."
+      }
+    },
+    "termsAff": {
+      "label": "Chương trình liên kết",
+      "title": "Điều khoản dịch vụ cho đối tác liên kết",
+      "notice": "Chính sách này chỉ có bản tiếng Anh",
+      "intro": "Các điều khoản này mô tả cách phát hành và chi trả phần thưởng cho đối tác tham gia chương trình liên kết của Silence AI.",
+      "meta": {
+        "effective": "Ngày hiệu lực: 10/11/2024",
+        "lastUpdated": "Cập nhật lần cuối: 10/11/2024"
+      },
+      "sections": {
+        "overview": {
+          "title": "1. Tổng quan chương trình",
+          "body1": "1.1 Phạm vi thỏa thuận: Điều khoản dịch vụ liên kết (\"Điều khoản\") điều chỉnh việc bạn tham gia chương trình liên kết của Silence AI do Silence AI LLC vận hành. Điều khoản áp dụng cho bạn — cá nhân hoặc tổ chức đăng ký làm đối tác — và nếu bạn đại diện cho người sử dụng lao động hay tổ chức, cũng áp dụng tương tự.",
+          "body2": "1.2 Tóm tắt chương trình: Đối tác đủ điều kiện sẽ nhận thưởng hoa hồng khi khách hàng được giới thiệu mua hoặc nạp sản phẩm AI-SOC 1. Việc tham gia yêu cầu tuân thủ Điều khoản dịch vụ chung của Silence AI."
+        },
+        "eligibility": {
+          "title": "2. Điều kiện đối tác",
+          "item1": "Duy trì tài khoản đối tác Silence AI đang hoạt động với thông tin doanh nghiệp và thanh toán chính xác.",
+          "item2": "Khách hàng được giới thiệu phải đăng ký bằng liên kết hoặc mã bạn cung cấp.",
+          "item3": "Tài khoản gian lận, tự giới thiệu hoặc vi phạm pháp luật không đủ điều kiện nhận thưởng."
+        },
+        "commission": {
+          "title": "3. Cấu trúc hoa hồng",
+          "body1": "Bạn nhận 10% cho mỗi lần nạp của tài khoản đăng ký qua lời mời của bạn.",
+          "body2": "Hoa hồng được tính trên giá trị ròng sau khi trừ phí xử lý thanh toán."
+        },
+        "rewardPosting": {
+          "title": "4. Ghi nhận thưởng",
+          "body1": "Phần thưởng được cộng vào số dư đối tác trong vòng một phút sau khi giao dịch hoàn tất, không cần duyệt thủ công.",
+          "body2": "Thông báo hiển thị trong bảng điều khiển cùng định danh khách hàng và số tiền nạp."
+        },
+        "withdrawals": {
+          "title": "5. Rút tiền",
+          "body1": "Yêu cầu rút tiền được xử lý trong hai ngày làm việc và thanh toán theo phương thức đã lưu.",
+          "body2": "Ngưỡng rút tối thiểu và các mạng thanh toán hỗ trợ được công bố trong bảng điều khiển đối tác."
+        },
+        "productScope": {
+          "title": "6. Phạm vi sản phẩm",
+          "body1": "Phần thưởng chỉ áp dụng cho sản phẩm AI-SOC 1. Các dịch vụ Silence AI khác bị loại trừ trừ khi có thông báo bằng văn bản.",
+          "body2": "Nếu có sản phẩm bổ sung đủ điều kiện, Silence AI sẽ cập nhật danh sách trong điều khoản này."
+        },
+        "compliance": {
+          "title": "7. Ứng xử & tuân thủ",
+          "item1": "Đối tác phải mô tả đúng về Silence AI, tránh tuyên bố sai lệch về tính năng hay giá.",
+          "item2": "Truyền thông marketing phải tuân thủ quy định chống spam, quyền riêng tư và quảng cáo.",
+          "item3": "Silence AI có thể tạm ngưng hoặc chấm dứt tài khoản vi phạm hoặc gây hại thương hiệu."
+        },
+        "changes": {
+          "title": "8. Thay đổi & liên hệ",
+          "body1": "Silence AI có thể cập nhật điều khoản để phản ánh thay đổi của chương trình hoặc luật áp dụng. Phiên bản cập nhật có hiệu lực ngay khi đăng trên trang này.",
+          "body2": "Mọi câu hỏi về chương trình liên kết gửi tới info@silenceai.net."
+        }
       }
     }
   },
@@ -129,7 +202,7 @@
   "playground": {
     "options": {
       "globeShield": "An ninh web & quản lý lưu lượng",
-      "emailSecurity": "Email Security"
+      "emailSecurity": "Bảo mật Email"
     }
   },
   "cookie": {
@@ -140,81 +213,81 @@
     "ok": "Đồng ý"
   },
   "pricing": {
-    "title": "Bảng giá",
+    "title": "Định giá",
     "tooltips": {
       "cmcGlobal": {
-        "title": "CMC với giám sát lưu lượng toàn cầu",
-        "content": "Bảng điều khiển quản lý tập trung (CMC) tích hợp chặt chẽ với các hệ thống bảo mật khác và dùng chung miền, giao diện với Global Shield và Security Tester. Tại đây bạn có thể chặn quốc gia, đóng port và vận hành ở quy mô lớn"
+        "title": "CMC với Giám sát Lưu lượng Toàn cầu",
+        "content": "CMC (Bảng điều khiển quản lý tập trung) tích hợp liền mạch với các hệ thống bảo mật khác và có sẵn dưới cùng một tên miền và giao diện như Global Shield và Security Tester, cho phép bạn quản lý bảo mật mạng ở quy mô lớn. Từ đây, bạn có thể đưa các quốc gia vào danh sách đen, đóng các cổng và thực hiện các thao tác khác."
       },
       "countryBlacklisting": {
-        "title": "Chặn theo quốc gia",
-        "content": "Chặn toàn bộ lưu lượng đến từ một quốc gia cụ thể"
+        "title": "Danh sách đen quốc gia",
+        "content": "Chặn tất cả lưu lượng truy cập bắt nguồn từ một quốc gia cụ thể"
       },
       "portManagement": {
-        "title": "Quản lý port",
-        "content": "Đóng các port không dùng để giảm bề mặt tấn công. Ví dụ, vô hiệu hóa port 22 khi không cần SSH"
+        "title": "Quản lý Cổng",
+        "content": "Đóng các cổng không sử dụng để giảm bề mặt tấn công. Ví dụ, vô hiệu hóa cổng 22 khi không cần truy cập SSH. Để giảm thiểu rủi ro hệ thống bị xâm phạm."
       },
       "cmcEmail": {
-        "title": "CMC với trình trực quan hoá luồng email nâng cao",
-        "content": "CMC tích hợp với các hệ thống bảo mật khác và cho phép bạn giám sát, xem xét luồng email của mọi người dùng doanh nghiệp đã thêm"
+        "title": "CMC với Trình trực quan hóa Luồng Email Nâng cao",
+        "content": "CMC (Bảng điều khiển quản lý tập trung) tích hợp liền mạch với các hệ thống bảo mật khác và có sẵn dưới cùng một tên miền và giao diện như Global Shield và Security Tester. Trong bảng điều khiển này, bạn có thể giám sát các luồng email và xem xét email cho tất cả người dùng doanh nghiệp mà bạn đã thêm."
       },
       "dynamicVulnerability": {
-        "title": "Trình tìm lỗ hổng động",
-        "content": "Dò tìm lỗ hổng thông qua tương tác với website của bạn, bao gồm hỗ trợ từ hệ thống tình báo"
+        "title": "Trình tìm kiếm lỗ hổng động",
+        "content": "Phát hiện các lỗ hổng bằng cách tương tác với trang web của bạn, bao gồm cả cách tìm lỗ hổng thông qua hệ thống tình báo."
       },
       "codeAnalyzer": {
         "title": "Trình phân tích mã",
-        "content": "Xác định vấn đề bảo mật ngay trong mã nguồn bằng tiện ích VS Code, giúp sửa trước khi triển khai"
+        "content": "Xác định các vấn đề bảo mật trực tiếp trong cơ sở mã của bạn thông qua plugin VS Code, giúp bạn khắc phục sự cố trước khi triển khai."
       },
       "intelligenceReport": {
-        "title": "Báo cáo tình báo",
-        "content": "Cung cấp thông tin chi tiết về mục tiêu: port mở, dịch vụ đang chạy, tên miền con và dữ liệu nhạy cảm cần xử lý"
+        "title": "Báo cáo Tình báo",
+        "content": "Tạo thông tin chi tiết về mục tiêu của bạn, bao gồm các cổng mở, dịch vụ đang chạy, tên miền phụ và thông tin nhạy cảm khác có thể yêu cầu hành động."
       },
       "fullVulnerability": {
-        "title": "Kiểm tra lỗ hổng TOÀN DIỆN",
-        "content": "Một lần kiểm tra toàn diện bao gồm quét động và quét mã"
+        "title": "Kiểm tra lỗ hổng ĐẦY ĐỦ",
+        "content": "Kiểm tra lỗ hổng ĐẦY ĐỦ bao gồm cả quét lỗ hổng động và quét lỗ hổng cơ sở mã."
       }
     },
     "plans": {
       "globalShield": {
-        "title": "An ninh web & quản lý lưu lượng",
+        "title": "Bảo mật Web & Quản lý Lưu lượng",
         "price": "$0.06/GB",
-        "description": "Không giới hạn\nKhông phụ phí",
-        "button": "Bảo vệ ứng dụng web & API",
+        "description": "Không giới hạn\nKhông phí bổ sung",
+        "button": "Bảo vệ ứng dụng web và API",
         "features": {
-          "webProtection": "Bảo vệ mọi kiểu tấn công web (trừ khai thác logic nghiệp vụ)",
-          "ddosProtection": "Bảo vệ DDoS theo thời gian thực",
-          "cmc": "CMC với giám sát lưu lượng toàn cầu",
-          "country": "Tính năng chặn quốc gia",
-          "port": "Tính năng đóng port"
+          "webProtection": "Bảo vệ chống lại mọi loại tấn công web, ngoại trừ khai thác lỗ hổng logic nghiệp vụ",
+          "ddosProtection": "Bảo vệ DDoS thời gian thực",
+          "cmc": "CMC với hệ thống giám sát lưu lượng toàn cầu",
+          "country": "Tính năng danh sách đen quốc gia",
+          "port": "Tính năng đóng cổng"
         }
       },
       "emailProtector": {
-        "title": "An ninh email",
+        "title": "Bảo mật Email & Trực quan hóa",
         "price": "$10/tháng/tài khoản",
-        "description": "Tối đa 10 email mỗi ngày\nEmail thêm: $0.035/email",
-        "button": "Bảo vệ email",
+        "description": "Lên đến 10 email mỗi ngày\nEmail bổ sung: $0.035 mỗi email",
+        "button": "Bảo vệ Email",
         "features": {
-          "cmcEmail": "CMC với trình trực quan hoá luồng email tiên tiến nhất",
-          "visibility": "Nhìn thấy toàn bộ email gửi/nhận và phân loại mối đe doạ tự động",
-          "webClient": "Khách webmail an toàn",
-          "phishing": "Chống phishing",
-          "malware": "Quét tệp độc hại",
+          "cmcEmail": "CMC với trình trực quan hóa luồng email tiên tiến nhất",
+          "visibility": "Hiển thị đầy đủ các email đã gửi và nhận của tất cả các tài khoản email, trong CMC, với phân loại mối đe dọa tự động",
+          "webClient": "Máy khách WebMail an toàn",
+          "phishing": "Bảo vệ chống lừa đảo",
+          "malware": "Quét tệp đính kèm phần mềm độc hại",
           "links": "Phát hiện liên kết nguy hiểm",
-          "spam": "Lọc spam",
-          "fakeSender": "Bảo vệ khỏi người gửi giả"
+          "spam": "Lọc thư rác",
+          "fakeSender": "Bảo vệ chống người gửi giả mạo"
         }
       },
       "securityTester": {
-        "title": "Trình tìm lỗ hổng",
+        "title": "Trình tìm kiếm lỗ hổng",
         "price": "$25/tháng",
-        "description": "Tối đa 50 kiểm tra TOÀN DIỆN mỗi tháng\nKiểm tra thêm: $0.5/lần",
-        "button": "Bắt đầu kiểm tra",
+        "description": "Lên đến 50 lần kiểm tra lỗ hổng ĐẦY ĐỦ mỗi tháng\nKiểm tra ĐẦY ĐỦ bổ sung: $0.5 mỗi lần",
+        "button": "Bắt đầu Kiểm tra",
         "features": {
-          "dynamic": "Trình tìm lỗ hổng động",
+          "dynamic": "Trình tìm kiếm lỗ hổng động",
           "codeAnalyzer": "Trình phân tích mã",
-          "reports": "Báo cáo bảo mật dễ hiểu",
-          "intelligence": "Báo cáo tình báo"
+          "reports": "Báo cáo đánh giá bảo mật dễ hiểu",
+          "intelligence": "Báo cáo Tình báo"
         }
       }
     }
@@ -278,7 +351,7 @@
   },
   "modal": {
     "title": "Đang phát triển",
-    "body": "The system is expected to be launched on October 10"
+    "body": "Hệ thống dự kiến ra mắt vào ngày 10/10"
   },
   "lamp": {
     "title": "Thực trạng tấn công mạng"
@@ -318,155 +391,522 @@
       "termsUse": "Điều khoản sử dụng",
       "termsService": "Điều khoản dịch vụ",
       "privacy": "Chính sách bảo mật",
-      "cookies": "Chính sách Cookie"
+      "cookies": "Chính sách Cookie",
+      "affiliateTerms": "Điều khoản đối tác liên kết"
     },
     "copyright": "© {year} Silence AI. Đã đăng ký bản quyền."
   },
   "secureDevelopment": {
     "hero": {
-      "badge": "SLNC Code · Secure Development Environment",
-      "title": "Build systems with secure and private code",
-      "description": "Private development environment for enterprises, where code never leaves your corporate network. Meanwhile offering the latest AI-powered technology",
-      "requestSystem": "Request System"
+      "badge": "SLNC-env · Môi trường phát triển an toàn",
+      "title": "Xây hệ thống với mã an toàn và riêng tư",
+      "description": "Môi trường phát triển riêng cho doanh nghiệp, nơi mã không rời mạng nội bộ nhưng vẫn có AI mới nhất hỗ trợ",
+      "requestSystem": "Yêu cầu hệ thống"
     },
     "components": {
-      "title": "Everything stays inside",
-      "subtitle": "Three components, one sealed loop",
-      "description": "Code, prompts, and builds never leave your network. SLNC Code keeps AI help, reviews, and delivery private for cloud providers, government teams, and industrial plants.",
+      "title": "Mọi thứ ở trong nội bộ",
+      "subtitle": "Ba thành phần, một vòng kín",
+      "description": "Mã, prompt và build không rời mạng của bạn. SLNC-env giữ việc hỗ trợ AI, review và bàn giao ở chế độ riêng cho nhà cung cấp đám mây, đội ngũ chính phủ và nhà máy công nghiệp.",
       "sithub": {
-        "title": "Sithub Server",
-        "tag": "Local version control"
+        "title": "Máy chủ Sithub",
+        "tag": "Quản lý phiên bản nội bộ"
       },
       "llm": {
-        "title": "LLM Server (Qwen-Code)",
-        "tag": "On-prem intelligence"
+        "title": "Máy chủ LLM (Qwen-Code)",
+        "tag": "Trí tuệ on-prem"
       },
       "ide": {
-        "title": "IDE with Local Copilot",
-        "tag": "Cursor-class experience"
+        "title": "IDE với Copilot nội bộ",
+        "tag": "Trải nghiệm cấp Cursor"
       },
-      "staysOnPrem": "Stays on-prem. No egress."
+      "staysOnPrem": "Ở trên on-prem. Không thoát dữ liệu."
     },
     "timeline": {
-      "title": "Why isolated, checked code matters",
-      "subtitle": "Recent wake-up calls",
+      "title": "Vì sao mã cô lập và kiểm duyệt quan trọng",
+      "subtitle": "Những cảnh báo gần đây",
       "incident": {
-        "title": "Critical incident — leaked code",
-        "heading": "DeepSeek breach put source and prompts on the open internet",
-        "description": "Keep inference and scanning on-prem. No external model egress. Audit trails by default.",
-        "seePlan": "See containment plan"
+        "title": "Sự cố nghiêm trọng — rò rỉ mã",
+        "heading": "Sự cố DeepSeek làm lộ mã nguồn và prompt ra internet",
+        "description": "Giữ suy luận và quét trên on-prem. Không thoát ra mô hình bên ngoài. Mặc định có vết audit.",
+        "seePlan": "Xem kế hoạch ngăn chặn"
       },
       "stuxnet": {
         "year": "2010",
         "attack": "Stuxnet",
-        "target": "Natanz enrichment facility",
-        "impact": "Destroyed ~1,000 centrifuges",
-        "severity": "Critical"
+        "target": "Cơ sở làm giàu Natanz",
+        "impact": "Phá hủy khoảng 1.000 máy ly tâm",
+        "severity": "Nghiêm trọng"
       },
       "blackEnergy": {
         "year": "2015",
         "attack": "BlackEnergy",
-        "target": "Ukraine power grid",
-        "impact": "230k customers lost power",
-        "severity": "High"
+        "target": "Lưới điện Ukraine",
+        "impact": "230 nghìn khách hàng mất điện",
+        "severity": "Cao"
       },
       "triton": {
         "year": "2017",
         "attack": "TRITON",
-        "target": "Saudi petrochemical plant",
-        "impact": "Safety systems disabled",
-        "severity": "Critical"
+        "target": "Nhà máy hóa dầu Saudi",
+        "impact": "Hệ thống an toàn bị vô hiệu",
+        "severity": "Nghiêm trọng"
       },
       "colonialPipeline": {
         "year": "2021",
         "attack": "Colonial Pipeline",
-        "target": "US fuel pipeline",
-        "impact": "6-day fuel paralysis",
-        "severity": "High"
+        "target": "Đường ống nhiên liệu Mỹ",
+        "impact": "Tê liệt nhiên liệu 6 ngày",
+        "severity": "Cao"
       },
       "pdvsa": {
         "year": "2025",
         "attack": "PDVSA",
-        "target": "Venezuela refining",
-        "impact": "Refinery operations disrupted",
-        "severity": "Medium"
+        "target": "Lọc dầu Venezuela",
+        "impact": "Hoạt động lọc dầu bị gián đoạn",
+        "severity": "Trung bình"
       }
     },
     "analyzer": {
-      "title": "Analyzer that beats CodeQL",
-      "subtitle": "Live assurance",
+      "title": "Trình phân tích vượt CodeQL",
+      "subtitle": "Đảm bảo thời gian thực",
       "features": {
         "quality": {
-          "title": "Automatic code quality",
-          "description": "Structure, style, and best-practice checks tuned for safety-critical code"
+          "title": "Chất lượng mã tự động",
+          "description": "Kiểm tra cấu trúc, phong cách và best-practice cho mã quan trọng về an toàn"
         },
         "vulnerability": {
-          "title": "Vulnerability sweeps",
-          "description": "SQLi, XSS, auth bypass, and insecure dependencies surfaced instantly"
+          "title": "Quét lỗ hổng",
+          "description": "SQLi, XSS, bỏ qua xác thực và phụ thuộc không an toàn được hiển thị tức thì"
         },
         "secrets": {
-          "title": "Secrets guard",
-          "description": "Keys, tokens, and credentials blocked at commit time"
+          "title": "Bảo vệ bí mật",
+          "description": "Chặn khóa, token và thông tin đăng nhập ngay lúc commit"
         },
         "config": {
-          "title": "Config hardening",
-          "description": "Docker/K8s, IAM, and network policies scanned for privilege creep"
+          "title": "Cứng hóa cấu hình",
+          "description": "Quét Docker/K8s, IAM và chính sách mạng để phát hiện leo thang đặc quyền"
         }
       },
       "beyondCodeQL": {
-        "title": "Finds what static queries miss",
-        "subtitle": "Beyond CodeQL",
-        "description": "Finds misconfigs and vulnerable packages faster than CodeQL and offers fixes, not just alerts.",
+        "title": "Tìm ra thứ truy vấn tĩnh bỏ lỡ",
+        "subtitle": "Vượt CodeQL",
+        "description": "Phát hiện cấu hình sai và gói dễ tổn thương nhanh hơn CodeQL, đưa ra bản vá chứ không chỉ cảnh báo.",
         "points": {
-          "packages": "Knows package graphs and flags risky dependencies in seconds.",
-          "config": "Spots config drift and privilege creep—beyond static rules.",
-          "patches": "Each finding comes with a suggested patch and owner."
+          "packages": "Biết đồ thị gói và đánh dấu phụ thuộc rủi ro trong vài giây.",
+          "config": "Phát hiện trôi cấu hình và leo thang đặc quyền — vượt ra ngoài quy tắc tĩnh.",
+          "patches": "Mỗi phát hiện đi kèm bản vá đề xuất và người phụ trách."
         }
       },
       "visualizer": {
-        "title": "Code analyzer in action",
-        "subtitle": "Visualizer",
-        "description": "Crisp snapshots from recent scans, rendered beautifully inside the on-prem console.",
-        "privateWorkspace": "Private workspace only",
+        "title": "Trình phân tích mã đang chạy",
+        "subtitle": "Trực quan",
+        "description": "Ảnh chụp rõ nét từ các lần quét gần đây, hiển thị đẹp trong console on-prem.",
+        "privateWorkspace": "Chỉ không gian làm việc riêng",
         "shots": {
           "scanOverview": {
-            "title": "Scan overview",
-            "description": "See issues grouped by severity before code leaves your network."
+            "title": "Tổng quan quét",
+            "description": "Xem vấn đề được nhóm theo mức độ trước khi mã rời mạng của bạn."
           },
           "misconfigurations": {
-            "title": "Detection of misconfigurations",
-            "description": "Our AI-powered code analyzer even finds misconfigurations within the code."
+            "title": "Phát hiện cấu hình sai",
+            "description": "Trình phân tích mã dùng AI còn tìm ra lỗi cấu hình ngay trong mã."
           },
           "inlineDiffs": {
-            "title": "Inline diffs",
-            "description": "Review suggested patches inline with security context."
+            "title": "So sánh inline",
+            "description": "Xem và duyệt bản vá đề xuất ngay trong ngữ cảnh bảo mật."
           }
         }
       }
     },
     "industries": {
-      "title": "Built for regulated, high-impact sectors",
-      "subtitle": "Where we deploy",
+      "title": "Xây cho các ngành tuân thủ, tác động cao",
+      "subtitle": "Nơi chúng tôi triển khai",
       "oilGas": {
-        "title": "Oil & Gas",
-        "description": "Drilling, refining, pipeline control"
+        "title": "Dầu khí",
+        "description": "Khai thác, lọc dầu, điều khiển đường ống"
       },
       "energy": {
-        "title": "Energy",
-        "description": "Grid, distribution, and EMS"
+        "title": "Năng lượng",
+        "description": "Lưới điện, phân phối và EMS"
       },
       "nuclear": {
-        "title": "Nuclear",
-        "description": "Reactor controls and safety"
+        "title": "Hạt nhân",
+        "description": "Điều khiển lò phản ứng và an toàn"
       },
       "manufacturing": {
-        "title": "Manufacturing",
-        "description": "ICS, OT, and robotics"
+        "title": "Sản xuất",
+        "description": "ICS, OT và robot"
       },
       "government": {
-        "title": "Government",
-        "description": "Ministries, defense, critical agencies"
+        "title": "Chính phủ",
+        "description": "Bộ ngành, quốc phòng, cơ quan trọng yếu"
       }
+    }
+  },
+  "pricingCta": {
+    "requestSystem": "Yêu cầu hệ thống"
+  },
+  "contactForm": {
+    "title": "Liên hệ",
+    "success": "Cảm ơn! Chúng tôi đã nhận được tin nhắn và sẽ liên hệ sớm.",
+    "errorRequired": "Vui lòng nhập họ tên, email và tin nhắn ngắn.",
+    "errorSend": "Không gửi được tin nhắn. Vui lòng thử lại sau.",
+    "placeholders": {
+      "name": "Họ tên",
+      "email": "Email",
+      "type": "Loại dự án (tuỳ chọn)",
+      "budget": "Ngân sách (tuỳ chọn)",
+      "message": "Hãy giới thiệu về dự án của bạn..."
+    },
+    "submit": {
+      "idle": "Gửi tin nhắn",
+      "loading": "Đang gửi…"
+    }
+  },
+  "consulting": {
+    "title": "Bộ câu hỏi tư vấn",
+    "searchPlaceholder": "Tìm kiếm câu hỏi...",
+    "noResults": "Không tìm thấy câu hỏi nào.",
+    "questions": [
+      {
+        "question": "Giá trị cốt lõi ngoài mức giá cạnh tranh của công ty bạn là gì?",
+        "answer": "Bảo mật là điểm khác biệt chính. Chúng tôi xây dựng hệ thống bảo mật cao với thực hành an ninh cấp doanh nghiệp xuyên suốt vòng đời phát triển."
+      },
+      {
+        "question": "Công ty hoạt động bao lâu và có thành tích gì?",
+        "answer": "Chúng tôi đã hoàn thành các dự án lớn: NAK (Nur Astana Kurylys) — nền tảng quản lý đội nhóm bằng AI, và Chic Flowers — nền tảng số trọn vẹn cho một nhà bán lẻ hoa lớn."
+      },
+      {
+        "question": "Năng lực kỹ thuật và chất lượng dịch vụ của bạn khác gì so với EPAM hay đối thủ?",
+        "answer": "Chúng tôi phát triển với ưu tiên bảo mật. Thực hành an ninh được tích hợp từ lúc khởi động đến triển khai và vận hành."
+      },
+      {
+        "question": "Làm sao giữ chất lượng khi giá cạnh tranh?",
+        "answer": "Chúng tôi cung cấp thấp hơn thị trường ~15% nhưng vẫn đảm bảo chất lượng nhờ vận hành tối ưu, tuyển dụng chiến lược và quản lý dự án hiệu quả."
+      },
+      {
+        "question": "Bạn cung cấp những dịch vụ phát triển phần mềm nào?",
+        "answer": "Phát triển đầu-cuối: ứng dụng tùy chỉnh, giải pháp AI, phát triển sản phẩm an ninh mạng (Silence AI-SOC), tích hợp hệ thống, chuyển đổi lên đám mây và DevOps. Chúng tôi cũng cung cấp phát triển sản phẩm chuyên biệt và bổ sung nhân sự."
+      },
+      {
+        "question": "Bạn chuyên về ngành và lĩnh vực nào?",
+        "answer": "Xây dựng, bán lẻ, fintech, an ninh mạng và nền tảng số — gồm quản lý đội nhóm bằng AI, thương mại điện tử và giải pháp bảo mật doanh nghiệp."
+      },
+      {
+        "question": "Đội ngũ thành thạo công nghệ và nền tảng nào?",
+        "answer": "GO, Swift, Flutter, các nền tảng đám mây (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript và khung AI/ML. Chúng tôi cũng tự phát triển công cụ bảo mật như Silence AI-SOC."
+      },
+      {
+        "question": "Bạn cung cấp phát triển sản phẩm trọn gói hay chỉ dịch vụ lẻ?",
+        "answer": "Cả hai: MVP, giao hàng toàn vòng đời, bổ sung nhân sự và tích hợp an ninh mạng."
+      },
+      {
+        "question": "Có cung cấp mô hình tăng cường nhân sự và đội ngũ chuyên trách không?",
+        "answer": "Có. Chúng tôi có mô hình linh hoạt: tăng cường nhân sự, đội ngũ chuyên trách và thuê ngoài theo dự án."
+      },
+      {
+        "question": "Ngoài phát triển, bạn có tư vấn, kiến trúc và cố vấn không?",
+        "answer": "Có: tư vấn an ninh mạng, thiết kế kiến trúc hệ thống, cố vấn công nghệ và đánh giá tuân thủ bảo mật với Silence AI-SOC."
+      }
+    ]
+  },
+  "requestDemoModal": {
+    "title": "Yêu cầu hệ thống",
+    "name": "Họ tên",
+    "email": "Email công ty",
+    "company": "Tên công ty",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Gửi yêu cầu",
+    "successTitle": "Đã gửi yêu cầu!",
+    "successBody": "Cảm ơn bạn. Chúng tôi sẽ liên hệ sớm.",
+    "close": "Đóng"
+  },
+  "requestSystemModal": {
+    "title": "Yêu cầu hệ thống",
+    "name": "Họ tên",
+    "email": "Email công ty",
+    "company": "Tên công ty",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Tải xuống",
+    "successTitle": "Đã gửi yêu cầu!",
+    "successBody": "Cảm ơn bạn. Hướng dẫn tải hệ thống sẽ được gửi qua email.",
+    "close": "Đóng"
+  },
+  "policySidebar": {
+    "tableOfContents": "Mục lục"
+  },
+  "notFound": {
+    "title": "Không tìm thấy trang",
+    "description": "Chúng tôi đã tìm khắp nơi nhưng không thấy trang này.",
+    "cta": "Trở về trang chủ"
+  },
+  "heroSection": {
+    "badge": "AI & Phần mềm sẵn sàng sản xuất",
+    "title": "Phát triển AI & Phần mềm tùy chỉnh",
+    "description": "Chúng tôi xây dựng các tác nhân AI sẵn sàng sản xuất và phần mềm tùy chỉnh.",
+    "country": "Kazakhstan",
+    "market": "thị trường toàn cầu",
+    "startProject": "Bắt đầu dự án",
+    "liveDemo": "Demo trực tiếp — Tác nhân AI",
+    "live": "Trực tiếp",
+    "aiAgent": "Tác nhân AI v2.1",
+    "processing": "Đang xử lý yêu cầu...",
+    "active": "Hoạt động",
+    "userMessage": "Phân tích xu hướng dữ liệu khách hàng",
+    "aiResponse": "Đang phân tích",
+    "tasks": {
+      "dataCollection": "Thu thập dữ liệu",
+      "aiAnalysis": "Phân tích AI",
+      "reportGeneration": "Tạo báo cáo"
+    },
+    "stats": {
+      "tasks": "Nhiệm vụ",
+      "success": "Thành công",
+      "speed": "Tốc độ"
+    }
+  },
+  "whyChooseUs": {
+    "badge": "Kỹ thuật hướng đến kết quả",
+    "title": "Tại sao chọn chúng tôi",
+    "subtitle": "Được tin cậy bởi các nhóm từ",
+    "subtitleHighlight": "các tổ chức tỷ đô",
+    "subtitleTail": "— và giao hàng với tốc độ khởi nghiệp.",
+    "learnMore": "Tìm hiểu thêm",
+    "logos": {
+      "kmg": "KazMunayGas",
+      "nak": "Nur Astana Kurylys"
+    },
+    "features": {
+      "fast": {
+        "title": "Giao hàng nhanh với chất lượng doanh nghiệp",
+        "description": "Chu kỳ giao hàng nhanh, lặp lại đáp ứng độ tin cậy và tuân thủ cấp doanh nghiệp.",
+        "pill": "Tốc độ + Chất lượng"
+      },
+      "ai": {
+        "title": "Kỹ thuật sản phẩm ưu tiên AI",
+        "description": "Từ nguyên mẫu đến các tác nhân AI sản xuất — chúng tôi thiết kế, đào tạo và triển khai các mô hình giải quyết các vấn đề kinh doanh thực tế.",
+        "pill": "Kỹ thuật AI"
+      },
+      "local": {
+        "title": "Chuyên môn địa phương, Vươn tầm toàn cầu",
+        "description": "Kiến thức sâu rộng về thị trường và quy định của Kazakhstan kết hợp với các thực tiễn tốt nhất quốc tế.",
+        "pill": "KZ + Toàn cầu"
+      }
+    }
+  },
+  "servicesBlock": {
+    "badge": "Chúng tôi cung cấp gì",
+    "title": "Dịch vụ của chúng tôi",
+    "description": "UI cao cấp, kỹ thuật mạnh mẽ và giao hàng nhanh — mọi thứ bạn cần để ra mắt sản phẩm trông và hoạt động như một thương hiệu hàng đầu.",
+    "learnMore": "Tìm hiểu thêm",
+    "learnMoreAria": "Tìm hiểu thêm về dịch vụ này",
+    "services": {
+      "aiAgents": {
+        "title": "Tác nhân AI",
+        "description": "Các tác nhân đàm thoại và tự chủ tùy chỉnh để hỗ trợ, vận hành và phân tích.",
+        "tag": "Tự động hóa"
+      },
+      "customSoftware": {
+        "title": "Phần mềm tùy chỉnh",
+        "description": "Ứng dụng web và máy tính để bàn đầu cuối phù hợp với quy trình làm việc của bạn.",
+        "tag": "Xây dựng"
+      },
+      "cybersecurity": {
+        "title": "An ninh mạng",
+        "description": "Kiểm toán, kiểm thử xâm nhập và giám sát liên tục.",
+        "tag": "Bảo vệ"
+      },
+      "backend": {
+        "title": "Backend / DevOps",
+        "description": "API có thể mở rộng, đường ống CI/CD và cơ sở hạ tầng đám mây.",
+        "tag": "Quy mô"
+      },
+      "mobile": {
+        "title": "Di động",
+        "description": "Ứng dụng đa nền tảng với hiệu suất gốc và UX bóng bẩy.",
+        "tag": "Giao hàng"
+      }
+    }
+  },
+  "caseStudies": {
+    "badge": "Tác động đã được chứng minh",
+    "title": "Case Study",
+    "subtitle": "Chúng tôi không chỉ giao tính năng — chúng tôi giao kết quả.",
+    "problem": "Vấn đề:",
+    "solution": "Giải pháp:",
+    "liveImpact": "Tác động thực tế",
+    "before": "Trước",
+    "after": "Sau",
+    "buildCta": "Xây dựng thứ gì đó như thế này →",
+    "caseStudy": "Nghiên cứu điển hình",
+    "items": {
+      "nak": {
+        "title": "NAK — AI quản lý đội nhóm",
+        "problem": "Phân bổ nguồn lực thủ công",
+        "solution": "Tác nhân lập lịch trình dựa trên AI",
+        "result": "+32% năng suất",
+        "metricLabel": "Chỉ số đầu ra của nhóm"
+      },
+      "chic": {
+        "title": "Chic Flowers — Thương mại điện tử",
+        "problem": "Chuyển đổi trực tuyến thấp",
+        "solution": "Đề xuất cá nhân hóa + cải tiến UX",
+        "result": "+45% doanh số trực tuyến",
+        "metricLabel": "Tăng trưởng tỷ lệ chuyển đổi"
+      },
+      "silence": {
+        "title": "Silence AI-SOC",
+        "problem": "Tiếng ồn cảnh báo cao",
+        "solution": "Phát hiện AI & phản hồi tự động",
+        "result": "−68% dương tính giả",
+        "metricLabel": "Khối lượng cảnh báo giả"
+      }
+    }
+  },
+  "howWeWork": {
+    "title": "Cách chúng tôi làm việc",
+    "subtitle": "Đường ống giao hàng siêu tốc — được tối ưu hóa cho tốc độ.",
+    "steps": {
+      "discovery": {
+        "title": "Khám phá",
+        "desc": "Yêu cầu, các bên liên quan, chỉ số thành công."
+      },
+      "design": {
+        "title": "Thiết kế",
+        "desc": "UX, kiến trúc, nguyên mẫu."
+      },
+      "poc": {
+        "title": "Bằng chứng khái niệm",
+        "desc": "Xác thực nhanh với các KPI đo lường được."
+      },
+      "build": {
+        "title": "Xây dựng",
+        "desc": "Các sprint lặp lại, kiểm thử tự động."
+      },
+      "deploy": {
+        "title": "Triển khai",
+        "desc": "CI/CD, giám sát, tăng cường bảo mật."
+      },
+      "support": {
+        "title": "Hỗ trợ & Qúy mô",
+        "desc": "Bảo trì, lộ trình, cải tiến liên tục."
+      }
+    }
+  },
+  "technologyStack": {
+    "title": "Ngăn xếp công nghệ",
+    "subtitle": "Một ngăn xếp cấp sản xuất được lựa chọn cẩn thận được thiết kế cho tốc độ, khả năng mở rộng và trải nghiệm người dùng đẹp mắt."
+  },
+  "backToTop": {
+    "label": "Lên đầu trang"
+  },
+  "pricingCustom": {
+    "title": "Giá Cả Minh Bạch",
+    "subtitle": "Các gói ưu tiên di động được xây dựng để mở rộng cùng sản phẩm của bạn.",
+    "percentMaintenance": "{percent}% bảo trì hàng năm",
+    "planEstimate": "${value}",
+    "perYear": "mỗi năm (ước tính)",
+    "calculator": {
+      "title": "Công cụ Tính Chi Phí Dự Án",
+      "subtitle": "Trượt để xem chi phí bảo trì hàng năm của bạn",
+      "projectCost": "Chi Phí Dự Án:",
+      "projectValue": "${value}"
+    },
+    "plans": {
+      "basic": {
+        "name": "Cơ Bản",
+        "features": {
+          "fix": "Sửa Lỗi Nghiêm Trọng (SLA 48h)",
+          "updates": "Cập Nhật Hàng Tháng",
+          "audit": "Kiểm Toán Bảo Mật Hàng Quý",
+          "manager": "Quản Lý Riêng"
+        }
+      },
+      "pro": {
+        "name": "Chuyên Nghiệp",
+        "badge": "Phổ Biến Nhất",
+        "features": {
+          "fix": "Sửa Lỗi Nghiêm Trọng (SLA 24h)",
+          "updates": "10h Cập Nhật Hàng Tháng",
+          "audit": "Kiểm Toán Bảo Mật Hàng Tháng",
+          "manager": "Quản Lý Riêng"
+        }
+      },
+      "enterprise": {
+        "name": "Doanh Nghiệp",
+        "badge": "Giá Trị Tốt Nhất",
+        "features": {
+          "fix": "Sửa Lỗi Nghiêm Trọng (SLA 4h)",
+          "updates": "Cập Nhật Không Giới Hạn + Lộ Trình",
+          "audit": "Kiểm Toán Hàng Tuần + Sao Lưu",
+          "manager": "Quản Lý Riêng"
+        }
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "An ninh & phát triển AI",
+      "title": "Xây an toàn. Triển khai tự tin.",
+      "subtitle": "Hai hệ thống đăng ký (AI-SOC, SLNC-env) cùng dịch vụ AI và phần mềm tùy chỉnh cho đội ngũ doanh nghiệp.",
+      "ctaPrimary": "Yêu cầu demo",
+      "ctaSecondary": "Khám phá hệ thống",
+      "highlights": {
+        "coverage": "SOC 24/7 có AI hỗ trợ",
+        "onPrem": "0 thoát dữ liệu on-prem",
+        "deploy": "Triển khai an toàn trong 4 phút"
+      },
+      "metrics": {
+        "title": "Xây cho đội ngũ tuân thủ",
+        "soc": "Phạm vi SOC có AI hỗ trợ",
+        "egress": "Tất cả on-prem — mã, prompt, build",
+        "deployment": "đến lần triển khai an toàn đầu tiên",
+        "locales": "ngôn ngữ hỗ trợ sẵn"
+      }
+    },
+    "systems": {
+      "title": "Hệ thống",
+      "subtitle": "Chọn gói đăng ký phù hợp: AI-SOC cho phát hiện, SLNC-env cho phát triển kín.",
+      "cta": "Xem chi tiết",
+      "aiSoc": {
+        "title": "AI-SOC",
+        "desc": "Phát hiện & phản hồi được quản lý với AI trợ lý cho đội SOC.",
+        "badge": "Đăng ký"
+      },
+      "slncEnv": {
+        "title": "SLNC-env",
+        "desc": "Đám mây phát triển kín giữ mã, prompt và build trên on-prem.",
+        "badge": "Đăng ký"
+      }
+    },
+    "services": {
+      "title": "Dịch vụ phát triển tùy chỉnh",
+      "subtitle": "Tác nhân AI, tích hợp và giao phần mềm toàn vòng đời với bảo mật từ ngày đầu.",
+      "cta": "Xem dịch vụ",
+      "cards": {
+        "agents": "Tác nhân AI cấp sản xuất với guardrail, RAG và kết nối an toàn.",
+        "integrations": "Tích hợp trung lập nhà cung cấp với stack, IAM và quản trị dữ liệu của bạn.",
+        "delivery": "Giao hàng toàn vòng đời với SLO tin cậy, khả năng quan sát và rà soát bảo mật."
+      },
+      "cardsTitle": {
+        "agents": "Tác nhân",
+        "integrations": "Tích hợp",
+        "delivery": "Giao hàng"
+      }
+    },
+    "contact": {
+      "title": "Sẵn sàng kết hợp AI-SOC và SLNC-env?",
+      "subtitle": "Hãy cho chúng tôi mục tiêu bảo mật và giao hàng — chúng tôi sẽ ghép hệ thống và dịch vụ phù hợp.",
+      "cta": "Yêu cầu demo",
+      "ctaSecondary": "Trao đổi với đội dịch vụ"
     }
   }
 }

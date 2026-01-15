@@ -1,7 +1,13 @@
 {
   "languageSelector": {
     "triggerLabel": "Dili seçin",
-    "menuLabel": "Dil seç"
+    "menuLabel": "Dil seç",
+    "searchLabel": "Dillərdə axtar",
+    "searchPlaceholder": "Ada və ya orijinal əlifbaya görə axtar",
+    "searchResults": "Axtarış nəticələri",
+    "noMatches": "Sorğunuza uyğun dil tapılmadı.",
+    "popular": "Ən məşhur",
+    "allLanguages": "Bütün dillər"
   },
   "header": {
     "nav": {
@@ -10,10 +16,20 @@
       "affiliate": "Tərəfdaş proqramı",
       "instructions": "Təlimatlar",
       "product": "AI-SOC",
-      "secureDevelopment": "SLNC Code",
-      "developerServices": "Developer Services"
+      "secureDevelopment": "SLNC-env",
+      "developerServices": "Tərtibatçı xidmətləri",
+      "home": "Əsas",
+      "systems": "Sistemlər",
+      "systemsAiSoc": "AI-SOC",
+      "systemsSlncEnv": "SLNC-env",
+      "services": "Xidmətlər"
     },
-    "login": "Daxil ol"
+    "login": "Daxil ol",
+    "cta": {
+      "contact": "Əlaqə",
+      "download": "Yüklə",
+      "requestDemo": "Demo sifariş et"
+    }
   },
   "affiliate": {
     "hero": {
@@ -70,11 +86,11 @@
         "description": "Dəvət etdiyiniz komanda Silence AI cüzdanını dolduranda, xalis məbləğin 10%-i dərhal sizə köçürülür."
       },
       "settlement": {
-        "title": "Reall vaxtda uçotda əks olunma",
+        "title": "Real vaxtda uçotda əks olunma",
         "description": "Əməliyyat təsdiqləndikdən sonra mükafatlar bir dəqiqə ərzində tərəfdaş balansınıza yazılır — əl təsdiqi tələb olunmur."
       },
       "withdrawal": {
-        "title": "Withdrawals processed in 2 business days",
+        "title": "Çıxarışlar 2 iş günündə icra olunur",
         "description": "Göndərilən çıxarış sorğuları avtomatik yoxlanılır və iki iş günü ərzində bank hesabınıza çatır."
       },
       "sample": {
@@ -98,6 +114,60 @@
       "statistics": {
         "question": "Referal statistikamı nə vaxt görəcəyəm?",
         "answer": "İstifadəçi promo kodunuz və ya yönləndirmə linkinizlə qeydiyyatdan keçən kimi, onun e-poçtu və müvafiq mükafatı panelinizdə görünəcək."
+      }
+    },
+    "termsAff": {
+      "label": "Tərəfdaş proqramı",
+      "title": "Tərəfdaş xidmət şərtləri",
+      "notice": "Bu siyasət yalnız ingilis dilində mövcuddur",
+      "intro": "Bu şərtlər Silence AI tərəfdaş proqramında iştirak edənlərə mükafatların necə verildiyini və ödəndiyini izah edir.",
+      "meta": {
+        "effective": "Yürürlük tarixi: 10 noyabr 2024",
+        "lastUpdated": "Son yeniləmə: 10 noyabr 2024"
+      },
+      "sections": {
+        "overview": {
+          "title": "1. Proqrama ümumi baxış",
+          "body1": "1.1 Əhatə dairəsi: Bu şərtlər Silence AI LLC tərəfindən idarə olunan tərəfdaş proqramında iştirakınızı tənzimləyir və sizi (fiziki və ya hüquqi şəxs), habelə adından çıxış etdiyiniz işəgötürəni və təşkilatı əhatə edir.",
+          "body2": "1.2 Xülasə: Proqram çərçivəsində kvalifikasiya qazanmış tərəfdaşlar yönləndirdikləri müştərilər AI-SOC 1 məhsulunu alanda və ya balans dolduranda komissiya qazanırlar. İştirak üçün Silence AI ümumi Xidmət Şərtlərinə riayət tələb olunur."
+        },
+        "eligibility": {
+          "title": "2. Tərəfdaş uyğunluğu",
+          "item1": "Dəqiq biznes və ödəniş məlumatları olan aktiv Silence AI tərəfdaş hesabı saxlamalısınız.",
+          "item2": "Yönləndirmələr verilən link və ya promo kod vasitəsilə qeydiyyatı tamamlamaqla etibarlı sayılır.",
+          "item3": "Fırıldaqçı, öz-özünə yönləndirilmiş və ya qanunu pozan hesablar mükafat üçün yararsızdır."
+        },
+        "commission": {
+          "title": "3. Komissiya strukturu",
+          "body1": "Dəvətinizlə qeydiyyatdan keçən hər hesabın balans doldurmasına görə 10% mükafat qazanırsınız.",
+          "body2": "Komissiya ödəniş emal haqları çıxdıqdan sonra xalis məbləğdən hesablanır."
+        },
+        "rewardPosting": {
+          "title": "4. Mükafatların yazılması",
+          "body1": "Əməliyyat tamamlandıqdan bir dəqiqə sonra mükafat tərəfdaş balansına düşür; əl təsdiqi yoxdur.",
+          "body2": "Bildirişlər panelinizdə müştəri identifikatoru və doldurma məbləği ilə göstərilir."
+        },
+        "withdrawals": {
+          "title": "5. Çıxarışlar",
+          "body1": "Çıxarış sorğuları iki iş günü ərzində emal olunur və qeydiyyatda olan ödəniş üsulu ilə ödənilir.",
+          "body2": "Minimum məbləğlər və dəstəklənən şəbəkələr paneldə dərc olunur."
+        },
+        "productScope": {
+          "title": "6. Məhsul əhatəsi",
+          "body1": "Mükafatlar yalnız AI-SOC 1 məhsuluna aiddir. Digər xidmətlər yazılı şəkildə göstərilmədikcə daxilə edilmir.",
+          "body2": "Yeni məhsullar uyğun olduqda, Silence AI bu şərtlərdə yenilənmiş siyahını dərc edəcək."
+        },
+        "compliance": {
+          "title": "7. Davranış və uyğunluq",
+          "item1": "Tərəfdaşlar Silence AI-ni dəqiq təqdim etməli, xüsusiyyət və qiymətlər barədə yanıltıcı iddialardan çəkinməlidirlər.",
+          "item2": "Marketinq mesajları anti-spam, məxfilik və reklam qaydalarına uyğun olmalıdır.",
+          "item3": "Silence AI tələbləri pozan və ya brendə zərər vuran hesabları dayandıra və ya ləğv edə bilər."
+        },
+        "changes": {
+          "title": "8. Dəyişikliklər və əlaqə",
+          "body1": "Proqram və ya qanun dəyişikliklərinə görə şərtlər yenilənə bilər; dərc edildiyi andan qüvvəyə minir.",
+          "body2": "Tərəfdaş proqramı ilə bağlı suallar üçün info@silenceai.net ünvanına yazın."
+        }
       }
     }
   },
@@ -132,7 +202,7 @@
   "playground": {
     "options": {
       "globeShield": "Veb təhlükəsizliyi və trafik idarəetməsi",
-      "emailSecurity": "Email Security"
+      "emailSecurity": "E-poçt təhlükəsizliyi"
     }
   },
   "cookie": {
@@ -219,7 +289,46 @@
           "reports": "Asan başa düşülən təhlükəsizlik hesabatları",
           "intelligence": "Kəşfiyyat hesabatı"
         }
+      },
+      "basic": {
+        "name": "Əsas",
+        "features": {
+          "fix": "Kritik səhvlərin düzəldilməsi (48s SLA)",
+          "updates": "Aylıq yeniləmələr",
+          "audit": "Rüblük təhlükəsizlik auditləri",
+          "manager": "Xüsusi menecer"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Ən populyar",
+        "features": {
+          "fix": "Kritik səhvlərin düzəldilməsi (24s SLA)",
+          "updates": "10s aylıq yeniləmələr",
+          "audit": "Aylıq təhlükəsizlik auditləri",
+          "manager": "Xüsusi menecer"
+        }
+      },
+      "enterprise": {
+        "name": "Müəssisə",
+        "badge": "Ən sərfəli",
+        "features": {
+          "fix": "Kritik səhvlərin düzəldilməsi (4s SLA)",
+          "updates": "Limitsiz yeniləmələr + yol xəritəsi",
+          "audit": "Həftəlik auditlər + ehtiyat nüsxələr",
+          "manager": "Xüsusi menecer"
+        }
       }
+    },
+    "subtitle": "Məhsulunuzla böyüyən mobil-ilk planlar.",
+    "percentMaintenance": "{percent}% illik texniki xidmət",
+    "planEstimate": "${value}",
+    "perYear": "illik (təxmini)",
+    "calculator": {
+      "title": "Layihə dəyəri kalkulyatoru",
+      "subtitle": "İllik texniki xidməti görmək üçün sürüşdürün",
+      "projectCost": "Layihə dəyəri:",
+      "projectValue": "${value}"
     }
   },
   "solution": {
@@ -281,7 +390,7 @@
   },
   "modal": {
     "title": "Aktiv inkişaf mərhələsindədir",
-    "body": "The system is expected to be launched on October 10"
+    "body": "Sistemin 10 oktyabrda istifadəyə verilməsi gözlənilir"
   },
   "lamp": {
     "title": "Kiberhücumların reallığı"
@@ -321,28 +430,29 @@
       "termsUse": "İstifadə şərtləri",
       "termsService": "Xidmət şərtləri",
       "privacy": "Məxfilik siyasəti",
-      "cookies": "Kuki siyasəti"
+      "cookies": "Kuki siyasəti",
+      "affiliateTerms": "Tərəfdaş xidmət şərtləri"
     },
     "copyright": "© {year} Silence AI. Bütün hüquqlar qorunur."
   },
   "notFound": {
     "title": "Səhifə tapılmadı",
-    "description": "Hər yerdə axtardıq, amma bu səhifəni tapa bilmədik.",
+    "description": "Hər yerə baxdıq, amma bu səhifəni tapa bilmədik.",
     "cta": "Ana səhifəyə qayıt"
   },
   "heroSection": {
-    "badge": "İstehsala hazır AI və Proqram təminatı",
-    "title": "Fərdi AI və Proqram Təminatı İnkişafı",
-    "description": "Biz {country} və {market} üçün istehsala hazır AI agentləri və fərdi proqram təminatı qururuq.",
+    "badge": "İstehsalata hazır AI və Proqram Təminatı",
+    "title": "Fərdi AI və Proqram Təminatı Hazırlanması",
+    "description": "Biz istehsalata hazır AI agentlər və fərdi proqram təminatı qururuq.",
     "country": "Qazaxıstan",
     "market": "qlobal bazar",
     "startProject": "Layihəyə Başla",
     "liveDemo": "Canlı Demo — AI Agent",
     "live": "Canlı",
     "aiAgent": "AI Agent v2.1",
-    "processing": "Sorğular emal olunur...",
+    "processing": "Sorğular emal edilir...",
     "active": "Aktiv",
-    "userMessage": "Müştəri məlumat trendlərini təhlil edin",
+    "userMessage": "Müştəri məlumat tendensiyalarını təhlil et",
     "aiResponse": "Təhlil edilir",
     "tasks": {
       "dataCollection": "Məlumat Toplanması",
@@ -357,149 +467,485 @@
   },
   "secureDevelopment": {
     "hero": {
-      "badge": "SLNC Code · Secure Development Environment",
-      "title": "Build systems with secure and private code",
-      "description": "Private development environment for enterprises, where code never leaves your corporate network. Meanwhile offering the latest AI-powered technology",
-      "requestSystem": "Request System"
+      "badge": "SLNC-env · Təhlükəsiz inkişaf mühiti",
+      "title": "Təhlükəsiz və məxfi kodla sistemlər qurun",
+      "description": "Korporativ şəbəkədən kənara kod çıxmayan, müəssisələr üçün məxfi inkişaf mühiti. Eyni zamanda ən son AI texnologiyası ilə",
+      "requestSystem": "Sistemi sifariş et"
     },
     "components": {
-      "title": "Everything stays inside",
-      "subtitle": "Three components, one sealed loop",
-      "description": "Code, prompts, and builds never leave your network. SLNC Code keeps AI help, reviews, and delivery private for cloud providers, government teams, and industrial plants.",
+      "title": "Hər şey içəridə qalır",
+      "subtitle": "Üç komponent, bir qapalı dövr",
+      "description": "Kod, göstərişlər və build-lər şəbəkənizi tərk etmir. SLNC-env bulud provayderləri, dövlət komandaları və sənaye müəssisələri üçün AI dəstəyini, kod baxışlarını və çatdırılmanı məxfi saxlayır.",
       "sithub": {
         "title": "Sithub Server",
-        "tag": "Local version control"
+        "tag": "Yerli versiya nəzarəti"
       },
       "llm": {
         "title": "LLM Server (Qwen-Code)",
-        "tag": "On-prem intelligence"
+        "tag": "On-prem intellekt"
       },
       "ide": {
-        "title": "IDE with Local Copilot",
-        "tag": "Cursor-class experience"
+        "title": "Local Copilot ilə IDE",
+        "tag": "Cursor səviyyəli təcrübə"
       },
-      "staysOnPrem": "Stays on-prem. No egress."
+      "staysOnPrem": "Hər şey on-prem qalır. Egress yoxdur."
     },
     "timeline": {
-      "title": "Why isolated, checked code matters",
-      "subtitle": "Recent wake-up calls",
+      "title": "İzolyasiya olunmuş, yoxlanmış kod niyə vacibdir",
+      "subtitle": "Son xəbərdarlıqlar",
       "incident": {
-        "title": "Critical incident — leaked code",
-        "heading": "DeepSeek breach put source and prompts on the open internet",
-        "description": "Keep inference and scanning on-prem. No external model egress. Audit trails by default.",
-        "seePlan": "See containment plan"
+        "title": "Kritik hadisə — kod sızması",
+        "heading": "DeepSeek pozuntusu mənbə kodunu və göstərişləri açıq şəbəkəyə çıxardı",
+        "description": "İnferensiya və skanı on-prem saxlayın. Xarici modellərə çıxış olmasın. Audit izləri standartdır.",
+        "seePlan": "İdarəetmə planına bax"
       },
       "stuxnet": {
         "year": "2010",
         "attack": "Stuxnet",
-        "target": "Natanz enrichment facility",
-        "impact": "Destroyed ~1,000 centrifuges",
-        "severity": "Critical"
+        "target": "Natanz zənginləşdirmə müəssisəsi",
+        "impact": "Təxminən 1,000 sentrifuqa məhv edildi",
+        "severity": "Kritik"
       },
       "blackEnergy": {
         "year": "2015",
         "attack": "BlackEnergy",
-        "target": "Ukraine power grid",
-        "impact": "230k customers lost power",
-        "severity": "High"
+        "target": "Ukrayna enerji şəbəkəsi",
+        "impact": "230k müştəri işıqsız qaldı",
+        "severity": "Yüksək"
       },
       "triton": {
         "year": "2017",
         "attack": "TRITON",
-        "target": "Saudi petrochemical plant",
-        "impact": "Safety systems disabled",
-        "severity": "Critical"
+        "target": "Səudiyyə petrokimyəvi zavodu",
+        "impact": "Təhlükəsizlik sistemləri deaktiv edildi",
+        "severity": "Kritik"
       },
       "colonialPipeline": {
         "year": "2021",
         "attack": "Colonial Pipeline",
-        "target": "US fuel pipeline",
-        "impact": "6-day fuel paralysis",
-        "severity": "High"
+        "target": "ABŞ yanacaq boru kəməri",
+        "impact": "6 günlük yanacaq iflici",
+        "severity": "Yüksək"
       },
       "pdvsa": {
         "year": "2025",
         "attack": "PDVSA",
-        "target": "Venezuela refining",
-        "impact": "Refinery operations disrupted",
-        "severity": "Medium"
+        "target": "Venesuela emalı",
+        "impact": "Neftayırma əməliyyatları pozuldu",
+        "severity": "Orta"
       }
     },
     "analyzer": {
-      "title": "Analyzer that beats CodeQL",
-      "subtitle": "Live assurance",
+      "title": "CodeQL-dən güclü analizator",
+      "subtitle": "Canlı zəmanət",
       "features": {
         "quality": {
-          "title": "Automatic code quality",
-          "description": "Structure, style, and best-practice checks tuned for safety-critical code"
+          "title": "Avtomatik kod keyfiyyəti",
+          "description": "Təhlükəsizlik-kritik kod üçün struktur, stil və ən yaxşı təcrübə yoxlamaları"
         },
         "vulnerability": {
-          "title": "Vulnerability sweeps",
-          "description": "SQLi, XSS, auth bypass, and insecure dependencies surfaced instantly"
+          "title": "Zəiflik taramaları",
+          "description": "SQLi, XSS, auth bypass və təhlükəli asılılıqlar dərhal aşkarlanır"
         },
         "secrets": {
-          "title": "Secrets guard",
-          "description": "Keys, tokens, and credentials blocked at commit time"
+          "title": "Gizli məlumat mühafizəsi",
+          "description": "Açarlar, tokenlər və credential-lar commit zamanı bloklanır"
         },
         "config": {
-          "title": "Config hardening",
-          "description": "Docker/K8s, IAM, and network policies scanned for privilege creep"
+          "title": "Konfiqurasiya möhkəmləndirmə",
+          "description": "Docker/K8s, IAM və şəbəkə qaydaları hüquq artımı üçün skan edilir"
         }
       },
       "beyondCodeQL": {
-        "title": "Finds what static queries miss",
-        "subtitle": "Beyond CodeQL",
-        "description": "Finds misconfigs and vulnerable packages faster than CodeQL and offers fixes, not just alerts.",
+        "title": "Statik sorğuların qaçırdıqlarını tapır",
+        "subtitle": "CodeQL-dən o tərəf",
+        "description": "Səhv konfiqurasiyaları və təhlükəli paketləri CodeQL-dən daha tez tapır və yalnız xəbərdarlıq deyil, düzəliş təklif edir.",
         "points": {
-          "packages": "Knows package graphs and flags risky dependencies in seconds.",
-          "config": "Spots config drift and privilege creep—beyond static rules.",
-          "patches": "Each finding comes with a suggested patch and owner."
+          "packages": "Paket qrafını bilir və riskli asılılıqları saniyələr içində işarələyir.",
+          "config": "Konfiqurasiya sürüşməsini və hüquq artımını aşkar edir — statik qaydalardan kənarda.",
+          "patches": "Hər tapıntı təklif olunan patch və sahibi ilə gəlir."
         }
       },
       "visualizer": {
-        "title": "Code analyzer in action",
-        "subtitle": "Visualizer",
-        "description": "Crisp snapshots from recent scans, rendered beautifully inside the on-prem console.",
-        "privateWorkspace": "Private workspace only",
+        "title": "Kod analizatoru iş başında",
+        "subtitle": "Vizuallaşdırıcı",
+        "description": "Son skanlardan aydın kadrlar, on-prem konsolda estetik şəkildə göstərilir.",
+        "privateWorkspace": "Yalnız şəxsi workspace",
         "shots": {
           "scanOverview": {
-            "title": "Scan overview",
-            "description": "See issues grouped by severity before code leaves your network."
+            "title": "Skan icmalı",
+            "description": "Kod şəbəkədən çıxmazdan əvvəl problemləri şiddətə görə qruplaşdırılmış görün."
           },
           "misconfigurations": {
-            "title": "Detection of misconfigurations",
-            "description": "Our AI-powered code analyzer even finds misconfigurations within the code."
+            "title": "Səhv konfiqurasiyaların aşkarlanması",
+            "description": "AI dəstəkli kod analizatorumuz kod daxilindəki yanlış konfiqurasiyaları belə tapır."
           },
           "inlineDiffs": {
-            "title": "Inline diffs",
-            "description": "Review suggested patches inline with security context."
+            "title": "Inline fərqlər",
+            "description": "Təklif olunan patch-ləri təhlükəsizlik konteksti ilə inline gözdən keçirin."
           }
         }
       }
     },
     "industries": {
-      "title": "Built for regulated, high-impact sectors",
-      "subtitle": "Where we deploy",
+      "title": "Tənzimlənən, yüksək riskli sahələr üçün qurulub",
+      "subtitle": "Harada tətbiq edirik",
       "oilGas": {
-        "title": "Oil & Gas",
-        "description": "Drilling, refining, pipeline control"
+        "title": "Neft və qaz",
+        "description": "Qazma, emal, boru kəməri idarəetməsi"
       },
       "energy": {
-        "title": "Energy",
-        "description": "Grid, distribution, and EMS"
+        "title": "Enerji",
+        "description": "Şəbəkə, paylama və EMS"
       },
       "nuclear": {
-        "title": "Nuclear",
-        "description": "Reactor controls and safety"
+        "title": "Nüvə",
+        "description": "Reaktor idarəetməsi və təhlükəsizlik"
       },
       "manufacturing": {
-        "title": "Manufacturing",
-        "description": "ICS, OT, and robotics"
+        "title": "İstehsalat",
+        "description": "ICS, OT və robototexnika"
       },
       "government": {
-        "title": "Government",
-        "description": "Ministries, defense, critical agencies"
+        "title": "Hökumət",
+        "description": "Nazirliklər, müdafiə, kritik agentliklər"
       }
+    }
+  },
+  "pricingCta": {
+    "requestSystem": "Sistemi sifariş et"
+  },
+  "contactForm": {
+    "title": "Bizimlə əlaqə saxlayın",
+    "success": "Təşəkkürlər! Mesajınız göndərildi. Tezliklə sizinlə əlaqə saxlayacağıq.",
+    "errorRequired": "Zəhmət olmasa ad, e-poçt və qısa mesajı doldurun.",
+    "errorSend": "Mesaj göndərilə bilmədi. Bir az sonra yenidən cəhd edin.",
+    "placeholders": {
+      "name": "Adınız",
+      "email": "E-poçt",
+      "type": "Layihə tipi (istəyə bağlı)",
+      "budget": "Büdcə (istəyə bağlı)",
+      "message": "Layihənizdən danışın..."
+    },
+    "submit": {
+      "idle": "Mesajı göndər",
+      "loading": "Göndərilir…"
+    }
+  },
+  "consulting": {
+    "title": "Məsləhət sorğusu",
+    "searchPlaceholder": "Suallarda axtarın...",
+    "noResults": "Suallar tapılmadı.",
+    "questions": [
+      {
+        "question": "Şirkətinizin rəqabətli qiymətdən kənar əsas dəyər təklifi nədir?",
+        "answer": "Əsas fərqimiz təhlükəsizlikdir. Biz, inkişafın bütün mərhələlərinə müəssisə səviyyəli təhlükəsizlik təcrübələrini daxil edən yüksək təhlükəsiz sistemlər quran şirkətik."
+      },
+      {
+        "question": "Şirkətiniz nə vaxtdan fəaliyyət göstərir və hansı nəticələrə malikdir?",
+        "answer": "Uğurla təhvil verdiyimiz əsas layihələr: NAK (Nur Astana Kurylys) — AI əsaslı komanda idarəetmə platforması və Chic Flowers — iri birçiçək pərakəndəçisi üçün tam rəqəmsal platforma."
+      },
+      {
+        "question": "Texniki imkanlarınızı və xidmət keyfiyyətinizi EPAM və digər rəqiblərdən nə fərqləndirir?",
+        "answer": "Əsas fərqimiz təhlükəsizlik-öncül yanaşmadır; təhlükəsizliyi layihənin başlanğıcından tətbiq və dəstəyə qədər inteqrasiya edirik."
+      },
+      {
+        "question": "Rəqabətli qiymət təklif edərkən keyfiyyəti necə qoruyursunuz?",
+        "answer": "Optimallaşdırılmış əməliyyatlar, strateji kadr seçimi və səmərəli layihə idarəetməsi sayəsində bazardan 15% aşağı qiymətlərlə yüksək keyfiyyət təmin edirik."
+      },
+      {
+        "question": "Hansı konkret proqram inkişaf xidmətlərini göstərirsiniz?",
+        "answer": "Ucdan-uca inkişaf: fərdi tətbiqlər, AI həlləri, kibertəhlükəsizlik məhsulları (Silence AI-SOC), sistem inteqrasiyası, buluda miqrasiya və DevOps. Həmçinin məhsul inkişafı və komanda gücləndirilməsi təqdim edirik."
+      },
+      {
+        "question": "Hansı sahələrdə ixtisaslaşırsınız?",
+        "answer": "Tikinti, pərakəndə, fintex, kibertəhlükəsizlik və rəqəmsal platformalar — AI əsaslı komanda idarəetməsi, e-ticarət və müəssisə təhlükəsizlik həlləri daxil olmaqla."
+      },
+      {
+        "question": "Komandanız hansı texnologiya yığınlarında təcrübəlidir?",
+        "answer": "GO, Swift, Flutter, bulud platformaları (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript və AI/ML framework-lər. Silence AI-SOC kimi özəl təhlükəsizlik alətləri qururuq."
+      },
+      {
+        "question": "Ucdan-uca məhsul inkişafı, yoxsa yalnız spesifik xidmətlər təqdim edirsiniz?",
+        "answer": "Hər ikisini: MVP, tam dövr məhsul çatdırılması, komanda gücləndirilməsi və kibertəhlükəsizlik inteqrasiyası."
+      },
+      {
+        "question": "Həm komanda gücləndirmə, həm də xüsusi komanda modelləri təqdim edirsiniz?",
+        "answer": "Bəli, çevik modellər təklif edirik: komanda gücləndirmə, xüsusi komandalar və layihə əsaslı autsorsinq."
+      },
+      {
+        "question": "İnkişafdan kənar konsultasiya, arxitektura və məsləhət xidmətləri göstərirsiniz?",
+        "answer": "Bəli: kibertəhlükəsizlik məsləhəti, sistem arxitekturası dizaynı, texnoloji məsləhət və Silence AI-SOC ilə təhlükəsizlik uyğunluğunun qiymətləndirilməsi."
+      }
+    ]
+  },
+  "requestDemoModal": {
+    "title": "Sistemi sifariş et",
+    "name": "Ad",
+    "email": "Korporativ e-poçt",
+    "company": "Şirkət adı",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Sorğunu göndər",
+    "successTitle": "Sorğu göndərildi!",
+    "successBody": "Maraq göstərdiyiniz üçün təşəkkür edirik. Tezliklə əlaqə saxlayacağıq.",
+    "close": "Bağla"
+  },
+  "requestSystemModal": {
+    "title": "Sistemi sifariş et",
+    "name": "Ad",
+    "email": "Korporativ e-poçt",
+    "company": "Şirkət adı",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Yüklə",
+    "successTitle": "Sorğu göndərildi!",
+    "successBody": "Təşəkkürlər. Sistem yükləmə təlimatları e-poçtunuza göndəriləcək.",
+    "close": "Bağla"
+  },
+  "policySidebar": {
+    "tableOfContents": "Mündəricat"
+  },
+  "whyChooseUs": {
+    "badge": "Nəticə yönümlü mühəndislik",
+    "title": "Niyə Biz",
+    "subtitle": "Etibar edir",
+    "subtitleHighlight": "milyard dollarlıq təşkilatlar",
+    "subtitleTail": "— və startap sürəti ilə çatdırılır.",
+    "learnMore": "Ətraflı öyrən",
+    "logos": {
+      "kmg": "KazMunayGas",
+      "nak": "Nur Astana Kurylys"
+    },
+    "features": {
+      "fast": {
+        "title": "Müəssisə Keyfiyyəti ilə Sürətli Çatdırılma",
+        "description": "Müəssisə səviyyəsində etibarlılığa və uyğunluğa cavab verən sürətli, iterativ çatdırılma dövrləri.",
+        "pill": "Sürət + Keyfiyyət"
+      },
+      "ai": {
+        "title": "AI-əsaslı Məhsul Mühəndisliyi",
+        "description": "Prototiplərdən istehsalat AI agentlərinə qədər — biz real biznes problemlərini həll edən modelləri layihələndirir, öyrədir və tətbiq edirik.",
+        "pill": "AI Mühəndisliyi"
+      },
+      "local": {
+        "title": "Yerli Təcrübə, Qlobal Əhatə",
+        "description": "Qazaxıstan bazarını və qaydalarını dərindən bilmək, beynəlxalq ən yaxşı təcrübələrlə birləşdirilir.",
+        "pill": "KZ + Qlobal"
+      }
+    }
+  },
+  "servicesBlock": {
+    "badge": "Təklif etdiklərimiz",
+    "title": "Xidmətlərimiz",
+    "description": "Premium UI, güclü mühəndislik və sürətli çatdırılma — ən üst səviyyəli brend kimi görünən və işləyən məhsulu işə salmaq üçün ehtiyacınız olan hər şey.",
+    "learnMore": "Ətraflı öyrən",
+    "learnMoreAria": "Bu xidmət haqqında ətraflı öyrən",
+    "services": {
+      "aiAgents": {
+        "title": "AI Agentlər",
+        "description": "Dəstək, əməliyyatlar və analitika üçün fərdi danışıq və avtonom agentlər.",
+        "tag": "Avtomatlaşdırma"
+      },
+      "customSoftware": {
+        "title": "Fərdi Proqram Təminatı",
+        "description": "İş proseslərinizə uyğunlaşdırılmış veb və masaüstü tətbiqlər.",
+        "tag": "Qurmaq"
+      },
+      "cybersecurity": {
+        "title": "Kibertəhlükəsizlik",
+        "description": "Auditlər, sızma testləri və davamlı monitorinq.",
+        "tag": "Qorumaq"
+      },
+      "backend": {
+        "title": "Backend / DevOps",
+        "description": "Ölçeklenebilir API-lər, CI/CD boru kəmərləri və bulud infrastrukturu.",
+        "tag": "Miqyaslamaq"
+      },
+      "mobile": {
+        "title": "Mobil",
+        "description": "Yerli performans və cilalanmış UX ilə çarpaz platformalı tətbiqlər.",
+        "tag": "Çatdırmaq"
+      }
+    }
+  },
+  "caseStudies": {
+    "badge": "Sübut edilmiş Təsir",
+    "title": "Keis araşdırmaları",
+    "subtitle": "Biz sadəcə xüsusiyyətlər təqdim etmirik. Biz nəticələr təqdim edirik.",
+    "problem": "Problem:",
+    "solution": "Həll:",
+    "liveImpact": "Canlı Təsir",
+    "before": "Əvvəl",
+    "after": "Sonra",
+    "buildCta": "Buna bənzər bir şey qurun →",
+    "caseStudy": "Keis araşdırması",
+    "items": {
+      "nak": {
+        "title": "NAK — Komanda İdarəetmə AI",
+        "problem": "Əl ilə resurs bölgüsü",
+        "solution": "AI ilə işləyən planlaşdırma agenti",
+        "result": "+32% məhsuldarlıq",
+        "metricLabel": "Komanda Çıxış İndeksi"
+      },
+      "chic": {
+        "title": "Chic Flowers — Elektron Ticarət",
+        "problem": "Aşağı onlayn dönüşüm",
+        "solution": "Fərdiləşdirilmiş tövsiyəçi + UX yeniləməsi",
+        "result": "+45% onlayn satış",
+        "metricLabel": "Dönüşüm Artım nisbəti"
+      },
+      "silence": {
+        "title": "Silence AI-SOC",
+        "problem": "Yüksək xəbərdarlıq səsi",
+        "solution": "AI aşkarlama və avtomatlaşdırılmış cavab",
+        "result": "−68% yalançı pozitivlər",
+        "metricLabel": "Yalançı Xəbərdarlıq Həcmi"
+      }
+    }
+  },
+  "howWeWork": {
+    "title": "Necə İşləyirik",
+    "subtitle": "Ultra sürətli çatdırılma boru kəməri — sürət üçün optimallaşdırılıb.",
+    "steps": {
+      "discovery": {
+        "title": "Kəşf",
+        "desc": "Tələblər, maraqlı tərəflər, uğur metrikləri."
+      },
+      "design": {
+        "title": "Dizayn",
+        "desc": "UX, arxitektura, prototip."
+      },
+      "poc": {
+        "title": "Konseptin İsbatı (PoC)",
+        "desc": "Ölçülə bilən KPI-lərlə sürətli yoxlama."
+      },
+      "build": {
+        "title": "Qurmaq",
+        "desc": "İterativ sprintlər, avtomatlaşdırılmış testlər."
+      },
+      "deploy": {
+        "title": "Tətbiq",
+        "desc": "CI/CD, monitorinq, təhlükəsizlik möhkəmləndirilməsi."
+      },
+      "support": {
+        "title": "Dəstək və Miqyas",
+        "desc": "Baxım, yol xəritəsi, davamlı təkmilləşdirmə."
+      }
+    }
+  },
+  "technologyStack": {
+    "title": "Texnologiya yığını",
+    "subtitle": "Sürət, miqyaslana bilmə və gözəl istifadəçi təcrübələri üçün diqqətlə seçilmiş, istehsalat səviyyəli yığın."
+  },
+  "backToTop": {
+    "label": "Yuxarı qayıt"
+  },
+  "pricingCustom": {
+    "title": "Şəffaf Qiymətlər",
+    "subtitle": "Məhsulunuzla miqyaslanan mobil-ilk planlar.",
+    "percentMaintenance": "{percent}% illik texniki xidmət",
+    "planEstimate": "${value}",
+    "perYear": "illik (təxm.)",
+    "calculator": {
+      "title": "Layihə Xərcləri Kalkulyatoru",
+      "subtitle": "İllik texniki xidmətinizi görmək üçün sürüşdürün",
+      "projectCost": "Layihə Dəyəri:",
+      "projectValue": "${value}"
+    },
+    "plans": {
+      "basic": {
+        "name": "Sadə",
+        "features": {
+          "fix": "Kritik Səhvlərin Düzəldilməsi (48 saat SLA)",
+          "updates": "Aylıq Yeniləmələr",
+          "audit": "Rüblük Təhlükəsizlik Auditləri",
+          "manager": "Xüsusi Menecer"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Ən Məşhur",
+        "features": {
+          "fix": "Kritik Səhvlərin Düzəldilməsi (24 saat SLA)",
+          "updates": "10 saat Aylıq Yeniləmələr",
+          "audit": "Aylıq Təhlükəsizlik Auditləri",
+          "manager": "Xüsusi Menecer"
+        }
+      },
+      "enterprise": {
+        "name": "Müəssisə",
+        "badge": "Ən Yaxşı Dəyər",
+        "features": {
+          "fix": "Kritik Səhvlərin Düzəldilməsi (4 saat SLA)",
+          "updates": "Limitsiz Yeniləmələr + Yol Xəritəsi",
+          "audit": "Həftəlik Auditlər + Nüsxələmələr",
+          "manager": "Xüsusi Menecer"
+        }
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "AI təhlükəsizliyi və inkişaf",
+      "title": "Təhlükəsiz qurun. Əminliklə tətbiq edin.",
+      "subtitle": "İki abunə sistemi (AI-SOC, SLNC-env) və əlavə olaraq müəssisə komandaları üçün fərdi AI və proqram çatdırılması.",
+      "ctaPrimary": "Demo sifariş et",
+      "ctaSecondary": "Sistemləri araşdır",
+      "highlights": {
+        "coverage": "24/7 AI dəstəkli SOC",
+        "onPrem": "0-egress — hamısı on-prem",
+        "deploy": "4 dəqiqəyə təhlükəsiz tətbiq"
+      },
+      "metrics": {
+        "title": "Tənzimlənən komandalar üçün",
+        "soc": "AI dəstəkli SOC əhatəsi",
+        "egress": "Hər şey on-prem — kod, prompt, build",
+        "deployment": "ilk təhlükəsiz tətbiqədək",
+        "locales": "hazır dillərin sayı"
+      }
+    },
+    "systems": {
+      "title": "Sistemlər",
+      "subtitle": "Uyğun abunə məhsulunu seçin: aşkarlama üçün AI-SOC, qapalı inkişaf üçün SLNC-env.",
+      "cta": "Təfərrüata bax",
+      "aiSoc": {
+        "title": "AI-SOC",
+        "desc": "SOC komandaları üçün AI köməkçiləri ilə idarə olunan aşkarlama və cavab.",
+        "badge": "Abunə"
+      },
+      "slncEnv": {
+        "title": "SLNC-env",
+        "desc": "Kodu, göstərişləri və build-ləri on-prem saxlayan qapalı inkişaf buludu.",
+        "badge": "Abunə"
+      }
+    },
+    "services": {
+      "title": "Fərdi inkişaf xidmətləri",
+      "subtitle": "AI agentlər, inteqrasiyalar və ilk gündən təhlükəsizliklə tam dövr proqram çatdırılması.",
+      "cta": "Xidmətlərə bax",
+      "cards": {
+        "agents": "Kompensasiya çərçivələri, RAG və təhlükəsiz əlaqələrlə istehsalat səviyyəli AI agentlər.",
+        "integrations": "Stack, IAM və məlumat idarəetməsi ilə vendor-neyral inteqrasiyalar.",
+        "delivery": "Etibarlılıq SLO-ları, müşahidəolunma və təhlükəsizlik baxışları ilə tam dövr çatdırılma."
+      },
+      "cardsTitle": {
+        "agents": "Agentlər",
+        "integrations": "İnteqrasiyalar",
+        "delivery": "Çatdırılma"
+      }
+    },
+    "contact": {
+      "title": "AI-SOC və SLNC-env-i birləşdirməyə hazırsınız?",
+      "subtitle": "Təhlükəsizlik və çatdırılma məqsədlərinizi deyin — uyğun sistemi və xidmətləri seçək.",
+      "cta": "Demo sifariş et",
+      "ctaSecondary": "Xidmətlər komandası ilə danış"
     }
   }
 }

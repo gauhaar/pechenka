@@ -1,16 +1,35 @@
 {
   "languageSelector": {
-    "triggerLabel": "Select language",
-    "menuLabel": "Choose language"
+    "triggerLabel": "Vyberte jazyk",
+    "menuLabel": "Zvoľte jazyk",
+    "searchLabel": "Hľadať jazyky",
+    "searchPlaceholder": "Hľadať podľa názvu alebo písma",
+    "searchResults": "Výsledky hľadania",
+    "noMatches": "Žiadne jazyky nezodpovedajú vášmu vyhľadávaniu.",
+    "popular": "Najpopulárnejšie",
+    "allLanguages": "Všetky jazyky"
   },
   "header": {
     "nav": {
-      "main": "Main",
+      "main": "Hlavné",
       "mail": "Mail",
-      "affiliate": "Affiliate program",
-      "instructions": "Instructions"
+      "affiliate": "Partnerský program",
+      "instructions": "Inštrukcie",
+      "product": "AI-SOC",
+      "secureDevelopment": "SLNC-env",
+      "developerServices": "Developerské služby",
+      "home": "Domov",
+      "systems": "Systémy",
+      "systemsAiSoc": "AI-SOC",
+      "systemsSlncEnv": "SLNC-env",
+      "services": "Služby"
     },
-    "login": "Login"
+    "login": "Prihlásiť",
+    "cta": {
+      "contact": "Kontakt",
+      "download": "Stiahnuť",
+      "requestDemo": "Požiadať o demo"
+    }
   },
   "affiliate": {
     "hero": {
@@ -71,7 +90,7 @@
         "description": "Odmeny sa zobrazia na partnerskom zostatku do minúty po transakcii — bez manuálneho schvaľovania."
       },
       "withdrawal": {
-        "title": "Withdrawals processed in 2 business days",
+        "title": "Výplaty spracujeme do 2 pracovných dní",
         "description": "Žiadosti o výplatu sa kontrolujú automaticky a dorazia na váš bankový účet do dvoch pracovných dní."
       },
       "sample": {
@@ -96,377 +115,837 @@
         "question": "Kedy uvidím štatistiky odporúčaní?",
         "answer": "Hneď ako sa používateľ zaregistruje pomocou vášho promo kódu alebo odkazu, jeho e-mail a odmena sa zobrazia v paneli."
       }
+    },
+    "termsAff": {
+      "label": "Partnerský program",
+      "title": "Partnerské podmienky používania",
+      "notice": "Tento dokument je dostupný len v angličtine",
+      "intro": "Tieto podmienky popisujú, ako sa vyplácajú odmeny partnerom v programe Silence AI.",
+      "meta": {
+        "effective": "Dátum účinnosti: 10. november 2024",
+        "lastUpdated": "Posledná aktualizácia: 10. november 2024"
+      },
+      "sections": {
+        "overview": {
+          "title": "1. Prehľad programu",
+          "body1": "1.1 Rozsah dohody: Tieto partnerské podmienky (\"Podmienky\") upravujú vašu účasť v partnerskom programe Silence AI, ktorý prevádzkuje Silence AI LLC (\"Silence AI\", \"my\", \"nás\" alebo \"náš\"). Podmienky sa vzťahujú na vás — fyzickú alebo právnickú osobu vstupujúcu ako partnera, prípadne na vášho zamestnávateľa či organizáciu, ak konáte v ich mene.",
+          "body2": "1.2 Zhrnutie programu: Oprávnení partneri získavajú provízne odmeny, keď pozvaní zákazníci nakúpia alebo dobijú produkt AI-SOC 1. Účasť vyžaduje dodržiavanie všeobecných podmienok Silence AI."
+        },
+        "eligibility": {
+          "title": "2. Podmienky spôsobilosti",
+          "item1": "Musíte udržiavať aktívny partnerský účet Silence AI s presnými údajmi o firme a platbách.",
+          "item2": "Odporúčania sa musia zaregistrovať cez váš odkaz alebo promo kód.",
+          "item3": "Účty, ktoré sú podvodné, samoodporúčané alebo porušujú zákon, nemajú nárok na odmenu."
+        },
+        "commission": {
+          "title": "3. Štruktúra provízií",
+          "body1": "Zarábate 10 % z každého dobitia účtu, ktorý sa zaregistroval cez váš odkaz.",
+          "body2": "Provízia sa počíta z čistej sumy po odpočítaní poplatkov za platbu."
+        },
+        "rewardPosting": {
+          "title": "4. Pripisovanie odmien",
+          "body1": "Odmeny sa pripíšu na partnerský zostatok do jednej minúty po úspešnej transakcii. Manuálne schvaľovanie sa nevyžaduje.",
+          "body2": "Upozornenia sa zobrazujú v paneli s identifikátorom zákazníka a sumou dobitia."
+        },
+        "withdrawals": {
+          "title": "5. Výplaty",
+          "body1": "Žiadosti o výplatu sa spracujú do dvoch pracovných dní a vyplatia podľa uvedeného spôsobu.",
+          "body2": "Minimálne prahy a podporované siete výplat sú uvedené v partnerskom paneli."
+        },
+        "productScope": {
+          "title": "6. Rozsah produktov",
+          "body1": "Odmeny platia len pre produkt AI-SOC 1. Ďalšie služby Silence AI sú vylúčené, pokiaľ nie je písomne uvedené inak.",
+          "body2": "Ak pribudnú ďalšie produkty, Silence AI zverejní aktualizovaný zoznam v týchto podmienkach."
+        },
+        "compliance": {
+          "title": "7. Správanie a compliance",
+          "item1": "Partneri musia presne reprezentovať Silence AI a neuvádzať zavádzajúce tvrdenia o funkciách alebo cenách.",
+          "item2": "Marketing musí dodržiavať protispamové, privacy a reklamné regulácie.",
+          "item3": "Silence AI môže pozastaviť alebo ukončiť účty, ktoré tieto povinnosti porušia alebo poškodzujú značku."
+        },
+        "changes": {
+          "title": "8. Zmeny a kontakt",
+          "body1": "Silence AI môže aktualizovať partnerské podmienky pri zmene programu alebo legislatívy. Aktualizácie platia od zverejnenia na tejto stránke.",
+          "body2": "Otázky k partnerskému programu: info@silenceai.net"
+        }
+      }
     }
   },
   "hero": {
-    "headline": "AI-SOC 1: Cybersecurity is neither expensive nor complicated anymore",
-    "subheading": "The all in one, AI-based cybersecurity system that combines:",
+    "headline": "AI-SOC 1: kyberbezpečnosť už nie je drahá ani komplikovaná",
+    "subheading": "Jeden AI systém kyberbezpečnosti, ktorý spája:",
     "playgroundHeading": "60-sekundová prehliadka",
     "bullets": {
-      "web": "Real time web attack protection",
-      "email": "Email attacks protection",
-      "vulnerability": "Vulnerability-finder"
+      "web": "Ochrana pred web útokmi v reálnom čase",
+      "email": "Ochrana pred email útokmi",
+      "vulnerability": "Hľadač zraniteľností"
     },
     "buttons": {
-      "connect": "Connect in 4 minutes",
-      "tour": "Watch 90-sec Tour"
+      "connect": "Pripojenie za 4 minúty",
+      "tour": "Pozrieť 90 s prehliadku"
     },
     "tooltips": {
       "web": {
-        "title": "Web Attack Protection",
-        "content": "System can protect against ALL types of web attacks, such as DDoS, SQLi, and others, except business logic vulnerabilities"
+        "title": "Ochrana pred web útokmi",
+        "content": "Systém chráni pred VŠETKÝMI typmi web útokov (DDoS, SQLi a ďalšie) okrem zraniteľností obchodnej logiky."
       },
       "email": {
-        "title": "Email Attack Protection",
-        "content": "System can protect against ALL types of email attacks, such as phishing, malware attachment, dangerous links, etc."
+        "title": "Ochrana pred email útokmi",
+        "content": "Systém chráni pred VŠETKÝMI typmi email útokov: phishing, škodlivé prílohy, nebezpečné odkazy a pod."
       },
       "vulnerability": {
-        "title": "Vulnerability Finder",
-        "content": "System can find the vulnerabilities within the code of the application and by dynamically interacting with your website/API, including the way of finding vulnerabilities through the intelligence system"
+        "title": "Hľadač zraniteľností",
+        "content": "Systém nájde zraniteľnosti v kóde aj pri dynamickej interakcii s webom/API vrátane vyhľadávania cez inteligentný engine."
       }
     }
   },
   "playground": {
     "options": {
-      "globeShield": "Web Security & Traffic Management",
-      "emailSecurity": "Email Security"
+      "globeShield": "Web bezpečnosť a správa trafficu",
+      "emailSecurity": "Email bezpečnosť"
     }
   },
   "cookie": {
-    "title": "Technical Cookies Notice",
-    "description": "This website uses only first-party technical cookies that are set by us to remember your language preferences and ensure the cookie notice is not shown again on your next visit. No tracking or third-party cookies are used.",
-    "more": "Learn more in our",
-    "link": "Cookie Policy",
+    "title": "Oznámenie o technických cookies",
+    "description": "Tento web používa iba technické cookies prvej strany na zapamätanie preferencií jazyka a aby sa upozornenie nezobrazovalo znova. Nepoužívame žiadne tracking ani cookies tretích strán.",
+    "more": "Viac v našej",
+    "link": "Cookie politike",
     "ok": "OK"
   },
   "pricing": {
-    "title": "Pricing",
+    "title": "Cenník",
     "tooltips": {
       "cmcGlobal": {
-        "title": "CMC with Global Traffic Monitoring",
-        "content": "CMC (Centralized Management Console) integrates seamlessly with other security systems and is available under the same domain and interface as Global Shield and Security Tester allows you to manage network security at scale. From here, you can blacklist countries, close ports, and perform other operations"
+        "title": "CMC s globálnym monitoringom trafficu",
+        "content": "Centralizovaná konzola (CMC) je prepojená s ďalšími bezpečnostnými systémami a používa rovnakú doménu a rozhranie ako Global Shield a Security Tester. Odtiaľto môžete blokovať krajiny, zatvárať porty a spravovať bezpečnosť vo veľkom."
       },
       "countryBlacklisting": {
-        "title": "Country Blacklisting",
-        "content": "Block all traffic originating from a specific country"
+        "title": "Blokovanie podľa krajiny",
+        "content": "Zablokujte celý traffic prichádzajúci z určitej krajiny."
       },
       "portManagement": {
-        "title": "Port Management",
-        "content": "Close unused ports to reduce attack surface. For example, disabling port 22 when SSH access is not needed. To minimize the risk of system getting compromised"
+        "title": "Správa portov",
+        "content": "Zatvárajte nepoužívané porty, aby ste znížili plochu útoku (napr. vypnite port 22, ak SSH netreba)."
       },
       "cmcEmail": {
-        "title": "CMC with Advanced Email Flow Visualizer",
-        "content": "CMC (Centralized Management Console) integrates seamlessly with other security systems and is available under the same domain and interface as Global Shield and Security Tester. Within this console, you can monitor email flows and review emails for all corporate users you've added"
+        "title": "CMC s pokročilou vizualizáciou e-mailov",
+        "content": "CMC je integrovaná s ostatnými bezpečnostnými systémami a umožňuje sledovať emailové toky a prehliadať správy všetkých pridaných používateľov."
       },
       "dynamicVulnerability": {
-        "title": "Dynamic Vulnerability Finder",
-        "content": "Detects vulnerabilities by interacting with your website, including the way of finding vulnerabilities through the intelligence system"
+        "title": "Dynamické hľadanie zraniteľností",
+        "content": "Odhaľuje zraniteľnosti pri interakcii s vaším webom, vrátane vyhľadávania cez inteligentný systém."
       },
       "codeAnalyzer": {
-        "title": "Code Analyzer",
-        "content": "Identifies security issues directly in your codebase through a VS Code plugin, helping you fix problems before deployment"
+        "title": "Analýza kódu",
+        "content": "Identifikuje bezpečnostné problémy priamo v kóde cez plugin VS Code a pomáha ich opraviť pred nasadením."
       },
       "intelligenceReport": {
-        "title": "Intelligence Report",
-        "content": "Generates detailed insights about your target, including open ports, running services, subdomains, and other sensitive information that may require action"
+        "title": "Správa spravodajstva",
+        "content": "Prináša detaily o cieľoch: otvorené porty, služby, subdomény a ďalšie citlivé informácie, ktoré si vyžadujú zásah."
       },
       "fullVulnerability": {
-        "title": "FULL Vulnerability Check",
-        "content": "A FULL vulnerability check includes both a dynamic vulnerability scan and a codebase vulnerability scan"
+        "title": "Kompletná kontrola zraniteľností",
+        "content": "Kompletná kontrola zahŕňa dynamický scan aj analýzu kódu."
       }
     },
     "plans": {
       "globalShield": {
-        "title": "Web Security & Traffic Management",
+        "title": "Web bezpečnosť a správa trafficu",
         "price": "$0.06/GB",
-        "description": "No limits\nNo additional fees",
-        "button": "Secure web-app and APIs",
+        "description": "Bez limitov\nBez ďalších poplatkov",
+        "button": "Zaistiť web a API",
         "features": {
-          "webProtection": "Protection against all types of web attacks, except business logic vulnerability exploitation",
-          "ddosProtection": "Real-time DDoS protection",
-          "cmc": "CMC with Global traffic monitoring system",
-          "country": "Country blacklisting feature",
-          "port": "Closing ports feature"
+          "webProtection": "Ochrana pred všetkými web útokmi okrem logiky biznisu",
+          "ddosProtection": "Ochrana proti DDoS v reálnom čase",
+          "cmc": "CMC s globálnym monitoringom trafficu",
+          "country": "Blokovanie podľa krajín",
+          "port": "Zatváranie portov"
         }
       },
       "emailProtector": {
-        "title": "Email Security",
-        "price": "$10/month/account",
-        "description": "Up to 10 emails per day\nAdditional emails: $0.035 each email",
-        "button": "Secure Email",
+        "title": "Email bezpečnosť",
+        "price": "$10/mesiac/účet",
+        "description": "Do 10 emailov denne\nĎalšie: $0.035 za email",
+        "button": "Chrániť email",
         "features": {
-          "cmcEmail": "CMC with most advanced email flow visualizer",
-          "visibility": "Complete visibility of sent and received emails of all the email accounts, in CMC, with automatic threat categorization",
-          "webClient": "Secure WebMail-client",
-          "phishing": "Phishing protection",
-          "malware": "Malware attachment scanning",
-          "links": "Dangerous link detection",
-          "spam": "Spam filtering",
-          "fakeSender": "Fake Sender Protection"
+          "cmcEmail": "CMC s pokročilým vizualizátorom email tokov",
+          "visibility": "Úplná viditeľnosť odoslaných aj prijatých správ všetkých účtov v CMC s automatickou kategorizáciou hrozieb",
+          "webClient": "Zabezpečený web klient",
+          "phishing": "Ochrana proti phishingu",
+          "malware": "Kontrola škodlivých príloh",
+          "links": "Detekcia nebezpečných odkazov",
+          "spam": "Filtrovanie spamu",
+          "fakeSender": "Ochrana proti falšovaným odosielateľom"
         }
       },
       "securityTester": {
-        "title": "Vulnerability Finder",
-        "price": "$25/month",
-        "description": "Up to 50 FULL vulnerability checks per month\nAdditional FULL checks: $0.5 each",
-        "button": "Start Testing",
+        "title": "Hľadač zraniteľností",
+        "price": "$25/mesiac",
+        "description": "Do 50 KOMPLETNÝCH kontrol mesačne\nĎalšie: $0.5 za kus",
+        "button": "Spustiť testovanie",
         "features": {
-          "dynamic": "Dynamic vulnerability finder",
-          "codeAnalyzer": "Code analyzer",
-          "reports": "Easily understandable security assessment reports",
-          "intelligence": "Intelligence Report"
+          "dynamic": "Dynamické hľadanie zraniteľností",
+          "codeAnalyzer": "Analýza kódu",
+          "reports": "Zrozumiteľné bezpečnostné reporty",
+          "intelligence": "Správa spravodajstva"
+        }
+      },
+      "basic": {
+        "name": "Základný",
+        "features": {
+          "fix": "Opravy kritických chýb (SLA 48h)",
+          "updates": "Mesačné aktualizácie",
+          "audit": "Štvrťročné bezpečnostné audity",
+          "manager": "Vyhradený manažér"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Najobľúbenejšie",
+        "features": {
+          "fix": "Opravy kritických chýb (SLA 24h)",
+          "updates": "10h mesačné aktualizácie",
+          "audit": "Mesačné bezpečnostné audity",
+          "manager": "Vyhradený manažér"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "badge": "Najlepšia hodnota",
+        "features": {
+          "fix": "Opravy kritických chýb (SLA 4h)",
+          "updates": "Neobmedzené aktualizácie + Roadmapa",
+          "audit": "Týždenné audity + Zálohy",
+          "manager": "Vyhradený manažér"
         }
       }
+    },
+    "subtitle": "Plány na mobil ako prvé, ktoré rastú s vaším produktom.",
+    "percentMaintenance": "{percent}% ročná údržba",
+    "planEstimate": "${value}",
+    "perYear": "za rok (odh.)",
+    "calculator": {
+      "title": "Kalkulačka nákladov projektu",
+      "subtitle": "Posuňte pre zobrazenie ročnej údržby",
+      "projectCost": "Cena projektu:",
+      "projectValue": "${value}"
     }
   },
   "solution": {
-    "sectionTitle": "Our Solution",
-    "sectionSubtitle": "Ready in 4 minutes and usable by any IT professional—no cybersecurity expertise required. We offer advanced visualization and affordability.",
+    "sectionTitle": "Naše riešenie",
+    "sectionSubtitle": "Pripravené za 4 minúty a použiteľné pre akéhokoľvek IT profesionála — bez potreby špecialistu na kyberbezpečnosť. Prinášame pokročilú vizualizáciu a dostupnú cenu.",
     "cards": {
       "globalShield": {
-        "title": "Global Shield - CIA-Level Traffic Monitoring",
-        "description": "Our interactive 3D globe provides a stunning visualization of your web traffic, showing requests per second, active users, and traffic volume in bytes.",
+        "title": "Global Shield - monitorovanie trafficu na úrovni CIA",
+        "description": "Interaktívny 3D glóbus ukazuje vizualizáciu webového trafficu: požiadavky za sekundu, aktívnych používateľov a objem v bytoch.",
         "bullets": {
-          "one": "Easy setup: just specify your IP and domain.",
-          "two": "Receive an agent IP to add to your DNS.",
-          "three": "Port closing for zero exposure."
+          "one": "Jednoduché nastavenie: stačí zadať IP a doménu.",
+          "two": "Dostanete IP agenta, ktorú pridáte do DNS.",
+          "three": "Zatváranie portov na nulovú expozíciu."
         }
       },
       "emailProtector": {
-        "title": "Email Protector - World's First AI Email Protection",
-        "description": "The world's first AI-based email protection system. Our vector view makes it easy to track email flow over time and identify threats.",
+        "title": "Email Protector - prvá AI ochrana emailov",
+        "description": "Prvá AI ochrana emailov na svete. Vektorové zobrazenie uľahčuje sledovať tok emailov v čase a zachytiť hrozby.",
         "bullets": {
-          "one": "Detects spoofing, spam, phishing, and malware.",
-          "two": "Admin can add email accounts for protection.",
-          "three": "Most advanced commercial mail flow visualizer."
+          "one": "Deteguje spoofing, spam, phishing a malware.",
+          "two": "Admin môže pridávať email účty na ochranu.",
+          "three": "Najpokročilejší vizualizátor mail tokov na trhu."
         }
       },
       "securityTester": {
-        "title": "Security Tester - Next-Gen Vulnerability Testing",
-        "description": "Our system provides a One-Time-Token (OTT) for full-coverage security checks. Simply connect via our browser or VSCode extension.",
+        "title": "Security Tester - generácia testovania zraniteľností",
+        "description": "Systém poskytuje One-Time-Token (OTT) na úplné bezpečnostné kontroly. Pripojte sa cez prehliadač alebo VSCode rozšírenie.",
         "bullets": {
-          "one": "Specify security scope and target in the CMC.",
-          "two": "Paste the OTT and start the security check.",
-          "three": "Intelligence-driven risk insights."
+          "one": "V CMC zadáte scope a cieľ kontroly.",
+          "two": "Vložíte OTT a spustíte bezpečnostnú kontrolu.",
+          "three": "Insighty riadené spravodajstvom."
         }
       }
     },
     "cmc": {
-      "title": "Centralized Management Console (CMC)",
-      "description": "All three components are managed through a unified console that provides centralized visualization, easy configuration and monitoring, and comprehensive security reporting."
+      "title": "Centralizovaná správcovská konzola (CMC)",
+      "description": "Všetky tri komponenty sa spravujú v jednej konzole s centralizovanou vizualizáciou, jednoduchou konfiguráciou a monitoringom a kompletným bezpečnostným reportingom."
     }
   },
   "insights": {
     "items": [
       {
-        "title": "39 seconds",
-        "description": "There is a hacker attack every 39 seconds"
+        "title": "39 sekúnd",
+        "description": "Každých 39 sekúnd prebehne hackerský útok"
       },
       {
-        "title": "20M DDoS attacks",
-        "description": "20.5M DDoS attacks in Q1 2025 alone"
+        "title": "20M DDoS útokov",
+        "description": "20,5 mil. DDoS útokov len v Q1 2025"
       },
       {
-        "title": "Every day",
-        "description": "30 000 websites get hacked every single day"
+        "title": "Každý deň",
+        "description": "30 000 webov je napadnutých každý deň"
       }
     ]
   },
   "floatingText": {
-    "headline": "Discover how hackers think",
-    "description": "Follow us for daily research on real attack methods and cyber threats"
+    "headline": "Zistite, ako rozmýšľajú hackeri",
+    "description": "Sledujte nás pre denné výskumy reálnych útokov a kyber hrozieb"
   },
   "modal": {
-    "title": "Under active development",
-    "body": "The system is expected to be launched on October 10"
+    "title": "Aktívne vo vývoji",
+    "body": "Spustenie systému očakávame 10. októbra"
   },
   "lamp": {
     "title": "Reality of Cyberattacks"
   },
   "stickySolution": {
     "webSecurity": {
-      "title": "Web security system: Website/API can be connected in 2 minutes",
-      "description": "Protection against web attacks such as DDoS, SQLi, etc. There is also ability to close ports, it is very good practice to close port 22, when it is not being used"
+      "title": "Web bezpečnosť: web/API pripojíte za 2 minúty",
+      "description": "Ochrana pred web útokmi (DDoS, SQLi a pod.). Možnosť zatvárať porty — je dobré zatvoriť port 22, ak sa nepoužíva."
     },
     "ciaMonitoring": {
-      "title": "CIA-Level Traffic Monitoring",
-      "description": "Our interactive 3D globe shows traffic volume by requests, users, and volume. The ability to see the history in the change of the number of users"
+      "title": "Monitorovanie trafficu na úrovni CIA",
+      "description": "Interaktívny 3D glóbus ukazuje objem podľa požiadaviek, používateľov a dát, aj históriu zmien."
     },
     "userGrowth": {
-      "title": "Useful insights on the increase in the number of users",
-      "description": "The ability to see the history of changes of the number of users"
+      "title": "Užitočné insighty k rastu používateľov",
+      "description": "Možnosť vidieť históriu zmien počtu používateľov."
     },
     "aiEmailProtection": {
-      "title": "World's First AI-based Email Protection system: Email network can be connected in 2 minutes",
-      "description": "For the admins, there is the CMC that shows complete visibility into all sent and received emails for accounts added by the administrator, with automatic threat categorization like spoofing, spam, phishing, dangerous link, and malware."
+      "title": "Prvá AI ochrana emailov: sieť pripojíte za 2 minúty",
+      "description": "CMC dáva adminom plnú viditeľnosť do všetkých odoslaných a prijatých emailov pridaných účtov s automatickou kategorizáciou hrozieb (spoofing, spam, phishing, nebezpečné odkazy, malware)."
     },
     "emailVisualization": {
-      "title": "Visualization of the sent and received emails",
-      "description": "CMC with the most advanced, commercially available email flow visualizer"
+      "title": "Vizualizácia odoslaných a prijatých emailov",
+      "description": "CMC s najpokročilejším komerčne dostupným vizualizátorom email tokov."
     },
     "secureWebmail": {
-      "title": "Secure Webmail Client",
-      "description": "For email accounts added by admin, there is the most secure webmail client. Detects and categorizes threats like spoofing, spam, phishing, and malware."
+      "title": "Bezpečný webmail klient",
+      "description": "Pre účty pridané adminom je k dispozícii najbezpečnejší webmail klient, ktorý deteguje a kategorizuje hrozby ako spoofing, spam, phishing a malware."
     }
   },
   "footer": {
-    "contactLabel": "Contact:",
+    "contactLabel": "Kontakt:",
     "contactValue": "info@silenceai.net",
-    "addressLabel": "Address:",
-    "addressValue": "Media City Free Zone, Al Messaned, Sharjah, UAE",
+    "addressLabel": "Adresa:",
+    "addressValue": "Media City Free Zone, Al Messaned, Sharjah, SAE",
     "links": {
-      "termsUse": "Terms of Use",
-      "termsService": "Terms of Service",
-      "privacy": "Privacy Policy",
-      "cookies": "Cookies Policy"
+      "termsUse": "Podmienky používania",
+      "termsService": "Obchodné podmienky",
+      "privacy": "Zásady ochrany súkromia",
+      "cookies": "Zásady cookies",
+      "affiliateTerms": "Partnerské podmienky"
     },
-    "copyright": "© {year} Silence AI. All rights reserved."
+    "copyright": "© {year} Silence AI. Všetky práva vyhradené."
   },
   "secureDevelopment": {
     "hero": {
-      "badge": "SLNC Code · Secure Development Environment",
-      "title": "Build systems with secure and private code",
-      "description": "Private development environment for enterprises, where code never leaves your corporate network. Meanwhile offering the latest AI-powered technology",
-      "requestSystem": "Request System"
+      "badge": "SLNC-env · Bezpečné vývojové prostredie",
+      "title": "Budujte systémy s bezpečným a súkromným kódom",
+      "description": "Súkromné vývojové prostredie pre podniky, kde kód nikdy neopustí vašu sieť — a pritom máte najnovšiu AI technológiu.",
+      "requestSystem": "Požiadať o systém"
     },
     "components": {
-      "title": "Everything stays inside",
-      "subtitle": "Three components, one sealed loop",
-      "description": "Code, prompts, and builds never leave your network. SLNC Code keeps AI help, reviews, and delivery private for cloud providers, government teams, and industrial plants.",
+      "title": "Všetko ostáva vo vnútri",
+      "subtitle": "Tri komponenty, jeden uzavretý okruh",
+      "description": "Kód, prompty a buildy neopúšťajú vašu sieť. SLNC-env drží AI pomoc, review aj delivery súkromne pre cloud providerov, vládne tímy a priemyselné závody.",
       "sithub": {
         "title": "Sithub Server",
-        "tag": "Local version control"
+        "tag": "Lokálna správa verzií"
       },
       "llm": {
         "title": "LLM Server (Qwen-Code)",
-        "tag": "On-prem intelligence"
+        "tag": "On-prem inteligencia"
       },
       "ide": {
-        "title": "IDE with Local Copilot",
-        "tag": "Cursor-class experience"
+        "title": "IDE s lokálnym Copilotom",
+        "tag": "Zážitok ako Cursor"
       },
-      "staysOnPrem": "Stays on-prem. No egress."
+      "staysOnPrem": "Zostáva on-prem. Bez egressu."
     },
     "timeline": {
-      "title": "Why isolated, checked code matters",
-      "subtitle": "Recent wake-up calls",
+      "title": "Prečo záleží na izolovanom a kontrolovanom kóde",
+      "subtitle": "Čerstvé budíčky",
       "incident": {
-        "title": "Critical incident — leaked code",
-        "heading": "DeepSeek breach put source and prompts on the open internet",
-        "description": "Keep inference and scanning on-prem. No external model egress. Audit trails by default.",
-        "seePlan": "See containment plan"
+        "title": "Kritický incident — uniknutý kód",
+        "heading": "Únik DeepSeek dostal zdrojáky a prompty na internet",
+        "description": "Držte inferenciu aj skenovanie on-prem. Bez odchodu modelu von. Audit traily defaultne.",
+        "seePlan": "Pozrieť plán mitigácie"
       },
       "stuxnet": {
         "year": "2010",
         "attack": "Stuxnet",
-        "target": "Natanz enrichment facility",
-        "impact": "Destroyed ~1,000 centrifuges",
-        "severity": "Critical"
+        "target": "Zariadenie na obohacovanie Natanz",
+        "impact": "Zničených ~1 000 centrifúg",
+        "severity": "Kritické"
       },
       "blackEnergy": {
         "year": "2015",
         "attack": "BlackEnergy",
-        "target": "Ukraine power grid",
-        "impact": "230k customers lost power",
-        "severity": "High"
+        "target": "Ukrajinská energetická sieť",
+        "impact": "230k zákazníkov bez elektriny",
+        "severity": "Vysoké"
       },
       "triton": {
         "year": "2017",
         "attack": "TRITON",
-        "target": "Saudi petrochemical plant",
-        "impact": "Safety systems disabled",
-        "severity": "Critical"
+        "target": "Saudská petrochemická továreň",
+        "impact": "Vypnuté bezpečnostné systémy",
+        "severity": "Kritické"
       },
       "colonialPipeline": {
         "year": "2021",
         "attack": "Colonial Pipeline",
-        "target": "US fuel pipeline",
-        "impact": "6-day fuel paralysis",
-        "severity": "High"
+        "target": "Americký palivový ropovod",
+        "impact": "6 dní paralýzy dodávok paliva",
+        "severity": "Vysokéké"
       },
       "pdvsa": {
         "year": "2025",
         "attack": "PDVSA",
-        "target": "Venezuela refining",
-        "impact": "Refinery operations disrupted",
-        "severity": "Medium"
+        "target": "Venezuelské rafinérie",
+        "impact": "Narušená prevádzka rafinérií",
+        "severity": "Stredné"
       }
     },
     "analyzer": {
-      "title": "Analyzer that beats CodeQL",
-      "subtitle": "Live assurance",
+      "title": "Analyzátor, ktorý poráža CodeQL",
+      "subtitle": "Živá istota",
       "features": {
         "quality": {
-          "title": "Automatic code quality",
-          "description": "Structure, style, and best-practice checks tuned for safety-critical code"
+          "title": "Automatická kvalita kódu",
+          "description": "Kontrola štruktúry, štýlu a best practices pre safety-critical kód"
         },
         "vulnerability": {
-          "title": "Vulnerability sweeps",
-          "description": "SQLi, XSS, auth bypass, and insecure dependencies surfaced instantly"
+          "title": "Prejazdy zraniteľností",
+          "description": "SQLi, XSS, obídenie auth a nezabezpečené závislosti odhalené okamžite"
         },
         "secrets": {
-          "title": "Secrets guard",
-          "description": "Keys, tokens, and credentials blocked at commit time"
+          "title": "Strážca secretov",
+          "description": "Kľúče, tokeny a prístupy blokované už pri commite"
         },
         "config": {
-          "title": "Config hardening",
-          "description": "Docker/K8s, IAM, and network policies scanned for privilege creep"
+          "title": "Hardening konfigurácie",
+          "description": "Docker/K8s, IAM a sieťové politiky skenované proti rozliezaniu práv"
         }
       },
       "beyondCodeQL": {
-        "title": "Finds what static queries miss",
+        "title": "Nájde, čo statické dotazy minú",
         "subtitle": "Beyond CodeQL",
-        "description": "Finds misconfigs and vulnerable packages faster than CodeQL and offers fixes, not just alerts.",
+        "description": "Nájde misconfigy a zraniteľné balíčky rýchlejšie než CodeQL a ponúkne fixy, nie len alerty.",
         "points": {
-          "packages": "Knows package graphs and flags risky dependencies in seconds.",
-          "config": "Spots config drift and privilege creep—beyond static rules.",
-          "patches": "Each finding comes with a suggested patch and owner."
+          "packages": "Pozná grafy balíkov a označí rizikové závislosti za sekundy.",
+          "config": "Odhalí drift konfigurácií a rozliezanie privilégií — nad rámec statických pravidiel.",
+          "patches": "Ku každému nálezu je návrh patchu a owner."
         }
       },
       "visualizer": {
-        "title": "Code analyzer in action",
+        "title": "Analyzátor kódu v akcii",
         "subtitle": "Visualizer",
-        "description": "Crisp snapshots from recent scans, rendered beautifully inside the on-prem console.",
-        "privateWorkspace": "Private workspace only",
+        "description": "Jasné zábery z posledných scanov, krásne vykreslené v on-prem konzole.",
+        "privateWorkspace": "Iba súkromný workspace",
         "shots": {
           "scanOverview": {
-            "title": "Scan overview",
-            "description": "See issues grouped by severity before code leaves your network."
+            "title": "Prehľad scanu",
+            "description": "Uvidíte problémy zoskupené podľa závažnosti ešte predtým, než kód opustí sieť."
           },
           "misconfigurations": {
-            "title": "Detection of misconfigurations",
-            "description": "Our AI-powered code analyzer even finds misconfigurations within the code."
+            "title": "Detekcia misconfigov",
+            "description": "Náš AI analyzátor kódu nájde misconfigy aj priamo v kóde."
           },
           "inlineDiffs": {
-            "title": "Inline diffs",
-            "description": "Review suggested patches inline with security context."
+            "title": "Inline diffy",
+            "description": "Recenzujte navrhované patche priamo v kontexte bezpečnosti."
           }
         }
       }
     },
     "industries": {
-      "title": "Built for regulated, high-impact sectors",
-      "subtitle": "Where we deploy",
+      "title": "Postavené pre regulované, kritické sektory",
+      "subtitle": "Kde nasadzujeme",
       "oilGas": {
-        "title": "Oil & Gas",
-        "description": "Drilling, refining, pipeline control"
+        "title": "Ropa a plyn",
+        "description": "Ťažba, rafinácia, riadenie potrubí"
       },
       "energy": {
-        "title": "Energy",
-        "description": "Grid, distribution, and EMS"
+        "title": "Energetika",
+        "description": "Sieť, distribúcia a EMS"
       },
       "nuclear": {
-        "title": "Nuclear",
-        "description": "Reactor controls and safety"
+        "title": "Jadrový priemysel",
+        "description": "Riadenie reaktorov a bezpečnosť"
       },
       "manufacturing": {
-        "title": "Manufacturing",
-        "description": "ICS, OT, and robotics"
+        "title": "Výroba",
+        "description": "ICS, OT a robotika"
       },
       "government": {
-        "title": "Government",
-        "description": "Ministries, defense, critical agencies"
+        "title": "Vláda",
+        "description": "Ministerstvá, obrana, kritické agentúry"
       }
+    }
+  },
+  "pricingCta": {
+    "requestSystem": "Request System"
+  },
+  "contactForm": {
+    "title": "Kontaktujte nás",
+    "success": "Ďakujeme! Správa bola odoslaná. Čoskoro sa vám ozveme.",
+    "errorRequired": "Vyplňte prosím meno, email a krátku správu.",
+    "errorSend": "Správu sa nepodarilo odoslať. Skúste to neskôr.",
+    "placeholders": {
+      "name": "Vaše meno",
+      "email": "Email",
+      "type": "Typ projektu (voliteľné)",
+      "budget": "Rozpočet (voliteľné)",
+      "message": "Povedzte nám o projekte..."
+    },
+    "submit": {
+      "idle": "Odoslať správu",
+      "loading": "Odosielam…"
+    }
+  },
+  "consulting": {
+    "title": "Konzultačný dotazník",
+    "searchPlaceholder": "Hľadať otázky...",
+    "noResults": "Nenašli sa žiadne otázky.",
+    "questions": [
+      {
+        "question": "Aká je vaša hlavná pridaná hodnota okrem konkurencieschopnej ceny?",
+        "answer": "Bezpečnosť je náš hlavný diferenciátor. Staviame vysoko zabezpečené systémy s podnikovej úrovniou bezpečnosti v celom lifecycle vývoja."
+      },
+      {
+        "question": "Ako dlho ste na trhu a aké máte referencie?",
+        "answer": "Dodali sme veľké projekty: NAK (Nur Astana Kurylys) — AI platforma na riadenie tímov, a Chic Flowers — kompletná digitálna platforma pre veľký kvetinový retail."
+      },
+      {
+        "question": "Čím sa vaše technické schopnosti a kvalita líšia od EPAM a iných konkurentov?",
+        "answer": "Naším kľúčovým rozdielom je security-first prístup k vývoju. Bezpečnosť integrujeme od začiatku projektu až po nasadenie a údržbu."
+      },
+      {
+        "question": "Ako udržiavate kvalitu pri konkurencieschopnej cene?",
+        "answer": "Ponúkame služby o 15 % pod trhovou cenou a kvalitu držíme vďaka optimalizovaným operáciám, cielenej práci s talentom a efektívnemu riadeniu projektov."
+      },
+      {
+        "question": "Aké konkrétne služby vývoja softvéru poskytujete?",
+        "answer": "End-to-end vývoj: zákazkové aplikácie, AI riešenia, vývoj kyberbezpečnostných produktov (Silence AI-SOC), integrácie systémov, migrácie do cloudu a DevOps. Ponúkame aj dedikovaný vývoj produktov a staff augmentation."
+      },
+      {
+        "question": "Na aké odvetvia a domény sa špecializujete?",
+        "answer": "Stavebníctvo, retail, fintech, kyberbezpečnosť a digitálne platformy — vrátane AI riadenia tímov, e-commerce a enterprise bezpečnostných riešení."
+      },
+      {
+        "question": "Na aké technologické stacky a platformy máte expertízu?",
+        "answer": "GO, Swift, Flutter, cloud (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript a AI/ML frameworky. Budujeme vlastné bezpečnostné nástroje ako Silence AI-SOC."
+      },
+      {
+        "question": "Ponúkate end-to-end vývoj produktu aj čiastkové služby?",
+        "answer": "Oboje: MVP, full-cycle delivery, staff augmentation aj kyberbezpečnostnú integráciu."
+      },
+      {
+        "question": "Viete poskytnúť staff augmentation aj dedikované tímy?",
+        "answer": "Áno, máme flexibilné modely: staff augmentation, dedikované tímy aj projektové outsourcingy."
+      },
+      {
+        "question": "Ponúkate konzultácie, architektúru a advisory nad rámec vývoja?",
+        "answer": "Áno: bezpečnostné konzultácie, návrh architektúry, technologické poradenstvo a compliance posúdenia využitím Silence AI-SOC."
+      }
+    ]
+  },
+  "requestDemoModal": {
+    "title": "Požiadať o systém",
+    "name": "Meno",
+    "email": "Firemný email",
+    "company": "Názov firmy",
+    "placeholders": {
+      "name": "Ján Novák",
+      "email": "jan@firma.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Odoslať žiadosť",
+    "successTitle": "Žiadosť odoslaná!",
+    "successBody": "Ďakujeme za záujem. Čoskoro sa ozveme.",
+    "close": "Zatvoriť"
+  },
+  "requestSystemModal": {
+    "title": "Požiadať o systém",
+    "name": "Meno",
+    "email": "Firemný email",
+    "company": "Názov firmy",
+    "placeholders": {
+      "name": "Ján Novák",
+      "email": "jan@firma.com",
+      "company": "Acme Corp"
+    },
+    "submit": "Stiahnuť",
+    "successTitle": "Žiadosť odoslaná!",
+    "successBody": "Ďakujeme. Pokyny na stiahnutie systému pošleme na email.",
+    "close": "Zatvoriť"
+  },
+  "policySidebar": {
+    "tableOfContents": "Obsah"
+  },
+  "notFound": {
+    "title": "Stránka nenájdená",
+    "description": "Hľadali sme všade, ale túto stránku sme nenašli.",
+    "cta": "Späť na domovskú stránku"
+  },
+  "heroSection": {
+    "badge": "Produkčná AI a softvér",
+    "title": "Zákazkový vývoj AI a softvéru",
+    "description": "Budujeme produkčných AI agentov a zákazkový softvér.",
+    "country": "Kazachstan",
+    "market": "globálny trh",
+    "startProject": "Začať projekt",
+    "liveDemo": "Živé demo — AI agent",
+    "live": "Naživo",
+    "aiAgent": "AI Agent v2.1",
+    "processing": "Spracovanie požiadaviek...",
+    "active": "Aktívny",
+    "userMessage": "Analyzuj trendy zákazníckych dát",
+    "aiResponse": "Analyzujem",
+    "tasks": {
+      "dataCollection": "Zber dát",
+      "aiAnalysis": "AI analýza",
+      "reportGeneration": "Generovanie reportov"
+    },
+    "stats": {
+      "tasks": "Úlohy",
+      "success": "Úspech",
+      "speed": "Rýchlosť"
+    }
+  },
+  "whyChooseUs": {
+    "badge": "Inžinierstvo zamerané na výsledky",
+    "title": "Prečo si vybrať nás",
+    "subtitle": "Dôverujú nám tímy z",
+    "subtitleHighlight": "miliardových organizácií",
+    "subtitleTail": "— a dodávame s rýchlosťou startupu.",
+    "learnMore": "Zistiť viac",
+    "logos": {
+      "kmg": "KazMunayGas",
+      "nak": "Nur Astana Kurylys"
+    },
+    "features": {
+      "fast": {
+        "title": "Rýchle dodanie s podnikovou kvalitou",
+        "description": "Rýchle, iteratívne dodacie cykly, ktoré spĺňajú podnikové štandardy spoľahlivosti a zhody.",
+        "pill": "Rýchlosť + Kvalita"
+      },
+      "ai": {
+        "title": "AI-first produktové inžinierstvo",
+        "description": "Od prototypov po produkčných AI agentov — navrhujeme, trénujeme a nasadzujeme modely, ktoré riešia skutočné obchodné problémy.",
+        "pill": "AI inžinierstvo"
+      },
+      "local": {
+        "title": "Miestna expertíza, globálny dosah",
+        "description": "Hlboké znalosti kazašského trhu a predpisov kombinované s medzinárodnými osvedčenými postupmi.",
+        "pill": "KZ + Globálne"
+      }
+    }
+  },
+  "servicesBlock": {
+    "badge": "Čo ponúkame",
+    "title": "Naše služby",
+    "description": "Prémiové UI, silné inžinierstvo a rýchle dodanie — všetko, čo potrebujete na spustenie produktu, ktorý vyzerá a funguje ako špičková značka.",
+    "learnMore": "Zistiť viac",
+    "learnMoreAria": "Zistiť viac o tejto službe",
+    "services": {
+      "aiAgents": {
+        "title": "AI agenti",
+        "description": "Zákazkoví konverzační a autonómni agenti pre podporu, prevádzku a analytiku.",
+        "tag": "Automatizácia"
+      },
+      "customSoftware": {
+        "title": "Zákazkový softvér",
+        "description": "End-to-end webové a desktopové aplikácie prispôsobené vašim pracovným postupom.",
+        "tag": "Vývoj"
+      },
+      "cybersecurity": {
+        "title": "Kyberbezpečnosť",
+        "description": "Audity, penetračné testy a nepretržité monitorovanie.",
+        "tag": "Ochrana"
+      },
+      "backend": {
+        "title": "Backend / DevOps",
+        "description": "Škálovateľné API, CI/CD pipelines a cloudová infraštruktúra.",
+        "tag": "Škálovanie"
+      },
+      "mobile": {
+        "title": "Mobilné",
+        "description": "Multiplatformové aplikácie s natívnym výkonom a vycibreným UX.",
+        "tag": "Dodanie"
+      }
+    }
+  },
+  "caseStudies": {
+    "badge": "Overený dopad",
+    "title": "Prípadové štúdie",
+    "subtitle": "Nedodávame funkcie. Dodávame výsledky.",
+    "problem": "Problém:",
+    "solution": "Riešenie:",
+    "liveImpact": "Živý dopad",
+    "before": "Pred",
+    "after": "Po",
+    "buildCta": "Postaviť niečo podobné →",
+    "caseStudy": "Prípadová štúdia",
+    "items": {
+      "nak": {
+        "title": "NAK — Team Management AI",
+        "problem": "Manuálna alokácia zdrojov",
+        "solution": "AI plánovací agent",
+        "result": "+32% produktivita",
+        "metricLabel": "Index tímového výkonu"
+      },
+      "chic": {
+        "title": "Chic Flowers — e-commerce",
+        "problem": "Nízke online konverzie",
+        "solution": "Personalizované odporúčanie + prepracovanie UX",
+        "result": "+45% online predaja",
+        "metricLabel": "Rast konverzií"
+      },
+      "silence": {
+        "title": "Silence AI-SOC",
+        "problem": "Vysoký šum upozornení",
+        "solution": "AI detekcia a automatizovaná reakcia",
+        "result": "−68% falošných poplachov",
+        "metricLabel": "Objem falošných poplachov"
+      }
+    }
+  },
+  "howWeWork": {
+    "title": "Ako pracujeme",
+    "subtitle": "Ultra-rýchla dodacia pipeline — optimalizovaná pre rýchlosť.",
+    "steps": {
+      "discovery": {
+        "title": "Objavovanie",
+        "desc": "Požiadavky, zainteresované strany, metriky úspechu."
+      },
+      "design": {
+        "title": "Dizajn",
+        "desc": "UX, architektúra, prototyp."
+      },
+      "poc": {
+        "title": "Proof of Concept",
+        "desc": "Rýchla validácia s merateľnými KPI."
+      },
+      "build": {
+        "title": "Vývoj",
+        "desc": "Iteratívne sprinty, automatizované testy."
+      },
+      "deploy": {
+        "title": "Nasadenie",
+        "desc": "CI/CD, monitorovanie, bezpečnostný hardening."
+      },
+      "support": {
+        "title": "Podpora a škálovanie",
+        "desc": "Údržba, roadmapa, neustále zlepšovanie."
+      }
+    }
+  },
+  "technologyStack": {
+    "title": "Technologický stack",
+    "subtitle": "Starostlivo vybraný, produkční stack navrhnutý pre rýchlosť, škálovateľnosť a krásné užívateľské zážitky."
+  },
+  "backToTop": {
+    "label": "Späť hore"
+  },
+  "pricingCustom": {
+    "title": "Transparentné ceny",
+    "subtitle": "Plány zamerané na mobilné zariadenia, ktoré rastú s vaším produktom.",
+    "percentMaintenance": "{percent}% ročná údržba",
+    "planEstimate": "${value}",
+    "perYear": "za rok (odhad)",
+    "calculator": {
+      "title": "Kalkulačka nákladov projektu",
+      "subtitle": "Posuňte pre zobrazenie ročnej údržby",
+      "projectCost": "Cena projektu:",
+      "projectValue": "${value}"
+    },
+    "plans": {
+      "basic": {
+        "name": "Základný",
+        "features": {
+          "fix": "Opravy kritických chýb (SLA 48h)",
+          "updates": "Mesačné aktualizácie",
+          "audit": "Štvrťročné bezpečnostné audity",
+          "manager": "Vyhradený manažér"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "badge": "Najobľúbenejšie",
+        "features": {
+          "fix": "Opravy kritických chýb (SLA 24h)",
+          "updates": "10h mesačné aktualizácie",
+          "audit": "Mesačné bezpečnostné audity",
+          "manager": "Vyhradený manažér"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "badge": "Najlepšia hodnota",
+        "features": {
+          "fix": "Opravy kritických chýb (SLA 4h)",
+          "updates": "Neobmedzené aktualizácie + Roadmapa",
+          "audit": "Týždenné audity + Zálohy",
+          "manager": "Vyhradený manažér"
+        }
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "AI bezpečnosť a vývoj",
+      "title": "Stavajte bezpečne. Nasadzujte s istotou.",
+      "subtitle": "Dva systémové predplatné (AI-SOC, SLNC-env) plus zákazková AI a dodanie softvéru pre enterprise tímy.",
+      "ctaPrimary": "Požiadať o demo",
+      "ctaSecondary": "Preskúmať systémy",
+      "highlights": {
+        "coverage": "24/7 SOC s AI",
+        "onPrem": "0-egress on-prem",
+        "deploy": "Bezpečné nasadenie za 4 min"
+      },
+      "metrics": {
+        "title": "Stavané pre regulované tímy",
+        "soc": "SOC pokrytie s pomocou AI",
+        "egress": "Všetko on-prem — kód, prompty, buildy",
+        "deployment": "k prvému bezpečnému nasadeniu",
+        "locales": "lokalizácií podporených out-of-box"
+      }
+    },
+    "systems": {
+      "title": "Systémy",
+      "subtitle": "Vyberte si správny produkt: AI-SOC na detekciu a SLNC-env na uzavretý vývoj.",
+      "cta": "Zobraziť detaily",
+      "aiSoc": {
+        "title": "AI-SOC",
+        "desc": "Spravovaná detekcia a reakcia s AI copilotov pre SOC tímy.",
+        "badge": "Predplatné"
+      },
+      "slncEnv": {
+        "title": "SLNC-env",
+        "desc": "Uzavretý vývojový cloud, ktorý drží kód, prompty a buildy on-prem.",
+        "badge": "Predplatné"
+      }
+    },
+    "services": {
+      "title": "Zákazkové vývojové služby",
+      "subtitle": "AI agenti, integrácie a full-cycle dodanie softvéru s bezpečnosťou od prvého dňa.",
+      "cta": "Zobraziť služby",
+      "cards": {
+        "agents": "Produkční AI agenti s guardrails, RAG a bezpečnými konektormi.",
+        "integrations": "Vendor-agnostic integrácie do vášho stacku, IAM a správy dát.",
+        "delivery": "Full-cycle delivery so spoľahlivosťou, observabilitou a bezpečnostnými revíziami."
+      },
+      "cardsTitle": {
+        "agents": "Agenti",
+        "integrations": "Integrácie",
+        "delivery": "Dodanie"
+      }
+    },
+    "contact": {
+      "title": "Pripravení spojiť AI-SOC a SLNC-env?",
+      "subtitle": "Povedzte nám vaše ciele v bezpečnosti a dodaní — vyberieme správny systém aj služby.",
+      "cta": "Požiadať o demo",
+      "ctaSecondary": "Porozprávať sa s tímom služieb"
     }
   }
 }
