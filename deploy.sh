@@ -103,11 +103,16 @@ server {
     root /home/ubuntu/pechenka/out;
     index index.html;
 
-    # SSL certificates (managed by certbot)
-    ssl_certificate /etc/letsencrypt/live/silence.codes/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/silence.codes/privkey.pem;
-    include /etc/letsencrypt/options-ssl-nginx.conf;
-    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+    # SSL certificates
+    ssl_certificate /etc/nginx/ssl/silence_codes_chained.crt;
+    ssl_certificate_key /etc/nginx/ssl/silence_codes.key;
+    
+    # SSL settings
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_prefer_server_ciphers on;
+    ssl_ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384;
+    ssl_session_cache shared:SSL:10m;
+    ssl_session_timeout 10m;
 
     # Security headers
     add_header X-Frame-Options "SAMEORIGIN" always;
