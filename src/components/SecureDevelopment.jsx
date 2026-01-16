@@ -6,15 +6,22 @@ import BackToTopButton from "@/components/BackToTopButton";
 import RequestSystemModal from "@/components/RequestSystemModal";
 import EdgeGlowCard from "@/components/EdgeGlowCard";
 import GlassyBox3D from "@/components/GlassyBox3D";
+import { FloatingText } from "@/components/FloatingText";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function SecureDevelopmentPage() {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [currency, setCurrency] = useState("USD");
     const { t } = useLanguage();
 
     const openModal = () => setIsModalOpen(true);
     const closeModal = () => setIsModalOpen(false);
+
+    const pricing = {
+        USD: { current: "$4,020", original: "$6,000", savings: "$1,980", suffix: "" },
+        KZT: { current: "2,055,000", original: "3,066,000", savings: "1,011,000", suffix: " ₸" }
+    };
 
     const impactTimeline = [
         { 
@@ -118,8 +125,25 @@ export default function SecureDevelopmentPage() {
 
             <main className="relative z-10 pt-32 pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-20">
                 {/* Hero */}
-                <section className="relative overflow-hidden rounded-3xl border border-white/5 bg-gradient-to-br from-slate-900/70 via-slate-900/40 to-blue-900/40 p-10 sm:p-14 shadow-2xl">
-                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(56,189,248,0.12),transparent_30%),radial-gradient(circle_at_80%_0%,rgba(236,72,153,0.12),transparent_25%),radial-gradient(circle_at_60%_70%,rgba(99,102,241,0.12),transparent_25%)]" />
+                <section className="relative">
+                    {/* Spotlights */}
+                    <div className="hero-spotlight hero-spotlight--pink" aria-hidden="true" />
+                    <div className="hero-spotlight hero-spotlight--cyan" aria-hidden="true" />
+                    
+                    <EdgeGlowCard
+                        mode="static"
+                        spotlight
+                        glowColor="#FF00B7"
+                        secondaryGlowColor="rgba(55,255,139,0.7)"
+                        outerClassName="group relative z-10 rounded-[34px] p-[2px] edge-glow-card--hero"
+                        innerClassName="affiliate-card affiliate-card--hero rounded-[30px]"
+                    >
+                    <div className="relative overflow-hidden rounded-[28px] p-10 sm:p-14">
+                        {/* Internal glow effects */}
+                        <div className="absolute inset-0 pointer-events-none">
+                            <div className="absolute -top-32 -left-32 w-[400px] h-[400px] rounded-full bg-[radial-gradient(circle,rgba(255,0,183,0.35),transparent_60%)] blur-[80px] mix-blend-screen" />
+                            <div className="absolute -bottom-32 -right-32 w-[400px] h-[400px] rounded-full bg-[radial-gradient(circle,rgba(55,255,139,0.3),transparent_60%)] blur-[80px] mix-blend-screen" />
+                        </div>
 
                     <div className="relative flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
                         <div className="max-w-2xl space-y-6">
@@ -136,20 +160,86 @@ export default function SecureDevelopmentPage() {
                             <p className="text-lg text-slate-200 max-w-xl">
                                 {t("secureDevelopment.hero.description", "Private development environment for enterprises, where code never leaves your corporate network. Meanwhile offering the latest AI-powered technology")}
                             </p>
-                            <div className="flex flex-wrap gap-3">
-                                <button 
-                                    onClick={openModal}
-                                    className="rounded-full bg-gradient-to-r from-pink-500 via-violet-500 to-blue-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-pink-500/20 transition hover:scale-[1.02]"
-                                >
-                                    {t("secureDevelopment.hero.requestSystem", "Request System")}
-                                </button>
-                            </div>
+                            
+                            {/* Pricing Block */}
+                            <motion.div 
+                                initial={{ opacity: 0, y: 12 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.1 }}
+                                className="affiliate-subcard affiliate-subcard--hero rounded-2xl p-6 max-w-md"
+                            >
+                                <div className="relative z-10">
+                                    <div className="flex items-center justify-between mb-4">
+                                        <div className="flex items-center gap-3">
+                                            <div className="flex items-center gap-2">
+                                                <div className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+                                                <span className="text-xs font-semibold uppercase tracking-wider text-slate-400">
+                                                    {t("secureDevelopment.pricing.limitedOffer", "Limited time offer")}
+                                                </span>
+                                            </div>
+                                            <span className="rounded-full bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 text-xs font-semibold text-emerald-400">
+                                                {t("secureDevelopment.pricing.saveBadge", "Save 33%")}
+                                            </span>
+                                        </div>
+                                        
+                                        {/* Currency Switcher */}
+                                        <div className="flex items-center rounded-full border border-white/10 bg-white/5 p-1">
+                                            <button
+                                                onClick={() => setCurrency("USD")}
+                                                className={`px-3 py-1 text-xs font-semibold rounded-full transition-all ${
+                                                    currency === "USD" 
+                                                        ? "bg-white/10 text-white" 
+                                                        : "text-slate-400 hover:text-white"
+                                                }`}
+                                            >
+                                                USD
+                                            </button>
+                                            <button
+                                                onClick={() => setCurrency("KZT")}
+                                                className={`px-3 py-1 text-xs font-semibold rounded-full transition-all ${
+                                                    currency === "KZT" 
+                                                        ? "bg-white/10 text-white" 
+                                                        : "text-slate-400 hover:text-white"
+                                                }`}
+                                            >
+                                                KZT
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div className="flex items-baseline gap-3 mb-2">
+                                        <span className="text-4xl font-bold text-white">
+                                            {currency === "USD" ? pricing.USD.current : pricing.KZT.current}{pricing[currency].suffix}
+                                        </span>
+                                        <span className="text-lg text-slate-400">/{t("secureDevelopment.pricing.year", "year")}</span>
+                                        <span className="text-lg text-slate-500 line-through">
+                                            {currency === "USD" ? pricing.USD.original : pricing.KZT.original}{pricing[currency].suffix}
+                                        </span>
+                                    </div>
+                                    
+                                    <p className="text-sm text-slate-400 mb-4">
+                                        {currency === "USD" 
+                                            ? t("secureDevelopment.pricing.urgencyText", "Buy now and save $1,980. Price increases to $6,000/year after the promotion ends.")
+                                            : t("secureDevelopment.pricing.urgencyTextKZT", "Buy now and save 1,011,000 ₸. Price increases to 3,066,000 ₸/year after the promotion ends.")
+                                        }
+                                    </p>
+                                    
+                                    <button 
+                                        onClick={openModal}
+                                        className="w-full rounded-full bg-gradient-to-r from-pink-500 via-violet-500 to-blue-500 px-8 py-4 text-base font-semibold text-white transition hover:scale-[1.02]"
+                                    >
+                                        {t("secureDevelopment.hero.connectSlncEnv", "Connect SLNC-env")}
+                                    </button>
+                                </div>
+                            </motion.div>
                         </div>
 
                         <div className="flex w-full max-w-lg items-center justify-center lg:self-center">
                              <GlassyBox3D />
                         </div>
                     </div>
+                </div>
+                </EdgeGlowCard>
                 </section>
 
                 {/* Components section */}
@@ -451,6 +541,11 @@ export default function SecureDevelopmentPage() {
                             </motion.div>
                         ))}
                     </div>
+                </section>
+
+                {/* Social CTA */}
+                <section className="w-full mt-16">
+                    <FloatingText />
                 </section>
 
             </main>

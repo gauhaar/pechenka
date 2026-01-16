@@ -1,13 +1,23 @@
 "use client";
 
+import { cn } from "@/lib/utils";
+
 import React, { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { BackgroundBeams } from "@/components/ui/background/background-beams";
 import Header from "@/components/Header";
 import BackToTopButton from "@/components/BackToTopButton";
 import RequestDemoModal from "@/components/RequestDemoModal";
 import GlowButton from "@/components/GlowButton";
+import { FloatingText } from "@/components/FloatingText";
 import { useLanguage } from "@/contexts/LanguageContext";
+import EdgeGlowCard from "@/components/EdgeGlowCard";
+import GlassyBox3D from "@/components/GlassyBox3D";
+import { StickyScrollAnimation } from "@/components/StickyScrollAnimation";
+import MediumArticleCard from "@/components/MediumArticleCard";
+import LinkPreviewCard from "@/components/LinkPreviewCard";
+import { articleUrls, featuredResourcesConfig } from "@/constants/mediumArticles";
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -16,8 +26,21 @@ const fadeUp = {
 };
 
 const cardVariants = {
-  initial: { opacity: 0, y: 16 },
-  animate: (i) => ({ opacity: 1, y: 0, transition: { delay: 0.1 * i, duration: 0.45 } }),
+  initial: { opacity: 0, y: 16, rotateX: 0, rotateY: 0, scale: 1 },
+  animate: (i) => ({
+    opacity: 1,
+    y: 0,
+    rotateX: 0,
+    rotateY: 0,
+    scale: 1,
+    transition: { delay: 0.1 * i, duration: 0.45 },
+  }),
+  hover: {
+    rotateX: -2,
+    rotateY: 2,
+    scale: 1.02,
+    transition: { type: "spring", stiffness: 220, damping: 16 },
+  },
 };
 
 export default function HomeLanding() {
@@ -30,7 +53,7 @@ export default function HomeLanding() {
       title: t("home.systems.aiSoc.title", "AI-SOC"),
       desc: t(
         "home.systems.aiSoc.desc",
-        "Managed detection & response with AI copilots for SOC teams."
+        "Managed detection & response system powered and operated by AI. Used to prevent web and email attacks"
       ),
       href: "/ai-soc",
       badge: t("home.systems.aiSoc.badge", "Subscription"),
@@ -40,134 +63,281 @@ export default function HomeLanding() {
       title: t("home.systems.slncEnv.title", "SLNC-env"),
       desc: t(
         "home.systems.slncEnv.desc",
-        "Sealed development cloud that keeps code, prompts, and builds on-prem."
+        "Private development environment that keeps code, prompts within the corporate infrastructure."
       ),
       href: "/slnc-env",
       badge: t("home.systems.slncEnv.badge", "Subscription"),
     },
   ];
 
-  const highlights = [
-    { key: "coverage", label: t("home.hero.highlights.coverage", "24/7 AI-assisted SOC") },
-    { key: "onPrem", label: t("home.hero.highlights.onPrem", "0-egress on-prem") },
-    { key: "deploy", label: t("home.hero.highlights.deploy", "Secure deploy in 4 min") },
-  ];
-
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div className="min-h-screen bg-[#01091C] text-white">
+    <div className="min-h-screen bg-[#01091C] text-white overflow-hidden">
       <Header onOpenModal={openModal} />
+      
+      {/* Background Effect - extends throughout the page */}
+      <div className="fixed inset-0 z-0">
+        <BackgroundBeams className="opacity-50" />
+      </div>
 
-      <main className="relative mx-auto flex max-w-6xl flex-col gap-16 px-4 pb-12 pt-28 sm:px-6 lg:px-8 lg:pt-32">
-        <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_18%_18%,rgba(255,255,255,0.05),transparent_38%),radial-gradient(circle_at_82%_14%,rgba(88,116,255,0.08),transparent_40%),radial-gradient(circle_at_50%_100%,rgba(0,0,0,0.4),transparent_52%)]" />
-        {/* Hero */}
-        <section className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
-          <motion.div {...fadeUp} className="space-y-6">
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.15em] text-white/70">
-              {t("home.hero.badge", "AI security & development")}
-            </span>
-            <h1 className="text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
-              {t("home.hero.title", "Build securely. Deploy confidently.")}
-            </h1>
-            <p className="text-lg text-white/80 sm:text-xl max-w-3xl">
-              {t(
-                "home.hero.subtitle",
-                "Two subscription systems (AI-SOC, SLNC-env) plus custom AI and software delivery for enterprise teams."
-              )}
-            </p>
-            <div className="flex flex-wrap gap-2 sm:gap-3">
-              {highlights.map((item) => (
-                <span
-                  key={item.key}
-                  className="inline-flex h-10 items-center rounded-full border border-white/12 bg-white/5 px-4 text-sm font-semibold text-white/80"
+      <main className="relative mx-auto flex flex-col gap-0 pb-16 z-10">
+        
+        {/* Hero Section - Clean and Beautiful */}
+        <section className="relative w-full pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-5xl mx-auto text-center">
+            {/* Decorative gradient orbs */}
+            <div className="absolute top-20 left-1/4 w-72 h-72 bg-blue-500/20 rounded-full blur-[120px] pointer-events-none" />
+            <div className="absolute top-32 right-1/4 w-64 h-64 bg-purple-500/20 rounded-full blur-[100px] pointer-events-none" />
+            
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="relative z-10"
+            >
+              {/* Main Heading with Eye-Catching Effect */}
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
+                <motion.span 
+                  className="inline-block bg-gradient-to-r from-blue-400 via-purple-400 via-pink-400 to-blue-400 bg-[length:200%_auto] bg-clip-text text-transparent"
+                  animate={{ 
+                    backgroundPosition: ["0% center", "200% center"],
+                  }}
+                  transition={{ 
+                    duration: 4, 
+                    repeat: Infinity, 
+                    ease: "linear" 
+                  }}
+                  style={{
+                    textShadow: "0 0 80px rgba(147, 51, 234, 0.5)",
+                  }}
                 >
-                  {item.label}
-                </span>
-              ))}
-            </div>
-          </motion.div>
+                  {t("home.hero.title", "Cybersecurity is no longer")}
+                </motion.span>
+                <br />
+                <motion.span 
+                  className="inline-block relative"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.8, delay: 0.3 }}
+                >
+                  <span className="relative z-10 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
+                    {t("home.hero.titleHighlight", "complicated or expensive anymore")}
+                  </span>
+                </motion.span>
+              </h1>
 
-          <motion.div
-            initial={{ opacity: 0, scale: 0.96 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-            className="rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900/75 via-slate-900/45 to-blue-900/35 p-6 shadow-2xl"
-          >
-            <div className="space-y-4">
-              <p className="text-base font-semibold text-blue-100">
-                {t("home.hero.metrics.title", "Built for regulated teams")}
-              </p>
-              <div className="grid grid-cols-2 gap-4 sm:gap-5 text-sm text-white/80">
-                <div className="rounded-2xl border border-white/12 bg-gradient-to-br from-white/10 via-white/5 to-blue-900/10 p-3 shadow-[0_18px_40px_rgba(0,0,0,0.28)]">
-                  <p className="text-3xl font-bold text-white">24/7</p>
-                  <p>{t("home.hero.metrics.soc", "AI-assisted SOC coverage")}</p>
+              {/* Animated wave underline - positioned below the heading */}
+              <motion.div
+                className="relative w-full h-16 mt-4"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 0.8 }}
+              >
+                <svg
+                  className="absolute left-1/2 -translate-x-1/2 w-full max-w-3xl h-10"
+                  viewBox="0 0 600 40"
+                  preserveAspectRatio="none"
+                  style={{ overflow: 'visible' }}
+                >
+                  <defs>
+                    <linearGradient id="waveGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stopColor="#22d3ee" />
+                      <stop offset="50%" stopColor="#3b82f6" />
+                      <stop offset="100%" stopColor="#a855f7" />
+                    </linearGradient>
+                    <linearGradient id="waveGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stopColor="#a855f7" />
+                      <stop offset="50%" stopColor="#ec4899" />
+                      <stop offset="100%" stopColor="#22d3ee" />
+                    </linearGradient>
+                    <filter id="glow">
+                      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                      <feMerge>
+                        <feMergeNode in="coloredBlur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                      </feMerge>
+                    </filter>
+                  </defs>
+                  {/* Primary animated wave */}
+                  <motion.path
+                    d="M0,20 C50,5 100,35 150,20 C200,5 250,35 300,20 C350,5 400,35 450,20 C500,5 550,35 600,20"
+                    fill="none"
+                    stroke="url(#waveGradient1)"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    filter="url(#glow)"
+                    initial={{ pathLength: 0 }}
+                    animate={{ 
+                      pathLength: 1,
+                      d: [
+                        "M0,20 C50,5 100,35 150,20 C200,5 250,35 300,20 C350,5 400,35 450,20 C500,5 550,35 600,20",
+                        "M0,20 C50,35 100,5 150,20 C200,35 250,5 300,20 C350,35 400,5 450,20 C500,35 550,5 600,20",
+                        "M0,20 C50,5 100,35 150,20 C200,5 250,35 300,20 C350,5 400,35 450,20 C500,5 550,35 600,20",
+                      ]
+                    }}
+                    transition={{ 
+                      pathLength: { duration: 1.5, delay: 0.8, ease: "easeOut" },
+                      d: { duration: 3, repeat: Infinity, ease: "easeInOut", delay: 2.3 }
+                    }}
+                  />
+                  {/* Secondary wave (offset) */}
+                  <motion.path
+                    d="M0,22 C50,37 100,7 150,22 C200,37 250,7 300,22 C350,37 400,7 450,22 C500,37 550,7 600,22"
+                    fill="none"
+                    stroke="url(#waveGradient2)"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    opacity="0.6"
+                    initial={{ pathLength: 0 }}
+                    animate={{ 
+                      pathLength: 1,
+                      d: [
+                        "M0,22 C50,37 100,7 150,22 C200,37 250,7 300,22 C350,37 400,7 450,22 C500,37 550,7 600,22",
+                        "M0,22 C50,7 100,37 150,22 C200,7 250,37 300,22 C350,7 400,37 450,22 C500,7 550,37 600,22",
+                        "M0,22 C50,37 100,7 150,22 C200,37 250,7 300,22 C350,37 400,7 450,22 C500,37 550,7 600,22",
+                      ]
+                    }}
+                    transition={{ 
+                      pathLength: { duration: 1.8, delay: 1, ease: "easeOut" },
+                      d: { duration: 2.5, repeat: Infinity, ease: "easeInOut", delay: 2.8 }
+                    }}
+                  />
+                  {/* Animated particles/dots along the wave */}
+                  <motion.circle
+                    r="4"
+                    fill="#22d3ee"
+                    filter="url(#glow)"
+                    animate={{
+                      cx: [0, 150, 300, 450, 600],
+                      cy: [20, 5, 20, 35, 20],
+                    }}
+                    transition={{ duration: 4, repeat: Infinity, ease: "linear", delay: 2.5 }}
+                  />
+                  <motion.circle
+                    r="3"
+                    fill="#a855f7"
+                    filter="url(#glow)"
+                    animate={{
+                      cx: [600, 450, 300, 150, 0],
+                      cy: [20, 35, 20, 5, 20],
+                    }}
+                    transition={{ duration: 4, repeat: Infinity, ease: "linear", delay: 3 }}
+                  />
+                </svg>
+                {/* Floating keywords */}
+                <div className="absolute top-10 left-0 right-0 flex justify-between max-w-2xl mx-auto px-8">
+                  <motion.span
+                    className="text-[10px] sm:text-xs font-bold text-cyan-400 tracking-widest"
+                    animate={{ 
+                      y: [0, -5, 0],
+                      opacity: [0.7, 1, 0.7]
+                    }}
+                    transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
+                  >
+                    AI
+                  </motion.span>
+                  <motion.span
+                    className="text-[10px] sm:text-xs font-bold text-blue-400 tracking-widest"
+                    animate={{ 
+                      y: [0, -6, 0],
+                      opacity: [0.6, 1, 0.6]
+                    }}
+                    transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+                  >
+                    FUTURE
+                  </motion.span>
+                  <motion.span
+                    className="text-[10px] sm:text-xs font-bold text-purple-400 tracking-widest"
+                    animate={{ 
+                      y: [0, -5, 0],
+                      opacity: [0.7, 1, 0.7]
+                    }}
+                    transition={{ duration: 2.8, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                  >
+                    SECURITY
+                  </motion.span>
                 </div>
-                <div className="rounded-2xl border border-white/12 bg-gradient-to-br from-white/10 via-white/5 to-blue-900/10 p-3 shadow-[0_18px_40px_rgba(0,0,0,0.28)]">
-                  <p className="text-3xl font-bold text-white">0-egress</p>
-                  <p>{t("home.hero.metrics.egress", "All on-prem—code, prompts, builds.")}</p>
-                </div>
-                <div className="rounded-2xl border border-white/12 bg-gradient-to-br from-white/10 via-white/5 to-blue-900/10 p-3 shadow-[0_18px_40px_rgba(0,0,0,0.28)]">
-                  <p className="text-3xl font-bold text-white">4 min</p>
-                  <p>{t("home.hero.metrics.deployment", "to first secure deployment")}</p>
-                </div>
-                <div className="rounded-2xl border border-white/12 bg-gradient-to-br from-white/10 via-white/5 to-blue-900/10 p-3 shadow-[0_18px_40px_rgba(0,0,0,0.28)]">
-                  <p className="text-3xl font-bold text-white">43</p>
-                  <p>{t("home.hero.metrics.locales", "locales supported out-of-box")}</p>
-                </div>
-              </div>
-            </div>
-          </motion.div>
+              </motion.div>
+              
+              {/* Subtitle */}
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
+                className="mt-10 text-xl sm:text-2xl md:text-3xl font-medium text-white/80"
+              >
+                {t("home.hero.subtitle", "Build securely. Deploy confidently.")}
+              </motion.p>
+            </motion.div>
+          </div>
         </section>
 
-        {/* Systems */}
-        <section id="systems" className="space-y-6">
-          <div className="space-y-2">
-            <h2 className="text-3xl font-bold sm:text-4xl">
+        {/* Systems - Moved higher with 3D animations */}
+        <section id="systems" className="space-y-12 pt-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+          <div className="space-y-4">
+            <h2 className="text-4xl font-bold sm:text-5xl lg:text-6xl text-center">
               {t("home.systems.title", "Systems")}
             </h2>
-            <p className="text-white/70">
-              {t(
-                "home.systems.subtitle",
-                "Choose the subscription product that fits: AI-SOC for detection and SLNC-env for sealed development."
-              )}
-            </p>
           </div>
-          <div className="grid gap-6 sm:grid-cols-2">
+          <div className="grid gap-10 lg:grid-cols-2">
             {systems.map((item, idx) => (
-              <motion.div
+              <EdgeGlowCard
                 key={item.key}
-                className="group relative flex h-full flex-col justify-between overflow-hidden rounded-3xl border border-white/14 bg-[#0b1428]/70 p-7 shadow-[0_20px_60px_rgba(0,0,0,0.28)] backdrop-blur transition duration-250 sm:p-9 hover:-translate-y-0.5 hover:border-white/18 hover:shadow-[0_28px_80px_rgba(0,0,0,0.34)]"
-                variants={cardVariants}
-                initial="initial"
-                animate="animate"
-                custom={idx}
+                mode="static"
+                glowColor={idx === 0 ? "#FF00B7" : "#00BFFF"}
+                secondaryGlowColor={idx === 0 ? "rgba(32,140,255,0.45)" : "rgba(168,85,247,0.45)"}
+                outerClassName="group relative flex h-full flex-col justify-between overflow-hidden rounded-3xl p-[2px]"
+                innerClassName="rounded-[22px] bg-black/40 backdrop-blur-xl p-8 sm:p-10 lg:p-12 h-full transition duration-300 group-hover:bg-black/60"
               >
-                <div className="pointer-events-none absolute inset-0 rounded-3xl opacity-0 transition duration-300 group-hover:opacity-80 bg-[radial-gradient(circle_at_20%_25%,rgba(255,0,183,0.16),transparent_46%),radial-gradient(circle_at_78%_22%,rgba(88,116,255,0.18),transparent_46%),radial-gradient(circle_at_50%_90%,rgba(0,0,0,0.32),transparent_58%)]" />
-                <div className="space-y-4">
-                  <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-white/80">
-                    {item.badge}
+                  {/* Inner breathing glow effect */}
+                   <div className="absolute inset-0 bg-radial-gradient from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none" />
+                   <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full blur-[100px] opacity-20 pointer-events-none ${idx === 0 ? 'bg-pink-500' : 'bg-blue-500'} animate-pulse`} />
+
+                  <div className="flex flex-col lg:flex-row gap-8 relative z-10">
+                    {/* 3D Animation Area */}
+                    <div className="w-full lg:w-1/2 h-[320px] sm:h-[380px] lg:h-[400px] relative flex items-center justify-center">
+                      {idx === 0 ? (
+                        /* AI-SOC Animation */
+                        <div className="relative w-full h-full scale-[0.85]">
+                          <StickyScrollAnimation />
+                        </div>
+                      ) : (
+                        /* SLNC-env Animation */
+                        <div className="relative w-full h-full flex items-center justify-center scale-[0.7]">
+                          <GlassyBox3D />
+                        </div>
+                      )}
+                    </div>
+                    
+                    {/* Content Area */}
+                    <div className="w-full lg:w-1/2 flex flex-col justify-between">
+                      <div className="space-y-5">
+                        <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-5 py-2 text-sm font-semibold uppercase tracking-[0.12em] text-white/80">
+                          {item.badge}
+                        </div>
+                        <div className="space-y-3">
+                          <h3 className="text-4xl font-semibold text-white sm:text-5xl">{item.title}</h3>
+                          <p className="text-lg text-white/75 sm:text-xl leading-relaxed">{item.desc}</p>
+                        </div>
+                      </div>
+                      <Link
+                        href={item.href}
+                        className="mt-8 inline-flex h-[56px] items-center justify-center gap-2 rounded-full bg-white px-8 text-lg font-semibold text-slate-900 shadow-lg transition hover:-translate-y-0.5 hover:bg-gray-100"
+                      >
+                        {t("home.systems.cta", "View details")}
+                        <span aria-hidden>→</span>
+                      </Link>
+                    </div>
                   </div>
-                  <div className="space-y-2">
-                    <h3 className="text-3xl font-semibold text-white sm:text-4xl">{item.title}</h3>
-                    <p className="text-base text-white/75 sm:text-lg">{item.desc}</p>
-                  </div>
-                </div>
-                <Link
-                  href={item.href}
-                  className="mt-8 inline-flex h-[52px] items-center justify-center gap-2 rounded-full bg-white px-6 text-base font-semibold text-slate-900 shadow-lg transition hover:-translate-y-0.5 hover:bg-gray-100"
-                >
-                  {t("home.systems.cta", "View details")}
-                  <span aria-hidden>→</span>
-                </Link>
-              </motion.div>
+                </EdgeGlowCard>
             ))}
           </div>
         </section>
 
         {/* Services */}
-        <section className="space-y-6">
+        <section className="space-y-6 pt-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div className="space-y-2 max-w-3xl">
               <h2 className="text-3xl font-bold sm:text-4xl">
@@ -195,6 +365,7 @@ export default function HomeLanding() {
                   "home.services.cards.agents",
                   "Production-grade AI agents with guardrails, RAG, and secure connectors."
                 ),
+                color: "#F472B6" 
               },
               {
                 title: t("home.services.cardsTitle.integrations", "Integrations"),
@@ -202,6 +373,7 @@ export default function HomeLanding() {
                   "home.services.cards.integrations",
                   "Vendor-neutral integrations with your stack, IAM, and data governance."
                 ),
+                color: "#60A5FA"
               },
               {
                 title: t("home.services.cardsTitle.delivery", "Delivery"),
@@ -209,114 +381,82 @@ export default function HomeLanding() {
                   "home.services.cards.delivery",
                   "Full-cycle delivery with reliability SLOs, observability, and security reviews."
                 ),
+                color: "#34D399"
               },
             ].map((card, idx) => (
-              <motion.div
+             <EdgeGlowCard
                 key={card.title}
-                className="group relative flex h-full flex-col justify-between overflow-hidden rounded-3xl border border-white/12 bg-[#0b1428]/70 p-6 text-white/80 shadow-[0_18px_50px_rgba(0,0,0,0.24)] transition duration-200 hover:-translate-y-0.5 hover:border-white/18 hover:shadow-[0_22px_64px_rgba(0,0,0,0.30)]"
-                variants={cardVariants}
-                initial="initial"
-                animate="animate"
-                custom={idx}
-              >
-                <div className="pointer-events-none absolute inset-0 rounded-3xl opacity-0 transition duration-300 group-hover:opacity-80 bg-[radial-gradient(circle_at_22%_20%,rgba(255,0,183,0.14),transparent_42%),radial-gradient(circle_at_78%_18%,rgba(88,116,255,0.16),transparent_44%),radial-gradient(circle_at_50%_92%,rgba(0,0,0,0.30),transparent_56%)]" />
-                <p className="text-lg font-semibold text-white relative z-10">{card.title}</p>
-                <p className="mt-3 text-base leading-relaxed text-white/75 relative z-10">{card.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </section>
+                mode="static"
+                glowColor={card.color}
+                secondaryGlowColor="rgba(255,255,255,0.2)"
+                outerClassName="group h-full rounded-3xl p-[1px]"
+                innerClassName="rounded-[23px] bg-black/40 p-6 h-full transition duration-300 hover:bg-black/60 relative overflow-hidden"
+             >
+                 {/* Hover Glow Effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none" />
+                <div 
+                    className="absolute -right-10 -bottom-10 w-32 h-32 rounded-full blur-[60px] opacity-0 group-hover:opacity-30 transition duration-500 pointer-events-none"
+                    style={{ backgroundColor: card.color }}
+                />
 
-        {/* Resources: video + article */}
-        <section className="space-y-6">
-          <div className="space-y-2">
-            <h2 className="text-3xl font-bold sm:text-4xl">
-              {t("home.resources.title", "Featured resources")}
-            </h2>
-            <p className="text-white/70">
-              {t(
-                "home.resources.subtitle",
-                "Watch the product tour and read the latest article on sealed development."
-              )}
-            </p>
-          </div>
-          <div className="grid gap-5 sm:grid-cols-2">
-            {[{
-              title: t("home.resources.videoTitle", "Product tour video"),
-              description: t(
-                "home.resources.videoDesc",
-                "See how AI-SOC detects threats and automates responses in under two minutes."
-              ),
-              href: "/ai-soc",
-              cta: t("home.resources.videoCta", "Watch video"),
-              badge: t("home.resources.videoBadge", "Video"),
-            }, {
-              title: t("home.resources.articleTitle", "Article: Building SLNC-env"),
-              description: t(
-                "home.resources.articleDesc",
-                "Why sealed development matters and how SLNC-env keeps code, prompts, and builds inside your network."
-              ),
-              href: "/slnc-env",
-              cta: t("home.resources.articleCta", "Read article"),
-              badge: t("home.resources.articleBadge", "Article"),
-            }].map((card, idx) => (
-              <motion.div
-                key={card.title}
-                className="group relative overflow-hidden rounded-3xl border border-white/14 bg-[#0b1428]/70 p-7 shadow-[0_20px_60px_rgba(0,0,0,0.28)] backdrop-blur transition duration-250 hover:-translate-y-0.5 hover:border-white/18 hover:shadow-[0_28px_80px_rgba(0,0,0,0.34)]"
-                variants={cardVariants}
-                initial="initial"
-                animate="animate"
-                custom={idx}
-              >
-                <div className="pointer-events-none absolute inset-0 rounded-3xl opacity-0 transition duration-300 group-hover:opacity-80 bg-[radial-gradient(circle_at_20%_25%,rgba(255,0,183,0.16),transparent_46%),radial-gradient(circle_at_78%_22%,rgba(88,116,255,0.18),transparent_46%),radial-gradient(circle_at_50%_90%,rgba(0,0,0,0.32),transparent_58%)]" />
-                <div className="relative flex h-full flex-col gap-4">
-                  <span className="inline-flex w-fit items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-white/80">
-                    {card.badge}
-                  </span>
-                  <div className="space-y-2">
-                    <h3 className="text-2xl font-semibold text-white">{card.title}</h3>
-                    <p className="text-base text-white/75">{card.description}</p>
-                  </div>
-                  <Link
-                    href={card.href}
-                    className="mt-auto inline-flex h-[48px] items-center justify-center gap-2 rounded-full bg-white px-5 text-sm font-semibold text-slate-900 shadow-lg transition hover:-translate-y-0.5 hover:bg-gray-100"
-                  >
-                    {card.cta}
-                    <span aria-hidden>→</span>
-                  </Link>
+                <div className="relative z-10 h-full flex flex-col justify-between">
+                    <div>
+                        <p className="text-lg font-semibold text-white">{card.title}</p>
+                        <p className="mt-3 text-base leading-relaxed text-white/75">{card.desc}</p>
+                    </div>
                 </div>
-              </motion.div>
+            </EdgeGlowCard>
             ))}
           </div>
         </section>
 
-        {/* Contact CTA */}
-        <section
-          id="contact-form"
-          className="group relative overflow-hidden rounded-[32px] border border-white/14 bg-[#0b1428]/75 px-8 py-10 text-center shadow-[0_32px_96px_rgba(0,0,0,0.34)] ring-1 ring-white/6 transition duration-300 hover:-translate-y-0.5 hover:border-white/18 hover:shadow-[0_36px_110px_rgba(0,0,0,0.36)] sm:px-12 sm:py-12"
-        >
-          <div className="pointer-events-none absolute inset-0 rounded-[32px] opacity-80 transition duration-300 group-hover:opacity-95 bg-[radial-gradient(circle_at_18%_18%,rgba(255,0,183,0.16),transparent_42%),radial-gradient(circle_at_82%_16%,rgba(88,116,255,0.18),transparent_44%),radial-gradient(circle_at_50%_96%,rgba(0,0,0,0.32),transparent_56%)]" />
-          <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-4 sm:gap-5">
-            <h3 className="text-2xl font-bold text-white sm:text-3xl relative z-10">
-              {t("home.contact.title", "Ready to combine AI-SOC and SLNC-env?")}
-            </h3>
-            <p className="text-lg text-white/75 sm:text-xl relative z-10">
-              {t(
-                "home.contact.subtitle",
-                "Tell us your security and delivery goals—we'll align the right system and services."
-              )}
-            </p>
-            <div className="pt-2 relative z-10">
-              <GlowButton onClick={openModal} className="w-full max-w-xs sm:max-w-sm" innerClassName="px-8 py-3 text-base">
-                {t("home.contact.cta", "Request demo")}
-              </GlowButton>
+        {/* Featured Resources - Auto-fetching Link Previews */}
+        <section className="space-y-8 pt-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+            <div className="space-y-2">
+              <h2 className="text-3xl font-bold sm:text-4xl">
+                {t("home.resources.title", "Featured articles")}
+              </h2>
+              <p className="text-white/70 max-w-xl">
+                {t(
+                  "home.resources.subtitle",
+                  "Just showcasing our competency."
+                )}
+              </p>
             </div>
+            {featuredResourcesConfig.showViewAllLink && (
+              <a
+                href={featuredResourcesConfig.mediumProfileUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors whitespace-nowrap"
+              >
+                {t("home.resources.viewAll", "View all articles")}
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            )}
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {articleUrls.slice(0, featuredResourcesConfig.displayCount).map((url, idx) => (
+              <LinkPreviewCard key={url} url={url} index={idx} />
+            ))}
           </div>
         </section>
+
+        {/* Spacer between Featured Resources and Discover section */}
+        <div className="py-16 sm:py-20 lg:py-24" />
+
+        <div className="w-full">
+            <FloatingText />
+        </div>
+
       </main>
 
-      <RequestDemoModal isOpen={isModalOpen} onClose={closeModal} />
       <BackToTopButton />
+      <RequestDemoModal isOpen={isModalOpen} onClose={closeModal} />
+      
     </div>
   );
 }

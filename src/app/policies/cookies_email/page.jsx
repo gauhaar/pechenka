@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '@/components/Header';
 import PolicySidebar from '@/components/PolicySidebar';
 import BackToTopButton from '@/components/BackToTopButton';
@@ -8,6 +8,10 @@ import PolicyNotice from '@/components/PolicyNotice';
 
 const CookiesEmailPolicy = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  useEffect(() => {
+    document.title = 'Cookie Policy (Email) - Silence AI';
+  }, []);
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);

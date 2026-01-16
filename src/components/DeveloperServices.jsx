@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import RequestDemoModal from "@/components/RequestDemoModal";
 import AffiliateFooter from "@/components/affiliate/AffiliateFooter";
 import BackToTopButton from "@/components/BackToTopButton";
+import { FloatingText } from "@/components/FloatingText";
 import HeroSection from "./HeroSection";
 import WhyChooseUs from "./WhyChooseUs";
 import ServicesBlock from "./ServicesBlock";
@@ -44,6 +45,9 @@ export default function DeveloperServicesPage() {
           />
           <div id="contact-form">
             <ContactForm />
+          </div>
+          <div className="w-full mt-16">
+            <FloatingText />
           </div>
         </div>
       </main>

@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "SLNC-env",
-  description: "Sealed development cloud that keeps code, prompts, and builds inside your network with SLNC-env.",
+  title: "AI-SOC 1",
+  description: "AI-SOC and SLNC-env: AI security and sealed development cloud that keeps code, prompts, and builds inside your network.",
   icons: {
     icon: '/logo.png',
   },

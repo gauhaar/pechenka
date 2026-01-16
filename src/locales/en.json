@@ -34,8 +34,9 @@
   "home": {
     "hero": {
       "badge": "AI security & development",
-      "title": "Build securely. Deploy confidently.",
-      "subtitle": "Two subscription systems (AI-SOC, SLNC-env) plus custom AI and software delivery for enterprise teams.",
+      "title": "Cybersecurity is no longer",
+      "titleHighlight": "complicated or expensive anymore",
+      "subtitle": "Build securely. Deploy confidently.",
       "ctaPrimary": "Request demo",
       "ctaSecondary": "Explore systems",
       "highlights": {

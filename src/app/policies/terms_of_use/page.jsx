@@ -39,7 +39,7 @@ const TermsOfUse = () => {
         </div>
         <main className="flex-grow">
           <PolicyNotice />
-          <h1 className="text-4xl font-bold mb-8">Terms of Use for AI-SOC 1</h1>
+          <h1 className="text-4xl font-bold mb-8">Terms of Use AI-SOC 1</h1>
           <div className="space-y-8">
             <section id="about">
               <h2 className="text-2xl font-semibold mb-4">1. About These Terms</h2>

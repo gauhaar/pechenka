@@ -1,7 +1,7 @@
 import SecureDevelopmentPage from "@/components/SecureDevelopment";
 
 export const metadata = {
-  title: "SLNC-env",
+  title: "SLNC-env - Silence AI",
 };
 
 export default function Page() {

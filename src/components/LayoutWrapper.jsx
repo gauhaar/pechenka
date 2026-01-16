@@ -5,7 +5,6 @@ import Footer from "@/components/Footer";
 import ParallaxGlobe from "@/components/ParallaxGlobe";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import CookieConsent from "@/components/CookieConsent";
-import SocialDock from "@/components/SocialDock";
 
 export default function LayoutWrapper({ children, initialLanguage }) {
   const pathname = usePathname();
@@ -14,7 +13,6 @@ export default function LayoutWrapper({ children, initialLanguage }) {
   const isServicesPage = pathname.startsWith('/services') || pathname.startsWith('/developer-services');
   // Old homepage content is now moved to /ai-soc
   const isProductPage = pathname === '/ai-soc';
-  const showSocialDock = !isPolicyPage;
 
   // Restrict globe to the product page only (was main page)
   const showParallaxGlobe = isProductPage;
@@ -25,7 +23,6 @@ export default function LayoutWrapper({ children, initialLanguage }) {
       <div className={!isPolicyPage ? "default-content-wrapper pt-20" : "default-content-wrapper"}>
         {children}
       </div>
-      {showSocialDock && <SocialDock />}
       <div className={isPolicyPage ? "bg-black" : "relative w-full"}>
         {!isPolicyPage && !isAffiliatePage && !isServicesPage && (
           <div className="absolute inset-0 -z-10 layout-background">

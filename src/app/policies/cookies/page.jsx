@@ -33,7 +33,7 @@ const CookiesPolicy = () => {
         </div>
         <main className="flex-grow">
           <PolicyNotice />
-          <h1 className="text-4xl font-bold mb-8">Cookie Policy</h1>
+          <h1 className="text-4xl font-bold mb-8">Cookie Policy AI-SOC 1</h1>
           <div className="space-y-8">
             <section id="about">
               <h2 className="text-2xl font-semibold mb-4">1. About This Cookie Policy</h2>

@@ -30,19 +30,36 @@ const RootFooter = () => {
         </div>
         <div className="mt-12 border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm mb-4 sm:mb-0">{copyright}</p>
-          <div className="flex space-x-4 items-center text-gray-400">
-            <a href="/policies/terms_of_use" className="hover:text-white transition-colors duration-300">
-              {t("footer.links.termsUse", "Terms of Use")}
-            </a>
-            <a href="/policies/terms_of_service" className="hover:text-white transition-colors duration-300">
-              {t("footer.links.termsService", "Terms of Service")}
-            </a>
-            <a href="/policies/privacy" className="hover:text-white transition-colors duration-300">
-              {t("footer.links.privacy", "Privacy Policy")}
-            </a>
-            <a href="/policies/cookies" className="hover:text-white transition-colors duration-300">
-              {t("footer.links.cookies", "Cookies Policy")}
-            </a>
+          <div className="flex flex-col items-end space-y-2">
+            <div className="flex space-x-4 items-center text-gray-400">
+              <span className="text-gray-500 text-xs uppercase tracking-wider">AI-SOC 1:</span>
+              <a href="/policies/terms_of_use" className="hover:text-white transition-colors duration-300">
+                {t("footer.links.termsUse", "Terms of Use")}
+              </a>
+              <a href="/policies/terms_of_service" className="hover:text-white transition-colors duration-300">
+                {t("footer.links.termsService", "Terms of Service")}
+              </a>
+              <a href="/policies/privacy" className="hover:text-white transition-colors duration-300">
+                {t("footer.links.privacy", "Privacy Policy")}
+              </a>
+            </div>
+            <div className="flex space-x-4 items-center text-gray-400">
+              <span className="text-gray-500 text-xs uppercase tracking-wider">SLNC-env:</span>
+              <a href="/policies/slnc_env/terms_of_use" className="hover:text-white transition-colors duration-300">
+                Terms of Use
+              </a>
+              <a href="/policies/slnc_env/terms_of_service" className="hover:text-white transition-colors duration-300">
+                Terms of Service
+              </a>
+              <a href="/policies/slnc_env/privacy" className="hover:text-white transition-colors duration-300">
+                Privacy Policy
+              </a>
+            </div>
+            <div className="flex space-x-4 items-center text-gray-400">
+               <a href="/policies/cookies" className="hover:text-white transition-colors duration-300">
+                {t("footer.links.cookies", "Cookies Policy")}
+              </a>
+            </div>
           </div>
         </div>
       </div>
