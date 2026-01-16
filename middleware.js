@@ -1,18 +1,16 @@
-import createIntlMiddleware from 'next-intl/middleware';
-import {defaultLocale, supportedLocales} from './src/i18n/locales.mjs';
+// Middleware is not used in static export mode.
+// Language detection happens client-side via LanguageContext.
+// This file is kept for reference but won't run in production static builds.
 
-const intlMiddleware = createIntlMiddleware({
-  locales: supportedLocales,
-  defaultLocale,
-  localePrefix: 'never',
-});
+import { NextResponse } from 'next/server';
 
 export function middleware(request) {
-  return intlMiddleware(request);
+  // In static export, middleware doesn't run.
+  // For development with `next dev`, just pass through.
+  return NextResponse.next();
 }
 
 export const config = {
-  matcher: [
-    '/((?!api|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt).*)',
-  ],
+  // Match nothing in static export - this is just a placeholder
+  matcher: [],
 };

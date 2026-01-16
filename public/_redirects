@@ -1,0 +1,9 @@
+# Redirects for static hosting (Cloudflare Pages, Netlify, etc.)
+# For nginx, add these to your server config
+
+/developer-services /services 301
+/developer-services/* /services/:splat 301
+/slnc-code /slnc-env 301
+/slnc-code/* /slnc-env/:splat 301
+/secure-development /slnc-env 301
+/secure-development/* /slnc-env/:splat 301

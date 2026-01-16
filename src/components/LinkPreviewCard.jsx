@@ -3,44 +3,92 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
+// Pre-configured metadata for known articles (for static sites without API routes)
+// This serves as a cache for articles that are displayed on the site
+const preConfiguredMetadata = {
+  "https://medium.com/@tahirbalarabe2/the-modern-security-operations-center-soc-operations-center-ff8db5b0dfb5": {
+    title: "The Modern Security Operations Center (SOC)",
+    description: "A comprehensive guide to building and operating a modern Security Operations Center with AI-powered threat detection and response capabilities.",
+    image: "https://miro.medium.com/v2/resize:fit:1200/1*Aq2YxvSqb5HnSF0yqW5e3w.jpeg",
+    siteName: "Medium",
+    author: "Tahir Balarabe",
+    readTime: "8 min read",
+  },
+};
+
 /**
- * LinkPreviewCard - Automatically fetches and displays Open Graph metadata from any URL
- * Similar to how WhatsApp/Telegram shows link previews
+ * LinkPreviewCard - Displays Open Graph metadata from any URL
+ * For static sites: Uses pre-configured metadata or shows a basic card
  * 
- * Usage: Just pass a URL and it will automatically fetch title, image, and description
+ * Usage: Just pass a URL and it will display the preview
  */
 export default function LinkPreviewCard({ url, index = 0 }) {
   const [metadata, setMetadata] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
   const [imageError, setImageError] = useState(false);
 
   useEffect(() => {
+    // Check if we have pre-configured metadata for this URL
+    const preConfigured = preConfiguredMetadata[url];
+    if (preConfigured) {
+      setMetadata(preConfigured);
+      setLoading(false);
+      return;
+    }
+
+    // For static sites, try to fetch via a CORS proxy or show fallback
     const fetchMetadata = async () => {
       try {
-        setLoading(true);
-        setError(null);
-        
+        // Try the local API route first (works in development or server mode)
         const response = await fetch(`/api/og-metadata?url=${encodeURIComponent(url)}`);
         
-        if (!response.ok) {
-          throw new Error('Failed to fetch metadata');
+        if (response.ok) {
+          const data = await response.json();
+          setMetadata(data);
+        } else {
+          // Fallback: extract basic info from URL
+          setMetadata(extractBasicInfo(url));
         }
-        
-        const data = await response.json();
-        setMetadata(data);
       } catch (err) {
-        console.error('Error fetching metadata:', err);
-        setError(err.message);
+        // API route not available (static site), use basic info
+        console.log('Using fallback metadata for:', url);
+        setMetadata(extractBasicInfo(url));
       } finally {
         setLoading(false);
       }
     };
 
-    if (url) {
-      fetchMetadata();
-    }
+    fetchMetadata();
   }, [url]);
+
+  // Extract basic info from URL for fallback
+  const extractBasicInfo = (articleUrl) => {
+    try {
+      const urlObj = new URL(articleUrl);
+      const hostname = urlObj.hostname.replace('www.', '');
+      const pathParts = urlObj.pathname.split('/').filter(Boolean);
+      
+      // Try to extract title from URL slug
+      let title = pathParts[pathParts.length - 1] || 'Article';
+      // Clean up the slug: replace hyphens with spaces, remove hash
+      title = title.split('-').slice(0, -1).join(' ') || title;
+      title = title.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+      
+      return {
+        title: title.length > 10 ? title : 'External Article',
+        description: `Read this article on ${hostname}`,
+        siteName: hostname.charAt(0).toUpperCase() + hostname.slice(1).split('.')[0],
+        image: null,
+      };
+    } catch {
+      return {
+        title: 'External Article',
+        description: 'Click to read the full article',
+        siteName: 'Article',
+        image: null,
+      };
+    }
+  };
 
   // Get a proxy URL for images that might have CORS issues
   const getImageUrl = (imageUrl) => {
@@ -67,7 +115,7 @@ export default function LinkPreviewCard({ url, index = 0 }) {
   }
 
   // Error state - still show a clickable card
-  if (error || !metadata) {
+  if (!metadata) {
     return (
       <a
         href={url}
