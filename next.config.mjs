@@ -5,49 +5,18 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Server build (not static export) so `next start` under PM2 handles routing and avoids EISDIR from nginx.
+// Static export for lightweight deployment (nginx/pm2 serve)
+// Language detection happens client-side via LanguageContext
 const nextConfig = {
+  output: 'export', // Generate static HTML files in 'out' directory
   images: {
-    unoptimized: true, // Keep lightweight image handling
+    unoptimized: true, // Required for static export
   },
-  trailingSlash: true, // Preserve trailing slashes for existing URLs
+  trailingSlash: true, // Generates /page/index.html instead of /page.html
   turbopack: {
-    root: __dirname, // Silence root inference warning; this is the project root
+    root: __dirname,
   },
-  async redirects() {
-    return [
-      {
-        source: "/developer-services",
-        destination: "/services",
-        permanent: true,
-      },
-      {
-        source: "/developer-services/:path*",
-        destination: "/services/:path*",
-        permanent: true,
-      },
-      {
-        source: "/slnc-code",
-        destination: "/slnc-env",
-        permanent: true,
-      },
-      {
-        source: "/slnc-code/:path*",
-        destination: "/slnc-env/:path*",
-        permanent: true,
-      },
-      {
-        source: "/secure-development",
-        destination: "/slnc-env",
-        permanent: true,
-      },
-      {
-        source: "/secure-development/:path*",
-        destination: "/slnc-env/:path*",
-        permanent: true,
-      },
-    ];
-  },
+  // Note: redirects don't work with static export - handle in nginx instead
 };
 
 const withNextIntl = createNextIntlPlugin('./src/i18n/request.js');

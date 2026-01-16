@@ -1,8 +1,7 @@
-import { cookies, headers } from "next/headers";
 import { NextIntlClientProvider } from "next-intl";
 import { Geist, Geist_Mono } from "next/font/google";
 import { LOCALES } from "@/locales";
-import { defaultLocale, supportedLocales } from "@/i18n/locales.mjs";
+import { defaultLocale } from "@/i18n/locales.mjs";
 import "./globals.css";
 import LayoutWrapper from "@/components/LayoutWrapper";
 
@@ -27,29 +26,12 @@ export const metadata = {
   },
 };
 
-const normalizeLocale = (value) => value?.split(/[,;]+/)[0]?.split("-")[0]?.toLowerCase();
+// For static export, we use the default locale at build time.
+// The LanguageContext handles client-side language detection and switching.
+const locale = defaultLocale;
+const messages = LOCALES[locale] ?? {};
 
-const detectRequestLocale = async () => {
-  const cookieStore = await cookies();
-  const cookieLocale = normalizeLocale(cookieStore.get("NEXT_LOCALE")?.value);
-  if (cookieLocale && supportedLocales.includes(cookieLocale)) {
-    return cookieLocale;
-  }
-
-  const headerStore = await headers();
-  const acceptLanguage = normalizeLocale(headerStore.get("accept-language"));
-  if (acceptLanguage && supportedLocales.includes(acceptLanguage)) {
-    return acceptLanguage;
-  }
-
-  return defaultLocale;
-};
-
-
-export default async function RootLayout({ children }) {
-  const locale = await detectRequestLocale();
-  const messages = LOCALES[locale] ?? LOCALES[defaultLocale] ?? {};
-
+export default function RootLayout({ children }) {
   return (
     <html lang={locale}>
       <body

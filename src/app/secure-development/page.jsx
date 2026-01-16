@@ -1,5 +1,17 @@
-import { redirect } from 'next/navigation';
+"use client";
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
-export default function Page() {
-  redirect('/slnc-env');
+export default function SecureDevelopmentRedirect() {
+  const router = useRouter();
+  
+  useEffect(() => {
+    router.replace('/slnc-env/');
+  }, [router]);
+
+  return (
+    <div className="min-h-screen bg-black text-white flex items-center justify-center">
+      <p>Redirecting...</p>
+    </div>
+  );
 }

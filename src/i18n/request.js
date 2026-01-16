@@ -1,31 +1,13 @@
 import {getRequestConfig} from 'next-intl/server';
 
 import {LOCALES} from '@/locales';
-import {defaultLocale, supportedLocales} from './locales.mjs';
+import {defaultLocale} from './locales.mjs';
 
-const normalizeLocale = (value) =>
-  value?.split(/[,;]+/)[0]?.split('-')[0]?.toLowerCase();
-
-const detectRequestLocale = async (requestLocale) => {
-  // next-intl passes a locale here if you use its middleware/routing.
-  if (requestLocale) {
-    const resolved = await Promise.resolve(requestLocale);
-    const normalized = normalizeLocale(resolved);
-    if (normalized && supportedLocales.includes(normalized)) {
-      return normalized;
-    }
-  }
-
-  // Fallback: keep the app working even without next-intl routing.
-  return defaultLocale;
-};
-
-export default getRequestConfig(async ({requestLocale} = {}) => {
-  const locale = await detectRequestLocale(requestLocale);
-  const messages = LOCALES[locale] ?? LOCALES[defaultLocale] ?? {};
-
+// For static export, always use the default locale at build time.
+// Client-side language switching is handled by LanguageContext.
+export default getRequestConfig(async () => {
   return {
-    locale,
-    messages
+    locale: defaultLocale,
+    messages: LOCALES[defaultLocale] ?? {}
   };
 });
