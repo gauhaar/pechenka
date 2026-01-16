@@ -420,7 +420,7 @@ export default function HomeLanding() {
               <p className="text-white/70 max-w-xl">
                 {t(
                   "home.resources.subtitle",
-                  "Just showcasing our competency."
+                  "Silence AI is one of few private companies that have government level intelligence."
                 )}
               </p>
             </div>
