@@ -38,7 +38,8 @@ const PrivacyPolicy = () => {
         </div>
         <main className="flex-grow">
           <PolicyNotice />
-          <h1 className="text-4xl font-bold mb-8">Privacy Policy AI-SOC 1</h1>
+          <h1 className="text-4xl font-bold mb-2">AI-SOC 1 Policy</h1>
+          <h2 className="text-2xl text-gray-400 mb-8">Privacy Policy</h2>
           <div className="space-y-8">
             <section id="about">
               <h2 className="text-2xl font-semibold mb-4">1. About This Privacy Policy</h2>
