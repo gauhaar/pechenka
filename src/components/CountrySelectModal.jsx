@@ -3,30 +3,46 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
+import * as Flags from "country-flag-icons/react/3x2";
 
+// Country data with ISO codes for flag lookup
 const countries = [
-  { code: "KZ", name: "Kazakhstan", flag: "🇰🇿" },
-  { code: "US", name: "United States", flag: "🇺🇸" },
-  { code: "GB", name: "United Kingdom", flag: "🇬🇧" },
-  { code: "DE", name: "Germany", flag: "🇩🇪" },
-  { code: "FR", name: "France", flag: "🇫🇷" },
-  { code: "IT", name: "Italy", flag: "🇮🇹" },
-  { code: "ES", name: "Spain", flag: "🇪🇸" },
-  { code: "NL", name: "Netherlands", flag: "🇳🇱" },
-  { code: "PL", name: "Poland", flag: "🇵🇱" },
-  { code: "RU", name: "Russia", flag: "🇷🇺" },
-  { code: "CN", name: "China", flag: "🇨🇳" },
-  { code: "JP", name: "Japan", flag: "🇯🇵" },
-  { code: "KR", name: "South Korea", flag: "🇰🇷" },
-  { code: "IN", name: "India", flag: "🇮🇳" },
-  { code: "AU", name: "Australia", flag: "🇦🇺" },
-  { code: "CA", name: "Canada", flag: "🇨🇦" },
-  { code: "BR", name: "Brazil", flag: "🇧🇷" },
-  { code: "MX", name: "Mexico", flag: "🇲🇽" },
-  { code: "AE", name: "United Arab Emirates", flag: "🇦🇪" },
-  { code: "SG", name: "Singapore", flag: "🇸🇬" },
-  { code: "OTHER", name: "Other", flag: "🌍" },
+  { code: "KZ", name: "Kazakhstan" },
+  { code: "US", name: "United States" },
+  { code: "GB", name: "United Kingdom" },
+  { code: "DE", name: "Germany" },
+  { code: "FR", name: "France" },
+  { code: "IT", name: "Italy" },
+  { code: "ES", name: "Spain" },
+  { code: "NL", name: "Netherlands" },
+  { code: "PL", name: "Poland" },
+  { code: "RU", name: "Russia" },
+  { code: "CN", name: "China" },
+  { code: "JP", name: "Japan" },
+  { code: "KR", name: "South Korea" },
+  { code: "IN", name: "India" },
+  { code: "AU", name: "Australia" },
+  { code: "CA", name: "Canada" },
+  { code: "BR", name: "Brazil" },
+  { code: "MX", name: "Mexico" },
+  { code: "AE", name: "United Arab Emirates" },
+  { code: "SG", name: "Singapore" },
+  { code: "OTHER", name: "Other" },
 ];
+
+// Component to render flag SVG
+const FlagIcon = ({ code, className = "w-6 h-4" }) => {
+  if (code === "OTHER") {
+    return (
+      <span className={`${className} flex items-center justify-center text-lg`}>🌍</span>
+    );
+  }
+  const FlagComponent = Flags[code];
+  if (!FlagComponent) {
+    return <span className={`${className} flex items-center justify-center text-xs bg-gray-600 rounded`}>{code}</span>;
+  }
+  return <FlagComponent className={`${className} rounded-sm`} />;
+};
 
 const CountrySelectModal = ({ isOpen, onClose }) => {
   const [selectedCountry, setSelectedCountry] = useState(null);
@@ -219,7 +235,7 @@ const CountrySelectModal = ({ isOpen, onClose }) => {
                               : "bg-white/5 text-gray-300 hover:bg-white/10 hover:text-white"
                           }`}
                         >
-                          <span className="text-xl">{country.flag}</span>
+                          <FlagIcon code={country.code} className="w-6 h-4" />
                           <span className="text-sm font-medium">{country.name}</span>
                           {selectedCountry === country.code && (
                             <svg
