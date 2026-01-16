@@ -5,21 +5,49 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Static export for pre-rendered pages.
-// Language detection happens client-side via LanguageContext.
-// Redirects must be handled by the web server (nginx/Cloudflare) - see public/_redirects
+// Server build (not static export) so `next start` under PM2 handles routing and avoids EISDIR from nginx.
 const nextConfig = {
-  output: 'export', // Enable static export
   images: {
-    unoptimized: true, // Required for static export
+    unoptimized: true, // Keep lightweight image handling
   },
   trailingSlash: true, // Preserve trailing slashes for existing URLs
   turbopack: {
     root: __dirname, // Silence root inference warning; this is the project root
   },
-  // Note: Redirects don't work with static export.
-  // They've been moved to public/_redirects for Cloudflare/Netlify
-  // or must be configured in nginx/web server.
+  async redirects() {
+    return [
+      {
+        source: "/developer-services",
+        destination: "/services",
+        permanent: true,
+      },
+      {
+        source: "/developer-services/:path*",
+        destination: "/services/:path*",
+        permanent: true,
+      },
+      {
+        source: "/slnc-code",
+        destination: "/slnc-env",
+        permanent: true,
+      },
+      {
+        source: "/slnc-code/:path*",
+        destination: "/slnc-env/:path*",
+        permanent: true,
+      },
+      {
+        source: "/secure-development",
+        destination: "/slnc-env",
+        permanent: true,
+      },
+      {
+        source: "/secure-development/:path*",
+        destination: "/slnc-env/:path*",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 const withNextIntl = createNextIntlPlugin('./src/i18n/request.js');
