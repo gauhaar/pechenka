@@ -1,9 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import Header from "@/components/Header";
+import SlncEnvHeader from "@/components/SlncEnvHeader";
 import BackToTopButton from "@/components/BackToTopButton";
 import RequestSystemModal from "@/components/RequestSystemModal";
+import CountrySelectModal from "@/components/CountrySelectModal";
 import EdgeGlowCard from "@/components/EdgeGlowCard";
 import GlassyBox3D from "@/components/GlassyBox3D";
 import { FloatingText } from "@/components/FloatingText";
@@ -12,6 +13,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function SecureDevelopmentPage() {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [countrySelectOpen, setCountrySelectOpen] = useState(false);
     const [currency, setCurrency] = useState("USD");
     const { t } = useLanguage();
 
@@ -19,8 +21,24 @@ export default function SecureDevelopmentPage() {
     const closeModal = () => setIsModalOpen(false);
 
     const pricing = {
-        USD: { current: "$4,020", original: "$6,000", savings: "$1,980", suffix: "" },
-        KZT: { current: "2,055,000", original: "3,066,000", savings: "1,011,000", suffix: " ₸" }
+        USD: { 
+            monthly: "$480",
+            monthlyFuture: "$630",
+            yearly: "$336",
+            yearlyTotal: "$4,032",
+            yearlyFuture: "$5,225",
+            discount: "30%",
+            suffix: "" 
+        },
+        KZT: { 
+            monthly: "240,000",
+            monthlyFuture: "315,000",
+            yearly: "168,000",
+            yearlyTotal: "2,016,000",
+            yearlyFuture: "2,612,500",
+            discount: "30%",
+            suffix: " ₸" 
+        }
     };
 
     const impactTimeline = [
@@ -121,9 +139,9 @@ export default function SecureDevelopmentPage() {
 
     return (
         <div className="min-h-screen bg-[#01091C] text-slate-200 font-sans selection:bg-pink-500/30 relative overflow-hidden">
-            <Header onOpenModal={openModal} />
+            <SlncEnvHeader />
 
-            <main className="relative z-10 pt-32 pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-20">
+            <main className="relative z-10 pt-20 pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-16">
                 {/* Hero */}
                 <section className="relative">
                     {/* Spotlights */}
@@ -138,15 +156,15 @@ export default function SecureDevelopmentPage() {
                         outerClassName="group relative z-10 rounded-[34px] p-[2px] edge-glow-card--hero"
                         innerClassName="affiliate-card affiliate-card--hero rounded-[30px]"
                     >
-                    <div className="relative overflow-hidden rounded-[28px] p-10 sm:p-14">
+                    <div className="relative overflow-hidden rounded-[28px] p-8 sm:p-10">
                         {/* Internal glow effects */}
                         <div className="absolute inset-0 pointer-events-none">
                             <div className="absolute -top-32 -left-32 w-[400px] h-[400px] rounded-full bg-[radial-gradient(circle,rgba(255,0,183,0.35),transparent_60%)] blur-[80px] mix-blend-screen" />
                             <div className="absolute -bottom-32 -right-32 w-[400px] h-[400px] rounded-full bg-[radial-gradient(circle,rgba(55,255,139,0.3),transparent_60%)] blur-[80px] mix-blend-screen" />
                         </div>
 
-                    <div className="relative flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
-                        <div className="max-w-2xl space-y-6">
+                    <div className="relative flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
+                        <div className="max-w-2xl space-y-5">
                             <motion.p
                                 initial={{ opacity: 0, y: 12 }}
                                 animate={{ opacity: 1, y: 0 }}
@@ -154,83 +172,25 @@ export default function SecureDevelopmentPage() {
                             >
                                 {t("secureDevelopment.hero.badge", "SLNC-env · Secure Development Environment")}
                             </motion.p>
-                            <motion.h1 initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
+                            <motion.h1 initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
                                 {t("secureDevelopment.hero.title", "Build systems with secure and private code")}
                             </motion.h1>
-                            <p className="text-lg text-slate-200 max-w-xl">
+                            <p className="text-base sm:text-lg text-slate-200 max-w-xl">
                                 {t("secureDevelopment.hero.description", "Private development environment for enterprises, where code never leaves your corporate network. Meanwhile offering the latest AI-powered technology")}
                             </p>
                             
-                            {/* Pricing Block */}
                             <motion.div 
                                 initial={{ opacity: 0, y: 12 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.1 }}
-                                className="affiliate-subcard affiliate-subcard--hero rounded-2xl p-6 max-w-md"
+                                className="flex flex-wrap gap-3 pt-2"
                             >
-                                <div className="relative z-10">
-                                    <div className="flex items-center justify-between mb-4">
-                                        <div className="flex items-center gap-3">
-                                            <div className="flex items-center gap-2">
-                                                <div className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
-                                                <span className="text-xs font-semibold uppercase tracking-wider text-slate-400">
-                                                    {t("secureDevelopment.pricing.limitedOffer", "Limited time offer")}
-                                                </span>
-                                            </div>
-                                            <span className="rounded-full bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 text-xs font-semibold text-emerald-400">
-                                                {t("secureDevelopment.pricing.saveBadge", "Save 33%")}
-                                            </span>
-                                        </div>
-                                        
-                                        {/* Currency Switcher */}
-                                        <div className="flex items-center rounded-full border border-white/10 bg-white/5 p-1">
-                                            <button
-                                                onClick={() => setCurrency("USD")}
-                                                className={`px-3 py-1 text-xs font-semibold rounded-full transition-all ${
-                                                    currency === "USD" 
-                                                        ? "bg-white/10 text-white" 
-                                                        : "text-slate-400 hover:text-white"
-                                                }`}
-                                            >
-                                                USD
-                                            </button>
-                                            <button
-                                                onClick={() => setCurrency("KZT")}
-                                                className={`px-3 py-1 text-xs font-semibold rounded-full transition-all ${
-                                                    currency === "KZT" 
-                                                        ? "bg-white/10 text-white" 
-                                                        : "text-slate-400 hover:text-white"
-                                                }`}
-                                            >
-                                                KZT
-                                            </button>
-                                        </div>
-                                    </div>
-                                    
-                                    <div className="flex items-baseline gap-3 mb-2">
-                                        <span className="text-4xl font-bold text-white">
-                                            {currency === "USD" ? pricing.USD.current : pricing.KZT.current}{pricing[currency].suffix}
-                                        </span>
-                                        <span className="text-lg text-slate-400">/{t("secureDevelopment.pricing.year", "year")}</span>
-                                        <span className="text-lg text-slate-500 line-through">
-                                            {currency === "USD" ? pricing.USD.original : pricing.KZT.original}{pricing[currency].suffix}
-                                        </span>
-                                    </div>
-                                    
-                                    <p className="text-sm text-slate-400 mb-4">
-                                        {currency === "USD" 
-                                            ? t("secureDevelopment.pricing.urgencyText", "Buy now and save $1,980. Price increases to $6,000/year after the promotion ends.")
-                                            : t("secureDevelopment.pricing.urgencyTextKZT", "Buy now and save 1,011,000 ₸. Price increases to 3,066,000 ₸/year after the promotion ends.")
-                                        }
-                                    </p>
-                                    
-                                    <button 
-                                        onClick={openModal}
-                                        className="w-full rounded-full bg-gradient-to-r from-pink-500 via-violet-500 to-blue-500 px-8 py-4 text-base font-semibold text-white transition hover:scale-[1.02]"
-                                    >
-                                        {t("secureDevelopment.hero.connectSlncEnv", "Connect SLNC-env")}
-                                    </button>
-                                </div>
+                                <button 
+                                    onClick={() => setCountrySelectOpen(true)}
+                                    className="rounded-full bg-gradient-to-r from-pink-500 via-violet-500 to-blue-500 px-8 py-3.5 text-base font-semibold text-white transition hover:scale-[1.02] hover:shadow-lg hover:shadow-violet-500/25"
+                                >
+                                    {t("header.cta.get", "Get")}
+                                </button>
                             </motion.div>
                         </div>
 
@@ -240,6 +200,191 @@ export default function SecureDevelopmentPage() {
                     </div>
                 </div>
                 </EdgeGlowCard>
+                </section>
+
+                {/* Pricing Section */}
+                <section className="relative">
+                    <GlowOrb className="-left-20 top-0" color="rgba(168,85,247,0.15)" size="24rem" blur="100px" />
+                    <GlowOrb className="right-0 -bottom-10" color="rgba(59,130,246,0.12)" size="20rem" blur="90px" />
+                    
+                    <div className="text-center mb-10">
+                        <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-2">{t("secureDevelopment.pricing.subtitle", "Simple, transparent pricing")}</p>
+                        <h2 className="text-3xl md:text-4xl font-bold text-white">{t("secureDevelopment.pricing.title", "Choose your plan")}</h2>
+                    </div>
+
+                    <div className="max-w-4xl mx-auto">
+                        {/* Currency Switcher */}
+                        <div className="flex items-center justify-center gap-4 mb-8">
+                            <div className="flex items-center rounded-full border border-white/10 bg-white/5 p-1">
+                                <button
+                                    onClick={() => setCurrency("USD")}
+                                    className={`px-4 py-2 text-sm font-semibold rounded-full transition-all ${
+                                        currency === "USD" 
+                                            ? "bg-white/10 text-white" 
+                                            : "text-slate-400 hover:text-white"
+                                    }`}
+                                >
+                                    USD
+                                </button>
+                                <button
+                                    onClick={() => setCurrency("KZT")}
+                                    className={`px-4 py-2 text-sm font-semibold rounded-full transition-all ${
+                                        currency === "KZT" 
+                                            ? "bg-white/10 text-white" 
+                                            : "text-slate-400 hover:text-white"
+                                    }`}
+                                >
+                                    KZT
+                                </button>
+                            </div>
+                        </div>
+
+                        {/* Limited Time Offer Banner */}
+                        <div className="mb-8 rounded-xl border border-amber-500/30 bg-gradient-to-r from-amber-500/10 via-orange-500/10 to-amber-500/10 p-4 text-center">
+                            <div className="flex items-center justify-center gap-2 mb-2">
+                                <svg className="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span className="text-amber-400 font-bold text-sm uppercase tracking-wide">
+                                    {t("secureDevelopment.pricing.limitedOffer", "Limited Time Offer")}
+                                </span>
+                            </div>
+                            <p className="text-slate-300 text-sm">
+                                {t("secureDevelopment.pricing.priceIncreaseNotice", "Lock in current prices! After 6 months, prices increase by 30%")}
+                            </p>
+                        </div>
+
+                        {/* Pricing Cards */}
+                        <div className="grid md:grid-cols-2 gap-6">
+                            {/* Monthly Card */}
+                            <EdgeGlowCard
+                                mode="static"
+                                glowColor="#8b5cf6"
+                                secondaryGlowColor="rgba(139,92,246,0.35)"
+                                outerClassName="group relative rounded-2xl p-[1px] edge-glow-card--default"
+                                innerClassName="rounded-[18px]"
+                            >
+                                <div className="relative overflow-hidden rounded-[16px] border border-white/10 bg-slate-900/60 p-6 backdrop-blur-sm">
+                                    <div className="space-y-5">
+                                        <div>
+                                            <h3 className="text-xl font-bold text-white">{t("secureDevelopment.pricing.monthlyPlan", "Monthly")}</h3>
+                                            <p className="text-sm text-slate-400 mt-1">{t("secureDevelopment.pricing.monthlyDesc", "Flexible billing")}</p>
+                                        </div>
+
+                                        <div className="border-t border-white/10 pt-5">
+                                            <div className="flex items-end gap-2">
+                                                <span className="text-4xl font-bold text-white">
+                                                    {pricing[currency].monthly}{pricing[currency].suffix}
+                                                </span>
+                                                <span className="text-slate-400 pb-1">/{t("secureDevelopment.pricing.month", "month")}</span>
+                                            </div>
+                                            <div className="flex items-center gap-2 mt-2">
+                                                <span className="text-sm text-slate-500 line-through">
+                                                    {pricing[currency].monthlyFuture}{pricing[currency].suffix}
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <ul className="space-y-3 text-sm">
+                                            <li className="flex items-center gap-3 text-slate-300">
+                                                <svg className="w-5 h-5 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                                </svg>
+                                                {t("secureDevelopment.pricing.features.fullAccess", "Full platform access")}
+                                            </li>
+                                            <li className="flex items-center gap-3 text-slate-300">
+                                                <svg className="w-5 h-5 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                                </svg>
+                                                {t("secureDevelopment.pricing.features.support", "Priority support")}
+                                            </li>
+                                            <li className="flex items-center gap-3 text-slate-300">
+                                                <svg className="w-5 h-5 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                                </svg>
+                                                {t("secureDevelopment.pricing.features.cancelAnytime", "Cancel anytime")}
+                                            </li>
+                                        </ul>
+
+                                        <button 
+                                            onClick={() => setCountrySelectOpen(true)}
+                                            className="w-full rounded-full py-3.5 text-sm font-semibold transition-all border border-white/20 bg-white/5 text-white hover:bg-gradient-to-r hover:from-pink-500 hover:via-violet-500 hover:to-blue-500 hover:border-transparent"
+                                        >
+                                            {t("secureDevelopment.pricing.getStarted", "Get Started")}
+                                        </button>
+                                    </div>
+                                </div>
+                            </EdgeGlowCard>
+
+                            {/* Yearly Card */}
+                            <EdgeGlowCard
+                                mode="static"
+                                glowColor="#10b981"
+                                secondaryGlowColor="rgba(16,185,129,0.35)"
+                                outerClassName="group relative rounded-2xl p-[1px] edge-glow-card--default"
+                                innerClassName="rounded-[18px]"
+                            >
+                                <div className="relative overflow-hidden rounded-[16px] border border-white/10 bg-slate-900/60 p-6 backdrop-blur-sm">
+                                    {/* Double Savings Badge */}
+                                    <div className="absolute -right-8 top-4 rotate-45 bg-gradient-to-r from-emerald-500 to-teal-500 px-10 py-1 text-xs font-bold text-white">
+                                        {t("secureDevelopment.pricing.doubleSavings", "2x SAVINGS")}
+                                    </div>
+
+                                    <div className="space-y-5">
+                                        <div>
+                                            <h3 className="text-xl font-bold text-white">{t("secureDevelopment.pricing.yearlyPlan", "Annual")}</h3>
+                                            <p className="text-sm text-slate-400 mt-1">{t("secureDevelopment.pricing.yearlyDesc", "Best value")}</p>
+                                        </div>
+
+                                        <div className="border-t border-white/10 pt-5">
+                                            <div className="flex items-end gap-2">
+                                                <span className="text-4xl font-bold text-white">
+                                                    {pricing[currency].yearly}{pricing[currency].suffix}
+                                                </span>
+                                                <span className="text-slate-400 pb-1">/{t("secureDevelopment.pricing.month", "month")}</span>
+                                            </div>
+                                            <p className="text-sm text-slate-500 mt-2">
+                                                {t("secureDevelopment.pricing.billedAnnually", "Billed annually at")} <span className="text-emerald-400 font-medium">{pricing[currency].yearlyTotal}{pricing[currency].suffix}</span>
+                                            </p>
+                                            <div className="flex items-center gap-2 mt-2">
+                                                <span className="text-sm text-slate-500 line-through">
+                                                    {pricing[currency].yearlyFuture}{pricing[currency].suffix}/yr
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <ul className="space-y-3 text-sm">
+                                            <li className="flex items-center gap-3 text-slate-300">
+                                                <svg className="w-5 h-5 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                                </svg>
+                                                {t("secureDevelopment.pricing.features.fullAccess", "Full platform access")}
+                                            </li>
+                                            <li className="flex items-center gap-3 text-slate-300">
+                                                <svg className="w-5 h-5 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                                </svg>
+                                                {t("secureDevelopment.pricing.features.support", "Priority support")}
+                                            </li>
+                                            <li className="flex items-center gap-3 text-slate-300">
+                                                <svg className="w-5 h-5 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                                </svg>
+                                                {t("secureDevelopment.pricing.features.priceLock", "Price locked for 12 months")}
+                                            </li>
+                                        </ul>
+
+                                        <button 
+                                            onClick={() => setCountrySelectOpen(true)}
+                                            className="w-full rounded-full py-3.5 text-sm font-semibold transition-all bg-gradient-to-r from-emerald-500 to-teal-500 text-white hover:from-emerald-400 hover:to-teal-400 shadow-lg shadow-emerald-500/20"
+                                        >
+                                            {t("secureDevelopment.pricing.getStarted", "Get Started")}
+                                        </button>
+                                    </div>
+                                </div>
+                            </EdgeGlowCard>
+                        </div>
+                    </div>
                 </section>
 
                 {/* Components section */}
@@ -551,6 +696,7 @@ export default function SecureDevelopmentPage() {
             </main>
 
             <RequestSystemModal isOpen={isModalOpen} onClose={closeModal} />
+            <CountrySelectModal isOpen={countrySelectOpen} onClose={() => setCountrySelectOpen(false)} />
             <BackToTopButton />
         </div>
     );

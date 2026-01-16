@@ -28,8 +28,16 @@
     "cta": {
       "contact": "Contact",
       "download": "Download",
-      "requestDemo": "Request Demo"
+      "requestDemo": "Request Demo",
+      "get": "Get"
     }
+  },
+  "countrySelect": {
+    "title": "Select Your Country",
+    "subtitle": "Choose your location to proceed",
+    "searchPlaceholder": "Search country...",
+    "noResults": "No countries found",
+    "continue": "Continue"
   },
   "home": {
     "hero": {
@@ -589,7 +597,28 @@
       "badge": "SLNC-env · Secure Development Environment",
       "title": "Build systems with secure and private code",
       "description": "Private development environment for enterprises, where code never leaves your corporate network. Meanwhile offering the latest AI-powered technology",
-      "requestSystem": "Request System"
+      "requestSystem": "Request System",
+      "learnMore": "Learn More"
+    },
+    "pricing": {
+      "title": "Choose your plan",
+      "subtitle": "Simple, transparent pricing",
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "month": "month",
+      "monthlyPlan": "Monthly Plan",
+      "monthlyDesc": "Flexible month-to-month billing",
+      "yearlyPlan": "Yearly Plan",
+      "yearlyDesc": "Save 33% with annual billing",
+      "billedAnnually": "Billed annually at",
+      "bestValue": "BEST VALUE",
+      "getStarted": "Get Started",
+      "features": {
+        "fullAccess": "Full platform access",
+        "support": "Priority support",
+        "cancelAnytime": "Cancel anytime",
+        "discount": "33% discount"
+      }
     },
     "components": {
       "title": "Everything stays inside",

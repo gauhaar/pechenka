@@ -7,76 +7,19 @@ import { motion, AnimatePresence } from "framer-motion";
 import clsx from "clsx";
 import GlowButton from "./GlowButton";
 import LanguageSelector from "./LanguageSelector";
-import ComingSoonModal from "./ComingSoonModal";
 import CountrySelectModal from "./CountrySelectModal";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { usePathname } from "next/navigation";
 
 const SCROLL_THRESHOLD = 10;
 const DESKTOP_WIDTH = 1130;
 
-// Policy Language Switcher component for header
-const PolicyLangSwitcher = ({ currentLang, onLanguageChange }) => (
-  <div className="flex items-center gap-1">
-    <button
-      onClick={() => onLanguageChange('en')}
-      className={clsx(
-        "px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-200",
-        currentLang === 'en'
-          ? "bg-blue-600 text-white"
-          : "bg-white/10 text-gray-300 hover:bg-white/20 hover:text-white"
-      )}
-    >
-      EN
-    </button>
-    <button
-      onClick={() => onLanguageChange('ru')}
-      className={clsx(
-        "px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-200",
-        currentLang === 'ru'
-          ? "bg-blue-600 text-white"
-          : "bg-white/10 text-gray-300 hover:bg-white/20 hover:text-white"
-      )}
-    >
-      RU
-    </button>
-  </div>
-);
-
-const Header = ({ onOpenModal, policyLang, onPolicyLangChange }) => {
-  const pathname = usePathname();
-  const isMainPage = pathname === "/";
-  const isSlncEnvPage = pathname === "/slnc-env";
-  const isPolicyPage = pathname?.startsWith("/policies");
-  const isSlncEnvPolicyPage = pathname?.startsWith("/policies/slnc_env");
+const SlncEnvHeader = () => {
   const [isCondensed, setIsCondensed] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [comingSoonOpen, setComingSoonOpen] = useState(false);
   const [countrySelectOpen, setCountrySelectOpen] = useState(false);
   const [isSystemsOpen, setIsSystemsOpen] = useState(false);
   const { t } = useLanguage();
-
-  const scrollToContact = () => {
-    const contactSection = document.getElementById("contact-form");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  const handleContactLink = (e) => {
-                <Link
-                  href="/#contact-form"
-                  onClick={handleContactLink}
-                  className="text-sm font-semibold text-white/80 transition hover:text-white"
-                >
-                  {t("header.cta.contact")}
-                </Link>
-    if (pathname === "/") {
-      e.preventDefault();
-      scrollToContact();
-    }
-  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -106,7 +49,6 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange }) => {
     });
 
   const widthTarget = "100%";
-
   const condensedShift = isCondensed ? (isDesktop ? 24 : 16) : 0;
 
   const systemsItems = [
@@ -195,7 +137,7 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange }) => {
                     );
                   }
 
-                  return item.href ? (
+                  return (
                     <Link
                       key={item.key}
                       href={item.href}
@@ -204,42 +146,19 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange }) => {
                     >
                       {item.label}
                     </Link>
-                  ) : (
-                    <button
-                      key={item.key}
-                      type="button"
-                      className="nav-link border-b border-white/20 py-2 text-white text-left bg-transparent appearance-none focus:outline-none"
-                      onClick={() => {
-                        if (item.onClick) item.onClick();
-                        else if (item.opensModal) onOpenModal?.();
-                        setIsMobileMenuOpen(false);
-                      }}
-                    >
-                      {item.label}
-                    </button>
                   );
                 })}
                 <div className="pt-4 flex flex-col gap-4">
-                  {isSlncEnvPolicyPage && policyLang && onPolicyLangChange ? (
-                    <PolicyLangSwitcher currentLang={policyLang} onLanguageChange={onPolicyLangChange} />
-                  ) : (
-                    <LanguageSelector align="left" />
-                  )}
-                  {!isMainPage && !isPolicyPage && (
-                    <GlowButton
-                      onClick={() => {
-                        if (isSlncEnvPage) {
-                          setCountrySelectOpen(true);
-                        } else {
-                          onOpenModal?.();
-                        }
-                        setIsMobileMenuOpen(false);
-                      }}
-                      className="w-full"
-                    >
-                      {isSlncEnvPage ? t("header.cta.get", "Get") : t("header.cta.requestDemo")}
-                    </GlowButton>
-                  )}
+                  <LanguageSelector align="left" />
+                  <GlowButton
+                    onClick={() => {
+                      setCountrySelectOpen(true);
+                      setIsMobileMenuOpen(false);
+                    }}
+                    className="w-full"
+                  >
+                    {t("header.cta.get", "Get")}
+                  </GlowButton>
                 </div>
               </nav>
             </motion.div>
@@ -352,7 +271,7 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange }) => {
                   );
                 }
 
-                return item.href ? (
+                return (
                   <Link
                     key={item.key}
                     href={item.href}
@@ -360,15 +279,6 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange }) => {
                   >
                     {item.label}
                   </Link>
-                ) : (
-                  <button
-                    key={item.key}
-                    type="button"
-                    className="nav-link text-white bg-transparent appearance-none focus:outline-none"
-                    onClick={item.onClick || (item.opensModal ? onOpenModal : undefined)}
-                  >
-                    {item.label}
-                  </button>
                 );
               })}
             </nav>
@@ -387,20 +297,11 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange }) => {
                       : undefined
                   }
                 >
-                  {isSlncEnvPolicyPage && policyLang && onPolicyLangChange ? (
-                    <PolicyLangSwitcher currentLang={policyLang} onLanguageChange={onPolicyLangChange} />
-                  ) : (
-                    <LanguageSelector align={isDesktop ? "right" : "left"} />
-                  )}
+                  <LanguageSelector align={isDesktop ? "right" : "left"} />
                 </div>
-                {isDesktop && isMainPage && (
-                  <GlowButton onClick={scrollToContact}>
-                    {t("header.cta.contact")}
-                  </GlowButton>
-                )}
-                {isDesktop && !isMainPage && !isPolicyPage && (
-                  <GlowButton onClick={isSlncEnvPage ? () => setCountrySelectOpen(true) : onOpenModal}>
-                    {isSlncEnvPage ? t("header.cta.get", "Get") : t("header.cta.requestDemo")}
+                {isDesktop && (
+                  <GlowButton onClick={() => setCountrySelectOpen(true)}>
+                    {t("header.cta.get", "Get")}
                   </GlowButton>
                 )}
               </motion.div>
@@ -429,10 +330,9 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange }) => {
           </motion.div>
         </motion.div>
       </motion.header>
-      <ComingSoonModal isOpen={comingSoonOpen} onClose={() => setComingSoonOpen(false)} />
       <CountrySelectModal isOpen={countrySelectOpen} onClose={() => setCountrySelectOpen(false)} />
     </>
   );
 };
 
-export default Header;
+export default SlncEnvHeader;
