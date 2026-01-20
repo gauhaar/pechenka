@@ -1,10 +1,30 @@
 import React, { useMemo, useState } from "react";
 import EdgeGlowCard from "./EdgeGlowCard";
+import CurrencySelector from "./CurrencySelector";
 import { useLanguage } from "@/contexts/LanguageContext";
+
+const USD_TO_KZT = 500;
 
 const PricingSection = () => {
   const { t } = useLanguage();
   const [projectCost, setProjectCost] = useState(25000);
+  const [currency, setCurrency] = useState("USD");
+
+  const formatCurrencyValue = (value) => {
+    if (currency === "USD") {
+      return `$${value.toLocaleString()}`;
+    }
+    const kztValue = value * USD_TO_KZT;
+    return `${kztValue.toLocaleString()} ₸`;
+  };
+
+  const getSliderMax = () => {
+    return currency === "USD" ? 100000 : 100000;
+  };
+
+  const getSliderStep = () => {
+    return 1000;
+  };
 
   const plans = useMemo(
     () => [
@@ -63,6 +83,11 @@ const PricingSection = () => {
         </p>
       </div>
 
+      {/* Currency Selector */}
+      <div className="flex justify-center">
+        <CurrencySelector currency={currency} onCurrencyChange={setCurrency} />
+      </div>
+
       {/* Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {plans.map((plan, i) => (
@@ -115,11 +140,7 @@ const PricingSection = () => {
                   className="text-3xl sm:text-4xl font-bold"
                   style={{ color: plan.accent }}
                 >
-                  {t(
-                    "pricing.planEstimate",
-                    "${value}",
-                    { value: (projectCost * plan.percent).toLocaleString() }
-                  )}
+                  {formatCurrencyValue(projectCost * plan.percent)}
                 </div>
                 <p className="text-xs sm:text-sm text-white/50">
                   {t("pricingCustom.perYear", "per year (est.)")}
@@ -194,11 +215,7 @@ const PricingSection = () => {
           <div className="text-center text-lg font-medium text-white">
             {t("pricingCustom.calculator.projectCost", "Project Cost:")}{" "}
             <span className="text-pink-400">
-              {t(
-                "pricing.calculator.projectValue",
-                "${value}",
-                { value: projectCost.toLocaleString() }
-              )}
+              {formatCurrencyValue(projectCost)}
             </span>
           </div>
 
@@ -214,11 +231,7 @@ const PricingSection = () => {
                   className="text-xl font-semibold"
                   style={{ color: plan.accent }}
                 >
-                  {t(
-                    "pricing.planEstimate",
-                    "${value}",
-                    { value: (projectCost * plan.percent).toLocaleString() }
-                  )}
+                  {formatCurrencyValue(projectCost * plan.percent)}
                 </div>
               </div>
             ))}

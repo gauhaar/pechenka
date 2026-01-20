@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import clsx from "clsx";
 import GlowButton from "./GlowButton";
 import LanguageSelector from "./LanguageSelector";
+import PolicyLanguageSelector from "./PolicyLanguageSelector";
 import ComingSoonModal from "./ComingSoonModal";
 import CountrySelectModal from "./CountrySelectModal";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -14,34 +15,6 @@ import { usePathname } from "next/navigation";
 
 const SCROLL_THRESHOLD = 10;
 const DESKTOP_WIDTH = 1130;
-
-// Policy Language Switcher component for header
-const PolicyLangSwitcher = ({ currentLang, onLanguageChange }) => (
-  <div className="flex items-center gap-1">
-    <button
-      onClick={() => onLanguageChange('en')}
-      className={clsx(
-        "px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-200",
-        currentLang === 'en'
-          ? "bg-blue-600 text-white"
-          : "bg-white/10 text-gray-300 hover:bg-white/20 hover:text-white"
-      )}
-    >
-      EN
-    </button>
-    <button
-      onClick={() => onLanguageChange('ru')}
-      className={clsx(
-        "px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-200",
-        currentLang === 'ru'
-          ? "bg-blue-600 text-white"
-          : "bg-white/10 text-gray-300 hover:bg-white/20 hover:text-white"
-      )}
-    >
-      RU
-    </button>
-  </div>
-);
 
 const Header = ({ onOpenModal, policyLang, onPolicyLangChange }) => {
   const pathname = usePathname();
@@ -221,7 +194,7 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange }) => {
                 })}
                 <div className="pt-4 flex flex-col gap-4">
                   {isSlncEnvPolicyPage && policyLang && onPolicyLangChange ? (
-                    <PolicyLangSwitcher currentLang={policyLang} onLanguageChange={onPolicyLangChange} />
+                    <PolicyLanguageSelector currentLang={policyLang} onLanguageChange={onPolicyLangChange} align="left" />
                   ) : (
                     <LanguageSelector align="left" />
                   )}
@@ -388,7 +361,7 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange }) => {
                   }
                 >
                   {isSlncEnvPolicyPage && policyLang && onPolicyLangChange ? (
-                    <PolicyLangSwitcher currentLang={policyLang} onLanguageChange={onPolicyLangChange} />
+                    <PolicyLanguageSelector currentLang={policyLang} onLanguageChange={onPolicyLangChange} align={isDesktop ? "right" : "left"} />
                   ) : (
                     <LanguageSelector align={isDesktop ? "right" : "left"} />
                   )}

@@ -127,8 +127,8 @@ const WorldMapKazakhstan = () => {
           );
         })}
 
-        {/* Enhanced Kazakhstan Marker */}
-        <g transform="translate(610 190)">
+        {/* Enhanced Turkey Marker */}
+        <g transform="translate(530 205)">
           {/* Outer pulse rings */}
           {[0, 1, 2].map((i) => (
             <motion.circle
@@ -169,7 +169,7 @@ const WorldMapKazakhstan = () => {
             <rect
               x="8"
               y="-20"
-              width="100"
+              width="70"
               height="16"
               rx="4"
               fill="rgba(0,0,0,0.6)"
@@ -185,7 +185,7 @@ const WorldMapKazakhstan = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.8 }}
             >
-              Kazakhstan
+              Turkey
             </motion.text>
           </g>
 
@@ -197,8 +197,8 @@ const WorldMapKazakhstan = () => {
           ].map((point, i) => (
             <motion.line
               key={`line-${i}`}
-              x1="610"
-              y1="190"
+              x1="530"
+              y1="205"
               x2={point.x}
               y2={point.y}
               stroke={point.color}
@@ -209,6 +209,69 @@ const WorldMapKazakhstan = () => {
               transition={{ duration: 1.5, delay: 1 + i * 0.3, repeat: Infinity, repeatDelay: 3 }}
             />
           ))}
+        </g>
+
+        {/* UAE Marker */}
+        <g transform="translate(580 260)">
+          {/* Outer pulse rings */}
+          {[0, 1, 2].map((i) => (
+            <motion.circle
+              key={`ring-uae-${i}`}
+              r={14 + i * 10}
+              fill="none"
+              stroke="#FF00B7"
+              strokeWidth="1.5"
+              initial={{ opacity: 0.6, scale: 0.8 }}
+              animate={{ 
+                opacity: [0.6, 0, 0.6],
+                scale: [0.8, 1.4, 0.8]
+              }}
+              transition={{
+                duration: 2.5,
+                repeat: Infinity,
+                delay: i * 0.8 + 0.4,
+                ease: "easeOut"
+              }}
+            />
+          ))}
+
+          {/* Glow effect */}
+          <motion.circle
+            r="20"
+            fill="rgba(255,0,183,0.15)"
+            initial={{ scale: 1 }}
+            animate={{ scale: [1, 1.3, 1] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+          />
+
+          {/* Core with glow */}
+          <circle r="6" fill="#FF00B7" filter="url(#glow)" />
+          <circle r="4" fill="#FF00B7" />
+
+          {/* Label with background */}
+          <g>
+            <rect
+              x="8"
+              y="-18"
+              width="45"
+              height="14"
+              rx="4"
+              fill="rgba(0,0,0,0.6)"
+              opacity="0.7"
+            />
+            <motion.text
+              x="14"
+              y="-8"
+              fill="#FF00B7"
+              fontSize="11"
+              fontWeight="600"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.7, duration: 0.8 }}
+            >
+              UAE
+            </motion.text>
+          </g>
         </g>
 
         {/* Glow filter definition */}

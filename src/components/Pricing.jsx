@@ -4,7 +4,24 @@ import React, { useState } from "react";
 import GlowButton from "./GlowButton";
 import TooltipCard from "./TooltipCard";
 import EdgeGlowCard from "./EdgeGlowCard";
+import CurrencySelector, { convertPrice, formatPrice } from "./CurrencySelector";
 import { useLanguage } from "@/contexts/LanguageContext";
+
+const USD_TO_KZT = 500;
+
+// Pricing data with USD base values
+const PRICING_DATA = {
+  globalShield: {
+    priceUSD: 0.06,
+    priceUnit: "/GB",
+  },
+  emailProtector: {
+    priceUSD: 10,
+    priceUnit: "/month/account",
+    additionalPriceUSD: 0.035,
+    additionalUnit: "/email",
+  },
+};
 
 const PLAN_CONFIG = [
   {
@@ -49,6 +66,7 @@ const Pricing = ({ onOpenModal }) => {
   const { t } = useLanguage();
   const [activeTooltip, setActiveTooltip] = useState(null);
   const [activeCardIndex, setActiveCardIndex] = useState(null);
+  const [currency, setCurrency] = useState("USD");
 
   const tooltipContent = TOOLTIP_KEYS.reduce((acc, key) => {
     const dictionaryKey = mapTooltipKeyToDictionaryKey(key);
@@ -59,15 +77,35 @@ const Pricing = ({ onOpenModal }) => {
     return acc;
   }, {});
 
-  const formatDescription = (text) => {
+  const formatDescription = (text, planId) => {
     if (!text) return null;
     const parts = text.split("\n");
-    return parts.map((line, index) => (
-      <span key={index}>
-        {line}
-        {index < parts.length - 1 && <br />}
-      </span>
-    ));
+    return parts.map((line, index) => {
+      // Convert price in description if it contains a dollar amount
+      let displayLine = line;
+      if (currency === "KZT" && planId === "emailProtector" && line.includes("$0.035")) {
+        const kztPrice = (0.035 * USD_TO_KZT).toFixed(0);
+        displayLine = line.replace("$0.035", `${kztPrice} ₸`);
+      }
+      return (
+        <span key={index}>
+          {displayLine}
+          {index < parts.length - 1 && <br />}
+        </span>
+      );
+    });
+  };
+
+  const getPriceDisplay = (planId) => {
+    const pricingInfo = PRICING_DATA[planId];
+    if (!pricingInfo) return t(`pricing.plans.${planId}.price`);
+    
+    if (currency === "USD") {
+      return `$${pricingInfo.priceUSD}${pricingInfo.priceUnit}`;
+    } else {
+      const kztPrice = pricingInfo.priceUSD * USD_TO_KZT;
+      return `${kztPrice.toLocaleString()} ₸${pricingInfo.priceUnit}`;
+    }
   };
 
   return (
@@ -77,10 +115,15 @@ const Pricing = ({ onOpenModal }) => {
       </h2>
 
       <div className="container mx-auto max-w-7xl">
+        {/* Currency Selector */}
+        <div className="flex justify-end mb-6 relative z-20">
+          <CurrencySelector currency={currency} onCurrencyChange={setCurrency} />
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 relative z-10 justify-items-center">
           {PLAN_CONFIG.map((plan, index) => {
             const title = t(`pricing.plans.${plan.id}.title`, plan.id);
-            const price = t(plan.priceKey);
+            const price = getPriceDisplay(plan.id);
             const description = t(plan.descriptionKey);
             const buttonText = t(plan.buttonKey);
 
@@ -109,7 +152,7 @@ const Pricing = ({ onOpenModal }) => {
                   <div className="text-2xl sm:text-3xl font-bold text-white mb-1">{price}</div>
                   {plan.descriptionTooltip ? (
                     <div className="text-gray-300 text-sm mb-2 flex items-start sm:items-center gap-2 justify-center text-center sm:text-left">
-                      <span>{formatDescription(description)}</span>
+                      <span>{formatDescription(description, plan.id)}</span>
                       <div
                         className="relative hidden sm:flex h-5 w-5 items-center justify-center"
                         onMouseEnter={() => {
@@ -148,7 +191,7 @@ const Pricing = ({ onOpenModal }) => {
                       </div>
                     </div>
                   ) : (
-                    <p className="text-gray-300 text-sm mb-2">{formatDescription(description)}</p>
+                    <p className="text-gray-300 text-sm mb-2">{formatDescription(description, plan.id)}</p>
                   )}
                 </div>
 
