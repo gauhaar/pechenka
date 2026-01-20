@@ -4,29 +4,41 @@
  * INSTRUCTIONS FOR WEBSITE ADMINISTRATOR:
  * 
  * To add a new article to the Featured Resources section:
- * Simply paste the article URL into the 'articleUrls' array below.
+ * Add an object with the article details to the 'articles' array below.
  * 
- * The system will automatically fetch:
- * - Article title
- * - Cover image
- * - Description/excerpt
- * - Author name
- * - Reading time
- * - Publication date
+ * Required fields:
+ * - url: The full URL to the article
+ * - title: Article title
+ * - description: Short description/excerpt
+ * - image: Image URL (can be local like "/solution/page1.png" or external)
  * 
- * No need to manually enter any article details!
- * Just paste the URL and the preview will be generated automatically.
+ * Optional fields:
+ * - author: Author name
+ * - date: Publication date
+ * - readTime: Estimated reading time
  * 
  * Example:
- * articleUrls: [
- *   "https://medium.com/@username/article-title-123",
- *   "https://medium.com/@another/different-article-456",
- * ]
+ * {
+ *   url: "https://medium.com/@username/article-title-123",
+ *   title: "My Article Title",
+ *   description: "A short description of the article...",
+ *   image: "/images/article-cover.png",
+ *   author: "@username",
+ *   date: "Jan 15, 2026",
+ *   readTime: "5 min read"
+ * }
  */
 
-export const articleUrls = [
-  // Add your article URLs here - just paste the link!
-  "https://medium.com/@tahirbalarabe2/the-modern-security-operations-center-soc-operations-center-ff8db5b0dfb5",
+export const articles = [
+  {
+    url: "https://medium.com/@tahirbalarabe2/the-modern-security-operations-center-soc-operations-center-ff8db5b0dfb5",
+    title: "The Modern Security Operations Center (SOC)",
+    description: "An in-depth look at modern SOC operations and best practices for building effective security teams.",
+    image: "/solution/page1.png",
+    author: "@tahirbalarabe2",
+    date: "Jan 15, 2026",
+    readTime: "8 min read",
+  },
 ];
 
 /**
@@ -43,15 +55,6 @@ export const featuredResourcesConfig = {
   mediumProfileUrl: "https://medium.com/@silence-security",
 };
 
-// Legacy export for backward compatibility (deprecated - use articleUrls instead)
-export const mediumArticles = [
-  {
-    url: "https://medium.com/@tahirbalarabe2/the-modern-security-operations-center-soc-operations-center-ff8db5b0dfb5",
-    title: "The Modern Security Operations Center (SOC)",
-    description: "An in-depth look at modern SOC operations and best practices.",
-    image: "/solution/page1.png",
-    author: "@tahirbalarabe2",
-    date: "Jan 15, 2026",
-    readTime: "8 min read",
-  },
-];
+// Legacy exports for backward compatibility
+export const articleUrls = articles.map(a => a.url);
+export const mediumArticles = articles;

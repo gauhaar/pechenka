@@ -17,7 +17,7 @@ import GlassyBox3D from "@/components/GlassyBox3D";
 import { StickyScrollAnimation } from "@/components/StickyScrollAnimation";
 import MediumArticleCard from "@/components/MediumArticleCard";
 import LinkPreviewCard from "@/components/LinkPreviewCard";
-import { articleUrls, featuredResourcesConfig } from "@/constants/mediumArticles";
+import { articles, featuredResourcesConfig } from "@/constants/mediumArticles";
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -439,8 +439,8 @@ export default function HomeLanding() {
             )}
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {articleUrls.slice(0, featuredResourcesConfig.displayCount).map((url, idx) => (
-              <LinkPreviewCard key={url} url={url} index={idx} />
+            {articles.slice(0, featuredResourcesConfig.displayCount).map((article, idx) => (
+              <LinkPreviewCard key={article.url} article={article} index={idx} />
             ))}
           </div>
         </section>

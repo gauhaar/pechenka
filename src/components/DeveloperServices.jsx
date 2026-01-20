@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Header from "@/components/Header";
 import RequestDemoModal from "@/components/RequestDemoModal";
-import AffiliateFooter from "@/components/affiliate/AffiliateFooter";
+import Footer from "@/components/Footer";
 import BackToTopButton from "@/components/BackToTopButton";
 import { FloatingText } from "@/components/FloatingText";
 import HeroSection from "./HeroSection";
@@ -51,7 +51,7 @@ export default function DeveloperServicesPage() {
           </div>
         </div>
       </main>
-      <AffiliateFooter />
+      <Footer />
       <BackToTopButton />
       <RequestDemoModal isOpen={isModalOpen} onClose={closeModal} />
     </>
