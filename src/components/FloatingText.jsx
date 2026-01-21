@@ -12,7 +12,7 @@ export function FloatingText({ className }) {
       icon: (
         <IconBrandX className="h-full w-full text-black" />
       ),
-      href: "https://x.com/silenceai_en",
+      href: "https://x.com/silence_codes",
     },
     {
       title: "LinkedIn",
@@ -33,7 +33,7 @@ export function FloatingText({ className }) {
       icon: (
         <IconBrandInstagram className="h-full w-full text-[#E4405F]" />
       ),
-      href: "https://www.instagram.com/silenceai_en/",
+      href: "https://www.instagram.com/silence.eng/",
     },
   ];
   const text1 = t("floatingText.headline");

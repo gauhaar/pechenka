@@ -9,7 +9,7 @@ import { IconShare2 } from "@tabler/icons-react";
 const SOCIAL_LINKS = [
   {
     title: "X",
-    href: "https://x.com/silenceai_en",
+    href: "https://x.com/silence_eng",
     icon: <IconBrandX className="h-full w-full text-black" />,
   },
   {
@@ -24,7 +24,7 @@ const SOCIAL_LINKS = [
   },
   {
     title: "Instagram",
-    href: "https://www.instagram.com/silenceai_en/",
+    href: "https://www.instagram.com/silence.eng/",
     icon: <IconBrandInstagram className="h-full w-full text-[#E4405F]" />,
   },
 ];
