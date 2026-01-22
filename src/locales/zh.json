@@ -290,7 +290,11 @@
           "intelligence": "情报报告"
         }
       }
-    }
+    },
+    "subtitle": "移动优先的计划，随您的产品扩展。",
+    "percentMaintenance": "{percent}% 年度维护费用",
+    "planEstimate": "${value}",
+    "perYear": "每年 (估算)"
   },
   "solution": {
     "sectionTitle": "我们的解决方案",
@@ -855,8 +859,8 @@
   "home": {
     "hero": {
       "badge": "AI 安全与开发",
-      "title": "安全构建，自信交付。",
-      "subtitle": "两款订阅系统（AI-SOC、SLNC-env）+ 为企业团队定制的 AI 与软件交付。",
+      "title": "Cybersecurity is no longer",
+      "subtitle": "Build securely. Deploy confidently.",
       "ctaPrimary": "预约演示",
       "ctaSecondary": "查看系统",
       "highlights": {
@@ -870,36 +874,42 @@
         "egress": "全程本地——代码、提示、构建",
         "deployment": "到首次安全部署",
         "locales": "开箱支持的语言"
-      }
+      },
+      "titleHighlight": "complicated or expensive anymore"
     },
     "systems": {
-      "title": "系统",
+      "title": "Systems",
       "subtitle": "选择合适的订阅产品：AI-SOC 负责检测，SLNC-env 提供密闭开发。",
-      "cta": "查看详情",
+      "cta": "View details",
       "aiSoc": {
         "title": "AI-SOC",
-        "desc": "为 SOC 团队提供 AI 副驾的托管检测与响应。",
-        "badge": "订阅"
+        "desc": "Managed detection & response system powered and operated by AI. Used to prevent web and email attacks",
+        "badge": "Subscription"
       },
       "slncEnv": {
         "title": "SLNC-env",
         "desc": "保持代码、提示与构建全程在本地的密闭开发云。",
         "badge": "订阅"
+      },
+      "sithub": {
+        "title": "Sithub",
+        "desc": "Self-hosted GitHub alternative with built-in security scanning. All repositories and code analysis stay within your network.",
+        "badge": "Subscription"
       }
     },
     "services": {
-      "title": "定制开发服务",
-      "subtitle": "AI 代理、集成与全周期交付，从第一天就内置安全。",
-      "cta": "查看服务",
+      "title": "Custom development services",
+      "subtitle": "AI agents, integrations, and full-cycle software delivery with security baked in from day one.",
+      "cta": "View services",
       "cards": {
-        "agents": "具备防护、RAG 与安全连接器的生产级 AI 代理。",
-        "integrations": "与您的技术栈、IAM 与数据治理的供应商无关集成。",
-        "delivery": "包含可靠性 SLO、可观测性与安全评审的全周期交付。"
+        "agents": "Production-grade AI agents with guardrails, RAG, and secure connectors.",
+        "integrations": "Vendor-neutral integrations with your stack, IAM, and data governance.",
+        "delivery": "Full-cycle delivery with reliability SLOs, observability, and security reviews."
       },
       "cardsTitle": {
-        "agents": "代理",
-        "integrations": "集成",
-        "delivery": "交付"
+        "agents": "Agents",
+        "integrations": "Integrations",
+        "delivery": "Delivery"
       }
     },
     "contact": {
@@ -907,6 +917,11 @@
       "subtitle": "告诉我们您的安全与交付目标——我们将匹配合适的系统与服务。",
       "cta": "预约演示",
       "ctaSecondary": "与服务团队沟通"
+    },
+    "resources": {
+      "title": "Featured articles",
+      "subtitle": "Silence AI is one of few private companies that have government level intelligence.",
+      "viewAll": "View all articles"
     }
   }
 }

@@ -11,17 +11,17 @@ const Hero = ({ onOpenModal }) => {
   const playgroundRef = useRef(null);
   const playgroundHeadingRef = useRef(null);
   const { t } = useLanguage();
-  const fullText = t("hero.headline");
-  const playgroundHeading = t("hero.playgroundHeading");
+  const fullText = t("hero.headline", "AI-SOC 1: Cybersecurity is no longer expensive and complicated");
+  const playgroundHeading = t("hero.playgroundHeading", <>AI powered<br />Security Operations Center</>);
 
   const tooltipContent = {
     "web-attack-protection": {
-      title: t("hero.tooltips.web.title"),
-      content: t("hero.tooltips.web.content"),
+      title: t("hero.tooltips.web.title", "Web Attack Protection"),
+      content: t("hero.tooltips.web.content", "The system protects against ALL types of web attacks such as DDoS, SQLi, etc., except business logic vulnerabilities"),
     },
     "email-attack-protection": {
-      title: t("hero.tooltips.email.title"),
-      content: t("hero.tooltips.email.content"),
+      title: t("hero.tooltips.email.title", "Email Attack Protection"),
+      content: t("hero.tooltips.email.content", "The system protects against ALL types of email attacks: phishing, malicious attachments, dangerous links, etc."),
     },
   };
 
@@ -97,17 +97,17 @@ const Hero = ({ onOpenModal }) => {
           {fullText}
         </h1>
         <p className="font-bold mb-4 text-base sm:text-lg">
-          {t("hero.subheading")}
+          {t("hero.subheading", "A unified AI cybersecurity platform that combines:")}
         </p>
         <div className="space-y-4 mb-8">
           {[
             {
               key: "web-attack-protection",
-              label: t("hero.bullets.web"),
+              label: t("hero.bullets.web", "Real-time web attack protection"),
             },
             {
               key: "email-attack-protection",
-              label: t("hero.bullets.email"),
+              label: t("hero.bullets.email", "Email attack protection"),
             },
           ].map((item) => (
             <div key={item.key} className="flex items-start sm:items-center gap-2 text-sm sm:text-base">
@@ -133,7 +133,7 @@ const Hero = ({ onOpenModal }) => {
         </div>
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto">
           <GlowButton onClick={onOpenModal} className="w-full sm:w-auto">
-            {t("hero.buttons.connect")}
+            {t("hero.buttons.connect", "Connect in 4 minutes")}
           </GlowButton>
         </div>
       </div>

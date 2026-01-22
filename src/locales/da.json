@@ -320,7 +320,7 @@
         }
       }
     },
-    "subtitle": "Mobil-først planer bygget til at skalere med dit produkt.",
+    "subtitle": "Mobil-først planer bygget til at skala med dit produkt...",
     "percentMaintenance": "{percent}% årlig vedligeholdelse",
     "planEstimate": "${value}",
     "perYear": "pr. år (est.)",
@@ -431,7 +431,7 @@
       "termsService": "Servicevilkår",
       "privacy": "Privatlivspolitik",
       "cookies": "Cookiepolitik",
-      "affiliateTerms": "Vilkår for partnerprogram"
+      "affiliateTerms": "Vilkår for partnerprogram..."
     },
     "copyright": "© {year} Silence AI. Alle rettigheder forbeholdes."
   },
@@ -744,7 +744,7 @@
   "servicesBlock": {
     "badge": "Hvad vi tilbyder",
     "title": "Vores tjenester",
-    "description": "Premium UI, stærk teknik og hurtig levering — alt hvad du behøver for at lancere et produkt, der ser ud og fungerer som et topmærke.",
+    "description": "Premium UI, stærk teknik og hurtig levering — alt hvad du behøver for at lancere et produkt, der ser ud og fungerer som et stort brand...",
     "learnMore": "Lær mere",
     "learnMoreAria": "Lær mere om denne tjeneste",
     "services": {
@@ -894,8 +894,8 @@
   "home": {
     "hero": {
       "badge": "AI-sikkerhed og udvikling",
-      "title": "Byg sikkert. Deploy med ro i sindet.",
-      "subtitle": "To abonnementsystemer (AI-SOC, SLNC-env) plus skræddersyet AI og softwarelevering til enterprise-teams.",
+      "title": "Cybersecurity is no longer",
+      "subtitle": "Build securely. Deploy confidently.",
       "ctaPrimary": "Book demo",
       "ctaSecondary": "Udforsk systemer",
       "highlights": {
@@ -909,36 +909,42 @@
         "egress": "Alt on-prem — kode, prompty, builds",
         "deployment": "til første sikre deploy",
         "locales": "sprog understøttet fra start"
-      }
+      },
+      "titleHighlight": "complicated or expensive anymore"
     },
     "systems": {
-      "title": "Systemer",
+      "title": "Systems",
       "subtitle": "Vælg det abonnement, der passer: AI-SOC til detektion og SLNC-env til lukket udvikling.",
-      "cta": "Se detaljer",
+      "cta": "View details",
       "aiSoc": {
         "title": "AI-SOC",
-        "desc": "Administreret detektion og respons med AI-copilots til SOC-teams.",
-        "badge": "Abonnement"
+        "desc": "Managed detection & response system powered and operated by AI. Used to prevent web and email attacks",
+        "badge": "Subscription"
       },
       "slncEnv": {
         "title": "SLNC-env",
         "desc": "Lukket udviklingscloud, der holder kode, prompty og builds on-prem.",
         "badge": "Abonnement"
+      },
+      "sithub": {
+        "title": "Sithub",
+        "desc": "Self-hosted GitHub alternative with built-in security scanning. All repositories and code analysis stay within your network.",
+        "badge": "Subscription"
       }
     },
     "services": {
-      "title": "Skræddersyede udviklingstjenester",
-      "subtitle": "AI-agenter, integrationer og fuld softwareleverance med sikkerhed indbygget fra dag ét.",
-      "cta": "Se tjenester",
+      "title": "Custom development services",
+      "subtitle": "AI agents, integrations, and full-cycle software delivery with security baked in from day one.",
+      "cta": "View services",
       "cards": {
-        "agents": "Produktionsklare AI-agenter med guardrails, RAG og sikre connectorer.",
-        "integrations": "Leverandør-neutrale integrationer til jeres stack, IAM og datagovernance.",
-        "delivery": "Fuld leverance med SLO'er for pålidelighed, observability og sikkerhedsgennemgange."
+        "agents": "Production-grade AI agents with guardrails, RAG, and secure connectors.",
+        "integrations": "Vendor-neutral integrations with your stack, IAM, and data governance.",
+        "delivery": "Full-cycle delivery with reliability SLOs, observability, and security reviews."
       },
       "cardsTitle": {
-        "agents": "Agenter",
-        "integrations": "Integrationer",
-        "delivery": "Leverance"
+        "agents": "Agents",
+        "integrations": "Integrations",
+        "delivery": "Delivery"
       }
     },
     "contact": {
@@ -946,6 +952,11 @@
       "subtitle": "Fortæl om jeres sikkerheds- og leverancemål — vi matcher system og tjenester.",
       "cta": "Book demo",
       "ctaSecondary": "Tal med serviceteamet"
+    },
+    "resources": {
+      "title": "Featured articles",
+      "subtitle": "Silence AI is one of few private companies that have government level intelligence.",
+      "viewAll": "View all articles"
     }
   }
 }

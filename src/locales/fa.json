@@ -894,8 +894,8 @@
   "home": {
     "hero": {
       "badge": "امنیت و توسعه AI",
-      "title": "ایمن بسازید. با اطمینان استقرار دهید.",
-      "subtitle": "دو سیستم اشتراکی (AI-SOC و SLNC-env) به‌همراه تحویل سفارشی AI و نرم‌افزار برای تیم‌های سازمانی.",
+      "title": "Cybersecurity is no longer",
+      "subtitle": "Build securely. Deploy confidently.",
       "ctaPrimary": "درخواست دمو",
       "ctaSecondary": "مشاهده سیستم‌ها",
       "highlights": {
@@ -909,36 +909,42 @@
         "egress": "همه‌چیز روی محل — کد، پرامپت، بیلد",
         "deployment": "تا اولین استقرار امن",
         "locales": "محلی‌سازی‌های آماده استفاده"
-      }
+      },
+      "titleHighlight": "complicated or expensive anymore"
     },
     "systems": {
-      "title": "سیستم‌ها",
+      "title": "Systems",
       "subtitle": "محصول اشتراکی مناسب را انتخاب کنید: AI-SOC برای تشخیص و SLNC-env برای توسعه ایزوله.",
-      "cta": "مشاهده جزئیات",
+      "cta": "View details",
       "aiSoc": {
         "title": "AI-SOC",
-        "desc": "تشخیص و پاسخ مدیریت‌شده با کمک هم‌خلبان‌های AI برای تیم‌های SOC.",
-        "badge": "اشتراک"
+        "desc": "Managed detection & response system powered and operated by AI. Used to prevent web and email attacks",
+        "badge": "Subscription"
       },
       "slncEnv": {
         "title": "SLNC-env",
         "desc": "ابر توسعه ایزوله که کد، پرامپت و بیلد را روی محل نگه می‌دارد.",
         "badge": "اشتراک"
+      },
+      "sithub": {
+        "title": "Sithub",
+        "desc": "Self-hosted GitHub alternative with built-in security scanning. All repositories and code analysis stay within your network.",
+        "badge": "Subscription"
       }
     },
     "services": {
-      "title": "خدمات توسعه سفارشی",
-      "subtitle": "عامل‌های AI، یکپارچه‌سازی‌ها و تحویل کامل نرم‌افزار با امنیت از روز اول.",
-      "cta": "مشاهده خدمات",
+      "title": "Custom development services",
+      "subtitle": "AI agents, integrations, and full-cycle software delivery with security baked in from day one.",
+      "cta": "View services",
       "cards": {
-        "agents": "عامل‌های AI در سطح تولید با محافظ‌ها، RAG و اتصال‌دهنده‌های امن.",
-        "integrations": "یکپارچه‌سازی بی‌طرف فروشنده با استک شما، IAM و حکمرانی داده.",
-        "delivery": "تحویل کامل چرخه با SLOهای قابلیت اتکا، مشاهده‌پذیری و بازبینی امنیتی."
+        "agents": "Production-grade AI agents with guardrails, RAG, and secure connectors.",
+        "integrations": "Vendor-neutral integrations with your stack, IAM, and data governance.",
+        "delivery": "Full-cycle delivery with reliability SLOs, observability, and security reviews."
       },
       "cardsTitle": {
-        "agents": "عامل‌ها",
-        "integrations": "یکپارچه‌سازی‌ها",
-        "delivery": "تحویل"
+        "agents": "Agents",
+        "integrations": "Integrations",
+        "delivery": "Delivery"
       }
     },
     "contact": {
@@ -946,6 +952,11 @@
       "subtitle": "اهداف امنیت و تحویل خود را بگویید — ما سیستم و خدمات مناسب را هماهنگ می‌کنیم.",
       "cta": "درخواست دمو",
       "ctaSecondary": "گفتگو با تیم خدمات"
+    },
+    "resources": {
+      "title": "Featured articles",
+      "subtitle": "Silence AI is one of few private companies that have government level intelligence.",
+      "viewAll": "View all articles"
     }
   }
 }

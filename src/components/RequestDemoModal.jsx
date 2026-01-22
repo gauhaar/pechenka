@@ -50,55 +50,55 @@ const RequestDemoModal = ({ isOpen, onClose }) => {
 
             {isSubmitted ? (
               <div className="text-center py-10">
-                <h2 className="text-2xl font-bold mb-4">{t("requestDemoModal.successTitle")}</h2>
+                <h2 className="text-2xl font-bold mb-4">{t("requestDemoModal.successTitle", "Thank you!")}</h2>
                 <p className="text-gray-300 mb-6">
-                  {t("requestDemoModal.successBody")}
+                  {t("requestDemoModal.successBody", "We'll get back to you soon to schedule your demo.")}
                 </p>
                 <button
                   onClick={handleClose}
                   className="px-6 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold rounded-lg transition-all"
                 >
-                  {t("requestDemoModal.close")}
+                  {t("requestDemoModal.close", "Close")}
                 </button>
               </div>
             ) : (
               <>
-                <h2 className="text-2xl font-bold mb-6 text-center">{t("requestDemoModal.title")}</h2>
+                <h2 className="text-2xl font-bold mb-6 text-center">{t("requestDemoModal.title", "Request a Demo")}</h2>
                 
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
                     <label className="block text-sm font-medium text-gray-300 mb-1">
-                      {t("requestDemoModal.name")}
+                      {t("requestDemoModal.name", "Name")}
                     </label>
                     <input
                       type="text"
                       required
                       className="w-full px-4 py-2 bg-slate-900/50 border border-white/10 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-white placeholder-gray-500"
-                      placeholder={t("requestDemoModal.placeholders.name")}
+                      placeholder={t("requestDemoModal.placeholders.name", "Your name")}
                     />
                   </div>
 
                   <div>
                     <label className="block text-sm font-medium text-gray-300 mb-1">
-                      {t("requestDemoModal.email")}
+                      {t("requestDemoModal.email", "Email")}
                     </label>
                     <input
                       type="email"
                       required
                       className="w-full px-4 py-2 bg-slate-900/50 border border-white/10 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-white placeholder-gray-500"
-                      placeholder={t("requestDemoModal.placeholders.email")}
+                      placeholder={t("requestDemoModal.placeholders.email", "your@email.com")}
                     />
                   </div>
 
                   <div>
                     <label className="block text-sm font-medium text-gray-300 mb-1">
-                      {t("requestDemoModal.company")}
+                      {t("requestDemoModal.company", "Company")}
                     </label>
                     <input
                       type="text"
                       required
                       className="w-full px-4 py-2 bg-slate-900/50 border border-white/10 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-white placeholder-gray-500"
-                      placeholder={t("requestDemoModal.placeholders.company")}
+                      placeholder={t("requestDemoModal.placeholders.company", "Your company")}
                     />
                   </div>
 
@@ -107,7 +107,7 @@ const RequestDemoModal = ({ isOpen, onClose }) => {
                       type="submit"
                       className="w-full py-3 px-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold rounded-lg transition-all transform hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-blue-500/25"
                     >
-                      {t("requestDemoModal.submit")}
+                      {t("requestDemoModal.submit", "Submit Request")}
                     </button>
                   </div>
                 </form>

@@ -9,9 +9,39 @@ import EdgeGlowCard from "./EdgeGlowCard";
 
 export function StickyScrollSolution() {
   const { t } = useLanguage();
+  
+  // Fallback content mapping
+  const fallbackContent = {
+    webSecurity: {
+      title: "Web Security System: site/API connected in 2 minutes",
+      description: "Protection against web attacks such as DDoS and SQLi. Ability to close ports; good practice is to disable port 22 when not in use."
+    },
+    ciaMonitoring: {
+      title: "CIA-level traffic monitoring",
+      description: "Interactive 3D globe shows traffic by request count, users, and volume with change history."
+    },
+    userGrowth: {
+      title: "Useful insights on user growth",
+      description: "View the history of user count changes"
+    },
+    aiEmailProtection: {
+      title: "First AI email protection: network connected in 2 minutes",
+      description: "CMC provides administrators with a complete overview of all sent and received emails with automatic threat categorization (spoofing, spam, phishing, dangerous links, malware)."
+    },
+    emailVisualization: {
+      title: "Email flow visualization",
+      description: "CMC with the most advanced commercial email visualizer"
+    },
+    secureWebmail: {
+      title: "Secure web client",
+      description: "For accounts added by the administrator, a secure web client is available that detects spoofing, spam, phishing, and malware."
+    }
+  };
+  
   const localizedContent = solutionContent.map((item) => {
-    const title = t(`stickySolution.${item.id}.title`);
-    const description = t(`stickySolution.${item.id}.description`);
+    const fallback = fallbackContent[item.id] || { title: "", description: "" };
+    const title = t(`stickySolution.${item.id}.title`, fallback.title);
+    const description = t(`stickySolution.${item.id}.description`, fallback.description);
 
     return {
       ...item,

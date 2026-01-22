@@ -2,10 +2,11 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
+import * as Flags from "country-flag-icons/react/3x2";
 
 const CURRENCIES = [
-  { code: "USD", symbol: "$", label: "USD", flag: "🇺🇸" },
-  { code: "KZT", symbol: "₸", label: "KZT", flag: "🇰🇿" },
+  { code: "USD", symbol: "$", label: "USD", flagCode: "US" },
+  { code: "KZT", symbol: "₸", label: "KZT", flagCode: "KZ" },
 ];
 
 const USD_TO_KZT = 500;
@@ -30,6 +31,7 @@ const CurrencySelector = ({ currency, onCurrencyChange, align = "right" }) => {
   const containerRef = useRef(null);
 
   const activeCurrency = CURRENCIES.find((c) => c.code === currency) || CURRENCIES[0];
+  const ActiveFlag = Flags[activeCurrency.flagCode] ?? null;
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -67,7 +69,15 @@ const CurrencySelector = ({ currency, onCurrencyChange, align = "right" }) => {
         aria-expanded={isOpen}
         aria-label="Select currency"
       >
-        <span className="text-base">{activeCurrency.flag}</span>
+        <span className="h-4 w-6 overflow-hidden rounded-[4px] border border-white/20">
+          {ActiveFlag ? (
+            <ActiveFlag className="h-full w-full" />
+          ) : (
+            <span className="flex h-full w-full items-center justify-center bg-white/10 text-[10px] font-semibold uppercase">
+              {activeCurrency.label}
+            </span>
+          )}
+        </span>
         <span>{activeCurrency.label}</span>
         <svg
           className={clsx("h-3 w-3 text-white/70 transition-transform", isOpen && "rotate-180")}
@@ -94,6 +104,7 @@ const CurrencySelector = ({ currency, onCurrencyChange, align = "right" }) => {
           <div className="space-y-1">
             {CURRENCIES.map((curr) => {
               const isActive = curr.code === activeCurrency.code;
+              const Flag = Flags[curr.flagCode] ?? null;
               return (
                 <button
                   key={curr.code}
@@ -106,7 +117,15 @@ const CurrencySelector = ({ currency, onCurrencyChange, align = "right" }) => {
                     isActive ? "bg-white/15 font-semibold" : "hover:bg-white/10"
                   )}
                 >
-                  <span className="text-lg">{curr.flag}</span>
+                  <span className="h-4 w-6 overflow-hidden rounded-[4px] border border-white/20">
+                    {Flag ? (
+                      <Flag className="h-full w-full" />
+                    ) : (
+                      <span className="flex h-full w-full items-center justify-center bg-white/10 text-[10px] font-semibold uppercase">
+                        {curr.label}
+                      </span>
+                    )}
+                  </span>
                   <span className="flex-1 text-left">{curr.label}</span>
                   {isActive && (
                     <svg

@@ -4,26 +4,23 @@ import EdgeGlowCard from './EdgeGlowCard';
 
 const Insights = () => {
   const { t } = useLanguage();
-  const localized = t("insights.items") || [];
-  const baseInsights = [
+  const items = [
     {
       icon: '🎯',
+      title: t("insights.items.0.title", "39 seconds"),
+      description: t("insights.items.0.description", "A hacker attack occurs every 39 seconds"),
     },
     {
       icon: '👥',
+      title: t("insights.items.1.title", "20 million DDoS attacks"),
+      description: t("insights.items.1.description", "20.5 million DDoS attacks in Q1 2025 alone"),
     },
     {
       icon: '⚡️',
+      title: t("insights.items.2.title", "Every day"),
+      description: t("insights.items.2.description", "30,000 websites are hacked daily"),
     },
   ];
-  const items = baseInsights.map((item, index) => {
-    const translation = localized[index] || {};
-    return {
-      icon: item.icon,
-      title: translation.title || "",
-      description: translation.description || "",
-    };
-  });
 
   return (
     <div className="pb-12">

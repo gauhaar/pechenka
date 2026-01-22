@@ -34,8 +34,8 @@
   "home": {
     "hero": {
       "badge": "AI security & development",
-      "title": "Build securely. Deploy confidently.",
-      "subtitle": "Two subscription systems (AI-SOC, SLNC-env) plus custom AI and software delivery for enterprise teams.",
+      "title": "Cybersecurity is no longer",
+      "subtitle": "Build securely. Deploy confidently.",
       "ctaPrimary": "Request demo",
       "ctaSecondary": "Explore systems",
       "highlights": {
@@ -49,7 +49,8 @@
         "egress": "All on-prem—code, prompts, builds",
         "deployment": "to first secure deployment",
         "locales": "locales supported out-of-box"
-      }
+      },
+      "titleHighlight": "complicated or expensive anymore"
     },
     "systems": {
       "title": "Systems",
@@ -57,12 +58,17 @@
       "cta": "View details",
       "aiSoc": {
         "title": "AI-SOC",
-        "desc": "Managed detection & response with AI copilots for SOC teams.",
+        "desc": "Managed detection & response system powered and operated by AI. Used to prevent web and email attacks",
         "badge": "Subscription"
       },
       "slncEnv": {
         "title": "SLNC-env",
         "desc": "Sealed development cloud that keeps code, prompts, and builds on-prem.",
+        "badge": "Subscription"
+      },
+      "sithub": {
+        "title": "Sithub",
+        "desc": "Self-hosted GitHub alternative with built-in security scanning. All repositories and code analysis stay within your network.",
         "badge": "Subscription"
       }
     },
@@ -86,6 +92,11 @@
       "subtitle": "Tell us your security and delivery goals—we'll align the right system and services.",
       "cta": "Request demo",
       "ctaSecondary": "Talk to services team"
+    },
+    "resources": {
+      "title": "Featured articles",
+      "subtitle": "Silence AI is one of few private companies that have government level intelligence.",
+      "viewAll": "View all articles"
     }
   },
   "affiliate": {
@@ -347,7 +358,11 @@
           "intelligence": "Intelligence Report"
         }
       }
-    }
+    },
+    "subtitle": "Načrti, prilagojeni za mobilne naprave, zgrajeni za rast z vašim izdelkom...",
+    "percentMaintenance": "{percent}% yearly maintenance",
+    "planEstimate": "${value}",
+    "perYear": "per year (est.)"
   },
   "pricingCta": {
     "requestSystem": "Request System"
@@ -450,8 +465,8 @@
     "tableOfContents": "Table of Contents"
   },
   "solution": {
-    "sectionTitle": "Our Solution",
-    "sectionSubtitle": "Ready in 4 minutes and usable by any IT professional—no cybersecurity expertise required. We offer advanced visualization and affordability.",
+    "sectionTitle": "Naša rešitev",
+    "sectionSubtitle": "Pripravljena v 4 minutah in uporabna za katerega koli IT strokovnjaka — brez potrebe po znanju kibernetske varnosti. Ponujamo napredno vizualizacijo in dostopnost.",
     "cards": {
       "globalShield": {
         "title": "Global Shield - CIA-Level Traffic Monitoring",
@@ -561,7 +576,7 @@
   "heroSection": {
     "badge": "Production-ready AI & Software",
     "title": "Custom AI & Software Development",
-    "description": "We build production-ready AI agents and custom software.",
+    "description": "Gradimo pripravljene AI agente in prilagojeno programsko opremo za produkcijo...",
     "country": "Kazakhstan",
     "market": "global market",
     "startProject": "Start a Project",
@@ -735,7 +750,7 @@
     "title": "Why Choose Us",
     "subtitle": "Trusted by teams from",
     "subtitleHighlight": "billion-dollar organizations",
-    "subtitleTail": "— and shipped with startup speed.",
+    "subtitleTail": "— in dostavljeno s hitrostjo startupa...",
     "learnMore": "Learn more",
     "logos": {
       "kmg": "KazMunayGas",
@@ -762,33 +777,33 @@
   "servicesBlock": {
     "badge": "What we offer",
     "title": "Our Services",
-    "description": "Premium UI, strong engineering, and fast delivery — everything you need to launch a product that looks and performs like a top-tier brand.",
+    "description": "Vrhunski uporabniški vmesnik, močno inženirstvo in hitra dostava — vse, kar potrebujete za zagon...",
     "learnMore": "Learn more",
-    "learnMoreAria": "Learn more about this service",
+    "learnMoreAria": "Izvedite več o tej storitvi...",
     "services": {
       "aiAgents": {
         "title": "AI Agents",
-        "description": "Custom conversational and autonomous agents for support, ops, and analytics.",
+        "description": "Prilagojeni pogovorni in avtonomni agenti za podporo, delovanje in analitiko...",
         "tag": "Automation"
       },
       "customSoftware": {
         "title": "Custom Software",
-        "description": "End-to-end web and desktop apps tailored to your workflows.",
+        "description": "Spletne in namizne aplikacije od začetka do konca, prilagojene vašim delovnim procesom...",
         "tag": "Build"
       },
       "cybersecurity": {
         "title": "Cybersecurity",
-        "description": "Audits, penetration testing, and continuous monitoring.",
+        "description": "Revizije, testiranje vdorov in stalno spremljanje...",
         "tag": "Protect"
       },
       "backend": {
         "title": "Backend / DevOps",
-        "description": "Scalable APIs, CI/CD pipelines, and cloud infrastructure.",
+        "description": "Razširljivi API-ji, CI/CD cevovodi in oblačna infrastruktura...",
         "tag": "Scale"
       },
       "mobile": {
         "title": "Mobile",
-        "description": "Cross-platform apps with native performance and polished UX.",
+        "description": "Večplatformske aplikacije z izvorno zmogljivostjo in izpopolnjenim UX...",
         "tag": "Ship"
       }
     }
@@ -846,7 +861,7 @@
     "liveImpact": "Live Impact",
     "before": "Before",
     "after": "After",
-    "buildCta": "Build something like this →",
+    "buildCta": "Zgradite nekaj podobnega →",
     "caseStudy": "Case Study",
     "items": {
       "nak": {
@@ -874,7 +889,7 @@
   },
   "howWeWork": {
     "title": "How We Work",
-    "subtitle": "Ultra-fast delivery pipeline — optimized for velocity.",
+    "subtitle": "Ultrahiter cevovod za dostavo — optimiziran za hitrost...",
     "steps": {
       "discovery": {
         "title": "Discovery",
@@ -904,7 +919,7 @@
   },
   "technologyStack": {
     "title": "Technology Stack",
-    "subtitle": "A carefully selected, production-grade stack engineered for speed, scalability, and beautiful user experiences."
+    "subtitle": "Previdno izbran, produkcijski stack, zasnovan za hitrost, razširljivost in varnost..."
   },
   "backToTop": {
     "label": "Back to top"

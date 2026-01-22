@@ -24,7 +24,7 @@ export default function LayoutWrapper({ children, initialLanguage }) {
         {children}
       </div>
       <div className={isPolicyPage ? "bg-black" : "relative w-full"}>
-        {!isPolicyPage && !isAffiliatePage && !isServicesPage && (
+        {!isPolicyPage && (
           <div className="absolute inset-0 -z-10 layout-background">
             <img
               src="/moonrise.webp"
@@ -33,7 +33,7 @@ export default function LayoutWrapper({ children, initialLanguage }) {
             />
           </div>
         )}
-        {!isAffiliatePage && !isServicesPage && <Footer />}
+        <Footer />
       </div>
       <CookieConsent />
     </LanguageProvider>

@@ -320,7 +320,7 @@
         }
       }
     },
-    "subtitle": "Mobile-first plans built to scale with your product.",
+    "subtitle": "मोबाइल-पहिलो योजनाहरू तपाईंको उत्पादनसँग मिलेर विस्तार गर्न निर्माण गरिएको...",
     "percentMaintenance": "{percent}% yearly maintenance",
     "planEstimate": "${value}",
     "perYear": "per year (est.)",
@@ -332,8 +332,8 @@
     }
   },
   "solution": {
-    "sectionTitle": "Our Solution",
-    "sectionSubtitle": "Ready in 4 minutes and usable by any IT professional—no cybersecurity expertise required. We offer advanced visualization and affordability.",
+    "sectionTitle": "हाम्रो समाधान",
+    "sectionSubtitle": "४ मिनेटमा तयार र कुनै पनि आईटी पेशेवरद्वारा प्रयोग गर्न सकिने — साइबर सुरक्षा विशेषज्ञता आवश्यक पर्दैन। हामी उन्नत भिजुअलाइजेसन र सस्तो मूल्य प्रदान गर्दछौं।",
     "cards": {
       "globalShield": {
         "title": "Global Shield - CIA-Level Traffic Monitoring",
@@ -893,59 +893,43 @@
   },
   "home": {
     "hero": {
-      "badge": "AI security & development",
-      "title": "Build securely. Deploy confidently.",
-      "subtitle": "Two subscription systems (AI-SOC, SLNC-env) plus custom AI and software delivery for enterprise teams.",
-      "ctaPrimary": "Request demo",
-      "ctaSecondary": "Explore systems",
-      "highlights": {
-        "coverage": "24/7 AI-assisted SOC",
-        "onPrem": "0-egress on-prem",
-        "deploy": "Secure deploy in 4 min"
-      },
-      "metrics": {
-        "title": "Built for regulated teams",
-        "soc": "AI-assisted SOC coverage",
-        "egress": "All on-prem—code, prompts, builds",
-        "deployment": "to first secure deployment",
-        "locales": "locales supported out-of-box"
-      }
+      "title": "साइबर सुरक्षा अब अरू",
+      "titleHighlight": "जटिल वा महँगो छैन",
+      "subtitle": "सुरक्षित रूपमा निर्माण गर्नुहोस्। विश्वासपूर्वक तैनाथ गर्नुहोस्।"
     },
     "systems": {
-      "title": "Systems",
-      "subtitle": "Choose the subscription product that fits: AI-SOC for detection and SLNC-env for sealed development.",
-      "cta": "View details",
+      "title": "प्रणालीहरू",
+      "cta": "विवरण हेर्नुहोस्",
       "aiSoc": {
         "title": "AI-SOC",
-        "desc": "Managed detection & response with AI copilots for SOC teams.",
-        "badge": "Subscription"
+        "desc": "AI द्वारा संचालित र सञ्चालित प्रबन्धित पहिचान र प्रतिक्रिया प्रणाली। वेब र इमेल आक्रमणहरू रोक्न प्रयोग गरिन्छ",
+        "badge": "सदस्यता"
       },
-      "slncEnv": {
-        "title": "SLNC-env",
-        "desc": "Sealed development cloud that keeps code, prompts, and builds on-prem.",
-        "badge": "Subscription"
+      "sithub": {
+        "title": "Sithub",
+        "desc": "निर्मित सुरक्षा स्क्यानिङको साथ स्वत: होस्ट गरिएको GitHub विकल्प। सबै भण्डारहरू र कोड विश्लेषण तपाईंको नेटवर्क भित्रै रहन्छ।",
+        "badge": "सदस्यता"
       }
     },
     "services": {
-      "title": "Custom development services",
-      "subtitle": "AI agents, integrations, and full-cycle software delivery with security baked in from day one.",
-      "cta": "View services",
-      "cards": {
-        "agents": "Production-grade AI agents with guardrails, RAG, and secure connectors.",
-        "integrations": "Vendor-neutral integrations with your stack, IAM, and data governance.",
-        "delivery": "Full-cycle delivery with reliability SLOs, observability, and security reviews."
-      },
+      "title": "कस्टम विकास सेवाहरू",
+      "subtitle": "एआई एजेन्टहरू, एकीकरणहरू, र पहिलो दिन देखि नै सुरक्षा समावेश गरिएको पूर्ण-चक्र सफ्टवेयर डेलिभरी।",
+      "cta": "सेवाहरू हेर्नुहोस्",
       "cardsTitle": {
-        "agents": "Agents",
-        "integrations": "Integrations",
-        "delivery": "Delivery"
+        "agents": "एजेन्टहरू",
+        "integrations": "एकीकरणहरू",
+        "delivery": "डेलिभरी"
+      },
+      "cards": {
+        "agents": "गार्डरेलहरू, RAG, र सुरक्षित कनेक्टरहरूको साथ उत्पादन-स्तरीय एआई एजेन्टहरू।",
+        "integrations": "तपाईंको स्ट्याक, IAM, र डेटा शासनको साथ विक्रेता-तटस्थ एकीकरणहरू।",
+        "delivery": "विश्वसनीयता SLOs, अवलोकन, र सुरक्षा समीक्षाहरूको साथ पूर्ण-चक्र डेलिभरी।"
       }
     },
-    "contact": {
-      "title": "Ready to combine AI-SOC and SLNC-env?",
-      "subtitle": "Tell us your security and delivery goals—we'll align the right system and services.",
-      "cta": "Request demo",
-      "ctaSecondary": "Talk to services team"
+    "resources": {
+      "title": "विशेष लेखहरू",
+      "subtitle": "साइलेन्स एआई सरकारी स्तरको बुद्धिमत्ता भएको केहि निजी कम्पनीहरू मध्ये एक हो।",
+      "viewAll": "सबै लेखहरू हेर्नुहोस्"
     }
   }
 }

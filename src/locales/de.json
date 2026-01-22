@@ -214,6 +214,10 @@
   },
   "pricing": {
     "title": "Preise",
+    "subtitle": "Mobile-first Pläne, die mit Ihrem Produkt skalieren...",
+    "percentMaintenance": "{percent}% jährliche Wartung",
+    "planEstimate": "${value}",
+    "perYear": "pro Jahr (geschätzt)",
     "tooltips": {
       "cmcGlobal": {
         "title": "CMC mit globaler Verkehrsüberwachung",
@@ -703,9 +707,9 @@
     }
   },
   "servicesBlock": {
-    "badge": "Was wir bieten",
+    "badge": "Unser Angebot...",
     "title": "Unsere Dienstleistungen",
-    "description": "Premium-UI, starke Technik und schnelle Lieferung — alles, was Sie brauchen, um ein Produkt zu launchen, das wie eine Top-Marke aussieht und funktioniert.",
+    "description": "Premium-UI, starke Technik und schnelle Lieferung — alles, was Sie brauchen, um ein Produkt zu starten, das aussieht und funktioniert wie eine große Marke...",
     "learnMore": "Mehr erfahren",
     "learnMoreAria": "Mehr über diesen Service erfahren",
     "services": {
@@ -855,8 +859,8 @@
   "home": {
     "hero": {
       "badge": "KI-Sicherheit & Entwicklung",
-      "title": "Sicher entwickeln. Souverän bereitstellen.",
-      "subtitle": "Zwei Abonnement-Systeme (AI-SOC, SLNC-env) plus maßgeschneiderte KI- und Softwarelieferung für Enterprise-Teams.",
+      "title": "Cybersecurity is no longer",
+      "subtitle": "Build securely. Deploy confidently.",
       "ctaPrimary": "Demo anfragen",
       "ctaSecondary": "Systeme ansehen",
       "highlights": {
@@ -870,36 +874,42 @@
         "egress": "Alles on-prem – Code, Prompts, Builds",
         "deployment": "bis zur ersten sicheren Bereitstellung",
         "locales": "Sprachen sofort verfügbar"
-      }
+      },
+      "titleHighlight": "complicated or expensive anymore"
     },
     "systems": {
-      "title": "Systeme",
+      "title": "Systems",
       "subtitle": "Wählen Sie das passende Abonnement: AI-SOC für Detection und SLNC-env für abgeschottete Entwicklung.",
-      "cta": "Details ansehen",
+      "cta": "View details",
       "aiSoc": {
         "title": "AI-SOC",
-        "desc": "Managed Detection & Response mit KI-Copilots für SOC-Teams.",
-        "badge": "Abonnement"
+        "desc": "Managed detection & response system powered and operated by AI. Used to prevent web and email attacks",
+        "badge": "Subscription"
       },
       "slncEnv": {
         "title": "SLNC-env",
         "desc": "Abgeschottete Entwicklungs-Cloud, die Code, Prompts und Builds on-prem hält.",
         "badge": "Abonnement"
+      },
+      "sithub": {
+        "title": "Sithub",
+        "desc": "Self-hosted GitHub alternative with built-in security scanning. All repositories and code analysis stay within your network.",
+        "badge": "Subscription"
       }
     },
     "services": {
-      "title": "Maßgeschneiderte Entwicklungsservices",
-      "subtitle": "KI-Agenten, Integrationen und vollständige Softwarelieferung – Sicherheit von Tag eins an eingebaut.",
-      "cta": "Services ansehen",
+      "title": "Custom development services",
+      "subtitle": "AI agents, integrations, and full-cycle software delivery with security baked in from day one.",
+      "cta": "View services",
       "cards": {
-        "agents": "Produktionsreife KI-Agenten mit Guardrails, RAG und sicheren Connectors.",
-        "integrations": "Anbieterneutrale Integrationen mit Ihrem Stack, IAM und Data Governance.",
-        "delivery": "Full-Cycle-Delivery mit Zuverlässigkeits-SLOs, Observability und Security-Reviews."
+        "agents": "Production-grade AI agents with guardrails, RAG, and secure connectors.",
+        "integrations": "Vendor-neutral integrations with your stack, IAM, and data governance.",
+        "delivery": "Full-cycle delivery with reliability SLOs, observability, and security reviews."
       },
       "cardsTitle": {
-        "agents": "Agenten",
-        "integrations": "Integrationen",
-        "delivery": "Auslieferung"
+        "agents": "Agents",
+        "integrations": "Integrations",
+        "delivery": "Delivery"
       }
     },
     "contact": {
@@ -907,6 +917,11 @@
       "subtitle": "Sagen Sie uns Ihre Sicherheits- und Delivery-Ziele – wir stellen das passende System und die Services zusammen.",
       "cta": "Demo anfragen",
       "ctaSecondary": "Mit dem Serviceteam sprechen"
+    },
+    "resources": {
+      "title": "Featured articles",
+      "subtitle": "Silence AI is one of few private companies that have government level intelligence.",
+      "viewAll": "View all articles"
     }
   }
 }

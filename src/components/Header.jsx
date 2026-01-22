@@ -19,7 +19,7 @@ const DESKTOP_WIDTH = 1130;
 const Header = ({ onOpenModal, policyLang, onPolicyLangChange }) => {
   const pathname = usePathname();
   const isMainPage = pathname === "/";
-  const isSlncEnvPage = pathname === "/slnc-env";
+  const isSithubPage = pathname === "/sithub";
   const isPolicyPage = pathname?.startsWith("/policies");
   const isSlncEnvPolicyPage = pathname?.startsWith("/policies/slnc_env");
   const [isCondensed, setIsCondensed] = useState(false);
@@ -37,17 +37,31 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange }) => {
     }
   };
 
+  const handleContactClick = () => {
+    if (pathname === "/") {
+      // On home page, open the modal
+      if (onOpenModal) {
+        onOpenModal();
+      }
+    } else {
+      // On other pages, try to scroll to contact form
+      scrollToContact();
+    }
+  };
+
   const handleContactLink = (e) => {
                 <Link
                   href="/#contact-form"
                   onClick={handleContactLink}
                   className="text-sm font-semibold text-white/80 transition hover:text-white"
                 >
-                  {t("header.cta.contact")}
+                  {t("header.cta.contact", "Contact")}
                 </Link>
     if (pathname === "/") {
       e.preventDefault();
-      scrollToContact();
+      if (onOpenModal) {
+        onOpenModal();
+      }
     }
   };
 
@@ -84,11 +98,10 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange }) => {
 
   const systemsItems = [
     { key: "ai-soc", label: t("header.nav.systemsAiSoc", "AI-SOC"), href: "/ai-soc" },
-    { key: "slnc-env", label: t("header.nav.systemsSlncEnv", "SLNC-env"), href: "/slnc-env" },
+    { key: "sithub", label: t("header.nav.systemsSithub", "Sithub"), href: "/sithub" },
   ];
 
   const navItems = [
-    { key: "home", label: t("header.nav.home", "Home"), href: "/" },
     { key: "services", label: t("header.nav.services", "Services"), href: "/services" },
     { key: "affiliate", label: t("header.nav.affiliate", "Affiliate Program"), href: "/affiliate" },
     { key: "systems", label: t("header.nav.systems", "Systems"), children: systemsItems },
@@ -201,7 +214,7 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange }) => {
                   {!isMainPage && !isPolicyPage && (
                     <GlowButton
                       onClick={() => {
-                        if (isSlncEnvPage) {
+                        if (isSithubPage) {
                           setCountrySelectOpen(true);
                         } else {
                           onOpenModal?.();
@@ -210,7 +223,7 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange }) => {
                       }}
                       className="w-full"
                     >
-                      {isSlncEnvPage ? t("header.cta.get", "Get") : t("header.cta.requestDemo")}
+                      {isSithubPage ? t("header.cta.get", "Get") : t("header.cta.requestDemo", "Request Demo")}
                     </GlowButton>
                   )}
                 </div>
@@ -367,13 +380,13 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange }) => {
                   )}
                 </div>
                 {isDesktop && isMainPage && (
-                  <GlowButton onClick={scrollToContact}>
-                    {t("header.cta.contact")}
+                  <GlowButton onClick={handleContactClick}>
+                    {t("header.cta.contact", "Contact")}
                   </GlowButton>
                 )}
                 {isDesktop && !isMainPage && !isPolicyPage && (
-                  <GlowButton onClick={isSlncEnvPage ? () => setCountrySelectOpen(true) : onOpenModal}>
-                    {isSlncEnvPage ? t("header.cta.get", "Get") : t("header.cta.requestDemo")}
+                  <GlowButton onClick={isSithubPage ? () => setCountrySelectOpen(true) : onOpenModal}>
+                    {isSithubPage ? t("header.cta.get", "Get") : t("header.cta.requestDemo", "Request Demo")}
                   </GlowButton>
                 )}
               </motion.div>

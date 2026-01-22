@@ -70,9 +70,32 @@ const Pricing = ({ onOpenModal }) => {
 
   const tooltipContent = TOOLTIP_KEYS.reduce((acc, key) => {
     const dictionaryKey = mapTooltipKeyToDictionaryKey(key);
+    
+    // Tooltip fallbacks
+    const tooltipFallbacks = {
+      cmcGlobal: {
+        title: "CMC with global traffic monitoring",
+        content: "The Centralized Management Console (CMC) seamlessly integrates with other security systems and uses the same domain and interface as Global Shield and Security Tester. Here you can block countries, close ports, and manage security at scale."
+      },
+      countryBlacklisting: {
+        title: "Country blocking",
+        content: "Block all traffic originating from a selected country."
+      },
+      portManagement: {
+        title: "Port management",
+        content: "Close unused ports to reduce the attack surface (e.g., disable port 22 if SSH is not needed)."
+      },
+      cmcEmail: {
+        title: "CMC with advanced email visualization",
+        content: "CMC is integrated with other security systems and allows monitoring email flows and viewing emails of all added corporate users."
+      }
+    };
+    
+    const fallback = tooltipFallbacks[dictionaryKey] || { title: dictionaryKey, content: "" };
+    
     acc[key] = {
-      title: t(`pricing.tooltips.${dictionaryKey}.title`),
-      content: t(`pricing.tooltips.${dictionaryKey}.content`),
+      title: t(`pricing.tooltips.${dictionaryKey}.title`, fallback.title),
+      content: t(`pricing.tooltips.${dictionaryKey}.content`, fallback.content),
     };
     return acc;
   }, {});
@@ -111,7 +134,7 @@ const Pricing = ({ onOpenModal }) => {
   return (
     <section className="w-full pt-14 sm:pt-22 relative px-4 sm:px-6 lg:px-8">
       <h2 className="absolute top-[-1.5rem] sm:top-2 lg:-top-12 left-0 w-full text-[72px] sm:text-[120px] lg:text-[200px] font-bold text-white text-center z-0 pointer-events-none px-6 leading-none">
-        {t("pricing.title")}
+        {t("pricing.title", "Pricing")}
       </h2>
 
       <div className="container mx-auto max-w-7xl">
@@ -122,10 +145,16 @@ const Pricing = ({ onOpenModal }) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 relative z-10 justify-items-center">
           {PLAN_CONFIG.map((plan, index) => {
-            const title = t(`pricing.plans.${plan.id}.title`, plan.id);
+            const title = t(`pricing.plans.${plan.id}.title`, 
+              plan.id === 'globalShield' ? 'Web Security and Traffic Management' : 'Email Security and Visualization'
+            );
             const price = getPriceDisplay(plan.id);
-            const description = t(plan.descriptionKey);
-            const buttonText = t(plan.buttonKey);
+            const description = t(plan.descriptionKey, 
+              plan.id === 'globalShield' ? 'No limits\nNo additional charges' : 'Up to 10 emails per day\nAdditional: $0.035 per email'
+            );
+            const buttonText = t(plan.buttonKey,
+              plan.id === 'globalShield' ? 'Protect web applications and API' : 'Protect email'
+            );
 
             return (
               <EdgeGlowCard
@@ -199,7 +228,30 @@ const Pricing = ({ onOpenModal }) => {
                   <ul className="space-y-2">
                     {plan.features.map((feature) => {
                       const tooltipId = feature.tooltip;
-                      const label = t(`pricing.plans.${plan.id}.features.${feature.id}`);
+                      
+                      // Feature label fallbacks
+                      const featureFallbacks = {
+                        globalShield: {
+                          webProtection: "Protection against all types of web attacks except business logic exploitation",
+                          ddosProtection: "Real-time DDoS protection",
+                          cmc: "CMC with global traffic monitoring",
+                          country: "Country blocking",
+                          port: "Port closing"
+                        },
+                        emailProtector: {
+                          cmcEmail: "CMC with advanced email flow visualizer",
+                          visibility: "Full visibility of incoming and outgoing emails for all accounts in CMC with automatic threat categorization",
+                          webClient: "Secure web client",
+                          phishing: "Phishing protection",
+                          malware: "Malicious attachment checking",
+                          links: "Dangerous link detection",
+                          spam: "Spam filtering",
+                          fakeSender: "Fake sender protection"
+                        }
+                      };
+                      
+                      const fallback = featureFallbacks[plan.id]?.[feature.id] || feature.id;
+                      const label = t(`pricing.plans.${plan.id}.features.${feature.id}`, fallback);
 
                       return (
                         <li
@@ -261,7 +313,7 @@ const Pricing = ({ onOpenModal }) => {
                   innerClassName="w-full justify-center px-10 py-4"
                   onClick={onOpenModal}
                 >
-                  {t("pricingCta.requestSystem")}
+                  {t("pricingCta.requestSystem", "Request System")}
                 </GlowButton>
               </EdgeGlowCard>
             );

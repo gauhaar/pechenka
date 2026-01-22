@@ -290,7 +290,11 @@
           "intelligence": "İstihbarat Raporu"
         }
       }
-    }
+    },
+    "subtitle": "Ürününüzle ölçeklenen mobil öncelikli planlar.",
+    "percentMaintenance": "{percent}% yıllık bakım",
+    "planEstimate": "${value}",
+    "perYear": "yıllık (tahmini)"
   },
   "solution": {
     "sectionTitle": "Çözümümüz",
@@ -855,8 +859,8 @@
   "home": {
     "hero": {
       "badge": "YZ güvenliği ve geliştirme",
-      "title": "Güvenle geliştir. Rahatça dağıt.",
-      "subtitle": "İki abonelik sistemi (AI-SOC, SLNC-env) artı kurumsal ekipler için özel YZ ve yazılım teslimi.",
+      "title": "Cybersecurity is no longer",
+      "subtitle": "Build securely. Deploy confidently.",
       "ctaPrimary": "Demo iste",
       "ctaSecondary": "Sistemlere göz at",
       "highlights": {
@@ -870,36 +874,42 @@
         "egress": "Tamamı on-prem — kod, prompt, build",
         "deployment": "ilk güvenli dağıtıma",
         "locales": "kutudan çıkan dil sayısı"
-      }
+      },
+      "titleHighlight": "complicated or expensive anymore"
     },
     "systems": {
-      "title": "Sistemler",
+      "title": "Systems",
       "subtitle": "Uyan aboneliği seçin: tespit için AI-SOC, kapalı geliştirme için SLNC-env.",
-      "cta": "Detayları gör",
+      "cta": "View details",
       "aiSoc": {
         "title": "AI-SOC",
-        "desc": "SOC ekipleri için YZ eş pilotlarla yönetilen tespit ve müdahale.",
-        "badge": "Abonelik"
+        "desc": "Managed detection & response system powered and operated by AI. Used to prevent web and email attacks",
+        "badge": "Subscription"
       },
       "slncEnv": {
         "title": "SLNC-env",
         "desc": "Kodu, prompt'u ve build'i on-prem tutan kapalı geliştirme bulutu.",
         "badge": "Abonelik"
+      },
+      "sithub": {
+        "title": "Sithub",
+        "desc": "Self-hosted GitHub alternative with built-in security scanning. All repositories and code analysis stay within your network.",
+        "badge": "Subscription"
       }
     },
     "services": {
-      "title": "Özel geliştirme hizmetleri",
-      "subtitle": "YZ ajanları, entegrasyonlar ve güvenliği ilk günden gömülü tam döngü yazılım teslimi.",
-      "cta": "Hizmetleri gör",
+      "title": "Custom development services",
+      "subtitle": "AI agents, integrations, and full-cycle software delivery with security baked in from day one.",
+      "cta": "View services",
       "cards": {
-        "agents": "Guardrail, RAG ve güvenli konektörlü üretim sınıfı YZ ajanları.",
-        "integrations": "Yığınınız, IAM ve veri yönetişimiyle tedarikçiden bağımsız entegrasyonlar.",
-        "delivery": "Güvenilirlik SLO'ları, gözlemlenebilirlik ve güvenlik incelemeleriyle tam döngü teslimat."
+        "agents": "Production-grade AI agents with guardrails, RAG, and secure connectors.",
+        "integrations": "Vendor-neutral integrations with your stack, IAM, and data governance.",
+        "delivery": "Full-cycle delivery with reliability SLOs, observability, and security reviews."
       },
       "cardsTitle": {
-        "agents": "Ajanlar",
-        "integrations": "Entegrasyonlar",
-        "delivery": "Teslimat"
+        "agents": "Agents",
+        "integrations": "Integrations",
+        "delivery": "Delivery"
       }
     },
     "contact": {
@@ -907,6 +917,11 @@
       "subtitle": "Bize güvenlik ve teslimat hedeflerinizi söyleyin — doğru sistem ve hizmetleri hizalayalım.",
       "cta": "Demo iste",
       "ctaSecondary": "Hizmet ekibiyle konuş"
+    },
+    "resources": {
+      "title": "Featured articles",
+      "subtitle": "Silence AI is one of few private companies that have government level intelligence.",
+      "viewAll": "View all articles"
     }
   }
 }

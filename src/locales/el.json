@@ -894,8 +894,8 @@
   "home": {
     "hero": {
       "badge": "Ασφάλεια & ανάπτυξη AI",
-      "title": "Χτίστε με ασφάλεια. Κάντε deploy με σιγουριά.",
-      "subtitle": "Δύο συνδρομητικά συστήματα (AI-SOC, SLNC-env) συν custom AI και παράδοση λογισμικού για enterprise ομάδες.",
+      "title": "Cybersecurity is no longer",
+      "subtitle": "Build securely. Deploy confidently.",
       "ctaPrimary": "Αίτημα demo",
       "ctaSecondary": "Δείτε τα συστήματα",
       "highlights": {
@@ -909,36 +909,42 @@
         "egress": "Όλα on-prem — κώδικας, prompts, builds",
         "deployment": "μέχρι το πρώτο ασφαλές deploy",
         "locales": "γλώσσες έτοιμες προεγκατεστημένες"
-      }
+      },
+      "titleHighlight": "complicated or expensive anymore"
     },
     "systems": {
-      "title": "Συστήματα",
+      "title": "Systems",
       "subtitle": "Επιλέξτε τη σωστή συνδρομή: AI-SOC για ανίχνευση και SLNC-env για κλειστή ανάπτυξη.",
-      "cta": "Δείτε λεπτομέρειες",
+      "cta": "View details",
       "aiSoc": {
         "title": "AI-SOC",
-        "desc": "Managed detection & response με AI copilots για SOC.",
-        "badge": "Συνδρομή"
+        "desc": "Managed detection & response system powered and operated by AI. Used to prevent web and email attacks",
+        "badge": "Subscription"
       },
       "slncEnv": {
         "title": "SLNC-env",
         "desc": "Κλειστό cloud ανάπτυξης που κρατά κώδικα, prompts και builds on-prem.",
         "badge": "Συνδρομή"
+      },
+      "sithub": {
+        "title": "Sithub",
+        "desc": "Self-hosted GitHub alternative with built-in security scanning. All repositories and code analysis stay within your network.",
+        "badge": "Subscription"
       }
     },
     "services": {
-      "title": "Υπηρεσίες custom ανάπτυξης",
-      "subtitle": "Πράκτορες AI, integrations και πλήρης κύκλος παράδοσης λογισμικού με ασφάλεια από την πρώτη μέρα.",
-      "cta": "Δείτε υπηρεσίες",
+      "title": "Custom development services",
+      "subtitle": "AI agents, integrations, and full-cycle software delivery with security baked in from day one.",
+      "cta": "View services",
       "cards": {
-        "agents": "Πράκτορες AI παραγωγικού επιπέδου με guardrails, RAG και ασφαλείς connectors.",
-        "integrations": "Vendor-neutral integrations με το stack, το IAM και τη διακυβέρνηση δεδομένων σας.",
-        "delivery": "Full-cycle delivery με SLOs αξιοπιστίας, observability και security reviews."
+        "agents": "Production-grade AI agents with guardrails, RAG, and secure connectors.",
+        "integrations": "Vendor-neutral integrations with your stack, IAM, and data governance.",
+        "delivery": "Full-cycle delivery with reliability SLOs, observability, and security reviews."
       },
       "cardsTitle": {
-        "agents": "Πράκτορες",
+        "agents": "Agents",
         "integrations": "Integrations",
-        "delivery": "Παράδοση"
+        "delivery": "Delivery"
       }
     },
     "contact": {
@@ -946,6 +952,11 @@
       "subtitle": "Πείτε μας τους στόχους ασφάλειας και παράδοσης — θα προτείνουμε το σωστό σύστημα και υπηρεσίες.",
       "cta": "Αίτημα demo",
       "ctaSecondary": "Μιλήστε με την ομάδα υπηρεσιών"
+    },
+    "resources": {
+      "title": "Featured articles",
+      "subtitle": "Silence AI is one of few private companies that have government level intelligence.",
+      "viewAll": "View all articles"
     }
   }
 }

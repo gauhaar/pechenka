@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import Header from "@/components/Header";
 import RequestDemoModal from "@/components/RequestDemoModal";
-import Footer from "@/components/Footer";
 import BackToTopButton from "@/components/BackToTopButton";
 import { FloatingText } from "@/components/FloatingText";
 import HeroSection from "./HeroSection";
@@ -12,13 +11,9 @@ import PricingSection from "./PricingSection";
 import CaseStudies from "./CaseStudies";
 import HowWeWork from "./HowWeWork";
 import TechnologyStack from "./TechnologyStack";
-import ConsultingQuestionnaire from "./ConsultingQuestionnaire";
-import ContactForm from "./ContactForm";
 
 
 export default function DeveloperServicesPage() {
-  const [search, setSearch] = useState("");
-  const [openIndex, setOpenIndex] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
@@ -37,21 +32,11 @@ export default function DeveloperServicesPage() {
           <CaseStudies />
           <HowWeWork />
           <TechnologyStack />
-          <ConsultingQuestionnaire
-            search={search}
-            setSearch={setSearch}
-            openIndex={openIndex}
-            setOpenIndex={setOpenIndex}
-          />
-          <div id="contact-form">
-            <ContactForm />
-          </div>
           <div className="w-full mt-16">
             <FloatingText />
           </div>
         </div>
       </main>
-      <Footer />
       <BackToTopButton />
       <RequestDemoModal isOpen={isModalOpen} onClose={closeModal} />
     </>

@@ -320,7 +320,7 @@
         }
       }
     },
-    "subtitle": "Mobile-first plans built to scale with your product.",
+    "subtitle": "Planuri mobile-first construite pentru a se extinde odată cu produsul dvs...",
     "percentMaintenance": "{percent}% yearly maintenance",
     "planEstimate": "${value}",
     "perYear": "per year (est.)",
@@ -717,7 +717,7 @@
     "title": "Why Choose Us",
     "subtitle": "Trusted by teams from",
     "subtitleHighlight": "billion-dollar organizations",
-    "subtitleTail": "— and shipped with startup speed.",
+    "subtitleTail": "— și livrat cu viteza unui startup...",
     "learnMore": "Learn more",
     "logos": {
       "kmg": "KazMunayGas",
@@ -744,33 +744,33 @@
   "servicesBlock": {
     "badge": "What we offer",
     "title": "Our Services",
-    "description": "Premium UI, strong engineering, and fast delivery — everything you need to launch a product that looks and performs like a top-tier brand.",
+    "description": "Interfață premium, inginerie puternică și livrare rapidă — tot ce aveți nevoie pentru a lansa...",
     "learnMore": "Learn more",
-    "learnMoreAria": "Learn more about this service",
+    "learnMoreAria": "Aflați mai multe despre acest serviciu...",
     "services": {
       "aiAgents": {
         "title": "AI Agents",
-        "description": "Custom conversational and autonomous agents for support, ops, and analytics.",
+        "description": "Agenți de conversație și autonomi personalizați pentru suport, operațiuni și analiză...",
         "tag": "Automation"
       },
       "customSoftware": {
         "title": "Custom Software",
-        "description": "End-to-end web and desktop apps tailored to your workflows.",
+        "description": "Aplicații web și de desktop de la început până la sfârșit adaptate fluxurilor dvs. de lucru...",
         "tag": "Build"
       },
       "cybersecurity": {
         "title": "Cybersecurity",
-        "description": "Audits, penetration testing, and continuous monitoring.",
+        "description": "Audituri, teste de penetrare și monitorizare continuă...",
         "tag": "Protect"
       },
       "backend": {
         "title": "Backend / DevOps",
-        "description": "Scalable APIs, CI/CD pipelines, and cloud infrastructure.",
+        "description": "API-uri scalabile, pipeline-uri CI/CD și infrastructură cloud...",
         "tag": "Scale"
       },
       "mobile": {
         "title": "Mobile",
-        "description": "Cross-platform apps with native performance and polished UX.",
+        "description": "Aplicații cross-platform cu performanță nativă și UX rafinat...",
         "tag": "Ship"
       }
     }
@@ -784,7 +784,7 @@
     "liveImpact": "Live Impact",
     "before": "Before",
     "after": "After",
-    "buildCta": "Build something like this →",
+    "buildCta": "Construiți ceva similar →",
     "caseStudy": "Case Study",
     "items": {
       "nak": {
@@ -812,7 +812,7 @@
   },
   "howWeWork": {
     "title": "How We Work",
-    "subtitle": "Ultra-fast delivery pipeline — optimized for velocity.",
+    "subtitle": "Pipeline de livrare ultra-rapid — optimizat pentru viteză...",
     "steps": {
       "discovery": {
         "title": "Discovery",
@@ -894,8 +894,8 @@
   "home": {
     "hero": {
       "badge": "AI security & development",
-      "title": "Build securely. Deploy confidently.",
-      "subtitle": "Two subscription systems (AI-SOC, SLNC-env) plus custom AI and software delivery for enterprise teams.",
+      "title": "Cybersecurity is no longer",
+      "subtitle": "Build securely. Deploy confidently.",
       "ctaPrimary": "Request demo",
       "ctaSecondary": "Explore systems",
       "highlights": {
@@ -909,7 +909,8 @@
         "egress": "All on-prem—code, prompts, builds",
         "deployment": "to first secure deployment",
         "locales": "locales supported out-of-box"
-      }
+      },
+      "titleHighlight": "complicated or expensive anymore"
     },
     "systems": {
       "title": "Systems",
@@ -917,12 +918,17 @@
       "cta": "View details",
       "aiSoc": {
         "title": "AI-SOC",
-        "desc": "Managed detection & response with AI copilots for SOC teams.",
+        "desc": "Managed detection & response system powered and operated by AI. Used to prevent web and email attacks",
         "badge": "Subscription"
       },
       "slncEnv": {
         "title": "SLNC-env",
         "desc": "Sealed development cloud that keeps code, prompts, and builds on-prem.",
+        "badge": "Subscription"
+      },
+      "sithub": {
+        "title": "Sithub",
+        "desc": "Self-hosted GitHub alternative with built-in security scanning. All repositories and code analysis stay within your network.",
         "badge": "Subscription"
       }
     },
@@ -946,6 +952,11 @@
       "subtitle": "Tell us your security and delivery goals—we'll align the right system and services.",
       "cta": "Request demo",
       "ctaSecondary": "Talk to services team"
+    },
+    "resources": {
+      "title": "Featured articles",
+      "subtitle": "Silence AI is one of few private companies that have government level intelligence.",
+      "viewAll": "View all articles"
     }
   }
 }

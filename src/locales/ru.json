@@ -28,14 +28,15 @@
     "cta": {
       "contact": "Связаться",
       "download": "Скачать",
-      "requestDemo": "Запросить демо"
+      "requestDemo": "Запросить демо",
+      "get": "Получить"
     }
   },
   "home": {
     "hero": {
       "badge": "Безопасность и разработка AI",
-      "title": "Стройте безопасно. Доставляйте уверенно.",
-      "subtitle": "Два подписочных продукта (AI-SOC, SLNC-env) плюс кастомные AI-агенты и разработка ПО для корпораций.",
+      "title": "Cybersecurity is no longer",
+      "subtitle": "Build securely. Deploy confidently.",
       "ctaPrimary": "Запросить демо",
       "ctaSecondary": "Посмотреть системы",
       "highlights": {
@@ -49,36 +50,42 @@
         "egress": "Всё on-prem: код, промпты и сборки",
         "deployment": "до первого защищённого деплоя",
         "locales": "локалей из коробки"
-      }
+      },
+      "titleHighlight": "complicated or expensive anymore"
     },
     "systems": {
-      "title": "Системы",
+      "title": "Systems",
       "subtitle": "Выберите подписку: AI-SOC для детекта и SLNC-env для закрытой разработки.",
-      "cta": "Подробнее",
+      "cta": "View details",
       "aiSoc": {
         "title": "AI-SOC",
-        "desc": "Управляемый детект и ответ с AI-ассистентами для SOC-команд.",
-        "badge": "Подписка"
+        "desc": "Managed detection & response system powered and operated by AI. Used to prevent web and email attacks",
+        "badge": "Subscription"
       },
       "slncEnv": {
         "title": "SLNC-env",
         "desc": "Закрытое облако разработки: код, промпты и сборки не покидают периметр.",
         "badge": "Подписка"
+      },
+      "sithub": {
+        "title": "Sithub",
+        "desc": "Self-hosted GitHub alternative with built-in security scanning. All repositories and code analysis stay within your network.",
+        "badge": "Subscription"
       }
     },
     "services": {
-      "title": "Кастомная разработка",
-      "subtitle": "AI-агенты, интеграции и полный цикл разработки с безопасностью по умолчанию.",
-      "cta": "Посмотреть услуги",
+      "title": "Custom development services",
+      "subtitle": "AI agents, integrations, and full-cycle software delivery with security baked in from day one.",
+      "cta": "View services",
       "cards": {
-        "agents": "Продукционные AI-агенты с guardrails, RAG и защищёнными коннекторами.",
-        "integrations": "Интеграции с вашим стеком, IAM и политиками данных без привязки к вендору.",
-        "delivery": "Полный цикл с SLO по надёжности, наблюдаемостью и безопасными ревью."
+        "agents": "Production-grade AI agents with guardrails, RAG, and secure connectors.",
+        "integrations": "Vendor-neutral integrations with your stack, IAM, and data governance.",
+        "delivery": "Full-cycle delivery with reliability SLOs, observability, and security reviews."
       },
       "cardsTitle": {
-        "agents": "Агенты",
-        "integrations": "Интеграции",
-        "delivery": "Доставка"
+        "agents": "Agents",
+        "integrations": "Integrations",
+        "delivery": "Delivery"
       }
     },
     "contact": {
@@ -86,6 +93,11 @@
       "subtitle": "Расскажите о целях по безопасности и доставке — подберём систему и услуги.",
       "cta": "Запросить демо",
       "ctaSecondary": "Связаться с командой услуг"
+    },
+    "resources": {
+      "title": "Featured articles",
+      "subtitle": "Silence AI is one of few private companies that have government level intelligence.",
+      "viewAll": "View all articles"
     }
   },
   "affiliate": {
@@ -615,6 +627,18 @@
         "title": "IDE с локальным Copilot",
         "tag": "Опыт уровня Cursor"
       },
+      "gitServer": {
+        "title": "Сервер Git-репозиториев",
+        "tag": "Самостоятельный контроль версий"
+      },
+      "analyzer": {
+        "title": "Анализатор безопасности",
+        "tag": "Локальный движок сканирования кода"
+      },
+      "vulnDb": {
+        "title": "База данных уязвимостей",
+        "tag": "Загруженные патчи безопасности"
+      },
       "staysOnPrem": "Остаётся локально. Без исходящего трафика."
     },
     "timeline": {
@@ -708,8 +732,8 @@
             "description": "Наш анализатор кода на основе ИИ находит даже ошибки конфигурации в коде."
           },
           "inlineDiffs": {
-            "title": "Встроенные различия",
-            "description": "Просмотр предлагаемых патчей встроенно с контекстом безопасности."
+            "title": "Обнаружение уязвимых пакетов",
+            "description": "Обнаруживайте уязвимые версии пакетов вместе с версией, в которой уязвимость исправлена."
           }
         }
       }
@@ -737,6 +761,26 @@
         "title": "Правительство",
         "description": "Министерства, оборона, критические агентства"
       }
+    },
+    "pricing": {
+      "subtitle": "Простое и прозрачное ценообразование",
+      "title": "Выберите план",
+      "limitedOffer": "Ограниченное по времени предложение",
+      "priceIncreaseNotice": "Закрепите текущие цены! Через 6 месяцев цены вырастут на 30%.",
+      "monthlyPlan": "Ежемесячный план",
+      "monthlyDesc": "Гибкая помесячная оплата",
+      "month": "месяц",
+      "features": {
+        "fullAccess": "Полный доступ к платформе",
+        "support": "Приоритетная поддержка",
+        "cancelAnytime": "Отмена в любое время",
+        "priceLock": "Цена зафиксирована на 12 месяцев"
+      },
+      "getStarted": "Начать",
+      "doubleSavings": "2x ЭКОНОМИЯ",
+      "yearlyPlan": "Годовой план",
+      "yearlyDesc": "Экономьте 33% при годовой оплате",
+      "billedAnnually": "Оплата ежегодно"
     }
   },
   "notFound": {
@@ -982,6 +1026,10 @@
           "intelligence": "Отчёт разведки"
         }
       }
-    }
+    },
+    "subtitle": "Мобильные тарифы, которые растут вместе с вашим продуктом.",
+    "percentMaintenance": "{percent}% ежегодного сопровождения",
+    "planEstimate": "${value}",
+    "perYear": "в год (оценка)"
   }
 }

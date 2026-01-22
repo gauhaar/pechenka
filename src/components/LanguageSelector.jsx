@@ -125,7 +125,7 @@ const LanguageSelector = ({ align = "right", onlyEnglish = false }) => {
         className="flex items-center gap-2 rounded-full border border-white/15 bg-black/40 px-3 py-1.5 text-sm font-semibold text-white transition hover:border-white/30 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
         aria-haspopup="listbox"
         aria-expanded={isOpen}
-        aria-label={t("languageSelector.triggerLabel")}
+        aria-label={t("languageSelector.triggerLabel", "Select language")}
       >
         <span className="h-4 w-6 overflow-hidden rounded-[6px] border border-white/20">
           {ActiveFlag ? (
@@ -161,7 +161,7 @@ const LanguageSelector = ({ align = "right", onlyEnglish = false }) => {
         >
           <div className="mb-3">
             <label htmlFor="language-search" className="sr-only">
-              {t("languageSelector.searchLabel")}
+              {t("languageSelector.searchLabel", "Search languages")}
             </label>
             <div className="relative">
               <input
@@ -169,7 +169,7 @@ const LanguageSelector = ({ align = "right", onlyEnglish = false }) => {
                 type="search"
                 value={searchTerm}
                 onChange={(event) => setSearchTerm(event.target.value)}
-                placeholder={t("languageSelector.searchPlaceholder")}
+                placeholder={t("languageSelector.searchPlaceholder", "Search by name or native language")}
                 autoComplete="off"
                 autoCorrect="off"
                 spellCheck="false"
@@ -194,7 +194,7 @@ const LanguageSelector = ({ align = "right", onlyEnglish = false }) => {
               filteredLanguages.length > 0 ? (
                 <div>
                   <p className="mb-2 px-2 text-xs font-semibold uppercase tracking-wide text-white/50">
-                    {t("languageSelector.searchResults")}
+                    {t("languageSelector.searchResults", "Search results")}
                   </p>
                   <div className="space-y-1.5">
                     {filteredLanguages.map((lang) => renderLanguageButton(lang))}
@@ -202,14 +202,14 @@ const LanguageSelector = ({ align = "right", onlyEnglish = false }) => {
                 </div>
               ) : (
                 <p className="px-2 text-sm text-white/60">
-                  {t("languageSelector.noMatches")}
+                  {t("languageSelector.noMatches", "No languages match your search.")}
                 </p>
               )
             ) : (
               <>
                 <div>
                   <p className="mb-2 px-2 text-xs font-semibold uppercase tracking-wide text-white/50">
-                    {t("languageSelector.popular")}
+                    {t("languageSelector.popular", "Popular")}
                   </p>
                     <div className="space-y-1.5">
                       {popularLanguages.map((lang) => renderLanguageButton(lang))}
@@ -217,7 +217,7 @@ const LanguageSelector = ({ align = "right", onlyEnglish = false }) => {
                 </div>
                 <div>
                   <p className="mb-2 mt-3 px-2 text-xs font-semibold uppercase tracking-wide text-white/50">
-                    {t("languageSelector.allLanguages")}
+                    {t("languageSelector.allLanguages", "All languages")}
                   </p>
                   <div className="space-y-1.5">
                     {otherLanguages.map((lang) => renderLanguageButton(lang))}

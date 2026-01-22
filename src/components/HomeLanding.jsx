@@ -59,14 +59,14 @@ export default function HomeLanding() {
       badge: t("home.systems.aiSoc.badge", "Subscription"),
     },
     {
-      key: "slnc-env",
-      title: t("home.systems.slncEnv.title", "SLNC-env"),
+      key: "sithub",
+      title: t("home.systems.sithub.title", "Sithub"),
       desc: t(
-        "home.systems.slncEnv.desc",
-        "Private development environment that keeps code, prompts within the corporate infrastructure."
+        "home.systems.sithub.desc",
+        "Self-hosted GitHub alternative with built-in security scanning. All repositories and code analysis stay within your network."
       ),
-      href: "/slnc-env",
-      badge: t("home.systems.slncEnv.badge", "Subscription"),
+      href: "/sithub",
+      badge: t("home.systems.sithub.badge", "Subscription"),
     },
   ];
 
@@ -304,7 +304,7 @@ export default function HomeLanding() {
                           <StickyScrollAnimation />
                         </div>
                       ) : (
-                        /* SLNC-env Animation */
+                        /* Sithub Animation */
                         <div className="relative w-full h-full flex items-center justify-center scale-[0.7]">
                           <GlassyBox3D />
                         </div>
@@ -440,7 +440,7 @@ export default function HomeLanding() {
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {articles.slice(0, featuredResourcesConfig.displayCount).map((article, idx) => (
-              <LinkPreviewCard key={article.url} article={article} index={idx} />
+              <MediumArticleCard key={article.url} article={article} index={idx} />
             ))}
           </div>
         </section>

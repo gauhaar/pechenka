@@ -290,7 +290,11 @@
           "intelligence": "Báo cáo Tình báo"
         }
       }
-    }
+    },
+    "subtitle": "Các gói ưu tiên di động được xây dựng để mở rộng cùng sản phẩm của bạn.",
+    "percentMaintenance": "{percent}% bảo trì hàng năm",
+    "planEstimate": "${value}",
+    "perYear": "mỗi năm (ước tính)"
   },
   "solution": {
     "sectionTitle": "Giải pháp của chúng tôi",
@@ -855,8 +859,8 @@
   "home": {
     "hero": {
       "badge": "An ninh & phát triển AI",
-      "title": "Xây an toàn. Triển khai tự tin.",
-      "subtitle": "Hai hệ thống đăng ký (AI-SOC, SLNC-env) cùng dịch vụ AI và phần mềm tùy chỉnh cho đội ngũ doanh nghiệp.",
+      "title": "Cybersecurity is no longer",
+      "subtitle": "Build securely. Deploy confidently.",
       "ctaPrimary": "Yêu cầu demo",
       "ctaSecondary": "Khám phá hệ thống",
       "highlights": {
@@ -870,36 +874,42 @@
         "egress": "Tất cả on-prem — mã, prompt, build",
         "deployment": "đến lần triển khai an toàn đầu tiên",
         "locales": "ngôn ngữ hỗ trợ sẵn"
-      }
+      },
+      "titleHighlight": "complicated or expensive anymore"
     },
     "systems": {
-      "title": "Hệ thống",
+      "title": "Systems",
       "subtitle": "Chọn gói đăng ký phù hợp: AI-SOC cho phát hiện, SLNC-env cho phát triển kín.",
-      "cta": "Xem chi tiết",
+      "cta": "View details",
       "aiSoc": {
         "title": "AI-SOC",
-        "desc": "Phát hiện & phản hồi được quản lý với AI trợ lý cho đội SOC.",
-        "badge": "Đăng ký"
+        "desc": "Managed detection & response system powered and operated by AI. Used to prevent web and email attacks",
+        "badge": "Subscription"
       },
       "slncEnv": {
         "title": "SLNC-env",
         "desc": "Đám mây phát triển kín giữ mã, prompt và build trên on-prem.",
         "badge": "Đăng ký"
+      },
+      "sithub": {
+        "title": "Sithub",
+        "desc": "Self-hosted GitHub alternative with built-in security scanning. All repositories and code analysis stay within your network.",
+        "badge": "Subscription"
       }
     },
     "services": {
-      "title": "Dịch vụ phát triển tùy chỉnh",
-      "subtitle": "Tác nhân AI, tích hợp và giao phần mềm toàn vòng đời với bảo mật từ ngày đầu.",
-      "cta": "Xem dịch vụ",
+      "title": "Custom development services",
+      "subtitle": "AI agents, integrations, and full-cycle software delivery with security baked in from day one.",
+      "cta": "View services",
       "cards": {
-        "agents": "Tác nhân AI cấp sản xuất với guardrail, RAG và kết nối an toàn.",
-        "integrations": "Tích hợp trung lập nhà cung cấp với stack, IAM và quản trị dữ liệu của bạn.",
-        "delivery": "Giao hàng toàn vòng đời với SLO tin cậy, khả năng quan sát và rà soát bảo mật."
+        "agents": "Production-grade AI agents with guardrails, RAG, and secure connectors.",
+        "integrations": "Vendor-neutral integrations with your stack, IAM, and data governance.",
+        "delivery": "Full-cycle delivery with reliability SLOs, observability, and security reviews."
       },
       "cardsTitle": {
-        "agents": "Tác nhân",
-        "integrations": "Tích hợp",
-        "delivery": "Giao hàng"
+        "agents": "Agents",
+        "integrations": "Integrations",
+        "delivery": "Delivery"
       }
     },
     "contact": {
@@ -907,6 +917,11 @@
       "subtitle": "Hãy cho chúng tôi mục tiêu bảo mật và giao hàng — chúng tôi sẽ ghép hệ thống và dịch vụ phù hợp.",
       "cta": "Yêu cầu demo",
       "ctaSecondary": "Trao đổi với đội dịch vụ"
+    },
+    "resources": {
+      "title": "Featured articles",
+      "subtitle": "Silence AI is one of few private companies that have government level intelligence.",
+      "viewAll": "View all articles"
     }
   }
 }

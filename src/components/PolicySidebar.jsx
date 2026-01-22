@@ -114,7 +114,7 @@ const PolicySidebar = ({ sections }) => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.1, duration: 0.3 }}
         >
-          {t("policySidebar.tableOfContents")}
+          {t("policySidebar.tableOfContents", "Table of Contents")}
         </motion.h3>
         
         <div className="flex-1 overflow-y-auto">

@@ -894,8 +894,8 @@
   "home": {
     "hero": {
       "badge": "AI сигурност и разработка",
-      "title": "Разработвайте сигурно. Внедрявайте уверено.",
-      "subtitle": "Две абонаментни системи (AI-SOC, SLNC-env) плюс персонализирана AI и софтуерна разработка за корпоративни екипи.",
+      "title": "Cybersecurity is no longer",
+      "subtitle": "Build securely. Deploy confidently.",
       "ctaPrimary": "Заявете демо",
       "ctaSecondary": "Разгледайте системите",
       "highlights": {
@@ -909,36 +909,42 @@
         "egress": "Всичко on‑prem — код, промптове, билдове",
         "deployment": "До първото сигурно внедряване",
         "locales": "Локализации, налични по подразбиране"
-      }
+      },
+      "titleHighlight": "complicated or expensive anymore"
     },
     "systems": {
-      "title": "Системи",
+      "title": "Systems",
       "subtitle": "Изберете подходящия абонамент: AI-SOC за откриване и SLNC-env за изолирана разработка.",
-      "cta": "Вижте детайли",
+      "cta": "View details",
       "aiSoc": {
         "title": "AI-SOC",
-        "desc": "Управлявано откриване и реакция с AI copilots за SOC екипи.",
-        "badge": "Абонамент"
+        "desc": "Managed detection & response system powered and operated by AI. Used to prevent web and email attacks",
+        "badge": "Subscription"
       },
       "slncEnv": {
         "title": "SLNC-env",
         "desc": "Облак за изолирана разработка, който пази кода, промптовете и билдовете on‑prem.",
         "badge": "Абонамент"
+      },
+      "sithub": {
+        "title": "Sithub",
+        "desc": "Self-hosted GitHub alternative with built-in security scanning. All repositories and code analysis stay within your network.",
+        "badge": "Subscription"
       }
     },
     "services": {
-      "title": "Услуги за персонализирана разработка",
-      "subtitle": "AI агенти, интеграции и пълноциклов софтуерен delivery с вградена сигурност от първия ден.",
-      "cta": "Вижте услугите",
+      "title": "Custom development services",
+      "subtitle": "AI agents, integrations, and full-cycle software delivery with security baked in from day one.",
+      "cta": "View services",
       "cards": {
-        "agents": "AI агенти за продукционна употреба с guardrails, RAG и защитени конектори.",
-        "integrations": "Интеграции, независими от доставчик, с вашия стек, IAM и управлението на данни.",
-        "delivery": "Пълноциклово доставяне с цели за надеждност, наблюдаемост и проверки за сигурност."
+        "agents": "Production-grade AI agents with guardrails, RAG, and secure connectors.",
+        "integrations": "Vendor-neutral integrations with your stack, IAM, and data governance.",
+        "delivery": "Full-cycle delivery with reliability SLOs, observability, and security reviews."
       },
       "cardsTitle": {
-        "agents": "Агенти",
-        "integrations": "Интеграции",
-        "delivery": "Доставяне"
+        "agents": "Agents",
+        "integrations": "Integrations",
+        "delivery": "Delivery"
       }
     },
     "contact": {
@@ -946,6 +952,11 @@
       "subtitle": "Разкажете ни за целите си в сигурността и доставката — ние ще подберем точната система и услуги.",
       "cta": "Заявете демо",
       "ctaSecondary": "Говорете с екипа по услуги"
+    },
+    "resources": {
+      "title": "Featured articles",
+      "subtitle": "Silence AI is one of few private companies that have government level intelligence.",
+      "viewAll": "View all articles"
     }
   }
 }

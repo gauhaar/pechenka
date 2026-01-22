@@ -42,16 +42,16 @@ const CookieConsent = () => {
         <div className="flex flex-col gap-6 p-6 sm:p-8 text-white">
           <div className="space-y-2">
             <h2 className="text-lg font-semibold sm:text-xl">
-              {t("cookie.title")}
+              {t("cookie.title", "We use cookies")}
             </h2>
             <p className="text-sm leading-relaxed text-white/80 sm:text-base">
-              {t("cookie.description")}{" "}
-              {t("cookie.more")}{" "}
+              {t("cookie.description", "We use cookies to enhance your browsing experience and analyze our traffic.")}{" "}
+              {t("cookie.more", "By clicking 'Accept', you consent to our use of cookies.")}{" "}
               <Link
                 href="/policies/cookies"
                 className="text-white underline decoration-purple-400 decoration-2 underline-offset-4 hover:text-purple-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-400/70 rounded-sm"
               >
-                {t("cookie.link")}
+                {t("cookie.link", "Learn more")}
               </Link>
               .
             </p>
@@ -70,7 +70,7 @@ const CookieConsent = () => {
                 }
               }}
             >
-              {t("cookie.ok")}
+              {t("cookie.ok", "Accept")}
             </GlowButton>
           </div>
         </div>

@@ -20,7 +20,8 @@ const ConsultingQuestionnaire = ({ search, setSearch, openIndex, setOpenIndex })
     { color: "#FFB800", glow: "rgba(255,184,0,0.35)" },
   ];
 
-  const consultingQuestions = t("consulting.questions") || [];
+  const consultingQuestionsData = t("consulting.questions");
+  const consultingQuestions = Array.isArray(consultingQuestionsData) ? consultingQuestionsData : [];
 
   const filteredQuestions = consultingQuestions.filter((q) =>
     q.question.toLowerCase().includes(search.toLowerCase())
@@ -30,7 +31,7 @@ const ConsultingQuestionnaire = ({ search, setSearch, openIndex, setOpenIndex })
     <section className="relative space-y-8">
       <div className="space-y-3 text-center">
         <h2 className="text-3xl font-semibold text-white sm:text-4xl">
-          {t("consulting.title")}
+          {t("consulting.title", "Consulting Services")}
         </h2>
       </div>
       <EdgeGlowCard
@@ -49,7 +50,7 @@ const ConsultingQuestionnaire = ({ search, setSearch, openIndex, setOpenIndex })
         >
           <input
             type="text"
-            placeholder={t("consulting.searchPlaceholder")}
+            placeholder={t("consulting.searchPlaceholder", "Search questions...")}
             className="w-full px-4 py-3 border border-white/20 rounded-lg bg-black/40 text-white placeholder:text-white/40 focus:outline-none focus:border-[#FF00B7] transition-colors"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
@@ -115,7 +116,7 @@ const ConsultingQuestionnaire = ({ search, setSearch, openIndex, setOpenIndex })
               );
             })}
             {filteredQuestions.length === 0 && (
-              <div className="text-white/50 text-center py-8">{t("consulting.noResults")}</div>
+              <div className="text-white/50 text-center py-8">{t("consulting.noResults", "No results found")}</div>
             )}
           </div>
         </div>

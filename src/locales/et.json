@@ -894,8 +894,8 @@
   "home": {
     "hero": {
       "badge": "AI turve ja arendus",
-      "title": "Ehita turvaliselt. Deploee kindlalt.",
-      "subtitle": "Kaks tellimuspõhist süsteemi (AI-SOC, SLNC-env) + kohandatud AI ja tarkvara suurtele meeskondadele.",
+      "title": "Cybersecurity is no longer",
+      "subtitle": "Build securely. Deploy confidently.",
       "ctaPrimary": "Taotle demo",
       "ctaSecondary": "Ava süsteemid",
       "highlights": {
@@ -909,36 +909,42 @@
         "egress": "Kõik on-prem — kood, promptid, build'id",
         "deployment": "esimese turvalise deploy'ni",
         "locales": "lokalisatsioone kohe saadaval"
-      }
+      },
+      "titleHighlight": "complicated or expensive anymore"
     },
     "systems": {
-      "title": "Süsteemid",
+      "title": "Systems",
       "subtitle": "Vali sobiv tellimusteenus: AI-SOC tuvastuseks ja SLNC-env suletud arenduseks.",
-      "cta": "Vaata detaile",
+      "cta": "View details",
       "aiSoc": {
         "title": "AI-SOC",
-        "desc": "Hallatud tuvastus ja reageerimine AI kaaspilootidega SOC-tiimidele.",
-        "badge": "Tellimus"
+        "desc": "Managed detection & response system powered and operated by AI. Used to prevent web and email attacks",
+        "badge": "Subscription"
       },
       "slncEnv": {
         "title": "SLNC-env",
         "desc": "Suletud arenduspilv, mis hoiab koodi, prompte ja build'e on-prem.",
         "badge": "Tellimus"
+      },
+      "sithub": {
+        "title": "Sithub",
+        "desc": "Self-hosted GitHub alternative with built-in security scanning. All repositories and code analysis stay within your network.",
+        "badge": "Subscription"
       }
     },
     "services": {
-      "title": "Kohandatud arendusteenused",
-      "subtitle": "AI agendid, integratsioonid ja täistsükli arendus, kus turve on algusest peale sees.",
-      "cta": "Vaata teenuseid",
+      "title": "Custom development services",
+      "subtitle": "AI agents, integrations, and full-cycle software delivery with security baked in from day one.",
+      "cta": "View services",
       "cards": {
-        "agents": "Tootmisklassi AI agendid koos kaitsemehhanismide, RAG ja turvaliste ühendustega.",
-        "integrations": "Tarnijatest sõltumatud integratsioonid sinu stacki, IAM-i ja andmehaldusega.",
-        "delivery": "Täistsükli tarne töökindluse SLO-de, jälgitavuse ja turvakontrollidega."
+        "agents": "Production-grade AI agents with guardrails, RAG, and secure connectors.",
+        "integrations": "Vendor-neutral integrations with your stack, IAM, and data governance.",
+        "delivery": "Full-cycle delivery with reliability SLOs, observability, and security reviews."
       },
       "cardsTitle": {
-        "agents": "Agendid",
-        "integrations": "Integratsioonid",
-        "delivery": "Tarne"
+        "agents": "Agents",
+        "integrations": "Integrations",
+        "delivery": "Delivery"
       }
     },
     "contact": {
@@ -946,6 +952,11 @@
       "subtitle": "Räägi oma turva- ja tarneeesmärkidest — paneme kokku õiged süsteemid ja teenused.",
       "cta": "Taotle demo",
       "ctaSecondary": "Räägi teenindustiimiga"
+    },
+    "resources": {
+      "title": "Featured articles",
+      "subtitle": "Silence AI is one of few private companies that have government level intelligence.",
+      "viewAll": "View all articles"
     }
   }
 }

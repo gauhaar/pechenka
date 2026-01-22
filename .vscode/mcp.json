@@ -1,17 +1,4 @@
 {
-  "servers": {
-    "github": {
-      "timeout": 60,
-      "type": "stdio",
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-github"
-      ],
-      "env": {
-        "GITHUB_PERSONAL_ACCESS_TOKEN": "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"
-      }
-    },
     "brave-search": {
       "timeout": 60,
       "type": "stdio",

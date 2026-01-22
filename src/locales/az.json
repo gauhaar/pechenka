@@ -894,8 +894,8 @@
   "home": {
     "hero": {
       "badge": "AI təhlükəsizliyi və inkişaf",
-      "title": "Təhlükəsiz qurun. Əminliklə tətbiq edin.",
-      "subtitle": "İki abunə sistemi (AI-SOC, SLNC-env) və əlavə olaraq müəssisə komandaları üçün fərdi AI və proqram çatdırılması.",
+      "title": "Cybersecurity is no longer",
+      "subtitle": "Build securely. Deploy confidently.",
       "ctaPrimary": "Demo sifariş et",
       "ctaSecondary": "Sistemləri araşdır",
       "highlights": {
@@ -909,36 +909,42 @@
         "egress": "Hər şey on-prem — kod, prompt, build",
         "deployment": "ilk təhlükəsiz tətbiqədək",
         "locales": "hazır dillərin sayı"
-      }
+      },
+      "titleHighlight": "complicated or expensive anymore"
     },
     "systems": {
-      "title": "Sistemlər",
+      "title": "Systems",
       "subtitle": "Uyğun abunə məhsulunu seçin: aşkarlama üçün AI-SOC, qapalı inkişaf üçün SLNC-env.",
-      "cta": "Təfərrüata bax",
+      "cta": "View details",
       "aiSoc": {
         "title": "AI-SOC",
-        "desc": "SOC komandaları üçün AI köməkçiləri ilə idarə olunan aşkarlama və cavab.",
-        "badge": "Abunə"
+        "desc": "Managed detection & response system powered and operated by AI. Used to prevent web and email attacks",
+        "badge": "Subscription"
       },
       "slncEnv": {
         "title": "SLNC-env",
         "desc": "Kodu, göstərişləri və build-ləri on-prem saxlayan qapalı inkişaf buludu.",
         "badge": "Abunə"
+      },
+      "sithub": {
+        "title": "Sithub",
+        "desc": "Self-hosted GitHub alternative with built-in security scanning. All repositories and code analysis stay within your network.",
+        "badge": "Subscription"
       }
     },
     "services": {
-      "title": "Fərdi inkişaf xidmətləri",
-      "subtitle": "AI agentlər, inteqrasiyalar və ilk gündən təhlükəsizliklə tam dövr proqram çatdırılması.",
-      "cta": "Xidmətlərə bax",
+      "title": "Custom development services",
+      "subtitle": "AI agents, integrations, and full-cycle software delivery with security baked in from day one.",
+      "cta": "View services",
       "cards": {
-        "agents": "Kompensasiya çərçivələri, RAG və təhlükəsiz əlaqələrlə istehsalat səviyyəli AI agentlər.",
-        "integrations": "Stack, IAM və məlumat idarəetməsi ilə vendor-neyral inteqrasiyalar.",
-        "delivery": "Etibarlılıq SLO-ları, müşahidəolunma və təhlükəsizlik baxışları ilə tam dövr çatdırılma."
+        "agents": "Production-grade AI agents with guardrails, RAG, and secure connectors.",
+        "integrations": "Vendor-neutral integrations with your stack, IAM, and data governance.",
+        "delivery": "Full-cycle delivery with reliability SLOs, observability, and security reviews."
       },
       "cardsTitle": {
-        "agents": "Agentlər",
-        "integrations": "İnteqrasiyalar",
-        "delivery": "Çatdırılma"
+        "agents": "Agents",
+        "integrations": "Integrations",
+        "delivery": "Delivery"
       }
     },
     "contact": {
@@ -946,6 +952,11 @@
       "subtitle": "Təhlükəsizlik və çatdırılma məqsədlərinizi deyin — uyğun sistemi və xidmətləri seçək.",
       "cta": "Demo sifariş et",
       "ctaSecondary": "Xidmətlər komandası ilə danış"
+    },
+    "resources": {
+      "title": "Featured articles",
+      "subtitle": "Silence AI is one of few private companies that have government level intelligence.",
+      "viewAll": "View all articles"
     }
   }
 }

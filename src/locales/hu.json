@@ -172,30 +172,30 @@
     }
   },
   "hero": {
-    "headline": "AI-SOC 1: Cybersecurity is neither expensive nor complicated anymore",
-    "subheading": "The all in one, AI-based cybersecurity system that combines:",
+    "headline": "AI-SOC 1: A kiberbiztonság már nem drága és nem is bonyolult",
+    "subheading": "Az összes funkciót egyben magába foglaló, mesterséges intelligencián alapuló kiberbiztonsági rendszer, amely egyesíti:",
     "playgroundHeading": "60 másodperces bemutató",
     "bullets": {
-      "web": "Real time web attack protection",
-      "email": "Email attacks protection",
-      "vulnerability": "Vulnerability-finder"
+      "web": "Valós idejű webes támadások elleni védelem",
+      "email": "E-mail támadások elleni védelem",
+      "vulnerability": "Részvények keresése"
     },
     "buttons": {
-      "connect": "Connect in 4 minutes",
-      "tour": "Watch 90-sec Tour"
+      "connect": "Csatlakozás 4 perc alatt",
+      "tour": "Nézd meg a 90 másodperces bemutatót"
     },
     "tooltips": {
       "web": {
-        "title": "Web Attack Protection",
-        "content": "System can protect against ALL types of web attacks, such as DDoS, SQLi, and others, except business logic vulnerabilities"
+        "title": "Webes támadások elleni védelem",
+        "content": "A rendszer képes védekezni az ÖSSZES típusú webes támadás ellen, mint például DDoS, SQLi és mások, kivéve az üzleti logikai sebezhetőségeket"
       },
       "email": {
-        "title": "Email Attack Protection",
-        "content": "System can protect against ALL types of email attacks, such as phishing, malware attachment, dangerous links, etc."
+        "title": "E-mail támadások elleni védelem",
+        "content": "A rendszer képes védekezni az ÖSSZES típusú e-mail támadás ellen, mint például phishing, kártevő mellékletek, veszélyes hivatkozások stb."
       },
       "vulnerability": {
-        "title": "Vulnerability Finder",
-        "content": "System can find the vulnerabilities within the code of the application and by dynamically interacting with your website/API, including the way of finding vulnerabilities through the intelligence system"
+        "title": "Részvények keresése",
+        "content": "A rendszer képes megtalálni a sebezhetőségeket az alkalmazás kódján belül és dinamikus interakció révén a weboldalával/API-jával, beleértve a sebezhetőségek felderítésének módját az intelligencia rendszeren keresztül"
       }
     }
   },
@@ -320,7 +320,7 @@
         }
       }
     },
-    "subtitle": "Mobile-first plans built to scale with your product.",
+    "subtitle": "Mobilbarát tervek, amelyek a termékével együtt skálázódnak...",
     "percentMaintenance": "{percent}% yearly maintenance",
     "planEstimate": "${value}",
     "perYear": "per year (est.)",
@@ -332,8 +332,8 @@
     }
   },
   "solution": {
-    "sectionTitle": "Our Solution",
-    "sectionSubtitle": "Ready in 4 minutes and usable by any IT professional—no cybersecurity expertise required. We offer advanced visualization and affordability.",
+    "sectionTitle": "Megoldásunk",
+    "sectionSubtitle": "4 perc alatt kész, és bármely IT szakember számára használható — nem szükséges kiberbiztonsági szaktudás. Fejlett vizualizációt és megfizethetőséget kínálunk.",
     "cards": {
       "globalShield": {
         "title": "Global Shield - CIA-Level Traffic Monitoring",
@@ -894,8 +894,8 @@
   "home": {
     "hero": {
       "badge": "AI security & development",
-      "title": "Build securely. Deploy confidently.",
-      "subtitle": "Two subscription systems (AI-SOC, SLNC-env) plus custom AI and software delivery for enterprise teams.",
+      "title": "Cybersecurity is no longer",
+      "subtitle": "Build securely. Deploy confidently.",
       "ctaPrimary": "Request demo",
       "ctaSecondary": "Explore systems",
       "highlights": {
@@ -909,7 +909,8 @@
         "egress": "All on-prem—code, prompts, builds",
         "deployment": "to first secure deployment",
         "locales": "locales supported out-of-box"
-      }
+      },
+      "titleHighlight": "complicated or expensive anymore"
     },
     "systems": {
       "title": "Systems",
@@ -917,12 +918,17 @@
       "cta": "View details",
       "aiSoc": {
         "title": "AI-SOC",
-        "desc": "Managed detection & response with AI copilots for SOC teams.",
+        "desc": "Managed detection & response system powered and operated by AI. Used to prevent web and email attacks",
         "badge": "Subscription"
       },
       "slncEnv": {
         "title": "SLNC-env",
         "desc": "Sealed development cloud that keeps code, prompts, and builds on-prem.",
+        "badge": "Subscription"
+      },
+      "sithub": {
+        "title": "Sithub",
+        "desc": "Self-hosted GitHub alternative with built-in security scanning. All repositories and code analysis stay within your network.",
         "badge": "Subscription"
       }
     },
@@ -946,6 +952,11 @@
       "subtitle": "Tell us your security and delivery goals—we'll align the right system and services.",
       "cta": "Request demo",
       "ctaSecondary": "Talk to services team"
+    },
+    "resources": {
+      "title": "Featured articles",
+      "subtitle": "Silence AI is one of few private companies that have government level intelligence.",
+      "viewAll": "View all articles"
     }
   }
 }

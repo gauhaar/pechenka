@@ -1,951 +1,185 @@
 {
   "languageSelector": {
-    "triggerLabel": "Select language",
-    "menuLabel": "Choose language",
-    "searchLabel": "Search languages",
-    "searchPlaceholder": "Search by name or native script",
-    "searchResults": "Search results",
-    "noMatches": "No languages match your search.",
-    "popular": "Most popular",
-    "allLanguages": "All languages"
+    "triggerLabel": "Odaberi jezik",
+    "menuLabel": "Odaberi jezik",
+    "searchLabel": "Pretraži jezike",
+    "searchPlaceholder": "Pretraži po imenu ili pismu",
+    "searchResults": "Rezultati pretrage",
+    "noMatches": "Nijedan jezik ne odgovara vašoj pretrazi.",
+    "popular": "Najpopularniji",
+    "allLanguages": "Svi jezici"
   },
   "header": {
     "nav": {
-      "main": "Main",
-      "mail": "Mail",
-      "affiliate": "Affiliate program",
-      "instructions": "Instructions",
+      "main": "Početna",
+      "mail": "Pošta",
+      "affiliate": "Partnerski program",
+      "instructions": "Upute",
       "product": "AI-SOC",
       "secureDevelopment": "SLNC-env",
       "developerServices": "Usluge za programere",
-      "home": "Home",
-      "systems": "Systems",
+      "home": "Početna",
+      "systems": "Sustavi",
       "systemsAiSoc": "AI-SOC",
       "systemsSlncEnv": "SLNC-env",
-      "services": "Services"
+      "services": "Usluge"
     },
     "login": "Zatražite demo",
     "cta": {
-      "contact": "Contact",
-      "download": "Download",
-      "requestDemo": "Request Demo"
-    }
-  },
-  "affiliate": {
-    "hero": {
-      "tagline": "Pridružite se Silence AI partnerskom programu",
-      "title": "Pretvorite pozivnice u prihod.",
-      "cta": "Pridružite se partnerskom programu",
-      "earnings": "$2,940.00",
-      "growth": "+18% u odnosu na prošli mjesec",
-      "snapshot": {
-        "label": "Trenutni pregled",
-        "caption": "Performanse se ažuriraju svakih 60 sekundi, a potvrđene isplate sinkroniziraju se odmah."
-      },
-      "graph": {
-        "label": "Trend prihoda",
-        "title": "Rast prihoda od preporuka",
-        "window": "Zadnjih 30 dana",
-        "label0": "Tjedan 1",
-        "label1": "Tjedan 2",
-        "label2": "Tjedan 3",
-        "label3": "Tjedan 4",
-        "label4": "Tjedan 5",
-        "label5": "Tjedan 6",
-        "label6": "Danas"
-      },
-      "metric": {
-        "conversion": "Aktivacije",
-        "conversionChange": "24 nova tima ovog mjeseca",
-        "pending": "Neraspodijeljene nagrade",
-        "pendingChange": "Isplate se obrađuju u roku od 2 radna dana"
-      }
-    },
-    "howItWorks": {
-      "title": "Kako funkcionira",
-      "create": {
-        "title": "Kreirajte svoj link",
-        "description": "Generirajte jedinstveni referral link ili promo kod u Silence AI nadzornoj ploči."
-      },
-      "share": {
-        "title": "Podijelite",
-        "description": "Pozovite timove putem e-pošte, LinkedIna i zajednica. Pratite rezultate u stvarnom vremenu."
-      },
-      "earn": {
-        "title": "Zaradite",
-        "description": "Primite proviziju čim vaši preporučeni klijenti aktiviraju Silence AI zaštitu."
-      }
-    },
-    "commission": {
-      "heading": "Nagrade za saldo",
-      "highlight": {
-        "label": "Zašto ga partneri vole"
-      },
-      "reward": {
-        "title": "10% nagrada na svako punjenje salda",
-        "description": "Kada pozvani tim dopuni svoj Silence AI novčanik, 10% neto iznosa odmah se pripisuje vama."
-      },
-      "settlement": {
-        "title": "Knjiženje u stvarnom vremenu",
-        "description": "Nagrade se knjiže na vaš partnerski saldo unutar jedne minute nakon završetka transakcije—bez ručne obrade."
-      },
-      "withdrawal": {
-        "title": "Withdrawals processed in 2 business days",
-        "description": "Podneseni zahtjevi za isplatu automatski se provjeravaju i stižu na vaš bankovni račun u roku od dva radna dana."
-      },
-      "sample": {
-        "label": "Primjeri punjenja",
-        "caption": "Zarada partnera raste sa svakim punjenjem—bez resetiranja razina i bez mapiranja proizvoda.",
-        "topup": "$250 punjenje → $25 nagrada",
-        "topupHigher": "$1,000 punjenje → $100 nagrada"
-      },
-      "note": "Provizija se obračunava na neto iznos nakon troškova obrade plaćanja."
-    },
-    "faq": {
-      "title": "Pitanja i odgovori",
-      "payments": {
-        "question": "Kako primam isplate?",
-        "answer": "U profilu možete dodati broj svoje VISA ili Mastercard kartice. Isplate se mogu povući izravno na odabranu karticu."
-      },
-      "discounts": {
-        "question": "Dobivaju li preporučeni kupci popuste?",
-        "answer": "Ne. Preporučeni kupci ne dobivaju popuste na svoje kupnje. Samo partner ostvaruje proviziju od uspješnih preporuka."
-      },
-      "statistics": {
-        "question": "Kada ću vidjeti statistiku preporuka?",
-        "answer": "Čim se korisnik registrira putem vašeg promo koda ili referral linka, njegov e-mail i pripadajuća nagrada pojave se na vašoj nadzornoj ploči."
-      }
-    },
-    "termsAff": {
-      "label": "Affiliate Program",
-      "title": "Affiliate Terms of Service",
-      "notice": "This policy is available only in English",
-      "intro": "These terms describe how rewards are issued and paid to partners participating in the Silence AI affiliate program.",
-      "meta": {
-        "effective": "Effective date: 10 November 2024",
-        "lastUpdated": "Last updated: 10 November 2024"
-      },
-      "sections": {
-        "overview": {
-          "title": "1. Program Overview",
-          "body1": "1.1 Agreement Scope: These Affiliate Terms of Service (\"Terms\") govern your participation in the Silence AI affiliate program operated by Silence AI LLC (\"Silence AI,\" \"we,\" \"us,\" or \"our\"). These Terms apply to you, the individual or entity enrolling as an affiliate partner (\"you\" or \"your\"), and, where applicable, your employer, principal, or organization if you act on their behalf.",
-          "body2": "1.2 Program Summary: Under this program, qualified partners earn commission-based rewards when referred customers purchase or top up the AI-SOC 1 product. Participation in the affiliate program also requires compliance with the general Silence AI Terms of Service."
-        },
-        "eligibility": {
-          "title": "2. Partner Eligibility",
-          "item1": "You must maintain an active Silence AI affiliate account with accurate business and payment details.",
-          "item2": "Referrals must complete registration through your issued link or promo code.",
-          "item3": "Accounts found to be fraudulent, self-referred, or in breach of applicable law are not eligible for rewards."
-        },
-        "commission": {
-          "title": "3. Commission Structure",
-          "body1": "You earn a 10% reward on every balance top-up completed by an account registered through your invitation.",
-          "body2": "Commission is calculated from the net top-up amount after payment processing fees are deducted."
-        },
-        "rewardPosting": {
-          "title": "4. Reward Posting",
-          "body1": "Rewards post to your partner balance within one minute after the transaction successfully clears. There is no manual approval queue.",
-          "body2": "Notifications appear in your affiliate dashboard alongside the customer identifier and top-up amount."
-        },
-        "withdrawals": {
-          "title": "5. Withdrawals",
-          "body1": "Withdrawal requests are processed within two business days and paid out using the settlement method on file.",
-          "body2": "Minimum withdrawal thresholds and supported payout networks are published inside the affiliate dashboard."
-        },
-        "productScope": {
-          "title": "6. Product Scope",
-          "body1": "Rewards are only provided for the AI-SOC 1 product. Other Silence AI services are excluded from the affiliate program unless explicitly stated otherwise in writing.",
-          "body2": "If additional products become eligible, Silence AI will publish an updated list inside these terms."
-        },
-        "compliance": {
-          "title": "7. Partner Conduct & Compliance",
-          "item1": "Partners must represent Silence AI accurately and avoid misleading claims about features or pricing.",
-          "item2": "Marketing communications must comply with applicable anti-spam, privacy, and advertising regulations.",
-          "item3": "Silence AI may suspend or terminate accounts that violate these obligations or harm the brand."
-        },
-        "changes": {
-          "title": "8. Changes & Contact",
-          "body1": "Silence AI may update these affiliate terms to reflect changes in the program or applicable law. Updated versions take effect upon publication on this page.",
-          "body2": "Questions about the affiliate program can be sent to info@silenceai.net."
-        }
-      }
+      "contact": "Kontakt",
+      "download": "Preuzmi",
+      "requestDemo": "Zatražite demo"
     }
   },
   "hero": {
-    "headline": "AI-SOC 1: Cybersecurity is neither expensive nor complicated anymore",
-    "subheading": "The all in one, AI-based cybersecurity system that combines:",
+    "headline": "AI-SOC 1: Kibernetička sigurnost više nije ni skupa ni komplicirana",
+    "subheading": "Sveobuhvatni sustav kibernetičke sigurnosti temeljen na umjetnoj inteligenciji koji kombinira:",
     "playgroundHeading": "60-sekundni obilazak",
     "bullets": {
-      "web": "Real time web attack protection",
-      "email": "Email attacks protection",
-      "vulnerability": "Vulnerability-finder"
+      "web": "Zaštita od web napada u stvarnom vremenu",
+      "email": "Zaštita od napada putem e-pošte",
+      "vulnerability": "Pronalaženje ranjivosti"
     },
     "buttons": {
-      "connect": "Connect in 4 minutes",
-      "tour": "Watch 90-sec Tour"
+      "connect": "Povežite se za 4 minute",
+      "tour": "Pogledajte obilazak od 90 sekundi"
     },
     "tooltips": {
       "web": {
-        "title": "Web Attack Protection",
-        "content": "System can protect against ALL types of web attacks, such as DDoS, SQLi, and others, except business logic vulnerabilities"
+        "title": "Zaštita od web napada",
+        "content": "Sustav može zaštititi od SVIH vrsta web napada kao što su DDoS, SQLi i drugi, osim ranjivosti poslovne logike"
       },
       "email": {
-        "title": "Email Attack Protection",
-        "content": "System can protect against ALL types of email attacks, such as phishing, malware attachment, dangerous links, etc."
+        "title": "Zaštita od napada putem e-pošte",
+        "content": "Sustav može zaštititi od SVIH vrsta napada putem e-pošte: phishing, zlonamjerni privici, opasne poveznice itd."
       },
       "vulnerability": {
-        "title": "Vulnerability Finder",
-        "content": "System can find the vulnerabilities within the code of the application and by dynamically interacting with your website/API, including the way of finding vulnerabilities through the intelligence system"
+        "title": "Pronalaženje ranjivosti",
+        "content": "Sustav može pronaći ranjivosti unutar koda aplikacije i dinamičkom interakcijom s vašom web stranicom/API-jem, uključujući način pronalaženja ranjivosti putem sustava inteligencije"
       }
     }
   },
   "playground": {
     "options": {
-      "globeShield": "Web Security & Traffic Management",
-      "emailSecurity": "Email Security"
+      "globeShield": "Web sigurnost i upravljanje prometom",
+      "emailSecurity": "Sigurnost e-pošte"
     }
   },
   "cookie": {
-    "title": "Technical Cookies Notice",
-    "description": "This website uses only first-party technical cookies that are set by us to remember your language preferences and ensure the cookie notice is not shown again on your next visit. No tracking or third-party cookies are used.",
-    "more": "Learn more in our",
-    "link": "Cookie Policy",
-    "ok": "OK"
+    "title": "Obavijest o tehničkim kolačićima",
+    "description": "Ova web stranica koristi samo tehničke kolačiće prvih strana koje postavljamo kako bismo zapamtili vaše jezične postavke i osigurali da se obavijest o kolačićima ne prikazuje ponovno prilikom vašeg sljedećeg posjeta. Ne koriste se kolačići za praćenje ili kolačići trećih strana.",
+    "more": "Saznajte više u našoj",
+    "link": "Politici kolačića",
+    "ok": "U redu"
   },
   "pricing": {
-    "title": "Pricing",
+    "title": "Cijene",
     "tooltips": {
       "cmcGlobal": {
-        "title": "CMC with Global Traffic Monitoring",
-        "content": "CMC (Centralized Management Console) integrates seamlessly with other security systems and is available under the same domain and interface as Global Shield and Security Tester allows you to manage network security at scale. From here, you can blacklist countries, close ports, and perform other operations"
+        "title": "CMC s globalnim nadzorom prometa",
+        "content": "CMC (Centralizirana konzola za upravljanje) besprijekorno se integrira s drugim sigurnosnim sustavima i dostupna je pod istom domenom i sučeljem kao Global Shield i Security Tester, omogućujući vam upravljanje mrežnom sigurnošću u velikim razmjerima. Odavde možete stavljati zemlje na crnu listu, zatvarati portove i izvoditi druge operacije"
       },
       "countryBlacklisting": {
-        "title": "Country Blacklisting",
-        "content": "Block all traffic originating from a specific country"
+        "title": "Stavljanje zemalja na crnu listu",
+        "content": "Blokirajte sav promet koji dolazi iz određene zemlje"
       },
       "portManagement": {
-        "title": "Port Management",
-        "content": "Close unused ports to reduce attack surface. For example, disabling port 22 when SSH access is not needed. To minimize the risk of system getting compromised"
+        "title": "Upravljanje portovima",
+        "content": "Zatvorite neiskorištene portove kako biste smanjili površinu napada. Na primjer, onemogućite port 22 kada SSH pristup nije potreban. Kako biste minimizirali rizik od kompromitiranja sustava"
       },
       "cmcEmail": {
-        "title": "CMC with Advanced Email Flow Visualizer",
-        "content": "CMC (Centralized Management Console) integrates seamlessly with other security systems and is available under the same domain and interface as Global Shield and Security Tester. Within this console, you can monitor email flows and review emails for all corporate users you've added"
+        "title": "CMC s naprednim vizualizatorom protoka e-pošte",
+        "content": "CMC (Centralizirana konzola za upravljanje) besprijekorno se integrira s drugim sigurnosnim sustavima i dostupna je pod istom domenom i sučeljem kao Global Shield i Security Tester. U ovoj konzoli možete pratiti protok e-pošte i pregledavati e-poštu za sve korporativne korisnike koje ste dodali."
       },
       "dynamicVulnerability": {
-        "title": "Dynamic Vulnerability Finder",
-        "content": "Detects vulnerabilities by interacting with your website, including the way of finding vulnerabilities through the intelligence system"
+        "title": "Dinamički pronalazač ranjivosti",
+        "content": "Otkriva ranjivosti interakcijom s vašom web stranicom, uključujući način pronalaženja ranjivosti putem sustava inteligencije"
       },
       "codeAnalyzer": {
-        "title": "Code Analyzer",
-        "content": "Identifies security issues directly in your codebase through a VS Code plugin, helping you fix problems before deployment"
+        "title": "Analizator koda",
+        "content": "Identificira sigurnosne probleme izravno u vašoj bazi koda putem VS Code dodatka, pomažući vam da riješite probleme prije implementacije"
       },
       "intelligenceReport": {
-        "title": "Intelligence Report",
-        "content": "Generates detailed insights about your target, including open ports, running services, subdomains, and other sensitive information that may require action"
+        "title": "Izvještaj obavještajne službe",
+        "content": "Generira detaljne uvide o vašoj meti, uključujući otvorene portove, pokrenute usluge, poddomene i druge osjetljive informacije koje mogu zahtijevati djelovanje"
       },
       "fullVulnerability": {
-        "title": "FULL Vulnerability Check",
-        "content": "A FULL vulnerability check includes both a dynamic vulnerability scan and a codebase vulnerability scan"
+        "title": "POTPUNI pregled ranjivosti",
+        "content": "POTPUNI pregled ranjivosti uključuje i dinamičko skeniranje ranjivosti i skeniranje ranjivosti baze koda"
       }
     },
     "plans": {
       "globalShield": {
-        "title": "Web Security & Traffic Management",
+        "title": "Web sigurnost i upravljanje prometom",
         "price": "$0.06/GB",
-        "description": "No limits\nNo additional fees",
-        "button": "Secure web-app and APIs",
+        "description": "Bez ograničenja\nBez dodatnih naknada",
+        "button": "Zaštitite web-aplikaciju i API-je",
         "features": {
-          "webProtection": "Protection against all types of web attacks, except business logic vulnerability exploitation",
-          "ddosProtection": "Real-time DDoS protection",
-          "cmc": "CMC with Global traffic monitoring system",
-          "country": "Country blacklisting feature",
-          "port": "Closing ports feature"
+          "webProtection": "Zaštita od svih vrsta web napada, osim iskorištavanja ranjivosti poslovne logike",
+          "ddosProtection": "Zaštita od DDoS napada u stvarnom vremenu",
+          "cmc": "CMC s globalnim sustavom praćenja prometa",
+          "country": "Mogućnost stavljanja zemalja na crnu listu",
+          "port": "Mogućnost zatvaranja portova"
         }
       },
       "emailProtector": {
-        "title": "Email Security",
-        "price": "$10/month/account",
-        "description": "Up to 10 emails per day\nAdditional emails: $0.035 each email",
-        "button": "Secure Email",
+        "title": "Sigurnost e-pošte i vizualizacija",
+        "price": "$10/mjesec/račun",
+        "description": "Do 10 e-pošta dnevno\nDodatne e-pošte: $0.035 po e-pošti",
+        "button": "Zaštitite e-poštu",
         "features": {
-          "cmcEmail": "CMC with most advanced email flow visualizer",
-          "visibility": "Complete visibility of sent and received emails of all the email accounts, in CMC, with automatic threat categorization",
-          "webClient": "Secure WebMail-client",
-          "phishing": "Phishing protection",
-          "malware": "Malware attachment scanning",
-          "links": "Dangerous link detection",
-          "spam": "Spam filtering",
-          "fakeSender": "Fake Sender Protection"
+          "cmcEmail": "CMC s najnaprednijim vizualizatorom protoka e-pošte",
+          "visibility": "Potpuna vidljivost poslane i primljene e-pošte svih računa e-pošte, u CMC-u, s automatskom kategorizacijom prijetnji",
+          "webClient": "Sigurni WebMail klijent",
+          "phishing": "Zaštita od phishinga",
+          "malware": "Skeniranje zlonamjernih privitaka",
+          "links": "Otkrivanje opasnih poveznica",
+          "spam": "Filtriranje neželjene pošte",
+          "fakeSender": "Zaštita od lažnog pošiljatelja"
         }
       },
       "securityTester": {
-        "title": "Vulnerability Finder",
-        "price": "$25/month",
-        "description": "Up to 50 FULL vulnerability checks per month\nAdditional FULL checks: $0.5 each",
-        "button": "Start Testing",
+        "title": "Pronalazač ranjivosti",
+        "price": "$25/mjesec",
+        "description": "Do 50 POTPUNIH provjera ranjivosti mjesečno\nDodatne POTPUNE provjere: $0.5 po provjeri",
+        "button": "Započnite testiranje",
         "features": {
-          "dynamic": "Dynamic vulnerability finder",
-          "codeAnalyzer": "Code analyzer",
-          "reports": "Easily understandable security assessment reports",
-          "intelligence": "Intelligence Report"
-        }
-      },
-      "basic": {
-        "name": "Basic",
-        "features": {
-          "fix": "Critical Bug Fixes (48h SLA)",
-          "updates": "Monthly Updates",
-          "audit": "Quarterly Security Audits",
-          "manager": "Dedicated Manager"
-        }
-      },
-      "pro": {
-        "name": "Pro",
-        "badge": "Most Popular",
-        "features": {
-          "fix": "Critical Bug Fixes (24h SLA)",
-          "updates": "10h Monthly Updates",
-          "audit": "Monthly Security Audits",
-          "manager": "Dedicated Manager"
-        }
-      },
-      "enterprise": {
-        "name": "Enterprise",
-        "badge": "Best Value",
-        "features": {
-          "fix": "Critical Bug Fixes (4h SLA)",
-          "updates": "Unlimited Updates + Roadmap",
-          "audit": "Weekly Audits + Backups",
-          "manager": "Dedicated Manager"
+          "dynamic": "Dinamički pronalazač ranjivosti",
+          "codeAnalyzer": "Analizator koda",
+          "reports": "Lako razumljiva izvješća o sigurnosnoj procjeni",
+          "intelligence": "Izvještaj obavještajne službe"
         }
       }
-    },
-    "subtitle": "Mobile-first plans built to scale with your product.",
-    "percentMaintenance": "{percent}% yearly maintenance",
-    "planEstimate": "${value}",
-    "perYear": "per year (est.)",
-    "calculator": {
-      "title": "Project Cost Calculator",
-      "subtitle": "Slide to see your yearly maintenance",
-      "projectCost": "Project Cost:",
-      "projectValue": "${value}"
-    }
-  },
-  "solution": {
-    "sectionTitle": "Our Solution",
-    "sectionSubtitle": "Ready in 4 minutes and usable by any IT professional—no cybersecurity expertise required. We offer advanced visualization and affordability.",
-    "cards": {
-      "globalShield": {
-        "title": "Global Shield - CIA-Level Traffic Monitoring",
-        "description": "Our interactive 3D globe provides a stunning visualization of your web traffic, showing requests per second, active users, and traffic volume in bytes.",
-        "bullets": {
-          "one": "Easy setup: just specify your IP and domain.",
-          "two": "Receive an agent IP to add to your DNS.",
-          "three": "Port closing for zero exposure."
-        }
-      },
-      "emailProtector": {
-        "title": "Email Protector - World's First AI Email Protection",
-        "description": "The world's first AI-based email protection system. Our vector view makes it easy to track email flow over time and identify threats.",
-        "bullets": {
-          "one": "Detects spoofing, spam, phishing, and malware.",
-          "two": "Admin can add email accounts for protection.",
-          "three": "Most advanced commercial mail flow visualizer."
-        }
-      },
-      "securityTester": {
-        "title": "Security Tester - Next-Gen Vulnerability Testing",
-        "description": "Our system provides a One-Time-Token (OTT) for full-coverage security checks. Simply connect via our browser or VSCode extension.",
-        "bullets": {
-          "one": "Specify security scope and target in the CMC.",
-          "two": "Paste the OTT and start the security check.",
-          "three": "Intelligence-driven risk insights."
-        }
-      }
-    },
-    "cmc": {
-      "title": "Centralized Management Console (CMC)",
-      "description": "All three components are managed through a unified console that provides centralized visualization, easy configuration and monitoring, and comprehensive security reporting."
     }
   },
   "insights": {
     "items": [
       {
-        "title": "39 seconds",
-        "description": "There is a hacker attack every 39 seconds"
+        "title": "39 sekundi",
+        "description": "Hakerski napad događa se svakih 39 sekundi"
       },
       {
-        "title": "20M DDoS attacks",
-        "description": "20.5M DDoS attacks in Q1 2025 alone"
+        "title": "20M DDoS napada",
+        "description": "20,5 milijuna DDoS napada samo u prvom tromjesečju 2025."
       },
       {
-        "title": "Every day",
-        "description": "30 000 websites get hacked every single day"
+        "title": "Svaki dan",
+        "description": "30 000 web stranica se hakira svaki dan"
       }
     ]
-  },
-  "floatingText": {
-    "headline": "Discover how hackers think",
-    "description": "Follow us for daily research on real attack methods and cyber threats"
-  },
-  "modal": {
-    "title": "Under active development",
-    "body": "The system is expected to be launched on October 10"
-  },
-  "lamp": {
-    "title": "Reality of Cyberattacks"
-  },
-  "stickySolution": {
-    "webSecurity": {
-      "title": "Web security system: Website/API can be connected in 2 minutes",
-      "description": "Protection against web attacks such as DDoS, SQLi, etc. There is also ability to close ports, it is very good practice to close port 22, when it is not being used"
-    },
-    "ciaMonitoring": {
-      "title": "CIA-Level Traffic Monitoring",
-      "description": "Our interactive 3D globe shows traffic volume by requests, users, and volume. The ability to see the history in the change of the number of users"
-    },
-    "userGrowth": {
-      "title": "Useful insights on the increase in the number of users",
-      "description": "The ability to see the history of changes of the number of users"
-    },
-    "aiEmailProtection": {
-      "title": "World's First AI-based Email Protection system: Email network can be connected in 2 minutes",
-      "description": "For the admins, there is the CMC that shows complete visibility into all sent and received emails for accounts added by the administrator, with automatic threat categorization like spoofing, spam, phishing, dangerous link, and malware."
-    },
-    "emailVisualization": {
-      "title": "Visualization of the sent and received emails",
-      "description": "CMC with the most advanced, commercially available email flow visualizer"
-    },
-    "secureWebmail": {
-      "title": "Secure Webmail Client",
-      "description": "For email accounts added by admin, there is the most secure webmail client. Detects and categorizes threats like spoofing, spam, phishing, and malware."
-    }
   },
   "footer": {
-    "contactLabel": "Contact:",
+    "contactLabel": "Kontakt:",
     "contactValue": "info@silenceai.net",
-    "addressLabel": "Address:",
+    "addressLabel": "Adresa:",
     "addressValue": "Media City Free Zone, Al Messaned, Sharjah, UAE",
     "links": {
-      "termsUse": "Terms of Use",
-      "termsService": "Terms of Service",
-      "privacy": "Privacy Policy",
-      "cookies": "Cookies Policy",
-      "affiliateTerms": "Affiliate Terms of Service"
+      "termsUse": "Uvjeti korištenja",
+      "termsService": "Uvjeti pružanja usluga",
+      "affiliateTerms": "Uvjeti pružanja usluga za partnere",
+      "privacy": "Politika privatnosti",
+      "cookies": "Politika kolačića"
     },
-    "copyright": "© {year} Silence AI. All rights reserved."
-  },
-  "notFound": {
-    "title": "Stranica nije pronađena",
-    "description": "Tražili smo posvuda, ali nismo mogli pronaći ovu stranicu.",
-    "cta": "Povratak na početnu stranicu"
-  },
-  "heroSection": {
-    "badge": "AI i softver spremni za proizvodnju",
-    "title": "Prilagođeni AI i razvoj softvera",
-    "description": "Gradimo AI agente spremne za proizvodnju i prilagođeni softver za {country} i {market}.",
-    "country": "Kazahstan",
-    "market": "globalno tržište",
-    "startProject": "Započnite projekt",
-    "liveDemo": "Demo uživo — AI agent",
-    "live": "Uživo",
-    "aiAgent": "AI agent v2.1",
-    "processing": "Obrada zahtjeva...",
-    "active": "Aktivan",
-    "userMessage": "Analizirajte trendove podataka kupaca",
-    "aiResponse": "Analiziranje",
-    "tasks": {
-      "dataCollection": "Prikupljanje podataka",
-      "aiAnalysis": "AI analiza",
-      "reportGeneration": "Generiranje izvješća"
-    },
-    "stats": {
-      "tasks": "Zadaci",
-      "success": "Uspjeh",
-      "speed": "Brzina"
-    }
-  },
-  "secureDevelopment": {
-    "hero": {
-      "badge": "SLNC-env · Secure Development Environment",
-      "title": "Build systems with secure and private code",
-      "description": "Private development environment for enterprises, where code never leaves your corporate network. Meanwhile offering the latest AI-powered technology",
-      "requestSystem": "Request System"
-    },
-    "components": {
-      "title": "Everything stays inside",
-      "subtitle": "Three components, one sealed loop",
-      "description": "Code, prompts, and builds never leave your network. SLNC-env keeps AI help, reviews, and delivery private for cloud providers, government teams, and industrial plants.",
-      "sithub": {
-        "title": "Sithub Server",
-        "tag": "Local version control"
-      },
-      "llm": {
-        "title": "LLM Server (Qwen-Code)",
-        "tag": "On-prem intelligence"
-      },
-      "ide": {
-        "title": "IDE with Local Copilot",
-        "tag": "Cursor-class experience"
-      },
-      "staysOnPrem": "Stays on-prem. No egress."
-    },
-    "timeline": {
-      "title": "Why isolated, checked code matters",
-      "subtitle": "Recent wake-up calls",
-      "incident": {
-        "title": "Critical incident — leaked code",
-        "heading": "DeepSeek breach put source and prompts on the open internet",
-        "description": "Keep inference and scanning on-prem. No external model egress. Audit trails by default.",
-        "seePlan": "See containment plan"
-      },
-      "stuxnet": {
-        "year": "2010",
-        "attack": "Stuxnet",
-        "target": "Natanz enrichment facility",
-        "impact": "Destroyed ~1,000 centrifuges",
-        "severity": "Critical"
-      },
-      "blackEnergy": {
-        "year": "2015",
-        "attack": "BlackEnergy",
-        "target": "Ukraine power grid",
-        "impact": "230k customers lost power",
-        "severity": "High"
-      },
-      "triton": {
-        "year": "2017",
-        "attack": "TRITON",
-        "target": "Saudi petrochemical plant",
-        "impact": "Safety systems disabled",
-        "severity": "Critical"
-      },
-      "colonialPipeline": {
-        "year": "2021",
-        "attack": "Colonial Pipeline",
-        "target": "US fuel pipeline",
-        "impact": "6-day fuel paralysis",
-        "severity": "High"
-      },
-      "pdvsa": {
-        "year": "2025",
-        "attack": "PDVSA",
-        "target": "Venezuela refining",
-        "impact": "Refinery operations disrupted",
-        "severity": "Medium"
-      }
-    },
-    "analyzer": {
-      "title": "Analyzer that beats CodeQL",
-      "subtitle": "Live assurance",
-      "features": {
-        "quality": {
-          "title": "Automatic code quality",
-          "description": "Structure, style, and best-practice checks tuned for safety-critical code"
-        },
-        "vulnerability": {
-          "title": "Vulnerability sweeps",
-          "description": "SQLi, XSS, auth bypass, and insecure dependencies surfaced instantly"
-        },
-        "secrets": {
-          "title": "Secrets guard",
-          "description": "Keys, tokens, and credentials blocked at commit time"
-        },
-        "config": {
-          "title": "Config hardening",
-          "description": "Docker/K8s, IAM, and network policies scanned for privilege creep"
-        }
-      },
-      "beyondCodeQL": {
-        "title": "Finds what static queries miss",
-        "subtitle": "Beyond CodeQL",
-        "description": "Finds misconfigs and vulnerable packages faster than CodeQL and offers fixes, not just alerts.",
-        "points": {
-          "packages": "Knows package graphs and flags risky dependencies in seconds.",
-          "config": "Spots config drift and privilege creep—beyond static rules.",
-          "patches": "Each finding comes with a suggested patch and owner."
-        }
-      },
-      "visualizer": {
-        "title": "Code analyzer in action",
-        "subtitle": "Visualizer",
-        "description": "Crisp snapshots from recent scans, rendered beautifully inside the on-prem console.",
-        "privateWorkspace": "Private workspace only",
-        "shots": {
-          "scanOverview": {
-            "title": "Scan overview",
-            "description": "See issues grouped by severity before code leaves your network."
-          },
-          "misconfigurations": {
-            "title": "Detection of misconfigurations",
-            "description": "Our AI-powered code analyzer even finds misconfigurations within the code."
-          },
-          "inlineDiffs": {
-            "title": "Inline diffs",
-            "description": "Review suggested patches inline with security context."
-          }
-        }
-      }
-    },
-    "industries": {
-      "title": "Built for regulated, high-impact sectors",
-      "subtitle": "Where we deploy",
-      "oilGas": {
-        "title": "Oil & Gas",
-        "description": "Drilling, refining, pipeline control"
-      },
-      "energy": {
-        "title": "Energy",
-        "description": "Grid, distribution, and EMS"
-      },
-      "nuclear": {
-        "title": "Nuclear",
-        "description": "Reactor controls and safety"
-      },
-      "manufacturing": {
-        "title": "Manufacturing",
-        "description": "ICS, OT, and robotics"
-      },
-      "government": {
-        "title": "Government",
-        "description": "Ministries, defense, critical agencies"
-      }
-    }
-  },
-  "pricingCta": {
-    "requestSystem": "Request System"
-  },
-  "contactForm": {
-    "title": "Contact Us",
-    "success": "Thanks! Your message has been sent. We will contact you shortly.",
-    "errorRequired": "Please fill in your name, email and a short message.",
-    "errorSend": "Unable to send message. Please try again later.",
-    "placeholders": {
-      "name": "Your name",
-      "email": "Email",
-      "type": "Project Type (optional)",
-      "budget": "Budget (optional)",
-      "message": "Tell us about your project..."
-    },
-    "submit": {
-      "idle": "Send Message",
-      "loading": "Sending…"
-    }
-  },
-  "consulting": {
-    "title": "Consulting Questionnaire",
-    "searchPlaceholder": "Search questions...",
-    "noResults": "No questions found.",
-    "questions": [
-      {
-        "question": "What is your company's core value proposition beyond competitive pricing?",
-        "answer": "Security is our primary differentiator. We position ourselves as a company that builds highly secure systems with enterprise-grade security practices embedded throughout the development lifecycle."
-      },
-      {
-        "question": "How long has your company been in business, and what is your track record?",
-        "answer": "We have successfully delivered major projects including: NAK (Nur Astana Kurylys) - AI-powered team management platform, and Chic Flowers - Complete digital platform for a major flower retail company."
-      },
-      {
-        "question": "What differentiates your technical capabilities and service quality from EPAM and other competitors?",
-        "answer": "Our key differentiator is our security-first development approach. We integrate security practices from project inception through deployment and maintenance."
-      },
-      {
-        "question": "How do you maintain quality while offering competitive pricing?",
-        "answer": "We offer services at 15% below market rates while maintaining exceptional quality through optimized operations, strategic talent sourcing, and efficient project management methodologies."
-      },
-      {
-        "question": "What specific software development services do you provide?",
-        "answer": "End-to-end software development: custom applications, AI-powered solutions, cybersecurity product development (Silence AI-SOC), system integration, cloud migration, and DevOps. We also offer dedicated product development and staff augmentation."
-      },
-      {
-        "question": "Which industries and domains do you specialize in?",
-        "answer": "Construction, retail, fintech, cybersecurity, and digital platforms — including AI-driven team management, e-commerce, and enterprise security solutions."
-      },
-      {
-        "question": "What technology stacks and platforms does your team have expertise in?",
-        "answer": "GO, Swift, Flutter, cloud platforms (AWS/Azure/GCP), Docker/Kubernetes, FastAPI, JavaScript, and AI/ML frameworks. We build proprietary security tools like Silence AI-SOC."
-      },
-      {
-        "question": "Do you offer end-to-end product development or specific services only?",
-        "answer": "We offer both: MVPs, full-cycle product delivery, staff augmentation, and cybersecurity integration."
-      },
-      {
-        "question": "Can you provide both staff augmentation and dedicated team models?",
-        "answer": "Yes, we provide flexible engagement models: staff augmentation, dedicated teams, and project-based outsourcing."
-      },
-      {
-        "question": "Do you offer consulting, architecture, and advisory services beyond development?",
-        "answer": "Yes: cybersecurity consulting, system architecture design, technology advisory, and security compliance assessments using Silence AI-SOC."
-      }
-    ]
-  },
-  "requestDemoModal": {
-    "title": "Request System",
-    "name": "Name",
-    "email": "Corporate Email",
-    "company": "Company Name",
-    "placeholders": {
-      "name": "John Doe",
-      "email": "john@company.com",
-      "company": "Acme Corp"
-    },
-    "submit": "Send Request",
-    "successTitle": "Request Sent!",
-    "successBody": "Thank you for your interest. We will be in touch shortly.",
-    "close": "Close"
-  },
-  "requestSystemModal": {
-    "title": "Request System",
-    "name": "Name",
-    "email": "Corporate Email",
-    "company": "Company Name",
-    "placeholders": {
-      "name": "John Doe",
-      "email": "john@company.com",
-      "company": "Acme Corp"
-    },
-    "submit": "Download",
-    "successTitle": "Request Sent!",
-    "successBody": "Thank you. The system download instructions will be sent to your email.",
-    "close": "Close"
-  },
-  "policySidebar": {
-    "tableOfContents": "Table of Contents"
-  },
-  "whyChooseUs": {
-    "badge": "Results-driven engineering",
-    "title": "Why Choose Us",
-    "subtitle": "Trusted by teams from",
-    "subtitleHighlight": "billion-dollar organizations",
-    "subtitleTail": "— and shipped with startup speed.",
-    "learnMore": "Learn more",
-    "logos": {
-      "kmg": "KazMunayGas",
-      "nak": "Nur Astana Kurylys"
-    },
-    "features": {
-      "fast": {
-        "title": "Fast Delivery with Enterprise Quality",
-        "description": "Rapid, iterative delivery cycles that meet enterprise-grade reliability and compliance.",
-        "pill": "Speed + Quality"
-      },
-      "ai": {
-        "title": "AI-first Product Engineering",
-        "description": "From prototypes to production AI agents — we design, train, and deploy models that solve real business problems.",
-        "pill": "AI Engineering"
-      },
-      "local": {
-        "title": "Local Expertise, Global Reach",
-        "description": "Deep knowledge of Kazakhstan's market and regulations combined with international best practices.",
-        "pill": "KZ + Global"
-      }
-    }
-  },
-  "servicesBlock": {
-    "badge": "What we offer",
-    "title": "Our Services",
-    "description": "Premium UI, strong engineering, and fast delivery — everything you need to launch a product that looks and performs like a top-tier brand.",
-    "learnMore": "Learn more",
-    "learnMoreAria": "Learn more about this service",
-    "services": {
-      "aiAgents": {
-        "title": "AI Agents",
-        "description": "Custom conversational and autonomous agents for support, ops, and analytics.",
-        "tag": "Automation"
-      },
-      "customSoftware": {
-        "title": "Custom Software",
-        "description": "End-to-end web and desktop apps tailored to your workflows.",
-        "tag": "Build"
-      },
-      "cybersecurity": {
-        "title": "Cybersecurity",
-        "description": "Audits, penetration testing, and continuous monitoring.",
-        "tag": "Protect"
-      },
-      "backend": {
-        "title": "Backend / DevOps",
-        "description": "Scalable APIs, CI/CD pipelines, and cloud infrastructure.",
-        "tag": "Scale"
-      },
-      "mobile": {
-        "title": "Mobile",
-        "description": "Cross-platform apps with native performance and polished UX.",
-        "tag": "Ship"
-      }
-    }
-  },
-  "caseStudies": {
-    "badge": "Proven Impact",
-    "title": "Case Studies",
-    "subtitle": "We don’t ship features. We ship outcomes.",
-    "problem": "Problem:",
-    "solution": "Solution:",
-    "liveImpact": "Live Impact",
-    "before": "Before",
-    "after": "After",
-    "buildCta": "Build something like this →",
-    "caseStudy": "Case Study",
-    "items": {
-      "nak": {
-        "title": "NAK — Team Management AI",
-        "problem": "Manual resource allocation",
-        "solution": "AI-powered scheduling agent",
-        "result": "+32% productivity",
-        "metricLabel": "Team Output Index"
-      },
-      "chic": {
-        "title": "Chic Flowers — eCommerce",
-        "problem": "Low online conversions",
-        "solution": "Personalized recommender + UX overhaul",
-        "result": "+45% online sales",
-        "metricLabel": "Conversion Rate Growth"
-      },
-      "silence": {
-        "title": "Silence AI-SOC",
-        "problem": "High alert noise",
-        "solution": "AI detection & automated response",
-        "result": "−68% false positives",
-        "metricLabel": "False Alert Volume"
-      }
-    }
-  },
-  "howWeWork": {
-    "title": "How We Work",
-    "subtitle": "Ultra-fast delivery pipeline — optimized for velocity.",
-    "steps": {
-      "discovery": {
-        "title": "Discovery",
-        "desc": "Requirements, stakeholders, success metrics."
-      },
-      "design": {
-        "title": "Design",
-        "desc": "UX, architecture, prototype."
-      },
-      "poc": {
-        "title": "Proof of Concept",
-        "desc": "Rapid validation with measurable KPIs."
-      },
-      "build": {
-        "title": "Build",
-        "desc": "Iterative sprints, automated tests."
-      },
-      "deploy": {
-        "title": "Deploy",
-        "desc": "CI/CD, monitoring, security hardening."
-      },
-      "support": {
-        "title": "Support & Scale",
-        "desc": "Maintenance, roadmap, continuous improvement."
-      }
-    }
-  },
-  "technologyStack": {
-    "title": "Technology Stack",
-    "subtitle": "A carefully selected, production-grade stack engineered for speed, scalability, and beautiful user experiences."
-  },
-  "backToTop": {
-    "label": "Back to top"
-  },
-  "pricingCustom": {
-    "title": "Transparentne cijene",
-    "subtitle": "Planovi prilagođeni mobilnim uređajima koji rastu s vašim proizvodom.",
-    "percentMaintenance": "{percent}% godišnje održavanje",
-    "planEstimate": "${value}",
-    "perYear": "godišnje (procjena)",
-    "calculator": {
-      "title": "Kalkulator troškova projekta",
-      "subtitle": "Povucite da biste vidjeli godišnje održavanje",
-      "projectCost": "Cijena projekta:",
-      "projectValue": "${value}"
-    },
-    "plans": {
-      "basic": {
-        "name": "Osnovni",
-        "features": {
-          "fix": "Popravci kritičnih grešaka (48h SLA)",
-          "updates": "Mjesečna ažuriranja",
-          "audit": "Tromjesečne sigurnosne revizije",
-          "manager": "Posvećeni menadžer"
-        }
-      },
-      "pro": {
-        "name": "Pro",
-        "badge": "Najpopularniji",
-        "features": {
-          "fix": "Popravci kritičnih grešaka (24h SLA)",
-          "updates": "10h mjesečnih ažuriranja",
-          "audit": "Mjesečne sigurnosne revizije",
-          "manager": "Posvećeni menadžer"
-        }
-      },
-      "enterprise": {
-        "name": "Enterprise",
-        "badge": "Najbolja vrijednost",
-        "features": {
-          "fix": "Popravci kritičnih grešaka (4h SLA)",
-          "updates": "Neograničena ažuriranja + Plan razvoja",
-          "audit": "Tjedne revizije + Sigurnosne kopije",
-          "manager": "Posvećeni menadžer"
-        }
-      }
-    }
-  },
-  "home": {
-    "hero": {
-      "badge": "AI security & development",
-      "title": "Build securely. Deploy confidently.",
-      "subtitle": "Two subscription systems (AI-SOC, SLNC-env) plus custom AI and software delivery for enterprise teams.",
-      "ctaPrimary": "Request demo",
-      "ctaSecondary": "Explore systems",
-      "highlights": {
-        "coverage": "24/7 AI-assisted SOC",
-        "onPrem": "0-egress on-prem",
-        "deploy": "Secure deploy in 4 min"
-      },
-      "metrics": {
-        "title": "Built for regulated teams",
-        "soc": "AI-assisted SOC coverage",
-        "egress": "All on-prem—code, prompts, builds",
-        "deployment": "to first secure deployment",
-        "locales": "locales supported out-of-box"
-      }
-    },
-    "systems": {
-      "title": "Systems",
-      "subtitle": "Choose the subscription product that fits: AI-SOC for detection and SLNC-env for sealed development.",
-      "cta": "View details",
-      "aiSoc": {
-        "title": "AI-SOC",
-        "desc": "Managed detection & response with AI copilots for SOC teams.",
-        "badge": "Subscription"
-      },
-      "slncEnv": {
-        "title": "SLNC-env",
-        "desc": "Sealed development cloud that keeps code, prompts, and builds on-prem.",
-        "badge": "Subscription"
-      }
-    },
-    "services": {
-      "title": "Custom development services",
-      "subtitle": "AI agents, integrations, and full-cycle software delivery with security baked in from day one.",
-      "cta": "View services",
-      "cards": {
-        "agents": "Production-grade AI agents with guardrails, RAG, and secure connectors.",
-        "integrations": "Vendor-neutral integrations with your stack, IAM, and data governance.",
-        "delivery": "Full-cycle delivery with reliability SLOs, observability, and security reviews."
-      },
-      "cardsTitle": {
-        "agents": "Agents",
-        "integrations": "Integrations",
-        "delivery": "Delivery"
-      }
-    },
-    "contact": {
-      "title": "Ready to combine AI-SOC and SLNC-env?",
-      "subtitle": "Tell us your security and delivery goals—we'll align the right system and services.",
-      "cta": "Request demo",
-      "ctaSecondary": "Talk to services team"
-    }
+    "copyright": "© {year} Silence AI. Sva prava pridržana."
   }
 }

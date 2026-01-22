@@ -29,7 +29,7 @@ const ContactForm = () => {
     setErrorMsg("");
 
     if (!name.trim() || !email.trim() || !message.trim()) {
-      setErrorMsg(t("contactForm.errorRequired"));
+      setErrorMsg(t("contactForm.errorRequired", "Please fill in all required fields"));
       return;
     }
 
@@ -38,7 +38,7 @@ const ContactForm = () => {
       // Simulate an API call — replace with real POST when ready
       await new Promise((res) => setTimeout(res, 800));
       setSuccess(true);
-      setSuccessMessage(t("contactForm.success"));
+      setSuccessMessage(t("contactForm.success", "Thank you! We'll get back to you soon."));
       setName("");
       setEmail("");
       setType("");
@@ -46,7 +46,7 @@ const ContactForm = () => {
       setMessage("");
       setTimeout(() => setSuccess(false), 5000);
     } catch (err) {
-      setErrorMsg(t("contactForm.errorSend"));
+      setErrorMsg(t("contactForm.errorSend", "Sorry, something went wrong. Please try again."));
     } finally {
       setLoading(false);
     }
@@ -56,7 +56,7 @@ const ContactForm = () => {
     <section className="relative space-y-8">
       <div className="space-y-3 text-center">
         <h2 className="text-3xl font-semibold text-white sm:text-4xl">
-          {t("contactForm.title")}
+          {t("contactForm.title", "Contact Us")}
         </h2>
       </div>
       <div className="max-w-xl mx-auto">
@@ -86,7 +86,7 @@ const ContactForm = () => {
             }}
           >
             <label htmlFor="name" className="sr-only">
-              {t("contactForm.placeholders.name")}
+              {t("contactForm.placeholders.name", "Your name")}
             </label>
             <input
               id="name"
@@ -95,12 +95,12 @@ const ContactForm = () => {
               onChange={(e) => setName(e.target.value)}
               type="text"
               required
-              placeholder={t("contactForm.placeholders.name")}
+              placeholder={t("contactForm.placeholders.name", "Your name")}
               className="w-full px-4 py-2 border border-white/20 rounded-lg bg-black/40 text-white placeholder:text-white/40 focus:outline-none focus:border-[#FF00B7] transition-colors"
             />
 
             <label htmlFor="email" className="sr-only">
-              {t("contactForm.placeholders.email")}
+              {t("contactForm.placeholders.email", "your@email.com")}
             </label>
             <input
               id="email"
@@ -109,12 +109,12 @@ const ContactForm = () => {
               onChange={(e) => setEmail(e.target.value)}
               type="email"
               required
-              placeholder={t("contactForm.placeholders.email")}
+              placeholder={t("contactForm.placeholders.email", "your@email.com")}
               className="w-full px-4 py-2 border border-white/20 rounded-lg bg-black/40 text-white placeholder:text-white/40 focus:outline-none focus:border-[#FF00B7] transition-colors"
             />
 
             <label htmlFor="type" className="sr-only">
-              {t("contactForm.placeholders.type")}
+              {t("contactForm.placeholders.type", "Project type")}
             </label>
             <input
               id="type"
@@ -122,12 +122,12 @@ const ContactForm = () => {
               value={type}
               onChange={(e) => setType(e.target.value)}
               type="text"
-              placeholder={t("contactForm.placeholders.type")}
+              placeholder={t("contactForm.placeholders.type", "Project type")}
               className="w-full px-4 py-2 border border-white/20 rounded-lg bg-black/40 text-white placeholder:text-white/40 focus:outline-none focus:border-[#FF00B7] transition-colors"
             />
 
             <label htmlFor="budget" className="sr-only">
-              {t("contactForm.placeholders.budget")}
+              {t("contactForm.placeholders.budget", "Budget")}
             </label>
             <input
               id="budget"
@@ -135,12 +135,12 @@ const ContactForm = () => {
               value={budgetField}
               onChange={(e) => setBudgetField(e.target.value)}
               type="text"
-              placeholder={t("contactForm.placeholders.budget")}
+              placeholder={t("contactForm.placeholders.budget", "Budget")}
               className="w-full px-4 py-2 border border-white/20 rounded-lg bg-black/40 text-white placeholder:text-white/40 focus:outline-none focus:border-[#FF00B7] transition-colors"
             />
 
             <label htmlFor="message" className="sr-only">
-              {t("contactForm.placeholders.message")}
+              {t("contactForm.placeholders.message", "Tell us about your project")}
             </label>
             <textarea
               id="message"
@@ -148,7 +148,7 @@ const ContactForm = () => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
-              placeholder={t("contactForm.placeholders.message")}
+              placeholder={t("contactForm.placeholders.message", "Tell us about your project")}
               className="w-full px-4 py-2 border border-white/20 rounded-lg resize-none bg-black/40 text-white placeholder:text-white/40 focus:outline-none focus:border-[#FF00B7] transition-colors"
               style={{ minHeight: "120px", maxHeight: "200px" }}
             />
@@ -159,7 +159,7 @@ const ContactForm = () => {
               className="w-full"
               innerClassName="w-full"
             >
-              {loading ? t("contactForm.submit.loading") : t("contactForm.submit.idle")}
+              {loading ? t("contactForm.submit.loading", "Sending...") : t("contactForm.submit.idle", "Send Message")}
             </GlowButton>
           </form>
         </EdgeGlowCard>

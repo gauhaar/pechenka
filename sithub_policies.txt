@@ -1,0 +1,2409 @@
+# SITHUB SECURITY POLICY DOCUMENTS
+
+---
+
+## DOCUMENT 1: PRIVACY POLICY
+
+**Sithub Platform**
+
+**Effective Date:** January 13, 2026
+
+### DEFINITIONS
+
+**Provider:** Silence AI (hereinafter referred to as "Provider," "we," "us," "our"), a legal entity registered in accordance with the legislation of the Republic of Kazakhstan.
+
+**User:** An individual or legal entity (hereinafter referred to as "User," "you," "your," "Client") that subscribes to services, downloads, installs, or uses the Platform.
+
+**1.2 Definition of Platform**
+
+**"Sithub"** (hereinafter referred to as "Platform") is a self-hosted development platform with integrated security scanning, designed for deployment in the User's isolated infrastructure. The Platform includes:
+
+- **Repository Management System** - self-hosted Git version control
+- **Security Scanning Engine** - AI-powered code analysis and vulnerability detection
+- **Vulnerability Database Service** - regularly updated threat intelligence
+
+(hereinafter collectively referred to as "Components")
+
+**1.3 Key Terms**
+
+- **"Source Code"** - program code created, stored, or processed by the User using the Platform
+- **"Local Infrastructure"** - servers, workstations, and network equipment owned or controlled by the User on which the Platform is deployed
+- **"Corporate Perimeter"** - boundaries of the User's network infrastructure defined by firewalls and other network security means
+- **"Security Updates"** - vulnerability databases, security patches, and threat metadata transmitted by the Provider to the User
+
+---
+
+### 1. CONSENT AND LEGAL FORCE
+
+**1.1 Acceptance of Terms**
+
+By subscribing to services, downloading, installing, or using Sithub or any of its Components, you confirm that you:
+
+- Have read and understood these Terms
+- Agree to comply with these Terms in full
+- Have the legal authority to enter into this agreement
+
+If you do not agree with these Terms, you do not have the right to use the Platform.
+
+**1.2 Age Restrictions**
+
+To use Sithub:
+
+- You must be at least 18 years old for independent use
+- If you are between 16 and 18 years old, you must obtain written consent from a parent or legal guardian
+- Use of the Platform is prohibited for persons under 16 years of age
+
+**1.3 Corporate Use**
+
+When using on behalf of an organization, you confirm that you have the authority to enter into this agreement on behalf of such organization.
+
+**1.4 Related Documents**
+
+These Terms are supplemented by the following documents, which are an integral part of them:
+
+- **Privacy Policy**
+- **Technical Documentation on Security Architecture**
+
+---
+
+### 2. PLATFORM DESCRIPTION AND OPERATING PRINCIPLES
+
+**2.1 Architectural Principle: Local Processing**
+
+Sithub is designed based on the principle of **"Privacy by Design"** (privacy by design). All Components operate exclusively on the User's local infrastructure without transferring source code to external servers.
+
+**2.2 Platform Components**
+
+**2.2.1 Repository Management System**
+
+Self-hosted Git version control:
+
+- Operates entirely on the User's equipment
+- Does not require internet connection for core functionality
+- Does not transmit repository data to Provider's servers
+- Is a fully autonomous component for code management
+
+**2.2.2 Security Scanning Engine**
+
+AI-powered code analysis operating locally:
+
+- Performs security scanning on local infrastructure
+- Runs entirely within your network
+- Integrates with locally stored vulnerability databases
+- Does not transmit code or scan results externally
+- Provides real-time vulnerability detection
+
+**2.2.3 Vulnerability Database Service**
+
+Security intelligence updates:
+
+- Downloads threat data from Provider's servers
+- Stores databases locally on your infrastructure
+- **The only component** that communicates with Provider's servers
+- Receives regular security updates (see section 2.3)
+
+**2.3 Security Update Service**
+
+**2.3.1 Purpose of Service**
+
+Sithub uses vulnerability databases to scan User's code for known security threats. To ensure these databases are up-to-date, the Platform downloads updates from Provider's servers.
+
+**2.3.2 What is Transmitted FROM Provider's Servers TO User**
+
+**Incoming data flow** (from Provider's servers to User's infrastructure):
+
+- Vulnerability databases (CVE, information about malicious packages)
+- Security patches and vulnerability remediation instructions
+- Package security metadata (npm, PyPI, Maven, etc.)
+- Malicious code signatures
+- Security scanning engine updates
+
+**2.3.3 What is Transmitted FROM User TO Provider's Servers**
+
+**Outgoing data flow** (from User's infrastructure to Provider's servers):
+
+- **License verification tokens** - cryptographic tokens to confirm subscription validity
+- **License key hash** - for authenticating update requests
+- **Update request metadata:**
+  - Request timestamp
+  - Installed Sithub version
+  - Installation identifier hash (irreversible)
+
+**CRITICALLY IMPORTANT:**
+
+- **User's Source Code is NEVER transmitted to Provider's servers**
+- **Security scan results are NEVER transmitted to Provider's servers**
+- **File names, project structure, repository metadata are NEVER transmitted**
+- **Information about developers and users is NEVER transmitted**
+
+**2.3.4 Technical Implementation of Code Isolation Guarantee**
+
+Sithub architecture ensures structural impossibility of source code transmission:
+
+- Scanning module operates in an isolated process without network access
+- Update module has access only to the database directory
+- Network module is implemented on "write-only" principle for updates (download only, no data upload)
+- Absence of API methods for transmitting source code to external servers
+
+---
+
+### 3. DATA SECURITY GUARANTEES AND LIABILITY LIMITATIONS
+
+**3.1 Provider's Guarantees**
+
+**3.1.1 Architectural Guarantee**
+
+The Provider guarantees that Sithub is designed in such a way that:
+
+- User's source code is processed exclusively on local infrastructure
+- Platform components do not contain functions for data transmission to external servers
+- Only vulnerability database updates are downloaded from Provider's servers
+- No code, scan results, or repository metadata is transmitted externally
+
+**3.1.2 Guarantee Limitations**
+
+The Provider does **NOT guarantee** protection from:
+
+- User's own actions to transfer code to external services
+- Compromise of User's infrastructure by third parties
+- Network security configuration errors on User's side
+- Actions of User's employees or contractors
+
+**3.1.3 Guarantee Formulation Without Absolute Promises**
+
+The Provider undertakes to:
+
+- Not collect and not transmit User's source code during normal Platform operation
+- Not use User's code for model training or other purposes
+- Immediately notify User of any security incidents
+
+**IMPORTANT:** This guarantee is valid provided Sithub is properly operated in accordance with technical documentation.
+
+**3.2 User's Obligations**
+
+**3.2.1 Infrastructure Security**
+
+The User undertakes to:
+
+- Maintain proper firewall configuration
+- Implement access control to local systems
+- Ensure physical and network security of servers
+- Regularly update operating systems and protection means
+
+**3.2.2 Preventing Manual Data Transfer**
+
+The User undertakes to:
+
+- Not manually upload source code to external cloud services
+- Train developers in principles of safe work with Sithub
+- Control actions of users with privileged access
+
+**3.2.3 Update Configuration**
+
+The User is responsible for:
+
+- Configuring Sithub to receive security updates
+- Timely application of critical updates
+- Monitoring update service operability
+
+**3.3 Distribution of Responsibility**
+
+| Area | Provider's Responsibility | User's Responsibility |
+|------|---------------------------|----------------------|
+| Platform Architecture | Local processing guarantee | - |
+| Component source code | Absence of code transmission functions | - |
+| Security updates | Timely delivery | Configuration of reception |
+| Local infrastructure | - | Security and availability |
+| User actions | - | Training and control |
+| Network security | - | Perimeter configuration |
+
+**3.4 Right to Audit**
+
+**3.4.1 Audit by User**
+
+The User has the right to:
+
+- Conduct analysis of Sithub network traffic
+- Request technical documentation on security architecture
+- Conduct analysis of open-source components of the Platform
+
+**3.4.2 Audit by Provider**
+
+The Provider undertakes to:
+
+- Conduct annual independent security audit of Sithub
+- Publish summary audit reports (without disclosure of confidential information)
+- Notify Users of critical audit results
+
+---
+
+### 4. SUBSCRIPTION AND PAYMENT
+
+**4.1 Subscription Model**
+
+**4.1.1 Subscription Options**
+
+Sithub is provided on the basis of subscription, including:
+
+- Full access to all Platform features
+- All capabilities without restrictions
+- Regular security database updates
+- Technical support in accordance with SLA
+
+**Available Plans:**
+
+- **Monthly Plan:** $480/month (USD) or 240,000₸ (KZT)
+- **Annual Plan:** $336/month billed annually at $4,032/year (USD) or 168,000₸/month billed at 2,016,000₸/year (KZT)
+
+The monthly plan provides flexibility; the annual plan offers 30% savings.
+
+**4.1.2 Cost and Payment**
+
+- Current subscription cost is indicated on the website www.silence.codes or https://sithub.silence.codes
+- Payment is made in advance (monthly or annually)
+- Non-cash payments are accepted in accordance with the legislation of the Republic of Kazakhstan
+- International payment methods are available for international clients
+
+**4.1.3 Taxes**
+
+The indicated cost does not include applicable taxes (VAT, sales tax, etc.). The User is responsible for paying all applicable taxes in their jurisdiction.
+
+**4.2 Renewal and Cancellation**
+
+**4.2.1 Automatic Renewal**
+
+If the User does not cancel the subscription before the end of the validity period:
+
+- The subscription is automatically renewed for the next period
+- Payment is charged using the saved payment method
+- The User receives notification 30 days before renewal
+
+**4.2.2 Subscription Cancellation**
+
+The User can cancel the subscription at any time:
+
+- The subscription remains active until the end of the paid period
+- Automatic renewal will not occur
+- Access to updates ceases after the period expires
+
+**4.3 Refund Policy**
+
+**4.3.1 Basic Rule**
+
+Paid funds for subscription **are not refunded**, except in cases specified below.
+
+**4.3.2 Exceptions - Refunds are Provided**
+
+Full or partial refund is possible in the following cases:
+
+**a) Critical system failure:**
+
+- Sithub is completely non-functional for more than 7 consecutive days
+- The problem arose due to Provider's fault
+- The problem cannot be resolved within a reasonable time
+
+**b) Breach of privacy guarantees:**
+
+- Proven transmission of source code to Provider's servers contrary to guarantees
+- Security incident due to Provider's fault resulting in data leak
+
+**c) Regulatory requirements:**
+
+- When refund is required by legislation of User's jurisdiction
+- In accordance with consumer rights (see section 4.3.3)
+
+**4.3.3 Consumer Rights in the European Union**
+
+For Users located in the European Union, the following rights apply:
+
+- **14-day right of withdrawal** - User can cancel subscription within 14 days from the date of contract conclusion
+- Refund of full cost (minus proportional cost of used services)
+- Right applies even after starting to use Sithub
+
+**4.3.4 Refund Procedure**
+
+To request a refund:
+
+1. Send a request to: info@silence.codes
+2. Specify the reason for refund and supporting documents
+3. Provider will review the request within 14 business days
+4. If approved, funds are returned within 30 days
+
+**4.4 License Verification**
+
+**4.4.1 License Information**
+
+The Provider stores the following license information:
+
+- License key hash (irreversible)
+- Subscription activation and expiration date
+- Subscription status (active/inactive)
+- User organization name (for corporate subscriptions)
+
+**4.4.2 What is NOT Stored**
+
+The Provider does NOT store:
+
+- Source code or development data
+- Information about developers and team structure
+- Security scan results
+- Repository metadata
+
+**4.4.3 Verification Mechanism**
+
+Sithub periodically checks license validity by sending the license key hash to Provider's servers. Verification occurs:
+
+- At Sithub startup
+- When requesting security updates
+- No more than once every 24 hours
+
+---
+
+### 5. SERVICE LEVEL AGREEMENT (SLA)
+
+**5.1 Update Server Availability**
+
+**5.1.1 Target Metrics**
+
+The Provider strives to ensure:
+
+- **99.5% uptime** of update servers per year
+- This is equivalent to no more than 43.8 hours of downtime per year
+
+**5.1.2 Uptime Calculation**
+
+Uptime is calculated as:
+
+Uptime % = ((Total time - Downtime) / Total time) × 100
+
+**Exceptions from downtime calculation:**
+
+- Scheduled maintenance notified 72 hours in advance
+- Force majeure circumstances
+- Problems on User's infrastructure side
+- Problems with third-party internet providers
+
+**5.1.3 Important Clarification**
+
+The 99.5% metric is **target**, but not guaranteed. The Provider does not bear financial responsibility for non-fulfillment of this metric, except in cases of prolonged (more than 7 consecutive days) complete service failure.
+
+**5.2 Local Component Operation**
+
+**5.2.1 Independence from Servers**
+
+All Platform components continue to operate regardless of Provider's server availability:
+
+- **Repository Management** - fully autonomous
+- **Security Scanning** - continues using last downloaded vulnerability database
+- **Code Analysis** - operates completely offline
+
+**5.2.2 Functionality Degradation**
+
+When update servers are unavailable:
+
+- All Sithub functions continue to work
+- Platform uses the last downloaded vulnerability database
+- Detection of new vulnerabilities is limited to information in the last database
+
+**5.3 Security Updates**
+
+**5.3.1 Regular Updates**
+
+The Provider provides:
+
+- Vulnerability database updates **at least once per week**
+- Unscheduled updates when critical threats are discovered
+
+**5.3.2 Critical Updates**
+
+When critical vulnerabilities are discovered (CVSS 9.0+):
+
+- Update is released within **48 hours** from public disclosure
+- Users receive notification of the need to update
+- Recommendation for immediate update application
+
+**5.3.3 Responsibility for Application**
+
+The User is responsible for:
+
+- Configuring Sithub for automatic update downloads
+- Timely application of critical updates
+- Monitoring update status
+
+**5.4 Technical Support**
+
+**5.4.1 Support Channels**
+
+The Provider provides technical support through:
+
+- Email: info@silence.codes
+- Ticket system (for corporate clients)
+
+**5.4.2 Response Time**
+
+| Priority | Description | First Response Time |
+|----------|-------------|---------------------|
+| Critical | Complete Platform failure | 4 hours |
+| High | Significant functionality reduction | 12 hours |
+| Medium | Limited impact on operation | 48 hours |
+| Low | General questions, feature requests | 5 business days |
+
+**5.4.3 Support Hours**
+
+- Support is available Monday to Friday, 09:00-17:00 (GMT+6, Nur-Sultan)
+- Critical incidents are handled 24/7
+
+---
+
+### 6. INTELLECTUAL PROPERTY
+
+**6.1 User's Rights to Their Code**
+
+**6.1.1 Retention of All Rights**
+
+The User retains full and exclusive rights to:
+
+- All source code created using Sithub
+- All derivative works and modifications
+- All related copyrights, patents, and trade secrets
+- All rights to commercialization and distribution
+
+**6.1.2 Absence of Provider's Claims**
+
+The Provider:
+
+- Does not claim ownership of User's code
+- Does not claim license to use the code
+- Does not receive rights to derivative works
+- **NEVER uses User's code for AI model training or other purposes**
+
+**6.1.3 Legal Confirmation**
+
+Use of Sithub **does not create** and **does not imply**:
+
+- Transfer of intellectual property rights to Provider
+- License for Provider to use the code
+- Obligation to disclose code to third parties
+
+**6.2 Provider's Rights to Platform**
+
+**6.2.1 Provider's Ownership**
+
+The Provider retains all rights to:
+
+- Source code of all Platform Components
+- Algorithms and methodologies implemented in Sithub
+- Vulnerability databases and security updates
+- Trademarks, logos, and corporate symbolism
+- Technical documentation and user guides
+
+**6.2.2 Open Source**
+
+Some Sithub components are based on open-source software:
+
+- Such components are provided in accordance with their original licenses
+- List of components and licenses is available in technical documentation
+- Modifications of open-source components made by Provider remain Provider's property (if permitted by original license)
+
+**6.2.3 License to Use**
+
+By purchasing a subscription, the User receives:
+
+- **Non-exclusive** license to use Sithub
+- **Non-transferable** license (without sublicensing rights)
+- **Limited to subscription term** license
+- License with right to use on User's local infrastructure
+
+**6.3 Usage Restrictions**
+
+The User does **NOT have the right** to:
+
+- Reverse engineer proprietary Platform components
+- Distribute or resell Sithub to third parties
+- Remove or modify copyright notices
+- Create competing products based on Sithub
+- Distribute vulnerability databases provided by Provider
+
+**Exception:** Network traffic analysis and security verification for audit purposes are permitted.
+
+---
+
+### 7. LIMITATION OF LIABILITY
+
+**7.1 "AS IS" Provision**
+
+**7.1.1 Disclaimer of Warranties**
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW:
+
+Sithub is provided "AS IS" and "AS AVAILABLE", without any warranties, express or implied, including but not limited to:
+
+- Warranties of merchantability
+- Warranties of fitness for a particular purpose
+- Warranties of non-infringement of third-party rights
+- Warranties of accuracy, reliability, or completeness of functions
+
+**7.1.2 Limitations of Applicability**
+
+This disclaimer of warranties does NOT apply to:
+
+- Consumer rights provided by mandatory legislation
+- Privacy guarantees specified in section 3.1
+- SLA obligations specified in section 5
+
+**7.2 Liability Boundaries**
+
+**7.2.1 Provider is NOT responsible for:**
+
+**a) Problems on User's side:**
+
+- Security breaches caused by incorrect configuration of User's infrastructure
+- Data leaks resulting from actions of User's employees or contractors
+- System compromise as a result of attacks on User's infrastructure
+- Data loss due to lack of backup on User's side
+
+**b) Accuracy of security scanning:**
+
+- False positives (detection of non-existent vulnerabilities)
+- False negatives (missing real vulnerabilities)
+- Incompleteness of vulnerability databases
+
+**c) Indirect damages:**
+
+- Lost profits
+- Loss of business reputation
+- Data loss (except in cases of Provider's direct fault)
+- Business interruption
+
+**7.2.2 Maximum Liability**
+
+The Provider's maximum aggregate liability for all claims related to Sithub is limited to:
+
+- **The amount paid by User for subscription during the 12 months preceding the claim**
+
+**7.2.3 Exceptions from Liability Limitation**
+
+Liability limitations do NOT apply to:
+
+- Intentional actions or gross negligence of Provider
+- Breaches of privacy guarantees (section 3.1)
+- Damage to life or health
+- Liability that cannot be limited in accordance with applicable law
+
+**7.3 Duty to Mitigate Damages**
+
+The User undertakes to:
+
+- Immediately notify Provider of identified problems
+- Take reasonable measures to reduce damage
+- Cooperate with Provider in investigating incidents
+
+**7.4 Force Majeure**
+
+The Provider is not responsible for non-fulfillment of obligations caused by force majeure circumstances, including:
+
+- Natural disasters
+- Wars, terrorist attacks, epidemics
+- Actions of government authorities
+- Power outages, internet failures
+- Cyberattacks on Provider's infrastructure
+
+---
+
+### 8. TERMINATION OF TERMS
+
+**8.1 Termination by User**
+
+**8.1.1 Subscription Cancellation**
+
+The User can stop using Sithub at any time:
+
+- Subscription is not automatically renewed after the current period ends
+- Access to updates ceases after the paid period expires
+- Refund is provided only in cases specified in section 4.3
+
+**8.1.2 Retention of Local Components**
+
+After subscription termination:
+
+- All downloaded Components remain on User's infrastructure
+- Components continue to function with the last received security database
+- Platform stops receiving updates but continues to scan code locally
+- Provider does not delete or block local components
+
+**8.1.3 Platform Deletion**
+
+The User independently deletes Components from their infrastructure:
+
+- Provider provides instructions for safe deletion
+- Provider is not responsible for residual data after deletion
+- User is responsible for complete deletion of all Components
+
+**8.2 Termination by Provider**
+
+**8.2.1 Breach of Terms**
+
+The Provider may immediately terminate service provision in case of:
+
+- Violation of acceptable use conditions (section 9)
+- Bypass of licensing mechanisms
+- Illegal use of Platform
+- Distribution of Sithub or databases to third parties
+
+**8.2.2 Procedure for Breach**
+
+When a breach is identified:
+
+1. Provider sends written notification of breach
+2. User has **14 days** to remedy the breach
+3. If breach is not remedied, subscription is terminated without refund
+4. License key is deactivated
+
+**8.2.3 Service Termination**
+
+The Provider may terminate provision of Sithub to all Users:
+
+- With prior notification of **90 days**
+- With refund of proportional part of payment for unused period
+- With provision of last security updates
+
+**8.3 Consequences of Termination**
+
+**8.3.1 Immediate Consequences**
+
+After subscription termination:
+
+- License key is deactivated
+- Access to security updates ceases
+- Access to technical support ceases
+- Access to documentation ceases (for closed sections)
+
+**8.3.2 Data Retention**
+
+After termination:
+
+- Provider deletes subscription information in accordance with Privacy Policy
+- Payment data is stored in accordance with legislative requirements (7 years)
+- User data (code, scan results) remains on User's infrastructure
+
+**8.3.3 Surviving Provisions**
+
+The following sections remain in force after termination:
+
+- Section 6 (Intellectual Property)
+- Section 7 (Limitation of Liability)
+- Section 11 (Applicable Law and Dispute Resolution)
+- Section 3.2 (User's Security Obligations)
+
+---
+
+### 9. ACCEPTABLE USE
+
+**9.1 Permitted Use**
+
+The User has the right to use Sithub for:
+
+- Software development
+- Code analysis for security vulnerabilities
+- Corporate repository management
+- Training and educational purposes (within User's organization)
+- Any lawful purposes related to software development
+
+**9.2 Prohibited Use**
+
+The User does **NOT have the right** to:
+
+**9.2.1 Technical Restrictions:**
+
+- Reverse engineer proprietary Platform components
+- Attempt to extract source code of proprietary components
+- Bypass licensing or authentication mechanisms
+- Modify Sithub to bypass restrictions
+
+**9.2.2 Distribution:**
+
+- Distribute Sithub or its components to third parties without Provider's written consent
+- Provide access to Sithub to persons without license
+- Distribute vulnerability databases provided by Provider
+- Create competing products based on Sithub
+
+**9.2.3 Illegal Use:**
+
+- Use Sithub for developing malware, exploits, or hacking tools
+- Use Sithub for any illegal purposes in accordance with applicable law
+- Use Sithub to violate third-party rights
+- Use Sithub to bypass sanctions or export restrictions
+
+**9.3 Justification of Prohibitions**
+
+**9.3.1 Reverse Engineering**
+
+- Damages Provider's business model
+- Violates intellectual property rights
+- May lead to creation of competing products
+
+**9.3.2 Database Distribution**
+
+- Reduces effectiveness of vulnerability databases
+- Attackers can adapt to publicly available data
+- Violates Provider's commercial model
+
+**9.3.3 Licensing Bypass**
+
+- Is a form of intellectual property theft
+- Deprives Provider of lawful income
+- May lead to legal consequences
+
+**9.4 Consequences of Violation**
+
+When acceptable use conditions are violated:
+
+1. Immediate termination of service provision
+2. License key deactivation
+3. No refund
+4. Possible legal action for damage recovery
+
+---
+
+### 10. COMPLIANCE WITH LEGISLATION
+
+**10.1 Export Control**
+
+**10.1.1 User's Obligations**
+
+The User is responsible for compliance with all applicable export control laws, including:
+
+- Export control laws of the Republic of Kazakhstan
+- Sanctions and embargoes established by the United Nations
+- US export restrictions (if applicable)
+- EU dual-use regulation (if applicable)
+
+**10.1.2 Prohibited Territories**
+
+Sithub cannot be used in territories subject to international sanctions, including (but not limited to):
+
+- Territories designated in UN sanctions lists
+- Territories subject to OFAC sanctions (USA)
+- Territories defined in EU regulation
+
+**Important:** The list of sanctioned territories changes. The User is obliged to independently verify the current status of sanctions lists.
+
+**10.1.3 Provider's Responsibility**
+
+The Provider:
+
+- Complies with applicable export control laws of the Republic of Kazakhstan
+- Is not responsible for User's non-compliance with export restrictions of their jurisdiction
+- May terminate service provision when sanctions violations are identified
+
+**10.2 Data Protection**
+
+**10.2.1 GDPR Compliance (for users from EU)**
+
+For Users located in the European Union:
+
+- Provider acts as **data processor**
+- User is the **data controller**
+- Provisions of the General Data Protection Regulation (GDPR) apply
+- Provider enters into Data Processing Agreement (DPA) upon request
+
+**10.2.2 Standard Contractual Clauses (SCC)**
+
+When transferring personal data from EU to Kazakhstan:
+
+- Provider uses Standard Contractual Clauses approved by the European Commission
+- SCC are available for review and signing upon request
+- Provider ensures additional technical protection measures
+
+**10.2.3 Data Subject Rights (for users from EU)**
+
+Users from EU have the following rights in accordance with GDPR:
+
+- Right of access to personal data
+- Right to rectification of inaccurate data
+- Right to erasure ("right to be forgotten")
+- Right to restriction of processing
+- Right to data portability
+- Right to object to processing
+
+To exercise these rights, contact: info@silence.codes
+
+**10.2.4 Compliance with Republic of Kazakhstan Legislation**
+
+The Provider complies with:
+
+- Law of the Republic of Kazakhstan "On Personal Data and Their Protection"
+- Data localization requirements (if applicable)
+- Security incident notification requirements
+
+**10.3 Data Retention**
+
+**10.3.1 Retention Periods**
+
+| Data Type | Retention Period | Basis |
+|-----------|------------------|-------|
+| Subscription information | Validity period + 1 year | Operational necessity |
+| Payment records | 7 years | Tax legislation of RK |
+| License keys (hashes) | Validity period + 1 year | Abuse prevention |
+| Update request logs | 90 days | Technical support |
+
+**10.3.2 Data Deletion**
+
+Upon expiration of retention periods:
+
+- Data is irreversibly deleted from all Provider's systems
+- Backup copies are overwritten within 90 days
+- User may request early deletion (except for data with legislative storage requirements)
+
+---
+
+### 11. APPLICABLE LAW AND DISPUTE RESOLUTION
+
+**11.1 Applicable Law**
+
+**11.1.1 Primary Applicable Law**
+
+These Terms are governed by and construed in accordance with the laws of the **Republic of Kazakhstan**, without regard to conflict of law provisions.
+
+**11.1.2 Mandatory Provisions of Other Jurisdictions**
+
+The choice of Kazakhstan law does not override:
+
+- Mandatory consumer protection provisions in User's jurisdiction
+- Mandatory GDPR requirements for users from EU
+- Other mandatory provisions from which it is impossible to deviate by agreement
+
+**11.2 Dispute Resolution**
+
+**11.2.1 Pre-litigation Settlement**
+
+Before applying to court or arbitration, Parties undertake to:
+
+1. Send written claim to the other Party
+2. Provide 30 days for response and settlement
+3. Make good faith attempt to resolve dispute through negotiations
+
+Claims are sent to:
+
+- **To Provider:** info@silence.codes
+- **To User:** to contact email specified during registration
+
+**11.2.2 Arbitration**
+
+If pre-litigation settlement does not lead to result:
+
+- Disputes are subject to resolution in arbitration in accordance with the Regulations of the International Arbitration Court at the National Chamber of Entrepreneurs of the Republic of Kazakhstan "Atameken"
+- Place of arbitration: Astana (Nur-Sultan), Republic of Kazakhstan
+- Language of arbitration: Russian or English (by agreement of parties)
+- Applicable law: legislation of the Republic of Kazakhstan
+
+**11.2.3 Exceptions for Consumers from EU**
+
+Consumer Users located in the European Union have the right to:
+
+- File lawsuits in courts of their country of residence
+- Apply to courts of Kazakhstan
+
+**11.2.4 Administrative and Urgent Measures**
+
+Nothing in this section prevents a Party from:
+
+- Applying to courts for temporary or urgent protection measures
+- Applying to administrative authorities (regulators, antitrust authorities)
+- Protecting intellectual property rights in courts of any jurisdiction
+
+---
+
+### 12. CHANGES TO TERMS
+
+**12.1 Right to Change**
+
+The Provider reserves the right to change these Terms at any time for the following reasons:
+
+- Changes in applicable legislation
+- Development of Sithub functionality
+- Changes in business model
+- Improvement of User interests protection
+
+**12.2 Change Notification**
+
+**12.2.1 Non-material Changes**
+
+Non-material changes include:
+
+- Correction of typos and grammatical errors
+- Clarification of wording without changing meaning
+- Update of contact information
+
+Notification: publication on website with indication of new effective date.
+
+**12.2.2 Material Changes**
+
+Material changes include changes that:
+
+- Change your rights or obligations
+- Affect data processing or privacy
+- Change service cost
+- Change guarantees or liability limitations
+
+Notification:
+
+- Email notification **30 days** before changes take effect
+- Notification in Sithub interface
+- Publication on website with highlighted changes
+
+**12.3 Consent to Changes**
+
+**12.3.1 Continued Use**
+
+By continuing to use Sithub after changes take effect, you confirm consent to updated Terms.
+
+**12.3.2 Rejection of Changes**
+
+If you do not agree with changes:
+
+- You have the right to stop using Sithub
+- Cancel subscription before changes take effect
+- When canceling within 14 days after notification of material changes - proportional refund for unused period
+
+---
+
+### 13. MISCELLANEOUS PROVISIONS
+
+**13.1 Severability**
+
+If any provision of these Terms is found to be invalid or unenforceable:
+
+- Remaining provisions remain in full force
+- Invalid provision is replaced by valid provision closest in meaning
+- Invalidity of one provision does not affect validity of entire agreement
+
+**13.2 Waiver of Rights**
+
+Non-exercise or delay in exercising any right does not mean waiver of such right:
+
+- Silence is not consent to violation
+- Provider may exercise its rights at any time in the future
+- Waiver of one right does not mean waiver of other rights
+
+**13.3 Rights Transfer**
+
+**13.3.1 Restrictions for User**
+
+User cannot transfer their rights and obligations under these Terms without Provider's written consent, except:
+
+- Transfer within company reorganization (merger, acquisition)
+- With prior written notification to Provider 30 days in advance
+
+**13.3.2 Provider's Rights**
+
+Provider may transfer its rights and obligations to:
+
+- Affiliated companies
+- Successors in case of business sale
+- With notification to Users 30 days in advance
+
+**13.4 Entire Agreement**
+
+These Terms together with Privacy Policy constitute the entire agreement between Parties and replace all previous:
+
+- Oral agreements
+- Written agreements
+- Representations and statements
+
+**13.5 Independent Contractors**
+
+Parties are independent contractors:
+
+- These Terms do not create partnership, joint venture, or agency relationships
+- Neither Party has the right to represent the other Party without written consent
+
+**13.6 Notices**
+
+**13.6.1 Official Notices are Sent to:**
+
+**To Provider:**
+
+- Email: info@silence.codes
+- Postal address: Astana city, Almaty district, Ak-Bulak-3 residential area, Tasshoki lane, house 3, apartment 26
+
+**To User:**
+
+- To email specified during registration
+- Through notifications in Sithub interface
+
+**13.6.2 Notice is Considered Received:**
+
+- Email: 24 hours after sending
+- Mail: 5 business days after sending (within Kazakhstan), 14 days (international mail)
+- Interface: immediately upon display
+
+---
+
+### 14. CONTACT INFORMATION
+
+Questions? Questions about terms of service, about your subscription, about how the platform works?
+
+Contact us:
+
+- Email: info@silence.codes
+- Response time: up to 5 business days
+
+We created Sithub to ensure secure development with privacy compliance. These Terms are designed to protect the interests of both Parties and ensure transparency of our relationship.
+
+---
+
+## VALIDATION SUMMARY
+
+**Documents Updated:**
+1. Privacy Policy - Updated ✓
+2. Terms of Use - Updated ✓
+3. Terms of Service - Updated ✓
+
+**Key Changes Made:**
+- Removed all references to "Silence Environment Ecosystem," "Ollama + LLM," and "SLNC-Code"
+- Replaced multi-component system references with single "Sithub platform"
+- Updated architectural descriptions to reflect self-hosted repository + security scanning model
+- Simplified data collection to reflect only Sithub's subscription and vulnerability update mechanisms
+- Maintained all core privacy guarantees and legal protections
+- Updated pricing to reflect Sithub's monthly ($480/month) and annual ($336/month) subscription models
+- Retained all consumer rights, GDPR compliance, and regulatory frameworks
+- Preserved contact information and legal jurisdiction individual or legal entity (hereinafter referred to as "User," "you," "your") using the Sithub platform.
+
+**Platform:** The Sithub self-hosted development platform, including repository management and integrated security scanning components.
+
+**Personal Data:** Any information relating to an identified or identifiable natural person.
+
+---
+
+### 1. INTRODUCTION AND PRINCIPLES
+
+**1.1 Purpose of this Policy**
+
+This Privacy Policy (hereinafter referred to as the "Policy") describes the principles and practices of data processing when using the Sithub platform. The Policy is an integral part of the Terms of Service and should be read in conjunction with them.
+
+**1.2 Privacy by Design Principle**
+
+Sithub is built on the architectural principle of data collection minimization. Privacy is not an additional feature—it is a fundamental characteristic of the system architecture.
+
+**1.3 Applicable Legislation**
+
+This Policy has been developed taking into account:
+
+- The Law of the Republic of Kazakhstan "On Personal Data and Their Protection"
+- The EU General Data Protection Regulation (GDPR)—for users from the European Union
+- Other applicable data protection regulations in the User's jurisdiction
+
+**1.4 Data Controller and Processor**
+
+**For personal data processed in connection with subscriptions:**
+
+- **Data Controller:** Silence AI
+- We determine the purposes and means of processing subscription information
+
+**For data processed on the Platform:**
+
+- **Data Controller:** User (you control your code and development data)
+- **Data Processor:** Not applicable—we do not process your development data
+
+---
+
+### 2. ARCHITECTURAL PRIVACY GUARANTEES
+
+**2.1 Core Principle of Data Isolation**
+
+User source code is processed exclusively on the User's local infrastructure. The Sithub architecture is designed to prevent the transmission of source code to the Provider's servers.
+
+**2.2 Technical Implementation of Isolation**
+
+**Repository Management:**
+
+- Operates completely on your infrastructure
+- Contains no network data transmission functions for code
+- All repositories stored locally
+
+**Security Scanning:**
+
+- Operates completely on your infrastructure
+- Vulnerability detection runs locally
+- Scan results remain on your servers
+- No code fragments transmitted externally
+
+**Update Service:**
+
+- The only component that communicates with the Provider's servers
+- Transmits only the data specified in section 3.2
+- Downloads vulnerability databases to your infrastructure
+- The scanning module is isolated from network functions
+
+**2.3 What This Means in Practice**
+
+The Provider has no technical ability to access:
+
+- Source code stored on the Platform
+- Security scan results
+- Commit history and code changes
+- File names and project structure
+- Repository metadata
+
+**Important Clarification:** This guarantee is valid provided Sithub is operated correctly in accordance with the technical documentation and in the absence of User actions to manually transmit data to external services.
+
+---
+
+### 3. INFORMATION WE COLLECT
+
+**3.1 Subscription Information (Required)**
+
+To provide services, we collect the following information:
+
+**Corporate Information:**
+
+- Organization name (for corporate subscriptions)
+- Contact email for communication
+- Country of registration (for compliance with applicable laws)
+
+**License Information:**
+
+- License key hash (irreversible cryptographic transformation)
+- Subscription activation date
+- Subscription expiration date
+- Subscription status (active/inactive/suspended)
+
+**Payment Information:**
+
+- Payment details are processed by third-party payment processors
+- The Provider does not store complete bank card data
+- We store only information about the payment method type and the last four digits of the card (for payment identification)
+
+**Legal Basis (for users from the EU):**
+
+- Performance of contract (GDPR, Article 6(1)(b))
+
+**3.2 Technical Data from Sithub (Automatic)**
+
+When verifying the license and requesting updates, Sithub transmits:
+
+**Authentication Data:**
+
+- License key hash
+- Cryptographic session token (temporary)
+
+**Technical Metadata:**
+
+- Request timestamp (date and time in UTC format)
+- Installed Sithub version (e.g., "2.1.3")
+- Installation identifier hash (irreversible transformation of unique ID)
+- IP address (automatically recorded by the server, used to prevent abuse)
+
+**Legal Basis:**
+
+- Legitimate interests of the Provider in preventing fraud and ensuring security (GDPR, Article 6(1)(f))
+
+**Retention Period:** 90 days
+
+**3.3 Technical Telemetry (Optional)**
+
+If you explicitly consent, we may collect additional technical information to improve service quality:
+
+**Usage Information:**
+
+- Frequency of update requests
+- Security update download statistics
+- Time of last successful update
+
+**Error Reports:**
+
+- Stack traces without source code
+- Error messages
+- System environment information (OS, version, architecture)
+- System call logs (without user data)
+
+**Important:** Error reports undergo automatic filtering to remove any code fragments or confidential data before transmission.
+
+**Legal Basis:**
+
+- Consent (GDPR, Article 6(1)(a))
+- You can withdraw consent at any time in Sithub settings
+
+**3.4 Information We DO NOT Collect**
+
+We explicitly **do not collect, process, or store**:
+
+**Source Code:**
+
+- Code in repositories
+- File contents
+- Code fragments
+- Comments in code
+
+**Analysis Results:**
+
+- Security scan results
+- Discovered vulnerabilities in your code
+- Code quality reports
+
+**Development Metadata:**
+
+- File and directory names
+- Project structure
+- Commit history
+- Commit messages
+- Branch information
+
+**User Information:**
+
+- Developer names
+- Developer email addresses
+- Team structure
+- Access rights within the organization
+
+**Credentials:**
+
+- Passwords
+- API keys
+- Access tokens
+- SSH keys
+- Certificates
+
+---
+
+### 4. PURPOSES AND LEGAL BASES FOR PROCESSING
+
+**4.1 Subscription Management**
+
+**Purpose:** Providing access to Sithub and updates
+
+**Processed Data:**
+
+- Subscription information (section 3.1)
+- License status
+
+**Legal Basis:**
+
+- Performance of contract (GDPR, Article 6(1)(b))
+- For Kazakhstan: consent to personal data processing upon entering into a contract
+
+**Actions:**
+
+- Verification of license activity
+- Processing subscription renewals
+- Sending subscription status notifications
+- Providing access to security updates
+
+**4.2 Delivery of Security Updates**
+
+**Purpose:** Ensuring vulnerability databases are up-to-date
+
+**Processed Data:**
+
+- License key hash
+- Sithub version
+- Request timestamps
+
+**Legal Basis:**
+
+- Performance of contract (GDPR, Article 6(1)(b))
+
+**Actions:**
+
+- Authentication of update requests
+- Transmission of vulnerability databases
+- Transmission of security patches
+- Monitoring update service functionality
+
+**4.3 Service Quality Improvement**
+
+**Purpose:** Development and improvement of security databases
+
+**Processed Data:**
+
+- Technical telemetry (only if you have consented)
+- Anonymous error reports
+
+**Legal Basis:**
+
+- Consent (GDPR, Article 6(1)(a))
+
+**Actions:**
+
+- Research of new threats and vulnerabilities
+- Improving vulnerability detection accuracy
+- Development of new security signatures
+- Fixing bugs in Sithub components
+
+**Information Sources:** Results of threat analysis conducted by the Threat Hunters division of Silence AI. **NOT** your code.
+
+**4.4 Legal Compliance**
+
+**Purpose:** Fulfilling legal obligations
+
+**Processed Data:**
+
+- Subscription information
+- Payment records
+
+**Legal Basis:**
+
+- Legal obligation (GDPR, Article 6(1)(c))
+- For Kazakhstan: requirements of tax and accounting legislation
+
+**Actions:**
+
+- Storage of payment records (7 years—tax legislation requirement)
+- Responses to court orders
+- Providing information to regulatory authorities (only with lawful basis)
+- Fraud prevention
+
+**4.5 Abuse Prevention**
+
+**Purpose:** Protection against fraud and violations of Terms
+
+**Processed Data:**
+
+- Request IP addresses
+- Frequency of update requests
+- Usage patterns
+
+**Legal Basis:**
+
+- Legitimate interests (GDPR, Article 6(1)(f))
+- Our legitimate interests: fraud prevention, protection against license abuse
+
+**Actions:**
+
+- Detection of suspicious activity
+- Blocking compromised licenses
+- Prevention of unauthorized distribution
+
+---
+
+### 5. DATA STORAGE AND SECURITY
+
+**5.1 Data Stored by the Provider**
+
+**Only the following is stored on the Provider's servers:**
+
+| Data Type | Location | Encryption | Retention Period |
+|-----------|----------|------------|------------------|
+| Subscription information | Republic of Kazakhstan | AES-256 | Duration + 1 year |
+| Payment records | Payment processor | PCI DSS compliant | 7 years (legal requirement) |
+| License key hashes | Republic of Kazakhstan | Bcrypt | Duration + 1 year |
+| Request logs | Republic of Kazakhstan | TLS 1.3 in transit | 90 days |
+| Security databases | Republic of Kazakhstan (mirrors in EU) | Not required (public information) | Permanently (product) |
+
+**5.2 Data Stored on User Infrastructure**
+
+**Exclusively on your infrastructure:**
+
+- All source code
+- Security scan results
+- Commit history
+- Repository metadata
+- User information and access rights
+- Downloaded vulnerability databases
+
+**Responsibility:** The User independently ensures the storage, backup, and security of this data.
+
+**5.3 Technical Security Measures**
+
+The Provider applies the following measures to protect data stored on our servers:
+
+**Encryption:**
+
+- **At rest:** AES-256 for databases with confidential information
+- **In transit:** TLS 1.3 (minimum TLS 1.2 not accepted)
+- **Hashing:** Bcrypt for license keys (irreversible transformation)
+
+**Access Control:**
+
+- Multi-factor authentication for administrative access
+- Principle of least privilege for employees
+- Logging of all administrative actions
+- Regular access rights audit
+
+**Network Security:**
+
+- Perimeter firewalls
+- Intrusion detection systems (IDS/IPS)
+- DDoS protection
+- Regular vulnerability scanning
+
+**Monitoring and Response:**
+
+- 24/7 security monitoring
+- Automatic alerts for suspicious activity
+- Incident response plan
+- Regular security drills
+
+**5.4 Security Audit**
+
+- Annual independent security audit by a third-party firm
+- Regular penetration testing
+- Publication of summary reports (without disclosing vulnerabilities)
+
+**5.5 Incident Notification**
+
+In case of a security incident affecting your data:
+
+- **User Notification:** within 72 hours of discovery
+- **Regulator Notification (for users from the EU):** within 72 hours (GDPR requirement)
+- **Kazakhstan Regulator Notification:** in accordance with personal data legislation
+
+---
+
+### 6. DATA TRANSFER AND DISCLOSURE
+
+**6.1 Internal Use**
+
+Only Provider employees who need it to perform their duties have access to User data:
+
+- System administrators (for infrastructure maintenance)
+- Support service (for solving technical problems)
+- Accounting (for payment processing)
+
+All employees sign confidentiality agreements.
+
+**6.2 Third-Party Data Processors**
+
+We use the following categories of third-party processors:
+
+**Payment Processors:**
+
+- For processing subscription payments
+- PCI DSS compliant
+- Examples: Stripe, PayPal, Kaspi.kz (for clients from Kazakhstan)
+- Have their own privacy policies
+
+**Hosting Providers:**
+
+- For hosting update servers
+- Location: Republic of Kazakhstan (main servers), EU (mirrors for EU clients)
+- Operate in accordance with Data Processing Agreements (DPA)
+
+**Monitoring and Security Services:**
+
+- For ensuring infrastructure operability and security
+- Access limited to technical metadata (logs, metrics)
+- No access to subscription information
+
+**Important:** All third-party processors:
+
+- Sign Data Processing Agreements (DPA)
+- Comply with the principle of access minimization
+- Do not use data for their own purposes
+
+**6.3 Transfers to Law Enforcement**
+
+We may disclose information to law enforcement or regulatory authorities:
+
+**When Required:**
+
+- By court order
+- By subpoena
+- When there is a legal obligation under applicable law
+
+**Procedure:**
+
+- Verification of request legality by legal department
+- Provision of only minimally necessary information
+- User notification (unless prohibited by court order)
+- Documentation of all requests for transparency report
+
+**What CANNOT Be Provided:**
+
+- Source code (as we do not store it)
+- Scan results (as they are stored locally by the User)
+
+**6.4 Transfers During Business Reorganization**
+
+In case of merger, acquisition, or sale of business:
+
+- Subscription information may be transferred to the successor
+- Users will be notified 30 days in advance
+- The successor is obligated to comply with this Policy
+- Users will have the option to terminate the subscription with a proportional refund
+
+**6.5 What We NEVER Do**
+
+The Provider will **never**:
+
+- Sell User data to third parties
+- Rent data for marketing purposes
+- Monetize data beyond subscription payment
+- Transfer data to data brokers
+- Use data for targeted advertising
+
+---
+
+### 7. INTERNATIONAL DATA TRANSFERS
+
+**7.1 Server Location**
+
+**Main Servers:** Republic of Kazakhstan
+
+**7.2 Transfers from EU to Kazakhstan (for users from the EU)**
+
+**Legal Basis for Transfer:** The Provider uses **Standard Contractual Clauses (SCC)** approved by European Commission Decision 2021/914.
+
+**Additional Safeguards:**
+
+- Data encryption in transit (TLS 1.3)
+- Data encryption at rest (AES-256)
+- Limited data access
+- Regular security audit
+
+**SCC Access:**
+
+- Standard Contractual Clauses are available for review upon request
+- Send request to: info@silence.codes
+- SCC are automatically included in the Data Processing Agreement (DPA) for corporate clients from the EU
+
+**7.3 What Is Transferred Internationally**
+
+**When used from outside Kazakhstan, the following is transferred:**
+
+- Subscription information (for license management)
+- Requests to download security updates
+- Security databases (downloaded to you)
+
+**What Is NOT Transferred:**
+
+- Source code (remains on your local infrastructure)
+- Scan results (processed locally)
+- Developer information (managed locally)
+
+**7.4 Data Localization for Clients from Kazakhstan**
+
+For clients located in the Republic of Kazakhstan, all data is stored on servers in Kazakhstan in accordance with data localization legislation requirements (if applicable).
+
+---
+
+### 8. DATA SUBJECT RIGHTS
+
+**8.1 Applicability of Rights**
+
+The rights described in this section apply:
+
+- **For all Users:** basic rights in accordance with Kazakhstan legislation
+- **For Users from the EU:** extended rights in accordance with GDPR
+- **For Users from other jurisdictions:** rights in accordance with applicable legislation
+
+**8.2 Right of Access (GDPR, Article 15)**
+
+You have the right to obtain:
+
+- Confirmation of whether we process your personal data
+- A copy of your personal data
+- Information about processing purposes, data categories, recipients
+- Data retention period
+- Information about your rights
+
+**How to Exercise:**
+
+- Send a request to: info@silence.codes
+- We will respond within 30 days (GDPR) or 15 days (Kazakhstan legislation)
+- We will provide data in a structured, commonly used format (JSON or PDF)
+
+**8.3 Right to Rectification (GDPR, Article 16)**
+
+You have the right to correct inaccurate personal data:
+
+- Correction of contact information
+- Update of organization name
+- Correction of payment details
+
+**How to Exercise:**
+
+- Log into your personal account and update information
+- Or send a request to: info@silence.codes
+
+**8.4 Right to Erasure / "Right to be Forgotten" (GDPR, Article 17)**
+
+You have the right to request deletion of your personal data in the following cases:
+
+- Data is no longer needed for processing purposes
+- You withdraw consent (for processing based on consent)
+- Data was processed unlawfully
+- Deletion is required to comply with legal obligation
+
+**Limitations:**
+
+- We cannot delete data if its storage is required by law (e.g., payment records—7 years)
+- We cannot delete data necessary for contract performance (while subscription is active)
+
+**How to Exercise:**
+
+- Send a request to: info@silence.codes
+- We will delete data within 30 days (except data with legal retention requirements)
+
+**8.5 Right to Restriction of Processing (GDPR, Article 18)**
+
+You can request restriction of processing of your data:
+
+- While data accuracy is being verified (at your request)
+- If processing is unlawful but you do not want deletion
+- If data is needed by you for legal purposes
+
+**How to Exercise:**
+
+- Send a request to: info@silence.codes stating the reason
+
+**8.6 Right to Data Portability (GDPR, Article 20)**
+
+You have the right to receive your data in a structured, machine-readable format:
+
+- Data you have provided to us
+- Processing of which is based on consent or contract
+- Processing of which is carried out by automated means
+
+**Formats:** JSON, CSV, XML
+
+**How to Exercise:**
+
+- Send a request to: info@silence.codes
+- Specify preferred format
+
+**8.7 Right to Object (GDPR, Article 21)**
+
+You have the right to object to processing based on legitimate interests:
+
+- For example, against processing for fraud prevention
+
+We will cease processing unless we can demonstrate overriding legitimate grounds.
+
+**How to Exercise:**
+
+- Send a request to: info@silence.codes stating the reason for objection
+
+**8.8 Right to Withdraw Consent (GDPR, Article 7(3))**
+
+If processing is based on consent, you can withdraw consent at any time:
+
+- For example, for technical telemetry
+
+Withdrawal does not affect the lawfulness of processing prior to withdrawal.
+
+**How to Exercise:**
+
+- In Sithub settings: disable "Send telemetry" option
+- Or send a request to: info@silence.codes
+
+**8.9 Right to Lodge a Complaint with Supervisory Authority**
+
+**For users from the EU:** You have the right to lodge a complaint with the data protection supervisory authority of your country.
+
+**For users from Kazakhstan:** You can contact the authorized body for the protection of personal data subjects' rights of the Republic of Kazakhstan.
+
+**8.10 Response Times for Requests**
+
+| Request Type | Response Time (GDPR) | Response Time (Kazakhstan) |
+|--------------|----------------------|----------------------------|
+| Data access | 30 days | 15 days |
+| Rectification | 30 days | 15 days |
+| Erasure | 30 days | 15 days |
+| Other requests | 30 days | 15 days |
+
+Deadlines may be extended by 2 months (GDPR) for complex requests with mandatory notification.
+
+---
+
+### 9. COOKIES AND TRACKING TECHNOLOGIES
+
+**9.1 Cookie Usage**
+
+The Provider uses a minimum number of cookies:
+
+**Strictly Necessary Cookies (do not require consent):**
+
+- Session cookie for authentication in personal account
+- Cookie for saving language preferences
+- Security cookie (CSRF tokens)
+
+Validity period: until end of session or 30 days
+
+**Analytics Cookies (require consent):**
+
+- If enabled: basic website usage analytics (not Sithub platform)
+- We use our own solution (not Google Analytics)
+- Data is anonymized
+
+**9.2 Cookie Management**
+
+You can:
+
+- Reject optional cookies upon first website visit
+- Change settings at any time in browser settings
+- Delete existing cookies through browser settings
+
+**9.3 No Tracking**
+
+We **DO NOT use:**
+
+- Social media trackers
+- Advertising trackers
+- Third-party trackers for profiling
+- Cross-site tracking systems
+
+---
+
+### 10. DATA RETENTION
+
+**10.1 Retention Periods**
+
+| Data Type | Retention Period | Legal Basis |
+|-----------|------------------|-------------|
+| Subscription information | Duration + 1 year | Possible disputes, refunds |
+| Payment records | 7 years after transaction | Tax legislation of Kazakhstan, EU |
+| License key hashes | Duration + 1 year | Abuse prevention |
+| Update request logs | 90 days | Technical support, security |
+| Technical telemetry | 1 year | Service improvement |
+| Error reports | 2 years | Bug fixing |
+
+**10.2 Deletion After Expiration**
+
+Upon expiration of the retention period:
+
+1. Data is automatically marked for deletion
+2. Permanent deletion occurs within 30 days
+3. Backup copies are overwritten within 90 days
+4. Deletion logs are retained for audit
+
+**10.3 Early Deletion**
+
+You can request early deletion of data (except data with legal retention requirements):
+
+- Send a request to: info@silence.codes
+- Specify which data you want deleted
+- We will fulfill the request within 30 days
+
+---
+
+### 11. CHILDREN'S PRIVACY
+
+**11.1 Age Restrictions**
+
+Sithub is not intended for use by persons under 18 years of age:
+
+- This is a professional development tool
+- This is corporate software
+- We do not knowingly collect data from persons under 18
+
+**11.2 Exception: Use with Parental Consent**
+
+Persons aged 16-18 may use Sithub with written parental or legal guardian consent.
+
+**11.3 Discovery and Deletion of Minors' Data**
+
+If we discover that we have collected data from a person under 16:
+
+- We will immediately delete all information
+- We will deactivate the account
+- We will notify the contact person (if available)
+
+**For Parents:** If you discover that your child is using Sithub without your consent:
+
+- Contact us: info@silence.codes
+- We will close the account and delete data within 48 hours
+
+---
+
+### 12. YOUR DATA PROTECTION RESPONSIBILITIES
+
+**12.1 User Responsibilities**
+
+The Provider ensures confidentiality at the architecture level. You are responsible for:
+
+**Infrastructure Security:**
+
+- Proper firewall configuration
+- Access control to servers where Sithub is deployed
+- Regular operating system updates
+- Physical equipment security
+
+**Prevention of Manual Data Transmission:**
+
+- Do not manually upload code to external cloud services
+- Do not copy repositories to publicly accessible services (GitHub, GitLab, etc.)
+- Train developers in secure work principles
+
+**User Management:**
+
+- Control who has access to Sithub
+- Use strong passwords and multi-factor authentication
+- Promptly revoke access for terminated employees
+- Apply principle of least privilege
+
+**12.2 Limitation of Provider Liability**
+
+The Provider is **not liable** for data breaches caused by:
+
+- Actions of the User or their employees
+- Compromise of User infrastructure
+- Incorrect security configuration on User side
+- Malware on User equipment
+
+**12.3 Processing of Developer Personal Data**
+
+If you use Sithub to manage a development team:
+
+- **You** are the data controller for your employees
+- You are obligated to comply with applicable data protection legislation
+- You are obligated to inform employees about data processing
+- The Provider has no access to this data and bears no responsibility for its processing
+
+---
+
+### 13. TRANSPARENCY REPORT
+
+**13.1 Commitment to Transparency**
+
+The Provider is committed to transparency regarding:
+
+- Law enforcement requests
+- Security incidents
+- Changes in data processing practices
+
+**13.2 Security Incident Notification**
+
+In case of a data security breach:
+
+- **User Notification:** within 72 hours of discovery
+- **Notification Content:**
+  - Incident description
+  - Categories and quantity of affected data
+  - Possible consequences
+  - Measures taken to remediate
+  - Recommendations for Users
+- **Notification Method:** email + notification in Sithub interface
+
+**13.3 Disclosure of Law Enforcement Requests**
+
+The Provider will notify Users about law enforcement requests:
+
+- Except when notification is prohibited by court order
+- With indication of request nature (without disclosing investigation details)
+- With provision of request copy (if permitted)
+
+---
+
+### 14. DATA PROCESSING AGREEMENT (DPA) FOR CORPORATE CLIENTS FROM THE EU
+
+**14.1 DPA Applicability**
+
+For corporate clients from the European Union who use Sithub to process personal data of their employees, the Provider provides a Data Processing Agreement (DPA).
+
+**14.2 DPA Content**
+
+The DPA includes:
+
+- EU Standard Contractual Clauses (SCC)
+- Description of subject matter and duration of processing
+- Nature and purposes of processing
+- Types of personal data
+- Categories of data subjects
+- Obligations and rights of controller and processor
+
+**14.3 DPA Request**
+
+To request a DPA:
+
+- Send a request to: info@silence.codes
+- Specify your organization name and contact information
+- DPA will be provided within 5 business days
+
+**14.4 Sub-processors**
+
+The list of sub-processors (hosting providers, payment systems) is specified in the DPA. Users will be notified 30 days in advance of adding new sub-processors.
+
+---
+
+### 15. CHANGES TO THE PRIVACY POLICY
+
+**15.1 Right to Change**
+
+The Provider reserves the right to change this Policy for the following reasons:
+
+- Changes in applicable legislation
+- Development of Sithub functionality
+- Improvement of User rights protection
+- Changes in data processing practices
+
+**15.2 Change Notification**
+
+**Non-material Changes** (correction of typos, clarification of wording):
+
+- Published on the website with indication of new effective date
+
+**Material Changes** (affecting rights or changing processing practices):
+
+- Email notification 30 days before effective date
+- Notification in Sithub interface
+- Publication on website with highlighted changes
+
+**15.3 Consent to Changes**
+
+By continuing to use Sithub after changes take effect, you confirm agreement with the updated Policy.
+
+If you do not agree with the changes:
+
+- You have the right to cease using Sithub
+- Upon cancellation within 14 days after notification of material changes—proportional refund
+
+---
+
+### 16. CONTACT INFORMATION
+
+Questions about privacy? Questions about this policy? Questions about what data we store?
+
+Contact us:
+
+**Email:** info@silence.codes
+
+This Privacy Policy is designed to ensure transparency of our data processing practices and protection of your rights. Sithub is built on the principle of data collection minimization: we collect only information necessary to provide services and never access your source code.
+
+---
+
+## DOCUMENT 2: TERMS OF USE
+
+**Sithub Platform**
+
+### GENERAL PROVISIONS
+
+**1. Subject Matter and Scope**
+
+These **Terms of Use** (hereinafter referred to as the **Terms**) govern the procedure for accessing and using the **Sithub** self-hosted development platform (hereinafter referred to as the **Platform**). The Terms constitute a public offer document and are supplemented by the Privacy Policy and technical documentation on security architecture.
+
+**2. Parties**
+
+**Provider** - Silence AI, a legal entity registered in the Republic of Kazakhstan.
+
+**User** - an individual or legal entity using the Platform.
+
+**3. Acceptance of Terms**
+
+Use, installation, or activation of a subscription constitutes full and unconditional acceptance of the Terms. If you do not agree with the Terms, you do not have the right to use the Platform.
+
+---
+
+### ACCESS AND LICENSE
+
+**1. License Granted**
+
+The Provider grants the User a limited, non-exclusive, non-transferable license to use Sithub within the framework of a paid subscription (monthly or annual). The license is valid only on the User's local infrastructure and does not grant the Provider any rights to the User's source code.
+
+**2. Usage Restrictions**
+
+The User undertakes to use Sithub in accordance with its intended purpose, not to violate the rights of third parties, and not to take actions aimed at extracting, transferring, or publishing source code and scan results beyond the local infrastructure.
+
+**3. License Verification**
+
+Sithub periodically verifies the validity of the license by sending to the Provider's servers the **license key hash**, temporary session token, Sithub version, and installation metadata. Verifications do not occur more than once every 24 hours.
+
+---
+
+### CONFIDENTIALITY AND DATA PROCESSING
+
+**1. Processing Principles**
+
+Sithub is designed according to the **Privacy by Design** principle: source code and scan results are processed and stored exclusively on the User's infrastructure. The Provider does not collect or store source code, scan results, repository metadata, or developer credentials.
+
+**2. Data Collected by the Provider**
+
+The Provider stores and processes only data necessary for subscription management and update delivery: **subscription information**, **license key hash**, **request logs**, and Sithub technical metadata (including IP address, timestamps, Sithub version). Payment data is processed by third-party payment providers; the Provider stores only the payment method type and the last four digits of the card.
+
+**3. Technical Telemetry**
+
+Additional telemetry and error reports are collected only with the User's explicit consent; such data undergoes automatic filtering to remove code fragments and confidential information.
+
+**4. Legal Bases and Retention Periods**
+
+The legal bases for processing are specified in the Privacy Policy (contract performance, legitimate interests, consent). Retention periods: request logs - 90 days; subscription data and hashes - subscription period plus 1 year; payment records - 7 years in accordance with tax legislation.
+
+---
+
+### USER RESPONSIBILITIES AND SECURITY
+
+**1. Responsibilities for Local Infrastructure Protection**
+
+The User independently ensures the security, backup, and availability of their infrastructure. In particular, the User is obligated to:
+
+- Configure and maintain firewalls and access control
+- Update OS and security tools
+- Train employees in secure Sithub operation practices
+- Not manually transfer source code to external services
+
+**2. Update Configuration**
+
+The User is responsible for configuring Sithub to receive security updates and for timely application of critical patches.
+
+**3. Limitation of Provider Liability for User Actions**
+
+The Provider is not liable for leaks or compromises caused by incorrect configuration, actions of the User's employees or third parties, or manual data transfer by the User.
+
+---
+
+### SUBSCRIPTION, PAYMENT, AND REFUNDS
+
+**1. Subscription Model**
+
+Sithub is provided on a subscription basis with two options:
+
+- **Monthly Plan:** $480/month (USD) or 240,000₸ (KZT)
+- **Annual Plan:** $336/month billed annually at $4,032/year (USD) or 168,000₸/month billed at 2,016,000₸/year (KZT) - 30% savings
+
+The subscription includes full access to all features and regular security database updates.
+
+**2. Payment and Renewal**
+
+Payment is made in advance (monthly or annually). The subscription automatically renews unless the User cancels it before the end of the period; renewal notification is sent 30 days in advance.
+
+**3. Refund Policy**
+
+Refunds are not provided, except in the following cases: critical failure attributable to the Provider (service non-functional for more than 7 consecutive days), proven violation of confidentiality guarantees by the Provider, or legal requirements. For users from the EU, a 14-day right of withdrawal applies with the possibility of a proportional refund of service costs.
+
+**4. Terms During Business Reorganization**
+
+In the event of a merger or sale of the business, subscription information may be transferred to the successor; Users will be notified 30 days in advance and will have the opportunity to terminate the subscription with a proportional refund.
+
+---
+
+### LIABILITY, AUDIT, AND CONTACTS
+
+**1. Warranties and Limitations of Liability**
+
+The Provider guarantees the architectural impossibility of source code transmission during normal Sithub operation and undertakes not to use the User's code for model training. The warranty is valid provided the User complies with the technical documentation. The Provider is not liable for indirect damages, loss of profits, or losses caused by improper operation by the User.
+
+**2. Audit and Transparency**
+
+The Provider conducts an annual independent security audit and regular penetration testing; summary reports are published without disclosing confidential information. The User has the right to conduct their own network traffic audit and request technical documentation on security architecture.
+
+**3. Security Incidents**
+
+In the event of an incident affecting data, the Provider notifies Users and regulators within the timeframes stipulated by applicable legislation (including 72 hours for GDPR notifications) and documents all requests and actions.
+
+**4. Access Termination**
+
+The Provider has the right to suspend or terminate access in case of violation of the Terms, abuse, or non-payment. Upon subscription termination, access to updates ceases, and local platform components continue to operate with the last downloaded database.
+
+---
+
+### CONTACTS
+
+Have questions? Questions about terms of use, service, privacy policy, architecture?
+
+Contact us at: **info@silence.codes**
+
+The Terms are designed to protect the interests of both Parties and ensure transparency in our relationship.
+
+---
+
+## DOCUMENT 3: TERMS OF SERVICE
+
+Sithub Platform
+Effective Date: January 13, 2026
+
+DEFINITIONS AND PARTIES
+
+1.1 Definition of Parties
+These Terms of Service (hereinafter referred to as the "Terms") are entered into between:
+
+Provider: Silence AI (hereinafter referred to as "Provider," "we," "us," "our"), a legal entity registered in accordance with the laws of the Republic of Kazakhstan, providing the software and services described in these Terms.
+
+User: An individual or legal entity (hereinafter referred to as "User," "you," "your," "Client") that subscribes to services, downloads, installs, or uses the Platform.
+
+1.2 Definition of Platform
+"Sithub" (hereinafter referred to as "Platform") is a self-hosted development platform with integrated security scanning, designed for deployment in the User's isolated infrastructure. The Platform includes:
+
+· Repository Management System - self-hosted Git version control
+· Security Scanning Engine - AI-powered code analysis and vulnerability detection
+· Vulnerability Database Service - regularly updated threat intelligence
+
+(hereinafter collectively referred to as "Components")
+
+1.3 Key Terms
+· "Source Code" - program code created, stored, or processed by the User using the Platform
+· "Local Infrastructure" - servers, workstations, and network equipment owned or controlled by the User on which the Platform is deployed
+· "Corporate Perimeter" - boundaries of the User's network infrastructure defined by firewalls and other network security means
+· "Security Updates" - vulnerability databases, security patches, and threat metadata transmitted by the Provider to the User
+
+1. CONSENT AND LEGAL FORCE
+
+1.1 Acceptance of Terms
+By subscribing to services, downloading, installing, or using Sithub or any of its Components, you confirm that you:
+· Have read and understood these Terms
+· Agree to comply with these Terms in full
+· Have the legal authority to enter into this agreement
+
+If you do not agree with these Terms, you do not have the right to use the Platform.
+
+1.2 Age Restrictions
+To use Sithub:
+· You must be at least 18 years old for independent use
+· If you are between 16 and 18 years old, you must obtain written consent from a parent or legal guardian
+· Use of the Platform is prohibited for persons under 16 years of age
+
+1.3 Corporate Use
+When using on behalf of an organization, you confirm that you have the authority to enter into this agreement on behalf of such organization.
+
+1.4 Related Documents
+These Terms are supplemented by the following documents, which are an integral part of them:
+· Privacy Policy
+· Technical Documentation on Security Architecture
+
+2. PLATFORM DESCRIPTION AND OPERATING PRINCIPLES
+
+2.1 Architectural Principle: Local Processing
+Sithub is designed based on the principle of "Privacy by Design". All Components operate exclusively on the User's local infrastructure without transferring source code to external servers.
+
+2.2 Platform Components
+
+2.2.1 Repository Management System
+Self-hosted Git version control:
+· Operates entirely on the User's equipment
+· Does not require internet connection for core functionality
+· Does not transmit repository data to Provider's servers
+· Is a fully autonomous component for code management
+
+2.2.2 Security Scanning Engine
+AI-powered code analysis operating locally:
+· Performs security scanning on local infrastructure
+· Runs entirely within your network
+· Integrates with locally stored vulnerability databases
+· Does not transmit code or scan results externally
+· Provides real-time vulnerability detection
+
+2.2.3 Vulnerability Database Service
+Security intelligence updates:
+· Downloads threat data from Provider's servers
+· Stores databases locally on your infrastructure
+· The only component that communicates with Provider's servers
+· Receives regular security updates (see section 2.3)
+
+2.3 Security Update Service
+
+2.3.1 Purpose of Service
+Sithub uses vulnerability databases to scan User's code for known security threats. To ensure these databases are up-to-date, the Platform downloads updates from Provider's servers.
+
+2.3.2 What is Transmitted FROM Provider's Servers TO User
+Incoming data flow:
+· Vulnerability databases (CVE, malicious packages, etc.)
+· Security patches and remediation instructions
+· Package security metadata (npm, PyPI, Maven, etc.)
+· Malicious code signatures
+· Scanning engine updates
+
+2.3.3 What is Transmitted FROM User TO Provider's Servers
+Outgoing data flow:
+· License verification tokens - cryptographic tokens to confirm subscription validity
+· License key hash - for authenticating update requests
+· Update request metadata:
+  · Request timestamp
+  · Installed Sithub version
+  · Installation identifier hash (irreversible)
+
+CRITICALLY IMPORTANT:
+· User's Source Code is NEVER transmitted to Provider's servers
+· Security scan results are NEVER transmitted
+· File names, project structure, repository metadata are NEVER transmitted
+· Information about developers and users is NEVER transmitted
+
+2.3.4 Technical Implementation of Code Isolation Guarantee
+Sithub architecture ensures structural impossibility of source code transmission:
+· Scanning module operates in an isolated process without network access
+· Update module has access only to the database directory
+· Network module is implemented on "write-only" principle (download only)
+· Absence of API methods for transmitting source code externally
+
+3. DATA SECURITY GUARANTEES AND LIABILITY LIMITATIONS
+
+3.1 Provider's Guarantees
+
+3.1.1 Architectural Guarantee
+The Provider guarantees that Sithub is designed so that:
+· User's source code is processed exclusively on local infrastructure
+· Platform components do not contain functions for data transmission to external servers beyond those specified in section 2.3
+
+3.1.2 Guarantee Limitations
+The Provider does NOT guarantee protection from:
+· User's own actions to transfer code externally
+· Compromise of User's infrastructure by third parties
+· Network security configuration errors on User's side
+· Actions of User's employees or contractors
+
+3.1.3 Guarantee Formulation
+The Provider undertakes to:
+· Not collect or transmit User's source code during normal operation
+· Not use User's code for model training or other purposes
+· Immediately notify User of any security incidents
+
+IMPORTANT: This guarantee is valid provided Sithub is operated in accordance with technical documentation.
+
+3.2 User's Obligations
+The User undertakes to:
+· Maintain proper firewall configuration and access control
+· Ensure physical and network security of infrastructure
+· Prevent manual transfer of source code to external services
+· Configure and apply security updates timely
+
+3.3 Distribution of Responsibility
+
+Area                          | Provider's Responsibility                  | User's Responsibility
+------------------------------|--------------------------------------------|--------------------------------
+Platform Architecture         | Local processing guarantee                 | -
+Component source code         | Absence of code transmission functions     | -
+Security updates              | Timely delivery                            | Configuration of reception
+Local infrastructure          | -                                          | Security and availability
+User actions                  | -                                          | Training and control
+Network security              | -                                          | Perimeter configuration
+
+3.4 Right to Audit
+3.4.1 Audit by User
+The User has the right to:
+· Conduct analysis of Platform network traffic
+· Request technical documentation on security architecture
+· Conduct analysis of open-source components
+
+3.4.2 Audit by Provider
+The Provider undertakes to:
+· Conduct annual independent security audit
+· Publish summary audit reports
+· Notify Users of critical audit results
+
+4. SUBSCRIPTION AND PAYMENT
+
+4.1 Subscription Model
+
+4.1.1 Subscription Options
+Sithub is provided on a subscription basis:
+· Monthly Plan: $480/month (USD) or 240,000₸ (KZT)
+· Annual Plan: $4,032/year (USD) or 2,016,000₸/year (KZT) - 30% savings
+
+The subscription includes full access to all features, regular security database updates, and technical support.
+
+4.1.2 Cost and Payment
+· Current prices are indicated on https://sithub.silence.codes
+· Payment is made in advance
+· Non-cash payments accepted; international methods available
+
+4.1.3 Taxes
+Prices exclude applicable taxes; User is responsible for them.
+
+4.2 Renewal and Cancellation
+4.2.1 Automatic Renewal
+Subscription auto-renews unless cancelled; 30-day renewal notice provided.
+
+4.2.2 Subscription Cancellation
+User can cancel anytime; access continues until end of paid period; updates cease thereafter.
+
+4.3 Refund Policy
+4.3.1 Basic Rule
+No refunds except in specified cases.
+
+4.3.2 Exceptions
+Refunds provided for:
+· Critical failure due to Provider's fault (>7 days non-functional)
+· Proven privacy guarantee breach
+· Regulatory requirements
+
+4.3.3 EU Consumer Rights
+14-day withdrawal right with proportional refund.
+
+4.3.4 Refund Procedure
+Request via info@silence.codes; reviewed within 14 business days.
+
+4.4 License Verification
+Provider stores only license key hash, dates, status, and organization name. Verification occurs periodically (max once per 24 hours).
+
+5. SERVICE LEVEL AGREEMENT (SLA)
+
+5.1 Update Server Availability
+Target: 99.5% uptime (not guaranteed except for prolonged failures).
+
+5.2 Local Component Operation
+All core functions continue offline using last downloaded database.
+
+5.3 Security Updates
+Weekly updates; critical threats within 48 hours.
+
+5.4 Technical Support
+Email support with defined response times by priority (Critical: 4 hours, etc.).
+
+6. INTELLECTUAL PROPERTY
+
+6.1 User's Rights to Their Code
+User retains full rights; Provider makes no claims and never uses code for training.
+
+6.2 Provider's Rights to Platform
+Provider owns all Platform components and databases.
+
+6.3 Usage Restrictions
+No reverse engineering, distribution, or competing product creation (except permitted audit).
+
+7. LIMITATION OF LIABILITY
+
+7.1 "AS IS" Provision
+Provided without warranties (except privacy and SLA).
+
+7.2 Liability Boundaries
+Limited to 12 months of subscription fees; no indirect damages.
+
+7.3 Exceptions
+Unlimited for intentional acts, privacy breaches, or mandatory law.
+
+8. TERMINATION OF TERMS
+
+8.1 Termination by User
+Cancel anytime; local components remain functional with last database.
+
+8.2 Termination by Provider
+For breach, with notice and cure period.
+
+8.3 Consequences
+Updates and support cease; local operation continues.
+
+9. ACCEPTABLE USE
+
+9.1 Permitted Use
+Lawful software development and security scanning.
+
+9.2 Prohibited Use
+No reverse engineering, distribution, illegal activities, or sanctions violation.
+
+10. COMPLIANCE WITH LEGISLATION
+
+10.1 Export Control
+User responsible for compliance.
+
+10.2 Data Protection
+GDPR compliance for EU users; DPA available on request.
+
+11. APPLICABLE LAW AND DISPUTE RESOLUTION
+
+11.1 Applicable Law
+Republic of Kazakhstan law (subject to mandatory local provisions).
+
+11.2 Dispute Resolution
+Pre-litigation settlement; then arbitration in Astana (EU consumers may use local courts).
+
+12. CHANGES TO TERMS
+
+12.1 Right to Change
+For legal, functional, or business reasons.
+
+12.2 Notification
+30 days for material changes.
+
+12.3 Consent
+Continued use implies acceptance; rejection allows cancellation with possible refund.
+
+13. MISCELLANEOUS PROVISIONS
+
+13.1 Severability
+13.2 Waiver of Rights
+13.3 Rights Transfer
+13.4 Entire Agreement
+13.5 Independent Contractors
+13.6 Notices
+
+14. CONTACT INFORMATION
+info@silence.codes

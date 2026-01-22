@@ -894,8 +894,8 @@
   "home": {
     "hero": {
       "badge": "AI bezpečnosť a vývoj",
-      "title": "Stavajte bezpečne. Nasadzujte s istotou.",
-      "subtitle": "Dva systémové predplatné (AI-SOC, SLNC-env) plus zákazková AI a dodanie softvéru pre enterprise tímy.",
+      "title": "Cybersecurity is no longer",
+      "subtitle": "Build securely. Deploy confidently.",
       "ctaPrimary": "Požiadať o demo",
       "ctaSecondary": "Preskúmať systémy",
       "highlights": {
@@ -909,36 +909,42 @@
         "egress": "Všetko on-prem — kód, prompty, buildy",
         "deployment": "k prvému bezpečnému nasadeniu",
         "locales": "lokalizácií podporených out-of-box"
-      }
+      },
+      "titleHighlight": "complicated or expensive anymore"
     },
     "systems": {
-      "title": "Systémy",
+      "title": "Systems",
       "subtitle": "Vyberte si správny produkt: AI-SOC na detekciu a SLNC-env na uzavretý vývoj.",
-      "cta": "Zobraziť detaily",
+      "cta": "View details",
       "aiSoc": {
         "title": "AI-SOC",
-        "desc": "Spravovaná detekcia a reakcia s AI copilotov pre SOC tímy.",
-        "badge": "Predplatné"
+        "desc": "Managed detection & response system powered and operated by AI. Used to prevent web and email attacks",
+        "badge": "Subscription"
       },
       "slncEnv": {
         "title": "SLNC-env",
         "desc": "Uzavretý vývojový cloud, ktorý drží kód, prompty a buildy on-prem.",
         "badge": "Predplatné"
+      },
+      "sithub": {
+        "title": "Sithub",
+        "desc": "Self-hosted GitHub alternative with built-in security scanning. All repositories and code analysis stay within your network.",
+        "badge": "Subscription"
       }
     },
     "services": {
-      "title": "Zákazkové vývojové služby",
-      "subtitle": "AI agenti, integrácie a full-cycle dodanie softvéru s bezpečnosťou od prvého dňa.",
-      "cta": "Zobraziť služby",
+      "title": "Custom development services",
+      "subtitle": "AI agents, integrations, and full-cycle software delivery with security baked in from day one.",
+      "cta": "View services",
       "cards": {
-        "agents": "Produkční AI agenti s guardrails, RAG a bezpečnými konektormi.",
-        "integrations": "Vendor-agnostic integrácie do vášho stacku, IAM a správy dát.",
-        "delivery": "Full-cycle delivery so spoľahlivosťou, observabilitou a bezpečnostnými revíziami."
+        "agents": "Production-grade AI agents with guardrails, RAG, and secure connectors.",
+        "integrations": "Vendor-neutral integrations with your stack, IAM, and data governance.",
+        "delivery": "Full-cycle delivery with reliability SLOs, observability, and security reviews."
       },
       "cardsTitle": {
-        "agents": "Agenti",
-        "integrations": "Integrácie",
-        "delivery": "Dodanie"
+        "agents": "Agents",
+        "integrations": "Integrations",
+        "delivery": "Delivery"
       }
     },
     "contact": {
@@ -946,6 +952,11 @@
       "subtitle": "Povedzte nám vaše ciele v bezpečnosti a dodaní — vyberieme správny systém aj služby.",
       "cta": "Požiadať o demo",
       "ctaSecondary": "Porozprávať sa s tímom služieb"
+    },
+    "resources": {
+      "title": "Featured articles",
+      "subtitle": "Silence AI is one of few private companies that have government level intelligence.",
+      "viewAll": "View all articles"
     }
   }
 }

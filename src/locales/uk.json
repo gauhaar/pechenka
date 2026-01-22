@@ -320,7 +320,7 @@
         }
       }
     },
-    "subtitle": "Mobile-first plans built to scale with your product.",
+    "subtitle": "Плани, орієнтовані на мобільні пристрої, створені для масштабування разом з вашим продуктом...",
     "percentMaintenance": "{percent}% yearly maintenance",
     "planEstimate": "${value}",
     "perYear": "per year (est.)",
@@ -894,8 +894,8 @@
   "home": {
     "hero": {
       "badge": "Безпека та розробка AI",
-      "title": "Створюйте безпечно. Впроваджуйте впевнено.",
-      "subtitle": "Дві підписні системи (AI-SOC, SLNC-env) плюс кастомні AI та ПЗ-проєкти для корпоративних команд.",
+      "title": "Cybersecurity is no longer",
+      "subtitle": "Build securely. Deploy confidently.",
       "ctaPrimary": "Запросити демо",
       "ctaSecondary": "Дослідити системи",
       "highlights": {
@@ -909,36 +909,42 @@
         "egress": "Усе on-prem — код, промпти, збірки",
         "deployment": "до першого безпечного деплою",
         "locales": "мов із коробки"
-      }
+      },
+      "titleHighlight": "complicated or expensive anymore"
     },
     "systems": {
-      "title": "Системи",
+      "title": "Systems",
       "subtitle": "Оберіть відповідну підписку: AI-SOC для виявлення, SLNC-env для закритої розробки.",
-      "cta": "Переглянути деталі",
+      "cta": "View details",
       "aiSoc": {
         "title": "AI-SOC",
-        "desc": "Кероване виявлення й реагування з AI-асистентами для команд SOC.",
-        "badge": "Підписка"
+        "desc": "Managed detection & response system powered and operated by AI. Used to prevent web and email attacks",
+        "badge": "Subscription"
       },
       "slncEnv": {
         "title": "SLNC-env",
         "desc": "Закрита хмара розробки, що залишає код, промпти та збірки on-prem.",
         "badge": "Підписка"
+      },
+      "sithub": {
+        "title": "Sithub",
+        "desc": "Self-hosted GitHub alternative with built-in security scanning. All repositories and code analysis stay within your network.",
+        "badge": "Subscription"
       }
     },
     "services": {
-      "title": "Кастомні послуги з розробки",
-      "subtitle": "AI-агенти, інтеграції та повний цикл доставки ПЗ із вбудованою безпекою з першого дня.",
-      "cta": "Переглянути послуги",
+      "title": "Custom development services",
+      "subtitle": "AI agents, integrations, and full-cycle software delivery with security baked in from day one.",
+      "cta": "View services",
       "cards": {
-        "agents": "AI-агенти продакшн-рівня з guardrail, RAG і безпечними конекторами.",
-        "integrations": "Постачальник-агностичні інтеграції з вашим стеком, IAM і керуванням даними.",
-        "delivery": "Повний цикл доставки з SLO надійності, observability та безпековими рев'ю."
+        "agents": "Production-grade AI agents with guardrails, RAG, and secure connectors.",
+        "integrations": "Vendor-neutral integrations with your stack, IAM, and data governance.",
+        "delivery": "Full-cycle delivery with reliability SLOs, observability, and security reviews."
       },
       "cardsTitle": {
-        "agents": "Агенти",
-        "integrations": "Інтеграції",
-        "delivery": "Доставка"
+        "agents": "Agents",
+        "integrations": "Integrations",
+        "delivery": "Delivery"
       }
     },
     "contact": {
@@ -946,6 +952,11 @@
       "subtitle": "Поділіться цілями з безпеки та доставки — ми підберемо систему й послуги.",
       "cta": "Запросити демо",
       "ctaSecondary": "Поспілкуватися з командою сервісів"
+    },
+    "resources": {
+      "title": "Featured articles",
+      "subtitle": "Silence AI is one of few private companies that have government level intelligence.",
+      "viewAll": "View all articles"
     }
   }
 }

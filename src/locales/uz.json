@@ -320,7 +320,7 @@
         }
       }
     },
-    "subtitle": "Mobile-first plans built to scale with your product.",
+    "subtitle": "Mobil-birinchi rejalar mahsulotingiz bilan birga o'sish uchun qurilgan...",
     "percentMaintenance": "{percent}% yearly maintenance",
     "planEstimate": "${value}",
     "perYear": "per year (est.)",
@@ -894,8 +894,8 @@
   "home": {
     "hero": {
       "badge": "AI xavfsizlik va rivojlantirish",
-      "title": "Xavfsiz quring. Ishonch bilan joylashtiring.",
-      "subtitle": "Ikki obuna tizimi (AI-SOC, SLNC-env) va korporativ jamoalar uchun maxsus AI hamda dasturiy ta’minot yetkazib berish.",
+      "title": "Cybersecurity is no longer",
+      "subtitle": "Build securely. Deploy confidently.",
       "ctaPrimary": "Demo so‘rash",
       "ctaSecondary": "Tizimlarni ko‘rish",
       "highlights": {
@@ -909,36 +909,42 @@
         "egress": "Hammasi on-prem — kod, prompt, buildlar",
         "deployment": "birinchi xavfsiz joylashtirishgacha",
         "locales": "tayyor tillar soni"
-      }
+      },
+      "titleHighlight": "complicated or expensive anymore"
     },
     "systems": {
-      "title": "Tizimlar",
+      "title": "Systems",
       "subtitle": "Mos obunani tanlang: AI-SOC aniqlash uchun, SLNC-env yopiq rivojlantirish uchun.",
-      "cta": "Batafsil ko‘rish",
+      "cta": "View details",
       "aiSoc": {
         "title": "AI-SOC",
-        "desc": "SOC jamoalari uchun AI yordamchilari bilan boshqariladigan aniqlash va javob berish.",
-        "badge": "Obuna"
+        "desc": "Managed detection & response system powered and operated by AI. Used to prevent web and email attacks",
+        "badge": "Subscription"
       },
       "slncEnv": {
         "title": "SLNC-env",
         "desc": "Kod, prompt va buildlarni on-prem saqlaydigan yopiq rivojlantirish buluti.",
         "badge": "Obuna"
+      },
+      "sithub": {
+        "title": "Sithub",
+        "desc": "Self-hosted GitHub alternative with built-in security scanning. All repositories and code analysis stay within your network.",
+        "badge": "Subscription"
       }
     },
     "services": {
-      "title": "Maxsus rivojlantirish xizmatlari",
-      "subtitle": "AI agentlari, integratsiyalar va xavfsizlik birinchi kundan qo‘shilgan to‘liq tsikl dasturiy ta’minot yetkazib berish.",
-      "cta": "Xizmatlarni ko‘rish",
+      "title": "Custom development services",
+      "subtitle": "AI agents, integrations, and full-cycle software delivery with security baked in from day one.",
+      "cta": "View services",
       "cards": {
-        "agents": "Himoya choralari, RAG va xavfsiz konnektorli, ishlab chiqarishga tayyor AI agentlari.",
-        "integrations": "Stackingiz, IAM va ma’lumotlar boshqaruvi bilan vendor-ga bog‘liq bo‘lmagan integratsiyalar.",
-        "delivery": "Ishonchlilik SLOlari, kuzatuvchanlik va xavfsizlik ko‘rib chiqishlari bilan to‘liq tsikl yetkazib berish."
+        "agents": "Production-grade AI agents with guardrails, RAG, and secure connectors.",
+        "integrations": "Vendor-neutral integrations with your stack, IAM, and data governance.",
+        "delivery": "Full-cycle delivery with reliability SLOs, observability, and security reviews."
       },
       "cardsTitle": {
-        "agents": "Agentlar",
-        "integrations": "Integratsiyalar",
-        "delivery": "Yetkazib berish"
+        "agents": "Agents",
+        "integrations": "Integrations",
+        "delivery": "Delivery"
       }
     },
     "contact": {
@@ -946,6 +952,11 @@
       "subtitle": "Xavfsizlik va yetkazib berish maqsadlaringizni ayting — biz mos tizim va xizmatlarni tanlab beramiz.",
       "cta": "Demo so‘rash",
       "ctaSecondary": "Xizmatlar jamoasi bilan gaplashing"
+    },
+    "resources": {
+      "title": "Featured articles",
+      "subtitle": "Silence AI is one of few private companies that have government level intelligence.",
+      "viewAll": "View all articles"
     }
   }
 }

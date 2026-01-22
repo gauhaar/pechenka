@@ -290,7 +290,11 @@
           "intelligence": "Informe de inteligencia"
         }
       }
-    }
+    },
+    "subtitle": "Planes mobile-first listos para escalar con tu producto.",
+    "percentMaintenance": "{percent}% de mantenimiento anual",
+    "planEstimate": "${value}",
+    "perYear": "al año (estimado)"
   },
   "solution": {
     "sectionTitle": "Nuestra solución",
@@ -855,8 +859,8 @@
   "home": {
     "hero": {
       "badge": "Seguridad y desarrollo de IA",
-      "title": "Desarrolla seguro. Implementa con confianza.",
-      "subtitle": "Dos sistemas por suscripción (AI-SOC, SLNC-env) más entrega a medida de IA y software para equipos empresariales.",
+      "title": "Cybersecurity is no longer",
+      "subtitle": "Build securely. Deploy confidently.",
       "ctaPrimary": "Solicitar demo",
       "ctaSecondary": "Ver sistemas",
       "highlights": {
@@ -870,36 +874,42 @@
         "egress": "Todo on-prem: código, prompts, builds",
         "deployment": "hasta el primer despliegue seguro",
         "locales": "idiomas listos de fábrica"
-      }
+      },
+      "titleHighlight": "complicated or expensive anymore"
     },
     "systems": {
-      "title": "Sistemas",
+      "title": "Systems",
       "subtitle": "Elige la suscripción adecuada: AI-SOC para detección y SLNC-env para desarrollo aislado.",
-      "cta": "Ver detalles",
+      "cta": "View details",
       "aiSoc": {
         "title": "AI-SOC",
-        "desc": "Detección y respuesta gestionadas con copilotos de IA para equipos SOC.",
-        "badge": "Suscripción"
+        "desc": "Managed detection & response system powered and operated by AI. Used to prevent web and email attacks",
+        "badge": "Subscription"
       },
       "slncEnv": {
         "title": "SLNC-env",
         "desc": "Nube de desarrollo aislada que mantiene código, prompts y builds on-prem.",
         "badge": "Suscripción"
+      },
+      "sithub": {
+        "title": "Sithub",
+        "desc": "Self-hosted GitHub alternative with built-in security scanning. All repositories and code analysis stay within your network.",
+        "badge": "Subscription"
       }
     },
     "services": {
-      "title": "Servicios de desarrollo a medida",
-      "subtitle": "Agentes de IA, integraciones y entrega de software de ciclo completo con seguridad desde el día uno.",
-      "cta": "Ver servicios",
+      "title": "Custom development services",
+      "subtitle": "AI agents, integrations, and full-cycle software delivery with security baked in from day one.",
+      "cta": "View services",
       "cards": {
-        "agents": "Agentes de IA listos para producción con guardrails, RAG y conectores seguros.",
-        "integrations": "Integraciones neutrales con tu stack, IAM y gobierno de datos.",
-        "delivery": "Entrega de ciclo completo con SLOs de confiabilidad, observabilidad y revisiones de seguridad."
+        "agents": "Production-grade AI agents with guardrails, RAG, and secure connectors.",
+        "integrations": "Vendor-neutral integrations with your stack, IAM, and data governance.",
+        "delivery": "Full-cycle delivery with reliability SLOs, observability, and security reviews."
       },
       "cardsTitle": {
-        "agents": "Agentes",
-        "integrations": "Integraciones",
-        "delivery": "Entrega"
+        "agents": "Agents",
+        "integrations": "Integrations",
+        "delivery": "Delivery"
       }
     },
     "contact": {
@@ -907,6 +917,11 @@
       "subtitle": "Cuéntanos tus metas de seguridad y entrega — alinearemos el sistema y servicios adecuados.",
       "cta": "Solicitar demo",
       "ctaSecondary": "Hablar con el equipo de servicios"
+    },
+    "resources": {
+      "title": "Featured articles",
+      "subtitle": "Silence AI is one of few private companies that have government level intelligence.",
+      "viewAll": "View all articles"
     }
   }
 }

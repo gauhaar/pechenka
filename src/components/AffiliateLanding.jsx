@@ -2,7 +2,6 @@
 
 import React, { useMemo, useState } from "react";
 import Header from "@/components/Header";
-import AffiliateFooter from "@/components/affiliate/AffiliateFooter";
 import RequestDemoModal from "@/components/RequestDemoModal";
 import BackToTopButton from "@/components/BackToTopButton";
 import GlowButton from "@/components/GlowButton";
@@ -771,7 +770,6 @@ const AffiliateLanding = () => {
           </section>
         </div>
       </main>
-      <AffiliateFooter />
       <RequestDemoModal isOpen={isModalOpen} onClose={closeModal} />
       <BackToTopButton />
     </>

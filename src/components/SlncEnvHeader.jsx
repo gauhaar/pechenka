@@ -7,17 +7,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import clsx from "clsx";
 import GlowButton from "./GlowButton";
 import LanguageSelector from "./LanguageSelector";
-import CountrySelectModal from "./CountrySelectModal";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const SCROLL_THRESHOLD = 10;
 const DESKTOP_WIDTH = 1130;
 
-const SlncEnvHeader = () => {
+const SlncEnvHeader = ({ onOpenAdminModal }) => {
   const [isCondensed, setIsCondensed] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [countrySelectOpen, setCountrySelectOpen] = useState(false);
   const [isSystemsOpen, setIsSystemsOpen] = useState(false);
   const { t } = useLanguage();
 
@@ -50,6 +48,14 @@ const SlncEnvHeader = () => {
 
   const widthTarget = "100%";
   const condensedShift = isCondensed ? (isDesktop ? 24 : 16) : 0;
+
+  const handleAdminClick = () => {
+    if (onOpenAdminModal) {
+      onOpenAdminModal();
+      return;
+    }
+    window.location.href = "https://sithub.silence.codes/login";
+  };
 
   const systemsItems = [
     { key: "ai-soc", label: t("header.nav.systemsAiSoc", "AI-SOC"), href: "/ai-soc" },
@@ -152,7 +158,7 @@ const SlncEnvHeader = () => {
                   <LanguageSelector align="left" />
                   <GlowButton
                     onClick={() => {
-                      setCountrySelectOpen(true);
+                      handleAdminClick();
                       setIsMobileMenuOpen(false);
                     }}
                     className="w-full"
@@ -300,7 +306,7 @@ const SlncEnvHeader = () => {
                   <LanguageSelector align={isDesktop ? "right" : "left"} />
                 </div>
                 {isDesktop && (
-                  <GlowButton onClick={() => setCountrySelectOpen(true)}>
+                  <GlowButton onClick={handleAdminClick}>
                     {t("header.cta.get", "Get")}
                   </GlowButton>
                 )}
@@ -330,7 +336,6 @@ const SlncEnvHeader = () => {
           </motion.div>
         </motion.div>
       </motion.header>
-      <CountrySelectModal isOpen={countrySelectOpen} onClose={() => setCountrySelectOpen(false)} />
     </>
   );
 };

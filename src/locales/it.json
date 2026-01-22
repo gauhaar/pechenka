@@ -290,7 +290,11 @@
           "intelligence": "Rapporto di intelligence"
         }
       }
-    }
+    },
+    "subtitle": "Piani mobile-first costruiti per scalo col tuo prodotto.",
+    "percentMaintenance": "{percent}% manutenzione annuale",
+    "planEstimate": "${value}",
+    "perYear": "all'anno (stima)"
   },
   "solution": {
     "sectionTitle": "La nostra soluzione",
@@ -855,8 +859,8 @@
   "home": {
     "hero": {
       "badge": "AI security & development",
-      "title": "Build securely. Deploy confidently.",
-      "subtitle": "Two subscription systems (AI-SOC, SLNC-env) plus custom AI and software delivery for enterprise teams.",
+      "title": "Cybersecurity is no longer",
+      "subtitle": "Build securely. Deploy confidently.",
       "ctaPrimary": "Request demo",
       "ctaSecondary": "Explore systems",
       "highlights": {
@@ -870,7 +874,8 @@
         "egress": "All on-prem—code, prompts, builds",
         "deployment": "to first secure deployment",
         "locales": "locales supported out-of-box"
-      }
+      },
+      "titleHighlight": "complicated or expensive anymore"
     },
     "systems": {
       "title": "Systems",
@@ -878,12 +883,17 @@
       "cta": "View details",
       "aiSoc": {
         "title": "AI-SOC",
-        "desc": "Managed detection & response with AI copilots for SOC teams.",
+        "desc": "Managed detection & response system powered and operated by AI. Used to prevent web and email attacks",
         "badge": "Subscription"
       },
       "slncEnv": {
         "title": "SLNC-env",
         "desc": "Sealed development cloud that keeps code, prompts, and builds on-prem.",
+        "badge": "Subscription"
+      },
+      "sithub": {
+        "title": "Sithub",
+        "desc": "Self-hosted GitHub alternative with built-in security scanning. All repositories and code analysis stay within your network.",
         "badge": "Subscription"
       }
     },
@@ -907,6 +917,11 @@
       "subtitle": "Tell us your security and delivery goals—we'll align the right system and services.",
       "cta": "Request demo",
       "ctaSecondary": "Talk to services team"
+    },
+    "resources": {
+      "title": "Featured articles",
+      "subtitle": "Silence AI is one of few private companies that have government level intelligence.",
+      "viewAll": "View all articles"
     }
   }
 }

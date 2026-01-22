@@ -79,7 +79,7 @@ export default function MediumFeedsWrapper() {
                </p>
                
                <div className="mt-auto pt-4 flex items-center text-xs font-semibold text-white/60 uppercase tracking-widest group-hover:text-white transition-colors">
-                  Read on Medium <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                  Read on LinkedIn <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
                </div>
             </div>
           </EdgeGlowCard>

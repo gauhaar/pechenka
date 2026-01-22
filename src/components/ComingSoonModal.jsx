@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const ComingSoonModal = ({ isOpen, onClose }) => {
+const ComingSoonModal = ({ isOpen, onClose, title = "Coming up soon", message }) => {
   return (
     <AnimatePresence>
       {isOpen && (
@@ -30,8 +30,13 @@ const ComingSoonModal = ({ isOpen, onClose }) => {
               </svg>
             </button>
             <div className="text-2xl font-bold text-center leading-relaxed">
-              Coming up soon
+              {title}
             </div>
+            {message && (
+              <p className="mt-4 text-center text-sm text-gray-200 leading-relaxed">
+                {message}
+              </p>
+            )}
           </motion.div>
         </motion.div>
       )}

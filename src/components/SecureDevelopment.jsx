@@ -4,21 +4,26 @@ import React, { useState } from "react";
 import SlncEnvHeader from "@/components/SlncEnvHeader";
 import BackToTopButton from "@/components/BackToTopButton";
 import RequestSystemModal from "@/components/RequestSystemModal";
-import CountrySelectModal from "@/components/CountrySelectModal";
+import ComingSoonModal from "@/components/ComingSoonModal";
 import EdgeGlowCard from "@/components/EdgeGlowCard";
 import GlassyBox3D from "@/components/GlassyBox3D";
 import { FloatingText } from "@/components/FloatingText";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function SecureDevelopmentPage() {
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [countrySelectOpen, setCountrySelectOpen] = useState(false);
+    const [isAdminModalOpen, setIsAdminModalOpen] = useState(false);
     const [currency, setCurrency] = useState("USD");
+    const [isImageModalOpen, setIsImageModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState(null);
     const { t } = useLanguage();
 
     const openModal = () => setIsModalOpen(true);
     const closeModal = () => setIsModalOpen(false);
+
+    const openAdminModal = () => setIsAdminModalOpen(true);
+    const closeAdminModal = () => setIsAdminModalOpen(false);
 
     const pricing = {
         USD: { 
@@ -86,15 +91,15 @@ export default function SecureDevelopmentPage() {
     };
 
     const architecture = [
-        { title: "Sithub Server", tag: "Local version control", accent: "#38bdf8" },
-        { title: "LLM Server (Qwen-Code)", tag: "On-prem intelligence", accent: "#a855f7" },
-        { title: "IDE with Local Copilot", tag: "Cursor-class experience", accent: "#22c55e" },
+        { title: "Git Repository Server", tag: "Self-hosted version control", accent: "#38bdf8" },
+        { title: "Security Analyzer", tag: "Local code scanning engine", accent: "#a855f7" },
+        { title: "Vulnerability Database", tag: "Downloaded security patches", accent: "#22c55e" },
     ];
 
     const analyzerShots = [
         { src: "/slnc-env-analyzer/slnc-env-analyzer1.png", title: "Scan overview", desc: "See issues grouped by severity before code leaves your network." },
         { src: "/slnc-env-analyzer/slnc-env-analyzer2.png", title: "Detection of misconfigurations", desc: "Our AI-powered code analyzer even finds misconfigurations within the code." },
-        { src: "/slnc-env-analyzer/slnc-env-analyzer3.png", title: "Inline diffs", desc: "Review suggested patches inline with security context." },
+        { src: "/slnc-env-analyzer/slnc-env-analyzer3.png", title: "Vulnerable package detection", desc: "Detect vulnerable package versions along with the version where the vulnerability is fixed." },
     ];
 
     const cardHover = { whileHover: { y: -4, scale: 1.01 }, transition: { duration: 0.25, ease: "easeOut" } };
@@ -139,7 +144,7 @@ export default function SecureDevelopmentPage() {
 
     return (
         <div className="min-h-screen bg-[#01091C] text-slate-200 font-sans selection:bg-pink-500/30 relative overflow-hidden">
-            <SlncEnvHeader />
+            <SlncEnvHeader onOpenAdminModal={openAdminModal} />
 
             <main className="relative z-10 pt-20 pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-16">
                 {/* Hero */}
@@ -170,13 +175,13 @@ export default function SecureDevelopmentPage() {
                                 animate={{ opacity: 1, y: 0 }}
                                 className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.15em] text-slate-200"
                             >
-                                {t("secureDevelopment.hero.badge", "SLNC-env · Secure Development Environment")}
+                                {t("secureDevelopment.hero.badge", "Sithub · Self-Hosted Development Platform")}
                             </motion.p>
                             <motion.h1 initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
-                                {t("secureDevelopment.hero.title", "Build systems with secure and private code")}
+                                {t("secureDevelopment.hero.title", "GitHub on your server. Code never leaves your network.")}
                             </motion.h1>
                             <p className="text-base sm:text-lg text-slate-200 max-w-xl">
-                                {t("secureDevelopment.hero.description", "Private development environment for enterprises, where code never leaves your corporate network. Meanwhile offering the latest AI-powered technology")}
+                                {t("secureDevelopment.hero.description", "Self-hosted GitHub alternative with built-in security scanning. All functionality stays within your infrastructure—repositories, code analyzer, and vulnerability reports run locally.")}
                             </p>
                             
                             <motion.div 
@@ -186,7 +191,8 @@ export default function SecureDevelopmentPage() {
                                 className="flex flex-wrap gap-3 pt-2"
                             >
                                 <button 
-                                    onClick={() => setCountrySelectOpen(true)}
+                                    type="button"
+                                    onClick={openAdminModal}
                                     className="rounded-full bg-gradient-to-r from-pink-500 via-violet-500 to-blue-500 px-8 py-3.5 text-base font-semibold text-white transition hover:scale-[1.02] hover:shadow-lg hover:shadow-violet-500/25"
                                 >
                                     {t("header.cta.get", "Get")}
@@ -261,11 +267,11 @@ export default function SecureDevelopmentPage() {
                                 mode="static"
                                 glowColor="#8b5cf6"
                                 secondaryGlowColor="rgba(139,92,246,0.35)"
-                                outerClassName="group relative rounded-2xl p-[1px] edge-glow-card--default"
-                                innerClassName="rounded-[18px]"
+                                outerClassName="group relative rounded-2xl p-[1px] edge-glow-card--default h-full"
+                                innerClassName="rounded-[18px] h-full"
                             >
-                                <div className="relative overflow-hidden rounded-[16px] border border-white/10 bg-slate-900/60 p-6 backdrop-blur-sm">
-                                    <div className="space-y-5">
+                                <div className="relative overflow-hidden rounded-[16px] border border-white/10 bg-slate-900/60 p-6 backdrop-blur-sm h-full">
+                                    <div className="flex flex-col h-full space-y-5">
                                         <div>
                                             <h3 className="text-xl font-bold text-white">{t("secureDevelopment.pricing.monthlyPlan", "Monthly")}</h3>
                                             <p className="text-sm text-slate-400 mt-1">{t("secureDevelopment.pricing.monthlyDesc", "Flexible billing")}</p>
@@ -307,8 +313,9 @@ export default function SecureDevelopmentPage() {
                                         </ul>
 
                                         <button 
-                                            onClick={() => setCountrySelectOpen(true)}
-                                            className="w-full rounded-full py-3.5 text-sm font-semibold transition-all border border-white/20 bg-white/5 text-white hover:bg-gradient-to-r hover:from-pink-500 hover:via-violet-500 hover:to-blue-500 hover:border-transparent"
+                                            type="button"
+                                            onClick={openAdminModal}
+                                            className="w-full rounded-full py-3.5 text-sm font-semibold transition-all border border-white/20 bg-white/5 text-white hover:bg-gradient-to-r hover:from-pink-500 hover:via-violet-500 hover:to-blue-500 hover:border-transparent mt-auto block text-center"
                                         >
                                             {t("secureDevelopment.pricing.getStarted", "Get Started")}
                                         </button>
@@ -321,16 +328,16 @@ export default function SecureDevelopmentPage() {
                                 mode="static"
                                 glowColor="#10b981"
                                 secondaryGlowColor="rgba(16,185,129,0.35)"
-                                outerClassName="group relative rounded-2xl p-[1px] edge-glow-card--default"
-                                innerClassName="rounded-[18px]"
+                                outerClassName="group relative rounded-2xl p-[1px] edge-glow-card--default h-full"
+                                innerClassName="rounded-[18px] h-full"
                             >
-                                <div className="relative overflow-hidden rounded-[16px] border border-white/10 bg-slate-900/60 p-6 backdrop-blur-sm">
+                                <div className="relative overflow-hidden rounded-[16px] border border-white/10 bg-slate-900/60 p-6 backdrop-blur-sm h-full">
                                     {/* Double Savings Badge */}
                                     <div className="absolute -right-8 top-4 rotate-45 bg-gradient-to-r from-emerald-500 to-teal-500 px-10 py-1 text-xs font-bold text-white">
                                         {t("secureDevelopment.pricing.doubleSavings", "2x SAVINGS")}
                                     </div>
 
-                                    <div className="space-y-5">
+                                    <div className="flex flex-col h-full space-y-5">
                                         <div>
                                             <h3 className="text-xl font-bold text-white">{t("secureDevelopment.pricing.yearlyPlan", "Annual")}</h3>
                                             <p className="text-sm text-slate-400 mt-1">{t("secureDevelopment.pricing.yearlyDesc", "Best value")}</p>
@@ -375,8 +382,9 @@ export default function SecureDevelopmentPage() {
                                         </ul>
 
                                         <button 
-                                            onClick={() => setCountrySelectOpen(true)}
-                                            className="w-full rounded-full py-3.5 text-sm font-semibold transition-all bg-gradient-to-r from-emerald-500 to-teal-500 text-white hover:from-emerald-400 hover:to-teal-400 shadow-lg shadow-emerald-500/20"
+                                            type="button"
+                                            onClick={openAdminModal}
+                                            className="w-full rounded-full py-3.5 text-sm font-semibold transition-all bg-gradient-to-r from-emerald-500 to-teal-500 text-white hover:from-emerald-400 hover:to-teal-400 shadow-lg shadow-emerald-500/20 mt-auto block text-center"
                                         >
                                             {t("secureDevelopment.pricing.getStarted", "Get Started")}
                                         </button>
@@ -393,26 +401,26 @@ export default function SecureDevelopmentPage() {
                         <div className="p-8 md:p-10 space-y-5">
                             <div className="flex items-center gap-2 text-sm font-semibold text-blue-300">
                                 <span className="h-2 w-2 rounded-full bg-blue-400 animate-pulse" />
-                                {t("secureDevelopment.components.subtitle", "Three components, one sealed loop")}
+                                {t("secureDevelopment.components.subtitle", "Three core components, fully isolated")}
                             </div>
-                            <h2 className="text-3xl md:text-4xl font-bold text-white">{t("secureDevelopment.components.title", "Everything stays inside")}</h2>
+                            <h2 className="text-3xl md:text-4xl font-bold text-white">{t("secureDevelopment.components.title", "Everything runs on your infrastructure")}</h2>
                             <p className="text-slate-100 text-base md:text-lg leading-relaxed">
-                                {t("secureDevelopment.components.description", "Code, prompts, and builds never leave your network. SLNC-env keeps AI help, reviews, and delivery private for cloud providers, government teams, and industrial plants.")}
+                                {t("secureDevelopment.components.description", "Your code, repositories, and security analysis never leave your network. Sithub provides complete GitHub functionality with built-in code scanning—all hosted on your servers. Download vulnerability databases from us, but your code stays private.")}
                             </p>
 
                             <div className="grid gap-5 md:grid-cols-3">
                                 {architecture.map((item) => {
                                     let titleKey = "";
                                     let tagKey = "";
-                                    if (item.title === "Sithub Server") {
-                                        titleKey = "secureDevelopment.components.sithub.title";
-                                        tagKey = "secureDevelopment.components.sithub.tag";
-                                    } else if (item.title === "LLM Server (Qwen-Code)") {
-                                        titleKey = "secureDevelopment.components.llm.title";
-                                        tagKey = "secureDevelopment.components.llm.tag";
-                                    } else if (item.title === "IDE with Local Copilot") {
-                                        titleKey = "secureDevelopment.components.ide.title";
-                                        tagKey = "secureDevelopment.components.ide.tag";
+                                    if (item.title === "Git Repository Server") {
+                                        titleKey = "secureDevelopment.components.gitServer.title";
+                                        tagKey = "secureDevelopment.components.gitServer.tag";
+                                    } else if (item.title === "Security Analyzer") {
+                                        titleKey = "secureDevelopment.components.analyzer.title";
+                                        tagKey = "secureDevelopment.components.analyzer.tag";
+                                    } else if (item.title === "Vulnerability Database") {
+                                        titleKey = "secureDevelopment.components.vulnDb.title";
+                                        tagKey = "secureDevelopment.components.vulnDb.tag";
                                     }
                                     return (
                                         <HoverCard 
@@ -601,15 +609,19 @@ export default function SecureDevelopmentPage() {
                                 } else if (shot.title === "Detection of misconfigurations") {
                                     titleKey = "secureDevelopment.analyzer.visualizer.shots.misconfigurations.title";
                                     descKey = "secureDevelopment.analyzer.visualizer.shots.misconfigurations.description";
-                                } else if (shot.title === "Inline diffs") {
+                                } else if (shot.title === "Vulnerable package detection") {
                                     titleKey = "secureDevelopment.analyzer.visualizer.shots.inlineDiffs.title";
                                     descKey = "secureDevelopment.analyzer.visualizer.shots.inlineDiffs.description";
                                 }
                                 return (
                                     <div
                                         key={shot.src}
-                                        className="group overflow-hidden rounded-2xl border border-white/10 bg-slate-950/60 shadow-xl backdrop-blur-sm"
+                                        className="group overflow-hidden rounded-2xl border border-white/10 bg-slate-950/60 shadow-xl backdrop-blur-sm cursor-pointer"
                                         style={{ boxShadow: "0 20px 50px -28px rgba(15,23,42,0.9)" }}
+                                        onClick={() => {
+                                            setSelectedImage(shot);
+                                            setIsImageModalOpen(true);
+                                        }}
                                     >
                                         <div className="relative aspect-[4/3] overflow-hidden">
                                             <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-white/5 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -696,7 +708,52 @@ export default function SecureDevelopmentPage() {
             </main>
 
             <RequestSystemModal isOpen={isModalOpen} onClose={closeModal} />
-            <CountrySelectModal isOpen={countrySelectOpen} onClose={() => setCountrySelectOpen(false)} />
+            <ComingSoonModal
+                isOpen={isAdminModalOpen}
+                onClose={closeAdminModal}
+                title="Admin panel"
+                message="The admin panel is under development right now, it will be available in 3.5 hours."
+            />
+
+            <AnimatePresence>
+                {isImageModalOpen && selectedImage && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="fixed inset-0 z-[100] flex items-center justify-center backdrop-blur-xl bg-black/90"
+                        onClick={() => setIsImageModalOpen(false)}
+                    >
+                        <motion.div
+                            initial={{ scale: 0.9, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            exit={{ scale: 0.9, opacity: 0 }}
+                            transition={{ duration: 0.2 }}
+                            className="relative max-w-6xl max-h-[90vh] w-full mx-4"
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            <button
+                                onClick={() => setIsImageModalOpen(false)}
+                                className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors cursor-pointer z-10"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                            <img
+                                src={selectedImage.src}
+                                alt={selectedImage.title}
+                                className="w-full h-full object-contain rounded-lg shadow-2xl"
+                            />
+                            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-lg">
+                                <h3 className="text-xl font-bold text-white">{selectedImage.title}</h3>
+                                <p className="text-slate-300 mt-2">{selectedImage.desc}</p>
+                            </div>
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+
             <BackToTopButton />
         </div>
     );
