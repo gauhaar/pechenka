@@ -10,6 +10,7 @@
     "allLanguages": "All languages"
   },
   "header": {
+    "andManyMore": "그리고 더 많은 것들...",
     "nav": {
       "main": "메인",
       "mail": "메일",
@@ -571,6 +572,7 @@
         "subtitle": "비주얼라이저",
         "description": "온프레미스 콘솔에서 아름답게 렌더링된 최근 스캔의 선명한 스냅샷.",
         "privateWorkspace": "비공개 업무 공간만 해당",
+        "andManyMore": "그리고 더 많은 것들...",
         "shots": {
           "scanOverview": {
             "title": "스캔 개요",

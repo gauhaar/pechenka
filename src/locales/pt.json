@@ -31,6 +31,7 @@
       "requestDemo": "Request Demo"
     }
   },
+      "andManyMore": "E muito mais...",
   "affiliate": {
     "hero": {
       "tagline": "Junte-se ao programa de parceiros da Silence AI",
@@ -536,6 +537,7 @@
         "subtitle": "Visualizador",
         "description": "Instantâneos nítidos de varreduras recentes, renderizados lindamente no console local.",
         "privateWorkspace": "Somente espaço de trabalho privado",
+        "andManyMore": "E muito mais...",
         "shots": {
           "scanOverview": {
             "title": "Visão geral da varredura",

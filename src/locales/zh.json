@@ -10,6 +10,7 @@
     "allLanguages": "所有语言"
   },
   "header": {
+    "andManyMore": "还有更多...",
     "nav": {
       "main": "首页",
       "mail": "邮件",
@@ -536,6 +537,7 @@
         "subtitle": "可视化",
         "description": "近期扫描的清晰快照，在本地控制台中精美呈现。",
         "privateWorkspace": "仅限私有工作区",
+        "andManyMore": "还有更多...",
         "shots": {
           "scanOverview": {
             "title": "扫描总览",

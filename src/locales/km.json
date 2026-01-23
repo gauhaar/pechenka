@@ -10,6 +10,7 @@
     "allLanguages": "All languages"
   },
   "header": {
+    "andManyMore": "ហើយមានច្រើនទៀត...",
     "nav": {
       "main": "Main",
       "mail": "Mail",
@@ -571,6 +572,7 @@
         "subtitle": "Visualizer",
         "description": "រូបថតខ្លីៗពីការស្កេនថ្មីៗ បង្ហាញយ៉ាងស្រស់ស្អាតនៅខាងក្នុងកុងសូលនៅលើគេបង្អស់ ។",
         "privateWorkspace": "តែកន្លែងធ្វើការឯកជនប៉ុណ្ណោះ",
+        "andManyMore": "ហើយមានច្រើនទៀត...",
         "shots": {
           "scanOverview": {
             "title": "ស្កេនទិដ្ឋភាពទូទៅ",

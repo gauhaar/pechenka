@@ -31,6 +31,7 @@
       "requestDemo": "Request Demo"
     }
   },
+      "andManyMore": "E molto altro...",
   "affiliate": {
     "hero": {
       "tagline": "Unisciti al programma di affiliazione di Silence AI",
@@ -536,6 +537,7 @@
         "subtitle": "Visualizzatore",
         "description": "Istantanee nitide di scansioni recenti, rese splendidamente nella console in loco.",
         "privateWorkspace": "Solo spazio di lavoro privato",
+        "andManyMore": "E molto altro...",
         "shots": {
           "scanOverview": {
             "title": "Panoramica della scansione",

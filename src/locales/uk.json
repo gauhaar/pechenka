@@ -10,6 +10,7 @@
     "allLanguages": "Усі мови"
   },
   "header": {
+    "andManyMore": "І багато іншого...",
     "nav": {
       "main": "Головна",
       "mail": "Пошта",
@@ -541,6 +542,7 @@
         "subtitle": "Візуалізація",
         "description": "Чіткі знімки останніх сканів, красиво відображені в on-prem консолі.",
         "privateWorkspace": "Лише приватний workspace",
+        "andManyMore": "І багато іншого...",
         "shots": {
           "scanOverview": {
             "title": "Огляд скану",

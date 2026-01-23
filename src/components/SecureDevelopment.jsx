@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import SlncEnvHeader from "@/components/SlncEnvHeader";
+import Header from "@/components/Header";
 import BackToTopButton from "@/components/BackToTopButton";
 import RequestSystemModal from "@/components/RequestSystemModal";
 import ComingSoonModal from "@/components/ComingSoonModal";
@@ -97,9 +97,27 @@ export default function SecureDevelopmentPage() {
     ];
 
     const analyzerShots = [
-        { src: "/slnc-env-analyzer/slnc-env-analyzer1.png", title: "Scan overview", desc: "See issues grouped by severity before code leaves your network." },
-        { src: "/slnc-env-analyzer/slnc-env-analyzer2.png", title: "Detection of misconfigurations", desc: "Our AI-powered code analyzer even finds misconfigurations within the code." },
-        { src: "/slnc-env-analyzer/slnc-env-analyzer3.png", title: "Vulnerable package detection", desc: "Detect vulnerable package versions along with the version where the vulnerability is fixed." },
+        {
+            src: "/slnc-env-analyzer/slnc-env-analyzer1.png",
+            titleKey: "secureDevelopment.analyzer.visualizer.shots.scanOverview.title",
+            descKey: "secureDevelopment.analyzer.visualizer.shots.scanOverview.description",
+            title: "Scan overview",
+            desc: "See issues grouped by severity before code leaves your network.",
+        },
+        {
+            src: "/slnc-env-analyzer/slnc-env-analyzer2.png",
+            titleKey: "secureDevelopment.analyzer.visualizer.shots.misconfigurations.title",
+            descKey: "secureDevelopment.analyzer.visualizer.shots.misconfigurations.description",
+            title: "Detection of misconfigurations",
+            desc: "Our AI-powered code analyzer even finds misconfigurations within the code.",
+        },
+        {
+            src: "/slnc-env-analyzer/slnc-env-analyzer3.png",
+            titleKey: "secureDevelopment.analyzer.visualizer.shots.inlineDiffs.title",
+            descKey: "secureDevelopment.analyzer.visualizer.shots.inlineDiffs.description",
+            title: "Vulnerable package detection",
+            desc: "Detect vulnerable package versions along with the version where the vulnerability is fixed.",
+        },
     ];
 
     const cardHover = { whileHover: { y: -4, scale: 1.01 }, transition: { duration: 0.25, ease: "easeOut" } };
@@ -144,7 +162,7 @@ export default function SecureDevelopmentPage() {
 
     return (
         <div className="min-h-screen bg-[#01091C] text-slate-200 font-sans selection:bg-pink-500/30 relative overflow-hidden">
-            <SlncEnvHeader onOpenAdminModal={openAdminModal} />
+            <Header onSithubGet={openAdminModal} />
 
             <main className="relative z-10 pt-20 pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-16">
                 {/* Hero */}
@@ -601,18 +619,6 @@ export default function SecureDevelopmentPage() {
 
                         <div className="relative mt-8 grid gap-5 md:grid-cols-3">
                             {analyzerShots.map((shot, idx) => {
-                                let titleKey = "";
-                                let descKey = "";
-                                if (shot.title === "Scan overview") {
-                                    titleKey = "secureDevelopment.analyzer.visualizer.shots.scanOverview.title";
-                                    descKey = "secureDevelopment.analyzer.visualizer.shots.scanOverview.description";
-                                } else if (shot.title === "Detection of misconfigurations") {
-                                    titleKey = "secureDevelopment.analyzer.visualizer.shots.misconfigurations.title";
-                                    descKey = "secureDevelopment.analyzer.visualizer.shots.misconfigurations.description";
-                                } else if (shot.title === "Vulnerable package detection") {
-                                    titleKey = "secureDevelopment.analyzer.visualizer.shots.inlineDiffs.title";
-                                    descKey = "secureDevelopment.analyzer.visualizer.shots.inlineDiffs.description";
-                                }
                                 return (
                                     <div
                                         key={shot.src}
@@ -627,7 +633,7 @@ export default function SecureDevelopmentPage() {
                                             <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-white/5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                             <img
                                                 src={shot.src}
-                                                alt={t(titleKey, shot.title)}
+                                                alt={t(shot.titleKey, shot.title)}
                                                 className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                                                 loading="lazy"
                                             />
@@ -637,13 +643,16 @@ export default function SecureDevelopmentPage() {
                                                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
                                                 Frame {idx + 1}
                                             </div>
-                                            <h4 className="text-lg font-semibold text-white">{t(titleKey, shot.title)}</h4>
-                                            <p className="text-sm text-slate-300 leading-relaxed">{t(descKey, shot.desc)}</p>
+                                            <h4 className="text-lg font-semibold text-white">{t(shot.titleKey, shot.title)}</h4>
+                                            <p className="text-sm text-slate-300 leading-relaxed">{t(shot.descKey, shot.desc)}</p>
                                         </div>
                                     </div>
                                 );
                             })}
                         </div>
+                        <p className="mt-5 text-center text-sm text-slate-400">
+                            {t("secureDevelopment.analyzer.visualizer.andManyMore", "And many more...")}
+                        </p>
                     </div>
                 </section>
 
@@ -746,8 +755,12 @@ export default function SecureDevelopmentPage() {
                                 className="w-full h-full object-contain rounded-lg shadow-2xl"
                             />
                             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-lg">
-                                <h3 className="text-xl font-bold text-white">{selectedImage.title}</h3>
-                                <p className="text-slate-300 mt-2">{selectedImage.desc}</p>
+                                <h3 className="text-xl font-bold text-white">
+                                    {t(selectedImage.titleKey, selectedImage.title)}
+                                </h3>
+                                <p className="text-slate-300 mt-2">
+                                    {t(selectedImage.descKey, selectedImage.desc)}
+                                </p>
                             </div>
                         </motion.div>
                     </motion.div>

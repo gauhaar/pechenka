@@ -31,6 +31,7 @@
       "requestDemo": "Book demo"
     }
   },
+      "andManyMore": "Og meget mere...",
   "affiliate": {
     "hero": {
       "tagline": "Deltag i Silence AI's partnerprogram",
@@ -571,6 +572,7 @@
         "subtitle": "Visualizer",
         "description": "Skarpe udsnit fra nylige scanninger, flot gengivet i on-prem konsollen.",
         "privateWorkspace": "Kun privat workspace",
+        "andManyMore": "Og meget mere...",
         "shots": {
           "scanOverview": {
             "title": "Scan-overblik",

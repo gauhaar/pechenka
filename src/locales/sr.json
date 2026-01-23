@@ -10,6 +10,7 @@
     "allLanguages": "Сви језици"
   },
   "header": {
+    "andManyMore": "И још много тога...",
     "nav": {
       "main": "Почетна",
       "mail": "Пошта",
@@ -541,6 +542,7 @@
         "subtitle": "Визуелизација",
         "description": "Јасни снимци недавних скенова, лепо приказани у on-prem конзоли.",
         "privateWorkspace": "Само приватни workspace",
+        "andManyMore": "И још много тога...",
         "shots": {
           "scanOverview": {
             "title": "Преглед скена",

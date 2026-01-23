@@ -10,6 +10,7 @@
     "allLanguages": "All languages"
   },
   "header": {
+    "andManyMore": "এবং আরও অনেক...",
     "nav": {
       "main": "প্রধান পৃষ্ঠা",
       "mail": "মেইল",
@@ -571,6 +572,7 @@
         "subtitle": "Visualizer",
         "description": "Crisp snapshots from recent scans, rendered beautifully inside the on-prem console.",
         "privateWorkspace": "Private workspace only",
+        "andManyMore": "এবং আরও অনেক...",
         "shots": {
           "scanOverview": {
             "title": "Scan overview",

@@ -10,6 +10,7 @@
     "allLanguages": "Svi jezici"
   },
   "header": {
+    "andManyMore": "I još mnogo toga...",
     "nav": {
       "main": "Početna",
       "mail": "Pošta",
@@ -29,6 +30,13 @@
       "contact": "Kontakt",
       "download": "Preuzmi",
       "requestDemo": "Zatražite demo"
+    }
+  },
+  "secureDevelopment": {
+    "analyzer": {
+      "visualizer": {
+        "andManyMore": "I još mnogo toga..."
+      }
     }
   },
   "hero": {

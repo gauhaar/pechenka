@@ -10,6 +10,7 @@
     "allLanguages": "All languages"
   },
   "header": {
+    "andManyMore": "และอีกมากมาย...",
     "nav": {
       "main": "หน้าหลัก",
       "mail": "อีเมล",
@@ -541,6 +542,7 @@
         "subtitle": "Visualizer",
         "description": "Crisp snapshots from recent scans, rendered beautifully inside the on-prem console.",
         "privateWorkspace": "Private workspace only",
+        "andManyMore": "และอีกมากมาย...",
         "shots": {
           "scanOverview": {
             "title": "Scan overview",

@@ -10,6 +10,7 @@
     "allLanguages": "ሁሉም ቋንቋዎች"
   },
   "header": {
+    "andManyMore": "እና ሌሎች ብዙ ተጨማሪ...",
     "nav": {
       "main": "ዋና",
       "mail": "ኢሜይል",
@@ -571,6 +572,7 @@
         "subtitle": "ታይታ",
         "description": "ከቅርብ ስካኖች ጥራት ያላቸው እትሞች፣ በቦታ ኮንሶል ውስጥ በሚገባ ይቀርጻሉ።",
         "privateWorkspace": "ግላዊ የስራ ቦታ ብቻ",
+        "andManyMore": "እና ሌሎች ብዙ ተጨማሪ...",
         "shots": {
           "scanOverview": {
             "title": "የስካን አጠቃላይ እይታ",

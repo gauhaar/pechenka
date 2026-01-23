@@ -10,6 +10,7 @@
     "allLanguages": "Bütün dillər"
   },
   "header": {
+    "andManyMore": "Və daha çox...",
     "nav": {
       "main": "Əsas səhifə",
       "mail": "Poçt",
@@ -571,6 +572,7 @@
         "subtitle": "Vizuallaşdırıcı",
         "description": "Son skanlardan aydın kadrlar, on-prem konsolda estetik şəkildə göstərilir.",
         "privateWorkspace": "Yalnız şəxsi workspace",
+        "andManyMore": "Və daha çox...",
         "shots": {
           "scanOverview": {
             "title": "Skan icmalı",

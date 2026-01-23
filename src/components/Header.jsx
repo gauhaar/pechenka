@@ -16,7 +16,7 @@ import { usePathname } from "next/navigation";
 const SCROLL_THRESHOLD = 10;
 const DESKTOP_WIDTH = 1130;
 
-const Header = ({ onOpenModal, policyLang, onPolicyLangChange }) => {
+const Header = ({ onOpenModal, policyLang, onPolicyLangChange, onSithubGet }) => {
   const pathname = usePathname();
   const isMainPage = pathname === "/";
   const isSithubPage = pathname === "/sithub";
@@ -215,7 +215,11 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange }) => {
                     <GlowButton
                       onClick={() => {
                         if (isSithubPage) {
-                          setCountrySelectOpen(true);
+                          if (onSithubGet) {
+                            onSithubGet();
+                          } else {
+                            setCountrySelectOpen(true);
+                          }
                         } else {
                           onOpenModal?.();
                         }
@@ -385,7 +389,19 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange }) => {
                   </GlowButton>
                 )}
                 {isDesktop && !isMainPage && !isPolicyPage && (
-                  <GlowButton onClick={isSithubPage ? () => setCountrySelectOpen(true) : onOpenModal}>
+                  <GlowButton
+                    onClick={
+                      isSithubPage
+                        ? () => {
+                            if (onSithubGet) {
+                              onSithubGet();
+                            } else {
+                              setCountrySelectOpen(true);
+                            }
+                          }
+                        : onOpenModal
+                    }
+                  >
                     {isSithubPage ? t("header.cta.get", "Get") : t("header.cta.requestDemo", "Request Demo")}
                   </GlowButton>
                 )}

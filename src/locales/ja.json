@@ -10,6 +10,7 @@
     "allLanguages": "All languages"
   },
   "header": {
+    "andManyMore": "そして他にも多数...",
     "nav": {
       "main": "ホーム",
       "mail": "メール",
@@ -571,6 +572,7 @@
         "subtitle": "ビジュアライザー",
         "description": "最近のスキャンからの鮮明なスナップショットが、オンプレミスコンソール内で美しくレンダリングされます。",
         "privateWorkspace": "プライベートワークスペースのみ",
+        "andManyMore": "そして他にも多数...",
         "shots": {
           "scanOverview": {
             "title": "スキャン概要",

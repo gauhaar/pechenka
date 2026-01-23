@@ -10,6 +10,7 @@
     "allLanguages": "Tất cả ngôn ngữ"
   },
   "header": {
+    "andManyMore": "Và còn nhiều hơn nữa...",
     "nav": {
       "main": "Trang chủ",
       "mail": "Thư",
@@ -506,6 +507,7 @@
         "subtitle": "Trực quan",
         "description": "Ảnh chụp rõ nét từ các lần quét gần đây, hiển thị đẹp trong console on-prem.",
         "privateWorkspace": "Chỉ không gian làm việc riêng",
+        "andManyMore": "Và còn nhiều hơn nữa...",
         "shots": {
           "scanOverview": {
             "title": "Tổng quan quét",

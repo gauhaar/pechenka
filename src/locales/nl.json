@@ -31,6 +31,7 @@
       "requestDemo": "Request Demo"
     }
   },
+      "andManyMore": "En nog veel meer...",
   "affiliate": {
     "hero": {
       "tagline": "Doe mee aan het partnerprogramma van Silence AI",
@@ -571,6 +572,7 @@
         "subtitle": "Visualizer",
         "description": "Scherpe snapshots van recente scans, prachtig weergegeven in de on-prem console.",
         "privateWorkspace": "Alleen privéwerkruimte",
+        "andManyMore": "En nog veel meer...",
         "shots": {
           "scanOverview": {
             "title": "Scanoverzicht",

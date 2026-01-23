@@ -10,6 +10,7 @@
     "allLanguages": "Όλες οι γλώσσες"
   },
   "header": {
+    "andManyMore": "Και πολλά ακόμη...",
     "nav": {
       "main": "Αρχική",
       "mail": "Mail",
@@ -571,6 +572,7 @@
         "subtitle": "Visualizer",
         "description": "Καθαρά στιγμιότυπα πρόσφατων σαρώσεων, όμορφα αποτυπωμένα στην on-prem κονσόλα.",
         "privateWorkspace": "Μόνο ιδιωτικός χώρος εργασίας",
+        "andManyMore": "Και πολλά ακόμη...",
         "shots": {
           "scanOverview": {
             "title": "Επισκόπηση σάρωσης",

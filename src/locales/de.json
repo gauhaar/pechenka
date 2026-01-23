@@ -536,6 +536,7 @@
         "subtitle": "Visualisierer",
         "description": "Klarer Schnappschuss aktueller Scans, schön dargestellt in der lokalen Konsole.",
         "privateWorkspace": "Nur privater Arbeitsbereich",
+        "andManyMore": "Und vieles mehr...",
         "shots": {
           "scanOverview": {
             "title": "Scan-Übersicht",

@@ -10,6 +10,7 @@
     "allLanguages": "All languages"
   },
   "header": {
+    "andManyMore": "နှင့် အခြားများစွာ...",
     "nav": {
       "main": "မူလစာမျက်နှာ",
       "mail": "အီးမေးလ်",
@@ -571,6 +572,7 @@
         "subtitle": "Visualizer",
         "description": "Crisp snapshots from recent scans, rendered beautifully inside the on-prem console.",
         "privateWorkspace": "Private workspace only",
+        "andManyMore": "နှင့် အခြားများစွာ...",
         "shots": {
           "scanOverview": {
             "title": "Scan overview",

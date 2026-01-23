@@ -10,6 +10,7 @@
     "allLanguages": "Všetky jazyky"
   },
   "header": {
+    "andManyMore": "A ešte oveľa viac...",
     "nav": {
       "main": "Hlavné",
       "mail": "Mail",
@@ -541,6 +542,7 @@
         "subtitle": "Visualizer",
         "description": "Jasné zábery z posledných scanov, krásne vykreslené v on-prem konzole.",
         "privateWorkspace": "Iba súkromný workspace",
+        "andManyMore": "A ešte oveľa viac...",
         "shots": {
           "scanOverview": {
             "title": "Prehľad scanu",

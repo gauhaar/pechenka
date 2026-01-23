@@ -10,6 +10,7 @@
     "allLanguages": "Všechny jazyky"
   },
   "header": {
+    "andManyMore": "A mnoho dalších...",
     "nav": {
       "main": "Hlavní",
       "mail": "Pošta",
@@ -571,6 +572,7 @@
         "subtitle": "Vizualizér",
         "description": "Ostré snímky z nedávných skenů, krásně vykreslené uvnitř konzole on-prem.",
         "privateWorkspace": "Pouze soukromý pracovní prostor",
+        "andManyMore": "A mnoho dalších...",
         "shots": {
           "scanOverview": {
             "title": "Přehled skenování",

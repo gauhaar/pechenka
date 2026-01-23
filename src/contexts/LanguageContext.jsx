@@ -62,18 +62,25 @@ export const LanguageProvider = ({ children, initialLanguage }) => {
 
     const cookieLocale = readLocaleCookie();
     const stored = window.localStorage.getItem(STORAGE_KEY);
-    const browserLang = (navigator.language || FALLBACK_LANGUAGE)
-      .split("-")[0]
-      .toLowerCase();
+    const navigatorLang =
+      (Array.isArray(navigator.languages) && navigator.languages[0]) ||
+      navigator.language ||
+      FALLBACK_LANGUAGE;
+    const browserLang = navigatorLang.split("-")[0].toLowerCase();
 
     const resolved =
       (cookieLocale && sanitizeLocale(cookieLocale, availableCodes)) ||
       (stored && sanitizeLocale(stored, availableCodes)) ||
+      (availableCodes.has(browserLang) ? browserLang : null) ||
       initialFromProps ||
-      (availableCodes.has(browserLang) ? browserLang : FALLBACK_LANGUAGE);
+      FALLBACK_LANGUAGE;
 
     if (resolved !== language) {
       setLanguageState(resolved);
+    }
+
+    if (typeof document !== "undefined") {
+      document.documentElement.lang = resolved;
     }
 
     window.localStorage.setItem(STORAGE_KEY, resolved);
@@ -86,6 +93,9 @@ export const LanguageProvider = ({ children, initialLanguage }) => {
     if (typeof window !== "undefined") {
       window.localStorage.setItem(STORAGE_KEY, nextLanguage);
       writeLocaleCookie(nextLanguage);
+      if (typeof document !== "undefined") {
+        document.documentElement.lang = nextLanguage;
+      }
       router.refresh();
     }
   };

@@ -31,6 +31,7 @@
       "requestDemo": "Request Demo"
     }
   },
+      "andManyMore": "Și multe altele...",
   "affiliate": {
     "hero": {
       "tagline": "Alătură-te programului de parteneriat Silence AI",
@@ -571,6 +572,7 @@
         "subtitle": "Vizualizator",
         "description": "Instantanee clare de la scanări recente, redate frumos în interiorul consolei on-prem.",
         "privateWorkspace": "Numai spațiu de lucru privat",
+        "andManyMore": "Și multe altele...",
         "shots": {
           "scanOverview": {
             "title": "Prezentare generală a scanării",

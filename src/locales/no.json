@@ -31,6 +31,7 @@
       "requestDemo": "Request Demo"
     }
   },
+      "andManyMore": "Og mye mer...",
   "affiliate": {
     "hero": {
       "tagline": "Bli med i Silence AIs partnerprogram",
@@ -571,6 +572,7 @@
         "subtitle": "Visualizer",
         "description": "Crisp snapshots from recent scans, rendered beautifully inside the on-prem console.",
         "privateWorkspace": "Private workspace only",
+        "andManyMore": "Og mye mer...",
         "shots": {
           "scanOverview": {
             "title": "Scan overview",

@@ -10,6 +10,7 @@
     "allLanguages": "Barcha tillar"
   },
   "header": {
+    "andManyMore": "Va yana ko'p narsalar...",
     "nav": {
       "main": "Bosh sahifa",
       "mail": "Pochta",
@@ -541,6 +542,7 @@
         "subtitle": "Vizualizator",
         "description": "So‘nggi skanerlardan aniq suratlar, on-prem konsolda chiroyli ko‘rinishda.",
         "privateWorkspace": "Faqat shaxsiy ish maydoni",
+        "andManyMore": "Va yana ko'p narsalar...",
         "shots": {
           "scanOverview": {
             "title": "Skaner umumiy ko‘rinishi",

@@ -10,6 +10,7 @@
     "allLanguages": "Tüm diller"
   },
   "header": {
+    "andManyMore": "Ve daha fazlası...",
     "nav": {
       "main": "Ana sayfa",
       "mail": "E-posta",
@@ -506,6 +507,7 @@
         "subtitle": "Görselleştirici",
         "description": "Son taramalardan net ekran görüntüleri, yerel konsolda şık şekilde sunulur.",
         "privateWorkspace": "Yalnızca özel çalışma alanı",
+        "andManyMore": "Ve daha fazlası...",
         "shots": {
           "scanOverview": {
             "title": "Tarama özeti",

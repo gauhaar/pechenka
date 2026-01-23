@@ -10,6 +10,7 @@
     "allLanguages": "All languages"
   },
   "header": {
+    "andManyMore": "In še veliko več...",
     "nav": {
       "main": "Main",
       "mail": "Mail",
@@ -704,6 +705,7 @@
         "subtitle": "Visualizer",
         "description": "Crisp snapshots from recent scans, rendered beautifully inside the on-prem console.",
         "privateWorkspace": "Private workspace only",
+        "andManyMore": "In še veliko več...",
         "shots": {
           "scanOverview": {
             "title": "Scan overview",

@@ -31,6 +31,7 @@
       "requestDemo": "Request Demo"
     }
   },
+      "andManyMore": "Et bien plus encore...",
   "affiliate": {
     "hero": {
       "tagline": "Rejoignez le programme partenaire de Silence AI",
@@ -536,6 +537,7 @@
         "subtitle": "Visualiseur",
         "description": "Instantanés nets d'analyses récentes, rendus magnifiquement dans la console sur site.",
         "privateWorkspace": "Espace de travail privé uniquement",
+        "andManyMore": "Et bien plus encore...",
         "shots": {
           "scanOverview": {
             "title": "Vue d'ensemble de l'analyse",

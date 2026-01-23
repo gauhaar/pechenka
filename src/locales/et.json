@@ -10,6 +10,7 @@
     "allLanguages": "Kõik keeled"
   },
   "header": {
+    "andManyMore": "Ja palju muud...",
     "nav": {
       "main": "Pealeht",
       "mail": "Mail",
@@ -571,6 +572,7 @@
         "subtitle": "Visualiseerija",
         "description": "Selged hetktõmmised viimastest skannidest, kenasti esitatud on-prem konsoolis.",
         "privateWorkspace": "Ainult privaatne tööruum",
+        "andManyMore": "Ja palju muud...",
         "shots": {
           "scanOverview": {
             "title": "Skanni ülevaade",
