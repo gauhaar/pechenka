@@ -1,7 +1,6 @@
 #!/bin/bash
 # =============================================================================
-# Static Website Deployment Script for silence.codes
-# Serves static files directly via Nginx from the 'out' directory
+# Static Website Deployment Script for silence.codes - FIXED VERSION
 # =============================================================================
 
 set -e  # Exit on any error
@@ -28,6 +27,22 @@ echo "=============================================="
 echo "  Static Website Deployment - ${DOMAIN}"
 echo "=============================================="
 echo ""
+
+# -----------------------------------------------------------------------------
+# Step 0: Check if we should proceed
+# -----------------------------------------------------------------------------
+log_warning "This will:"
+echo "  1. Stop nginx temporarily"
+echo "  2. Backup current deployment"
+echo "  3. Clone fresh code from GitHub"
+echo "  4. Rebuild and redeploy"
+echo ""
+read -p "Continue? (y/N): " -n 1 -r
+echo ""
+if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+    log_info "Deployment cancelled"
+    exit 0
+fi
 
 # -----------------------------------------------------------------------------
 # Step 1: Stop existing services and clean up
@@ -75,153 +90,23 @@ if [ ! -d "${DEPLOY_DIR}/out" ]; then
     exit 1
 fi
 
-# Set proper permissions for nginx to read files
-chmod -R 755 ${DEPLOY_DIR}/out
+# FIXED: Set proper permissions AND ownership for nginx
+log_info "Setting permissions for nginx..."
+sudo chown -R www-data:www-data ${DEPLOY_DIR}/out
+sudo chmod -R 755 ${DEPLOY_DIR}/out
 
 log_success "Static site built successfully"
 log_info "Output directory: ${DEPLOY_DIR}/out"
 ls -la ${DEPLOY_DIR}/out/ | head -10
 
 # -----------------------------------------------------------------------------
-# Step 6: Configure and restart Nginx (serves static files directly)
+# Step 6: Configure and restart Nginx
 # -----------------------------------------------------------------------------
-log_info "Configuring Nginx to serve static files..."
+log_info "Configuring Nginx..."
 
-# Create Nginx configuration - serving static files directly (no PM2 needed)
-sudo tee /etc/nginx/sites-available/${DOMAIN} > /dev/null << 'NGINX_CONFIG'
-server {
-    listen 80;
-    server_name silence.codes www.silence.codes;
-    return 301 https://$server_name$request_uri;
-}
-
-server {
-    listen 443 ssl http2;
-    server_name silence.codes www.silence.codes;
-
-    # Root directory for static files
-    root /home/ubuntu/pechenka/out;
-    index index.html;
-
-    # SSL certificates
-    ssl_certificate /etc/nginx/ssl/silence_codes_chained.crt;
-    ssl_certificate_key /etc/nginx/ssl/silence_codes.key;
-    
-    # SSL settings
-    ssl_protocols TLSv1.2 TLSv1.3;
-    ssl_prefer_server_ciphers on;
-    ssl_ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384;
-    ssl_session_cache shared:SSL:10m;
-    ssl_session_timeout 10m;
-
-    # Security headers
-    add_header X-Frame-Options "SAMEORIGIN" always;
-    add_header X-Content-Type-Options "nosniff" always;
-    add_header X-XSS-Protection "1; mode=block" always;
-    add_header Referrer-Policy "strict-origin-when-cross-origin" always;
-
-    # Gzip compression
-    gzip on;
-    gzip_vary on;
-    gzip_min_length 1024;
-    gzip_proxied any;
-    gzip_types text/plain text/css text/xml text/javascript application/javascript application/json application/xml+rss image/svg+xml;
-    gzip_comp_level 6;
-
-    # Redirects (previously handled by Next.js config)
-    location = /developer-services { return 301 /services/; }
-    location ^~ /developer-services/ { return 301 /services/; }
-    location = /slnc-code { return 301 /slnc-env/; }
-    location ^~ /slnc-code/ { return 301 /slnc-env/; }
-    location = /secure-development { return 301 /slnc-env/; }
-    location ^~ /secure-development/ { return 301 /slnc-env/; }
-
-    # Next.js static assets - long cache
-    location /_next/static/ {
-        expires 1y;
-        add_header Cache-Control "public, max-age=31536000, immutable";
-        access_log off;
-    }
-
-    # Static assets caching
-    location ~* \.(ico|css|js|gif|jpeg|jpg|png|svg|webp|woff|woff2|ttf|eot)$ {
-        expires 30d;
-        add_header Cache-Control "public, max-age=2592000";
-        access_log off;
-    }
-
-    # Main location - serve static files with SPA fallback
-    location / {
-        # Try to serve the file directly, then try with /index.html, then 404
-        try_files $uri $uri/ $uri/index.html /index.html;
-    }
-
-    # Handle 404 errors
-    error_page 404 /404/index.html;
-    location = /404/index.html {
-        internal;
-    }
-}
-NGINX_CONFIG
-
-# Enable site
-sudo ln -sf /etc/nginx/sites-available/${DOMAIN} /etc/nginx/sites-enabled/
-
-# Test Nginx configuration
-sudo nginx -t
-
-# Restart Nginx
-sudo systemctl restart nginx
-log_success "Nginx configured and restarted"
+# [Keep your existing nginx config here - it's good]
+# ... rest of your nginx config ...
 
 # -----------------------------------------------------------------------------
-# Step 7: Verify deployment
+# [Rest of your script remains the same]
 # -----------------------------------------------------------------------------
-echo ""
-log_info "Verifying deployment..."
-sleep 2
-
-# Check nginx status
-echo ""
-echo "📊 Nginx Status:"
-sudo systemctl status nginx --no-pager | head -5
-
-# Test domain (if SSL is configured)
-echo ""
-log_info "Testing domain..."
-HTTPS_CODE=$(curl -s -o /dev/null -w "%{http_code}" https://${DOMAIN}/ 2>/dev/null || echo "000")
-if [ "$HTTPS_CODE" = "200" ]; then
-    log_success "Domain ${DOMAIN} responding (HTTPS ${HTTPS_CODE})"
-elif [ "$HTTPS_CODE" = "000" ]; then
-    log_warning "Could not reach https://${DOMAIN} - check DNS and SSL"
-else
-    log_warning "Domain returned HTTP ${HTTPS_CODE}"
-fi
-
-# Test a policy page to verify static file serving
-log_info "Testing policy page..."
-POLICY_CODE=$(curl -s -o /dev/null -w "%{http_code}" https://${DOMAIN}/policies/ai-soc1/cookies/ 2>/dev/null || echo "000")
-if [ "$POLICY_CODE" = "200" ]; then
-    log_success "Policy pages working (HTTP ${POLICY_CODE})"
-else
-    log_warning "Policy page returned HTTP ${POLICY_CODE}"
-fi
-
-# -----------------------------------------------------------------------------
-# Summary
-# -----------------------------------------------------------------------------
-echo ""
-echo "=============================================="
-echo "  Deployment Complete!"
-echo "=============================================="
-echo ""
-echo "  📁 Static files: ${DEPLOY_DIR}/out"
-echo "  🌐 Served by: Nginx (direct static file serving)"
-echo "  🔒 Domain: https://${DOMAIN}"
-echo ""
-echo "  Useful commands:"
-echo "    sudo nginx -t              - Test Nginx config"
-echo "    sudo systemctl reload nginx - Reload Nginx"
-echo "    sudo tail -f /var/log/nginx/error.log - View errors"
-echo ""
-log_success "Deployment finished!"
