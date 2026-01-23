@@ -453,6 +453,18 @@
         "title": "IDE mit lokalem Copilot",
         "tag": "Cursor-ähnliche Erfahrung"
       },
+      "gitServer": {
+        "title": "Git-Repository-Server",
+        "tag": "Self-hosted Versionskontrolle"
+      },
+      "analyzer": {
+        "title": "Sicherheits-Analyzer",
+        "tag": "Lokale Code-Scanning-Engine"
+      },
+      "vulnDb": {
+        "title": "Schwachstellen-Datenbank",
+        "tag": "Heruntergeladene Sicherheits-Patches"
+      },
       "staysOnPrem": "Bleibt vor Ort. Kein Ausgang."
     },
     "timeline": {
@@ -469,35 +481,35 @@
         "attack": "Stuxnet",
         "target": "Urananreicherungsanlage Natanz",
         "impact": "Zerstörte ca. 1.000 Zentrifugen",
-        "severity": "Critical"
+        "severity": "Kritisch"
       },
       "blackEnergy": {
         "year": "2015",
         "attack": "BlackEnergy",
         "target": "Stromnetz der Ukraine",
         "impact": "230.000 Haushalte ohne Strom",
-        "severity": "High"
+        "severity": "Hoch"
       },
       "triton": {
         "year": "2017",
         "attack": "TRITON",
         "target": "Saudische petrochemische Anlage",
         "impact": "Sicherheits­systeme außer Kraft gesetzt",
-        "severity": "Critical"
+        "severity": "Kritisch"
       },
       "colonialPipeline": {
         "year": "2021",
         "attack": "Colonial Pipeline",
         "target": "US-Treibstoffpipeline",
         "impact": "6 Tage Kraftstoffstillstand",
-        "severity": "High"
+        "severity": "Hoch"
       },
       "pdvsa": {
         "year": "2025",
         "attack": "PDVSA",
         "target": "Venezolanische Raffinerien",
         "impact": "Raffineriebetrieb gestört",
-        "severity": "Medium"
+        "severity": "Mittel"
       }
     },
     "analyzer": {
@@ -646,18 +658,18 @@
     ]
   },
   "requestDemoModal": {
-    "title": "System anfordern",
+    "title": "Demo anfordern",
     "name": "Name",
-    "email": "Unternehmens-E-Mail",
-    "company": "Firmenname",
+    "email": "E-Mail",
+    "company": "Firma",
     "placeholders": {
-      "name": "John Doe",
-      "email": "john@company.com",
-      "company": "Acme Corp"
+      "name": "Max Mustermann",
+      "email": "max@firma.de",
+      "company": "Acme GmbH"
     },
     "submit": "Anfrage senden",
-    "successTitle": "Anfrage gesendet!",
-    "successBody": "Vielen Dank für Ihr Interesse. Wir melden uns in Kürze.",
+    "successTitle": "Vielen Dank!",
+    "successBody": "Wir melden uns in Kürze, um die Demo zu planen.",
     "close": "Schließen"
   },
   "requestSystemModal": {
@@ -708,9 +720,9 @@
     }
   },
   "servicesBlock": {
-    "badge": "Unser Angebot...",
+    "badge": "Was wir anbieten",
     "title": "Unsere Dienstleistungen",
-    "description": "Premium-UI, starke Technik und schnelle Lieferung — alles, was Sie brauchen, um ein Produkt zu starten, das aussieht und funktioniert wie eine große Marke...",
+    "description": "Premium-UI, starke Technik und schnelle Lieferung — alles, was Sie brauchen, um ein Produkt zu starten, das aussieht und funktioniert wie eine große Marke.",
     "learnMore": "Mehr erfahren",
     "learnMoreAria": "Mehr über diesen Service erfahren",
     "services": {
@@ -737,7 +749,7 @@
       "mobile": {
         "title": "Mobil",
         "description": "Plattformübergreifende Apps mit nativer Leistung und polierter UX.",
-        "tag": "Versand"
+        "tag": "Auslieferung"
       }
     }
   },
@@ -789,7 +801,7 @@
         "desc": "UX, Architektur, Prototyp."
       },
       "poc": {
-        "title": "Proof of Concept",
+        "title": "Machbarkeitsnachweis (PoC)",
         "desc": "Schnelle Validierung mit messbaren KPIs."
       },
       "build": {
@@ -860,14 +872,14 @@
   "home": {
     "hero": {
       "badge": "KI-Sicherheit & Entwicklung",
-      "title": "Cybersecurity is no longer",
-      "subtitle": "Build securely. Deploy confidently.",
+      "title": "Cybersicherheit ist nicht mehr",
+      "subtitle": "Sicher entwickeln. Selbstbewusst deployen.",
       "ctaPrimary": "Demo anfragen",
       "ctaSecondary": "Systeme ansehen",
       "highlights": {
         "coverage": "24/7 KI-gestütztes SOC",
-        "onPrem": "0-Egress On-Prem",
-        "deploy": "Sichere Bereitstellung in 4 Min"
+        "onPrem": "On-Prem ohne Datenabfluss",
+        "deploy": "Sicher in 4 Min deployen"
       },
       "metrics": {
         "title": "Für regulierte Teams gebaut",
@@ -876,16 +888,16 @@
         "deployment": "bis zur ersten sicheren Bereitstellung",
         "locales": "Sprachen sofort verfügbar"
       },
-      "titleHighlight": "complicated or expensive anymore"
+      "titleHighlight": "kompliziert oder teuer"
     },
     "systems": {
-      "title": "Systems",
+      "title": "Systeme",
       "subtitle": "Wählen Sie das passende Abonnement: AI-SOC für Detection und SLNC-env für abgeschottete Entwicklung.",
-      "cta": "View details",
+      "cta": "Details ansehen",
       "aiSoc": {
         "title": "AI-SOC",
-        "desc": "Managed detection & response system powered and operated by AI. Used to prevent web and email attacks",
-        "badge": "Subscription"
+        "desc": "Managed Detection-&-Response-System, von KI betrieben und geführt. Zur Abwehr von Web- und E-Mail-Angriffen.",
+        "badge": "Abonnement"
       },
       "slncEnv": {
         "title": "SLNC-env",
@@ -894,23 +906,23 @@
       },
       "sithub": {
         "title": "Sithub",
-        "desc": "Self-hosted GitHub alternative with built-in security scanning. All repositories and code analysis stay within your network.",
-        "badge": "Subscription"
+        "desc": "Selbst gehostete GitHub-Alternative mit integrierter Sicherheitsprüfung. Alle Repositories und Code-Analysen bleiben in Ihrem Netzwerk.",
+        "badge": "Abonnement"
       }
     },
     "services": {
-      "title": "Custom development services",
-      "subtitle": "AI agents, integrations, and full-cycle software delivery with security baked in from day one.",
-      "cta": "View services",
+      "title": "Individuelle Entwicklungsservices",
+      "subtitle": "KI-Agenten, Integrationen und Full-Cycle-Software-Delivery mit Sicherheit ab Tag eins.",
+      "cta": "Services ansehen",
       "cards": {
-        "agents": "Production-grade AI agents with guardrails, RAG, and secure connectors.",
-        "integrations": "Vendor-neutral integrations with your stack, IAM, and data governance.",
-        "delivery": "Full-cycle delivery with reliability SLOs, observability, and security reviews."
+        "agents": "Produktionsreife KI-Agenten mit Guardrails, RAG und sicheren Konnektoren.",
+        "integrations": "Vendor-neutrale Integrationen in Ihren Stack, IAM und Data Governance.",
+        "delivery": "Full-Cycle-Delivery mit Reliability-SLOs, Observability und Security Reviews."
       },
       "cardsTitle": {
-        "agents": "Agents",
-        "integrations": "Integrations",
-        "delivery": "Delivery"
+        "agents": "Agenten",
+        "integrations": "Integrationen",
+        "delivery": "Auslieferung"
       }
     },
     "contact": {
@@ -920,9 +932,9 @@
       "ctaSecondary": "Mit dem Serviceteam sprechen"
     },
     "resources": {
-      "title": "Featured articles",
-      "subtitle": "Silence AI is one of few private companies that have government level intelligence.",
-      "viewAll": "View all articles"
+      "title": "Empfohlene Artikel",
+      "subtitle": "Silence AI ist eines der wenigen privaten Unternehmen mit Geheimdienst-Niveau.",
+      "viewAll": "Alle Artikel ansehen"
     }
   }
 }

@@ -19,7 +19,7 @@ const DESKTOP_WIDTH = 1130;
 const Header = ({ onOpenModal, policyLang, onPolicyLangChange, onSithubGet }) => {
   const pathname = usePathname();
   const isMainPage = pathname === "/";
-  const isSithubPage = pathname === "/sithub";
+  const isSithubPage = pathname === "/sithub" || pathname === "/sithub/";
   const isPolicyPage = pathname?.startsWith("/policies");
   const isSlncEnvPolicyPage = pathname?.startsWith("/policies/slnc_env");
   const [isCondensed, setIsCondensed] = useState(false);
@@ -120,14 +120,14 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange, onSithubGet }) =>
             onClick={toggleMobileMenu}
           >
             <motion.div
-              className="absolute inset-0 px-6 pt-24 pb-16"
+              className="absolute inset-0 px-6 pt-24 pb-16 overflow-hidden"
               initial={{ y: -80 }}
               animate={{ y: 0 }}
               exit={{ y: -80 }}
               transition={{ duration: 0.25 }}
               onClick={(e) => e.stopPropagation()}
             >
-              <nav className="mx-auto flex max-w-sm flex-col space-y-6 text-lg">
+              <nav className="mx-auto flex w-full max-w-sm flex-col space-y-6 text-lg">
                 {navItems.map((item) => {
                   if (item.children) {
                     const expanded = isSystemsOpen;
@@ -205,11 +205,21 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange, onSithubGet }) =>
                     </button>
                   );
                 })}
-                <div className="pt-4 flex flex-col gap-4">
+                <div className="pt-4 flex flex-col gap-4 w-full items-center">
                   {isSlncEnvPolicyPage && policyLang && onPolicyLangChange ? (
                     <PolicyLanguageSelector currentLang={policyLang} onLanguageChange={onPolicyLangChange} align="left" />
                   ) : (
                     <LanguageSelector align="left" />
+                  )}
+                  {isMainPage && (
+                    <GlowButton
+                      onClick={() => {
+                        onOpenModal?.();
+                        setIsMobileMenuOpen(false);
+                      }}
+                    >
+                      {t("header.cta.contact", "Contact")}
+                    </GlowButton>
                   )}
                   {!isMainPage && !isPolicyPage && (
                     <GlowButton
@@ -225,7 +235,6 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange, onSithubGet }) =>
                         }
                         setIsMobileMenuOpen(false);
                       }}
-                      className="w-full"
                     >
                       {isSithubPage ? t("header.cta.get", "Get") : t("header.cta.requestDemo", "Request Demo")}
                     </GlowButton>
@@ -373,14 +382,14 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange, onSithubGet }) =>
                   className="flex-shrink-0"
                   style={
                     !isDesktop
-                      ? { transform: "scale(0.9)", transformOrigin: "right center" }
+                      ? { transform: "scale(0.85)", transformOrigin: "right center" }
                       : undefined
                   }
                 >
                   {isSlncEnvPolicyPage && policyLang && onPolicyLangChange ? (
-                    <PolicyLanguageSelector currentLang={policyLang} onLanguageChange={onPolicyLangChange} align={isDesktop ? "right" : "left"} />
+                    <PolicyLanguageSelector currentLang={policyLang} onLanguageChange={onPolicyLangChange} align={isDesktop ? "right" : "center"} />
                   ) : (
-                    <LanguageSelector align={isDesktop ? "right" : "left"} />
+                    <LanguageSelector align={isDesktop ? "right" : "center"} />
                   )}
                 </div>
                 {isDesktop && isMainPage && (
@@ -388,21 +397,24 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange, onSithubGet }) =>
                     {t("header.cta.contact", "Contact")}
                   </GlowButton>
                 )}
-                {isDesktop && !isMainPage && !isPolicyPage && (
+                {/* Get button for /sithub - desktop only, mobile shows in menu */}
+                {isDesktop && isSithubPage && (
                   <GlowButton
-                    onClick={
-                      isSithubPage
-                        ? () => {
-                            if (onSithubGet) {
-                              onSithubGet();
-                            } else {
-                              setCountrySelectOpen(true);
-                            }
-                          }
-                        : onOpenModal
-                    }
+                    onClick={() => {
+                      if (onSithubGet) {
+                        onSithubGet();
+                      } else {
+                        setCountrySelectOpen(true);
+                      }
+                    }}
                   >
-                    {isSithubPage ? t("header.cta.get", "Get") : t("header.cta.requestDemo", "Request Demo")}
+                    {t("header.cta.get", "Get")}
+                  </GlowButton>
+                )}
+                {/* Request Demo button for other non-main, non-policy, non-sithub pages - desktop only */}
+                {isDesktop && !isMainPage && !isPolicyPage && !isSithubPage && (
+                  <GlowButton onClick={onOpenModal}>
+                    {t("header.cta.requestDemo", "Request Demo")}
                   </GlowButton>
                 )}
               </motion.div>

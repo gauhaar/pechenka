@@ -28,307 +28,279 @@
     "login": "Biðja um sýnikennslu",
     "cta": {
       "contact": "Contact",
-      "download": "Download",
-      "requestDemo": "Request Demo"
+      "download": "Sækja",
+      "requestDemo": "Biðja um sýnikennslu"
     }
   },
   "affiliate": {
     "hero": {
-      "tagline": "Gakktu í samstarfsáætlun Silence AI",
-      "title": "Umbreyttu boðum í tekjur.",
-      "cta": "Skráðu þig í samstarfsáætlun",
-      "earnings": "$2,940.00",
-      "growth": "+18% miðað við síðasta mánuð",
-      "snapshot": {
-        "label": "Bein yfirlit",
-        "caption": "Frammistöðugögn uppfærast á 60 sekúndna fresti og staðfestar greiðslur samstillast samstundis."
-      },
-      "graph": {
-        "label": "Þróun tekna",
-        "title": "Vöxtur tilvísanatekna",
-        "window": "Síðustu 30 dagar",
-        "label0": "Vika 1",
-        "label1": "Vika 2",
-        "label2": "Vika 3",
-        "label3": "Vika 4",
-        "label4": "Vika 5",
-        "label5": "Vika 6",
-        "label6": "Í dag"
-      },
-      "metric": {
-        "conversion": "Virkjanir",
-        "conversionChange": "24 ný lið í þessum mánuði",
-        "pending": "Ógreiddar umbunir",
-        "pendingChange": "Úttektir afgreiddar innan 2 virkra daga"
-      }
-    },
-    "howItWorks": {
-      "title": "Hvernig þetta virkar",
-      "create": {
-        "title": "Búðu til tengilinn þinn",
-        "description": "Búðu til einstakan tilvísunartengil eða afsláttarkóða í Silence AI stjórnborðinu þínu."
-      },
-      "share": {
-        "title": "Deildu",
-        "description": "Bjóðaðu liðum með tölvupósti, á LinkedIn og í samfélögum. Fylgstu með frammistöðu í rauntíma."
-      },
-      "earn": {
-        "title": "Þénaðu",
-        "description": "Þú færð þóknun um leið og viðskiptavinir sem þú vísar á virkja Silence AI vörnin."
-      }
-    },
-    "commission": {
-      "heading": "Jafnvægisumbunir",
-      "highlight": {
-        "label": "Af hverju samstarfsaðilar kunna að meta þetta"
-      },
-      "reward": {
-        "title": "10% umbun fyrir hverja inneign",
-        "description": "Þegar boðið lið hleður Silence AI veskið sitt fær þú 10% af nettóupphæðinni samstundis."
-      },
-      "settlement": {
-        "title": "Rauntíma bókun í höfuðbók",
-        "description": "Umbanir bætast á samstarfsreikninginn innan einnar mínútu eftir að færslan klárast — engin handvirk samþykkt."
-      },
-      "withdrawal": {
-        "title": "Withdrawals processed in 2 business days",
-        "description": "Úttektarbeiðnir eru yfirfarnar sjálfkrafa og berast inn á bankareikninginn innan tveggja virkra daga."
-      },
-      "sample": {
-        "label": "Dæmi um inneign",
-        "caption": "Tekjur samstarfsaðila aukast með hverri inneign — engar stigendurstillingar né vörukortlagning.",
-        "topup": "$250 inneign → $25 umbun",
-        "topupHigher": "$1,000 inneign → $100 umbun"
-      },
-      "note": "Þóknunin er reiknuð af nettóupphæðinni eftir greiðslugjöld."
-    },
-    "faq": {
-      "title": "Spurningar og svör",
-      "payments": {
-        "question": "Hvernig fæ ég greitt?",
-        "answer": "Bættu VISA- eða Mastercard-númerinu við prófílinn þinn. Úttektir er hægt að færa beint á tilgreinda kortið."
-      },
-      "discounts": {
-        "question": "Fá viðskiptavinir sem ég vísa til afslátt?",
-        "answer": "Nei. Viðskiptavinir sem þú vísar til fá ekki afslátt af kaupum sínum; aðeins samstarfsaðilinn fær þóknun af vel heppnuðum tilvísunum."
-      },
-      "statistics": {
-        "question": "Hvenær sé ég tilvísunartölfræðina mína?",
-        "answer": "Um leið og notandi skráir sig með kóðanum eða tenglinum þínum birtast netfang hans og umbunin í stjórnborðinu."
-      }
-    },
-    "termsAff": {
-      "label": "Affiliate Program",
-      "title": "Affiliate Terms of Service",
-      "notice": "This policy is available only in English",
-      "intro": "These terms describe how rewards are issued and paid to partners participating in the Silence AI affiliate program.",
-      "meta": {
-        "effective": "Effective date: 10 November 2024",
-        "lastUpdated": "Last updated: 10 November 2024"
-      },
-      "sections": {
-        "overview": {
-          "title": "1. Program Overview",
-          "body1": "1.1 Agreement Scope: These Affiliate Terms of Service (\"Terms\") govern your participation in the Silence AI affiliate program operated by Silence AI LLC (\"Silence AI,\" \"we,\" \"us,\" or \"our\"). These Terms apply to you, the individual or entity enrolling as an affiliate partner (\"you\" or \"your\"), and, where applicable, your employer, principal, or organization if you act on their behalf.",
-          "body2": "1.2 Program Summary: Under this program, qualified partners earn commission-based rewards when referred customers purchase or top up the AI-SOC 1 product. Participation in the affiliate program also requires compliance with the general Silence AI Terms of Service."
+          "tagline": "Gakktu í samstarfsáætlun Silence AI",
+          "title": "Umbreyttu boðum í tekjur.",
+          "cta": "Skráðu þig í samstarfsáætlun",
+          "earnings": "$2,940.00",
+          "growth": "+18% miðað við síðasta mánuð",
+          "snapshot": {
+            "label": "Bein yfirlit",
+            "caption": "Frammistöðugögn uppfærast á 60 sekúndna fresti og staðfestar greiðslur samstillast samstundis."
+          },
+          "graph": {
+            "label": "Þróun tekna",
+            "title": "Vöxtur tilvísanatekna",
+            "window": "Síðustu 30 dagar",
+            "label0": "Vika 1",
+            "label1": "Vika 2",
+            "label2": "Vika 3",
+            "label3": "Vika 4",
+            "label4": "Vika 5",
+            "label5": "Vika 6",
+            "label6": "Í dag"
+          },
+          "metric": {
+            "conversion": "Virkjanir",
+            "conversionChange": "24 ný lið í þessum mánuði",
+            "pending": "Ógreiddar umbunir",
+            "pendingChange": "Úttektir afgreiddar innan 2 virkra daga"
+          }
         },
-        "eligibility": {
-          "title": "2. Partner Eligibility",
-          "item1": "You must maintain an active Silence AI affiliate account with accurate business and payment details.",
-          "item2": "Referrals must complete registration through your issued link or promo code.",
-          "item3": "Accounts found to be fraudulent, self-referred, or in breach of applicable law are not eligible for rewards."
+        "howItWorks": {
+          "title": "Hvernig þetta virkar",
+          "create": {
+            "title": "Búðu til tengilinn þinn",
+            "description": "Búðu til einstakan tilvísunartengil eða afsláttarkóða í Silence AI stjórnborðinu þínu."
+          },
+          "share": {
+            "title": "Deildu",
+            "description": "Bjóðaðu liðum með tölvupósti, á LinkedIn og í samfélögum. Fylgstu með frammistöðu í rauntíma."
+          },
+          "earn": {
+            "title": "Þénaðu",
+            "description": "Þú færð þóknun um leið og viðskiptavinir sem þú vísar á virkja Silence AI vörnin."
+          }
         },
         "commission": {
-          "title": "3. Commission Structure",
-          "body1": "You earn a 10% reward on every balance top-up completed by an account registered through your invitation.",
-          "body2": "Commission is calculated from the net top-up amount after payment processing fees are deducted."
+          "heading": "Jafnvægisumbunir",
+          "highlight": {
+            "label": "Af hverju samstarfsaðilar kunna að meta þetta"
+          },
+          "reward": {
+            "title": "10% umbun fyrir hverja inneign",
+            "description": "Þegar boðið lið hleður Silence AI veskið sitt fær þú 10% af nettóupphæðinni samstundis."
+          },
+          "settlement": {
+            "title": "Rauntíma bókun í höfuðbók",
+            "description": "Umbanir bætast á samstarfsreikninginn innan einnar mínútu eftir að færslan klárast — engin handvirk samþykkt."
+          },
+          "withdrawal": {
+            "title": "Úttektir afgreiddar innan 2 virkra daga",
+            "description": "Úttektarbeiðnir eru yfirfarnar sjálfkrafa og berast inn á bankareikninginn innan tveggja virkra daga."
+          },
+          "sample": {
+            "label": "Dæmi um inneign",
+            "caption": "Tekjur samstarfsaðila aukast með hverri inneign — engar stigendurstillingar né vörukortlagning.",
+            "topup": "$250 inneign → $25 umbun",
+            "topupHigher": "$1,000 inneign → $100 umbun"
+          },
+          "note": "Þóknunin er reiknuð af nettóupphæðinni eftir greiðslugjöld."
         },
-        "rewardPosting": {
-          "title": "4. Reward Posting",
-          "body1": "Rewards post to your partner balance within one minute after the transaction successfully clears. There is no manual approval queue.",
-          "body2": "Notifications appear in your affiliate dashboard alongside the customer identifier and top-up amount."
+        "faq": {
+          "title": "Spurningar og svör",
+          "payments": {
+            "question": "Hvernig fæ ég greitt?",
+            "answer": "Bættu VISA- eða Mastercard-númerinu við prófílinn þinn. Úttektir er hægt að færa beint á tilgreinda kortið."
+          },
+          "discounts": {
+            "question": "Fá viðskiptavinir sem ég vísa til afslátt?",
+            "answer": "Nei. Viðskiptavinir sem þú vísar til fá ekki afslátt af kaupum sínum; aðeins samstarfsaðilinn fær þóknun af vel heppnuðum tilvísunum."
+          },
+          "statistics": {
+            "question": "Hvenær sé ég tilvísunartölfræðina mína?",
+            "answer": "Um leið og notandi skráir sig með kóðanum eða tenglinum þínum birtast netfang hans og umbunin í stjórnborðinu."
+          }
         },
-        "withdrawals": {
-          "title": "5. Withdrawals",
-          "body1": "Withdrawal requests are processed within two business days and paid out using the settlement method on file.",
-          "body2": "Minimum withdrawal thresholds and supported payout networks are published inside the affiliate dashboard."
-        },
-        "productScope": {
-          "title": "6. Product Scope",
-          "body1": "Rewards are only provided for the AI-SOC 1 product. Other Silence AI services are excluded from the affiliate program unless explicitly stated otherwise in writing.",
-          "body2": "If additional products become eligible, Silence AI will publish an updated list inside these terms."
-        },
-        "compliance": {
-          "title": "7. Partner Conduct & Compliance",
-          "item1": "Partners must represent Silence AI accurately and avoid misleading claims about features or pricing.",
-          "item2": "Marketing communications must comply with applicable anti-spam, privacy, and advertising regulations.",
-          "item3": "Silence AI may suspend or terminate accounts that violate these obligations or harm the brand."
-        },
-        "changes": {
-          "title": "8. Changes & Contact",
-          "body1": "Silence AI may update these affiliate terms to reflect changes in the program or applicable law. Updated versions take effect upon publication on this page.",
-          "body2": "Questions about the affiliate program can be sent to info@silenceai.net."
+        "termsAff": {
+          "label": "Affiliate Program",
+          "title": "Affiliate Terms of Service",
+          "notice": "This policy is available only in English",
+          "intro": "These terms describe how rewards are issued and paid to partners participating in the Silence AI affiliate program.",
+          "meta": {
+            "effective": "Effective date: 10 November 2024",
+            "lastUpdated": "Last updated: 10 November 2024"
+          },
+          "sections": {
+            "overview": {
+              "title": "1. Program Overview",
+              "body1": "1.1 Agreement Scope: These Affiliate Terms of Service (\"Terms\") govern your participation in the Silence AI affiliate program operated by Silence AI LLC (\"Silence AI,\" \"we,\" \"us,\" or \"our\"). These Terms apply to you, the individual or entity enrolling as an affiliate partner (\"you\" or \"your\"), and, where applicable, your employer, principal, or organization if you act on their behalf.",
+              "body2": "1.2 Program Summary: Under this program, qualified partners earn commission-based rewards when referred customers purchase or top up the AI-SOC 1 product. Participation in the affiliate program also requires compliance with the general Silence AI Terms of Service."
+            },
+            "eligibility": {
+              "title": "2. Partner Eligibility",
+              "item1": "You must maintain an active Silence AI affiliate account with accurate business and payment details.",
+              "item2": "Referrals must complete registration through your issued link or promo code.",
+              "item3": "Accounts found to be fraudulent, self-referred, or in breach of applicable law are not eligible for rewards."
+            },
+            "commission": {
+              "title": "3. Commission Structure",
+              "body1": "You earn a 10% reward on every balance top-up completed by an account registered through your invitation.",
+              "body2": "Commission is calculated from the net top-up amount after payment processing fees are deducted."
+            },
+            "rewardPosting": {
+              "title": "4. Reward Posting",
+              "body1": "Rewards post to your partner balance within one minute after the transaction successfully clears. There is no manual approval queue.",
+              "body2": "Notifications appear in your affiliate dashboard alongside the customer identifier and top-up amount."
+            },
+            "withdrawals": {
+              "title": "5. Withdrawals",
+              "body1": "Withdrawal requests are processed within two business days and paid out using the settlement method on file.",
+              "body2": "Minimum withdrawal thresholds and supported payout networks are published inside the affiliate dashboard."
+            },
+            "productScope": {
+              "title": "6. Product Scope",
+              "body1": "Rewards are only provided for the AI-SOC 1 product. Other Silence AI services are excluded from the affiliate program unless explicitly stated otherwise in writing.",
+              "body2": "If additional products become eligible, Silence AI will publish an updated list inside these terms."
+            },
+            "compliance": {
+              "title": "7. Partner Conduct & Compliance",
+              "item1": "Partners must represent Silence AI accurately and avoid misleading claims about features or pricing.",
+              "item2": "Marketing communications must comply with applicable anti-spam, privacy, and advertising regulations.",
+              "item3": "Silence AI may suspend or terminate accounts that violate these obligations or harm the brand."
+            },
+            "changes": {
+              "title": "8. Changes & Contact",
+              "body1": "Silence AI may update these affiliate terms to reflect changes in the program or applicable law. Updated versions take effect upon publication on this page.",
+              "body2": "Questions about the affiliate program can be sent to info@silenceai.net."
+            }
+          }
         }
-      }
-    }
-  },
-  "hero": {
-    "headline": "AI-SOC 1: Cybersecurity is neither expensive nor complicated anymore",
-    "subheading": "The all in one, AI-based cybersecurity system that combines:",
-    "playgroundHeading": "60 sekúndna kynning",
-    "bullets": {
-      "web": "Real time web attack protection",
-      "email": "Email attacks protection",
-      "vulnerability": "Vulnerability-finder"
-    },
-    "buttons": {
-      "connect": "Connect in 4 minutes",
-      "tour": "Watch 90-sec Tour"
-    },
-    "tooltips": {
-      "web": {
-        "title": "Web Attack Protection",
-        "content": "System can protect against ALL types of web attacks, such as DDoS, SQLi, and others, except business logic vulnerabilities"
       },
-      "email": {
-        "title": "Email Attack Protection",
-        "content": "System can protect against ALL types of email attacks, such as phishing, malware attachment, dangerous links, etc."
-      },
-      "vulnerability": {
-        "title": "Vulnerability Finder",
-        "content": "System can find the vulnerabilities within the code of the application and by dynamically interacting with your website/API, including the way of finding vulnerabilities through the intelligence system"
-      }
-    }
-  },
   "playground": {
     "options": {
-      "globeShield": "Web Security & Traffic Management",
-      "emailSecurity": "Email Security"
+      "globeShield": "Veföryggi og umferðarstýring",
+      "emailSecurity": "Tölvupóstöryggi"
     }
   },
   "cookie": {
-    "title": "Technical Cookies Notice",
-    "description": "This website uses only first-party technical cookies that are set by us to remember your language preferences and ensure the cookie notice is not shown again on your next visit. No tracking or third-party cookies are used.",
-    "more": "Learn more in our",
-    "link": "Cookie Policy",
+    "title": "Tilkynning um tæknilegar smákökur",
+    "description": "Þessi vefsíða notar aðeins tæknilegar smákökur frá okkur til að muna tungumálaval þitt og tryggja að tilkynningin birtist ekki aftur. Engar rekjanlegar eða þriðja aðila smákökur eru notaðar.",
+    "more": "Lestu meira í",
+    "link": "Stefnu um smákökur",
     "ok": "OK"
   },
   "pricing": {
-    "title": "Pricing",
+    "title": "Verðskrá",
     "tooltips": {
       "cmcGlobal": {
-        "title": "CMC with Global Traffic Monitoring",
-        "content": "CMC (Centralized Management Console) integrates seamlessly with other security systems and is available under the same domain and interface as Global Shield and Security Tester allows you to manage network security at scale. From here, you can blacklist countries, close ports, and perform other operations"
+        "title": "CMC með alþjóðlegu umferðareftirliti",
+        "content": "CMC (miðlæg stjórnunarkonsól) tengist öðrum öryggiskerfum og er á sama léni og viðmóti og Global Shield og Security Tester, sem gerir þér kleift að stýra netöryggi í stærri skala. Héðan má setja lönd á svartlista, loka tengjum og framkvæma aðrar aðgerðir."
       },
       "countryBlacklisting": {
-        "title": "Country Blacklisting",
-        "content": "Block all traffic originating from a specific country"
+        "title": "Lokun á löndum",
+        "content": "Loka fyrir alla umferð sem kemur frá tilteknu landi."
       },
       "portManagement": {
-        "title": "Port Management",
-        "content": "Close unused ports to reduce attack surface. For example, disabling port 22 when SSH access is not needed. To minimize the risk of system getting compromised"
+        "title": "Stjórnun á tengjum",
+        "content": "Lokaðu ónotuðum tengjum til að minnka árásarflöt. T.d. slökkva á tengi 22 þegar SSH er ekki þörf, til að minnka áhættu á innbroti."
       },
       "cmcEmail": {
-        "title": "CMC with Advanced Email Flow Visualizer",
-        "content": "CMC (Centralized Management Console) integrates seamlessly with other security systems and is available under the same domain and interface as Global Shield and Security Tester. Within this console, you can monitor email flows and review emails for all corporate users you've added"
+        "title": "CMC með háþróaðri sjónrænni framsetningu á tölvupóstflæði",
+        "content": "CMC tengist öðrum öryggiskerfum og er á sama léni og viðmóti og Global Shield og Security Tester. Í þessari konsól geturðu fylgst með póstflæði og skoðað póst allra fyrirtækjanotenda sem þú hefur bætt við."
       },
       "dynamicVulnerability": {
-        "title": "Dynamic Vulnerability Finder",
-        "content": "Detects vulnerabilities by interacting with your website, including the way of finding vulnerabilities through the intelligence system"
+        "title": "Dýnamískur veikleikafinnari",
+        "content": "Finnur veikleika með því að eiga samskipti við vefinn þinn, þar á meðal með greindarkerfi."
       },
       "codeAnalyzer": {
-        "title": "Code Analyzer",
-        "content": "Identifies security issues directly in your codebase through a VS Code plugin, helping you fix problems before deployment"
+        "title": "Kóðagreinir",
+        "content": "Greinir öryggisvandamál beint í kóðagrunninum með VS Code-viðbót og hjálpar þér að laga þau fyrir dreifingu."
       },
       "intelligenceReport": {
-        "title": "Intelligence Report",
-        "content": "Generates detailed insights about your target, including open ports, running services, subdomains, and other sensitive information that may require action"
+        "title": "Greiningarskýrsla",
+        "content": "Skilar ítarlegum upplýsingum um markmið, þar á meðal opna tengi, keyrandi þjónustur, undirlén og aðrar viðkvæmar upplýsingar sem krefjast aðgerða."
       },
       "fullVulnerability": {
-        "title": "FULL Vulnerability Check",
-        "content": "A FULL vulnerability check includes both a dynamic vulnerability scan and a codebase vulnerability scan"
+        "title": "HEILDAR veikleikaprófun",
+        "content": "HEILDAR veikleikaprófun felur bæði í sér dýnamíska skönnun og skönnun á kóðagrunni."
       }
     },
     "plans": {
       "globalShield": {
-        "title": "Web Security & Traffic Management",
+        "title": "Veföryggi og umferðarstýring",
         "price": "$0.06/GB",
-        "description": "No limits\nNo additional fees",
-        "button": "Secure web-app and APIs",
+        "description": "Engin mörk\nEngin aukagjöld",
+        "button": "Tryggja vefapp og API",
         "features": {
-          "webProtection": "Protection against all types of web attacks, except business logic vulnerability exploitation",
-          "ddosProtection": "Real-time DDoS protection",
-          "cmc": "CMC with Global traffic monitoring system",
-          "country": "Country blacklisting feature",
-          "port": "Closing ports feature"
+          "webProtection": "Vörn gegn öllum tegundum vefárása, nema misnotkun á veikleikum í viðskiptalógík",
+          "ddosProtection": "Rauntíma DDoS-vörn",
+          "cmc": "CMC með alþjóðlegu umferðareftirlitskerfi",
+          "country": "Eiginleiki til lokunar á löndum",
+          "port": "Lokun tengja"
         }
       },
       "emailProtector": {
-        "title": "Email Security",
-        "price": "$10/month/account",
-        "description": "Up to 10 emails per day\nAdditional emails: $0.035 each email",
-        "button": "Secure Email",
+        "title": "Tölvupóstöryggi",
+        "price": "$10/mánuður/reikningur",
+        "description": "Allt að 10 tölvupóstar á dag\nAukapóstar: $0.035 hver",
+        "button": "Tryggja tölvupóst",
         "features": {
-          "cmcEmail": "CMC with most advanced email flow visualizer",
-          "visibility": "Complete visibility of sent and received emails of all the email accounts, in CMC, with automatic threat categorization",
-          "webClient": "Secure WebMail-client",
-          "phishing": "Phishing protection",
-          "malware": "Malware attachment scanning",
-          "links": "Dangerous link detection",
-          "spam": "Spam filtering",
-          "fakeSender": "Fake Sender Protection"
+          "cmcEmail": "CMC með háþróaðri sjónrænni framsetningu á tölvupóstflæði",
+          "visibility": "Full sýn á sendan og móttekinn póst allra reikninga í CMC með sjálfvirkri ógnarflokkun",
+          "webClient": "Öruggur vefpóstur",
+          "phishing": "Vörn gegn phishing",
+          "malware": "Skönnun á illgjörnum viðhengjum",
+          "links": "Greining á hættulegum tenglum",
+          "spam": "Ruslpóstsíun",
+          "fakeSender": "Vörn gegn fölsuðum sendanda"
         }
       },
       "securityTester": {
-        "title": "Vulnerability Finder",
-        "price": "$25/month",
-        "description": "Up to 50 FULL vulnerability checks per month\nAdditional FULL checks: $0.5 each",
-        "button": "Start Testing",
+        "title": "Veikleika-finnari",
+        "price": "$25/mánuður",
+        "description": "Allt að 50 HEILDAR prófanir á mánuði\nAukapróf: $0.5 hver",
+        "button": "Hefja prófanir",
         "features": {
-          "dynamic": "Dynamic vulnerability finder",
-          "codeAnalyzer": "Code analyzer",
-          "reports": "Easily understandable security assessment reports",
-          "intelligence": "Intelligence Report"
+          "dynamic": "Dýnamískur veikleikafinnari",
+          "codeAnalyzer": "Kóðagreinir",
+          "reports": "Auðskiljanlegar öryggisskýrslur",
+          "intelligence": "Greiningarskýrsla"
         }
       },
       "basic": {
-        "name": "Basic",
+        "name": "Grunnur",
         "features": {
-          "fix": "Critical Bug Fixes (48h SLA)",
-          "updates": "Monthly Updates",
-          "audit": "Quarterly Security Audits",
-          "manager": "Dedicated Manager"
+          "fix": "Kritískar villuleiðréttingar (48 klst. SLA)",
+          "updates": "Mánaðarlegar uppfærslur",
+          "audit": "Ársfjórðungslegar öryggisúttektir",
+          "manager": "Sérstakur stjórnandi"
         }
       },
       "pro": {
         "name": "Pro",
-        "badge": "Most Popular",
+        "badge": "Vinsælast",
         "features": {
-          "fix": "Critical Bug Fixes (24h SLA)",
-          "updates": "10h Monthly Updates",
-          "audit": "Monthly Security Audits",
-          "manager": "Dedicated Manager"
+          "fix": "Kritískar villuleiðréttingar (24 klst. SLA)",
+          "updates": "10 klst. uppfærslur á mánuði",
+          "audit": "Mánaðarlegar öryggisúttektir",
+          "manager": "Sérstakur stjórnandi"
         }
       },
       "enterprise": {
-        "name": "Enterprise",
-        "badge": "Best Value",
+        "name": "Fyrirtæki",
+        "badge": "Best verðgildi",
         "features": {
-          "fix": "Critical Bug Fixes (4h SLA)",
-          "updates": "Unlimited Updates + Roadmap",
-          "audit": "Weekly Audits + Backups",
-          "manager": "Dedicated Manager"
+          "fix": "Kritískar villuleiðréttingar (4 klst. SLA)",
+          "updates": "Ótakmarkaðar uppfærslur + vegvísir",
+          "audit": "Vikulegar úttektir + afritun",
+          "manager": "Sérstakur stjórnandi"
         }
       }
     },
-    "subtitle": "Farsímar fyrst áætlanir byggðar til að stækka með vörunni þinni...",
-    "percentMaintenance": "{percent}% yearly maintenance",
+    "subtitle": "Farsímavænar áætlanir byggðar til að stækka með vörunni þinni...",
+    "percentMaintenance": "{percent}% árlegur viðhaldskostnaður",
     "planEstimate": "${value}",
-    "perYear": "per year (est.)",
+    "perYear": "á ári (áætlað)",
     "calculator": {
-      "title": "Project Cost Calculator",
-      "subtitle": "Slide to see your yearly maintenance",
-      "projectCost": "Project Cost:",
+      "title": "Verkefnakostnaðarkalkúlator",
+      "subtitle": "Renndu til að sjá árlegt viðhald",
+      "projectCost": "Verkefniskostnaður:",
       "projectValue": "${value}"
     }
   },
@@ -355,71 +327,71 @@
         }
       },
       "securityTester": {
-        "title": "Security Tester - Next-Gen Vulnerability Testing",
-        "description": "Our system provides a One-Time-Token (OTT) for full-coverage security checks. Simply connect via our browser or VSCode extension.",
+        "title": "Security Tester – næstu kynslóðar veikleikaprófanir",
+        "description": "Kerfið veitir One-Time-Token (OTT) fyrir heildarskoðanir. Tengstu í gegnum vafra eða VS Code-viðbót.",
         "bullets": {
-          "one": "Specify security scope and target in the CMC.",
-          "two": "Paste the OTT and start the security check.",
-          "three": "Intelligence-driven risk insights."
+          "one": "Skilgreindu umfang og markmið í CMC.",
+          "two": "Límdu OTT og ræstu öryggisskoðun.",
+          "three": "Áhættuyfirlit knúið af greind."
         }
       }
     },
     "cmc": {
-      "title": "Centralized Management Console (CMC)",
-      "description": "All three components are managed through a unified console that provides centralized visualization, easy configuration and monitoring, and comprehensive security reporting."
+      "title": "Miðlæg stjórnunarkonsól (CMC)",
+      "description": "Allir þrír hlutar eru stýrðir í einni konsól sem veitir miðlæga sjónræna framsetningu, einfalda uppsetningu og eftirlit, ásamt ítarlegum öryggisskýrslum."
     }
   },
   "insights": {
     "items": [
       {
-        "title": "39 seconds",
-        "description": "There is a hacker attack every 39 seconds"
+        "title": "39 sekúndur",
+        "description": "Hackerárás á sér stað á 39 sekúndna fresti"
       },
       {
-        "title": "20M DDoS attacks",
-        "description": "20.5M DDoS attacks in Q1 2025 alone"
+        "title": "20 milljónir DDoS-árása",
+        "description": "20,5 milljónir DDoS-árása í aðeins fyrsta ársfjórðungi 2025"
       },
       {
-        "title": "Every day",
-        "description": "30 000 websites get hacked every single day"
+        "title": "Á hverjum degi",
+        "description": "30.000 vefsíður eru hakkaðar á hverjum degi"
       }
     ]
   },
   "floatingText": {
-    "headline": "Discover how hackers think",
-    "description": "Follow us for daily research on real attack methods and cyber threats"
+    "headline": "Sjáðu hvernig hakarar hugsa",
+    "description": "Fylgstu með okkur fyrir daglegar rannsóknir á raunverulegum árásaaðferðum og netógnum"
   },
   "modal": {
-    "title": "Under active development",
-    "body": "The system is expected to be launched on October 10"
+    "title": "Í virkri þróun",
+    "body": "Gert er ráð fyrir að kerfið fari í loftið 10. október"
   },
   "lamp": {
-    "title": "Reality of Cyberattacks"
+    "title": "Raunveruleiki netárása"
   },
   "stickySolution": {
     "webSecurity": {
-      "title": "Web security system: Website/API can be connected in 2 minutes",
-      "description": "Protection against web attacks such as DDoS, SQLi, etc. There is also ability to close ports, it is very good practice to close port 22, when it is not being used"
+      "title": "Veföryggiskerfi: vefur/API tengist á 2 mínútum",
+      "description": "Vörn gegn vefárásum eins og DDoS og SQLi. Hægt er að loka tengjum; góð venja er að loka tengi 22 þegar það er ekki í notkun."
     },
     "ciaMonitoring": {
-      "title": "CIA-Level Traffic Monitoring",
-      "description": "Our interactive 3D globe shows traffic volume by requests, users, and volume. The ability to see the history in the change of the number of users"
+      "title": "Umferðareftirlit á CIA-stigi",
+      "description": "Gagnvirkur 3D-hnöttur sýnir umferð eftir beiðnum, notendum og magni, með sögu breytinga á notendafjölda."
     },
     "userGrowth": {
-      "title": "Useful insights on the increase in the number of users",
-      "description": "The ability to see the history of changes of the number of users"
+      "title": "Gagnlegar innsýn í notendavöxt",
+      "description": "Sjáðu sögu breytinga á fjölda notenda."
     },
     "aiEmailProtection": {
-      "title": "World's First AI-based Email Protection system: Email network can be connected in 2 minutes",
-      "description": "For the admins, there is the CMC that shows complete visibility into all sent and received emails for accounts added by the administrator, with automatic threat categorization like spoofing, spam, phishing, dangerous link, and malware."
+      "title": "Fyrsta AI-drifið tölvupóstöryggiskerfið í heimi: netið tengist á 2 mínútum",
+      "description": "CMC veitir stjórnendum fulla sýn á alla sendan og móttekinn póst fyrir reikninga sem admin bætir við, með sjálfvirkri flokkun ógna eins og spoofing, spam, phishing, hættulegum tenglum og malware."
     },
     "emailVisualization": {
-      "title": "Visualization of the sent and received emails",
-      "description": "CMC with the most advanced, commercially available email flow visualizer"
+      "title": "Sjónræn framsetning á sendum og mótteknum tölvupósti",
+      "description": "CMC með fullkomnasta, markaðs-tiltæka tölvupóstflæðivísinum"
     },
     "secureWebmail": {
-      "title": "Secure Webmail Client",
-      "description": "For email accounts added by admin, there is the most secure webmail client. Detects and categorizes threats like spoofing, spam, phishing, and malware."
+      "title": "Öruggur vefpóstur",
+      "description": "Fyrir reikninga sem admin bætir við er öruggasti vefpóstur í boði. Hann greinir og flokkar ógnir eins og spoofing, spam, phishing og malware."
     }
   },
   "footer": {
@@ -468,154 +440,166 @@
   },
   "secureDevelopment": {
     "hero": {
-      "badge": "SLNC-env · Secure Development Environment",
-      "title": "Build systems with secure and private code",
-      "description": "Private development environment for enterprises, where code never leaves your corporate network. Meanwhile offering the latest AI-powered technology",
-      "requestSystem": "Request System"
+      "badge": "SLNC-env · Örugg þróunarvettvangur",
+      "title": "GitHub á þínum þjóni. Kóði fer aldrei út úr netinu.",
+      "description": "Sjálf-hýstur GitHub-valkostur með innbyggðri öryggisskönnun. Allt verður innan innviða þinna — geymslur, kóðagreinir og veikleikaskýrslur keyra staðbundið.",
+      "requestSystem": "Biðja um kerfi"
     },
     "components": {
-      "title": "Everything stays inside",
-      "subtitle": "Three components, one sealed loop",
-      "description": "Code, prompts, and builds never leave your network. SLNC-env keeps AI help, reviews, and delivery private for cloud providers, government teams, and industrial plants.",
+      "title": "Allt keyrir í þínum innviðum",
+      "subtitle": "Þrír kjarnaþættir, fullkomlega einangraðir",
+      "description": "Kóði, promptar og build fara aldrei út úr netinu þínu. SLNC-env heldur AI‑aðstoð, yfirferðum og afhendingu einkamálum fyrir skýjaveitur, ríkisteymi og iðnaðarverksmiðjur.",
       "sithub": {
-        "title": "Sithub Server",
-        "tag": "Local version control"
+        "title": "Sithub-þjónn",
+        "tag": "Staðbundin útgáfustýring"
       },
       "llm": {
-        "title": "LLM Server (Qwen-Code)",
-        "tag": "On-prem intelligence"
+        "title": "LLM-þjónn (Qwen-Code)",
+        "tag": "On‑prem greind"
       },
       "ide": {
-        "title": "IDE with Local Copilot",
-        "tag": "Cursor-class experience"
+        "title": "IDE með staðbundnum Copilot",
+        "tag": "Cursor‑flokks upplifun"
       },
-      "staysOnPrem": "Stays on-prem. No egress."
+      "gitServer": {
+        "title": "Git-geymsluþjónn",
+        "tag": "Sjálf‑hýst útgáfustýring"
+      },
+      "analyzer": {
+        "title": "Öryggisgreinir",
+        "tag": "Staðbundin kóðaskönnunarvél"
+      },
+      "vulnDb": {
+        "title": "Veikleika­grunnur",
+        "tag": "Niðurhalaðar öryggisplástrar"
+      },
+      "staysOnPrem": "Staðbundið. Engin útleið gagna."
     },
     "timeline": {
-      "title": "Why isolated, checked code matters",
-      "subtitle": "Recent wake-up calls",
+      "title": "Af hverju einangraður og yfirfarinn kóði skiptir máli",
+      "subtitle": "Nýlegir vakningarpunktar",
       "incident": {
-        "title": "Critical incident — leaked code",
-        "heading": "DeepSeek breach put source and prompts on the open internet",
-        "description": "Keep inference and scanning on-prem. No external model egress. Audit trails by default.",
-        "seePlan": "See containment plan"
+        "title": "Kritískt atvik — lekið kóða",
+        "heading": "DeepSeek-brot setti kóða og prompta á opið internet",
+        "description": "Haltu afleiðslu og skönnun á staðnum. Engin útleið til ytri líkana. Endurskoðunarslóðir sjálfgefið.",
+        "seePlan": "Sjá innilokunaráætlun"
       },
       "stuxnet": {
         "year": "2010",
         "attack": "Stuxnet",
-        "target": "Natanz enrichment facility",
-        "impact": "Destroyed ~1,000 centrifuges",
-        "severity": "Critical"
+        "target": "Natanz auðgunarstöð",
+        "impact": "~1.000 skilvindur eyðilagðar",
+        "severity": "Kritískt"
       },
       "blackEnergy": {
         "year": "2015",
         "attack": "BlackEnergy",
-        "target": "Ukraine power grid",
-        "impact": "230k customers lost power",
-        "severity": "High"
+        "target": "Raforkunet Úkraínu",
+        "impact": "230 þús. viðskiptavinir urðu rafmagnslausir",
+        "severity": "Hátt"
       },
       "triton": {
         "year": "2017",
         "attack": "TRITON",
-        "target": "Saudi petrochemical plant",
-        "impact": "Safety systems disabled",
-        "severity": "Critical"
+        "target": "Sádí‑arabísk petroefnaverksmiðja",
+        "impact": "Öryggiskerfi óvirk",
+        "severity": "Kritískt"
       },
       "colonialPipeline": {
         "year": "2021",
         "attack": "Colonial Pipeline",
-        "target": "US fuel pipeline",
-        "impact": "6-day fuel paralysis",
-        "severity": "High"
+        "target": "Eldsneytisleiðsla í Bandaríkjunum",
+        "impact": "6 daga truflun á eldsneyti",
+        "severity": "Hátt"
       },
       "pdvsa": {
         "year": "2025",
         "attack": "PDVSA",
-        "target": "Venezuela refining",
-        "impact": "Refinery operations disrupted",
-        "severity": "Medium"
+        "target": "Venesúelsk hreinsun",
+        "impact": "Rekstri hreinsunarstöðva stöðvaður",
+        "severity": "Miðlungs"
       }
     },
     "analyzer": {
-      "title": "Analyzer that beats CodeQL",
-      "subtitle": "Live assurance",
+      "title": "Greinir sem slær CodeQL",
+      "subtitle": "Rauntíma‑trygging",
       "features": {
         "quality": {
-          "title": "Automatic code quality",
-          "description": "Structure, style, and best-practice checks tuned for safety-critical code"
+          "title": "Sjálfvirk kóðagæði",
+          "description": "Strúktúr-, stíl- og bestu‑venju athuganir fyrir öryggiskrítískan kóða"
         },
         "vulnerability": {
-          "title": "Vulnerability sweeps",
-          "description": "SQLi, XSS, auth bypass, and insecure dependencies surfaced instantly"
+          "title": "Veikleika­skönnun",
+          "description": "SQLi, XSS, auðkenningar‑bypass og óöruggar háðir finnast strax"
         },
         "secrets": {
-          "title": "Secrets guard",
-          "description": "Keys, tokens, and credentials blocked at commit time"
+          "title": "Leyndarmála­vörn",
+          "description": "Lyklar, token og auðkenni eru stöðvuð við commit"
         },
         "config": {
-          "title": "Config hardening",
-          "description": "Docker/K8s, IAM, and network policies scanned for privilege creep"
+          "title": "Stillingarherting",
+          "description": "Docker/K8s, IAM og netstefnur eru skannaðar fyrir forréttindaskrið"
         }
       },
       "beyondCodeQL": {
-        "title": "Finds what static queries miss",
-        "subtitle": "Beyond CodeQL",
-        "description": "Finds misconfigs and vulnerable packages faster than CodeQL and offers fixes, not just alerts.",
+        "title": "Finnur það sem stöðugar fyrirspurnir missa",
+        "subtitle": "Utan CodeQL",
+        "description": "Finnur rangar stillingar og varnarlausar pakkar hraðar en CodeQL og býður upp á lagfæringar, ekki bara viðvaranir.",
         "points": {
-          "packages": "Knows package graphs and flags risky dependencies in seconds.",
-          "config": "Spots config drift and privilege creep—beyond static rules.",
-          "patches": "Each finding comes with a suggested patch and owner."
+          "packages": "Þekkir pakkagraf og flaggar áhættusömum háðum á sekúndum.",
+          "config": "Spotar stillingarskrið og forréttindahækkun — umfram stöðugar reglur.",
+          "patches": "Hvert finna fylgir tillaga að plástri og ábyrgðaraðili."
         }
       },
       "visualizer": {
-        "title": "Code analyzer in action",
-        "subtitle": "Visualizer",
-        "description": "Crisp snapshots from recent scans, rendered beautifully inside the on-prem console.",
-        "privateWorkspace": "Private workspace only",
+        "title": "Kóðagreinir í aksjón",
+        "subtitle": "Sjónræn framsetning",
+        "description": "Skýrar skyndimyndir af nýlegum skönnunum birtar á fallegan hátt í þinni on‑prem stjórnstöð.",
+        "privateWorkspace": "Aðeins einkavinnusvæði",
         "andManyMore": "Og margt fleira...",
         "shots": {
           "scanOverview": {
-            "title": "Scan overview",
-            "description": "See issues grouped by severity before code leaves your network."
+            "title": "Yfirlit skönnunar",
+            "description": "Sjáðu vandamál flokkuð eftir alvarleika áður en kóði fer út úr netinu þínu."
           },
           "misconfigurations": {
-            "title": "Detection of misconfigurations",
-            "description": "Our AI-powered code analyzer even finds misconfigurations within the code."
+            "title": "Uppgötvun rangra stillinga",
+            "description": "AI‑knúinn kóðagreinir finnur jafnvel rangar stillingar inni í kóða."
           },
           "inlineDiffs": {
-            "title": "Inline diffs",
-            "description": "Review suggested patches inline with security context."
+            "title": "Inline‑diffar",
+            "description": "Skoðaðu tillögur að plástrum inline með öryggissamhengi."
           }
         }
       }
     },
     "industries": {
-      "title": "Built for regulated, high-impact sectors",
-      "subtitle": "Where we deploy",
+      "title": "Byggt fyrir reglubundna, áhrifamikla geira",
+      "subtitle": "Hvar við setjum upp",
       "oilGas": {
-        "title": "Oil & Gas",
-        "description": "Drilling, refining, pipeline control"
+        "title": "Olía og gas",
+        "description": "Boranir, hreinsun, leiðslustýringar"
       },
       "energy": {
-        "title": "Energy",
-        "description": "Grid, distribution, and EMS"
+        "title": "Orka",
+        "description": "Raforkunet, dreifing og EMS"
       },
       "nuclear": {
-        "title": "Nuclear",
-        "description": "Reactor controls and safety"
+        "title": "Kjarnorka",
+        "description": "Stýringar og öryggi kjarnaofna"
       },
       "manufacturing": {
-        "title": "Manufacturing",
-        "description": "ICS, OT, and robotics"
+        "title": "Framleiðsla",
+        "description": "ICS, OT og róbótar"
       },
       "government": {
-        "title": "Government",
-        "description": "Ministries, defense, critical agencies"
+        "title": "Stjórnvöld",
+        "description": "Ráðuneyti, varnir, mikilvægar stofnanir"
       }
     }
   },
   "pricingCta": {
-    "requestSystem": "Request System"
+    "requestSystem": "Biðja um kerfi"
   },
   "contactForm": {
     "title": "Contact Us",
@@ -682,34 +666,34 @@
     ]
   },
   "requestDemoModal": {
-    "title": "Request System",
-    "name": "Name",
-    "email": "Corporate Email",
-    "company": "Company Name",
+    "title": "Biðja um kynningu",
+    "name": "Nafn",
+    "email": "Netfang",
+    "company": "Fyrirtæki",
     "placeholders": {
-      "name": "John Doe",
-      "email": "john@company.com",
-      "company": "Acme Corp"
+      "name": "Jón Jónsson",
+      "email": "jon@fyrirtaeki.is",
+      "company": "Acme ehf."
     },
-    "submit": "Send Request",
-    "successTitle": "Request Sent!",
-    "successBody": "Thank you for your interest. We will be in touch shortly.",
-    "close": "Close"
+    "submit": "Senda beiðni",
+    "successTitle": "Takk!",
+    "successBody": "Við höfum samband fljótlega til að skipuleggja kynningu.",
+    "close": "Loka"
   },
   "requestSystemModal": {
-    "title": "Request System",
-    "name": "Name",
-    "email": "Corporate Email",
-    "company": "Company Name",
+    "title": "Biðja um kerfi",
+    "name": "Nafn",
+    "email": "Fyrirtækjapóstur",
+    "company": "Fyrirtækisnafn",
     "placeholders": {
-      "name": "John Doe",
-      "email": "john@company.com",
-      "company": "Acme Corp"
+      "name": "Jón Jónsson",
+      "email": "jon@fyrirtaeki.is",
+      "company": "Acme ehf."
     },
-    "submit": "Download",
-    "successTitle": "Request Sent!",
-    "successBody": "Thank you. The system download instructions will be sent to your email.",
-    "close": "Close"
+    "submit": "Hlaða niður",
+    "successTitle": "Beiðni send!",
+    "successBody": "Takk. Leiðbeiningar um niðurhal verða sendar á netfangið þitt.",
+    "close": "Loka"
   },
   "policySidebar": {
     "tableOfContents": "Table of Contents"
@@ -727,8 +711,8 @@
     },
     "features": {
       "fast": {
-        "title": "Hrð afhending með gæðum stórfyrirtækja",
-        "description": "Hröð, endurtekin afhendingarlotu sem uppfylla áreiðanleika og reglufylgni stórfyrirtækja.",
+        "title": "Hröð afhending með gæðum stórfyrirtækja",
+        "description": "Hröð, endurtekin afhendingarlotur sem uppfylla áreiðanleika og reglufylgni stórfyrirtækja.",
         "pill": "Hraði + Gæði"
       },
       "ai": {
@@ -807,7 +791,7 @@
         "title": "Silence AI-SOC",
         "problem": "Mikill viðvörunartroðningur",
         "solution": "Gervigreindargreining og sjálfvirk viðbrögð",
-        "result": "−68% falskar jákvæður",
+        "result": "−68% falskar jákvæðar",
         "metricLabel": "Magn falskra viðvarana"
       }
     }
@@ -825,7 +809,7 @@
         "desc": "UX, arkitektúr, frumgerð."
       },
       "poc": {
-        "title": "Sönnun á hugmynd",
+        "title": "Sönnun á hugmynd (PoC)",
         "desc": "Hröð staðfesting með mælanlegum KPI."
       },
       "build": {
@@ -844,7 +828,7 @@
   },
   "technologyStack": {
     "title": "Tæknistakkur",
-    "subtitle": "Vandlega valinn, framleiðsluklassa stakkur hannaður fyrir hraða, skalánaleka og fallega notendaupplifun."
+    "subtitle": "Vandlega valinn, framleiðsluklassa stakkur hannaður fyrir hraða, skalanleika og fallega notendaupplifun."
   },
   "backToTop": {
     "label": "Aftur á toppinn"
@@ -895,70 +879,70 @@
   },
   "home": {
     "hero": {
-      "badge": "AI security & development",
-      "title": "Cybersecurity is no longer",
-      "subtitle": "Build securely. Deploy confidently.",
-      "ctaPrimary": "Request demo",
-      "ctaSecondary": "Explore systems",
+      "badge": "AI öryggi og þróun",
+      "title": "Netöryggi er ekki lengur",
+      "subtitle": "Byggðu örugglega. Settu upp af öryggi.",
+      "ctaPrimary": "Biðja um kynningu",
+      "ctaSecondary": "Skoða kerfin",
       "highlights": {
-        "coverage": "24/7 AI-assisted SOC",
-        "onPrem": "0-egress on-prem",
-        "deploy": "Secure deploy in 4 min"
+        "coverage": "AI-aðstoðað SOC allan sólarhringinn",
+        "onPrem": "Enginn gagnastraumur út, on-prem",
+        "deploy": "Örugg uppsetning á 4 mín."
       },
       "metrics": {
-        "title": "Built for regulated teams",
-        "soc": "AI-assisted SOC coverage",
-        "egress": "All on-prem—code, prompts, builds",
-        "deployment": "to first secure deployment",
-        "locales": "locales supported out-of-box"
+        "title": "Hannað fyrir reglubundin teymi",
+        "soc": "AI-aðstoðað SOC-umfang",
+        "egress": "Allt on-prem — kóði, promptar, build",
+        "deployment": "að fyrstu öruggu uppsetningu",
+        "locales": "tungumál studd strax"
       },
-      "titleHighlight": "complicated or expensive anymore"
+      "titleHighlight": "flókið eða dýrt"
     },
     "systems": {
-      "title": "Systems",
-      "subtitle": "Choose the subscription product that fits: AI-SOC for detection and SLNC-env for sealed development.",
-      "cta": "View details",
+      "title": "Kerfi",
+      "subtitle": "Veldu rétta áskrift: AI-SOC fyrir greiningu og SLNC-env fyrir lokaða þróun.",
+      "cta": "Skoða nánar",
       "aiSoc": {
         "title": "AI-SOC",
-        "desc": "Managed detection & response system powered and operated by AI. Used to prevent web and email attacks",
-        "badge": "Subscription"
+        "desc": "Stýrð greiningar- og viðbragðskerfi knúið og rekið af AI. Notað til að koma í veg fyrir vef- og tölvupóstárásir.",
+        "badge": "Áskrift"
       },
       "slncEnv": {
         "title": "SLNC-env",
-        "desc": "Sealed development cloud that keeps code, prompts, and builds on-prem.",
-        "badge": "Subscription"
+        "desc": "Lokuð þróunarský sem heldur kóða, promptum og build á staðnum.",
+        "badge": "Áskrift"
       },
       "sithub": {
         "title": "Sithub",
-        "desc": "Self-hosted GitHub alternative with built-in security scanning. All repositories and code analysis stay within your network.",
-        "badge": "Subscription"
+        "desc": "Sjálf-hýst GitHub-valkostur með innbyggðri öryggisskimun. Öll geymslur og kóðagreiningar haldast innan netsins.",
+        "badge": "Áskrift"
       }
     },
     "services": {
-      "title": "Custom development services",
-      "subtitle": "AI agents, integrations, and full-cycle software delivery with security baked in from day one.",
-      "cta": "View services",
+      "title": "Sérsniðnar þróunarþjónustur",
+      "subtitle": "AI-umboðsmenn, samþættingar og fullur lífsferill afhendingar hugbúnaðar með öryggi innbyggðu frá fyrsta degi.",
+      "cta": "Skoða þjónustur",
       "cards": {
-        "agents": "Production-grade AI agents with guardrails, RAG, and secure connectors.",
-        "integrations": "Vendor-neutral integrations with your stack, IAM, and data governance.",
-        "delivery": "Full-cycle delivery with reliability SLOs, observability, and security reviews."
+        "agents": "Framleiðslugæðir AI-umboðsmenn með guardrails, RAG og öruggum tengingum.",
+        "integrations": "Birgjaháðlausar samþættingar við stackinn þinn, IAM og gagnastjórnun.",
+        "delivery": "Heildarafhending með áreiðanleika-SLO, observability og öryggisrýni."
       },
       "cardsTitle": {
-        "agents": "Agents",
-        "integrations": "Integrations",
-        "delivery": "Delivery"
+        "agents": "Umboðsmenn",
+        "integrations": "Samþættingar",
+        "delivery": "Afhending"
       }
     },
     "contact": {
-      "title": "Ready to combine AI-SOC and SLNC-env?",
-      "subtitle": "Tell us your security and delivery goals—we'll align the right system and services.",
-      "cta": "Request demo",
-      "ctaSecondary": "Talk to services team"
+      "title": "Tilbúin/n að sameina AI-SOC og SLNC-env?",
+      "subtitle": "Segðu okkur frá öryggis- og afhendingarmarkmiðum — við samræmum rétt kerfi og þjónustur.",
+      "cta": "Biðja um kynningu",
+      "ctaSecondary": "Tala við þjónustuteymi"
     },
     "resources": {
-      "title": "Featured articles",
-      "subtitle": "Silence AI is one of few private companies that have government level intelligence.",
-      "viewAll": "View all articles"
+      "title": "Valdar greinar",
+      "subtitle": "Silence AI er eitt af fáum einkafyrirtækjum með greind á ríkisstigi.",
+      "viewAll": "Sjá allar greinar"
     }
   }
 }

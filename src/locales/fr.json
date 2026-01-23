@@ -91,7 +91,7 @@
         "description": "Les récompenses sont créditées sur votre solde partenaire en moins d'une minute après la transaction, sans file d'attente manuelle."
       },
       "withdrawal": {
-        "title": "Withdrawals processed in 2 business days",
+        "title": "Les retraits sont traités sous 2 jours ouvrés",
         "description": "Les demandes de retrait sont vérifiées automatiquement et arrivent sur votre compte bancaire sous deux jours ouvrés."
       },
       "sample": {
@@ -120,6 +120,18 @@
     "termsAff": {
       "label": "Affiliate Program",
       "title": "Affiliate Terms of Service",
+        "gitServer": {
+          "title": "Serveur de dépôts Git",
+          "tag": "Gestion de versions auto-hébergée"
+        },
+        "analyzer": {
+          "title": "Analyseur de sécurité",
+          "tag": "Moteur local d’analyse de code"
+        },
+        "vulnDb": {
+          "title": "Base de vulnérabilités",
+          "tag": "Correctifs de sécurité téléchargés"
+        },
       "notice": "This policy is available only in English",
       "intro": "These terms describe how rewards are issued and paid to partners participating in the Silence AI affiliate program.",
       "meta": {
@@ -356,7 +368,7 @@
   },
   "modal": {
     "title": "En cours de développement",
-    "body": "The system is expected to be launched on October 10"
+    "body": "Le système devrait être lancé le 10 octobre"
   },
   "lamp": {
     "title": "La réalité des cyberattaques"
@@ -580,7 +592,7 @@
     }
   },
   "pricingCta": {
-    "requestSystem": "Request System"
+    "requestSystem": "Demander le système"
   },
   "contactForm": {
     "title": "Contact Us",
@@ -647,34 +659,34 @@
     ]
   },
   "requestDemoModal": {
-    "title": "Request System",
-    "name": "Name",
-    "email": "Corporate Email",
-    "company": "Company Name",
+    "title": "Demander une démo",
+    "name": "Nom",
+    "email": "E-mail",
+    "company": "Entreprise",
     "placeholders": {
-      "name": "John Doe",
-      "email": "john@company.com",
-      "company": "Acme Corp"
+      "name": "Jean Dupont",
+      "email": "jean@entreprise.com",
+      "company": "Acme SAS"
     },
-    "submit": "Send Request",
-    "successTitle": "Request Sent!",
-    "successBody": "Thank you for your interest. We will be in touch shortly.",
-    "close": "Close"
+    "submit": "Envoyer la demande",
+    "successTitle": "Merci !",
+    "successBody": "Nous vous recontactons rapidement pour planifier la démo.",
+    "close": "Fermer"
   },
   "requestSystemModal": {
-    "title": "Request System",
-    "name": "Name",
-    "email": "Corporate Email",
-    "company": "Company Name",
+    "title": "Demander le système",
+    "name": "Nom",
+    "email": "E-mail professionnel",
+    "company": "Nom de l'entreprise",
     "placeholders": {
-      "name": "John Doe",
-      "email": "john@company.com",
-      "company": "Acme Corp"
+      "name": "Jean Dupont",
+      "email": "jean@entreprise.com",
+      "company": "Acme SAS"
     },
-    "submit": "Download",
-    "successTitle": "Request Sent!",
-    "successBody": "Thank you. The system download instructions will be sent to your email.",
-    "close": "Close"
+    "submit": "Télécharger",
+    "successTitle": "Demande envoyée !",
+    "successBody": "Merci. Les instructions de téléchargement du système seront envoyées à votre e-mail.",
+    "close": "Fermer"
   },
   "policySidebar": {
     "tableOfContents": "Table of Contents"

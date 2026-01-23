@@ -91,7 +91,7 @@
         "description": "取引完了から1分以内にリワードがパートナー残高へ反映され、手動承認は不要です。"
       },
       "withdrawal": {
-        "title": "Withdrawals processed in 2 business days",
+        "title": "出金は営業日2日以内に処理",
         "description": "出金リクエストは自動で審査され、営業日2日以内に銀行口座へ入金されます。"
       },
       "sample": {
@@ -120,6 +120,18 @@
     "termsAff": {
       "label": "Affiliate Program",
       "title": "Affiliate Terms of Service",
+        "gitServer": {
+          "title": "Gitリポジトリサーバー",
+          "tag": "セルフホストのバージョン管理"
+        },
+        "analyzer": {
+          "title": "セキュリティアナライザー",
+          "tag": "ローカルコードスキャンエンジン"
+        },
+        "vulnDb": {
+          "title": "脆弱性データベース",
+          "tag": "ダウンロード済みセキュリティパッチ"
+        },
       "notice": "This policy is available only in English",
       "intro": "These terms describe how rewards are issued and paid to partners participating in the Silence AI affiliate program.",
       "meta": {
@@ -203,7 +215,7 @@
   "playground": {
     "options": {
       "globeShield": "Webセキュリティとトラフィック管理",
-      "emailSecurity": "Email Security"
+      "emailSecurity": "メールセキュリティ"
     }
   },
   "cookie": {
@@ -292,43 +304,43 @@
         }
       },
       "basic": {
-        "name": "Basic",
+        "name": "ベーシック",
         "features": {
-          "fix": "Critical Bug Fixes (48h SLA)",
-          "updates": "Monthly Updates",
-          "audit": "Quarterly Security Audits",
-          "manager": "Dedicated Manager"
+          "fix": "重大バグ修正（48時間SLA）",
+          "updates": "月次アップデート",
+          "audit": "四半期セキュリティ監査",
+          "manager": "専任マネージャー"
         }
       },
       "pro": {
-        "name": "Pro",
-        "badge": "Most Popular",
+        "name": "プロ",
+        "badge": "最も人気",
         "features": {
-          "fix": "Critical Bug Fixes (24h SLA)",
-          "updates": "10h Monthly Updates",
-          "audit": "Monthly Security Audits",
-          "manager": "Dedicated Manager"
+          "fix": "重大バグ修正（24時間SLA）",
+          "updates": "月10時間のアップデート",
+          "audit": "月次セキュリティ監査",
+          "manager": "専任マネージャー"
         }
       },
       "enterprise": {
-        "name": "Enterprise",
-        "badge": "Best Value",
+        "name": "エンタープライズ",
+        "badge": "ベストバリュー",
         "features": {
-          "fix": "Critical Bug Fixes (4h SLA)",
-          "updates": "Unlimited Updates + Roadmap",
-          "audit": "Weekly Audits + Backups",
-          "manager": "Dedicated Manager"
+          "fix": "緊急バグ修正（4時間SLA）",
+          "updates": "無制限アップデート + ロードマップ",
+          "audit": "週次監査 + バックアップ",
+          "manager": "専任マネージャー"
         }
       }
     },
     "subtitle": "モバイルファーストのプランは、あなたの製品とともに拡張するように構築されています...",
-    "percentMaintenance": "{percent}% yearly maintenance",
+    "percentMaintenance": "{percent}% 年間メンテナンス",
     "planEstimate": "${value}",
-    "perYear": "per year (est.)",
+    "perYear": "年あたり（概算）",
     "calculator": {
-      "title": "Project Cost Calculator",
-      "subtitle": "Slide to see your yearly maintenance",
-      "projectCost": "Project Cost:",
+      "title": "プロジェクト費用計算",
+      "subtitle": "スライドして年間メンテナンスを確認",
+      "projectCost": "プロジェクト費用：",
       "projectValue": "${value}"
     }
   },
@@ -391,7 +403,7 @@
   },
   "modal": {
     "title": "開発中",
-    "body": "The system is expected to be launched on October 10"
+    "body": "システムは10月10日にリリース予定です"
   },
   "lamp": {
     "title": "サイバー攻撃の現実"
@@ -399,19 +411,19 @@
   "stickySolution": {
     "webSecurity": {
       "title": "Webセキュリティシステム：サイト/APIは2分で接続",
-      "description": "DDoSやSQLiなどのWeb攻撃を防御。ポート22を使用しない場合に閉じるのは良い運用です。"
+      "description": "DDoSやSQLiなどのWeb攻撃から保護。不要な場合はポート22を閉じるのが良い実践です。"
     },
     "ciaMonitoring": {
       "title": "CIAレベルのトラフィック監視",
       "description": "インタラクティブ3Dグローブでリクエスト数、ユーザー数、ボリューム、履歴を表示。"
     },
     "userGrowth": {
-      "title": "ユーザー増加に関する有益な洞察",
-      "description": "ユーザー数の推移を確認"
+      "title": "ユーザー成長に関する有益な洞察",
+      "description": "ユーザー数の変化履歴を確認"
     },
     "aiEmailProtection": {
-      "title": "世界初のAIメール防御：ネットワークは2分で接続",
-      "description": "CMCは管理者に、追加したアカウントの送受信メールを完全に可視化し、スプーフィング・スパム・フィッシング・危険リンク・マルウェアを自動分類します。"
+      "title": "AIによるメール保護：2分でネットワーク接続",
+      "description": "CMCが送受信メールを全面可視化し、自動で脅威分類（なりすまし、スパム、フィッシング、危険リンク、マルウェア）します。"
     },
     "emailVisualization": {
       "title": "送受信メールの可視化",
@@ -419,7 +431,7 @@
     },
     "secureWebmail": {
       "title": "安全なWebメールクライアント",
-      "description": "管理者が追加したアカウント向けの高セキュリティWebメールで、スプーフィングやスパム、フィッシング、マルウェアを検知します。"
+      "description": "管理者が追加したアカウント向けに、なりすまし・スパム・フィッシング・マルウェアを検知・分類する安全なWebクライアントを提供します。"
     }
   },
   "footer": {
@@ -429,10 +441,10 @@
     "addressValue": "Media City Free Zone, Al Messaned, Sharjah, UAE",
     "links": {
       "termsUse": "利用規約",
-      "termsService": "サービス規約",
+      "termsService": "サービス利用規約",
       "privacy": "プライバシーポリシー",
-      "cookies": "Cookieポリシー",
-      "affiliateTerms": "Affiliate Terms of Service"
+      "cookies": "クッキーポリシー",
+      "affiliateTerms": "アフィリエイト利用規約"
     },
     "copyright": "© {year} Silence AI. 無断複写・転載を禁じます。"
   },
@@ -615,7 +627,7 @@
     }
   },
   "pricingCta": {
-    "requestSystem": "Request System"
+    "requestSystem": "システムをリクエスト"
   },
   "contactForm": {
     "title": "Contact Us",
@@ -682,34 +694,34 @@
     ]
   },
   "requestDemoModal": {
-    "title": "Request System",
-    "name": "Name",
-    "email": "Corporate Email",
-    "company": "Company Name",
+    "title": "デモを依頼",
+    "name": "お名前",
+    "email": "メールアドレス",
+    "company": "会社名",
     "placeholders": {
-      "name": "John Doe",
-      "email": "john@company.com",
-      "company": "Acme Corp"
+      "name": "山田 太郎",
+      "email": "taro@company.com",
+      "company": "Acme株式会社"
     },
-    "submit": "Send Request",
-    "successTitle": "Request Sent!",
-    "successBody": "Thank you for your interest. We will be in touch shortly.",
-    "close": "Close"
+    "submit": "依頼を送信",
+    "successTitle": "ありがとうございます！",
+    "successBody": "デモ日程のご案内のため、追ってご連絡します。",
+    "close": "閉じる"
   },
   "requestSystemModal": {
-    "title": "Request System",
-    "name": "Name",
-    "email": "Corporate Email",
-    "company": "Company Name",
+    "title": "システムをリクエスト",
+    "name": "お名前",
+    "email": "会社メール",
+    "company": "会社名",
     "placeholders": {
-      "name": "John Doe",
-      "email": "john@company.com",
-      "company": "Acme Corp"
+      "name": "山田 太郎",
+      "email": "taro@company.com",
+      "company": "Acme株式会社"
     },
-    "submit": "Download",
-    "successTitle": "Request Sent!",
-    "successBody": "Thank you. The system download instructions will be sent to your email.",
-    "close": "Close"
+    "submit": "ダウンロード",
+    "successTitle": "送信しました！",
+    "successBody": "ありがとうございます。システムのダウンロード手順をメールでお送りします。",
+    "close": "閉じる"
   },
   "policySidebar": {
     "tableOfContents": "Table of Contents"

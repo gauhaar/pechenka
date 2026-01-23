@@ -26,6 +26,13 @@ export const metadata = {
   },
 };
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+};
+
 // For static export, we use the default locale at build time.
 // The LanguageContext handles client-side language detection and switching.
 const locale = defaultLocale;

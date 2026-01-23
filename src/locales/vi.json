@@ -120,6 +120,18 @@
     "termsAff": {
       "label": "Chương trình liên kết",
       "title": "Điều khoản dịch vụ cho đối tác liên kết",
+        "gitServer": {
+          "title": "Máy chủ kho Git",
+          "tag": "Quản lý phiên bản tự lưu trữ"
+        },
+        "analyzer": {
+          "title": "Bộ phân tích bảo mật",
+          "tag": "Công cụ quét mã cục bộ"
+        },
+        "vulnDb": {
+          "title": "Cơ sở dữ liệu lỗ hổng",
+          "tag": "Bản vá bảo mật đã tải về"
+        },
       "notice": "Chính sách này chỉ có bản tiếng Anh",
       "intro": "Các điều khoản này mô tả cách phát hành và chi trả phần thưởng cho đối tác tham gia chương trình liên kết của Silence AI.",
       "meta": {
@@ -617,18 +629,18 @@
     ]
   },
   "requestDemoModal": {
-    "title": "Yêu cầu hệ thống",
+    "title": "Yêu cầu demo",
     "name": "Họ tên",
     "email": "Email công ty",
     "company": "Tên công ty",
     "placeholders": {
-      "name": "John Doe",
-      "email": "john@company.com",
+      "name": "Nguyễn Văn A",
+      "email": "nguyen@congty.vn",
       "company": "Acme Corp"
     },
     "submit": "Gửi yêu cầu",
     "successTitle": "Đã gửi yêu cầu!",
-    "successBody": "Cảm ơn bạn. Chúng tôi sẽ liên hệ sớm.",
+    "successBody": "Cảm ơn bạn. Chúng tôi sẽ liên hệ sớm để sắp xếp demo.",
     "close": "Đóng"
   },
   "requestSystemModal": {
@@ -744,7 +756,7 @@
   },
   "caseStudies": {
     "badge": "Tác động đã được chứng minh",
-    "title": "Case Study",
+    "title": "Nghiên cứu điển hình",
     "subtitle": "Chúng tôi không chỉ giao tính năng — chúng tôi giao kết quả.",
     "problem": "Vấn đề:",
     "solution": "Giải pháp:",
@@ -802,7 +814,7 @@
         "desc": "CI/CD, giám sát, tăng cường bảo mật."
       },
       "support": {
-        "title": "Hỗ trợ & Qúy mô",
+        "title": "Hỗ trợ & Quy mô",
         "desc": "Bảo trì, lộ trình, cải tiến liên tục."
       }
     }
@@ -861,57 +873,57 @@
   "home": {
     "hero": {
       "badge": "An ninh & phát triển AI",
-      "title": "Cybersecurity is no longer",
-      "subtitle": "Build securely. Deploy confidently.",
+      "title": "An ninh mạng không còn",
+      "subtitle": "Xây dựng an toàn. Triển khai tự tin.",
       "ctaPrimary": "Yêu cầu demo",
       "ctaSecondary": "Khám phá hệ thống",
       "highlights": {
-        "coverage": "SOC 24/7 có AI hỗ trợ",
+        "coverage": "SOC có AI hỗ trợ 24/7",
         "onPrem": "0 thoát dữ liệu on-prem",
         "deploy": "Triển khai an toàn trong 4 phút"
       },
       "metrics": {
-        "title": "Xây cho đội ngũ tuân thủ",
+        "title": "Dành cho đội ngũ tuân thủ",
         "soc": "Phạm vi SOC có AI hỗ trợ",
         "egress": "Tất cả on-prem — mã, prompt, build",
         "deployment": "đến lần triển khai an toàn đầu tiên",
         "locales": "ngôn ngữ hỗ trợ sẵn"
       },
-      "titleHighlight": "complicated or expensive anymore"
+      "titleHighlight": "phức tạp hay đắt đỏ"
     },
     "systems": {
-      "title": "Systems",
+      "title": "Hệ thống",
       "subtitle": "Chọn gói đăng ký phù hợp: AI-SOC cho phát hiện, SLNC-env cho phát triển kín.",
-      "cta": "View details",
+      "cta": "Xem chi tiết",
       "aiSoc": {
         "title": "AI-SOC",
-        "desc": "Managed detection & response system powered and operated by AI. Used to prevent web and email attacks",
-        "badge": "Subscription"
+        "desc": "Hệ thống phát hiện và phản ứng được quản lý, do AI vận hành. Dùng để ngăn chặn tấn công web và email.",
+        "badge": "Đăng ký"
       },
       "slncEnv": {
         "title": "SLNC-env",
-        "desc": "Đám mây phát triển kín giữ mã, prompt và build trên on-prem.",
+        "desc": "Đám mây phát triển kín giữ mã, prompt và build on-prem.",
         "badge": "Đăng ký"
       },
       "sithub": {
         "title": "Sithub",
-        "desc": "Self-hosted GitHub alternative with built-in security scanning. All repositories and code analysis stay within your network.",
-        "badge": "Subscription"
+        "desc": "Giải pháp thay thế GitHub tự lưu trữ với quét bảo mật tích hợp. Mọi kho lưu trữ và phân tích mã đều nằm trong mạng của bạn.",
+        "badge": "Đăng ký"
       }
     },
     "services": {
-      "title": "Custom development services",
-      "subtitle": "AI agents, integrations, and full-cycle software delivery with security baked in from day one.",
-      "cta": "View services",
+      "title": "Dịch vụ phát triển tùy chỉnh",
+      "subtitle": "Tác nhân AI, tích hợp và bàn giao phần mềm toàn vòng đời với bảo mật từ ngày đầu.",
+      "cta": "Xem dịch vụ",
       "cards": {
-        "agents": "Production-grade AI agents with guardrails, RAG, and secure connectors.",
-        "integrations": "Vendor-neutral integrations with your stack, IAM, and data governance.",
-        "delivery": "Full-cycle delivery with reliability SLOs, observability, and security reviews."
+        "agents": "Tác nhân AI cấp độ sản xuất với guardrails, RAG và kết nối an toàn.",
+        "integrations": "Tích hợp trung lập nhà cung cấp với stack, IAM và quản trị dữ liệu của bạn.",
+        "delivery": "Bàn giao toàn vòng đời với SLO độ tin cậy, khả năng quan sát và rà soát bảo mật."
       },
       "cardsTitle": {
-        "agents": "Agents",
-        "integrations": "Integrations",
-        "delivery": "Delivery"
+        "agents": "Tác nhân",
+        "integrations": "Tích hợp",
+        "delivery": "Bàn giao"
       }
     },
     "contact": {
@@ -921,9 +933,9 @@
       "ctaSecondary": "Trao đổi với đội dịch vụ"
     },
     "resources": {
-      "title": "Featured articles",
-      "subtitle": "Silence AI is one of few private companies that have government level intelligence.",
-      "viewAll": "View all articles"
+      "title": "Bài viết nổi bật",
+      "subtitle": "Silence AI là một trong số ít công ty tư nhân có năng lực tình báo cấp chính phủ.",
+      "viewAll": "Xem tất cả bài viết"
     }
   }
 }

@@ -91,7 +91,7 @@
         "description": "거래가 완료되면 1분 이내에 리워드가 파트너 잔액에 반영되며, 수동 승인 대기열이 없습니다."
       },
       "withdrawal": {
-        "title": "Withdrawals processed in 2 business days",
+        "title": "출금은 영업일 기준 2일 내 처리",
         "description": "출금 요청은 자동으로 검토되며, 2 영업일 내에 은행 계좌로 입금됩니다."
       },
       "sample": {
@@ -203,7 +203,7 @@
   "playground": {
     "options": {
       "globeShield": "웹 보안 및 트래픽 관리",
-      "emailSecurity": "Email Security"
+      "emailSecurity": "이메일 보안"
     }
   },
   "cookie": {
@@ -292,43 +292,43 @@
         }
       },
       "basic": {
-        "name": "Basic",
+        "name": "베이직",
         "features": {
-          "fix": "Critical Bug Fixes (48h SLA)",
-          "updates": "Monthly Updates",
-          "audit": "Quarterly Security Audits",
-          "manager": "Dedicated Manager"
+          "fix": "치명적 버그 수정 (48시간 SLA)",
+          "updates": "월간 업데이트",
+          "audit": "분기별 보안 감사",
+          "manager": "전담 매니저"
         }
       },
       "pro": {
-        "name": "Pro",
-        "badge": "Most Popular",
+        "name": "프로",
+        "badge": "가장 인기",
         "features": {
-          "fix": "Critical Bug Fixes (24h SLA)",
-          "updates": "10h Monthly Updates",
-          "audit": "Monthly Security Audits",
-          "manager": "Dedicated Manager"
+          "fix": "치명적 버그 수정 (24시간 SLA)",
+          "updates": "월 10시간 업데이트",
+          "audit": "월간 보안 감사",
+          "manager": "전담 매니저"
         }
       },
       "enterprise": {
-        "name": "Enterprise",
-        "badge": "Best Value",
+        "name": "엔터프라이즈",
+        "badge": "최고 가치",
         "features": {
-          "fix": "Critical Bug Fixes (4h SLA)",
-          "updates": "Unlimited Updates + Roadmap",
-          "audit": "Weekly Audits + Backups",
-          "manager": "Dedicated Manager"
+          "fix": "치명적 버그 수정 (4시간 SLA)",
+          "updates": "무제한 업데이트 + 로드맵",
+          "audit": "주간 감사 + 백업",
+          "manager": "전담 매니저"
         }
       }
     },
     "subtitle": "모바일 우선 계획은 귀하의 제품과 함께 확장되도록 구축되었습니다...",
-    "percentMaintenance": "{percent}% yearly maintenance",
+    "percentMaintenance": "{percent}% 연간 유지보수",
     "planEstimate": "${value}",
-    "perYear": "per year (est.)",
+    "perYear": "연간 (추정)",
     "calculator": {
-      "title": "Project Cost Calculator",
-      "subtitle": "Slide to see your yearly maintenance",
-      "projectCost": "Project Cost:",
+      "title": "프로젝트 비용 계산기",
+      "subtitle": "슬라이드하여 연간 유지보수를 확인하세요",
+      "projectCost": "프로젝트 비용:",
       "projectValue": "${value}"
     }
   },
@@ -391,7 +391,7 @@
   },
   "modal": {
     "title": "개발 진행 중",
-    "body": "The system is expected to be launched on October 10"
+    "body": "시스템은 10월 10일 출시 예정입니다"
   },
   "lamp": {
     "title": "사이버 공격의 현실"
@@ -399,19 +399,19 @@
   "stickySolution": {
     "webSecurity": {
       "title": "웹 보안 시스템: 웹사이트/API 2분 만에 연결",
-      "description": "DDoS, SQLi 등 웹 공격을 차단합니다. 사용하지 않을 때 22번 포트를 닫아두는 것이 좋은 습관입니다."
+      "description": "DDoS, SQLi 등 웹 공격으로부터 보호합니다. 사용하지 않을 때는 포트 22를 닫는 것이 좋은 관행입니다."
     },
     "ciaMonitoring": {
-      "title": "CIA급 트래픽 모니터링",
-      "description": "인터랙티브 3D 지구본이 요청 수, 사용자 수, 데이터량 변화를 역사와 함께 보여줍니다."
+      "title": "CIA 수준 트래픽 모니터링",
+      "description": "인터랙티브 3D 지구본이 요청 수, 사용자 수, 데이터량 변화와 이력을 보여줍니다."
     },
     "userGrowth": {
-      "title": "사용자 증가에 대한 유용한 통찰",
-      "description": "사용자 수 변화의 기록을 확인하세요"
+      "title": "사용자 성장에 대한 유용한 인사이트",
+      "description": "사용자 수 변화 이력을 확인하세요"
     },
     "aiEmailProtection": {
-      "title": "세계 최초 AI 이메일 보호: 2분 만에 네트워크 연결",
-      "description": "CMC는 관리자가 추가한 계정의 모든 송수신 메일을 완전히 확인하고 스푸핑, 스팸, 피싱, 위험한 링크, 악성코드를 자동 분류합니다."
+      "title": "AI 이메일 보호: 2분 내 네트워크 연결",
+      "description": "CMC는 모든 송수신 이메일을 완전히 가시화하고 위협을 자동 분류합니다(스푸핑, 스팸, 피싱, 위험 링크, 악성코드)."
     },
     "emailVisualization": {
       "title": "송수신 이메일 시각화",
@@ -419,7 +419,7 @@
     },
     "secureWebmail": {
       "title": "안전한 웹메일 클라이언트",
-      "description": "관리자가 추가한 계정을 위해 스푸핑, 스팸, 피싱, 악성코드를 탐지하는 고보안 웹메일이 제공됩니다."
+      "description": "관리자가 추가한 계정에 대해 스푸핑, 스팸, 피싱, 악성코드를 감지·분류하는 안전한 웹 클라이언트를 제공합니다."
     }
   },
   "footer": {
@@ -432,7 +432,7 @@
       "termsService": "서비스 약관",
       "privacy": "개인정보 보호정책",
       "cookies": "쿠키 정책",
-      "affiliateTerms": "Affiliate Terms of Service"
+      "affiliateTerms": "제휴 서비스 약관"
     },
     "copyright": "© {year} Silence AI. 모든 권리 보유."
   },
@@ -468,15 +468,15 @@
   },
   "secureDevelopment": {
     "hero": {
-      "badge": "SLNC 코드 · 보안 개발 환경",
-      "title": "안전한 개인 코드로 시스템 구축",
-      "description": "코드가 기업 네트워크를 벗어나지 않는 기업용 사설 개발 환경. 한편, 최신 AI 기반 기술 제공",
-      "requestSystem": "요청 시스템"
+      "badge": "SLNC-env · 보안 개발 환경",
+      "title": "안전하고 프라이빗한 코드로 시스템 구축",
+      "description": "코드가 기업 네트워크를 벗어나지 않는 기업용 프라이빗 개발 환경. 최신 AI 기술을 제공합니다.",
+      "requestSystem": "시스템 요청"
     },
     "components": {
-      "title": "모든 것이 내부에 있습니다.",
-      "subtitle": "3개의 구성 요소, 1개의 밀봉된 루프",
-      "description": "코드, 프롬프트 및 빌드가 네트워크를 떠나지 않습니다. SLNC 코드는 클라우드 제공 업체, 정부 팀 및 산업 공장에 대한 AI 도움말, 검토 및 전달을 비공개로 유지합니다.",
+      "title": "모든 것이 내부에 있습니다",
+      "subtitle": "세 가지 구성 요소, 하나의 폐쇄 루프",
+      "description": "코드, 프롬프트, 빌드는 네트워크를 떠나지 않습니다. SLNC-env는 클라우드 제공업체, 정부 팀, 산업 플랜트에 대해 AI 지원, 리뷰, 전달을 프라이빗하게 유지합니다.",
       "sithub": {
         "title": "Sithub 서버",
         "tag": "로컬 버전 관리"
@@ -486,59 +486,71 @@
         "tag": "온프레미스 인텔리전스"
       },
       "ide": {
-        "title": "로컬 코파일럿이 있는 IDE",
-        "tag": "커서 클래스 체험"
+        "title": "로컬 Copilot IDE",
+        "tag": "Cursor 수준 경험"
       },
-      "staysOnPrem": "온프레미스를 유지합니다. 출구가 없습니다."
+      "gitServer": {
+        "title": "Git 리포지토리 서버",
+        "tag": "자체 호스팅 버전 관리"
+      },
+      "analyzer": {
+        "title": "보안 분석기",
+        "tag": "로컬 코드 스캐닝 엔진"
+      },
+      "vulnDb": {
+        "title": "취약점 데이터베이스",
+        "tag": "다운로드된 보안 패치"
+      },
+      "staysOnPrem": "온프레미스에 유지. 외부 유출 없음."
     },
     "timeline": {
       "title": "격리되고 확인된 코드가 중요한 이유",
-      "subtitle": "최근 모닝콜",
+      "subtitle": "최근 경고",
       "incident": {
         "title": "심각한 사고 — 유출된 코드",
-        "heading": "DeepSeek 침해는 오픈 인터넷에 소스와 프롬프트를 넣습니다",
-        "description": "추론 및 스캔을 온프레미스로 유지하십시오. 외부 모델 출구가 없습니다. 감사 내역은 기본적으로 표시됩니다.",
-        "seePlan": "봉쇄 계획 보기"
+        "heading": "DeepSeek 침해로 소스 코드와 프롬프트가 공개 인터넷에 노출됨",
+        "description": "추론과 스캔을 온프레미스에 유지하세요. 외부 모델로의 유출 없음. 기본으로 감사 추적 제공.",
+        "seePlan": "차단 계획 보기"
       },
       "stuxnet": {
         "year": "2010",
         "attack": "스턱스넷",
-        "target": "Natanz 농축 시설",
-        "impact": "파괴된 원심 분리기 ~ 1,000개",
-        "severity": "중요"
+        "target": "나탄즈 농축 시설",
+        "impact": "원심분리기 약 1,000대 파괴",
+        "severity": "치명적"
       },
       "blackEnergy": {
         "year": "2015",
         "attack": "BlackEnergy",
         "target": "우크라이나 전력망",
-        "impact": "23만 명의 고객이 동력을 잃었습니다",
+        "impact": "23만 명 고객 정전",
         "severity": "높음"
       },
       "triton": {
         "year": "2017",
         "attack": "트리톤",
         "target": "사우디아라비아 석유화학 공장",
-        "impact": "안전 시스템 비활성화됨",
-        "severity": "중요"
+        "impact": "안전 시스템 비활성화",
+        "severity": "치명적"
       },
       "colonialPipeline": {
         "year": "2021",
         "attack": "콜로니얼 파이프라인",
         "target": "미국 연료 파이프라인",
-        "impact": "6일간의 연료 마비",
+        "impact": "6일간 연료 공급 마비",
         "severity": "높음"
       },
       "pdvsa": {
         "year": "2025",
         "attack": "PDVSA",
-        "target": "베네수엘라 정제",
-        "impact": "정제소 운영 중단됨",
+        "target": "베네수엘라 정유 시설",
+        "impact": "정유 운영 중단",
         "severity": "중간"
       }
     },
     "analyzer": {
       "title": "CodeQL을 능가하는 분석기",
-      "subtitle": "Live assurance",
+      "subtitle": "실시간 보증",
       "features": {
         "quality": {
           "title": "자동 코드 품질",
@@ -546,7 +558,7 @@
         },
         "vulnerability": {
           "title": "취약점 스윕",
-          "description": "SQLi, XSS, 인증 우회 및 안전하지 않은 의존성이 즉시 나타났습니다."
+          "description": "SQLi, XSS, 인증 우회 및 불안전한 의존성을 즉시 탐지합니다."
         },
         "secrets": {
           "title": "시크릿 가드",
@@ -558,18 +570,18 @@
         }
       },
       "beyondCodeQL": {
-        "title": "누락된 정적 쿼리를 찾습니다",
-        "subtitle": "Beyond CodeQL",
+        "title": "정적 쿼리가 놓치는 것을 찾습니다",
+        "subtitle": "CodeQL 그 이상",
         "description": "CodeQL보다 빠르게 잘못된 구성과 취약한 패키지를 찾고 경고뿐만 아니라 수정 사항을 제공합니다.",
         "points": {
           "packages": "패키지 그래프를 파악하고 위험 종속성을 몇 초 만에 플래그합니다.",
-          "config": "스팟 구성 드리프트 및 권한 크립 - 정적 규칙을 넘어서.",
+          "config": "구성 드리프트와 권한 확장을 정적 규칙 이상으로 포착합니다.",
           "patches": "각 발견에는 제안된 패치와 소유자가 함께 제공됩니다."
         }
       },
       "visualizer": {
         "title": "코드 분석기 사용 중",
-        "subtitle": "비주얼라이저",
+        "subtitle": "시각화",
         "description": "온프레미스 콘솔에서 아름답게 렌더링된 최근 스캔의 선명한 스냅샷.",
         "privateWorkspace": "비공개 업무 공간만 해당",
         "andManyMore": "그리고 더 많은 것들...",
@@ -583,8 +595,8 @@
             "description": "당사의 AI 기반 코드 분석기는 심지어 코드 내에서 잘못된 구성을 찾기도 합니다."
           },
           "inlineDiffs": {
-            "title": "INLINE DIFF",
-            "description": "제안된 패치를 보안 컨텍스트와 함께 검토합니다."
+            "title": "인라인 차이",
+            "description": "보안 컨텍스트와 함께 제안된 패치를 인라인으로 검토합니다."
           }
         }
       }
@@ -610,12 +622,12 @@
       },
       "government": {
         "title": "정부",
-        "description": "Ministries, defense, critical agencies"
+        "description": "부처, 국방, 핵심 기관"
       }
     }
   },
   "pricingCta": {
-    "requestSystem": "Request System"
+    "requestSystem": "시스템 요청"
   },
   "contactForm": {
     "title": "Contact Us",
@@ -682,34 +694,34 @@
     ]
   },
   "requestDemoModal": {
-    "title": "Request System",
-    "name": "Name",
-    "email": "Corporate Email",
-    "company": "Company Name",
+    "title": "데모 요청",
+    "name": "이름",
+    "email": "이메일",
+    "company": "회사명",
     "placeholders": {
-      "name": "John Doe",
-      "email": "john@company.com",
+      "name": "홍길동",
+      "email": "hong@company.com",
       "company": "Acme Corp"
     },
-    "submit": "Send Request",
-    "successTitle": "Request Sent!",
-    "successBody": "Thank you for your interest. We will be in touch shortly.",
-    "close": "Close"
+    "submit": "요청 보내기",
+    "successTitle": "감사합니다!",
+    "successBody": "데모 일정을 위해 곧 연락드리겠습니다.",
+    "close": "닫기"
   },
   "requestSystemModal": {
-    "title": "Request System",
-    "name": "Name",
-    "email": "Corporate Email",
-    "company": "Company Name",
+    "title": "시스템 요청",
+    "name": "이름",
+    "email": "회사 이메일",
+    "company": "회사명",
     "placeholders": {
-      "name": "John Doe",
-      "email": "john@company.com",
+      "name": "홍길동",
+      "email": "hong@company.com",
       "company": "Acme Corp"
     },
-    "submit": "Download",
-    "successTitle": "Request Sent!",
-    "successBody": "Thank you. The system download instructions will be sent to your email.",
-    "close": "Close"
+    "submit": "다운로드",
+    "successTitle": "요청이 전송되었습니다!",
+    "successBody": "감사합니다. 시스템 다운로드 안내를 이메일로 보내드립니다.",
+    "close": "닫기"
   },
   "policySidebar": {
     "tableOfContents": "Table of Contents"
@@ -895,70 +907,70 @@
   },
   "home": {
     "hero": {
-      "badge": "AI security & development",
-      "title": "Cybersecurity is no longer",
-      "subtitle": "Build securely. Deploy confidently.",
-      "ctaPrimary": "Request demo",
-      "ctaSecondary": "Explore systems",
+      "badge": "AI 보안 및 개발",
+      "title": "사이버 보안은 더 이상",
+      "subtitle": "안전하게 구축하고, 자신 있게 배포하세요.",
+      "ctaPrimary": "데모 요청",
+      "ctaSecondary": "시스템 살펴보기",
       "highlights": {
-        "coverage": "24/7 AI-assisted SOC",
-        "onPrem": "0-egress on-prem",
-        "deploy": "Secure deploy in 4 min"
+        "coverage": "24/7 AI 지원 SOC",
+        "onPrem": "데이터 유출 없는 온프레미스",
+        "deploy": "4분 만에 안전 배포"
       },
       "metrics": {
-        "title": "Built for regulated teams",
-        "soc": "AI-assisted SOC coverage",
-        "egress": "All on-prem—code, prompts, builds",
-        "deployment": "to first secure deployment",
-        "locales": "locales supported out-of-box"
+        "title": "규제 대상 팀을 위해 설계",
+        "soc": "AI 지원 SOC 커버리지",
+        "egress": "모두 온프레미스 — 코드, 프롬프트, 빌드",
+        "deployment": "첫 안전 배포까지",
+        "locales": "기본 제공 언어"
       },
-      "titleHighlight": "complicated or expensive anymore"
+      "titleHighlight": "복잡하거나 비싸지 않습니다"
     },
     "systems": {
-      "title": "Systems",
-      "subtitle": "Choose the subscription product that fits: AI-SOC for detection and SLNC-env for sealed development.",
-      "cta": "View details",
+      "title": "시스템",
+      "subtitle": "적합한 구독 제품을 선택하세요: 탐지를 위한 AI-SOC, 밀폐 개발을 위한 SLNC-env.",
+      "cta": "자세히 보기",
       "aiSoc": {
         "title": "AI-SOC",
-        "desc": "Managed detection & response system powered and operated by AI. Used to prevent web and email attacks",
-        "badge": "Subscription"
+        "desc": "AI가 구동·운영하는 관리형 탐지 및 대응 시스템. 웹과 이메일 공격을 예방합니다.",
+        "badge": "구독"
       },
       "slncEnv": {
         "title": "SLNC-env",
-        "desc": "Sealed development cloud that keeps code, prompts, and builds on-prem.",
-        "badge": "Subscription"
+        "desc": "코드, 프롬프트, 빌드를 온프레미스에 유지하는 밀폐형 개발 클라우드.",
+        "badge": "구독"
       },
       "sithub": {
         "title": "Sithub",
-        "desc": "Self-hosted GitHub alternative with built-in security scanning. All repositories and code analysis stay within your network.",
-        "badge": "Subscription"
+        "desc": "내장 보안 스캐닝이 있는 자체 호스팅 GitHub 대안. 모든 저장소와 코드 분석이 네트워크 내부에 유지됩니다.",
+        "badge": "구독"
       }
     },
     "services": {
-      "title": "Custom development services",
-      "subtitle": "AI agents, integrations, and full-cycle software delivery with security baked in from day one.",
-      "cta": "View services",
+      "title": "맞춤 개발 서비스",
+      "subtitle": "AI 에이전트, 통합, 전주기 소프트웨어 딜리버리를 처음부터 보안 내재화로 제공합니다.",
+      "cta": "서비스 보기",
       "cards": {
-        "agents": "Production-grade AI agents with guardrails, RAG, and secure connectors.",
-        "integrations": "Vendor-neutral integrations with your stack, IAM, and data governance.",
-        "delivery": "Full-cycle delivery with reliability SLOs, observability, and security reviews."
+        "agents": "가드레일, RAG, 안전한 커넥터를 갖춘 프로덕션급 AI 에이전트.",
+        "integrations": "스택, IAM, 데이터 거버넌스를 아우르는 벤더 중립 통합.",
+        "delivery": "신뢰성 SLO, 관측성, 보안 리뷰를 포함한 전주기 딜리버리."
       },
       "cardsTitle": {
-        "agents": "Agents",
-        "integrations": "Integrations",
-        "delivery": "Delivery"
+        "agents": "에이전트",
+        "integrations": "통합",
+        "delivery": "딜리버리"
       }
     },
     "contact": {
-      "title": "Ready to combine AI-SOC and SLNC-env?",
-      "subtitle": "Tell us your security and delivery goals—we'll align the right system and services.",
-      "cta": "Request demo",
-      "ctaSecondary": "Talk to services team"
+      "title": "AI-SOC과 SLNC-env를 결합할 준비가 되셨나요?",
+      "subtitle": "보안 및 딜리버리 목표를 알려주세요 — 적합한 시스템과 서비스를 맞추겠습니다.",
+      "cta": "데모 요청",
+      "ctaSecondary": "서비스 팀과 상담"
     },
     "resources": {
-      "title": "Featured articles",
-      "subtitle": "Silence AI is one of few private companies that have government level intelligence.",
-      "viewAll": "View all articles"
+      "title": "추천 기사",
+      "subtitle": "Silence AI는 정부 수준의 인텔리전스를 보유한 소수의 민간 기업 중 하나입니다.",
+      "viewAll": "모든 기사 보기"
     }
   }
 }

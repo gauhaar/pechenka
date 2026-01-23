@@ -88,7 +88,7 @@
       },
       "settlement": {
         "title": "实时账本结算",
-        "description": "交易完成后一分种内奖励会计入你的合作余额——无需手动审核。"
+        "description": "交易完成后一分钟内奖励会计入你的合作余额——无需手动审核。"
       },
       "withdrawal": {
         "title": "提现将在 2 个工作日内处理",
@@ -120,6 +120,18 @@
     "termsAff": {
       "label": "联盟计划",
       "title": "联盟服务条款",
+        "gitServer": {
+          "title": "Git 仓库服务器",
+          "tag": "自托管版本控制"
+        },
+        "analyzer": {
+          "title": "安全分析器",
+          "tag": "本地代码扫描引擎"
+        },
+        "vulnDb": {
+          "title": "漏洞数据库",
+          "tag": "已下载的安全补丁"
+        },
       "notice": "本政策仅提供英文版本",
       "intro": "以下条款说明 Silence AI 联盟计划中合作伙伴的奖励发放与支付方式。",
       "meta": {
@@ -356,7 +368,7 @@
   },
   "modal": {
     "title": "正在积极开发",
-    "body": "The system is expected to be launched on October 10"
+    "body": "系统预计将于10月10日上线"
   },
   "lamp": {
     "title": "网络攻击的真实面貌"
@@ -647,18 +659,18 @@
     ]
   },
   "requestDemoModal": {
-    "title": "请求系统",
+    "title": "申请演示",
     "name": "姓名",
     "email": "公司邮箱",
     "company": "公司名称",
     "placeholders": {
-      "name": "John Doe",
-      "email": "john@company.com",
-      "company": "Acme Corp"
+      "name": "王伟",
+      "email": "wang@company.com",
+      "company": "Acme 公司"
     },
-    "submit": "发送请求",
-    "successTitle": "请求已发送！",
-    "successBody": "感谢关注，我们将尽快与您联系。",
+    "submit": "提交申请",
+    "successTitle": "谢谢！",
+    "successBody": "我们会尽快联系您安排演示。",
     "close": "关闭"
   },
   "requestSystemModal": {
@@ -861,8 +873,8 @@
   "home": {
     "hero": {
       "badge": "AI 安全与开发",
-      "title": "Cybersecurity is no longer",
-      "subtitle": "Build securely. Deploy confidently.",
+      "title": "网络安全不再",
+      "subtitle": "安全构建。自信部署。",
       "ctaPrimary": "预约演示",
       "ctaSecondary": "查看系统",
       "highlights": {
@@ -877,41 +889,41 @@
         "deployment": "到首次安全部署",
         "locales": "开箱支持的语言"
       },
-      "titleHighlight": "complicated or expensive anymore"
+      "titleHighlight": "复杂或昂贵"
     },
     "systems": {
-      "title": "Systems",
-      "subtitle": "选择合适的订阅产品：AI-SOC 负责检测，SLNC-env 提供密闭开发。",
-      "cta": "View details",
+      "title": "系统",
+      "subtitle": "选择合适的订阅产品：AI-SOC 用于检测，SLNC-env 用于密闭开发。",
+      "cta": "查看详情",
       "aiSoc": {
         "title": "AI-SOC",
-        "desc": "Managed detection & response system powered and operated by AI. Used to prevent web and email attacks",
-        "badge": "Subscription"
+        "desc": "由 AI 驱动并运营的托管式检测与响应系统，用于防止 Web 和邮件攻击。",
+        "badge": "订阅"
       },
       "slncEnv": {
         "title": "SLNC-env",
-        "desc": "保持代码、提示与构建全程在本地的密闭开发云。",
+        "desc": "密闭开发云，确保代码、提示与构建全程在本地。",
         "badge": "订阅"
       },
       "sithub": {
         "title": "Sithub",
-        "desc": "Self-hosted GitHub alternative with built-in security scanning. All repositories and code analysis stay within your network.",
-        "badge": "Subscription"
+        "desc": "带内置安全扫描的自托管 GitHub 替代方案。所有仓库与代码分析都保留在你的网络内。",
+        "badge": "订阅"
       }
     },
     "services": {
-      "title": "Custom development services",
-      "subtitle": "AI agents, integrations, and full-cycle software delivery with security baked in from day one.",
-      "cta": "View services",
+      "title": "定制开发服务",
+      "subtitle": "AI 代理、集成与全生命周期软件交付，自第一天起就内置安全。",
+      "cta": "查看服务",
       "cards": {
-        "agents": "Production-grade AI agents with guardrails, RAG, and secure connectors.",
-        "integrations": "Vendor-neutral integrations with your stack, IAM, and data governance.",
-        "delivery": "Full-cycle delivery with reliability SLOs, observability, and security reviews."
+        "agents": "具备护栏、RAG 与安全连接器的生产级 AI 代理。",
+        "integrations": "与您的技术栈、IAM 与数据治理无关厂商的中立集成。",
+        "delivery": "全生命周期交付，具备可靠性 SLO、可观测性与安全评审。"
       },
       "cardsTitle": {
-        "agents": "Agents",
-        "integrations": "Integrations",
-        "delivery": "Delivery"
+        "agents": "代理",
+        "integrations": "集成",
+        "delivery": "交付"
       }
     },
     "contact": {
@@ -921,9 +933,9 @@
       "ctaSecondary": "与服务团队沟通"
     },
     "resources": {
-      "title": "Featured articles",
-      "subtitle": "Silence AI is one of few private companies that have government level intelligence.",
-      "viewAll": "View all articles"
+      "title": "精选文章",
+      "subtitle": "Silence AI 是少数拥有政府级情报能力的私营公司之一。",
+      "viewAll": "查看所有文章"
     }
   }
 }

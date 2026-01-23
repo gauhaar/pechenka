@@ -118,7 +118,7 @@ const LanguageSelector = ({ align = "right", onlyEnglish = false }) => {
   };
 
   return (
-    <div className="relative z-20" ref={containerRef}>
+    <div className="relative z-[9999]" ref={containerRef}>
       <button
         type="button"
         onClick={handleToggle}
@@ -153,8 +153,12 @@ const LanguageSelector = ({ align = "right", onlyEnglish = false }) => {
       {isOpen && (
         <div
           className={clsx(
-            "absolute z-30 mt-2 min-w-[18rem] rounded-2xl border border-white/10 bg-black/85 p-3 shadow-[0_18px_45px_rgba(0,0,0,0.45)] backdrop-blur-xl",
-            align === "left" ? "left-0" : "right-0"
+            "fixed z-[9999] mt-2 w-[90vw] max-w-[18rem] rounded-2xl border border-white/10 bg-black/85 p-3 shadow-[0_18px_45px_rgba(0,0,0,0.45)] backdrop-blur-xl",
+            "left-1/2 -translate-x-1/2",
+            "sm:absolute sm:w-auto sm:min-w-[18rem]",
+            align === "center" && "sm:left-1/2 sm:-translate-x-1/2",
+            align === "left" && "sm:left-0 sm:translate-x-0",
+            align === "right" && "sm:left-auto sm:right-0 sm:translate-x-0"
           )}
           role="listbox"
           aria-label={t("languageSelector.menuLabel", "Choose language")}

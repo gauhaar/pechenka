@@ -120,6 +120,18 @@
     "termsAff": {
       "label": "Partnerprogramm",
       "title": "Partnerprogrammi teenusetingimused",
+        "gitServer": {
+          "title": "Git-hoidlate server",
+          "tag": "Isemajutatav versioonihaldus"
+        },
+        "analyzer": {
+          "title": "Turbeanalüsaator",
+          "tag": "Kohalik koodiskaneerimise mootor"
+        },
+        "vulnDb": {
+          "title": "Haavatavuste andmebaas",
+          "tag": "Allalaaditud turvapaigad"
+        },
       "notice": "See poliitika on saadaval ainult inglise keeles",
       "intro": "Need tingimused kirjeldavad, kuidas preemiad määratakse ja makstakse Silence AI partnerprogrammis osalevatele partneritele.",
       "meta": {
@@ -265,7 +277,7 @@
       },
       "emailProtector": {
         "title": "E-posti turve",
-        "price": "$10/month/account",
+        "price": "$10/kuu/konto",
         "description": "Kuni 10 e-kirja päevas\nLisakirjad: $0.035 tükk",
         "button": "Kaitse e-post",
         "features": {
@@ -281,7 +293,7 @@
       },
       "securityTester": {
         "title": "Haavatavuste leidja",
-        "price": "$25/month",
+        "price": "$25/kuu",
         "description": "Kuni 50 täielikku haavatavuskontrolli kuus\nLisakontrollid: $0.5 tk",
         "button": "Alusta testimist",
         "features": {
@@ -372,15 +384,15 @@
   "insights": {
     "items": [
       {
-        "title": "39 seconds",
+        "title": "39 sekundit",
         "description": "Iga 39 sekundi järel toimub häkkimisrünnak"
       },
       {
-        "title": "20M DDoS attacks",
+        "title": "20 mln DDoS-rünnakut",
         "description": "Ainuüksi 2025 Q1 toimus 20,5M DDoS-rünnakut"
       },
       {
-        "title": "Every day",
+        "title": "Iga päev",
         "description": "Iga päev häkitakse 30 000 veebisaiti"
       }
     ]
@@ -682,18 +694,18 @@
     ]
   },
   "requestDemoModal": {
-    "title": "Taotle süsteemi",
+    "title": "Taotle demo",
     "name": "Nimi",
     "email": "Ettevõtte e-post",
     "company": "Ettevõtte nimi",
     "placeholders": {
       "name": "Mati Maasikas",
-      "email": "mati@company.com",
-      "company": "Acme Corp"
+      "email": "mati@firma.ee",
+      "company": "Acme OÜ"
     },
     "submit": "Saada päring",
-    "successTitle": "Päring saadetud!",
-    "successBody": "Aitäh huvi eest. Võtame sinuga peagi ühendust.",
+    "successTitle": "Aitäh!",
+    "successBody": "Võtame peagi ühendust, et demo kokku leppida.",
     "close": "Sulge"
   },
   "requestSystemModal": {
@@ -896,57 +908,57 @@
   "home": {
     "hero": {
       "badge": "AI turve ja arendus",
-      "title": "Cybersecurity is no longer",
-      "subtitle": "Build securely. Deploy confidently.",
+      "title": "Küberturvalisus ei ole enam",
+      "subtitle": "Ehita turvaliselt. Juuruta kindlalt.",
       "ctaPrimary": "Taotle demo",
       "ctaSecondary": "Ava süsteemid",
       "highlights": {
-        "coverage": "24/7 AI-ga toetatud SOC",
-        "onPrem": "0-egress on-prem",
-        "deploy": "Turvaline deploy 4 minutiga"
+        "coverage": "24/7 AI-toega SOC",
+        "onPrem": "andmeväljavooluta on-prem",
+        "deploy": "Turvaline juurutus 4 minutiga"
       },
       "metrics": {
         "title": "Ehitatud reguleeritud meeskondadele",
-        "soc": "AI-ga toetatud SOC katvus",
+        "soc": "AI-toega SOC katvus",
         "egress": "Kõik on-prem — kood, promptid, build'id",
-        "deployment": "esimese turvalise deploy'ni",
-        "locales": "lokalisatsioone kohe saadaval"
+        "deployment": "kuni esimese turvalise juurutuseni",
+        "locales": "keeli kohe olemas"
       },
-      "titleHighlight": "complicated or expensive anymore"
+      "titleHighlight": "keeruline ega kallis"
     },
     "systems": {
-      "title": "Systems",
+      "title": "Süsteemid",
       "subtitle": "Vali sobiv tellimusteenus: AI-SOC tuvastuseks ja SLNC-env suletud arenduseks.",
-      "cta": "View details",
+      "cta": "Vaata detaile",
       "aiSoc": {
         "title": "AI-SOC",
-        "desc": "Managed detection & response system powered and operated by AI. Used to prevent web and email attacks",
-        "badge": "Subscription"
+        "desc": "AI poolt juhitud ja opereeritud hallatud tuvastus- ja reageerimissüsteem. Kasutatakse veebi- ja meilirünnete ennetamiseks.",
+        "badge": "Tellimus"
       },
       "slncEnv": {
         "title": "SLNC-env",
-        "desc": "Suletud arenduspilv, mis hoiab koodi, prompte ja build'e on-prem.",
+        "desc": "Suletud arenduspilv, mis hoiab koodi, promptid ja build'id on-prem.",
         "badge": "Tellimus"
       },
       "sithub": {
         "title": "Sithub",
-        "desc": "Self-hosted GitHub alternative with built-in security scanning. All repositories and code analysis stay within your network.",
-        "badge": "Subscription"
+        "desc": "Isehostitud GitHubi alternatiiv sisseehitatud turvaskannimisega. Kõik repod ja koodianalüüs jäävad teie võrku.",
+        "badge": "Tellimus"
       }
     },
     "services": {
-      "title": "Custom development services",
-      "subtitle": "AI agents, integrations, and full-cycle software delivery with security baked in from day one.",
-      "cta": "View services",
+      "title": "Kohandatud arendusteenused",
+      "subtitle": "AI-agendid, integratsioonid ja täistsükli tarkvaratarne, kus turve on sisse ehitatud esimesest päevast.",
+      "cta": "Vaata teenuseid",
       "cards": {
-        "agents": "Production-grade AI agents with guardrails, RAG, and secure connectors.",
-        "integrations": "Vendor-neutral integrations with your stack, IAM, and data governance.",
-        "delivery": "Full-cycle delivery with reliability SLOs, observability, and security reviews."
+        "agents": "Tootmisklassi AI-agendid koos guardrails'ide, RAG-i ja turvaliste ühendustega.",
+        "integrations": "Tarnijaneutraalsed integratsioonid teie stacki, IAM-i ja andmejuhtimisega.",
+        "delivery": "Täistsükli tarne töökindluse SLO-de, vaadeldavuse ja turvaaudititega."
       },
       "cardsTitle": {
-        "agents": "Agents",
-        "integrations": "Integrations",
-        "delivery": "Delivery"
+        "agents": "Agendid",
+        "integrations": "Integratsioonid",
+        "delivery": "Tarne"
       }
     },
     "contact": {
@@ -956,9 +968,9 @@
       "ctaSecondary": "Räägi teenindustiimiga"
     },
     "resources": {
-      "title": "Featured articles",
-      "subtitle": "Silence AI is one of few private companies that have government level intelligence.",
-      "viewAll": "View all articles"
+      "title": "Esiletoodud artiklid",
+      "subtitle": "Silence AI on üks väheseid eraettevõtteid, kellel on valitsustaseme luure.",
+      "viewAll": "Vaata kõiki artikleid"
     }
   }
 }

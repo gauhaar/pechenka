@@ -35,70 +35,70 @@
       "andManyMore": "И многое другое...",
   "home": {
     "hero": {
-      "badge": "Безопасность и разработка AI",
-      "title": "Cybersecurity is no longer",
-      "subtitle": "Build securely. Deploy confidently.",
+      "badge": "Безопасность и разработка с ИИ",
+      "title": "Кибербезопасность больше не",
+      "subtitle": "Стройте безопасно. Разворачивайте уверенно.",
       "ctaPrimary": "Запросить демо",
       "ctaSecondary": "Посмотреть системы",
       "highlights": {
-        "coverage": "24/7 AI-поддержка SOC",
-        "onPrem": "0-выгрузок on-prem",
+        "coverage": "SOC с поддержкой ИИ 24/7",
+        "onPrem": "без вывода данных, on-prem",
         "deploy": "Безопасный деплой за 4 мин"
       },
       "metrics": {
         "title": "Для регулируемых команд",
-        "soc": "AI-поддержка 24/7 для SOC",
-        "egress": "Всё on-prem: код, промпты и сборки",
-        "deployment": "до первого защищённого деплоя",
-        "locales": "локалей из коробки"
+        "soc": "Покрытие SOC с поддержкой ИИ",
+        "egress": "Всё on-prem — код, промпты, сборки",
+        "deployment": "до первого безопасного деплоя",
+        "locales": "языки из коробки"
       },
-      "titleHighlight": "complicated or expensive anymore"
+      "titleHighlight": "сложная или дорогая"
     },
     "systems": {
-      "title": "Systems",
+      "title": "Системы",
       "subtitle": "Выберите подписку: AI-SOC для детекта и SLNC-env для закрытой разработки.",
-      "cta": "View details",
+      "cta": "Подробнее",
       "aiSoc": {
         "title": "AI-SOC",
-        "desc": "Managed detection & response system powered and operated by AI. Used to prevent web and email attacks",
-        "badge": "Subscription"
+        "desc": "Управляемая система обнаружения и реагирования на базе ИИ. Используется для предотвращения веб- и почтовых атак.",
+        "badge": "Подписка"
       },
       "slncEnv": {
         "title": "SLNC-env",
-        "desc": "Закрытое облако разработки: код, промпты и сборки не покидают периметр.",
+        "desc": "Закрытое облако разработки, где код, промпты и сборки остаются on-prem.",
         "badge": "Подписка"
       },
       "sithub": {
         "title": "Sithub",
-        "desc": "Self-hosted GitHub alternative with built-in security scanning. All repositories and code analysis stay within your network.",
-        "badge": "Subscription"
+        "desc": "Самостоятельно размещаемая альтернатива GitHub со встроенным сканированием безопасности. Все репозитории и анализ кода остаются внутри вашей сети.",
+        "badge": "Подписка"
       }
     },
     "services": {
-      "title": "Custom development services",
-      "subtitle": "AI agents, integrations, and full-cycle software delivery with security baked in from day one.",
-      "cta": "View services",
+      "title": "Кастомная разработка",
+      "subtitle": "ИИ-агенты, интеграции и полный цикл поставки ПО с безопасностью с первого дня.",
+      "cta": "Посмотреть услуги",
       "cards": {
-        "agents": "Production-grade AI agents with guardrails, RAG, and secure connectors.",
-        "integrations": "Vendor-neutral integrations with your stack, IAM, and data governance.",
-        "delivery": "Full-cycle delivery with reliability SLOs, observability, and security reviews."
+        "agents": "Производственные ИИ-агенты с guardrails, RAG и безопасными коннекторами.",
+        "integrations": "Вендор-нейтральные интеграции с вашим стеком, IAM и управлением данными.",
+        "delivery": "Полный цикл поставки с SLO надёжности, наблюдаемостью и безопасностными ревью."
       },
       "cardsTitle": {
-        "agents": "Agents",
-        "integrations": "Integrations",
-        "delivery": "Delivery"
+        "agents": "Агенты",
+        "integrations": "Интеграции",
+        "delivery": "Поставка"
       }
     },
     "contact": {
       "title": "Готовы объединить AI-SOC и SLNC-env?",
-      "subtitle": "Расскажите о целях по безопасности и доставке — подберём систему и услуги.",
+      "subtitle": "Расскажите о целях по безопасности и поставке — подберём систему и услуги.",
       "cta": "Запросить демо",
       "ctaSecondary": "Связаться с командой услуг"
     },
     "resources": {
-      "title": "Featured articles",
-      "subtitle": "Silence AI is one of few private companies that have government level intelligence.",
-      "viewAll": "View all articles"
+      "title": "Избранные статьи",
+      "subtitle": "Silence AI — одна из немногих частных компаний с разведкой государственного уровня.",
+      "viewAll": "Смотреть все статьи"
     }
   },
   "affiliate": {
@@ -189,6 +189,18 @@
     "termsAff": {
       "label": "Партнёрская программа",
       "title": "Партнёрские условия использования",
+        "gitServer": {
+          "title": "Сервер репозиториев Git",
+          "tag": "Самостоятельно размещаемый контроль версий"
+        },
+        "analyzer": {
+          "title": "Анализатор безопасности",
+          "tag": "Локальный движок сканирования кода"
+        },
+        "vulnDb": {
+          "title": "База уязвимостей",
+          "tag": "Загруженные патчи безопасности"
+        },
       "notice": "Эта политика доступна только на английском",
       "intro": "Эти условия описывают, как начисляются и выплачиваются вознаграждения партнёрам Silence AI.",
       "meta": {
@@ -469,7 +481,7 @@
     ]
   },
   "requestDemoModal": {
-    "title": "Запросить систему",
+    "title": "Запросить демо",
     "name": "Имя",
     "email": "Корпоративный email",
     "company": "Компания",
@@ -479,8 +491,8 @@
       "company": "Acme Corp"
     },
     "submit": "Отправить запрос",
-    "successTitle": "Запрос отправлен!",
-    "successBody": "Спасибо за интерес. Мы скоро свяжемся с вами.",
+    "successTitle": "Спасибо!",
+    "successBody": "Мы скоро свяжемся, чтобы согласовать демо.",
     "close": "Закрыть"
   },
   "requestSystemModal": {
@@ -898,7 +910,7 @@
         "metricLabel": "Индекс выработки команды"
       },
       "chic": {
-        "title": "Chic Flowers — eCommerce",
+        "title": "Chic Flowers — e‑commerce",
         "problem": "Низкая онлайн-конверсия",
         "solution": "Персонализированные рекомендации + обновление UX",
         "result": "+45% к онлайн-продажам",
