@@ -185,12 +185,12 @@
     }
   },
   "hero": {
-    "headline": "AI-SOC 1: Küberkaitse pole enam kallis ega keeruline",
-    "subheading": "Üks terviklik, tehisintellektil põhinev küberkaitsesüsteem, mis ühendab:",
-    "playgroundHeading": "60-sekundiline tutvustus",
+    "headline": "AI-SOC 1: küberjulgeolek pole enam kallis ega keeruline",
+    "subheading": "Ühtne AI‑põhine küberjulgeoleku platvorm, mis ühendab:",
+    "playgroundHeading": "AI‑toega turbeoperatsioonide keskus",
     "bullets": {
       "web": "Reaalajas kaitse veebirünnete vastu",
-      "email": "Kaitse e-posti rünnete vastu",
+      "email": "Kaitse e‑posti rünnete vastu",
       "vulnerability": "Haavatavuste leidja"
     },
     "buttons": {
@@ -199,12 +199,12 @@
     },
     "tooltips": {
       "web": {
-        "title": "Kaitse veebirünnakute vastu",
-        "content": "Süsteem kaitseb KÕIGI veebirünnakute vastu (DDoS, SQLi jms), välja arvatud äriloogika haavatavused"
+        "title": "Kaitse veebirünnete vastu",
+        "content": "Süsteem kaitseb KÕIKIDE veebirünnete vastu (nt DDoS, SQLi jne), välja arvatud äriloogika haavatavused."
       },
       "email": {
-        "title": "Kaitse e-posti rünnakute vastu",
-        "content": "Süsteem kaitseb KÕIGI e-posti rünnete vastu, nt phishing, pahavara manus, ohtlikud lingid"
+        "title": "Kaitse e‑posti rünnete vastu",
+        "content": "Süsteem kaitseb KÕIKIDE e‑posti rünnete vastu: andmepüük, pahatahtlikud manused, ohtlikud lingid jne."
       },
       "vulnerability": {
         "title": "Haavatavuste leidja",

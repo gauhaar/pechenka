@@ -185,26 +185,26 @@
     }
   },
   "hero": {
-    "headline": "AI-SOC 1: Siber güvenlik artık ne pahalı ne de karmaşık",
-    "subheading": "Yapay zeka tabanlı, hepsi bir arada siber güvenlik sistemi şunları birleştirir:",
-    "playgroundHeading": "60 saniyelik tur",
+    "headline": "AI-SOC 1: siber güvenlik artık pahalı ve karmaşık değil",
+    "subheading": "Birleşik bir yapay zekâ siber güvenlik platformu şunları bir araya getirir:",
+    "playgroundHeading": "Yapay zekâ destekli Güvenlik Operasyon Merkezi",
     "bullets": {
       "web": "Gerçek zamanlı web saldırı koruması",
-      "email": "E-posta saldırılarına karşı koruma",
+      "email": "E-posta saldırı koruması",
       "vulnerability": "Zafiyet bulucu"
     },
     "buttons": {
-      "connect": "4 dakikada bağlan",
+      "connect": "4 dakikada bağlanın",
       "tour": "90 saniyelik turu izle"
     },
     "tooltips": {
       "web": {
         "title": "Web saldırı koruması",
-        "content": "Sistem DDoS, SQLi vb. tüm web saldırılarına karşı koruma sağlar (iş mantığı zafiyetleri hariç)"
+        "content": "Sistem, iş mantığı zafiyetleri hariç DDoS, SQLi vb. tüm web saldırı türlerine karşı korur."
       },
       "email": {
         "title": "E-posta saldırı koruması",
-        "content": "Sistem phishing, zararlı ekler, tehlikeli bağlantılar gibi tüm e-posta saldırılarına karşı korur"
+        "content": "Sistem; kimlik avı, kötü amaçlı ekler, tehlikeli bağlantılar vb. tüm e-posta saldırı türlerine karşı korur."
       },
       "vulnerability": {
         "title": "Zafiyet bulucu",

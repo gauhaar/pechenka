@@ -1,1 +1,30 @@
-{}
+{
+	"hero": {
+		"headline": "AI-SOC 1: cyberbezpieczeństwo nie jest już drogie ani skomplikowane",
+		"subheading": "Zintegrowana platforma cyberbezpieczeństwa oparta na AI, która łączy:",
+		"playgroundHeading": "Centrum Operacji Bezpieczeństwa napędzane przez AI",
+		"bullets": {
+			"web": "Ochrona przed atakami webowymi w czasie rzeczywistym",
+			"email": "Ochrona przed atakami e-mailowymi",
+			"vulnerability": "Skaner podatności"
+		},
+		"buttons": {
+			"connect": "Połącz w 4 minuty",
+			"tour": "Zobacz 90-sekundowy pokaz"
+		},
+		"tooltips": {
+			"web": {
+				"title": "Ochrona przed atakami webowymi",
+				"content": "System chroni przed WSZYSTKIMI typami ataków webowych, takimi jak DDoS, SQLi itd., z wyjątkiem podatności logiki biznesowej."
+			},
+			"email": {
+				"title": "Ochrona przed atakami e-mailowymi",
+				"content": "System chroni przed WSZYSTKIMI typami ataków e-mailowych: phishingiem, złośliwymi załącznikami, niebezpiecznymi linkami itd."
+			},
+			"vulnerability": {
+				"title": "Skaner podatności",
+				"content": "System wykrywa podatności w kodzie aplikacji oraz podczas dynamicznych interakcji z Twoją stroną/API, z wykorzystaniem detekcji opartej na analizie inteligentnej."
+			}
+		}
+	}
+}

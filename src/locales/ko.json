@@ -173,11 +173,11 @@
     }
   },
   "hero": {
-    "headline": "AI-SOC 1: 사이버 보안은 더 이상 비싸지도 복잡하지도 않습니다",
-    "subheading": "AI 기반 올인원 사이버 보안 시스템이 결합한 기능:",
-    "playgroundHeading": "60초 투어",
+    "headline": "AI-SOC 1: 사이버보안은 더 이상 비싸고 복잡하지 않습니다",
+    "subheading": "통합 AI 사이버보안 플랫폼이 다음을 결합합니다:",
+    "playgroundHeading": "AI 기반 보안 운영 센터",
     "bullets": {
-      "web": "실시간 웹 공격 차단",
+      "web": "실시간 웹 공격 방어",
       "email": "이메일 공격 방어",
       "vulnerability": "취약점 탐지"
     },
@@ -188,11 +188,11 @@
     "tooltips": {
       "web": {
         "title": "웹 공격 방어",
-        "content": "본 시스템은 비즈니스 로직 취약점을 제외한 DDoS, SQLi 등 모든 웹 공격을 차단합니다"
+        "content": "시스템은 DDoS, SQLi 등 모든 유형의 웹 공격을 방어합니다(비즈니스 로직 취약점 제외)."
       },
       "email": {
         "title": "이메일 공격 방어",
-        "content": "피싱, 악성 첨부파일, 위험한 링크 등 모든 이메일 공격으로부터 보호합니다"
+        "content": "시스템은 피싱, 악성 첨부파일, 위험한 링크 등 모든 유형의 이메일 공격을 방어합니다."
       },
       "vulnerability": {
         "title": "취약점 탐지",

@@ -1,1 +1,30 @@
-{}
+{
+	"hero": {
+		"headline": "AI-SOC 1: cybersecurity is niet langer duur en ingewikkeld",
+		"subheading": "Een geïntegreerd AI-cybersecurityplatform dat combineert:",
+		"playgroundHeading": "AI-gestuurd Security Operations Center",
+		"bullets": {
+			"web": "Realtime bescherming tegen webaanvallen",
+			"email": "Bescherming tegen e-mailaanvallen",
+			"vulnerability": "Kwetsbaarheidsscanner"
+		},
+		"buttons": {
+			"connect": "Binnen 4 minuten verbinden",
+			"tour": "Bekijk de tour van 90 seconden"
+		},
+		"tooltips": {
+			"web": {
+				"title": "Bescherming tegen webaanvallen",
+				"content": "Het systeem beschermt tegen ALLE soorten webaanvallen zoals DDoS, SQLi, enz., behalve kwetsbaarheden in de businesslogica."
+			},
+			"email": {
+				"title": "Bescherming tegen e-mailaanvallen",
+				"content": "Het systeem beschermt tegen ALLE soorten e-mailaanvallen: phishing, kwaadaardige bijlagen, gevaarlijke links, enz."
+			},
+			"vulnerability": {
+				"title": "Kwetsbaarheidsscanner",
+				"content": "Het systeem vindt kwetsbaarheden in applicatiecode en via dynamische interactie met je website/API, inclusief intelligentie-gestuurde detectie."
+			}
+		}
+	}
+}

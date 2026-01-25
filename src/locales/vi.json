@@ -185,9 +185,9 @@
     }
   },
   "hero": {
-    "headline": "AI-SOC 1: An ninh mạng không còn đắt đỏ hay phức tạp",
-    "subheading": "Giải pháp an ninh mạng toàn diện dựa trên AI, kết hợp các thành phần:",
-    "playgroundHeading": "Chuyến tham quan 60 giây",
+    "headline": "AI-SOC 1: an ninh mạng không còn đắt đỏ và phức tạp",
+    "subheading": "Nền tảng an ninh mạng AI thống nhất kết hợp:",
+    "playgroundHeading": "Trung tâm vận hành an ninh được hỗ trợ bởi AI",
     "bullets": {
       "web": "Bảo vệ tấn công web theo thời gian thực",
       "email": "Bảo vệ trước tấn công email",
@@ -200,11 +200,11 @@
     "tooltips": {
       "web": {
         "title": "Bảo vệ tấn công web",
-        "content": "Hệ thống bảo vệ trước MỌI loại tấn công web như DDoS, SQLi (trừ lỗ hổng logic nghiệp vụ)"
+        "content": "Hệ thống bảo vệ trước TẤT CẢ các loại tấn công web như DDoS, SQLi, v.v., ngoại trừ lỗ hổng logic nghiệp vụ."
       },
       "email": {
         "title": "Bảo vệ tấn công email",
-        "content": "Hệ thống chặn MỌI dạng tấn công email như phishing, tập tin độc hại, liên kết nguy hiểm"
+        "content": "Hệ thống bảo vệ trước TẤT CẢ các loại tấn công email: lừa đảo, tệp đính kèm độc hại, liên kết nguy hiểm, v.v."
       },
       "vulnerability": {
         "title": "Trình tìm lỗ hổng",

@@ -1,1 +1,30 @@
-{}
+{
+	"hero": {
+		"headline": "AI-SOC 1: cybersikkerhet er ikke lenger dyrt og komplisert",
+		"subheading": "En samlet AI-basert cybersikkerhetsplattform som kombinerer:",
+		"playgroundHeading": "AI-drevet Security Operations Center",
+		"bullets": {
+			"web": "Sanntidsbeskyttelse mot webangrep",
+			"email": "Beskyttelse mot e-postangrep",
+			"vulnerability": "Sårbarhetsskanner"
+		},
+		"buttons": {
+			"connect": "Koble til på 4 minutter",
+			"tour": "Se 90-sekunders omvisning"
+		},
+		"tooltips": {
+			"web": {
+				"title": "Beskyttelse mot webangrep",
+				"content": "Systemet beskytter mot ALLE typer webangrep som DDoS, SQLi osv., bortsett fra sårbarheter i forretningslogikk."
+			},
+			"email": {
+				"title": "Beskyttelse mot e-postangrep",
+				"content": "Systemet beskytter mot ALLE typer e-postangrep: phishing, ondsinnede vedlegg, farlige lenker osv."
+			},
+			"vulnerability": {
+				"title": "Sårbarhetsskanner",
+				"content": "Systemet finner sårbarheter i applikasjonskode og gjennom dynamisk samhandling med nettstedet/API-et, inkludert intelligent deteksjon."
+			}
+		}
+	}
+}

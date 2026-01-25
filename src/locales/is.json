@@ -944,5 +944,33 @@
       "subtitle": "Silence AI er eitt af fáum einkafyrirtækjum með greind á ríkisstigi.",
       "viewAll": "Sjá allar greinar"
     }
+  },
+  "hero": {
+    "headline": "AI-SOC 1: netöryggi er ekki lengur dýrt og flókið",
+    "subheading": "Sameinaður AI‑knúinn netöryggisvettvangur sem sameinar:",
+    "playgroundHeading": "AI‑knúin öryggisaðgerðamiðstöð",
+    "bullets": {
+      "web": "Rauntímavernd gegn vefárásum",
+      "email": "Vörn gegn tölvupóstárásum",
+      "vulnerability": "Veikleikaleitari"
+    },
+    "buttons": {
+      "connect": "Tengjast á 4 mínútum",
+      "tour": "Skoða 90 sekúndna kynningu"
+    },
+    "tooltips": {
+      "web": {
+        "title": "Vörn gegn vefárásum",
+        "content": "Kerfið ver gegn ÖLLUM tegundum vefárása eins og DDoS, SQLi o.fl., nema veikleikum í viðskiptarökfræði."
+      },
+      "email": {
+        "title": "Vörn gegn tölvupóstárásum",
+        "content": "Kerfið ver gegn ÖLLUM tegundum tölvupóstárása: vefveiðum, illgjörnum viðhengjum, hættulegum hlekkjum o.s.frv."
+      },
+      "vulnerability": {
+        "title": "Veikleikaleitari",
+        "content": "Kerfið finnur veikleika í kóða og með dýnamískum samskiptum við vefinn/API-ið, með greindarstuðningi."
+      }
+    }
   }
 }

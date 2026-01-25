@@ -185,9 +185,9 @@
     }
   },
   "hero": {
-    "headline": "AI-SOC 1 : la cybersécurité n'est plus ni coûteuse ni compliquée",
-    "subheading": "La plateforme de cybersécurité tout-en-un, basée sur l'IA, qui combine :",
-    "playgroundHeading": "Visite de 60 secondes",
+    "headline": "AI-SOC 1 : la cybersécurité n'est plus coûteuse ni complexe",
+    "subheading": "Une plateforme de cybersécurité IA unifiée qui combine :",
+    "playgroundHeading": "Centre d'opérations de sécurité propulsé par l'IA",
     "bullets": {
       "web": "Protection en temps réel contre les attaques web",
       "email": "Protection contre les attaques par e-mail",
@@ -200,11 +200,11 @@
     "tooltips": {
       "web": {
         "title": "Protection contre les attaques web",
-        "content": "Le système protège contre TOUS les types d'attaques web (DDoS, SQLi, etc.), à l'exception des vulnérabilités de logique métier"
+        "content": "Le système protège contre TOUS les types d’attaques web (DDoS, SQLi, etc.), sauf les vulnérabilités de logique métier."
       },
       "email": {
-        "title": "Protection contre les attaques e-mail",
-        "content": "Le système protège contre TOUS les types d'attaques e-mail : phishing, pièces jointes malveillantes, liens dangereux, etc."
+        "title": "Protection contre les attaques par e-mail",
+        "content": "Le système protège contre TOUS les types d’attaques par e-mail : phishing, pièces jointes malveillantes, liens dangereux, etc."
       },
       "vulnerability": {
         "title": "Détection des vulnérabilités",

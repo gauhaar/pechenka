@@ -186,25 +186,25 @@
   },
   "hero": {
     "headline": "AI-SOC 1：网络安全不再昂贵也不再复杂",
-    "subheading": "这是一套基于人工智能的全方位网络安全系统，可同时提供：",
-    "playgroundHeading": "60 秒导览",
+    "subheading": "一个统一的 AI 网络安全平台，集成：",
+    "playgroundHeading": "AI 驱动的安全运营中心",
     "bullets": {
-      "web": "实时防护各类网络攻击",
-      "email": "邮件攻击防护",
+      "web": "实时 Web 攻击防护",
+      "email": "电子邮件攻击防护",
       "vulnerability": "漏洞侦测"
     },
     "buttons": {
-      "connect": "4 分钟快速接入",
+      "connect": "4 分钟内完成接入",
       "tour": "观看 90 秒演示"
     },
     "tooltips": {
       "web": {
-        "title": "网络攻击防护",
-        "content": "系统可抵御包括 DDoS、SQLi 在内的所有网络攻击（业务逻辑漏洞除外）"
+        "title": "Web 攻击防护",
+        "content": "系统可防护所有类型的 Web 攻击（如 DDoS、SQLi 等），但不包含业务逻辑漏洞。"
       },
       "email": {
-        "title": "邮件攻击防护",
-        "content": "系统可抵御包括钓鱼、恶意附件、危险链接等在内的所有邮件攻击"
+        "title": "电子邮件攻击防护",
+        "content": "系统可防护所有类型的邮件攻击：钓鱼、恶意附件、危险链接等。"
       },
       "vulnerability": {
         "title": "漏洞侦测",

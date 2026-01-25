@@ -259,13 +259,13 @@ const SlncEnvHeader = ({ onOpenAdminModal }) => {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: 6 }}
                             transition={{ duration: 0.15, ease: "easeOut" }}
-                            className="absolute left-0 mt-2 w-48 overflow-hidden rounded-xl border border-white/10 bg-black/85 p-2 shadow-2xl backdrop-blur-xl"
+                            className="absolute left-0 mt-2 w-64 overflow-hidden rounded-xl border border-white/10 bg-black/85 p-2 shadow-2xl backdrop-blur-xl"
                           >
                             {item.children.map((child) => (
                               <Link
                                 key={child.key}
                                 href={child.href}
-                                className="block rounded-lg px-3 py-2 text-sm text-white hover:bg-white/10"
+                                className="block rounded-lg px-3 py-2 text-sm text-white hover:bg-white/10 whitespace-nowrap"
                               >
                                 {child.label}
                               </Link>

@@ -172,11 +172,11 @@
     }
   },
   "hero": {
-    "headline": "AI-SOC 1: Cybersicherheit ist weder teuer noch kompliziert",
-    "subheading": "Das All-in-One-Cybersicherheitssystem auf KI-Basis vereint:",
-    "playgroundHeading": "60-Sekunden-Tour",
+    "headline": "AI-SOC 1: Cybersicherheit ist nicht mehr teuer und kompliziert",
+    "subheading": "Eine einheitliche KI-Cybersicherheitsplattform, die Folgendes vereint:",
+    "playgroundHeading": "KI-gestütztes Security Operations Center",
     "bullets": {
-      "web": "Echtzeitschutz vor Webangriffen",
+      "web": "Echtzeit-Schutz vor Webangriffen",
       "email": "Schutz vor E-Mail-Angriffen",
       "vulnerability": "Schwachstellen-Finder"
     },
@@ -187,11 +187,11 @@
     "tooltips": {
       "web": {
         "title": "Schutz vor Webangriffen",
-        "content": "Das System schützt vor ALLEN Arten von Webangriffen wie DDoS, SQLi und weiteren – ausgenommen Geschäftslogik-Schwachstellen"
+        "content": "Das System schützt vor ALLEN Arten von Webangriffen wie DDoS, SQLi usw., ausgenommen Geschäftslogik-Schwachstellen."
       },
       "email": {
         "title": "Schutz vor E-Mail-Angriffen",
-        "content": "Das System schützt vor ALLEN Arten von E-Mail-Angriffen, darunter Phishing, Malware-Anhänge und gefährliche Links"
+        "content": "Das System schützt vor ALLEN Arten von E-Mail-Angriffen: Phishing, schädliche Anhänge, gefährliche Links usw."
       },
       "vulnerability": {
         "title": "Schwachstellen-Finder",
