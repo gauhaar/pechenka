@@ -22,7 +22,7 @@ export const metadata = {
     icon: '/logo.png',
   },
   other: {
-    verification: 'wt77gxo7ikivwz5k8hldk',
+    verification: 'bms90c794rpwp6mwhst',
   },
 };
 
