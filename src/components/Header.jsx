@@ -22,12 +22,14 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange, onSithubGet }) =>
   const isSithubPage = pathname === "/sithub" || pathname === "/sithub/";
   const isPolicyPage = pathname?.startsWith("/policies");
   const isSlncEnvPolicyPage = pathname?.startsWith("/policies/slnc_env");
+  const isInstructionsAiSocPage = pathname === "/instructions/ai-soc" || pathname === "/instructions/ai-soc/";
   const [isCondensed, setIsCondensed] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [comingSoonOpen, setComingSoonOpen] = useState(false);
   const [countrySelectOpen, setCountrySelectOpen] = useState(false);
   const [isSystemsOpen, setIsSystemsOpen] = useState(false);
+  const [isInstructionsOpen, setIsInstructionsOpen] = useState(false);
   const { t } = useLanguage();
 
   const scrollToContact = () => {
@@ -88,7 +90,10 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange, onSithubGet }) =>
   const toggleMobileMenu = () =>
     setIsMobileMenuOpen((prev) => {
       const next = !prev;
-      if (!next) setIsSystemsOpen(false);
+      if (!next) {
+        setIsSystemsOpen(false);
+        setIsInstructionsOpen(false);
+      }
       return next;
     });
 
@@ -101,10 +106,17 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange, onSithubGet }) =>
     { key: "sithub", label: t("header.nav.systemsSithub", "Sithub"), href: "/sithub" },
   ];
 
+  const instructionsItems = [
+    { key: "ai-soc", label: t("header.nav.instructionsAiSoc", "AI-SOC"), href: "/instructions/ai-soc" },
+    { key: "supreme", label: t("header.nav.instructionsSupreme", "Supreme") },
+    { key: "sithub", label: t("header.nav.instructionsSithub", "Sithub") },
+  ];
+
   const navItems = [
     { key: "services", label: t("header.nav.services", "Services"), href: "/services" },
     { key: "affiliate", label: t("header.nav.affiliate", "Affiliate Program"), href: "/affiliate" },
     { key: "systems", label: t("header.nav.systems", "Systems"), children: systemsItems },
+    { key: "instructions", label: t("header.nav.instructions", "Instructions"), children: instructionsItems },
   ];
 
   return (
@@ -130,13 +142,15 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange, onSithubGet }) =>
               <nav className="mx-auto flex w-full max-w-sm flex-col space-y-6 text-lg">
                 {navItems.map((item) => {
                   if (item.children) {
-                    const expanded = isSystemsOpen;
+                    const isSystemsMenu = item.key === "systems";
+                    const expanded = isSystemsMenu ? isSystemsOpen : isInstructionsOpen;
+                    const toggleExpanded = isSystemsMenu ? setIsSystemsOpen : setIsInstructionsOpen;
                     return (
                       <div key={item.key} className="border-b border-white/20 pb-2 text-white">
                         <button
                           type="button"
                           className="flex w-full items-center justify-between py-2 text-left"
-                          onClick={() => setIsSystemsOpen((prev) => !prev)}
+                          onClick={() => toggleExpanded((prev) => !prev)}
                           aria-expanded={expanded}
                         >
                           <span>{item.label}</span>
@@ -161,19 +175,30 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange, onSithubGet }) =>
                               exit={{ opacity: 0, y: -4 }}
                               className="mt-2 space-y-2 pl-2"
                             >
-                              {item.children.map((child) => (
-                                <Link
-                                  key={child.key}
-                                  href={child.href}
-                                  className="block rounded-lg px-3 py-2 text-white/90 hover:bg-white/10"
-                                  onClick={() => {
-                                    setIsSystemsOpen(false);
-                                    setIsMobileMenuOpen(false);
-                                  }}
-                                >
-                                  {child.label}
-                                </Link>
-                              ))}
+                              {item.children.map((child) =>
+                                child.href ? (
+                                  <Link
+                                    key={child.key}
+                                    href={child.href}
+                                    className="block rounded-lg px-3 py-2 text-white/90 hover:bg-white/10"
+                                    onClick={() => {
+                                      setIsSystemsOpen(false);
+                                      setIsInstructionsOpen(false);
+                                      setIsMobileMenuOpen(false);
+                                    }}
+                                  >
+                                    {child.label}
+                                  </Link>
+                                ) : (
+                                  <span
+                                    key={child.key}
+                                    className="block rounded-lg px-3 py-2 text-white/60 cursor-default"
+                                    aria-disabled="true"
+                                  >
+                                    {child.label}
+                                  </span>
+                                )
+                              )}
                             </motion.div>
                           )}
                         </AnimatePresence>
@@ -211,7 +236,7 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange, onSithubGet }) =>
                   ) : (
                     <LanguageSelector align="left" />
                   )}
-                  {isMainPage && (
+                  {!isInstructionsAiSocPage && isMainPage && (
                     <GlowButton
                       onClick={() => {
                         onOpenModal?.();
@@ -221,7 +246,7 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange, onSithubGet }) =>
                       {t("header.cta.contact", "Contact")}
                     </GlowButton>
                   )}
-                  {!isMainPage && !isPolicyPage && (
+                  {!isInstructionsAiSocPage && !isMainPage && !isPolicyPage && (
                     <GlowButton
                       onClick={() => {
                         if (isSithubPage) {
@@ -298,23 +323,26 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange, onSithubGet }) =>
             >
               {navItems.map((item) => {
                 if (item.children) {
+                  const isSystemsMenu = item.key === "systems";
+                  const expanded = isSystemsMenu ? isSystemsOpen : isInstructionsOpen;
+                  const setExpanded = isSystemsMenu ? setIsSystemsOpen : setIsInstructionsOpen;
                   return (
                     <div
                       key={item.key}
                       className="relative"
-                      onMouseEnter={() => setIsSystemsOpen(true)}
-                      onMouseLeave={() => setIsSystemsOpen(false)}
+                      onMouseEnter={() => setExpanded(true)}
+                      onMouseLeave={() => setExpanded(false)}
                     >
                       <button
                         type="button"
                         className="nav-link inline-flex items-center gap-1 text-white bg-transparent appearance-none focus:outline-none"
                         aria-haspopup="true"
-                        aria-expanded={isSystemsOpen}
-                        onClick={() => setIsSystemsOpen((prev) => !prev)}
+                        aria-expanded={expanded}
+                        onClick={() => setExpanded((prev) => !prev)}
                       >
                         <span>{item.label}</span>
                         <svg
-                          className={clsx("h-4 w-4 transition", isSystemsOpen && "rotate-180")}
+                          className={clsx("h-4 w-4 transition", expanded && "rotate-180")}
                           viewBox="0 0 12 8"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -327,7 +355,7 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange, onSithubGet }) =>
                         </svg>
                       </button>
                       <AnimatePresence>
-                        {isSystemsOpen && (
+                        {expanded && (
                           <motion.div
                             initial={{ opacity: 0, y: 6 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -335,15 +363,25 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange, onSithubGet }) =>
                             transition={{ duration: 0.15, ease: "easeOut" }}
                             className="absolute left-0 mt-2 w-64 overflow-hidden rounded-xl border border-white/10 bg-black/85 p-2 shadow-2xl backdrop-blur-xl"
                           >
-                            {item.children.map((child) => (
-                              <Link
-                                key={child.key}
-                                href={child.href}
-                                className="block rounded-lg px-3 py-2 text-sm text-white hover:bg-white/10 whitespace-nowrap"
-                              >
-                                {child.label}
-                              </Link>
-                            ))}
+                            {item.children.map((child) =>
+                              child.href ? (
+                                <Link
+                                  key={child.key}
+                                  href={child.href}
+                                  className="block rounded-lg px-3 py-2 text-sm text-white hover:bg-white/10 whitespace-nowrap"
+                                >
+                                  {child.label}
+                                </Link>
+                              ) : (
+                                <span
+                                  key={child.key}
+                                  className="block rounded-lg px-3 py-2 text-sm text-white/60 whitespace-nowrap cursor-default"
+                                  aria-disabled="true"
+                                >
+                                  {child.label}
+                                </span>
+                              )
+                            )}
                           </motion.div>
                         )}
                       </AnimatePresence>
@@ -392,13 +430,13 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange, onSithubGet }) =>
                     <LanguageSelector align={isDesktop ? "right" : "center"} />
                   )}
                 </div>
-                {isDesktop && isMainPage && (
+                {isDesktop && !isInstructionsAiSocPage && isMainPage && (
                   <GlowButton onClick={handleContactClick}>
                     {t("header.cta.contact", "Contact")}
                   </GlowButton>
                 )}
                 {/* Get button for /sithub - desktop only, mobile shows in menu */}
-                {isDesktop && isSithubPage && (
+                {isDesktop && !isInstructionsAiSocPage && isSithubPage && (
                   <GlowButton
                     onClick={() => {
                       if (onSithubGet) {
@@ -412,7 +450,7 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange, onSithubGet }) =>
                   </GlowButton>
                 )}
                 {/* Request Demo button for other non-main, non-policy, non-sithub pages - desktop only */}
-                {isDesktop && !isMainPage && !isPolicyPage && !isSithubPage && (
+                {isDesktop && !isInstructionsAiSocPage && !isMainPage && !isPolicyPage && !isSithubPage && (
                   <GlowButton onClick={onOpenModal}>
                     {t("header.cta.requestDemo", "Request Demo")}
                   </GlowButton>
