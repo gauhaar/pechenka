@@ -577,7 +577,7 @@ const PricingCard = ({
           />
 
           {/* Content container: SHARP TEXT, NO BLUR */}
-          <div className={`relative p-6 sm:p-8 flex ${isHorizontal ? "flex-col sm:flex-row gap-6 sm:gap-8" : "flex-col"} h-full z-10`}>
+          <div className={`relative p-6 sm:p-8 flex ${isHorizontal ? "flex flex-col lg:flex-row gap-6 lg:gap-8" : "flex-col"} h-full z-10`}>
             {/* Left block: Title and Price */}
             <div className={`flex flex-col ${isHorizontal ? "lg:w-auto lg:min-w-[240px]" : "w-full mb-6 sm:mb-8"}`}>
               <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 leading-tight">
