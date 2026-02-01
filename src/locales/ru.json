@@ -576,1189 +576,1189 @@
         "percentMaintenance": "{percent}% ежегодного сопровождения",
         "planEstimate": "${value}",
         "perYear": "в год (оценка)"
-      },
-      "documentation": {
-        "tabs": {
-          "web": "Веб-безопасность",
-          "email": "Почтовая безопасность"
+      }
+    }
+  },
+  "documentation": {
+    "tabs": {
+      "web": "Веб-безопасность",
+      "email": "Почтовая безопасность"
+    },
+    "system": {
+      "sections": "Разделы",
+      "topics": "Темы",
+      "tableOfContents": "Оглавление",
+      "close": "Закрыть"
+    },
+    "webSecurity": {
+      "placeholder": {
+        "badge": "Веб-безопасность",
+        "title": "Документация скоро появится",
+        "description": "Мы готовим подробное руководство по настройке и защите веб-приложений. Загляните позже — материалы появятся в ближайшее время."
+      }
+    },
+    "emailSecurity": {
+      "badge": "Система почтовой безопасности",
+      "title": "Система почтовой безопасности",
+      "subtitle": "Документация | Версия 1.0",
+      "description": "Как настроить и эксплуатировать корпоративную платформу почтовой безопасности.",
+      "chapters": [
+        {
+          "id": "getting-started",
+          "title": "Начало работы",
+          "label": "Начало работы",
+          "description": "Первые шаги для администратора и пользователя.",
+          "sections": [
+            {
+              "id": "admin-setup",
+              "title": "Для администратора",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Чтобы начать работу с системой:"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Войдите в CMC Admin Panel через admin.silenceai.net используя Google или Microsoft OAuth.",
+                    "Добавьте домен вашей компании.",
+                    "Подтвердите владение доменом через DNS.",
+                    "Настройте записи безопасности (SPF, DKIM, DMARC).",
+                    "Создайте email-аккаунты для сотрудников."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "После настройки пользователи смогут входить в webmail-клиент и отправлять защищенные письма."
+                }
+              ]
+            },
+            {
+              "id": "user-onboarding",
+              "title": "Для пользователя",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Чтобы начать работать с почтой:"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Получите учетные данные от администратора.",
+                    "Войдите на mail.silenceai.net через email/пароль или OAuth.",
+                    "Отправьте первое письмо через кнопку \"Compose\".",
+                    "Ознакомьтесь с системными папками, куда автоматически попадают письма по категориям безопасности."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Входящие письма автоматически проверяются на угрозы и распределяются по папкам."
+                }
+              ]
+            }
+          ]
         },
-        "system": {
-          "sections": "Разделы",
-          "topics": "Темы",
-          "tableOfContents": "Оглавление",
-          "close": "Закрыть"
+        {
+          "id": "step-by-step",
+          "title": "Пошаговые инструкции",
+          "label": "Пошаговые инструкции",
+          "description": "Работа с доменами и настройкой DNS.",
+          "sections": [
+            {
+              "id": "add-domain",
+              "title": "Добавить домен",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Откройте CMC Admin Panel.",
+                    "Нажмите \"Add Domain\".",
+                    "Введите доменное имя без www (например, company.com).",
+                    "Нажмите \"Add\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Система сгенерирует verification token для подтверждения владения доменом."
+                }
+              ]
+            },
+            {
+              "id": "verify-domain",
+              "title": "Подтвердить владение доменом",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "После добавления домена необходимо подтвердить, что вы владелец."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Скопируйте TXT-запись из CMC:"
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "_cmc-verification.company.com TXT \"cmc-verify-abc123xyz\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Добавьте эту запись в DNS-настройки вашего домена.",
+                    "Дождитесь автоматической проверки (каждые 5 минут) или нажмите \"Check Now\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Верификация может занять до 48 часов. После успешной проверки статус домена изменится на verified."
+                }
+              ]
+            },
+            {
+              "id": "configure-spf",
+              "title": "Настроить SPF-запись",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "SPF определяет, какие серверы могут отправлять почту от вашего домена."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "В CMC откройте \"DNS Configuration\" → \"SPF\".",
+                    "Нажмите \"Check Current SPF\", чтобы увидеть текущие записи.",
+                    "Нажмите \"Generate SPF Record\".",
+                    "Скопируйте предложенную запись:"
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "company.com TXT \"v=spf1 include:_spf.silenceai.net -all\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Добавьте запись в DNS."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Если у вас уже есть SPF-запись (например, для Gmail), добавьте наш include перед финальным квалификатором -all."
+                }
+              ]
+            },
+            {
+              "id": "configure-dkim",
+              "title": "Настроить DKIM-ключи",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DKIM добавляет криптографическую подпись к вашим письмам."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "В CMC откройте \"DNS Configuration\" → \"DKIM\".",
+                    "Нажмите \"Generate DKIM Keys\".",
+                    "Система создаст пару ключей (приватный хранится на сервере, публичный для DNS).",
+                    "Скопируйте DNS-запись:"
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "silenceai._domainkey.company.com TXT \"v=DKIM1; k=rsa; p=MIIBIjAN...\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Добавьте запись в DNS.",
+                    "Проверьте статус через \"Verify DKIM\"."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "configure-dmarc",
+              "title": "Настроить DMARC-политику",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DMARC определяет действия с письмами, не прошедшими SPF или DKIM проверку."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "В CMC откройте \"DNS Configuration\" → \"DMARC\".",
+                    "Выберите политику:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "quarantine — отправить в спам (рекомендуется)",
+                    "reject — отклонить письмо"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Нажмите \"Generate DMARC Record\".",
+                    "Скопируйте запись:"
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "_dmarc.company.com TXT \"v=DMARC1; p=quarantine; rua=mailto:dmarc-reports@silenceai.net\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Добавьте запись в DNS."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Начните с политики quarantine, проверьте отчеты за 1-2 недели, затем можете перейти на reject."
+                }
+              ]
+            }
+          ]
         },
-        "webSecurity": {
-          "placeholder": {
-            "badge": "Веб-безопасность",
-            "title": "Документация скоро появится",
-            "description": "Мы готовим подробное руководство по настройке и защите веб-приложений. Загляните позже — материалы появятся в ближайшее время."
-          }
+        {
+          "id": "user-management",
+          "title": "Управление пользователями",
+          "label": "Управление пользователями",
+          "description": "Создание и обслуживание почтовых аккаунтов.",
+          "sections": [
+            {
+              "id": "create-account",
+              "title": "Создать email-аккаунт",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Откройте раздел \"Email Accounts\" в CMC.",
+                    "Нажмите \"Create Account\".",
+                    "Заполните:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Email: john.doe@company.com",
+                    "Имя и фамилия",
+                    "Пароль (минимум 8 символов, uppercase, lowercase, цифра, спецсимвол)",
+                    "Storage quota: выберите размер хранилища"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Нажмите \"Create\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Пользователь сразу сможет войти в webmail."
+                }
+              ]
+            },
+            {
+              "id": "suspend-activate",
+              "title": "Приостановить или активировать аккаунт",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Найдите пользователя в \"Email Accounts\".",
+                    "В меню Actions выберите:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "\"Suspend\" — приостановить (пользователь не сможет войти)",
+                    "\"Activate\" — восстановить доступ"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Подтвердите действие."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "change-quota",
+              "title": "Изменить квоту хранилища",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Найдите пользователя в списке.",
+                    "В меню Actions выберите \"Edit Quota\".",
+                    "Выберите новый размер хранилища.",
+                    "Сохраните изменения."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Изменения применяются немедленно."
+                }
+              ]
+            },
+            {
+              "id": "delete-account",
+              "title": "Удалить аккаунт",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Найдите пользователя в списке.",
+                    "В меню Actions выберите \"Delete\".",
+                    "Подтвердите удаление."
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "intent": "warning",
+                  "content": "Внимание: Все данные пользователя будут удалены безвозвратно."
+                }
+              ]
+            }
+          ]
         },
-        "emailSecurity": {
-          "badge": "Система почтовой безопасности",
-          "title": "Система почтовой безопасности",
-          "subtitle": "Документация | Версия 1.0",
-          "description": "Как настроить и эксплуатировать корпоративную платформу почтовой безопасности.",
-          "chapters": [
+        {
+          "id": "mail-operations",
+          "title": "Работа с почтой",
+          "label": "Работа с почтой",
+          "description": "Действия, выполняемые в webmail.",
+          "sections": [
             {
-              "id": "getting-started",
-              "title": "Начало работы",
-              "label": "Начало работы",
-              "description": "Первые шаги для администратора и пользователя.",
-              "sections": [
+              "id": "send-letter",
+              "title": "Отправить письмо",
+              "body": [
                 {
-                  "id": "admin-setup",
-                  "title": "Для администратора",
-                  "body": [
-                    {
-                      "type": "paragraph",
-                      "content": "Чтобы начать работу с системой:"
-                    },
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "Войдите в CMC Admin Panel через admin.silenceai.net используя Google или Microsoft OAuth.",
-                        "Добавьте домен вашей компании.",
-                        "Подтвердите владение доменом через DNS.",
-                        "Настройте записи безопасности (SPF, DKIM, DMARC).",
-                        "Создайте email-аккаунты для сотрудников."
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "После настройки пользователи смогут входить в webmail-клиент и отправлять защищенные письма."
-                    }
+                  "type": "orderedList",
+                  "items": [
+                    "В webmail нажмите \"Compose\".",
+                    "Заполните:"
                   ]
                 },
                 {
-                  "id": "user-onboarding",
-                  "title": "Для пользователя",
-                  "body": [
-                    {
-                      "type": "paragraph",
-                      "content": "Чтобы начать работать с почтой:"
-                    },
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "Получите учетные данные от администратора.",
-                        "Войдите на mail.silenceai.net через email/пароль или OAuth.",
-                        "Отправьте первое письмо через кнопку \"Compose\".",
-                        "Ознакомьтесь с системными папками, куда автоматически попадают письма по категориям безопасности."
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Входящие письма автоматически проверяются на угрозы и распределяются по папкам."
-                    }
+                  "type": "list",
+                  "items": [
+                    "To: адрес получателя",
+                    "Subject: тема письма",
+                    "Body: текст (доступно форматирование)"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "При необходимости прикрепите файлы (до 25 МБ на файл).",
+                    "Нажмите \"Send\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Письмо автоматически подписывается DKIM и отправляется."
+                }
+              ]
+            },
+            {
+              "id": "custom-folder",
+              "title": "Создать custom folder с правилами",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Custom folders автоматически сортируют письма по заданным критериям."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "В боковом меню нажмите \"Create Folder\".",
+                    "Введите название папки (например, \"Clients\").",
+                    "Нажмите \"Add Rules\".",
+                    "Настройте правило:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Фильтр: Sender Domain",
+                    "Условие: Contains",
+                    "Значение: client.com"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Включите \"Apply to existing emails\", если нужно обработать текущие письма.",
+                    "Нажмите \"Create\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Все новые письма от *@client.com будут автоматически попадать в папку \"Clients\"."
+                }
+              ]
+            },
+            {
+              "id": "add-whitelist",
+              "title": "Добавить отправителя в Whitelist",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Если письмо попало в SPAM по ошибке:"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Откройте письмо в папке SPAM.",
+                    "Нажмите \"Not Spam\" → \"Add to Whitelist\".",
+                    "Выберите:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Whitelist sender email",
+                    "Whitelist sender domain"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Подтвердите действие."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Все будущие письма от этого отправителя не будут попадать в спам."
+                }
+              ]
+            },
+            {
+              "id": "email-signature",
+              "title": "Настроить email-подпись",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Откройте Settings → \"Email Signature\".",
+                    "Включите \"Enable signature\".",
+                    "Введите текст подписи в редакторе.",
+                    "Нажмите \"Save\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Подпись будет автоматически добавляться ко всем исходящим письмам."
+                }
+              ]
+            },
+            {
+              "id": "vacation-responder",
+              "title": "Настроить автоответчик",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Откройте Settings → \"Vacation Responder\".",
+                    "Включите \"Enable vacation responder\".",
+                    "Укажите даты начала и окончания.",
+                    "Введите текст автоответа.",
+                    "Отметьте \"Reply once per sender\", чтобы отправлять ответ каждому отправителю только один раз.",
+                    "Нажмите \"Save\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Автоответчик будет работать в выбранные даты и отключится автоматически."
+                }
+              ]
+            },
+            {
+              "id": "forwarding",
+              "title": "Настроить переадресацию",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Откройте Settings → \"Email Forwarding\".",
+                    "Нажмите \"Add Forwarding Address\".",
+                    "Введите email для пересылки.",
+                    "Отметьте \"Keep copy in inbox\", если хотите сохранять копию у себя.",
+                    "Нажмите \"Save\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Все входящие письма будут автоматически пересылаться на указанный адрес."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "domain-administration",
+          "title": "Администрирование домена",
+          "label": "Администрирование домена",
+          "description": "Аналитика и массовые операции для домена.",
+          "sections": [
+            {
+              "id": "view-activity",
+              "title": "Просмотреть email-активность домена",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Администраторы могут видеть все письма всех пользователей домена."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Откройте CMC → \"Email Activity\".",
+                    "Используйте фильтры:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "По пользователю",
+                    "По папке (Secure, Spam, Phishing)",
+                    "По дате",
+                    "По типу угрозы"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Для поиска используйте строку поиска по теме или отправителю."
                   ]
                 }
               ]
             },
             {
-              "id": "step-by-step",
-              "title": "Пошаговые инструкции",
-              "label": "Пошаговые инструкции",
-              "description": "Работа с доменами и настройкой DNS.",
-              "sections": [
+              "id": "bulk-delete",
+              "title": "Удалить письма у всех пользователей",
+              "body": [
                 {
-                  "id": "add-domain",
-                  "title": "Добавить домен",
-                  "body": [
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "Откройте CMC Admin Panel.",
-                        "Нажмите \"Add Domain\".",
-                        "Введите доменное имя без www (например, company.com).",
-                        "Нажмите \"Add\"."
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Система сгенерирует verification token для подтверждения владения доменом."
-                    }
+                  "type": "paragraph",
+                  "content": "Если обнаружено вредоносное письмо, отправленное всем сотрудникам:"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Откройте \"Email Activity\".",
+                    "Найдите письмо через фильтры или поиск.",
+                    "Отметьте письма для удаления.",
+                    "Нажмите \"Delete Selected\".",
+                    "Подтвердите массовое удаление."
                   ]
                 },
                 {
-                  "id": "verify-domain",
-                  "title": "Подтвердить владение доменом",
-                  "body": [
-                    {
-                      "type": "paragraph",
-                      "content": "После добавления домена необходимо подтвердить, что вы владелец."
-                    },
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "Скопируйте TXT-запись из CMC:"
-                      ]
-                    },
-                    {
-                      "type": "code",
-                      "content": "_cmc-verification.company.com TXT \"cmc-verify-abc123xyz\""
-                    },
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "Добавьте эту запись в DNS-настройки вашего домена.",
-                        "Дождитесь автоматической проверки (каждые 5 минут) или нажмите \"Check Now\"."
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Верификация может занять до 48 часов. После успешной проверки статус домена изменится на verified."
-                    }
-                  ]
+                  "type": "paragraph",
+                  "content": "Письма будут удалены у всех пользователей домена."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "concepts",
+          "title": "Концепции",
+          "label": "Концепции",
+          "description": "Основные понятия платформы и потоки безопасности.",
+          "sections": [
+            {
+              "id": "system-overview",
+              "title": "Обзор системы",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Email Security System — платформа для защиты корпоративной почты от киберугроз."
                 },
                 {
-                  "id": "configure-spf",
-                  "title": "Настроить SPF-запись",
-                  "body": [
-                    {
-                      "type": "paragraph",
-                      "content": "SPF определяет, какие серверы могут отправлять почту от вашего домена."
-                    },
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "В CMC откройте \"DNS Configuration\" → \"SPF\".",
-                        "Нажмите \"Check Current SPF\", чтобы увидеть текущие записи.",
-                        "Нажмите \"Generate SPF Record\".",
-                        "Скопируйте предложенную запись:"
-                      ]
-                    },
-                    {
-                      "type": "code",
-                      "content": "company.com TXT \"v=spf1 include:_spf.silenceai.net -all\""
-                    },
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "Добавьте запись в DNS."
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Если у вас уже есть SPF-запись (например, для Gmail), добавьте наш include перед финальным квалификатором -all."
-                    }
-                  ]
-                },
-                {
-                  "id": "configure-dkim",
-                  "title": "Настроить DKIM-ключи",
-                  "body": [
-                    {
-                      "type": "paragraph",
-                      "content": "DKIM добавляет криптографическую подпись к вашим письмам."
-                    },
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "В CMC откройте \"DNS Configuration\" → \"DKIM\".",
-                        "Нажмите \"Generate DKIM Keys\".",
-                        "Система создаст пару ключей (приватный хранится на сервере, публичный для DNS).",
-                        "Скопируйте DNS-запись:"
-                      ]
-                    },
-                    {
-                      "type": "code",
-                      "content": "silenceai._domainkey.company.com TXT \"v=DKIM1; k=rsa; p=MIIBIjAN...\""
-                    },
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "Добавьте запись в DNS.",
-                        "Проверьте статус через \"Verify DKIM\"."
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "id": "configure-dmarc",
-                  "title": "Настроить DMARC-политику",
-                  "body": [
-                    {
-                      "type": "paragraph",
-                      "content": "DMARC определяет действия с письмами, не прошедшими SPF или DKIM проверку."
-                    },
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "В CMC откройте \"DNS Configuration\" → \"DMARC\".",
-                        "Выберите политику:"
-                      ]
-                    },
-                    {
-                      "type": "list",
-                      "items": [
-                        "quarantine — отправить в спам (рекомендуется)",
-                        "reject — отклонить письмо"
-                      ]
-                    },
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "Нажмите \"Generate DMARC Record\".",
-                        "Скопируйте запись:"
-                      ]
-                    },
-                    {
-                      "type": "code",
-                      "content": "_dmarc.company.com TXT \"v=DMARC1; p=quarantine; rua=mailto:dmarc-reports@silenceai.net\""
-                    },
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "Добавьте запись в DNS."
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Начните с политики quarantine, проверьте отчеты за 1-2 недели, затем можете перейти на reject."
-                    }
+                  "type": "list",
+                  "title": "Компоненты:",
+                  "items": [
+                    "CMC Admin Panel — панель администратора для управления доменами, пользователями и DNS-настройками.",
+                    "Webmail Client — почтовый клиент для сотрудников с автоматической защитой от угроз.",
+                    "Infrastructure Services — SMTP-сервер и система безопасности для обработки писем."
                   ]
                 }
               ]
             },
             {
-              "id": "user-management",
-              "title": "Управление пользователями",
-              "label": "Управление пользователями",
-              "description": "Создание и обслуживание почтовых аккаунтов.",
-              "sections": [
+              "id": "security-stack",
+              "title": "Система защиты",
+              "body": [
                 {
-                  "id": "create-account",
-                  "title": "Создать email-аккаунт",
-                  "body": [
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "Откройте раздел \"Email Accounts\" в CMC.",
-                        "Нажмите \"Create Account\".",
-                        "Заполните:"
-                      ]
-                    },
-                    {
-                      "type": "list",
-                      "items": [
-                        "Email: john.doe@company.com",
-                        "Имя и фамилия",
-                        "Пароль (минимум 8 символов, uppercase, lowercase, цифра, спецсимвол)",
-                        "Storage quota: выберите размер хранилища"
-                      ]
-                    },
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "Нажмите \"Create\"."
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Пользователь сразу сможет войти в webmail."
-                    }
+                  "type": "paragraph",
+                  "content": "Каждое входящее письмо проходит проверку через пять уровней защиты:"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Layer 0: Phishing Domain Check — проверка домена отправителя по базе известных фишинговых доменов.",
+                    "Layer 1: Spoof Detection — проверка SPF, DKIM и DMARC записей для определения подлинности отправителя.",
+                    "Layer 2: Spam Detection — анализ письма через RSPAMD на наличие спам-признаков.",
+                    "Layer 3: Link Scanner — сканирование ссылок в письме через URLScan.io на наличие вредоносных URL.",
+                    "Layer 4: Antivirus — проверка вложений антивирусом Bitdefender.",
+                    "Layer 5: AI Phishing Detection — анализ содержания письма через AI на признаки фишинга."
                   ]
                 },
                 {
-                  "id": "suspend-activate",
-                  "title": "Приостановить или активировать аккаунт",
-                  "body": [
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "Найдите пользователя в \"Email Accounts\".",
-                        "В меню Actions выберите:"
-                      ]
-                    },
-                    {
-                      "type": "list",
-                      "items": [
-                        "\"Suspend\" — приостановить (пользователь не сможет войти)",
-                        "\"Activate\" — восстановить доступ"
-                      ]
-                    },
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "Подтвердите действие."
-                      ]
-                    }
+                  "type": "paragraph",
+                  "content": "Если угроза обнаружена, обработка останавливается, а письмо попадает в соответствующую папку."
+                }
+              ]
+            },
+            {
+              "id": "system-folders",
+              "title": "Папки системы",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Письма автоматически распределяются по папкам в зависимости от результатов проверки:"
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Unfiltered — новые письма до обработки (временная папка).",
+                    "Secure — безопасные письма, прошедшие все проверки.",
+                    "Possibly Spoofed — письма с подозрительной аутентификацией отправителя.",
+                    "SPAM — спам-письма.",
+                    "Dangerous Links — письма с вредоносными ссылками.",
+                    "Malware — письма с вирусами во вложениях.",
+                    "Possibly Phishing — письма с признаками фишинга.",
+                    "Sent — отправленные письма."
                   ]
                 },
                 {
-                  "id": "change-quota",
-                  "title": "Изменить квоту хранилища",
-                  "body": [
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "Найдите пользователя в списке.",
-                        "В меню Actions выберите \"Edit Quota\".",
-                        "Выберите новый размер хранилища.",
-                        "Сохраните изменения."
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Изменения применяются немедленно."
-                    }
+                  "type": "paragraph",
+                  "content": "Одно письмо может находиться в нескольких папках одновременно (например, SPAM и Possibly Spoofed)."
+                }
+              ]
+            },
+            {
+              "id": "custom-folders",
+              "title": "Пользовательские папки",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Пользователи могут создавать собственные папки с автоматическими правилами."
+                },
+                {
+                  "type": "list",
+                  "title": "Правила фильтрации:",
+                  "items": [
+                    "По домену отправителя",
+                    "По адресу отправителя",
+                    "По теме письма",
+                    "По имени отправителя"
                   ]
                 },
                 {
-                  "id": "delete-account",
-                  "title": "Удалить аккаунт",
-                  "body": [
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "Найдите пользователя в списке.",
-                        "В меню Actions выберите \"Delete\".",
-                        "Подтвердите удаление."
-                      ]
-                    },
-                    {
-                      "type": "callout",
-                      "intent": "warning",
-                      "content": "Внимание: Все данные пользователя будут удалены безвозвратно."
-                    }
+                  "type": "list",
+                  "title": "Режимы совпадения:",
+                  "items": [
+                    "Contains",
+                    "Equals",
+                    "Starts with",
+                    "Ends with"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Правила можно применить к уже полученным письмам (retroactive filtering)."
+                }
+              ]
+            },
+            {
+              "id": "spf",
+              "title": "SPF (Sender Policy Framework)",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "SPF — DNS-запись, определяющая серверы, которым разрешено отправлять почту от имени домена."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Формат:"
+                },
+                {
+                  "type": "code",
+                  "content": "v=spf1 include:_spf.silenceai.net -all"
+                },
+                {
+                  "type": "list",
+                  "title": "Механизмы:",
+                  "items": [
+                    "include:domain — разрешить серверы указанного домена",
+                    "ip4:x.x.x.x — разрешить конкретный IP-адрес",
+                    "-all — запретить все остальные",
+                    "~all — помечать остальные как подозрительные"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Проверка SPF: Получатель проверяет, что IP-адрес отправителя разрешен в SPF-записи домена. Если проверка не пройдена, письмо помечается как подозрительное."
+                }
+              ]
+            },
+            {
+              "id": "dkim",
+              "title": "DKIM (DomainKeys Identified Mail)",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DKIM добавляет криптографическую подпись к письмам, подтверждающую, что письмо отправлено владельцем домена и не изменено при передаче."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Как работает:"
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "При отправке письма сервер подписывает его приватным ключом и добавляет DKIM-Signature заголовок.",
+                    "Получатель извлекает публичный ключ из DNS и проверяет подпись."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "DNS-запись:"
+                },
+                {
+                  "type": "code",
+                  "content": "selector._domainkey.domain.com TXT \"v=DKIM1; k=rsa; p=публичный_ключ\""
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Приватный ключ хранится на сервере в зашифрованном виде и никогда не передается клиентам."
+                }
+              ]
+            },
+            {
+              "id": "dmarc",
+              "title": "DMARC (Domain-based Message Authentication)",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DMARC определяет политику обработки писем, не прошедших SPF или DKIM проверку."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Формат:"
+                },
+                {
+                  "type": "code",
+                  "content": "_dmarc.domain.com TXT \"v=DMARC1; p=quarantine; rua=mailto:reports@domain.com\""
+                },
+                {
+                  "type": "list",
+                  "title": "Параметры:",
+                  "items": [
+                    "p=quarantine — отправлять в спам",
+                    "p=reject — отклонять письмо",
+                    "p=none — только мониторинг",
+                    "rua= — адрес для агрегированных отчетов"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Проверка DMARC: Получатель проверяет, что письмо прошло SPF или DKIM и домены совпадают (alignment). Если проверка не пройдена, применяется указанная политика."
+                }
+              ]
+            },
+            {
+              "id": "attachments",
+              "title": "Вложения и антивирус",
+              "body": [
+                {
+                  "type": "list",
+                  "title": "Ограничения:",
+                  "items": [
+                    "Максимальный размер файла: 25 МБ",
+                    "Поддерживаются все типы файлов"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Проверка вложений: Все вложения сканируются антивирусом Bitdefender при получении письма. Если обнаружен вирус, письмо помещается в папку Malware, и вложение блокируется для скачивания."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Хранение: Вложения хранятся на сервере в отдельной директории для каждого письма. Зараженные файлы перемещаются в карантин."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "access-control",
+          "title": "Управление доступом",
+          "label": "Управление доступом",
+          "description": "Роли пользователей и защита доступа.",
+          "sections": [
+            {
+              "id": "user-roles",
+              "title": "Роли пользователей",
+              "body": [
+                {
+                  "type": "list",
+                  "title": "Администратор",
+                  "items": [
+                    "Полный доступ к CMC Admin Panel",
+                    "Управление доменами и DNS",
+                    "Создание и управление пользователями",
+                    "Просмотр всей почты домена",
+                    "Массовые операции с письмами"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "title": "Subordinate",
+                  "items": [
+                    "Ограниченный доступ к CMC",
+                    "Просмотр списка пользователей",
+                    "Доступ только к своим письмам"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "title": "Пользователь",
+                  "items": [
+                    "Доступ к веб-клиенту",
+                    "Работа со своими письмами",
+                    "Настройка личных параметров"
                   ]
                 }
               ]
             },
             {
-              "id": "mail-operations",
-              "title": "Работа с почтой",
-              "label": "Работа с почтой",
-              "description": "Действия, выполняемые в webmail.",
-              "sections": [
+              "id": "role-assignment",
+              "title": "Назначение ролей",
+              "body": [
                 {
-                  "id": "send-letter",
-                  "title": "Отправить письмо",
-                  "body": [
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "В webmail нажмите \"Compose\".",
-                        "Заполните:"
-                      ]
-                    },
-                    {
-                      "type": "list",
-                      "items": [
-                        "To: адрес получателя",
-                        "Subject: тема письма",
-                        "Body: текст (доступно форматирование)"
-                      ]
-                    },
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "При необходимости прикрепите файлы (до 25 МБ на файл).",
-                        "Нажмите \"Send\"."
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Письмо автоматически подписывается DKIM и отправляется."
-                    }
-                  ]
+                  "type": "paragraph",
+                  "content": "Auto-admin: Первый пользователь, вошедший через OAuth, автоматически получает роль Admin."
                 },
                 {
-                  "id": "custom-folder",
-                  "title": "Создать custom folder с правилами",
-                  "body": [
-                    {
-                      "type": "paragraph",
-                      "content": "Custom folders автоматически сортируют письма по заданным критериям."
-                    },
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "В боковом меню нажмите \"Create Folder\".",
-                        "Введите название папки (например, \"Clients\").",
-                        "Нажмите \"Add Rules\".",
-                        "Настройте правило:"
-                      ]
-                    },
-                    {
-                      "type": "list",
-                      "items": [
-                        "Фильтр: Sender Domain",
-                        "Условие: Contains",
-                        "Значение: client.com"
-                      ]
-                    },
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "Включите \"Apply to existing emails\", если нужно обработать текущие письма.",
-                        "Нажмите \"Create\"."
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Все новые письма от *@client.com будут автоматически попадать в папку \"Clients\"."
-                    }
-                  ]
+                  "type": "paragraph",
+                  "content": "Создание Subordinate: Admin может создать subordinate-пользователей через CMC в разделе \"User Management\"."
                 },
                 {
-                  "id": "add-whitelist",
-                  "title": "Добавить отправителя в Whitelist",
-                  "body": [
-                    {
-                      "type": "paragraph",
-                      "content": "Если письмо попало в SPAM по ошибке:"
-                    },
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "Откройте письмо в папке SPAM.",
-                        "Нажмите \"Not Spam\" → \"Add to Whitelist\".",
-                        "Выберите:"
-                      ]
-                    },
-                    {
-                      "type": "list",
-                      "items": [
-                        "Whitelist sender email",
-                        "Whitelist sender domain"
-                      ]
-                    },
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "Подтвердите действие."
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Все будущие письма от этого отправителя не будут попадать в спам."
-                    }
-                  ]
-                },
+                  "type": "paragraph",
+                  "content": "Создание User: Admin создает email-аккаунты в разделе \"Email Accounts\". Пользователи получают роль User."
+                }
+              ]
+            },
+            {
+              "id": "authentication",
+              "title": "Аутентификация",
+              "body": [
                 {
-                  "id": "email-signature",
-                  "title": "Настроить email-подпись",
-                  "body": [
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "Откройте Settings → \"Email Signature\".",
-                        "Включите \"Enable signature\".",
-                        "Введите текст подписи в редакторе.",
-                        "Нажмите \"Save\"."
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Подпись будет автоматически добавляться ко всем исходящим письмам."
-                    }
-                  ]
-                },
-                {
-                  "id": "vacation-responder",
-                  "title": "Настроить автоответчик",
-                  "body": [
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "Откройте Settings → \"Vacation Responder\".",
-                        "Включите \"Enable vacation responder\".",
-                        "Укажите даты начала и окончания.",
-                        "Введите текст автоответа.",
-                        "Отметьте \"Reply once per sender\", чтобы отправлять ответ каждому отправителю только один раз.",
-                        "Нажмите \"Save\"."
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Автоответчик будет работать в выбранные даты и отключится автоматически."
-                    }
-                  ]
-                },
-                {
-                  "id": "forwarding",
-                  "title": "Настроить переадресацию",
-                  "body": [
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "Откройте Settings → \"Email Forwarding\".",
-                        "Нажмите \"Add Forwarding Address\".",
-                        "Введите email для пересылки.",
-                        "Отметьте \"Keep copy in inbox\", если хотите сохранять копию у себя.",
-                        "Нажмите \"Save\"."
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Все входящие письма будут автоматически пересылаться на указанный адрес."
-                    }
+                  "type": "list",
+                  "items": [
+                    "OAuth 2.0: Вход через Google или Microsoft с использованием протокола OAuth 2.0 и PKCE для безопасности.",
+                    "Email/Password: Вход по email и паролю для аккаунтов, созданных администратором в CMC.",
+                    "JWT-токены: После входа выдается JWT-токен со сроком действия 7 дней. Токен хранится в httpOnly cookie.",
+                    "Обновление токенов: Access token обновляется автоматически через refresh token. При истечении refresh token требуется повторный вход."
                   ]
                 }
               ]
             },
             {
-              "id": "domain-administration",
-              "title": "Администрирование домена",
-              "label": "Администрирование домена",
-              "description": "Аналитика и массовые операции для домена.",
-              "sections": [
+              "id": "access-protection",
+              "title": "Защита доступа",
+              "body": [
                 {
-                  "id": "view-activity",
-                  "title": "Просмотреть email-активность домена",
-                  "body": [
-                    {
-                      "type": "paragraph",
-                      "content": "Администраторы могут видеть все письма всех пользователей домена."
-                    },
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "Откройте CMC → \"Email Activity\".",
-                        "Используйте фильтры:"
-                      ]
-                    },
-                    {
-                      "type": "list",
-                      "items": [
-                        "По пользователю",
-                        "По папке (Secure, Spam, Phishing)",
-                        "По дате",
-                        "По типу угрозы"
-                      ]
-                    },
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "Для поиска используйте строку поиска по теме или отправителю."
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "id": "bulk-delete",
-                  "title": "Удалить письма у всех пользователей",
-                  "body": [
-                    {
-                      "type": "paragraph",
-                      "content": "Если обнаружено вредоносное письмо, отправленное всем сотрудникам:"
-                    },
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "Откройте \"Email Activity\".",
-                        "Найдите письмо через фильтры или поиск.",
-                        "Отметьте письма для удаления.",
-                        "Нажмите \"Delete Selected\".",
-                        "Подтвердите массовое удаление."
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Письма будут удалены у всех пользователей домена."
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "concepts",
-              "title": "Концепции",
-              "label": "Концепции",
-              "description": "Основные понятия платформы и потоки безопасности.",
-              "sections": [
-                {
-                  "id": "system-overview",
-                  "title": "Обзор системы",
-                  "body": [
-                    {
-                      "type": "paragraph",
-                      "content": "Email Security System — платформа для защиты корпоративной почты от киберугроз."
-                    },
-                    {
-                      "type": "list",
-                      "title": "Компоненты:",
-                      "items": [
-                        "CMC Admin Panel — панель администратора для управления доменами, пользователями и DNS-настройками.",
-                        "Webmail Client — почтовый клиент для сотрудников с автоматической защитой от угроз.",
-                        "Infrastructure Services — SMTP-сервер и система безопасности для обработки писем."
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "id": "security-stack",
-                  "title": "Система защиты",
-                  "body": [
-                    {
-                      "type": "paragraph",
-                      "content": "Каждое входящее письмо проходит проверку через пять уровней защиты:"
-                    },
-                    {
-                      "type": "orderedList",
-                      "items": [
-                        "Layer 0: Phishing Domain Check — проверка домена отправителя по базе известных фишинговых доменов.",
-                        "Layer 1: Spoof Detection — проверка SPF, DKIM и DMARC записей для определения подлинности отправителя.",
-                        "Layer 2: Spam Detection — анализ письма через RSPAMD на наличие спам-признаков.",
-                        "Layer 3: Link Scanner — сканирование ссылок в письме через URLScan.io на наличие вредоносных URL.",
-                        "Layer 4: Antivirus — проверка вложений антивирусом Bitdefender.",
-                        "Layer 5: AI Phishing Detection — анализ содержания письма через AI на признаки фишинга."
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Если угроза обнаружена, обработка останавливается, а письмо попадает в соответствующую папку."
-                    }
-                  ]
-                },
-                {
-                  "id": "system-folders",
-                  "title": "Папки системы",
-                  "body": [
-                    {
-                      "type": "paragraph",
-                      "content": "Письма автоматически распределяются по папкам в зависимости от результатов проверки:"
-                    },
-                    {
-                      "type": "list",
-                      "items": [
-                        "Unfiltered — новые письма до обработки (временная папка).",
-                        "Secure — безопасные письма, прошедшие все проверки.",
-                        "Possibly Spoofed — письма с подозрительной аутентификацией отправителя.",
-                        "SPAM — спам-письма.",
-                        "Dangerous Links — письма с вредоносными ссылками.",
-                        "Malware — письма с вирусами во вложениях.",
-                        "Possibly Phishing — письма с признаками фишинга.",
-                        "Sent — отправленные письма."
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Одно письмо может находиться в нескольких папках одновременно (например, SPAM и Possibly Spoofed)."
-                    }
-                  ]
-                },
-                {
-                  "id": "custom-folders",
-                  "title": "Пользовательские папки",
-                  "body": [
-                    {
-                      "type": "paragraph",
-                      "content": "Пользователи могут создавать собственные папки с автоматическими правилами."
-                    },
-                    {
-                      "type": "list",
-                      "title": "Правила фильтрации:",
-                      "items": [
-                        "По домену отправителя",
-                        "По адресу отправителя",
-                        "По теме письма",
-                        "По имени отправителя"
-                      ]
-                    },
-                    {
-                      "type": "list",
-                      "title": "Режимы совпадения:",
-                      "items": [
-                        "Contains",
-                        "Equals",
-                        "Starts with",
-                        "Ends with"
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Правила можно применить к уже полученным письмам (retroactive filtering)."
-                    }
-                  ]
-                },
-                {
-                  "id": "spf",
-                  "title": "SPF (Sender Policy Framework)",
-                  "body": [
-                    {
-                      "type": "paragraph",
-                      "content": "SPF — DNS-запись, определяющая серверы, которым разрешено отправлять почту от имени домена."
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Формат:"
-                    },
-                    {
-                      "type": "code",
-                      "content": "v=spf1 include:_spf.silenceai.net -all"
-                    },
-                    {
-                      "type": "list",
-                      "title": "Механизмы:",
-                      "items": [
-                        "include:domain — разрешить серверы указанного домена",
-                        "ip4:x.x.x.x — разрешить конкретный IP-адрес",
-                        "-all — запретить все остальные",
-                        "~all — помечать остальные как подозрительные"
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Проверка SPF: Получатель проверяет, что IP-адрес отправителя разрешен в SPF-записи домена. Если проверка не пройдена, письмо помечается как подозрительное."
-                    }
-                  ]
-                },
-                {
-                  "id": "dkim",
-                  "title": "DKIM (DomainKeys Identified Mail)",
-                  "body": [
-                    {
-                      "type": "paragraph",
-                      "content": "DKIM добавляет криптографическую подпись к письмам, подтверждающую, что письмо отправлено владельцем домена и не изменено при передаче."
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Как работает:"
-                    },
-                    {
-                      "type": "list",
-                      "items": [
-                        "При отправке письма сервер подписывает его приватным ключом и добавляет DKIM-Signature заголовок.",
-                        "Получатель извлекает публичный ключ из DNS и проверяет подпись."
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "DNS-запись:"
-                    },
-                    {
-                      "type": "code",
-                      "content": "selector._domainkey.domain.com TXT \"v=DKIM1; k=rsa; p=публичный_ключ\""
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Приватный ключ хранится на сервере в зашифрованном виде и никогда не передается клиентам."
-                    }
-                  ]
-                },
-                {
-                  "id": "dmarc",
-                  "title": "DMARC (Domain-based Message Authentication)",
-                  "body": [
-                    {
-                      "type": "paragraph",
-                      "content": "DMARC определяет политику обработки писем, не прошедших SPF или DKIM проверку."
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Формат:"
-                    },
-                    {
-                      "type": "code",
-                      "content": "_dmarc.domain.com TXT \"v=DMARC1; p=quarantine; rua=mailto:reports@domain.com\""
-                    },
-                    {
-                      "type": "list",
-                      "title": "Параметры:",
-                      "items": [
-                        "p=quarantine — отправлять в спам",
-                        "p=reject — отклонять письмо",
-                        "p=none — только мониторинг",
-                        "rua= — адрес для агрегированных отчетов"
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Проверка DMARC: Получатель проверяет, что письмо прошло SPF или DKIM и домены совпадают (alignment). Если проверка не пройдена, применяется указанная политика."
-                    }
-                  ]
-                },
-                {
-                  "id": "attachments",
-                  "title": "Вложения и антивирус",
-                  "body": [
-                    {
-                      "type": "list",
-                      "title": "Ограничения:",
-                      "items": [
-                        "Максимальный размер файла: 25 МБ",
-                        "Поддерживаются все типы файлов"
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Проверка вложений: Все вложения сканируются антивирусом Bitdefender при получении письма. Если обнаружен вирус, письмо помещается в папку Malware, и вложение блокируется для скачивания."
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Хранение: Вложения хранятся на сервере в отдельной директории для каждого письма. Зараженные файлы перемещаются в карантин."
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "access-control",
-              "title": "Управление доступом",
-              "label": "Управление доступом",
-              "description": "Роли пользователей и защита доступа.",
-              "sections": [
-                {
-                  "id": "user-roles",
-                  "title": "Роли пользователей",
-                  "body": [
-                    {
-                      "type": "list",
-                      "title": "Администратор",
-                      "items": [
-                        "Полный доступ к CMC Admin Panel",
-                        "Управление доменами и DNS",
-                        "Создание и управление пользователями",
-                        "Просмотр всей почты домена",
-                        "Массовые операции с письмами"
-                      ]
-                    },
-                    {
-                      "type": "list",
-                      "title": "Subordinate",
-                      "items": [
-                        "Ограниченный доступ к CMC",
-                        "Просмотр списка пользователей",
-                        "Доступ только к своим письмам"
-                      ]
-                    },
-                    {
-                      "type": "list",
-                      "title": "Пользователь",
-                      "items": [
-                        "Доступ к веб-клиенту",
-                        "Работа со своими письмами",
-                        "Настройка личных параметров"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "id": "role-assignment",
-                  "title": "Назначение ролей",
-                  "body": [
-                    {
-                      "type": "paragraph",
-                      "content": "Auto-admin: Первый пользователь, вошедший через OAuth, автоматически получает роль Admin."
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Создание Subordinate: Admin может создать subordinate-пользователей через CMC в разделе \"User Management\"."
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Создание User: Admin создает email-аккаунты в разделе \"Email Accounts\". Пользователи получают роль User."
-                    }
-                  ]
-                },
-                {
-                  "id": "authentication",
-                  "title": "Аутентификация",
-                  "body": [
-                    {
-                      "type": "list",
-                      "items": [
-                        "OAuth 2.0: Вход через Google или Microsoft с использованием протокола OAuth 2.0 и PKCE для безопасности.",
-                        "Email/Password: Вход по email и паролю для аккаунтов, созданных администратором в CMC.",
-                        "JWT-токены: После входа выдается JWT-токен со сроком действия 7 дней. Токен хранится в httpOnly cookie.",
-                        "Обновление токенов: Access token обновляется автоматически через refresh token. При истечении refresh token требуется повторный вход."
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "id": "access-protection",
-                  "title": "Защита доступа",
-                  "body": [
-                    {
-                      "type": "list",
-                      "items": [
-                        "Rate Limiting: Ограничение попыток входа: максимум 5 попыток за 15 минут с одного IP-адреса.",
-                        "Session Management: Активные сессии хранятся в базе данных с валидацией при каждом запросе.",
-                        "Audit Logging: Все действия администраторов и критичные операции пользователей записываются в журнал аудита."
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "quotas-limits",
-              "title": "Квоты и лимиты",
-              "label": "Квоты и лимиты",
-              "description": "Лимиты по хранению, отправке и пользователям.",
-              "sections": [
-                {
-                  "id": "storage-quota",
-                  "title": "Квота хранилища",
-                  "body": [
-                    {
-                      "type": "paragraph",
-                      "content": "Каждому пользователю выделяется определенный объем для хранения писем и вложений. При достижении 100% квоты пользователь не сможет отправлять и получать письма."
-                    }
-                  ]
-                },
-                {
-                  "id": "sending-limits",
-                  "title": "Лимиты на отправку",
-                  "body": [
-                    {
-                      "type": "list",
-                      "items": [
-                        "Business Basic: 500 писем на пользователя в сутки",
-                        "Business Standard: 1000 писем в сутки",
-                        "Business Premium: 2000 писем в сутки",
-                        "Enterprise: 10000 писем в сутки"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "id": "user-limit",
-                  "title": "Лимит пользователей",
-                  "body": [
-                    {
-                      "type": "list",
-                      "items": [
-                        "Business планы: до 300 пользователей",
-                        "Enterprise планы: без ограничений"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "pricing-rules",
-              "title": "Правила тарификации",
-              "label": "Правила тарификации",
-              "description": "Стоимость и функциональность бизнес- и enterprise-планов.",
-              "sections": [
-                {
-                  "id": "business-plans",
-                  "title": "Бизнес-планы",
-                  "summary": "Пакеты для компаний до 300 пользователей.",
-                  "body": [
-                    {
-                      "type": "paragraph",
-                      "content": "Для компаний до 300 пользователей."
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Business Basic — $4.40/пользователь/месяц"
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Для кого: Малый бизнес, стартапы"
-                    },
-                    {
-                      "type": "list",
-                      "title": "Основные возможности:",
-                      "items": [
-                        "Secure access for up to 300 users with centralized control",
-                        "Custom company email on your own domain (you@yourcompany.com)",
-                        "AI-assisted email categorization into security folders",
-                        "Custom folders with basic filtering rules",
-                        "10 GB of secure mailbox storage per user",
-                        "Multi-account support with Gmail and Outlook integration",
-                        "Email search and organization tools",
-                        "24/7 email and web support"
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Оплата: Monthly: $5.50/user/month | Yearly: $4.40/user/month (экономия 20%)"
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Business Standard — $9.29/пользователь/месяц"
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Для кого: Средний бизнес, растущие компании"
-                    },
-                    {
-                      "type": "list",
-                      "title": "Основные возможности:",
-                      "items": [
-                        "Secure access for up to 300 users",
-                        "Custom company email on your own domain (you@yourcompany.com)",
-                        "AI-powered threat detection with automatic email categorization",
-                        "Multi-layered email security pipeline, including SPF, DKIM, DMARC, spam, malware, and phishing protection",
-                        "Automatic email sorting into security folders: Secure, Spam, Dangerous Links, Malware, Phishing, Spoofed",
-                        "Custom folders with auto-filtering rules based on sender, domain, or subject",
-                        "10 GB of secure mailbox storage per user",
-                        "Multi-account support with Gmail and Outlook integration",
-                        "Full-text email search for fast and accurate results",
-                        "24/7 email and web support"
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Оплата: Monthly: $11.60/user/month | Yearly: $9.29/user/month (экономия 20%)"
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Business Premium — $18.79/пользователь/месяц"
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Для кого: Компании с высокими требованиями к безопасности"
-                    },
-                    {
-                      "type": "list",
-                      "title": "Основные возможности:",
-                      "items": [
-                        "Secure access for up to 300 users with centralized control",
-                        "Custom company email on your own domain (you@yourcompany.com)",
-                        "Admin console for domain-wide email management and bulk operations",
-                        "AI-powered threat detection with automatic email categorization",
-                        "Multi-layered email security pipeline, including SPF, DKIM, DMARC, spam, malware, and phishing protection",
-                        "Automatic email sorting into security folders: Secure, Spam, Dangerous Links, Malware, Phishing, Spoofed",
-                        "Advanced link scanning and antivirus protection for email attachments",
-                        "Email flow visualization across the entire domain with comprehensive filtering options",
-                        "Centralized ability to manage and delete emails across all users in the domain",
-                        "Custom folders with auto-filtering rules based on sender, domain, or subject",
-                        "10 GB of secure mailbox storage per user",
-                        "Multi-account support with Gmail and Outlook integration",
-                        "24/7 email and web support"
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Оплата: Monthly: $23.50/user/month | Yearly: $18.79/user/month (экономия 20%)"
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Webmail client for Business — $8.25/пользователь/месяц"
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Для кого: Компании которым нужен только webmail client без admin infrastructure"
-                    },
-                    {
-                      "type": "list",
-                      "title": "Основные возможности:",
-                      "items": [
-                        "Secure access for up to 300 users",
-                        "AI-powered email categorization",
-                        "Custom folder organization",
-                        "10 GB of secure mailbox storage per user",
-                        "Multi-account support with Gmail and Outlook integration",
-                        "Advanced email search capabilities",
-                        "24/7 email and web support"
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Оплата: Monthly: $10.30/user/month | Yearly: $8.25/user/month (экономия 20%)"
-                    }
-                  ]
-                },
-                {
-                  "id": "enterprise-plans",
-                  "title": "Enterprise-планы",
-                  "summary": "Планы без ограничения по пользователям.",
-                  "body": [
-                    {
-                      "type": "paragraph",
-                      "content": "Для крупных компаний без лимита по пользователям."
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Enterprise E3 — $36.00/пользователь/месяц"
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Для кого: Крупные компании (300+ пользователей)"
-                    },
-                    {
-                      "type": "list",
-                      "title": "Основные возможности:",
-                      "items": [
-                        "Supports unlimited users",
-                        "Custom company email on your own domain (you@yourcompany.com)",
-                        "Admin console with enterprise-grade domain management and bulk operations",
-                        "AI-powered threat detection with automatic email categorization",
-                        "Multi-layered email security pipeline, including SPF, DKIM, DMARC, spam, malware, and phishing protection",
-                        "Automatic email sorting into security folders: Secure, Spam, Dangerous Links, Malware, Phishing, Spoofed",
-                        "Advanced link scanning and antivirus protection for attachments",
-                        "Email flow visualization across the entire organization with comprehensive filters",
-                        "Centralized ability to manage and delete emails across all users in the domain",
-                        "Custom folders with auto-filtering rules based on sender, domain, or subject",
-                        "5 TB of secure mailbox storage per user",
-                        "Multi-account support with Gmail and Outlook integration",
-                        "24/7 email and web support"
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Оплата: Only yearly: $36.00/user/month | Annual commitment required"
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Enterprise E5 — $57.00/пользователь/месяц"
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Для кого: Крупные enterprise с максимальными требованиями"
-                    },
-                    {
-                      "type": "list",
-                      "title": "Основные возможности:",
-                      "items": [
-                        "Everything in Enterprise E3, plus:",
-                        "10 TB of secure mailbox storage per user",
-                        "Priority support with faster response times",
-                        "Dedicated account management"
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Оплата: Only yearly: $57.00/user/month | Annual commitment required"
-                    }
-                  ]
-                },
-                {
-                  "id": "payment-terms",
-                  "title": "Условия оплаты",
-                  "summary": "Платежные циклы, способы оплаты и продление.",
-                  "body": [
-                    {
-                      "type": "list",
-                      "title": "Платежные периоды:",
-                      "items": [
-                        "Monthly — ежемесячная оплата",
-                        "Yearly — оплата за год со скидкой 20%"
-                      ]
-                    },
-                    {
-                      "type": "list",
-                      "title": "Способы оплаты:",
-                      "items": [
-                        "Банковские карты через Stripe",
-                        "Банковские переводы (для Enterprise)"
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Автопродление: Подписка продлевается автоматически. Уведомление отправляется за 7 дней до продления."
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": "Изменение плана: Upgrade доступен в любое время с пропорциональной оплатой. Downgrade вступает в силу со следующего расчетного периода."
-                    }
+                  "type": "list",
+                  "items": [
+                    "Rate Limiting: Ограничение попыток входа: максимум 5 попыток за 15 минут с одного IP-адреса.",
+                    "Session Management: Активные сессии хранятся в базе данных с валидацией при каждом запросе.",
+                    "Audit Logging: Все действия администраторов и критичные операции пользователей записываются в журнал аудита."
                   ]
                 }
               ]
             }
           ]
+        },
+        {
+          "id": "quotas-limits",
+          "title": "Квоты и лимиты",
+          "label": "Квоты и лимиты",
+          "description": "Лимиты по хранению, отправке и пользователям.",
+          "sections": [
+            {
+              "id": "storage-quota",
+              "title": "Квота хранилища",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Каждому пользователю выделяется определенный объем для хранения писем и вложений. При достижении 100% квоты пользователь не сможет отправлять и получать письма."
+                }
+              ]
+            },
+            {
+              "id": "sending-limits",
+              "title": "Лимиты на отправку",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Business Basic: 500 писем на пользователя в сутки",
+                    "Business Standard: 1000 писем в сутки",
+                    "Business Premium: 2000 писем в сутки",
+                    "Enterprise: 10000 писем в сутки"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "user-limit",
+              "title": "Лимит пользователей",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Business планы: до 300 пользователей",
+                    "Enterprise планы: без ограничений"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pricing-rules",
+          "title": "Правила тарификации",
+          "label": "Правила тарификации",
+          "description": "Стоимость и функциональность бизнес- и enterprise-планов.",
+          "sections": [
+            {
+              "id": "business-plans",
+              "title": "Бизнес-планы",
+              "summary": "Пакеты для компаний до 300 пользователей.",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Для компаний до 300 пользователей."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Business Basic — $4.40/пользователь/месяц"
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Для кого: Малый бизнес, стартапы"
+                },
+                {
+                  "type": "list",
+                  "title": "Основные возможности:",
+                  "items": [
+                    "Secure access for up to 300 users with centralized control",
+                    "Custom company email on your own domain (you@yourcompany.com)",
+                    "AI-assisted email categorization into security folders",
+                    "Custom folders with basic filtering rules",
+                    "10 GB of secure mailbox storage per user",
+                    "Multi-account support with Gmail and Outlook integration",
+                    "Email search and organization tools",
+                    "24/7 email and web support"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Оплата: Monthly: $5.50/user/month | Yearly: $4.40/user/month (экономия 20%)"
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Business Standard — $9.29/пользователь/месяц"
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Для кого: Средний бизнес, растущие компании"
+                },
+                {
+                  "type": "list",
+                  "title": "Основные возможности:",
+                  "items": [
+                    "Secure access for up to 300 users",
+                    "Custom company email on your own domain (you@yourcompany.com)",
+                    "AI-powered threat detection with automatic email categorization",
+                    "Multi-layered email security pipeline, including SPF, DKIM, DMARC, spam, malware, and phishing protection",
+                    "Automatic email sorting into security folders: Secure, Spam, Dangerous Links, Malware, Phishing, Spoofed",
+                    "Custom folders with auto-filtering rules based on sender, domain, or subject",
+                    "10 GB of secure mailbox storage per user",
+                    "Multi-account support with Gmail and Outlook integration",
+                    "Full-text email search for fast and accurate results",
+                    "24/7 email and web support"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Оплата: Monthly: $11.60/user/month | Yearly: $9.29/user/month (экономия 20%)"
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Business Premium — $18.79/пользователь/месяц"
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Для кого: Компании с высокими требованиями к безопасности"
+                },
+                {
+                  "type": "list",
+                  "title": "Основные возможности:",
+                  "items": [
+                    "Secure access for up to 300 users with centralized control",
+                    "Custom company email on your own domain (you@yourcompany.com)",
+                    "Admin console for domain-wide email management and bulk operations",
+                    "AI-powered threat detection with automatic email categorization",
+                    "Multi-layered email security pipeline, including SPF, DKIM, DMARC, spam, malware, and phishing protection",
+                    "Automatic email sorting into security folders: Secure, Spam, Dangerous Links, Malware, Phishing, Spoofed",
+                    "Advanced link scanning and antivirus protection for email attachments",
+                    "Email flow visualization across the entire domain with comprehensive filtering options",
+                    "Centralized ability to manage and delete emails across all users in the domain",
+                    "Custom folders with auto-filtering rules based on sender, domain, or subject",
+                    "10 GB of secure mailbox storage per user",
+                    "Multi-account support with Gmail and Outlook integration",
+                    "24/7 email and web support"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Оплата: Monthly: $23.50/user/month | Yearly: $18.79/user/month (экономия 20%)"
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Webmail client for Business — $8.25/пользователь/месяц"
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Для кого: Компании которым нужен только webmail client без admin infrastructure"
+                },
+                {
+                  "type": "list",
+                  "title": "Основные возможности:",
+                  "items": [
+                    "Secure access for up to 300 users",
+                    "AI-powered email categorization",
+                    "Custom folder organization",
+                    "10 GB of secure mailbox storage per user",
+                    "Multi-account support with Gmail and Outlook integration",
+                    "Advanced email search capabilities",
+                    "24/7 email and web support"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Оплата: Monthly: $10.30/user/month | Yearly: $8.25/user/month (экономия 20%)"
+                }
+              ]
+            },
+            {
+              "id": "enterprise-plans",
+              "title": "Enterprise-планы",
+              "summary": "Планы без ограничения по пользователям.",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Для крупных компаний без лимита по пользователям."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Enterprise E3 — $36.00/пользователь/месяц"
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Для кого: Крупные компании (300+ пользователей)"
+                },
+                {
+                  "type": "list",
+                  "title": "Основные возможности:",
+                  "items": [
+                    "Supports unlimited users",
+                    "Custom company email on your own domain (you@yourcompany.com)",
+                    "Admin console with enterprise-grade domain management and bulk operations",
+                    "AI-powered threat detection with automatic email categorization",
+                    "Multi-layered email security pipeline, including SPF, DKIM, DMARC, spam, malware, and phishing protection",
+                    "Automatic email sorting into security folders: Secure, Spam, Dangerous Links, Malware, Phishing, Spoofed",
+                    "Advanced link scanning and antivirus protection for attachments",
+                    "Email flow visualization across the entire organization with comprehensive filters",
+                    "Centralized ability to manage and delete emails across all users in the domain",
+                    "Custom folders with auto-filtering rules based on sender, domain, or subject",
+                    "5 TB of secure mailbox storage per user",
+                    "Multi-account support with Gmail and Outlook integration",
+                    "24/7 email and web support"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Оплата: Only yearly: $36.00/user/month | Annual commitment required"
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Enterprise E5 — $57.00/пользователь/месяц"
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Для кого: Крупные enterprise с максимальными требованиями"
+                },
+                {
+                  "type": "list",
+                  "title": "Основные возможности:",
+                  "items": [
+                    "Everything in Enterprise E3, plus:",
+                    "10 TB of secure mailbox storage per user",
+                    "Priority support with faster response times",
+                    "Dedicated account management"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Оплата: Only yearly: $57.00/user/month | Annual commitment required"
+                }
+              ]
+            },
+            {
+              "id": "payment-terms",
+              "title": "Условия оплаты",
+              "summary": "Платежные циклы, способы оплаты и продление.",
+              "body": [
+                {
+                  "type": "list",
+                  "title": "Платежные периоды:",
+                  "items": [
+                    "Monthly — ежемесячная оплата",
+                    "Yearly — оплата за год со скидкой 20%"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "title": "Способы оплаты:",
+                  "items": [
+                    "Банковские карты через Stripe",
+                    "Банковские переводы (для Enterprise)"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Автопродление: Подписка продлевается автоматически. Уведомление отправляется за 7 дней до продления."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Изменение плана: Upgrade доступен в любое время с пропорциональной оплатой. Downgrade вступает в силу со следующего расчетного периода."
+                }
+              ]
+            }
+          ]
         }
-      }
+      ]
     }
   }
 }

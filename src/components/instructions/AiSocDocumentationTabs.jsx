@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import EmailSecurityDocumentation from "@/components/instructions/EmailSecurityDocumentation";
 import { Card } from "@/components/ui/card";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -59,33 +59,30 @@ export default function AiSocDocumentationTabs() {
             </div>
 
             {/* Content */}
-            <AnimatePresence mode="wait">
-                {activeTab === "email" ? (
-                    <motion.div
-                        key="email"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 0.35, ease: "easeOut" }}
-                    >
-                        <EmailSecurityDocumentation />
-                    </motion.div>
-                ) : (
-                    <motion.div
-                        key="web"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 0.35, ease: "easeOut" }}
-                    >
-                        <WebSecurityPlaceholder
-                            badge={placeholderCopy?.badge ?? "Web Security"}
-                            title={placeholderCopy?.title ?? "Documentation is coming soon"}
-                            description={placeholderCopy?.description ?? "We are preparing a detailed guide for configuring and protecting web applications. Check back soon — the materials will appear shortly."}
-                        />
-                    </motion.div>
-                )}
-            </AnimatePresence>
+            <div className="relative w-full">
+                <div
+                    className={`transition-opacity duration-300 ${activeTab === "email"
+                        ? "relative opacity-100"
+                        : "pointer-events-none opacity-0 absolute inset-0 w-full"
+                        }`}
+                    aria-hidden={activeTab !== "email"}
+                >
+                    <EmailSecurityDocumentation />
+                </div>
+                <div
+                    className={`transition-opacity duration-300 ${activeTab === "web"
+                        ? "relative opacity-100"
+                        : "pointer-events-none opacity-0 absolute inset-0 w-full"
+                        }`}
+                    aria-hidden={activeTab !== "web"}
+                >
+                    <WebSecurityPlaceholder
+                        badge={placeholderCopy?.badge ?? "Web Security"}
+                        title={placeholderCopy?.title ?? "Documentation is coming soon"}
+                        description={placeholderCopy?.description ?? "We are preparing a detailed guide for configuring and protecting web applications. Check back soon — the materials will appear shortly."}
+                    />
+                </div>
+            </div>
         </div>
     );
 }

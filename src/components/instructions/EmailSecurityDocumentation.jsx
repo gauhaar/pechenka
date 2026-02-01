@@ -179,6 +179,8 @@ const EmailSecurityDocumentation = () => {
     );
 
     const currentSections = currentChapter?.sections ?? [];
+    const currentChapterId = currentChapter?.id ?? "";
+    const firstSectionId = currentSections[0]?.id ?? "";
     const currentSectionIds = useMemo(
         () => currentSections.map((section) => section.id),
         [currentSections]
@@ -251,10 +253,14 @@ const EmailSecurityDocumentation = () => {
     );
 
     useEffect(() => {
-        const firstSectionId = currentSections[0]?.id ?? "";
+        if (!currentChapterId) {
+            setActiveSection("");
+            return;
+        }
+
         setActiveSection(firstSectionId);
         scrollToContentTop("auto");
-    }, [currentSections, scrollToContentTop]);
+    }, [currentChapterId, firstSectionId, scrollToContentTop]);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -263,7 +269,22 @@ const EmailSecurityDocumentation = () => {
 
                 const visibleEntry = entries
                     .filter((entry) => entry.isIntersecting)
-                    .sort((a, b) => a.target.dataset.sectionIndex - b.target.dataset.sectionIndex)[0];
+                    .sort((a, b) => {
+                        const ratioDiff = b.intersectionRatio - a.intersectionRatio;
+                        if (Math.abs(ratioDiff) > 0.001) {
+                            return ratioDiff;
+                        }
+
+                        const distanceA = Math.abs(a.boundingClientRect.top - HEADER_OFFSET);
+                        const distanceB = Math.abs(b.boundingClientRect.top - HEADER_OFFSET);
+                        if (distanceA !== distanceB) {
+                            return distanceA - distanceB;
+                        }
+
+                        const indexA = Number(a.target.dataset.sectionIndex ?? 0);
+                        const indexB = Number(b.target.dataset.sectionIndex ?? 0);
+                        return indexA - indexB;
+                    })[0];
 
                 if (visibleEntry) {
                     const { sectionId } = visibleEntry.target.dataset;
@@ -323,7 +344,7 @@ const EmailSecurityDocumentation = () => {
                 </motion.div>
             </div>
 
-            <div className="relative mx-auto grid w-full max-w-[1400px] gap-4 px-3 pb-16 pt-6 md:grid-cols-[minmax(0,1fr)_minmax(200px,240px)] lg:grid-cols-[220px_minmax(0,1fr)_minmax(0,220px)] lg:gap-6 lg:px-6">
+            <div className="relative mx-auto grid w-full max-w-[1400px] items-start gap-4 px-3 pb-16 pt-6 md:grid-cols-[minmax(0,1fr)_minmax(200px,240px)] lg:grid-cols-[220px_minmax(0,1fr)_minmax(0,220px)] lg:gap-6 lg:px-6">
                 <div className="flex items-center justify-between gap-3 md:col-span-2 lg:col-span-3 lg:hidden">
                     <button
                         type="button"
@@ -341,9 +362,9 @@ const EmailSecurityDocumentation = () => {
                     </button>
                 </div>
 
-                <aside className="hidden lg:sticky lg:top-24 lg:col-start-1 lg:row-span-full lg:row-start-1 lg:flex lg:flex-col">
-                    <div className="relative">
-                        <div className="group relative flex max-h-[78vh] flex-col overflow-hidden rounded-3xl border border-cyan-300/15 bg-[#050b1d]/85 p-3 shadow-[0_18px_55px_rgba(20,80,160,0.18)] backdrop-blur-xl">
+                <aside className="hidden lg:col-start-1 lg:flex lg:flex-col lg:sticky lg:top-[calc(var(--header-offset)+1rem)] lg:max-h-[calc(100vh-var(--header-offset)-2rem)] lg:self-start">
+                    <div className="relative h-full">
+                        <div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-cyan-300/15 bg-[#050b1d]/85 p-3 shadow-[0_18px_55px_rgba(20,80,160,0.18)] backdrop-blur-xl">
                             <div
                                 aria-hidden
                                 className="pointer-events-none absolute inset-0 rounded-3xl border border-white/8"
@@ -382,7 +403,7 @@ const EmailSecurityDocumentation = () => {
                     </div>
                 </aside>
 
-                <div className="relative min-w-0 md:col-span-1 lg:col-start-2 lg:row-start-1">
+                <div className="relative min-w-0 md:col-span-1 lg:col-start-2">
                     <div
                         aria-hidden
                         className="pointer-events-none absolute inset-0 -translate-y-1/3 rounded-[40px] bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.18),_transparent_70%)] opacity-70 blur-3xl"
@@ -489,9 +510,9 @@ const EmailSecurityDocumentation = () => {
                     </div>
                 </div>
 
-                <aside className="hidden md:sticky md:top-24 md:col-start-2 md:row-span-full md:row-start-1 md:flex md:flex-col lg:col-start-3 lg:row-start-1">
-                    <div className="relative">
-                        <div className="group relative flex max-h-[78vh] flex-col overflow-hidden rounded-3xl border border-cyan-300/15 bg-[#050b1f]/85 p-3 shadow-[0_18px_55px_rgba(20,80,160,0.18)] backdrop-blur-xl">
+                <aside className="hidden md:col-start-2 md:flex md:flex-col md:sticky md:top-[calc(var(--header-offset)+1rem)] md:max-h-[calc(100vh-var(--header-offset)-2rem)] md:self-start lg:col-start-3">
+                    <div className="relative h-full">
+                        <div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-cyan-300/15 bg-[#050b1f]/85 p-3 shadow-[0_18px_55px_rgba(20,80,160,0.18)] backdrop-blur-xl">
                             <div
                                 aria-hidden
                                 className="pointer-events-none absolute inset-0 rounded-3xl border border-white/8"
