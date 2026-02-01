@@ -14,6 +14,7 @@ const calloutClassMap = {
 const transition = { duration: 0.35, ease: [0.4, 0, 0.2, 1] };
 const HEADER_OFFSET = 96;
 const CONTENT_SCROLL_OFFSET = 96;
+const FIRST_SECTION_SCROLL_MARGIN = 120;
 
 const MobileDrawer = ({ title, closeLabel, isOpen, onClose, children }) => (
     <div
@@ -132,7 +133,6 @@ const EmailSecurityDocumentation = () => {
     const labels = t("documentation.system", {});
 
     const chapters = useMemo(() => doc?.chapters ?? [], [doc]);
-    const badge = doc?.badge ?? "";
     const heroTitle = doc?.title ?? "";
     const heroSubtitle = doc?.subtitle ?? "";
     const heroDescription = doc?.description ?? "";
@@ -196,6 +196,14 @@ const EmailSecurityDocumentation = () => {
         }, 520);
     }, []);
 
+    const getSectionScrollMargin = useCallback((sectionId) => {
+        const node = sectionRefs.current.get(sectionId);
+        if (!node || typeof window === "undefined") return 0;
+
+        const parsed = Number.parseFloat(window.getComputedStyle(node).scrollMarginTop);
+        return Number.isFinite(parsed) ? parsed : 0;
+    }, []);
+
     const scrollToContentTop = useCallback(
         (behavior = "smooth") => {
             const container = contentContainerRef.current;
@@ -243,13 +251,15 @@ const EmailSecurityDocumentation = () => {
 
             isProgrammaticScrollRef.current = true;
 
-            const targetTop = target.getBoundingClientRect().top + window.scrollY - CONTENT_SCROLL_OFFSET;
+            const targetScrollMargin = getSectionScrollMargin(sectionId);
+            const offset = Math.max(targetScrollMargin, CONTENT_SCROLL_OFFSET);
+            const targetTop = target.getBoundingClientRect().top + window.scrollY - offset;
             window.scrollTo({ top: targetTop, behavior: "smooth" });
 
             setActiveSection(sectionId);
             resetProgrammaticState();
         },
-        [resetProgrammaticState]
+        [getSectionScrollMargin, resetProgrammaticState]
     );
 
     useEffect(() => {
@@ -327,24 +337,23 @@ const EmailSecurityDocumentation = () => {
                     initial={{ opacity: 0, y: 18 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={transition}
-                    className="relative mx-auto w-full max-w-[1400px] overflow-hidden rounded-[32px] border border-cyan-400/25 bg-[radial-gradient(circle_at_top,_rgba(15,118,255,0.3),_rgba(2,6,23,0.95))] px-6 py-9 text-white shadow-[0_0_120px_rgba(14,165,233,0.32)] backdrop-blur-2xl"
+                    className="relative mx-auto w-full max-w-[1400px] overflow-visible rounded-[24px] border border-cyan-400/25 bg-[radial-gradient(circle_at_top,_rgba(15,118,255,0.3),_rgba(2,6,23,0.95))] px-6 py-8 text-white shadow-[0_0_120px_rgba(14,165,233,0.32)] backdrop-blur-2xl"
                 >
                     <div
                         aria-hidden
                         className="pointer-events-none absolute inset-[1.5px] rounded-[30px] border border-white/10"
                     />
-                    <div className="text-xs uppercase tracking-[0.3em] text-cyan-100/70">{badge}</div>
                     <h1 className="mt-3 bg-gradient-to-r from-cyan-100 via-sky-100 to-emerald-100 bg-clip-text text-3xl font-semibold text-transparent sm:text-4xl">
                         {heroTitle}
                     </h1>
                     <p className="mt-2 text-sm text-cyan-100/70">{heroSubtitle}</p>
-                    <p className="mt-4 max-w-4xl text-sm text-slate-200/85">
+                    <p className="mt-3 max-w-4xl text-sm text-slate-200/85">
                         {heroDescription}
                     </p>
                 </motion.div>
             </div>
 
-            <div className="relative mx-auto grid w-full max-w-[1400px] items-start gap-4 px-3 pb-16 pt-6 md:grid-cols-[minmax(0,1fr)_minmax(200px,240px)] lg:grid-cols-[220px_minmax(0,1fr)_minmax(0,220px)] lg:gap-6 lg:px-6">
+            <div className="relative mx-auto w-full max-w-[1400px] px-3 pb-16 pt-6 lg:px-6">
                 <div className="flex items-center justify-between gap-3 md:col-span-2 lg:col-span-3 lg:hidden">
                     <button
                         type="button"
@@ -362,9 +371,9 @@ const EmailSecurityDocumentation = () => {
                     </button>
                 </div>
 
-                <aside className="hidden lg:col-start-1 lg:flex lg:flex-col lg:sticky lg:top-[calc(var(--header-offset)+1rem)] lg:max-h-[calc(100vh-var(--header-offset)-2rem)] lg:self-start">
-                    <div className="relative h-full">
-                        <div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-cyan-300/15 bg-[#050b1d]/85 p-3 shadow-[0_18px_55px_rgba(20,80,160,0.18)] backdrop-blur-xl">
+                <div className="grid grid-cols-1 items-start gap-4 md:grid-cols-[minmax(0,1fr)_minmax(200px,240px)] lg:grid-cols-[220px_minmax(0,1fr)_minmax(0,220px)] lg:gap-6">
+                    <aside className="sticky top-24 hidden self-start lg:col-start-1 lg:block lg:w-[220px]">
+                        <div className="group relative flex flex-col overflow-visible rounded-3xl border border-cyan-300/15 bg-[#050b1d]/85 p-3 shadow-[0_18px_55px_rgba(20,80,160,0.18)] backdrop-blur-xl">
                             <div
                                 aria-hidden
                                 className="pointer-events-none absolute inset-0 rounded-3xl border border-white/8"
@@ -372,7 +381,7 @@ const EmailSecurityDocumentation = () => {
                             <div className="px-2 text-xs uppercase tracking-[0.24em] text-cyan-100/70">
                                 {labels.sections ?? "Sections"}
                             </div>
-                            <nav className="mt-4 flex-1 space-y-2 overflow-y-auto pr-2 text-sm">
+                            <nav className="mt-4 space-y-2 pr-2 text-sm">
                                 {chapters.map((chapter) => {
                                     const isActive = chapter.id === activeChapter;
                                     return (
@@ -400,127 +409,130 @@ const EmailSecurityDocumentation = () => {
                                 })}
                             </nav>
                         </div>
-                    </div>
-                </aside>
+                    </aside>
 
-                <div className="relative min-w-0 md:col-span-1 lg:col-start-2">
-                    <div
-                        aria-hidden
-                        className="pointer-events-none absolute inset-0 -translate-y-1/3 rounded-[40px] bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.18),_transparent_70%)] opacity-70 blur-3xl"
-                    />
-                    <div
-                        ref={contentContainerRef}
-                        className="relative overflow-hidden rounded-[32px] border border-white/8 bg-[#040914]/88 p-6 shadow-[0_35px_110px_rgba(4,9,28,0.35)] backdrop-blur-2xl md:p-7"
-                    >
+                    <div className="relative min-w-0 md:col-start-1 lg:col-start-2">
                         <div
                             aria-hidden
-                            className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.18),_transparent_62%),radial-gradient(circle_at_bottom,_rgba(168,85,247,0.1),_transparent_60%)] opacity-75"
+                            className="pointer-events-none absolute inset-0 -translate-y-1/3 rounded-[40px] bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.18),_transparent_70%)] opacity-70 blur-3xl"
                         />
                         <div
-                            aria-hidden
-                            className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,_transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,_transparent_1px)] bg-[size:140px_140px] opacity-20"
-                        />
-                        <div className="mx-auto flex w-full max-w-4xl flex-col gap-8">
-                            <motion.div
-                                initial={{ opacity: 0, y: 12 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={transition}
-                                className="space-y-2.5"
-                            >
-                                <h2 className="bg-gradient-to-r from-cyan-100 via-sky-100 to-emerald-100 bg-clip-text text-2xl font-semibold text-transparent">
-                                    {currentChapter?.title}
-                                </h2>
-                                {currentChapter?.description ? (
-                                    <p className="text-base leading-relaxed text-slate-200/80">
-                                        {currentChapter.description}
-                                    </p>
-                                ) : null}
-                            </motion.div>
+                            ref={contentContainerRef}
+                            className="relative overflow-hidden rounded-[32px] border border-white/8 bg-[#040914]/88 p-6 shadow-[0_35px_110px_rgba(4,9,28,0.35)] backdrop-blur-2xl md:p-7"
+                        >
+                            <div
+                                aria-hidden
+                                className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.18),_transparent_62%),radial-gradient(circle_at_bottom,_rgba(168,85,247,0.1),_transparent_60%)] opacity-75"
+                            />
+                            <div
+                                aria-hidden
+                                className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,_transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,_transparent_1px)] bg-[size:140px_140px] opacity-20"
+                            />
+                            <div className="mx-auto flex w-full max-w-4xl flex-col gap-8">
+                                <motion.div
+                                    initial={{ opacity: 0, y: 12 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={transition}
+                                    className="space-y-2.5"
+                                >
+                                    <h2 className="bg-gradient-to-r from-cyan-100 via-sky-100 to-emerald-100 bg-clip-text text-2xl font-semibold text-transparent">
+                                        {currentChapter?.title}
+                                    </h2>
+                                    {currentChapter?.description ? (
+                                        <p className="text-base leading-relaxed text-slate-200/80">
+                                            {currentChapter.description}
+                                        </p>
+                                    ) : null}
+                                </motion.div>
 
-                            {currentSections.map((section, sectionIndex) => {
-                                const sectionKey = `${currentChapter?.id ?? activeChapter}-${section.id}`;
-                                const sectionNumber = String(sectionIndex + 1).padStart(2, "0");
-                                const horizontalAccent =
-                                    sectionIndex % 2 === 0
-                                        ? "from-cyan-200/60 via-sky-200/30 to-transparent"
-                                        : "from-fuchsia-200/60 via-violet-200/30 to-transparent";
+                                {currentSections.map((section, sectionIndex) => {
+                                    const sectionKey = `${currentChapter?.id ?? activeChapter}-${section.id}`;
+                                    const sectionNumber = String(sectionIndex + 1).padStart(2, "0");
+                                    const horizontalAccent =
+                                        sectionIndex % 2 === 0
+                                            ? "from-cyan-200/60 via-sky-200/30 to-transparent"
+                                            : "from-fuchsia-200/60 via-violet-200/30 to-transparent";
 
-                                return (
-                                    <motion.article
-                                        key={sectionKey}
-                                        data-section-id={section.id}
-                                        data-section-index={sectionIndex}
-                                        ref={(node) => {
-                                            if (node) {
-                                                sectionRefs.current.set(section.id, node);
-                                            } else {
-                                                sectionRefs.current.delete(section.id);
+                                    return (
+                                        <motion.article
+                                            key={sectionKey}
+                                            data-section-id={section.id}
+                                            data-section-index={sectionIndex}
+                                            ref={(node) => {
+                                                if (node) {
+                                                    sectionRefs.current.set(section.id, node);
+                                                } else {
+                                                    sectionRefs.current.delete(section.id);
+                                                }
+                                            }}
+                                            id={section.id}
+                                            className="scroll-mt-24"
+                                            style={
+                                                sectionIndex === 0
+                                                    ? { scrollMarginTop: `${FIRST_SECTION_SCROLL_MARGIN}px` }
+                                                    : undefined
                                             }
-                                        }}
-                                        id={section.id}
-                                        className="scroll-mt-24"
-                                        initial={{ opacity: 0, y: 18 }}
-                                        whileInView={{ opacity: 1, y: 0 }}
-                                        viewport={{ once: true, amount: 0.3 }}
-                                        transition={transition}
-                                    >
-                                        <div className="relative pl-6 md:pl-10">
-                                            <div className="absolute left-1.5 top-6 bottom-6 hidden md:block w-[2px] rounded-full bg-gradient-to-b from-cyan-400/45 via-transparent to-emerald-400/45" />
-                                            <div className="absolute left-1 top-6 hidden md:block h-2 w-2 rounded-full bg-cyan-300/80 shadow-[0_0_18px_rgba(34,211,238,0.8)]" />
-                                            <div className="relative overflow-hidden rounded-[28px] border border-white/10 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.14),_transparent_65%),linear-gradient(135deg,rgba(6,14,29,0.88),rgba(4,10,24,0.9))] px-5 py-5 shadow-[0_32px_85px_rgba(6,16,36,0.45)] backdrop-blur-xl md:px-6 md:py-5">
-                                                <div
-                                                    aria-hidden
-                                                    className="pointer-events-none absolute inset-px rounded-[26px] border border-white/6"
-                                                />
-                                                <div className="relative flex flex-col gap-3">
-                                                    <div className="flex flex-col gap-3">
-                                                        <div className="flex flex-wrap items-center gap-3">
-                                                            <span className="inline-flex items-center rounded-full border border-cyan-200/35 bg-cyan-500/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.32em] text-cyan-100/70">
-                                                                {sectionNumber}
-                                                            </span>
-                                                            <span
-                                                                className={cn(
-                                                                    "hidden h-px flex-1 rounded-full bg-gradient-to-r md:block",
-                                                                    horizontalAccent
-                                                                )}
-                                                                aria-hidden
-                                                            />
+                                            initial={{ opacity: 0, y: 18 }}
+                                            whileInView={{ opacity: 1, y: 0 }}
+                                            viewport={{ once: true, amount: 0.3 }}
+                                            transition={transition}
+                                        >
+                                            <div className="relative pl-6 md:pl-10">
+                                                <div className="absolute left-1.5 top-6 bottom-6 hidden md:block w-[2px] rounded-full bg-gradient-to-b from-cyan-400/45 via-transparent to-emerald-400/45" />
+                                                <div className="absolute left-1 top-6 hidden md:block h-2 w-2 rounded-full bg-cyan-300/80 shadow-[0_0_18px_rgba(34,211,238,0.8)]" />
+                                                <div className="relative rounded-[28px] border border-white/10 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.14),_transparent_65%),linear-gradient(135deg,rgba(6,14,29,0.88),rgba(4,10,24,0.9))] px-5 py-5 shadow-[0_32px_85px_rgba(6,16,36,0.45)] backdrop-blur-xl md:px-6 md:py-5">
+                                                    <div
+                                                        aria-hidden
+                                                        className="pointer-events-none absolute inset-px rounded-[26px] border border-white/6"
+                                                    />
+                                                    <div className="relative flex flex-col gap-3">
+                                                        <div className="flex flex-col gap-3">
+                                                            <div className="flex flex-wrap items-center gap-3">
+                                                                <span className="inline-flex items-center rounded-full border border-cyan-200/35 bg-cyan-500/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.32em] text-cyan-100/70">
+                                                                    {sectionNumber}
+                                                                </span>
+                                                                <span
+                                                                    className={cn(
+                                                                        "hidden h-px flex-1 rounded-full bg-gradient-to-r md:block",
+                                                                        horizontalAccent
+                                                                    )}
+                                                                    aria-hidden
+                                                                />
+                                                            </div>
+                                                            <h3 className="text-xl font-semibold leading-tight text-white md:text-2xl">
+                                                                {section.title}
+                                                            </h3>
+                                                            {section.description ? (
+                                                                <p className="text-base text-slate-200/75">
+                                                                    {section.description}
+                                                                </p>
+                                                            ) : null}
                                                         </div>
-                                                        <h3 className="text-xl font-semibold leading-tight text-white md:text-2xl">
-                                                            {section.title}
-                                                        </h3>
-                                                        {section.description ? (
-                                                            <p className="text-base text-slate-200/75">
-                                                                {section.description}
-                                                            </p>
-                                                        ) : null}
-                                                    </div>
-                                                    <div className="space-y-2.5 text-base text-slate-100/85">
-                                                        {section.body.map((block, blockIndex) =>
-                                                            renderBodyBlock(block, blockIndex)
-                                                        )}
+                                                        <div className="space-y-2.5 text-base text-slate-100/85">
+                                                            {section.body.map((block, blockIndex) =>
+                                                                renderBodyBlock(block, blockIndex)
+                                                            )}
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </motion.article>
-                                );
-                            })}
+                                        </motion.article>
+                                    );
+                                })}
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <aside className="hidden md:col-start-2 md:flex md:flex-col md:sticky md:top-[calc(var(--header-offset)+1rem)] md:max-h-[calc(100vh-var(--header-offset)-2rem)] md:self-start lg:col-start-3">
-                    <div className="relative h-full">
-                        <div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-cyan-300/15 bg-[#050b1f]/85 p-3 shadow-[0_18px_55px_rgba(20,80,160,0.18)] backdrop-blur-xl">
+                    <aside className="sticky top-24 hidden self-start md:col-start-2 md:block lg:col-start-3 lg:w-[220px]">
+                        <div className="group relative flex flex-col rounded-3xl border border-cyan-300/15 bg-[#050b1f]/85 p-3 shadow-[0_18px_55px_rgba(20,80,160,0.18)] backdrop-blur-xl">
                             <div
                                 aria-hidden
                                 className="pointer-events-none absolute inset-0 rounded-3xl border border-white/8"
                             />
-                            <div className="px-2 text-xs uppercase tracking-[0.24em] text-cyan-100/70">
+                            <div className="px-2 text-xs uppercase tracking_[0.24em] text-cyan-100/70">
                                 {labels.tableOfContents ?? "Table of contents"}
                             </div>
-                            <nav className="mt-4 flex-1 space-y-1 overflow-y-auto pr-1">
+                            <nav className="mt-4 space-y-1 pr-1">
                                 {currentSections.map((section) => {
                                     const isActive = activeSection === section.id;
                                     return (
@@ -532,7 +544,7 @@ const EmailSecurityDocumentation = () => {
                                                 "w-full rounded-2xl border px-4 py-2 text-left text-sm font-medium leading-tight transition",
                                                 isActive
                                                     ? "border-cyan-300/60 bg-gradient-to-b from-cyan-400/35 via-cyan-500/12 to-transparent text-cyan-50 shadow-[0_22px_32px_-18px_rgba(56,189,248,0.6)]"
-                                                    : "border-transparent text-slate-200/80 hover:border-cyan-400/30 hover:bg-cyan-500/10 hover:text-cyan-100"
+                                                    : "border-transparent text-slate-200/80 hover-border-cyan-400/30 hover:bg-cyan-500/10 hover:text-cyan-100"
                                             )}
                                         >
                                             {section.title}
@@ -541,8 +553,8 @@ const EmailSecurityDocumentation = () => {
                                 })}
                             </nav>
                         </div>
-                    </div>
-                </aside>
+                    </aside>
+                </div>
 
                 <MobileDrawer
                     title={labels.sections ?? "Sections"}

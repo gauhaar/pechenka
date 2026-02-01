@@ -59,7 +59,6 @@
       }
     },
     "emailSecurity": {
-      "badge": "Email Security System",
       "title": "Email Security System",
       "subtitle": "Documentation | Version 1.0",
       "description": "How to configure and operate the corporate email security platform.",
