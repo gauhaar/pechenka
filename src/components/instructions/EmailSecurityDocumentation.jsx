@@ -411,22 +411,24 @@ const EmailSecurityDocumentation = () => {
                         </div>
                     </aside>
 
-                    <div className="relative min-w-0 md:col-start-1 lg:col-start-2">
+                    <main
+                        ref={contentContainerRef}
+                        className="relative min-w-0 md:col-start-1 lg:col-start-2"
+                    >
                         <div
                             aria-hidden
                             className="pointer-events-none absolute inset-0 -translate-y-1/3 rounded-[40px] bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.18),_transparent_70%)] opacity-70 blur-3xl"
                         />
                         <div
-                            ref={contentContainerRef}
-                            className="relative overflow-hidden rounded-[32px] border border-white/8 bg-[#040914]/88 p-6 shadow-[0_35px_110px_rgba(4,9,28,0.35)] backdrop-blur-2xl md:p-7"
+                            className="relative rounded-[32px] border border-white/8 bg-[#040914]/88 p-6 shadow-[0_35px_110px_rgba(4,9,28,0.35)] backdrop-blur-2xl md:p-7"
                         >
                             <div
                                 aria-hidden
-                                className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.18),_transparent_62%),radial-gradient(circle_at_bottom,_rgba(168,85,247,0.1),_transparent_60%)] opacity-75"
+                                className="pointer-events-none absolute inset-0 rounded-[32px] bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.18),_transparent_62%),radial-gradient(circle_at_bottom,_rgba(168,85,247,0.1),_transparent_60%)] opacity-75"
                             />
                             <div
                                 aria-hidden
-                                className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,_transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,_transparent_1px)] bg-[size:140px_140px] opacity-20"
+                                className="pointer-events-none absolute inset-0 rounded-[32px] bg-[linear-gradient(rgba(255,255,255,0.05)_1px,_transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,_transparent_1px)] bg-[size:140px_140px] opacity-20"
                             />
                             <div className="mx-auto flex w-full max-w-4xl flex-col gap-8">
                                 <motion.div
@@ -521,7 +523,7 @@ const EmailSecurityDocumentation = () => {
                                 })}
                             </div>
                         </div>
-                    </div>
+                    </main>
 
                     <aside className="sticky top-24 hidden self-start md:col-start-2 md:block lg:col-start-3 lg:w-[220px]">
                         <div className="group relative flex flex-col rounded-3xl border border-cyan-300/15 bg-[#050b1f]/85 p-3 shadow-[0_18px_55px_rgba(20,80,160,0.18)] backdrop-blur-xl">
