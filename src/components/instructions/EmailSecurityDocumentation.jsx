@@ -2,14 +2,13 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const calloutClassMap = {
-    info: "border border-cyan-400/40 bg-cyan-500/10 text-cyan-100 shadow-[0_0_40px_rgba(34,211,238,0.28)]",
-    warning: "border border-amber-400/40 bg-amber-500/10 text-amber-100 shadow-[0_0_40px_rgba(245,158,11,0.25)]",
-    success: "border border-emerald-400/40 bg-emerald-500/10 text-emerald-100 shadow-[0_0_40px_rgba(16,185,129,0.25)]",
+    info: "border border-cyan-300/30 bg-cyan-500/10 text-cyan-100/90 shadow-[0_10px_30px_rgba(34,211,238,0.18)]",
+    warning: "border border-amber-300/30 bg-amber-500/10 text-amber-100/90 shadow-[0_10px_30px_rgba(245,158,11,0.18)]",
+    success: "border border-emerald-300/30 bg-emerald-500/10 text-emerald-100/90 shadow-[0_10px_30px_rgba(16,185,129,0.2)]",
 };
 
 const transition = { duration: 0.35, ease: [0.4, 0, 0.2, 1] };
@@ -59,7 +58,10 @@ const renderBodyBlock = (block, blockIndex) => {
 
     if (block.type === "paragraph") {
         return (
-            <p key={`paragraph-${blockIndex}`} className="text-[15px] leading-relaxed text-slate-100/85">
+            <p
+                key={`paragraph-${blockIndex}`}
+                className="text-base leading-relaxed text-slate-100/85 md:text-[17px]"
+            >
                 {block.content}
             </p>
         );
@@ -67,13 +69,13 @@ const renderBodyBlock = (block, blockIndex) => {
 
     if (block.type === "list") {
         return (
-            <div key={`list-${blockIndex}`} className="space-y-2">
+            <div key={`list-${blockIndex}`} className="space-y-2.5">
                 {block.title ? (
                     <div className="text-xs uppercase tracking-[0.3em] text-cyan-200/70">{block.title}</div>
                 ) : null}
-                <ul className="space-y-2 rounded-2xl border border-cyan-400/15 bg-[#061121]/80 px-4 py-3 text-[15px] text-slate-100/85 marker:text-cyan-300">
+                <ul className="space-y-1.5 pl-5 text-base leading-relaxed text-slate-100/80 marker:text-cyan-200">
                     {block.items.map((item, itemIndex) => (
-                        <li key={`list-item-${blockIndex}-${itemIndex}`} className="list-disc leading-relaxed">
+                        <li key={`list-item-${blockIndex}-${itemIndex}`} className="list-disc">
                             {item}
                         </li>
                     ))}
@@ -84,10 +86,10 @@ const renderBodyBlock = (block, blockIndex) => {
 
     if (block.type === "orderedList") {
         return (
-            <div key={`ordered-${blockIndex}`} className="space-y-2">
-                <ol className="space-y-2 rounded-2xl border border-slate-400/15 bg-[#070c1a]/80 px-4 py-3 text-[15px] text-slate-100/85 marker:text-cyan-200">
+            <div key={`ordered-${blockIndex}`} className="space-y-2.5">
+                <ol className="space-y-1.5 pl-5 text-base leading-relaxed text-slate-100/80 marker:text-cyan-200">
                     {block.items.map((item, itemIndex) => (
-                        <li key={`ordered-item-${blockIndex}-${itemIndex}`} className="list-decimal leading-relaxed">
+                        <li key={`ordered-item-${blockIndex}-${itemIndex}`} className="list-decimal">
                             {item}
                         </li>
                     ))}
@@ -100,7 +102,7 @@ const renderBodyBlock = (block, blockIndex) => {
         return (
             <pre
                 key={`code-${blockIndex}`}
-                className="overflow-x-auto rounded-2xl border border-cyan-400/20 bg-[#030712]/95 px-4 py-3 font-mono text-sm text-cyan-100 shadow-[inset_0_0_35px_rgba(8,145,178,0.35)]"
+                className="overflow-x-auto rounded-2xl border border-cyan-300/15 bg-[#041025]/90 px-4 py-3 font-mono text-sm text-cyan-100/90"
             >
                 <code>{block.content}</code>
             </pre>
@@ -111,7 +113,10 @@ const renderBodyBlock = (block, blockIndex) => {
         return (
             <div
                 key={`callout-${blockIndex}`}
-                className={cn("rounded-2xl px-4 py-3 text-[15px] leading-relaxed", calloutClassMap[block.intent ?? "info"])}
+                className={cn(
+                    "rounded-2xl px-4 py-3 text-base leading-relaxed shadow-[0_10px_35px_rgba(8,17,35,0.25)]",
+                    calloutClassMap[block.intent ?? "info"]
+                )}
             >
                 {block.content}
             </div>
@@ -318,7 +323,7 @@ const EmailSecurityDocumentation = () => {
                 </motion.div>
             </div>
 
-            <div className="relative mx-auto grid w-full max-w-[1400px] gap-6 px-3 pb-16 pt-6 md:grid-cols-[minmax(0,1fr)_minmax(260px,320px)] lg:grid-cols-[260px_minmax(0,1fr)_minmax(0,320px)] lg:gap-10 lg:px-6">
+            <div className="relative mx-auto grid w-full max-w-[1400px] gap-4 px-3 pb-16 pt-6 md:grid-cols-[minmax(0,1fr)_minmax(200px,240px)] lg:grid-cols-[220px_minmax(0,1fr)_minmax(0,220px)] lg:gap-6 lg:px-6">
                 <div className="flex items-center justify-between gap-3 md:col-span-2 lg:col-span-3 lg:hidden">
                     <button
                         type="button"
@@ -338,10 +343,10 @@ const EmailSecurityDocumentation = () => {
 
                 <aside className="hidden lg:sticky lg:top-24 lg:col-start-1 lg:row-span-full lg:row-start-1 lg:flex lg:flex-col">
                     <div className="relative">
-                        <div className="group relative flex max-h-[78vh] flex-col overflow-hidden rounded-3xl border border-cyan-400/20 bg-[linear-gradient(145deg,rgba(5,10,24,0.9),rgba(7,16,32,0.92))] p-3 shadow-[0_0_65px_rgba(56,189,248,0.25)] backdrop-blur-xl">
+                        <div className="group relative flex max-h-[78vh] flex-col overflow-hidden rounded-3xl border border-cyan-300/15 bg-[#050b1d]/85 p-3 shadow-[0_18px_55px_rgba(20,80,160,0.18)] backdrop-blur-xl">
                             <div
                                 aria-hidden
-                                className="pointer-events-none absolute inset-0 rounded-3xl border border-white/5"
+                                className="pointer-events-none absolute inset-0 rounded-3xl border border-white/8"
                             />
                             <div className="px-2 text-xs uppercase tracking-[0.24em] text-cyan-100/70">
                                 {labels.sections ?? "Sections"}
@@ -357,7 +362,7 @@ const EmailSecurityDocumentation = () => {
                                             className={cn(
                                                 "w-full rounded-2xl border px-4 py-3 text-left transition",
                                                 isActive
-                                                    ? "border-cyan-300/60 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.35),_rgba(8,47,73,0.65))] text-cyan-50 shadow-[0_0_45px_rgba(56,189,248,0.55)] ring-1 ring-cyan-200/40"
+                                                    ? "border-cyan-300/60 bg-gradient-to-b from-cyan-400/35 via-cyan-500/12 to-transparent text-cyan-50 shadow-[0_22px_32px_-18px_rgba(56,189,248,0.65)] ring-1 ring-cyan-200/30"
                                                     : "border-transparent text-slate-200/80 hover:border-cyan-400/30 hover:bg-cyan-500/10 hover:text-cyan-100"
                                             )}
                                         >
@@ -380,74 +385,116 @@ const EmailSecurityDocumentation = () => {
                 <div className="relative min-w-0 md:col-span-1 lg:col-start-2 lg:row-start-1">
                     <div
                         aria-hidden
-                        className="pointer-events-none absolute inset-0 -translate-y-1/3 rounded-[40px] bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.24),_transparent_65%)] opacity-80 blur-3xl"
+                        className="pointer-events-none absolute inset-0 -translate-y-1/3 rounded-[40px] bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.18),_transparent_70%)] opacity-70 blur-3xl"
                     />
                     <div
                         ref={contentContainerRef}
-                        className="relative overflow-hidden rounded-[32px] border border-cyan-400/25 bg-[linear-gradient(135deg,rgba(6,12,24,0.92),rgba(3,7,16,0.94))] p-6 shadow-[0_0_95px_rgba(12,74,110,0.45)] backdrop-blur-xl"
+                        className="relative overflow-hidden rounded-[32px] border border-white/8 bg-[#040914]/88 p-6 shadow-[0_35px_110px_rgba(4,9,28,0.35)] backdrop-blur-2xl md:p-7"
                     >
-                        <div className="mx-auto flex w-full max-w-3xl flex-col gap-8">
+                        <div
+                            aria-hidden
+                            className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.18),_transparent_62%),radial-gradient(circle_at_bottom,_rgba(168,85,247,0.1),_transparent_60%)] opacity-75"
+                        />
+                        <div
+                            aria-hidden
+                            className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,_transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,_transparent_1px)] bg-[size:140px_140px] opacity-20"
+                        />
+                        <div className="mx-auto flex w-full max-w-4xl flex-col gap-8">
                             <motion.div
                                 initial={{ opacity: 0, y: 12 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={transition}
-                                className="space-y-2"
+                                className="space-y-2.5"
                             >
                                 <h2 className="bg-gradient-to-r from-cyan-100 via-sky-100 to-emerald-100 bg-clip-text text-2xl font-semibold text-transparent">
                                     {currentChapter?.title}
                                 </h2>
                                 {currentChapter?.description ? (
-                                    <p className="text-sm text-slate-300/85">{currentChapter.description}</p>
+                                    <p className="text-base leading-relaxed text-slate-200/80">
+                                        {currentChapter.description}
+                                    </p>
                                 ) : null}
                             </motion.div>
 
-                            {currentSections.map((section, sectionIndex) => (
-                                <motion.article
-                                    key={`${currentChapter?.id ?? activeChapter}-${section.id}`}
-                                    data-section-id={section.id}
-                                    data-section-index={sectionIndex}
-                                    ref={(node) => {
-                                        if (node) {
-                                            sectionRefs.current.set(section.id, node);
-                                        } else {
-                                            sectionRefs.current.delete(section.id);
-                                        }
-                                    }}
-                                    id={section.id}
-                                    className="scroll-mt-24"
-                                    initial={{ opacity: 0, y: 12 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true, amount: 0.4 }}
-                                    transition={transition}
-                                >
-                                    <Card className="group relative overflow-hidden border border-cyan-400/15 bg-[linear-gradient(135deg,rgba(9,16,32,0.86),rgba(6,13,28,0.92))] p-6 text-white shadow-[0_0_65px_rgba(11,68,98,0.45)] backdrop-blur transition-shadow duration-500 hover:border-cyan-300/40 hover:shadow-[0_0_90px_rgba(56,189,248,0.55)]">
-                                        <div
-                                            aria-hidden
-                                            className="pointer-events-none absolute inset-x-[-1px] -top-[1px] h-px bg-gradient-to-r from-transparent via-cyan-300/70 to-transparent opacity-80"
-                                        />
-                                        <div className="relative flex flex-col gap-2">
-                                            <div className="flex items-center justify-between gap-4">
-                                                <h3 className="text-lg font-semibold leading-tight text-white">
-                                                    {section.title}
-                                                </h3>
+                            {currentSections.map((section, sectionIndex) => {
+                                const sectionKey = `${currentChapter?.id ?? activeChapter}-${section.id}`;
+                                const sectionNumber = String(sectionIndex + 1).padStart(2, "0");
+                                const horizontalAccent =
+                                    sectionIndex % 2 === 0
+                                        ? "from-cyan-200/60 via-sky-200/30 to-transparent"
+                                        : "from-fuchsia-200/60 via-violet-200/30 to-transparent";
+
+                                return (
+                                    <motion.article
+                                        key={sectionKey}
+                                        data-section-id={section.id}
+                                        data-section-index={sectionIndex}
+                                        ref={(node) => {
+                                            if (node) {
+                                                sectionRefs.current.set(section.id, node);
+                                            } else {
+                                                sectionRefs.current.delete(section.id);
+                                            }
+                                        }}
+                                        id={section.id}
+                                        className="scroll-mt-24"
+                                        initial={{ opacity: 0, y: 18 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        viewport={{ once: true, amount: 0.3 }}
+                                        transition={transition}
+                                    >
+                                        <div className="relative pl-6 md:pl-10">
+                                            <div className="absolute left-1.5 top-6 bottom-6 hidden md:block w-[2px] rounded-full bg-gradient-to-b from-cyan-400/45 via-transparent to-emerald-400/45" />
+                                            <div className="absolute left-1 top-6 hidden md:block h-2 w-2 rounded-full bg-cyan-300/80 shadow-[0_0_18px_rgba(34,211,238,0.8)]" />
+                                            <div className="relative overflow-hidden rounded-[28px] border border-white/10 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.14),_transparent_65%),linear-gradient(135deg,rgba(6,14,29,0.88),rgba(4,10,24,0.9))] px-5 py-5 shadow-[0_32px_85px_rgba(6,16,36,0.45)] backdrop-blur-xl md:px-6 md:py-5">
+                                                <div
+                                                    aria-hidden
+                                                    className="pointer-events-none absolute inset-px rounded-[26px] border border-white/6"
+                                                />
+                                                <div className="relative flex flex-col gap-3">
+                                                    <div className="flex flex-col gap-3">
+                                                        <div className="flex flex-wrap items-center gap-3">
+                                                            <span className="inline-flex items-center rounded-full border border-cyan-200/35 bg-cyan-500/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.32em] text-cyan-100/70">
+                                                                {sectionNumber}
+                                                            </span>
+                                                            <span
+                                                                className={cn(
+                                                                    "hidden h-px flex-1 rounded-full bg-gradient-to-r md:block",
+                                                                    horizontalAccent
+                                                                )}
+                                                                aria-hidden
+                                                            />
+                                                        </div>
+                                                        <h3 className="text-xl font-semibold leading-tight text-white md:text-2xl">
+                                                            {section.title}
+                                                        </h3>
+                                                        {section.description ? (
+                                                            <p className="text-base text-slate-200/75">
+                                                                {section.description}
+                                                            </p>
+                                                        ) : null}
+                                                    </div>
+                                                    <div className="space-y-2.5 text-base text-slate-100/85">
+                                                        {section.body.map((block, blockIndex) =>
+                                                            renderBodyBlock(block, blockIndex)
+                                                        )}
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div className="mt-4 space-y-4">
-                                            {section.body.map((block, blockIndex) => renderBodyBlock(block, blockIndex))}
-                                        </div>
-                                    </Card>
-                                </motion.article>
-                            ))}
+                                    </motion.article>
+                                );
+                            })}
                         </div>
                     </div>
                 </div>
 
                 <aside className="hidden md:sticky md:top-24 md:col-start-2 md:row-span-full md:row-start-1 md:flex md:flex-col lg:col-start-3 lg:row-start-1">
                     <div className="relative">
-                        <div className="group relative flex max-h-[78vh] flex-col overflow-hidden rounded-3xl border border-cyan-400/20 bg-[linear-gradient(150deg,rgba(7,15,30,0.88),rgba(3,8,18,0.95))] p-3 shadow-[0_0_65px_rgba(56,189,248,0.25)] backdrop-blur-xl">
+                        <div className="group relative flex max-h-[78vh] flex-col overflow-hidden rounded-3xl border border-cyan-300/15 bg-[#050b1f]/85 p-3 shadow-[0_18px_55px_rgba(20,80,160,0.18)] backdrop-blur-xl">
                             <div
                                 aria-hidden
-                                className="pointer-events-none absolute inset-0 rounded-3xl border border-white/5"
+                                className="pointer-events-none absolute inset-0 rounded-3xl border border-white/8"
                             />
                             <div className="px-2 text-xs uppercase tracking-[0.24em] text-cyan-100/70">
                                 {labels.tableOfContents ?? "Table of contents"}
@@ -463,7 +510,7 @@ const EmailSecurityDocumentation = () => {
                                             className={cn(
                                                 "w-full rounded-2xl border px-4 py-2 text-left text-sm font-medium leading-tight transition",
                                                 isActive
-                                                    ? "border-cyan-300/60 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.35),_rgba(8,47,73,0.6))] text-cyan-50 shadow-[0_0_40px_rgba(56,189,248,0.5)]"
+                                                    ? "border-cyan-300/60 bg-gradient-to-b from-cyan-400/35 via-cyan-500/12 to-transparent text-cyan-50 shadow-[0_22px_32px_-18px_rgba(56,189,248,0.6)]"
                                                     : "border-transparent text-slate-200/80 hover:border-cyan-400/30 hover:bg-cyan-500/10 hover:text-cyan-100"
                                             )}
                                         >
@@ -494,7 +541,7 @@ const EmailSecurityDocumentation = () => {
                                 className={cn(
                                     "w-full rounded-3xl border px-4 py-4 text-left transition",
                                     activeChapter === chapter.id
-                                        ? "border-cyan-300/60 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.35),_rgba(8,47,73,0.6))] text-cyan-50"
+                                        ? "border-cyan-300/60 bg-gradient-to-b from-cyan-400/35 via-cyan-500/12 to-transparent text-cyan-50 shadow-[0_18px_28px_-20px_rgba(56,189,248,0.55)]"
                                         : "border-transparent bg-cyan-500/5 text-slate-200/85 hover:border-cyan-400/30 hover:bg-cyan-500/10 hover:text-cyan-100"
                                 )}
                             >
@@ -531,7 +578,7 @@ const EmailSecurityDocumentation = () => {
                                         className={cn(
                                             "w-full rounded-3xl border px-4 py-3 text-left text-base font-semibold transition",
                                             isActive
-                                                ? "border-cyan-300/60 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.35),_rgba(8,47,73,0.6))] text-cyan-50"
+                                                ? "border-cyan-300/60 bg-gradient-to-b from-cyan-400/35 via-cyan-500/12 to-transparent text-cyan-50 shadow-[0_18px_28px_-20px_rgba(56,189,248,0.55)]"
                                                 : "border-transparent bg-cyan-500/5 text-slate-200/85 hover:border-cyan-400/30 hover:bg-cyan-500/10 hover:text-cyan-100"
                                         )}
                                     >
