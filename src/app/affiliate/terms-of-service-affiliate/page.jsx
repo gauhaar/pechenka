@@ -2,7 +2,6 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Header from "@/components/Header";
-import AffiliateFooter from "@/components/affiliate/AffiliateFooter";
 import PolicySidebar from "@/components/PolicySidebar";
 import PolicyNotice from "@/components/PolicyNotice";
 import BackToTopButton from "@/components/BackToTopButton";
@@ -313,7 +312,6 @@ const AffiliateTermsOfServicePage = () => {
           </article>
         </div>
 
-        <AffiliateFooter />
       </main>
 
       <BackToTopButton />
