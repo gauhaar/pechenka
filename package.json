@@ -10,6 +10,9 @@
     "i18n:sync": "node scripts/i18n-sync.mjs"
   },
   "dependencies": {
+    "@radix-ui/react-scroll-area": "^1.0.6",
+    "@radix-ui/react-separator": "^1.0.4",
+    "@radix-ui/react-tabs": "^1.0.5",
     "@tabler/icons-react": "^3.34.1",
     "@tsparticles/engine": "^3.9.1",
     "@tsparticles/react": "^3.0.0",
