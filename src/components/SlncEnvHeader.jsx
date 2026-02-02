@@ -60,6 +60,12 @@ const SlncEnvHeader = ({ onOpenAdminModal }) => {
   const systemsItems = [
     { key: "ai-soc", label: t("header.nav.systemsAiSoc", "AI-SOC"), href: "/ai-soc" },
     { key: "slnc-env", label: t("header.nav.systemsSlncEnv", "SLNC-env"), href: "/slnc-env" },
+    {
+      key: "supreme",
+      label: t("header.nav.systemsSupreme", "Supreme"),
+      href: "/supreme",
+      isMuted: true,
+    },
   ];
 
   const navItems = [
@@ -127,11 +133,19 @@ const SlncEnvHeader = ({ onOpenAdminModal }) => {
                                 <Link
                                   key={child.key}
                                   href={child.href}
-                                  className="block rounded-lg px-3 py-2 text-white/90 hover:bg-white/10"
+                                  className={clsx(
+                                    "block rounded-lg px-3 py-2",
+                                    child.isMuted
+                                      ? "cursor-default text-white/50"
+                                      : "text-white/90 hover:bg-white/10"
+                                  )}
                                   onClick={() => {
+                                    if (child.isMuted) return;
                                     setIsSystemsOpen(false);
                                     setIsMobileMenuOpen(false);
                                   }}
+                                  aria-disabled={child.isMuted ? true : undefined}
+                                  tabIndex={child.isMuted ? -1 : undefined}
                                 >
                                   {child.label}
                                 </Link>
@@ -259,13 +273,25 @@ const SlncEnvHeader = ({ onOpenAdminModal }) => {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: 6 }}
                             transition={{ duration: 0.15, ease: "easeOut" }}
-                            className="absolute left-0 mt-2 w-64 overflow-hidden rounded-xl border border-white/10 bg-black/85 p-2 shadow-2xl backdrop-blur-xl"
+                            className="absolute left-0 mt-2 w-max min-w-[8rem] overflow-hidden rounded-xl border border-white/10 bg-black/85 p-2 shadow-2xl backdrop-blur-xl"
                           >
                             {item.children.map((child) => (
                               <Link
                                 key={child.key}
                                 href={child.href}
-                                className="block rounded-lg px-3 py-2 text-sm text-white hover:bg-white/10 whitespace-nowrap"
+                                className={clsx(
+                                  "block rounded-lg px-3 py-2 text-sm whitespace-nowrap",
+                                  child.isMuted
+                                    ? "cursor-default text-white/50"
+                                    : "text-white hover:bg-white/10"
+                                )}
+                                onClick={(event) => {
+                                  if (child.isMuted) {
+                                    event.preventDefault();
+                                  }
+                                }}
+                                aria-disabled={child.isMuted ? true : undefined}
+                                tabIndex={child.isMuted ? -1 : undefined}
                               >
                                 {child.label}
                               </Link>

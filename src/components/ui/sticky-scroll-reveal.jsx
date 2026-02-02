@@ -60,7 +60,7 @@ export const StickyScroll = ({
       className="w-full"
       ref={ref}
     >
-      <div className="relative mx-auto grid max-w-7xl grid-cols-12 gap-6 md:gap-10 px-4 py-12 sm:px-8 lg:px-10 lg:py-16">
+      <div className="relative mx-auto grid max-w-7xl grid-cols-12 gap-6 md:gap-10 px-4 py-12 sm:px-8 lg:px-10 lg:py-16 items-start">
         <div className="col-span-12 lg:col-span-5">
           {content.map((item, index) => (
             <div
@@ -97,7 +97,7 @@ export const StickyScroll = ({
         </div>
         <div
           className={cn(
-            "sticky top-40 col-span-7 hidden h-80 w-full overflow-hidden rounded-md bg-black lg:block",
+            "sticky top-[calc(50vh-10rem)] col-span-7 hidden h-80 w-full overflow-hidden rounded-md bg-black lg:block",
             contentClassName
           )}
         >
