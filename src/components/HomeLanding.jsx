@@ -99,7 +99,7 @@ export default function HomeLanding() {
           <div className="max-w-5xl mx-auto text-center">
             <div className="absolute top-20 left-1/4 w-72 h-72 bg-blue-500/20 rounded-full blur-[120px] pointer-events-none" />
             <div className="absolute top-32 right-1/4 w-64 h-64 bg-purple-500/20 rounded-full blur-[100px] pointer-events-none" />
-            
+
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -227,7 +227,7 @@ export default function HomeLanding() {
 
       <BackToTopButton />
       <RequestDemoModal isOpen={isModalOpen} onClose={closeModal} />
-      
+
     </div>
   );
 }
