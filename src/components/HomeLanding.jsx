@@ -87,13 +87,13 @@ export default function HomeLanding() {
   return (
     <div className="min-h-screen bg-[#01091C] text-white overflow-hidden">
       <Header onOpenModal={openModal} />
-
+      
       <div className="fixed inset-0 z-0">
         <BackgroundBeams className="opacity-50" />
       </div>
 
       <main className="relative mx-auto flex flex-col gap-0 pb-16 z-10">
-
+        
         {/* Hero Section */}
         <section className="relative w-full pt-32 pb-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto text-center">
@@ -145,7 +145,7 @@ export default function HomeLanding() {
               >
                 {/* SVG omitted for brevity, assume оставляем как есть */}
               </motion.div>
-
+              
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
