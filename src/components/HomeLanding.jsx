@@ -68,6 +68,16 @@ export default function HomeLanding() {
       href: "/sithub",
       badge: t("home.systems.sithub.badge", "Subscription"),
     },
+    {
+      key: "supreme",
+      title: t("home.systems.supreme.title", "Supreme"),
+      desc: t(
+        "home.systems.supreme.desc",
+        "Local code vulnerability scanner for VSCode. Analyze your code for security vulnerabilities without exposing it to external servers."
+      ),
+      href: "/supreme",
+      badge: t("home.systems.supreme.badge", "Extension"),
+    },
   ];
 
   const openModal = () => setIsModalOpen(true);
