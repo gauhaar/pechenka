@@ -60,6 +60,18 @@ const Footer = () => {
                 {t("footer.links.privacy", "Privacy Policy")}
               </a>
             </div>
+            <div className="flex flex-wrap justify-center sm:justify-end gap-2 sm:gap-4 items-center text-gray-400 text-xs sm:text-sm">
+              <span className="text-gray-500 text-xs uppercase tracking-wider">Supreme:</span>
+              <a href="/policies/supreme/terms_of_use" className="hover:text-white transition-colors duration-300">
+                {t("footer.links.termsUse", "Terms of Use")}
+              </a>
+              <a href="/policies/supreme/terms_of_service" className="hover:text-white transition-colors duration-300">
+                {t("footer.links.termsService", "Terms of Service")}
+              </a>
+              <a href="/policies/supreme/privacy" className="hover:text-white transition-colors duration-300">
+                {t("footer.links.privacy", "Privacy Policy")}
+              </a>
+            </div>
           </div>
         </div>
       </div>
