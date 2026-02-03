@@ -109,9 +109,22 @@ const Supreme2D = () => {
             Actually, CSS doesn't do true depth sorting for intersecting planes perfectly. 
             Since the outer cube is larger, it should generally wrap the inner one.
         */}
-        <div className="face front"></div>
+        <div className="face front">
+            <div className="flex flex-col items-center justify-center transform translate-z-[1px]">
+              <span className="font-mono text-3xl font-bold text-white tracking-widest drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">./SLNC</span>
+              <span className="text-[10px] tracking-[0.4em] text-purple-100 mt-2 font-semibold uppercase opacity-80">Supreme</span>
+              {/* Decorative decorative lines */}
+              <div className="absolute top-4 right-4 w-2 h-2 border-t border-r border-white/40"></div>
+              <div className="absolute bottom-4 left-4 w-2 h-2 border-b border-l border-white/40"></div>
+           </div>
+        </div>
         <div className="face back"></div>
-        <div className="face right"></div>
+        <div className="face right">
+            <div className="flex flex-col items-center justify-center transform translate-z-[1px] rotate-0">
+                <span className="text-[9px] font-bold tracking-[0.2em] text-purple-200 uppercase border-b border-white/20 pb-1 mb-1">VSCode</span>
+                <span className="text-[9px] font-bold tracking-[0.2em] text-white/90 uppercase">Extension</span>
+            </div>
+        </div>
         <div className="face left"></div>
         <div className="face top"></div>
         <div className="face bottom"></div>
