@@ -14,6 +14,7 @@ import { FloatingText } from "@/components/FloatingText";
 import { useLanguage } from "@/contexts/LanguageContext";
 import EdgeGlowCard from "@/components/EdgeGlowCard";
 import GlassyBox3D from "@/components/GlassyBox3D";
+import Supreme2D from "@/components/Supreme2D";
 import { StickyScrollAnimation } from "@/components/StickyScrollAnimation";
 import MediumArticleCard from "@/components/MediumArticleCard";
 import LinkPreviewCard from "@/components/LinkPreviewCard";
@@ -301,14 +302,21 @@ export default function HomeLanding() {
                 outerClassName="group relative flex h-full flex-col justify-between overflow-hidden rounded-3xl p-[2px]"
                 innerClassName="rounded-[22px] bg-black/40 backdrop-blur-xl p-8 sm:p-10 lg:p-12 h-full transition duration-300 group-hover:bg-black/60"
               >
-                  {/* Inner breathing glow effect */}
+                  {/* Inner breathing glow effect - Exclude for Supreme */}
                    <div className="absolute inset-0 bg-radial-gradient from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none" />
-                   <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full blur-[100px] opacity-20 pointer-events-none ${idx === 0 ? 'bg-pink-500' : 'bg-blue-500'} animate-pulse`} />
+                   {item.key !== 'supreme' && (
+                     <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full blur-[100px] opacity-20 pointer-events-none ${idx === 0 ? 'bg-pink-500' : 'bg-blue-500'} animate-pulse`} />
+                   )}
 
                   <div className="flex flex-col lg:flex-row gap-8 relative z-10">
                     {/* 3D Animation Area */}
                     <div className="w-full lg:w-1/2 h-[320px] sm:h-[380px] lg:h-[400px] relative flex items-center justify-center">
-                      {idx === 0 ? (
+                      {item.key === 'supreme' ? (
+                        /* Supreme Animation - 2D */
+                        <div className="relative w-full h-full flex items-center justify-center scale-[1.1]">
+                          <Supreme2D />
+                        </div>
+                      ) : idx === 0 ? (
                         /* AI-SOC Animation */
                         <div className="relative w-full h-full scale-[0.85]">
                           <StickyScrollAnimation />
