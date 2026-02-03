@@ -58,6 +58,58 @@
         "description": "We are preparing a detailed guide for configuring and protecting web applications. Check back soon — the materials will appear shortly."
       }
     },
+    "pricingMicrosoft": {
+      "business": "Business",
+      "enterprise": "Enterprise",
+      "withoutTeams": "Plans without Teams",
+      "withTeams": "With Teams",
+      "yearly": "Yearly",
+      "monthly": "Monthly",
+      "planHighlights": "Plan highlights",
+      "userMonth": "user/month",
+      "paidYearly": "paid yearly",
+      "paidMonthly": "paid monthly",
+      "plans": {
+        "businessPremium": {
+          "title": "Microsoft 365 Business Premium (no Teams)"
+        },
+        "businessStandard": {
+          "title": "Microsoft 365 Business Standard (no Teams)"
+        },
+        "businessBasic": {
+          "title": "Microsoft 365 Business Basic (no Teams)"
+        },
+        "enterpriseE3": {
+          "title": "Microsoft 365 E3"
+        },
+        "enterpriseE5": {
+          "title": "Microsoft 365 E5"
+        }
+      },
+      "features": {
+        "secureAccess300": "Secure access for up to 300 users",
+        "customDomainEmail": "Custom company email on your own domain (you@yourcompany.com)",
+        "adminConsole": "Admin console with domain-wide email management and bulk operations",
+        "aiThreatDetection": "AI-powered threat detection with automatic email categorization",
+        "securityPipeline": "Multi-layered email security pipeline (SPF, DKIM, DMARC, spam, malware, phishing)",
+        "securityFolders": "Email sorting into security folders (Secure, Spam, Dangerous Links, Malware, Phishing, Spoofed)",
+        "linkScannerAv": "Advanced link scanner and antivirus protection for attachments",
+        "emailFlowVisualization": "Email flow visualization across the domain/organization with comprehensive filters",
+        "bulkManageDelete": "Ability to manage and delete emails across all users in the domain",
+        "customFoldersRules": "Custom folders with auto-filtering rules (sender, domain, subject)",
+        "storage10gb": "10 GB secure mailbox storage per user",
+        "storage5tb": "5 TB secure mailbox storage per user",
+        "storage10tb": "10 TB secure mailbox storage per user",
+        "multiAccountSupport": "Multi-account support (Gmail/Outlook integration)",
+        "support247": "24/7 email and web support",
+        "fullTextSearch": "Email search with full-text capabilities",
+        "aiAssistedCategorization": "AI-assisted email categorization into security folders",
+        "basicFiltering": "Custom folders with basic filtering rules",
+        "prioritySupport": "Priority support with faster response times",
+        "dedicatedAM": "Dedicated account management",
+        "unlimitedUsers": "Supports unlimited users"
+      }
+    },
     "emailSecurity": {
       "title": "Email Security System",
       "subtitle": "Documentation | Version 1.0",

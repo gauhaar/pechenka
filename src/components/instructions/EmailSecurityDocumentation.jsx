@@ -1,57 +1,123 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { useLanguage } from "@/contexts/LanguageContext";
+import {
+    ShieldCheck,
+    Menu,
+    Hash,
+    X,
+    ChevronRight,
+    Globe,
+    User,
+    Server,
+    Settings,
+    Sparkles,
+    Lock,
+    Database
+} from "lucide-react";
 
 const calloutClassMap = {
-    info: "border border-cyan-300/30 bg-cyan-500/10 text-cyan-100/90 shadow-[0_10px_30px_rgba(34,211,238,0.18)]",
-    warning: "border border-amber-300/30 bg-amber-500/10 text-amber-100/90 shadow-[0_10px_30px_rgba(245,158,11,0.18)]",
-    success: "border border-emerald-300/30 bg-emerald-500/10 text-emerald-100/90 shadow-[0_10px_30px_rgba(16,185,129,0.2)]",
+    info: "border border-cyan-500/20 bg-cyan-500/5 text-cyan-200 shadow-[0_0_30px_-5px_rgba(34,211,238,0.15)]",
+    warning: "border border-amber-500/20 bg-amber-500/5 text-amber-200 shadow-[0_0_30px_-5px_rgba(245,158,11,0.15)]",
+    success: "border border-emerald-500/20 bg-emerald-500/5 text-emerald-200 shadow-[0_0_30px_-5px_rgba(16,185,129,0.15)]",
 };
 
 const transition = { duration: 0.35, ease: [0.4, 0, 0.2, 1] };
-const HEADER_OFFSET = 96;
-const CONTENT_SCROLL_OFFSET = 96;
-const FIRST_SECTION_SCROLL_MARGIN = 120;
+const HEADER_OFFSET = 120;
+const CONTENT_SCROLL_OFFSET = 120;
+const FIRST_SECTION_SCROLL_MARGIN = 140;
+
+const getTheme = (title) => {
+    const t = (title || "").toLowerCase();
+    if (/admin|config|setup|server/.test(t)) return 'admin';
+    if (/dns|domain|record|spf|dkim|dmarc/.test(t)) return 'domain';
+    if (/user|employee|client/.test(t)) return 'user';
+    return 'default';
+};
+
+const themeStyles = {
+    admin: {
+        icon: Settings,
+        text: "text-purple-400",
+        bg: "bg-purple-500/10",
+        border: "border-purple-500/20",
+        glow: "shadow-purple-500/20",
+        decoration: "from-purple-500/40"
+    },
+    domain: {
+        icon: Globe,
+        text: "text-blue-400",
+        bg: "bg-blue-500/10",
+        border: "border-blue-500/20",
+        glow: "shadow-blue-500/20",
+        decoration: "from-blue-500/40"
+    },
+    user: {
+        icon: User,
+        text: "text-emerald-400",
+        bg: "bg-emerald-500/10",
+        border: "border-emerald-500/20",
+        glow: "shadow-emerald-500/20",
+        decoration: "from-emerald-500/40"
+    },
+    default: {
+        icon: ShieldCheck,
+        text: "text-cyan-400",
+        bg: "bg-cyan-500/10",
+        border: "border-cyan-500/20",
+        glow: "shadow-cyan-500/20",
+        decoration: "from-cyan-500/40"
+    }
+};
+
+const BackgroundAmbience = () => (
+    <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden h-full w-full bg-[#020617]">
+        {/* Top-left cyan glow */}
+        <div className="absolute -top-[10%] -left-[10%] w-[500px] h-[500px] bg-cyan-500/10 blur-[120px] rounded-full" />
+        {/* Bottom-right blue glow */}
+        <div className="absolute -bottom-[10%] -right-[10%] w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full" />
+        {/* Mid-top purple glow */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[300px] h-[300px] bg-purple-500/10 blur-[100px] rounded-full" />
+    </div>
+);
 
 const MobileDrawer = ({ title, closeLabel, isOpen, onClose, children }) => (
-    <div
-        className={cn(
-            "lg:hidden fixed inset-0 z-50 transition-all duration-300",
-            isOpen ? "pointer-events-auto" : "pointer-events-none"
-        )}
-    >
-        <div
-            className={cn(
-                "absolute inset-0 bg-[#040414]/85 backdrop-blur-sm transition-opacity duration-300",
-                isOpen ? "opacity-100" : "opacity-0"
-            )}
-            aria-hidden="true"
-            onClick={onClose}
-        />
-        <motion.div
-            initial={{ x: "100%" }}
-            animate={{ x: isOpen ? 0 : "100%" }}
-            transition={transition}
-            className="absolute inset-y-0 right-0 flex w-full max-w-sm flex-col gap-6 rounded-l-3xl border border-cyan-400/20 bg-[#050b1f]/95 px-6 pb-8 pt-6 shadow-[0_0_65px_rgba(56,189,248,0.28)] ring-1 ring-cyan-300/20 backdrop-blur-xl"
-            role="dialog"
-            aria-modal="true"
-        >
-            <div className="flex items-center justify-between">
-                <div className="text-xs uppercase tracking-[0.24em] text-slate-200/80">{title}</div>
-                <button
-                    type="button"
+    <AnimatePresence>
+        {isOpen && (
+            <div className="lg:hidden fixed inset-0 z-[60]">
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    className="absolute inset-0 bg-black/60 backdrop-blur-sm"
                     onClick={onClose}
-                    className="rounded-full border border-cyan-400/40 bg-cyan-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-cyan-100 transition hover:border-cyan-300/50 hover:bg-cyan-500/20"
+                />
+                <motion.div
+                    initial={{ x: "100%" }}
+                    animate={{ x: 0 }}
+                    exit={{ x: "100%" }}
+                    transition={{ type: "spring", damping: 30, stiffness: 300 }}
+                    className="absolute inset-y-0 right-0 w-full max-w-sm bg-[#0a0f1f] border-l border-white/10 shadow-2xl overflow-y-auto"
                 >
-                    {closeLabel}
-                </button>
+                    <div className="sticky top-0 z-10 flex items-center justify-between p-6 bg-[#0a0f1f]/80 backdrop-blur-md border-b border-white/5">
+                        <span className="text-sm font-bold uppercase tracking-wider text-slate-400">{title}</span>
+                        <button
+                            onClick={onClose}
+                            className="p-1 rounded-full border border-white/10 hover:bg-white/5 text-slate-400 hover:text-white transition-colors"
+                        >
+                            <X size={20} />
+                        </button>
+                    </div>
+                    <div className="p-6">
+                        {children}
+                    </div>
+                </motion.div>
             </div>
-            <div className="min-h-0 flex-1 overflow-y-auto pr-2 text-slate-100/80">{children}</div>
-        </motion.div>
-    </div>
+        )}
+    </AnimatePresence>
 );
 
 const renderBodyBlock = (block, blockIndex) => {
@@ -59,10 +125,7 @@ const renderBodyBlock = (block, blockIndex) => {
 
     if (block.type === "paragraph") {
         return (
-            <p
-                key={`paragraph-${blockIndex}`}
-                className="text-base leading-relaxed text-slate-100/85 md:text-[17px]"
-            >
+            <p key={`p-${blockIndex}`} className="text-slate-300 leading-7">
                 {block.content}
             </p>
         );
@@ -70,14 +133,17 @@ const renderBodyBlock = (block, blockIndex) => {
 
     if (block.type === "list") {
         return (
-            <div key={`list-${blockIndex}`} className="space-y-2.5">
-                {block.title ? (
-                    <div className="text-xs uppercase tracking-[0.3em] text-cyan-200/70">{block.title}</div>
-                ) : null}
-                <ul className="space-y-1.5 pl-5 text-base leading-relaxed text-slate-100/80 marker:text-cyan-200">
-                    {block.items.map((item, itemIndex) => (
-                        <li key={`list-item-${blockIndex}-${itemIndex}`} className="list-disc">
-                            {item}
+            <div key={`l-${blockIndex}`} className="space-y-3 my-4">
+                {block.title && (
+                    <div className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">
+                        {block.title}
+                    </div>
+                )}
+                <ul className="space-y-2">
+                    {block.items.map((item, idx) => (
+                        <li key={idx} className="flex items-start gap-3 text-slate-300 leading-relaxed">
+                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-cyan-400/60 shrink-0" />
+                            <span>{item}</span>
                         </li>
                     ))}
                 </ul>
@@ -87,11 +153,14 @@ const renderBodyBlock = (block, blockIndex) => {
 
     if (block.type === "orderedList") {
         return (
-            <div key={`ordered-${blockIndex}`} className="space-y-2.5">
-                <ol className="space-y-1.5 pl-5 text-base leading-relaxed text-slate-100/80 marker:text-cyan-200">
-                    {block.items.map((item, itemIndex) => (
-                        <li key={`ordered-item-${blockIndex}-${itemIndex}`} className="list-decimal">
-                            {item}
+            <div key={`ol-${blockIndex}`} className="space-y-3 my-4">
+                <ol className="space-y-2 counter-reset-list">
+                    {block.items.map((item, idx) => (
+                        <li key={idx} className="flex items-start gap-3 text-slate-300 leading-relaxed group">
+                            <span className="flex h-5 w-5 items-center justify-center rounded border border-white/10 bg-white/5 text-xs font-medium text-slate-400 shrink-0 mt-1 group-hover:border-cyan-500/30 group-hover:text-cyan-400 transition-colors">
+                                {idx + 1}
+                            </span>
+                            <span>{item}</span>
                         </li>
                     ))}
                 </ol>
@@ -101,24 +170,29 @@ const renderBodyBlock = (block, blockIndex) => {
 
     if (block.type === "code") {
         return (
-            <pre
-                key={`code-${blockIndex}`}
-                className="overflow-x-auto rounded-2xl border border-cyan-300/15 bg-[#041025]/90 px-4 py-3 font-mono text-sm text-cyan-100/90"
-            >
-                <code>{block.content}</code>
-            </pre>
+            <div key={`c-${blockIndex}`} className="my-5 overflow-hidden rounded-xl border border-white/10 bg-[#02040a] shadow-inner">
+                <div className="flex items-center gap-2 border-b border-white/5 bg-white/5 px-4 py-2">
+                    <div className="h-2.5 w-2.5 rounded-full bg-red-500/20" />
+                    <div className="h-2.5 w-2.5 rounded-full bg-yellow-500/20" />
+                    <div className="h-2.5 w-2.5 rounded-full bg-green-500/20" />
+                    <span className="ml-2 font-mono text-xs text-slate-500">Terminal</span>
+                </div>
+                <div className="overflow-x-auto p-4">
+                    <pre className="font-mono text-sm text-cyan-50">
+                        <code>{block.content}</code>
+                    </pre>
+                </div>
+            </div>
         );
     }
 
     if (block.type === "callout") {
+        const intent = block.intent || "info";
         return (
-            <div
-                key={`callout-${blockIndex}`}
-                className={cn(
-                    "rounded-2xl px-4 py-3 text-base leading-relaxed shadow-[0_10px_35px_rgba(8,17,35,0.25)]",
-                    calloutClassMap[block.intent ?? "info"]
-                )}
-            >
+            <div key={`co-${blockIndex}`} className={cn(
+                "my-5 rounded-xl border p-4 text-sm leading-relaxed backdrop-blur-sm",
+                calloutClassMap[intent]
+            )}>
                 {block.content}
             </div>
         );
@@ -133,497 +207,361 @@ const EmailSecurityDocumentation = () => {
     const labels = t("documentation.system", {});
 
     const chapters = useMemo(() => doc?.chapters ?? [], [doc]);
-    const heroTitle = doc?.title ?? "";
-    const heroSubtitle = doc?.subtitle ?? "";
+    const heroTitle = doc?.title ?? "System Documentation";
+    const heroSubtitle = doc?.subtitle ?? "Reference";
     const heroDescription = doc?.description ?? "";
 
     const sectionRefs = useRef(new Map());
     const observerRef = useRef(null);
     const isProgrammaticScrollRef = useRef(false);
     const programmaticResetRef = useRef(null);
-    const contentContainerRef = useRef(null);
 
     const [activeChapter, setActiveChapter] = useState(() => chapters[0]?.id ?? "");
     const [activeSection, setActiveSection] = useState(() => chapters[0]?.sections?.[0]?.id ?? "");
     const [navOpen, setNavOpen] = useState(false);
     const [tocOpen, setTocOpen] = useState(false);
 
+    // Initial load sync
     useEffect(() => {
-        if (!chapters.length) {
-            if (activeChapter) setActiveChapter("");
-            if (activeSection) setActiveSection("");
-            return;
+        if (!chapters.length) return;
+
+        // Ensure activeChapter is valid
+        const chapterExists = chapters.some(c => c.id === activeChapter);
+        if (!chapterExists) {
+            setActiveChapter(chapters[0].id);
         }
+    }, [chapters, activeChapter]);
 
-        const fallbackChapter = chapters[0];
-        const hasActiveChapter = chapters.some((chapter) => chapter.id === activeChapter);
+    const currentChapter = useMemo(() =>
+        chapters.find(c => c.id === activeChapter) || chapters[0] || null
+        , [chapters, activeChapter]);
 
-        if (!hasActiveChapter) {
-            setActiveChapter(fallbackChapter.id);
-            setActiveSection(fallbackChapter.sections?.[0]?.id ?? "");
-            return;
-        }
+    const currentSections = useMemo(() => currentChapter?.sections || [], [currentChapter]);
 
-        const resolvedChapter = chapters.find((chapter) => chapter.id === activeChapter);
-        if (resolvedChapter) {
-            const hasSection = resolvedChapter.sections?.some((section) => section.id === activeSection);
-            if (!hasSection) {
-                setActiveSection(resolvedChapter.sections?.[0]?.id ?? "");
+    // Update activeSection when chapter changes if needed
+    useEffect(() => {
+        if (currentSections.length > 0) {
+            const sectionExists = currentSections.some(s => s.id === activeSection);
+            if (!sectionExists) {
+                setActiveSection(currentSections[0].id);
             }
         }
-    }, [chapters, activeChapter, activeSection]);
+    }, [currentChapter, currentSections, activeSection]);
 
-    const currentChapter = useMemo(
-        () => chapters.find((chapter) => chapter.id === activeChapter) ?? chapters[0] ?? null,
-        [chapters, activeChapter]
-    );
-
-    const currentSections = currentChapter?.sections ?? [];
-    const currentChapterId = currentChapter?.id ?? "";
-    const firstSectionId = currentSections[0]?.id ?? "";
-    const currentSectionIds = useMemo(
-        () => currentSections.map((section) => section.id),
-        [currentSections]
-    );
-
+    // Handlers
     const resetProgrammaticState = useCallback(() => {
-        if (programmaticResetRef.current) {
-            window.clearTimeout(programmaticResetRef.current);
-        }
-
-        programmaticResetRef.current = window.setTimeout(() => {
+        if (programmaticResetRef.current) clearTimeout(programmaticResetRef.current);
+        programmaticResetRef.current = setTimeout(() => {
             isProgrammaticScrollRef.current = false;
-        }, 520);
+        }, 800);
     }, []);
 
-    const getSectionScrollMargin = useCallback((sectionId) => {
+    const handleChapterSelect = useCallback((chapterId) => {
+        setActiveChapter(chapterId);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }, []);
+
+    const scrollToSection = useCallback((sectionId) => {
         const node = sectionRefs.current.get(sectionId);
-        if (!node || typeof window === "undefined") return 0;
+        if (!node) return;
 
-        const parsed = Number.parseFloat(window.getComputedStyle(node).scrollMarginTop);
-        return Number.isFinite(parsed) ? parsed : 0;
-    }, []);
+        isProgrammaticScrollRef.current = true;
+        const top = node.getBoundingClientRect().top + window.scrollY - HEADER_OFFSET - 20;
 
-    const scrollToContentTop = useCallback(
-        (behavior = "smooth") => {
-            const container = contentContainerRef.current;
-            const targetTop = container
-                ? container.getBoundingClientRect().top + window.scrollY - CONTENT_SCROLL_OFFSET
-                : 0;
+        window.scrollTo({ top, behavior: "smooth" });
+        setActiveSection(sectionId);
+        resetProgrammaticState();
+    }, [resetProgrammaticState]);
 
-            isProgrammaticScrollRef.current = true;
-            window.scrollTo({ top: Math.max(targetTop, 0), behavior });
-            resetProgrammaticState();
-        },
-        [resetProgrammaticState]
-    );
-
-    const handleChapterSelect = useCallback(
-        (chapterId) => {
-            if (chapterId === activeChapter) {
-                const firstSectionId = currentSections[0]?.id ?? "";
-                if (firstSectionId) {
-                    setActiveSection(firstSectionId);
-                }
-
-                scrollToContentTop("smooth");
-                return;
-            }
-
-            sectionRefs.current = new Map();
-            if (observerRef.current) {
-                observerRef.current.disconnect();
-                observerRef.current = null;
-            }
-
-            setActiveChapter(chapterId);
-            scrollToContentTop("smooth");
-        },
-        [activeChapter, currentSections, scrollToContentTop]
-    );
-
-    const scrollToSection = useCallback(
-        (sectionId) => {
-            const target = sectionRefs.current.get(sectionId);
-            if (!target) {
-                return;
-            }
-
-            isProgrammaticScrollRef.current = true;
-
-            const targetScrollMargin = getSectionScrollMargin(sectionId);
-            const offset = Math.max(targetScrollMargin, CONTENT_SCROLL_OFFSET);
-            const targetTop = target.getBoundingClientRect().top + window.scrollY - offset;
-            window.scrollTo({ top: targetTop, behavior: "smooth" });
-
-            setActiveSection(sectionId);
-            resetProgrammaticState();
-        },
-        [getSectionScrollMargin, resetProgrammaticState]
-    );
-
+    // Intersection Observer for Scroll Spy
     useEffect(() => {
-        if (!currentChapterId) {
-            setActiveSection("");
-            return;
-        }
+        const observerCallback = (entries) => {
+            if (isProgrammaticScrollRef.current) return;
 
-        setActiveSection(firstSectionId);
-        scrollToContentTop("auto");
-    }, [currentChapterId, firstSectionId, scrollToContentTop]);
+            const intersecting = entries
+                .filter(e => e.isIntersecting)
+                .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                if (isProgrammaticScrollRef.current) return;
-
-                const visibleEntry = entries
-                    .filter((entry) => entry.isIntersecting)
-                    .sort((a, b) => {
-                        const ratioDiff = b.intersectionRatio - a.intersectionRatio;
-                        if (Math.abs(ratioDiff) > 0.001) {
-                            return ratioDiff;
-                        }
-
-                        const distanceA = Math.abs(a.boundingClientRect.top - HEADER_OFFSET);
-                        const distanceB = Math.abs(b.boundingClientRect.top - HEADER_OFFSET);
-                        if (distanceA !== distanceB) {
-                            return distanceA - distanceB;
-                        }
-
-                        const indexA = Number(a.target.dataset.sectionIndex ?? 0);
-                        const indexB = Number(b.target.dataset.sectionIndex ?? 0);
-                        return indexA - indexB;
-                    })[0];
-
-                if (visibleEntry) {
-                    const { sectionId } = visibleEntry.target.dataset;
-                    if (sectionId && sectionId !== activeSection) {
-                        setActiveSection(sectionId);
-                    }
-                }
-            },
-            {
-                rootMargin: `-${HEADER_OFFSET}px 0px -50% 0px`,
-                threshold: [0.15, 0.35, 0.55],
+            if (intersecting.length > 0) {
+                const sectionId = intersecting[0].target.id;
+                if (sectionId) setActiveSection(sectionId);
             }
-        );
+        };
 
-        observerRef.current = observer;
-
-        currentSectionIds.forEach((id) => {
-            const node = sectionRefs.current.get(id);
-            if (node) {
-                observer.observe(node);
-            }
+        const observer = new IntersectionObserver(observerCallback, {
+            rootMargin: `-${HEADER_OFFSET}px 0px -60% 0px`,
+            threshold: [0, 0.2, 0.4]
         });
 
-        return () => {
-            observer.disconnect();
-            observerRef.current = null;
-        };
-    }, [activeSection, currentSectionIds]);
+        currentSections.forEach(section => {
+            const node = sectionRefs.current.get(section.id);
+            if (node) observer.observe(node);
+        });
 
-    useEffect(() => () => {
-        if (programmaticResetRef.current) {
-            window.clearTimeout(programmaticResetRef.current);
-        }
-    }, []);
+        return () => observer.disconnect();
+    }, [currentSections]);
 
     return (
-        <div className="flex w-full flex-col">
-            <div className="relative w-full px-3 pt-8 lg:px-6">
-                <motion.div
-                    initial={{ opacity: 0, y: 18 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={transition}
-                    className="relative mx-auto w-full max-w-[1400px] overflow-visible rounded-[24px] border border-cyan-400/25 bg-[radial-gradient(circle_at_top,_rgba(15,118,255,0.3),_rgba(2,6,23,0.95))] px-6 py-8 text-white shadow-[0_0_120px_rgba(14,165,233,0.32)] backdrop-blur-2xl"
-                >
-                    <div
-                        aria-hidden
-                        className="pointer-events-none absolute inset-[1.5px] rounded-[30px] border border-white/10"
-                    />
-                    <h1 className="mt-3 bg-gradient-to-r from-cyan-100 via-sky-100 to-emerald-100 bg-clip-text text-3xl font-semibold text-transparent sm:text-4xl">
-                        {heroTitle}
-                    </h1>
-                    <p className="mt-2 text-sm text-cyan-100/70">{heroSubtitle}</p>
-                    <p className="mt-3 max-w-4xl text-sm text-slate-200/85">
-                        {heroDescription}
-                    </p>
-                </motion.div>
-            </div>
+        <div className="relative min-h-screen w-full text-slate-200 selection:bg-cyan-500/30 selection:text-cyan-50">
+            <BackgroundAmbience />
 
-            <div className="relative mx-auto w-full max-w-[1400px] px-3 pb-16 pt-6 lg:px-6">
-                <div className="flex items-center justify-between gap-3 md:col-span-2 lg:col-span-3 lg:hidden">
-                    <button
-                        type="button"
-                        onClick={() => setNavOpen(true)}
-                        className="flex flex-1 items-center justify-center rounded-full border border-cyan-400/30 bg-[#071330]/80 px-4 py-2 text-sm font-medium text-cyan-100 shadow-[0_0_28px_rgba(56,189,248,0.35)] transition hover:border-cyan-300/50 hover:bg-cyan-500/20"
+            <div className="relative z-10 w-full flex flex-col items-center">
+                {/* HERO SECTION */}
+                <div className="w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        className="relative w-full overflow-hidden rounded-2xl border border-cyan-500/10 bg-[#030712]/60 shadow-[0_0_40px_-10px_rgba(6,182,212,0.15)] backdrop-blur-2xl"
                     >
+                        {/* Grid & Overlay */}
+                        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
+                        <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/3 w-64 h-64 bg-cyan-500/20 blur-[80px] rounded-full pointer-events-none" />
+
+                        <div className="relative p-8 md:p-12 lg:p-16 text-center">
+                            <div className="flex justify-center mb-6">
+                                <div className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-cyan-200">
+                                    <ShieldCheck className="w-4 h-4" />
+                                    <span>{heroSubtitle}</span>
+                                </div>
+                            </div>
+                            <h1 className="mb-6 text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+                                <span className="bg-gradient-to-r from-white via-cyan-100 to-blue-200 bg-clip-text text-transparent">
+                                    {heroTitle}
+                                </span>
+                            </h1>
+                            <p className="mx-auto max-w-2xl text-lg text-slate-300/80 font-light leading-relaxed">
+                                {heroDescription}
+                            </p>
+                        </div>
+                    </motion.div>
+                </div>
+
+                {/* MOBILE CONTROLS */}
+                <div className="lg:hidden w-full px-4 mb-8 flex gap-3 sticky top-4 z-40">
+                    <button
+                        onClick={() => setNavOpen(true)}
+                        className="flex-1 flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-[#030712]/80 backdrop-blur-md py-3 text-sm font-semibold shadow-lg active:scale-95 transition-all"
+                    >
+                        <Menu size={18} />
                         {labels.sections ?? "Sections"}
                     </button>
                     <button
-                        type="button"
                         onClick={() => setTocOpen(true)}
-                        className="flex flex-1 items-center justify-center rounded-full border border-cyan-400/30 bg-[#071330]/80 px-4 py-2 text-sm font-medium text-cyan-100 shadow-[0_0_28px_rgba(56,189,248,0.35)] transition hover:border-cyan-300/50 hover:bg-cyan-500/20"
+                        className="flex-1 flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-[#030712]/80 backdrop-blur-md py-3 text-sm font-semibold shadow-lg active:scale-95 transition-all"
                     >
+                        <Hash size={18} />
                         {labels.topics ?? "Topics"}
                     </button>
                 </div>
 
-                <div className="grid grid-cols-1 items-start gap-4 md:grid-cols-[minmax(0,1fr)_minmax(200px,240px)] lg:grid-cols-[220px_minmax(0,1fr)_minmax(0,220px)] lg:gap-6">
-                    <aside className="sticky top-24 hidden self-start lg:col-start-1 lg:block lg:w-[220px]">
-                        <div className="group relative flex flex-col overflow-visible rounded-3xl border border-cyan-300/15 bg-[#050b1d]/85 p-3 shadow-[0_18px_55px_rgba(20,80,160,0.18)] backdrop-blur-xl">
-                            <div
-                                aria-hidden
-                                className="pointer-events-none absolute inset-0 rounded-3xl border border-white/8"
-                            />
-                            <div className="px-2 text-xs uppercase tracking-[0.24em] text-cyan-100/70">
-                                {labels.sections ?? "Sections"}
-                            </div>
-                            <nav className="mt-4 space-y-2 pr-2 text-sm">
-                                {chapters.map((chapter) => {
-                                    const isActive = chapter.id === activeChapter;
-                                    return (
-                                        <button
-                                            key={chapter.id}
-                                            type="button"
-                                            onClick={() => handleChapterSelect(chapter.id)}
-                                            className={cn(
-                                                "w-full rounded-2xl border px-4 py-3 text-left transition",
-                                                isActive
-                                                    ? "border-cyan-300/60 bg-gradient-to-b from-cyan-400/35 via-cyan-500/12 to-transparent text-cyan-50 shadow-[0_22px_32px_-18px_rgba(56,189,248,0.65)] ring-1 ring-cyan-200/30"
-                                                    : "border-transparent text-slate-200/80 hover:border-cyan-400/30 hover:bg-cyan-500/10 hover:text-cyan-100"
-                                            )}
-                                        >
-                                            <div className="text-sm font-semibold leading-tight">
-                                                {chapter.label ?? chapter.title}
-                                            </div>
-                                            {chapter.description ? (
-                                                <div className="mt-1 text-xs text-slate-300/75">
+                {/* MAIN CONTENT LAYOUT */}
+                <div className="w-full max-w-[1440px] px-4 sm:px-6 lg:px-8 pb-32">
+                    <div className="grid grid-cols-1 md:grid-cols-[minmax(0,1fr)_minmax(200px,240px)] lg:grid-cols-[220px_minmax(0,1fr)_minmax(0,220px)] gap-8 lg:gap-12 relative">
+
+                        {/* LEFT SIDEBAR (Chapters) */}
+                        <aside className="hidden lg:block">
+                            <div className="sticky top-24 max-h-[calc(100vh-140px)] w-[220px] overflow-y-auto pr-2 custom-scrollbar">
+                                <div className="flex items-center gap-2 mb-6 px-2 text-slate-500">
+                                    <Menu size={14} />
+                                    <span className="text-xs font-bold uppercase tracking-widest">
+                                        {labels.sections ?? "MENU"}
+                                    </span>
+                                </div>
+                                <div className="space-y-2">
+                                    {chapters.map((chapter) => {
+                                        const isActive = activeChapter === chapter.id;
+                                        return (
+                                            <button
+                                                key={chapter.id}
+                                                onClick={() => handleChapterSelect(chapter.id)}
+                                                className={cn(
+                                                    "relative w-full rounded-xl p-4 text-left transition-all duration-300 group overflow-hidden",
+                                                    isActive
+                                                        ? "border border-cyan-500/30 bg-gradient-to-r from-cyan-950/40 to-[#020617] shadow-[0_0_20px_rgba(34,211,238,0.1)]"
+                                                        : "border border-transparent bg-white/[0.02] hover:bg-white/[0.05] hover:border-white/10"
+                                                )}
+                                            >
+                                                {isActive && (
+                                                    <div className="absolute left-0 top-1/2 -translate-y-1/2 h-1/2 w-1 rounded-r-full bg-cyan-500 shadow-[0_0_10px_rgba(34,211,238,0.5)]" />
+                                                )}
+                                                <div className={cn(
+                                                    "text-sm font-semibold transition-colors mb-1",
+                                                    isActive ? "text-cyan-100" : "text-slate-400 group-hover:text-slate-200"
+                                                )}>
+                                                    {chapter.title}
+                                                </div>
+                                                <div className="text-[11px] leading-relaxed text-slate-500 line-clamp-2">
                                                     {chapter.description}
                                                 </div>
-                                            ) : null}
-                                        </button>
-                                    );
-                                })}
-                            </nav>
-                        </div>
-                    </aside>
+                                            </button>
+                                        );
+                                    })}
+                                </div>
+                            </div>
+                        </aside>
 
-                    <main
-                        ref={contentContainerRef}
-                        className="relative min-w-0 md:col-start-1 lg:col-start-2"
-                    >
-                        <div
-                            aria-hidden
-                            className="pointer-events-none absolute inset-0 -translate-y-1/3 rounded-[40px] bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.18),_transparent_70%)] opacity-70 blur-3xl"
-                        />
-                        <div
-                            className="relative rounded-[32px] border border-white/8 bg-[#040914]/88 p-6 shadow-[0_35px_110px_rgba(4,9,28,0.35)] backdrop-blur-2xl md:p-7"
-                        >
-                            <div
-                                aria-hidden
-                                className="pointer-events-none absolute inset-0 rounded-[32px] bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.18),_transparent_62%),radial-gradient(circle_at_bottom,_rgba(168,85,247,0.1),_transparent_60%)] opacity-75"
-                            />
-                            <div
-                                aria-hidden
-                                className="pointer-events-none absolute inset-0 rounded-[32px] bg-[linear-gradient(rgba(255,255,255,0.05)_1px,_transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,_transparent_1px)] bg-[size:140px_140px] opacity-20"
-                            />
-                            <div className="mx-auto flex w-full max-w-4xl flex-col gap-8">
-                                <motion.div
-                                    initial={{ opacity: 0, y: 12 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    transition={transition}
-                                    className="space-y-2.5"
-                                >
-                                    <h2 className="bg-gradient-to-r from-cyan-100 via-sky-100 to-emerald-100 bg-clip-text text-2xl font-semibold text-transparent">
-                                        {currentChapter?.title}
-                                    </h2>
-                                    {currentChapter?.description ? (
-                                        <p className="text-base leading-relaxed text-slate-200/80">
-                                            {currentChapter.description}
-                                        </p>
-                                    ) : null}
-                                </motion.div>
+                        {/* CENTER CONTENT */}
+                        <main className="min-w-0">
+                            {/* Chapter Header */}
+                            <div className="mb-10">
+                                <h2 className="text-3xl font-bold text-white mb-3 tracking-tight">
+                                    {currentChapter?.title}
+                                </h2>
+                                {currentChapter?.description && (
+                                    <p className="text-slate-400 font-light leading-relaxed">
+                                        {currentChapter.description}
+                                    </p>
+                                )}
+                                <div className="h-px w-full bg-gradient-to-r from-white/10 via-white/20 to-transparent mt-8" />
+                            </div>
 
-                                {currentSections.map((section, sectionIndex) => {
-                                    const sectionKey = `${currentChapter?.id ?? activeChapter}-${section.id}`;
-                                    const sectionNumber = String(sectionIndex + 1).padStart(2, "0");
-                                    const horizontalAccent =
-                                        sectionIndex % 2 === 0
-                                            ? "from-cyan-200/60 via-sky-200/30 to-transparent"
-                                            : "from-fuchsia-200/60 via-violet-200/30 to-transparent";
+                            {/* Sections */}
+                            <div className="space-y-16 relative">
+                                {/* Connector Line (XL only) */}
+                                <div className="absolute left-[19px] top-6 bottom-6 w-px bg-gradient-to-b from-white/10 via-white/5 to-transparent hidden xl:block" />
+
+                                {currentSections.map((section) => {
+                                    const themeKey = getTheme(section.title);
+                                    const theme = themeStyles[themeKey];
+                                    const Icon = theme.icon;
 
                                     return (
-                                        <motion.article
-                                            key={sectionKey}
-                                            data-section-id={section.id}
-                                            data-section-index={sectionIndex}
-                                            ref={(node) => {
-                                                if (node) {
-                                                    sectionRefs.current.set(section.id, node);
-                                                } else {
-                                                    sectionRefs.current.delete(section.id);
-                                                }
-                                            }}
+                                        <motion.section
+                                            key={section.id}
                                             id={section.id}
-                                            className="scroll-mt-24"
-                                            style={
-                                                sectionIndex === 0
-                                                    ? { scrollMarginTop: `${FIRST_SECTION_SCROLL_MARGIN}px` }
-                                                    : undefined
-                                            }
-                                            initial={{ opacity: 0, y: 18 }}
-                                            whileInView={{ opacity: 1, y: 0 }}
-                                            viewport={{ once: true, amount: 0.3 }}
+                                            ref={(el) => {
+                                                if (el) sectionRefs.current.set(section.id, el);
+                                                else sectionRefs.current.delete(section.id);
+                                            }}
+                                            initial={{ opacity: 0, x: -10 }}
+                                            whileInView={{ opacity: 1, x: 0 }}
+                                            viewport={{ once: true, margin: "-100px" }}
                                             transition={transition}
+                                            className="relative scroll-mt-32 group"
                                         >
-                                            <div className="relative pl-6 md:pl-10">
-                                                <div className="absolute left-1.5 top-6 bottom-6 hidden md:block w-[2px] rounded-full bg-gradient-to-b from-cyan-400/45 via-transparent to-emerald-400/45" />
-                                                <div className="absolute left-1 top-6 hidden md:block h-2 w-2 rounded-full bg-cyan-300/80 shadow-[0_0_18px_rgba(34,211,238,0.8)]" />
-                                                <div className="relative rounded-[28px] border border-white/10 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.14),_transparent_65%),linear-gradient(135deg,rgba(6,14,29,0.88),rgba(4,10,24,0.9))] px-5 py-5 shadow-[0_32px_85px_rgba(6,16,36,0.45)] backdrop-blur-xl md:px-6 md:py-5">
-                                                    <div
-                                                        aria-hidden
-                                                        className="pointer-events-none absolute inset-px rounded-[26px] border border-white/6"
-                                                    />
-                                                    <div className="relative flex flex-col gap-3">
-                                                        <div className="flex flex-col gap-3">
-                                                            <div className="flex flex-wrap items-center gap-3">
-                                                                <span className="inline-flex items-center rounded-full border border-cyan-200/35 bg-cyan-500/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.32em] text-cyan-100/70">
-                                                                    {sectionNumber}
-                                                                </span>
-                                                                <span
-                                                                    className={cn(
-                                                                        "hidden h-px flex-1 rounded-full bg-gradient-to-r md:block",
-                                                                        horizontalAccent
-                                                                    )}
-                                                                    aria-hidden
-                                                                />
-                                                            </div>
-                                                            <h3 className="text-xl font-semibold leading-tight text-white md:text-2xl">
-                                                                {section.title}
-                                                            </h3>
-                                                            {section.description ? (
-                                                                <p className="text-base text-slate-200/75">
-                                                                    {section.description}
-                                                                </p>
-                                                            ) : null}
-                                                        </div>
-                                                        <div className="space-y-2.5 text-base text-slate-100/85">
-                                                            {section.body.map((block, blockIndex) =>
-                                                                renderBodyBlock(block, blockIndex)
-                                                            )}
-                                                        </div>
+                                            <div className="flex gap-6">
+                                                {/* Icon Box */}
+                                                <div className={cn(
+                                                    "flex-none w-9 h-9 rounded-lg border flex items-center justify-center backdrop-blur-xl shadow-lg z-10 transition-transform group-hover:scale-110 duration-500",
+                                                    theme.bg, theme.border, theme.glow
+                                                )}>
+                                                    <Icon className={cn("w-5 h-5", theme.text)} />
+                                                </div>
+
+                                                {/* Content */}
+                                                <div className="flex-1 min-w-0 pt-1">
+                                                    <h3 className={cn("text-xl font-bold mb-4 flex items-center gap-3", theme.text)}>
+                                                        {section.title}
+                                                        {/* Optional decorative line */}
+                                                        <div className={cn("h-px flex-1 bg-gradient-to-r from-white/10 to-transparent max-w-[100px] ml-4 opacity-50")} />
+                                                    </h3>
+
+                                                    {section.description && (
+                                                        <p className="text-slate-400 mb-6 font-light">
+                                                            {section.description}
+                                                        </p>
+                                                    )}
+
+                                                    <div className="space-y-4">
+                                                        {section.body.map((block, idx) => renderBodyBlock(block, idx))}
                                                     </div>
                                                 </div>
                                             </div>
-                                        </motion.article>
+                                        </motion.section>
                                     );
                                 })}
                             </div>
-                        </div>
-                    </main>
+                        </main>
 
-                    <aside className="sticky top-24 hidden self-start md:col-start-2 md:block lg:col-start-3 lg:w-[220px]">
-                        <div className="group relative flex flex-col rounded-3xl border border-cyan-300/15 bg-[#050b1f]/85 p-3 shadow-[0_18px_55px_rgba(20,80,160,0.18)] backdrop-blur-xl">
-                            <div
-                                aria-hidden
-                                className="pointer-events-none absolute inset-0 rounded-3xl border border-white/8"
-                            />
-                            <div className="px-2 text-xs uppercase tracking_[0.24em] text-cyan-100/70">
-                                {labels.tableOfContents ?? "Table of contents"}
+                        {/* RIGHT SIDEBAR (TOC) */}
+                        <aside className="hidden md:block">
+                            <div className="sticky top-24 max-h-[calc(100vh-140px)] w-[200px] lg:w-[220px] overflow-y-auto pl-4 custom-scrollbar overflow-x-hidden">
+                                <div className="flex items-center gap-2 mb-6 text-slate-500">
+                                    <Hash size={14} />
+                                    <span className="text-xs font-bold uppercase tracking-widest">
+                                        {labels.topics ?? "CONTENTS"}
+                                    </span>
+                                </div>
+
+                                <div className="flex flex-col border-l border-white/5 relative">
+                                    {/* Active highlight runner could go here, but using simpler styling as requested */}
+                                    {currentSections.map((section) => {
+                                        const isActive = activeSection === section.id;
+                                        const theme = themeStyles[getTheme(section.title)];
+
+                                        return (
+                                            <button
+                                                key={section.id}
+                                                onClick={() => scrollToSection(section.id)}
+                                                className={cn(
+                                                    "text-left py-2 pl-4 text-sm transition-all duration-300 -ml-px border-l-2",
+                                                    isActive
+                                                        ? cn("border-l-current font-semibold translate-x-1", theme.text)
+                                                        : "border-transparent text-slate-500 hover:text-slate-300 hover:border-white/20"
+                                                )}
+                                            >
+                                                {section.title}
+                                            </button>
+                                        );
+                                    })}
+                                </div>
                             </div>
-                            <nav className="mt-4 space-y-1 pr-1">
-                                {currentSections.map((section) => {
-                                    const isActive = activeSection === section.id;
-                                    return (
-                                        <button
-                                            key={`${currentChapter?.id ?? activeChapter}-${section.id}`}
-                                            type="button"
-                                            onClick={() => scrollToSection(section.id)}
-                                            className={cn(
-                                                "w-full rounded-2xl border px-4 py-2 text-left text-sm font-medium leading-tight transition",
-                                                isActive
-                                                    ? "border-cyan-300/60 bg-gradient-to-b from-cyan-400/35 via-cyan-500/12 to-transparent text-cyan-50 shadow-[0_22px_32px_-18px_rgba(56,189,248,0.6)]"
-                                                    : "border-transparent text-slate-200/80 hover-border-cyan-400/30 hover:bg-cyan-500/10 hover:text-cyan-100"
-                                            )}
-                                        >
-                                            {section.title}
-                                        </button>
-                                    );
-                                })}
-                            </nav>
-                        </div>
-                    </aside>
+                        </aside>
+                    </div>
                 </div>
 
+                {/* MOBILE DRAWERS */}
                 <MobileDrawer
                     title={labels.sections ?? "Sections"}
-                    closeLabel={labels.close ?? "Close"}
                     isOpen={navOpen}
                     onClose={() => setNavOpen(false)}
                 >
-                    <nav className="space-y-3">
-                        {chapters.map((chapter) => (
+                    <div className="space-y-2">
+                        {chapters.map(c => (
                             <button
-                                key={chapter.id}
-                                type="button"
-                                onClick={() => {
-                                    handleChapterSelect(chapter.id);
-                                    setNavOpen(false);
-                                }}
+                                key={c.id}
+                                onClick={() => { handleChapterSelect(c.id); setNavOpen(false); }}
                                 className={cn(
-                                    "w-full rounded-3xl border px-4 py-4 text-left transition",
-                                    activeChapter === chapter.id
-                                        ? "border-cyan-300/60 bg-gradient-to-b from-cyan-400/35 via-cyan-500/12 to-transparent text-cyan-50 shadow-[0_18px_28px_-20px_rgba(56,189,248,0.55)]"
-                                        : "border-transparent bg-cyan-500/5 text-slate-200/85 hover:border-cyan-400/30 hover:bg-cyan-500/10 hover:text-cyan-100"
+                                    "w-full p-4 rounded-xl text-left border transition-all",
+                                    activeChapter === c.id
+                                        ? "bg-cyan-500/10 border-cyan-500/30 text-cyan-200"
+                                        : "bg-white/5 border-transparent text-slate-400 hover:bg-white/10"
                                 )}
                             >
-                                <div className="text-base font-semibold">{chapter.label ?? chapter.title}</div>
-                                {chapter.description ? (
-                                    <div className="mt-1 text-sm text-slate-300/80">{chapter.description}</div>
-                                ) : null}
+                                <div className="font-semibold">{c.title}</div>
+                                <div className="text-xs opacity-70 mt-1 line-clamp-1">{c.description}</div>
                             </button>
                         ))}
-                    </nav>
+                    </div>
                 </MobileDrawer>
 
                 <MobileDrawer
                     title={labels.topics ?? "Topics"}
-                    closeLabel={labels.close ?? "Close"}
                     isOpen={tocOpen}
                     onClose={() => setTocOpen(false)}
                 >
-                    <div className="space-y-4">
-                        {currentChapter ? (
-                            <div className="text-xs uppercase tracking-[0.24em] text-cyan-100/70">{currentChapter.title}</div>
-                        ) : null}
-                        <nav className="space-y-2">
-                            {currentSections.map((section) => {
-                                const isActive = activeSection === section.id;
-                                return (
-                                    <button
-                                        key={`${currentChapter?.id ?? activeChapter}-${section.id}`}
-                                        type="button"
-                                        onClick={() => {
-                                            scrollToSection(section.id);
-                                            setTocOpen(false);
-                                        }}
-                                        className={cn(
-                                            "w-full rounded-3xl border px-4 py-3 text-left text-base font-semibold transition",
-                                            isActive
-                                                ? "border-cyan-300/60 bg-gradient-to-b from-cyan-400/35 via-cyan-500/12 to-transparent text-cyan-50 shadow-[0_18px_28px_-20px_rgba(56,189,248,0.55)]"
-                                                : "border-transparent bg-cyan-500/5 text-slate-200/85 hover:border-cyan-400/30 hover:bg-cyan-500/10 hover:text-cyan-100"
-                                        )}
-                                    >
-                                        {section.title}
-                                    </button>
-                                );
-                            })}
-                        </nav>
+                    <div className="space-y-1">
+                        {currentSections.map(s => (
+                            <button
+                                key={s.id}
+                                onClick={() => { scrollToSection(s.id); setTocOpen(false); }}
+                                className={cn(
+                                    "w-full py-3 px-4 rounded-lg text-left text-sm transition-all flex items-center gap-2",
+                                    activeSection === s.id
+                                        ? "bg-cyan-500/10 text-cyan-200 font-medium"
+                                        : "text-slate-400 hover:bg-white/5 hover:text-slate-200"
+                                )}
+                            >
+                                <div className={cn(
+                                    "w-1.5 h-1.5 rounded-full",
+                                    activeSection === s.id ? "bg-cyan-400" : "bg-slate-600"
+                                )} />
+                                {s.title}
+                            </button>
+                        ))}
                     </div>
                 </MobileDrawer>
+
             </div>
         </div>
     );

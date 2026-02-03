@@ -55,8 +55,7 @@ export default function EmailSecurityDoc() {
                     <div className="space-y-10 text-sm md:text-base">
                         <Section title="Содержание">
                             <List ordered>
-                                <li>Начало работы</li>
-                                <li>Пошаговые инструкции</li>
+                                <li>Начало работы и пошаговые инструкции</li>
                                 <li>Работа с почтой</li>
                                 <li>Администрирование домена</li>
                                 <li>Концепции</li>
@@ -67,7 +66,7 @@ export default function EmailSecurityDoc() {
 
                         <Separator className="bg-white/5" />
 
-                        <Section title="Начало работы">
+                        <Section title="Начало работы и пошаговые инструкции">
                             <Subsection title="Для администратора">
                                 <Paragraph>Чтобы начать работу с системой:</Paragraph>
                                 <List ordered>
@@ -89,11 +88,7 @@ export default function EmailSecurityDoc() {
                                 </List>
                                 <Paragraph>Входящие письма автоматически проверяются на угрозы и распределяются по папкам.</Paragraph>
                             </Subsection>
-                        </Section>
 
-                        <Separator className="bg-white/5" />
-
-                        <Section title="Пошаговые инструкции">
                             <Subsection title="Работа с доменами">
                                 <div className="space-y-6">
                                     <div className="space-y-3">

@@ -100,6 +100,7 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange, onSithubGet, hide
   const systemsItems = [
     { key: "ai-soc", label: t("header.nav.systemsAiSoc", "AI-SOC"), href: "/ai-soc" },
     { key: "sithub", label: t("header.nav.systemsSithub", "Sithub"), href: "/sithub" },
+    { key: "supreme", label: t("header.nav.systemsSupreme", "Supreme"), href: "/supreme" },
   ];
 
   const instructionsItems = [
@@ -358,7 +359,7 @@ const Header = ({ onOpenModal, policyLang, onPolicyLangChange, onSithubGet, hide
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: 6 }}
                             transition={{ duration: 0.15, ease: "easeOut" }}
-                            className="absolute left-0 mt-2 w-64 overflow-hidden rounded-xl border border-white/10 bg-black/85 p-2 shadow-2xl backdrop-blur-xl"
+                            className="absolute left-0 mt-2 w-max min-w-[8rem] overflow-hidden rounded-xl border border-white/10 bg-black/85 p-2 shadow-2xl backdrop-blur-xl"
                           >
                             {item.children.map((child) => {
                               if (child.href) {

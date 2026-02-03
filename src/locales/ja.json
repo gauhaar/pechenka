@@ -120,18 +120,18 @@
     "termsAff": {
       "label": "Affiliate Program",
       "title": "Affiliate Terms of Service",
-        "gitServer": {
-          "title": "Gitリポジトリサーバー",
-          "tag": "セルフホストのバージョン管理"
-        },
-        "analyzer": {
-          "title": "セキュリティアナライザー",
-          "tag": "ローカルコードスキャンエンジン"
-        },
-        "vulnDb": {
-          "title": "脆弱性データベース",
-          "tag": "ダウンロード済みセキュリティパッチ"
-        },
+      "gitServer": {
+        "title": "Gitリポジトリサーバー",
+        "tag": "セルフホストのバージョン管理"
+      },
+      "analyzer": {
+        "title": "セキュリティアナライザー",
+        "tag": "ローカルコードスキャンエンジン"
+      },
+      "vulnDb": {
+        "title": "脆弱性データベース",
+        "tag": "ダウンロード済みセキュリティパッチ"
+      },
       "notice": "This policy is available only in English",
       "intro": "These terms describe how rewards are issued and paid to partners participating in the Silence AI affiliate program.",
       "meta": {
@@ -944,6 +944,959 @@
       "title": "注目記事",
       "subtitle": "Silence AIは政府レベルのインテリジェンスを持つ数少ない民間企業の一つです。",
       "viewAll": "すべての記事を見る"
+    }
+  },
+  "documentation": {
+    "tabs": {
+      "web": "Web セキュリティ",
+      "email": "メールセキュリティ"
+    },
+    "system": {
+      "sections": "セクション",
+      "topics": "トピック",
+      "tableOfContents": "目次",
+      "close": "閉じる"
+    },
+    "webSecurity": {
+      "placeholder": {
+        "badge": "Web セキュリティ",
+        "title": "ドキュメントは近日公開予定です",
+        "description": "Web アプリケーションの設定と保護方法を詳細に説明するガイドを準備中です。まもなく公開されますので、しばらくお待ちください。"
+      }
+    },
+    "emailSecurity": {
+      "title": "メールセキュリティシステム",
+      "subtitle": "ドキュメント | バージョン 1.0",
+      "description": "企業向けメールセキュリティプラットフォームの設定と運用方法。",
+      "chapters": [
+        {
+          "id": "getting-started",
+          "title": "はじめに",
+          "label": "はじめに",
+          "description": "CMC 管理コンソールでの初期オンボーディング手順とドメイン / DNS 設定。",
+          "sections": [
+            {
+              "id": "admin-setup",
+              "title": "管理者向け",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "システムを導入するには次の手順を実行します。"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Google または Microsoft の OAuth を使って admin.silenceai.net の CMC 管理コンソールにサインインします。",
+                    "自社ドメインを登録します。",
+                    "DNS を使ってドメイン所有権を確認します。",
+                    "セキュリティ用 DNS レコード（SPF・DKIM・DMARC）を設定します。",
+                    "従業員用のメールアカウントを作成します。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "設定が完了すると、ユーザーは Web メールクライアントにアクセスして保護されたメールを送信できるようになります。"
+                }
+              ]
+            },
+            {
+              "id": "user-onboarding",
+              "title": "エンドユーザー向け",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "メールを使い始めるには次の手順を実行します。"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "管理者からログイン情報を受け取ります。",
+                    "メールアドレスとパスワード、または OAuth を使って mail.silenceai.net にサインインします。",
+                    "画面の「作成」ボタンから最初のメールを送信します。",
+                    "セキュリティレベルに応じて自動分類されるシステムフォルダを確認します。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "受信メールは自動的に脅威スキャンされ、結果に応じて各フォルダへ振り分けられます。"
+                }
+              ]
+            },
+            {
+              "id": "add-domain",
+              "title": "ドメインを追加する",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "ドメインの管理はすべて CMC 管理コンソールから行います。"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "CMC 管理コンソールを開きます。",
+                    "「Add Domain」をクリックします。",
+                    "www を付けずにドメイン名を入力します（例: company.com）。",
+                    "「Add」をクリックします。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "システムはドメイン所有権を確認するための検証トークンを発行します。"
+                }
+              ]
+            },
+            {
+              "id": "verify-domain",
+              "title": "ドメイン所有権の検証",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "ドメインを追加したら、そのドメインを所有していることを証明する必要があります。"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "CMC に表示される TXT レコードをコピーします。"
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "_cmc-verification.company.com TXT \"cmc-verify-abc123xyz\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "このレコードをドメインの DNS 設定に追加します。",
+                    "自動チェック（5 分ごと）を待つか、「Check Now」をクリックして即時確認します。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "検証には最大 48 時間かかる場合があります。成功すると、ドメインのステータスが Verified（検証済み）になります。"
+                }
+              ]
+            },
+            {
+              "id": "configure-spf",
+              "title": "SPF レコードを設定する",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "SPF は、自社ドメインの差出人としてメール送信を許可するサーバーを定義する DNS レコードです。"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "CMC で「DNS Configuration」→「SPF」を開きます。",
+                    "「Check Current SPF」をクリックして既存レコードを確認します。",
+                    "「Generate SPF Record」をクリックします。",
+                    "提案されたレコードをコピーします。"
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "company.com TXT \"v=spf1 include:_spf.silenceai.net -all\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "このレコードを DNS に追加します。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "既に SPF レコードが存在する場合（例: Gmail 用）、最後の -all の前に当社の include を追加してください。"
+                }
+              ]
+            },
+            {
+              "id": "configure-dkim",
+              "title": "DKIM キーを生成する",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DKIM はメールに暗号署名を追加し、改ざんやなりすましを防ぎます。"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "CMC で「DNS Configuration」→「DKIM」を開きます。",
+                    "「Generate DKIM Keys」をクリックします。",
+                    "システムが鍵ペアを生成します（秘密鍵はサーバーに保持され、公開鍵のみ DNS に公開されます）。",
+                    "表示された DNS レコードをコピーします。"
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "silenceai._domainkey.company.com TXT \"v=DKIM1; k=rsa; p=MIIBIjAN...\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "このレコードを DNS に追加します。",
+                    "「Verify DKIM」を実行して設定を確認します。"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "configure-dmarc",
+              "title": "DMARC ポリシーを設定する",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DMARC は SPF または DKIM の検証に失敗したメールをどのように扱うかを定義する仕組みです。"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "CMC で「DNS Configuration」→「DMARC」を開きます。",
+                    "適用するポリシーを選択します。"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "quarantine — スパムフォルダへ移動（推奨）",
+                    "reject — メールを拒否"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "「Generate DMARC Record」をクリックします。",
+                    "表示されたレコードをコピーします。"
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "_dmarc.company.com TXT \"v=DMARC1; p=quarantine; rua=mailto:dmarc-reports@silenceai.net\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "このレコードを DNS に追加します。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "まずは quarantine ポリシーから開始し、1〜2 週間レポートを監視して問題がなければ reject への切り替えを検討してください。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "user-management",
+          "title": "ユーザー管理",
+          "label": "ユーザー管理",
+          "description": "メールアカウントの作成と維持管理。",
+          "sections": [
+            {
+              "id": "create-account",
+              "title": "メールアカウントを作成する",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "CMC で「Email Accounts」セクションを開きます。",
+                    "「Create Account」をクリックします。",
+                    "各項目を入力します。"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Email: john.doe@company.com",
+                    "氏名（名・姓）",
+                    "パスワード（8 文字以上で英大文字・英小文字・数字・記号を含める）",
+                    "ストレージクォータ: メールボックス容量を選択"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "「Create」をクリックします。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "ユーザーはすぐに Web メールへサインインして利用を開始できます。"
+                }
+              ]
+            },
+            {
+              "id": "suspend-activate",
+              "title": "アカウントの一時停止と再有効化",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "「Email Accounts」の一覧から対象ユーザーを探します。",
+                    "Actions メニューから以下のいずれかを選択します。"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Suspend — アクセスを一時停止（ユーザーはサインインできなくなります）",
+                    "Activate — アクセスを再有効化"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "操作を確認して適用します。"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "change-quota",
+              "title": "ストレージクォータを変更する",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "ユーザー一覧から対象ユーザーを見つけます。",
+                    "Actions メニューで「Edit Quota」を選択します。",
+                    "新しいストレージ容量を選択します。",
+                    "変更を保存します。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "変更は即時に反映されます。"
+                }
+              ]
+            },
+            {
+              "id": "delete-account",
+              "title": "アカウントを削除する",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "ユーザー一覧から対象ユーザーを見つけます。",
+                    "Actions メニューで「Delete」を選択します。",
+                    "削除を確認します。"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "intent": "warning",
+                  "content": "警告: この操作を行うと、そのユーザーのデータはすべて完全に削除されます。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mail-operations",
+          "title": "メール操作",
+          "label": "メール操作",
+          "description": "Web メールクライアントで日常的に行う操作。",
+          "sections": [
+            {
+              "id": "send-letter",
+              "title": "メールを送信する",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Web メール画面で「Compose」をクリックします。",
+                    "次の項目を入力します。"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "To: 受信者アドレス",
+                    "Subject: 件名",
+                    "Body: 本文（リッチテキスト形式も利用可能）"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "必要に応じてファイルを添付します（1 ファイルあたり最大 25 MB）。",
+                    "「Send」をクリックします。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "送信メールには自動的に DKIM 署名が付与され、相手に配信されます。"
+                }
+              ]
+            },
+            {
+              "id": "custom-folder",
+              "title": "ルール付きのカスタムフォルダを作成する",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "カスタムフォルダを使うと、自分で定義したルールに基づいてメールを自動仕分けできます。"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "サイドバーで「Create Folder」をクリックします。",
+                    "フォルダ名を入力します（例: Clients）。",
+                    "「Add Rules」をクリックします。",
+                    "ルール内容を設定します。"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Filter by: 送信元ドメイン",
+                    "Match mode: Contains",
+                    "Value: client.com"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "既存メールにも適用したい場合は「Apply to existing emails」を有効にします。",
+                    "「Create」をクリックします。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "今後 *@client.com から届くメールはすべて自動的に「Clients」フォルダへ振り分けられます。"
+                }
+              ]
+            },
+            {
+              "id": "add-whitelist",
+              "title": "送信者をホワイトリストに追加する",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "本来は正当なメールなのに誤ってスパム判定された場合は次の手順で送信者をホワイトリストに追加します。"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "SPAM フォルダ内の該当メールを開きます。",
+                    "「Not Spam」→「Add to Whitelist」をクリックします。",
+                    "次のいずれかを選択します。"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "送信者メールアドレスをホワイトリストに追加",
+                    "送信者ドメインをホワイトリストに追加"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "操作を確認して適用します。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "今後この送信者から届くメールは SPAM フォルダに振り分けられなくなります。"
+                }
+              ]
+            },
+            {
+              "id": "email-signature",
+              "title": "メール署名を設定する",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "設定画面で「Email Signature」を開きます。",
+                    "「Enable signature」を有効にします。",
+                    "エディタに署名テキストを入力します。",
+                    "「Save」をクリックします。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "設定した署名は送信するすべてのメールに自動で追加されます。"
+                }
+              ]
+            },
+            {
+              "id": "vacation-responder",
+              "title": "自動返信（不在返信）を設定する",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "設定画面で「Vacation Responder」を開きます。",
+                    "「Enable vacation responder」を有効にします。",
+                    "開始日と終了日を設定します。",
+                    "自動返信メッセージの本文を入力します。",
+                    "「Reply once per sender」をオンにすると、送信者ごとに 1 回だけ返信されます。",
+                    "「Save」をクリックします。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "指定した期間中のみ自動返信が動作し、期間終了後は自動的に停止します。"
+                }
+              ]
+            },
+            {
+              "id": "forwarding",
+              "title": "メール転送を設定する",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "設定画面で「Email Forwarding」を開きます。",
+                    "「Add Forwarding Address」をクリックします。",
+                    "転送先メールアドレスを入力します。",
+                    "受信トレイにもコピーを残したい場合は「Keep copy in inbox」を有効にします。",
+                    "「Save」をクリックします。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "以後、すべての受信メールが指定したアドレスへ転送されます。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "domain-administration",
+          "title": "ドメイン管理",
+          "label": "ドメイン管理",
+          "description": "ドメイン全体の分析と一括メール操作。",
+          "sections": [
+            {
+              "id": "view-activity",
+              "title": "ドメイン内のメールアクティビティを確認する",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "管理者はドメイン内すべてのユーザーのメールメッセージを確認できます。"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "CMC で「Email Activity」を開きます。",
+                    "次のフィルターを利用します。"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "ユーザー別",
+                    "フォルダ別（Secure、Spam、Phishing など）",
+                    "日付別",
+                    "脅威タイプ別"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "検索バーを使って件名や送信者で絞り込みできます。"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bulk-delete",
+              "title": "全ユーザーからメッセージを一括削除する",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "悪意あるメールが全ユーザーに送信されてしまった場合は次の手順で一括削除します。"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "「Email Activity」を開きます。",
+                    "フィルターや検索を使って対象メッセージを特定します。",
+                    "削除したいメッセージを選択します。",
+                    "「Delete Selected」をクリックします。",
+                    "一括削除を確認します。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "選択したメッセージはすべてのユーザーのメールボックスから削除されます。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "concepts",
+          "title": "基本概念",
+          "label": "基本概念",
+          "description": "プラットフォームの主要な概念とセキュリティフロー。",
+          "sections": [
+            {
+              "id": "system-overview",
+              "title": "システム概要",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Email Security System は、企業メールをサイバー脅威から保護するためのプラットフォームです。"
+                },
+                {
+                  "type": "list",
+                  "title": "コンポーネント:",
+                  "items": [
+                    "CMC Admin Panel — ドメイン・ユーザー・DNS 設定を管理する管理者コンソール",
+                    "Webmail Client — 脅威保護が組み込まれた従業員向けメールボックス",
+                    "Infrastructure Services — メッセージ処理を行う SMTP サーバーとセキュリティパイプライン"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "security-stack",
+              "title": "セキュリティパイプライン",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "すべての受信メールは次の 6 段階の保護レイヤーを通過します。"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Layer 0: Phishing Domain Check — 既知のフィッシングドメインデータベースと照合して送信元ドメインを評価",
+                    "Layer 1: Spoof Detection — SPF・DKIM・DMARC の整合性を検証",
+                    "Layer 2: Spam Detection — RSPAMD によるコンテンツ分析でスパム判定",
+                    "Layer 3: Link Scanner — URLScan.io による URL スキャンで悪意のあるリンクを検出",
+                    "Layer 4: Antivirus — Bitdefender による添付ファイルのウイルススキャン",
+                    "Layer 5: AI Phishing Detection — AI によるメッセージ内容の解析でフィッシング兆候を検出"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "いずれかのレイヤーで脅威が検出された場合、その時点で処理が停止し、結果に応じたフォルダへ振り分けられます。"
+                }
+              ]
+            },
+            {
+              "id": "system-folders",
+              "title": "システムフォルダ",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "検査結果に応じてメッセージは次のフォルダに振り分けられます。"
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Unfiltered — まだ処理されていない新着メール（一時フォルダ）",
+                    "Secure — すべてのチェックを通過した安全なメール",
+                    "Possibly Spoofed — 差出人の正当性が疑わしいメール",
+                    "SPAM — スパムと判定されたメール",
+                    "Dangerous Links — 危険な URL を含むメール",
+                    "Malware — 感染した添付ファイルを含むメール",
+                    "Possibly Phishing — フィッシングの兆候が検出されたメール",
+                    "Sent — 送信済みメール"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "1 通のメールが複数のフォルダに表示される場合もあります（例: SPAM と Possibly Spoofed の両方）。"
+                }
+              ]
+            },
+            {
+              "id": "custom-folders",
+              "title": "カスタムフォルダ",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "ユーザーは自動フィルタリングルール付きのカスタムフォルダを自由に作成できます。"
+                },
+                {
+                  "type": "list",
+                  "title": "フィルタリングルール:",
+                  "items": [
+                    "送信元ドメイン",
+                    "送信元メールアドレス",
+                    "件名",
+                    "送信者名"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "title": "マッチ条件:",
+                  "items": [
+                    "Contains（含む）",
+                    "Equals（完全一致）",
+                    "Starts with（前方一致）",
+                    "Ends with（後方一致）"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "ルールは既存メールにも適用でき、後から一括で再分類することも可能です。"
+                }
+              ]
+            },
+            {
+              "id": "spf",
+              "title": "SPF（Sender Policy Framework）",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "SPF は、そのドメインのメール送信を許可するサーバーを定義する DNS レコードです。"
+                },
+                {
+                  "type": "paragraph",
+                  "content": "書式:"
+                },
+                {
+                  "type": "code",
+                  "content": "v=spf1 include:_spf.silenceai.net -all"
+                },
+                {
+                  "type": "list",
+                  "title": "メカニズム:",
+                  "items": [
+                    "include:domain — 指定ドメインに定義されたサーバーを許可",
+                    "ip4:x.x.x.x — 特定の IP アドレスを許可",
+                    "-all — それ以外は拒否",
+                    "~all — それ以外は疑わしいものとしてマーク"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "SPF チェックでは、受信側が送信元 IP がドメインの SPF レコードで許可されているかを検証します。失敗した場合、そのメールは疑わしいものとしてフラグ付けされます。"
+                }
+              ]
+            },
+            {
+              "id": "dkim",
+              "title": "DKIM（DomainKeys Identified Mail）",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DKIM は暗号署名を付与することで、メールがドメイン所有者によって送信され、途中で改ざんされていないことを確認します。"
+                },
+                {
+                  "type": "paragraph",
+                  "content": "仕組み:"
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "送信時にサーバーが秘密鍵でメッセージに署名し、DKIM-Signature ヘッダーを追加します。",
+                    "受信側は DNS から公開鍵を取得し、その署名を検証します。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "DNS レコードの例:"
+                },
+                {
+                  "type": "code",
+                  "content": "selector._domainkey.domain.com TXT \"v=DKIM1; k=rsa; p=public_key\""
+                },
+                {
+                  "type": "paragraph",
+                  "content": "秘密鍵はサーバー上で暗号化された状態で保管され、クライアント側へ共有されることはありません。"
+                }
+              ]
+            },
+            {
+              "id": "dmarc",
+              "title": "DMARC（Domain-based Message Authentication）",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DMARC は、SPF または DKIM の検証に失敗したメールに対してどのような処理を行うかを定義する仕組みです。"
+                },
+                {
+                  "type": "paragraph",
+                  "content": "書式:"
+                },
+                {
+                  "type": "code",
+                  "content": "_dmarc.domain.com TXT \"v=DMARC1; p=quarantine; rua=mailto:reports@domain.com\""
+                },
+                {
+                  "type": "list",
+                  "title": "パラメータ:",
+                  "items": [
+                    "p=quarantine — スパムフォルダへ配信",
+                    "p=reject — メールを拒否",
+                    "p=none — モニタリングのみ（動作は変更しない）",
+                    "rua= — 集計レポート送信先アドレス"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "DMARC チェックでは、SPF または DKIM がドメイン整合性を保った状態で成功しているかを確認します。条件を満たさない場合、設定されたポリシーに従って処理されます。"
+                }
+              ]
+            },
+            {
+              "id": "attachments",
+              "title": "添付ファイルとアンチウイルス",
+              "body": [
+                {
+                  "type": "list",
+                  "title": "制限事項:",
+                  "items": [
+                    "最大ファイルサイズ: 25 MB",
+                    "ファイル形式の種類による制限はなし"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "添付ファイルスキャン: すべての添付ファイルは Bitdefender によってスキャンされます。マルウェアが検出された場合、そのメールは Malware フォルダに移動され、添付ファイルはブロックされます。"
+                },
+                {
+                  "type": "paragraph",
+                  "content": "保存: 添付ファイルはメッセージ単位でサーバーに保存されます。感染が判明したファイルは隔離領域に移動されます。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "access-control",
+          "title": "アクセス制御",
+          "label": "アクセス制御",
+          "description": "ユーザーのロールとアクセス保護。",
+          "sections": [
+            {
+              "id": "user-roles",
+              "title": "ユーザーロール",
+              "body": [
+                {
+                  "type": "list",
+                  "title": "Admin",
+                  "items": [
+                    "CMC 管理コンソールへのフルアクセス",
+                    "ドメインおよび DNS の管理",
+                    "ユーザーの作成と管理",
+                    "ドメイン内すべてのメール閲覧",
+                    "メールの一括操作を実行可能"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "title": "Subordinate",
+                  "items": [
+                    "限定された CMC アクセス権",
+                    "ユーザー一覧の閲覧",
+                    "自分のメールへのみアクセス可能"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "title": "User",
+                  "items": [
+                    "Web メールクライアントへのアクセス",
+                    "自分のメールの送受信・管理",
+                    "個人設定の変更"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "role-assignment",
+              "title": "ロールの割り当て",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "自動管理者付与: OAuth で最初にサインインしたユーザーは自動的に Admin ロールになります。"
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Subordinate ユーザーの作成: Admin は CMC の「User Management」で Subordinate アカウントを追加します。"
+                },
+                {
+                  "type": "paragraph",
+                  "content": "User アカウントの作成: Admin は「Email Accounts」でメールボックスを作成し、そのアカウントに User ロールが付与されます。"
+                }
+              ]
+            },
+            {
+              "id": "authentication",
+              "title": "認証",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "OAuth 2.0: Google または Microsoft のサインイン（PKCE によりセキュリティを強化）",
+                    "メール / パスワード: 管理者が CMC で発行する認証情報",
+                    "JWT トークン: アクセストークンは 7 日間有効で httpOnly Cookie に保存",
+                    "トークンリフレッシュ: アクセストークンはリフレッシュトークン経由で自動更新され、リフレッシュトークンが期限切れになると再サインインが必要"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "access-protection",
+              "title": "アクセス保護",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "レート制限: 同一 IP からのサインイン試行は 15 分間に最大 5 回まで",
+                    "セッション管理: アクティブセッションはデータベースに保存され、各リクエスト時に検証されます",
+                    "監査ログ: 管理者およびユーザーによる重要な操作は監査ログとして記録されます"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "quotas-limits",
+          "title": "クォータと制限",
+          "label": "クォータと制限",
+          "description": "ストレージ・送信数・ユーザー数の制限。",
+          "sections": [
+            {
+              "id": "storage-quota",
+              "title": "ストレージクォータ",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "各ユーザーにはメールボックス容量のクォータが割り当てられます。使用量が 100% に達すると、そのユーザーはメールの送受信ができなくなります。"
+                }
+              ]
+            },
+            {
+              "id": "sending-limits",
+              "title": "送信制限",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Business Basic: 1 ユーザーあたり 1 日 500 通",
+                    "Business Standard: 1 日 1000 通",
+                    "Business Premium: 1 日 2000 通",
+                    "Enterprise: 1 日 10000 通"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "user-limit",
+              "title": "ユーザー数の上限",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Business プラン: 最大 300 ユーザー",
+                    "Enterprise プラン: ユーザー数無制限"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   }
 }

@@ -1759,5 +1759,57 @@
         }
       ]
     }
+  },
+  "pricingMicrosoft": {
+    "business": "Бизнес",
+    "enterprise": "Энтерпрайз",
+    "withoutTeams": "Планы без Teams",
+    "withTeams": "С Teams",
+    "yearly": "Годовая оплата",
+    "monthly": "Ежемесячная оплата",
+    "planHighlights": "Ключевые возможности",
+    "userMonth": "польз./мес.",
+    "paidYearly": "оплата за год",
+    "paidMonthly": "оплата помесячно",
+    "plans": {
+      "businessPremium": {
+        "title": "Microsoft 365 Business Premium (no Teams)"
+      },
+      "businessStandard": {
+        "title": "Microsoft 365 Business Standard (no Teams)"
+      },
+      "businessBasic": {
+        "title": "Microsoft 365 Business Basic (no Teams)"
+      },
+      "enterpriseE3": {
+        "title": "Microsoft 365 E3"
+      },
+      "enterpriseE5": {
+        "title": "Microsoft 365 E5"
+      }
+    },
+    "features": {
+      "secureAccess300": "Безопасный доступ до 300 пользователей",
+      "customDomainEmail": "Корпоративная почта на вашем домене (you@yourcompany.com)",
+      "adminConsole": "Админ-консоль для управления доменом, почтой и массовыми операциями",
+      "aiThreatDetection": "AI-детект угроз с автоматической категоризацией писем",
+      "securityPipeline": "Многоуровневая защита (SPF, DKIM, DMARC, спам, malware, phishing)",
+      "securityFolders": "Сортировка по папкам безопасности (Secure, Spam, Dangerous Links, Malware, Phishing, Spoofed)",
+      "linkScannerAv": "Сканер ссылок и антивирусная проверка вложений",
+      "emailFlowVisualization": "Визуализация почтового потока по домену/организации с фильтрами",
+      "bulkManageDelete": "Управление и удаление писем для всех пользователей домена",
+      "customFoldersRules": "Пользовательские папки с авто-правилами (отправитель, домен, тема)",
+      "storage10gb": "10 ГБ защищённого хранилища на пользователя",
+      "storage5tb": "5 ТБ защищённого хранилища на пользователя",
+      "storage10tb": "10 ТБ защищённого хранилища на пользователя",
+      "multiAccountSupport": "Поддержка нескольких аккаунтов (интеграции Gmail/Outlook)",
+      "support247": "Поддержка 24/7 по почте и веб-каналам",
+      "fullTextSearch": "Полнотекстовый поиск по почте",
+      "aiAssistedCategorization": "AI-помощник по сортировке писем в папки безопасности",
+      "basicFiltering": "Пользовательские папки с базовыми правилами фильтрации",
+      "prioritySupport": "Приоритетная поддержка с более быстрыми ответами",
+      "dedicatedAM": "Выделенный аккаунт-менеджер",
+      "unlimitedUsers": "Без лимита пользователей"
+    }
   }
 }
