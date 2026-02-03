@@ -13,6 +13,8 @@ export default function SupremeLanding() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currency, setCurrency] = useState("USD");
   const [activeCardIndex, setActiveCardIndex] = useState(null);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
   const { t } = useLanguage();
 
   const openModal = () => setIsModalOpen(true);
@@ -44,15 +46,30 @@ export default function SupremeLanding() {
   const screenshots = [
     {
       title: "Very straightforward interface",
-      description: "Clean, intuitive UI designed for developers",
+      image: "/supreme_dashboard.jpeg",
+      contains: [
+        "Interactive dashboard",
+        "Security score display",
+        "Real-time scan status"
+      ]
     },
     {
-      title: "Well structured security reports, with detailed explanation",
-      description: "Comprehensive vulnerability analysis with actionable insights",
+      title: "Well structured security reports",
+      image: "/supreme_report.jpeg",
+      contains: [
+        "Detailed vulnerability analysis",
+        "Code snippets with issues",
+        "Severity levels & explanations"
+      ]
     },
     {
       title: "History of scans",
-      description: "Track improvements over time with detailed scan history",
+      image: "/supreme_scanning.jpeg",
+      contains: [
+        "Scan timeline view",
+        "Progress tracking",
+        "Historical comparisons"
+      ]
     },
   ];
 
@@ -459,26 +476,18 @@ export default function SupremeLanding() {
                   innerClassName="rounded-[20px] h-full"
                 >
                   <div className="relative flex flex-col h-full p-6 bg-slate-900/40 border border-white/5 rounded-[20px] overflow-hidden">
-                    {/* 4:5 Placeholder Frame */}
+                    {/* 4:5 Image Frame */}
                     <div className="aspect-[4/5] bg-gradient-to-br from-slate-800/60 to-slate-900/60 border border-white/10 rounded-xl overflow-hidden mb-6 flex items-center justify-center">
-                      <div className="text-center">
-                        <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 border border-purple-500/30 mb-3">
-                          <svg
-                            className="w-6 h-6 text-purple-400"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                            />
-                          </svg>
-                        </div>
-                        <p className="text-slate-500 text-sm">Screenshot</p>
-                      </div>
+                      <img
+                        src={screenshot.image}
+                        alt={screenshot.title}
+                        className="object-contain w-full h-full cursor-pointer"
+                        loading="lazy"
+                        onClick={() => {
+                          setLightboxIndex(idx);
+                          setLightboxOpen(true);
+                        }}
+                      />
                     </div>
 
                     {/* Content */}
@@ -486,9 +495,6 @@ export default function SupremeLanding() {
                       <h3 className="text-lg font-bold text-white mb-2">
                         {screenshot.title}
                       </h3>
-                      <p className="text-slate-400 text-sm">
-                        {screenshot.description}
-                      </p>
                     </div>
                   </div>
                 </EdgeGlowCard>
@@ -520,6 +526,33 @@ export default function SupremeLanding() {
           </EdgeGlowCard>
         </section>
       </main>
+
+      {lightboxOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-6"
+          role="dialog"
+          aria-modal="true"
+          onClick={() => setLightboxOpen(false)}
+        >
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              setLightboxOpen(false);
+            }}
+            className="absolute top-6 right-6 text-slate-200 bg-black/40 rounded-full p-2"
+            aria-label="Close preview"
+          >
+            ✕
+          </button>
+
+          <img
+            src={`/components/supreme/supreme-scan-${lightboxIndex + 1}.png`}
+            alt={screenshots[lightboxIndex]?.title || "Screenshot"}
+            className="max-h-[90vh] max-w-[90vw] rounded-lg shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
 
       <RequestDemoModal isOpen={isModalOpen} onClose={closeModal} />
       <BackToTopButton />
