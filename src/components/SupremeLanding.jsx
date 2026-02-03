@@ -75,10 +75,28 @@ export default function SupremeLanding() {
 
       <main className="relative z-10 pb-24 px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
-        <section className="relative pt-16 pb-20">
-          {/* Background spotlights */}
-          <div className="hero-spotlight hero-spotlight--purple" style={{position: 'absolute', top: '0', left: '10%', width: '500px', height: '500px', background: 'radial-gradient(circle, rgba(168,85,247,0.15), transparent)', filter: 'blur(80px)', borderRadius: '50%'}} aria-hidden="true" />
-          <div className="hero-spotlight hero-spotlight--indigo" style={{position: 'absolute', bottom: '10%', right: '5%', width: '400px', height: '400px', background: 'radial-gradient(circle, rgba(99,102,241,0.12), transparent)', filter: 'blur(70px)', borderRadius: '50%'}} aria-hidden="true" />
+        <section className="relative pt-16 pb-20 overflow-hidden">
+          {/* Animated Background spotlights */}
+          <motion.div 
+            className="hero-spotlight hero-spotlight--purple" 
+            animate={{ 
+              x: [0, 20, 0],
+              y: [0, -20, 0]
+            }}
+            transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+            style={{position: 'absolute', top: '0', left: '10%', width: '500px', height: '500px', background: 'radial-gradient(circle, rgba(168,85,247,0.2), transparent)', filter: 'blur(80px)', borderRadius: '50%'}} 
+            aria-hidden="true" 
+          />
+          <motion.div 
+            className="hero-spotlight hero-spotlight--indigo" 
+            animate={{ 
+              x: [0, -20, 0],
+              y: [0, 20, 0]
+            }}
+            transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
+            style={{position: 'absolute', bottom: '10%', right: '5%', width: '400px', height: '400px', background: 'radial-gradient(circle, rgba(99,102,241,0.15), transparent)', filter: 'blur(70px)', borderRadius: '50%'}} 
+            aria-hidden="true" 
+          />
 
           <div className="relative z-10 max-w-6xl mx-auto">
             <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12 gap-8">
@@ -127,10 +145,11 @@ export default function SupremeLanding() {
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.4 }}
-                className="flex-1 w-full"
+                className="flex-1 w-full group"
+                whileHover={{ scale: 1.02 }}
               >
-                <div className="relative aspect-video bg-gradient-to-br from-slate-800/50 to-slate-900/50 border border-white/10 rounded-2xl overflow-hidden shadow-2xl backdrop-blur-sm">
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(168,85,247,0.15),transparent_70%)]" />
+                <div className="relative aspect-video bg-gradient-to-br from-slate-800/50 to-slate-900/50 border border-white/10 rounded-2xl overflow-hidden shadow-2xl backdrop-blur-sm group-hover:border-purple-500/40 group-hover:shadow-2xl group-hover:shadow-purple-500/20 transition-all duration-300">
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(168,85,247,0.15),transparent_70%)] group-hover:bg-[radial-gradient(circle_at_center,rgba(168,85,247,0.25),transparent_70%)] transition-all duration-300" />
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="text-center">
                       <motion.div
@@ -174,10 +193,18 @@ export default function SupremeLanding() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: idx * 0.05 }}
-                className="group"
+                className="group relative"
               >
-                <div className="relative flex items-start gap-4 p-6 bg-slate-900/40 border border-white/5 rounded-xl hover:border-white/10 transition-colors">
-                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-purple-500/20 border border-purple-500/40 flex items-center justify-center mt-0.5">
+                {/* Glow effect on hover */}
+                <div
+                  className="absolute -inset-2 rounded-xl transition-all duration-300 pointer-events-none blur-xl opacity-0 group-hover:opacity-40"
+                  style={{
+                    background: "linear-gradient(135deg, rgba(168,85,247,0.6), rgba(99,102,241,0.4))",
+                  }}
+                />
+                
+                <div className="relative flex items-start gap-4 p-6 bg-slate-900/40 border border-white/5 rounded-xl hover:border-purple-500/60 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-purple-500/20">
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-purple-500/20 border border-purple-500/40 flex items-center justify-center mt-0.5 group-hover:bg-purple-500/40 group-hover:border-purple-500/80 transition-all duration-300">
                     <svg
                       className="w-4 h-4 text-purple-400"
                       fill="currentColor"
@@ -190,7 +217,7 @@ export default function SupremeLanding() {
                       />
                     </svg>
                   </div>
-                  <p className="text-slate-200 text-sm leading-relaxed">{feature}</p>
+                  <p className="text-slate-200 text-sm leading-relaxed group-hover:text-slate-100 transition-colors duration-300">{feature}</p>
                 </div>
               </motion.div>
             ))}
@@ -303,9 +330,11 @@ export default function SupremeLanding() {
 
                     <div className="flex-1" />
 
-                    <GlowButton onClick={openModal} variant="primary" className="w-full">
-                      Subscribe Now
-                    </GlowButton>
+                    <div className="flex justify-center">
+                      <GlowButton onClick={openModal} variant="primary">
+                        Subscribe Now
+                      </GlowButton>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -391,9 +420,11 @@ export default function SupremeLanding() {
 
                     <div className="flex-1" />
 
-                    <GlowButton onClick={openModal} variant="primary" className="w-full">
-                      Subscribe Now
-                    </GlowButton>
+                    <div className="flex justify-center">
+                      <GlowButton onClick={openModal} variant="primary">
+                        Subscribe Now
+                      </GlowButton>
+                    </div>
                   </div>
                 </div>
               </div>
