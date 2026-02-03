@@ -64,7 +64,6 @@ const SlncEnvHeader = ({ onOpenAdminModal }) => {
       key: "supreme",
       label: t("header.nav.systemsSupreme", "Supreme"),
       href: "/supreme",
-      isMuted: true,
     },
   ];
 
