@@ -19,12 +19,12 @@ const SOCIAL_LINKS = [
   },
   {
     title: "YouTube",
-    href: "https://www.youtube.com/@silenceai_en",
+    href: "https://www.youtube.com/@silence_codes",
     icon: <IconBrandYoutube className="h-full w-full text-[#FF0000]" />,
   },
   {
     title: "Instagram",
-    href: "https://www.instagram.com/silence.eng/",
+    href: "https://www.instagram.com/silence.codes/",
     icon: <IconBrandInstagram className="h-full w-full text-[#E4405F]" />,
   },
 ];

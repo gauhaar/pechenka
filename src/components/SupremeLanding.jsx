@@ -2,12 +2,16 @@
 
 import React, { useState } from "react";
 import Header from "@/components/Header";
+import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import BackToTopButton from "@/components/BackToTopButton";
 import RequestDemoModal from "@/components/RequestDemoModal";
 import EdgeGlowCard from "@/components/EdgeGlowCard";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
 import GlowButton from "@/components/GlowButton";
+import { FloatingText } from "@/components/FloatingText";
+import Spotlights from "@/components/Spotlights";
+import SupremeBackground from "@/components/SupremeBackground";
 
 export default function SupremeLanding() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -34,13 +38,10 @@ export default function SupremeLanding() {
   };
 
   const features = [
-    "Zero Configuration: Auto-installs necessary engines and security patches",
-    "Deep Scan: Checks for CVEs",
-    "Finding Misconfigurations, and Secrets",
-    "Interactive Dashboard: View security score and critical stats",
-    "Scan History: Review past scan results and track improvements",
-    "Glassmorphism Reports: Beautiful, detailed HTML reports with code snippets",
-    "Code analyzer itself is running locally, the code is not being exposed to external servers",
+    "Code analyzer runs locally, the code is not being exposed to external servers",
+    "Finds vulnerable packages vulnerabilities within the project of any programming language",
+    "Finds Misconfigurations, and Secrets",
+    "Can scan for CI/CD misconfigurations and vulnerabilities",
   ];
 
   const screenshots = [
@@ -86,34 +87,79 @@ export default function SupremeLanding() {
     />
   );
 
+  const stickyScrollColors = [
+    "linear-gradient(to bottom, #01091C, #FF00D4 50%)",
+    "#FF00D4",
+    "linear-gradient(to bottom, #FF00D4 50%, #01091C)",
+  ];
+
+  const stickyScrollContent = [
+    {
+      title: screenshots[0].title,
+      description: "",
+      content: (
+        <div className="h-full w-full flex items-center justify-center text-white bg-black">
+           <img
+             src={screenshots[0].image}
+             className="w-full h-full object-contain"
+             alt={screenshots[0].title}
+           />
+        </div>
+      ),
+    },
+    {
+      title: screenshots[1].title,
+      description: "",
+      content: (
+        <div className="h-full w-full flex items-center justify-center text-white bg-black">
+           <img
+             src={screenshots[1].image}
+             className="w-full h-full object-contain"
+             alt={screenshots[1].title}
+           />
+        </div>
+      ),
+    },
+    {
+      title: screenshots[2].title,
+      description: "",
+      content: (
+        <div className="h-full w-full flex items-center justify-center text-white bg-black">
+           <img
+             src={screenshots[2].image}
+             className="w-full h-full object-contain"
+             alt={screenshots[2].title}
+           />
+        </div>
+      ),
+    },
+  ];
+
   return (
-    <div className="min-h-screen bg-[#01091C] text-slate-200 font-sans selection:bg-pink-500/30 relative overflow-hidden">
+    <div className="min-h-screen bg-[#01091C] text-slate-200 font-sans selection:bg-pink-500/30 relative">
       <Header onOpenModal={openModal} />
 
-      <main className="relative z-10 pb-24 px-4 sm:px-6 lg:px-8">
+      <main className="relative z-10 pb-24">
         {/* Hero Section */}
-        <section className="relative pt-16 pb-20 overflow-hidden">
-          {/* Animated Background spotlights */}
-          <motion.div 
-            className="hero-spotlight hero-spotlight--purple" 
-            animate={{ 
-              x: [0, 20, 0],
-              y: [0, -20, 0]
+        <section className="relative px-4 sm:px-6 lg:px-8 pt-16 pb-20 overflow-hidden">
+          {/* Animated Background Spotlights component */}
+          <div className="absolute inset-0 z-0">
+             <Spotlights />
+          </div>
+
+          {/* Circuit Board / Tech Pattern Overlay */}
+          <div 
+            className="absolute inset-0 z-0 opacity-[0.15] pointer-events-none"
+            style={{
+              backgroundImage: `radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 0)`,
+              backgroundSize: '24px 24px',
+              maskImage: 'radial-gradient(ellipse at center, black 40%, transparent 80%)',
+              WebkitMaskImage: 'radial-gradient(ellipse at center, black 40%, transparent 80%)'
             }}
-            transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
-            style={{position: 'absolute', top: '0', left: '10%', width: '500px', height: '500px', background: 'radial-gradient(circle, rgba(168,85,247,0.2), transparent)', filter: 'blur(80px)', borderRadius: '50%'}} 
-            aria-hidden="true" 
           />
-          <motion.div 
-            className="hero-spotlight hero-spotlight--indigo" 
-            animate={{ 
-              x: [0, -20, 0],
-              y: [0, 20, 0]
-            }}
-            transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
-            style={{position: 'absolute', bottom: '10%', right: '5%', width: '400px', height: '400px', background: 'radial-gradient(circle, rgba(99,102,241,0.15), transparent)', filter: 'blur(70px)', borderRadius: '50%'}} 
-            aria-hidden="true" 
-          />
+
+          {/* Abstract Background Animation */}
+          <SupremeBackground />
 
           <div className="relative z-10 max-w-6xl mx-auto">
             <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12 gap-8">
@@ -192,57 +238,8 @@ export default function SupremeLanding() {
           </div>
         </section>
 
-        {/* Features Section */}
-        <section className="max-w-7xl mx-auto py-20 space-y-12">
-          <div className="text-center space-y-4">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
-              Powerful Features
-            </h2>
-            <p className="text-slate-400 max-w-2xl mx-auto text-lg">
-              Everything you need for secure code development
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {features.map((feature, idx) => (
-              <motion.div
-                key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: idx * 0.05 }}
-                className="group relative"
-              >
-                {/* Glow effect on hover */}
-                <div
-                  className="absolute -inset-2 rounded-xl transition-all duration-300 pointer-events-none blur-xl opacity-0 group-hover:opacity-40"
-                  style={{
-                    background: "linear-gradient(135deg, rgba(168,85,247,0.6), rgba(99,102,241,0.4))",
-                  }}
-                />
-                
-                <div className="relative flex items-start gap-4 p-6 bg-slate-900/40 border border-white/5 rounded-xl hover:border-purple-500/60 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-purple-500/20">
-                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-purple-500/20 border border-purple-500/40 flex items-center justify-center mt-0.5 group-hover:bg-purple-500/40 group-hover:border-purple-500/80 transition-all duration-300">
-                    <svg
-                      className="w-4 h-4 text-purple-400"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <p className="text-slate-200 text-sm leading-relaxed group-hover:text-slate-100 transition-colors duration-300">{feature}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </section>
-
         {/* Pricing Section */}
-        <section className="max-w-7xl mx-auto py-20 space-y-12">
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
               Simple Pricing
@@ -277,7 +274,7 @@ export default function SupremeLanding() {
           </div>
 
           {/* Pricing Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-8 max-w-3xl mx-auto">
             {/* Monthly Plan */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -310,7 +307,7 @@ export default function SupremeLanding() {
               >
                 {/* Inner card */}
                 <div
-                  className="relative rounded-2xl overflow-hidden h-full flex flex-col p-8 sm:p-10 transition-all duration-300"
+                  className="relative rounded-2xl overflow-hidden h-full flex flex-col p-5 sm:p-10 transition-all duration-300"
                   style={{
                     background: "rgba(8, 10, 20, 0.50)",
                     backdropFilter: "blur(16px) saturate(180%)",
@@ -328,27 +325,27 @@ export default function SupremeLanding() {
                   />
 
                   {/* Content */}
-                  <div className="relative z-10 space-y-6 flex-1 flex flex-col">
+                  <div className="relative z-10 space-y-3 sm:space-y-6 flex-1 flex flex-col">
                     <div>
-                      <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">
+                      <h3 className="text-lg sm:text-3xl font-bold text-white mb-1 sm:mb-2">
                         Monthly
                       </h3>
-                      <p className="text-slate-400">Flexible, cancel anytime</p>
+                      <p className="text-sm sm:text-base text-slate-400">Flexible, cancel anytime</p>
                     </div>
 
-                    <div className="pt-4">
-                      <div className="flex items-baseline gap-2 mb-2">
-                        <span className="text-5xl sm:text-6xl font-bold text-white">
+                    <div className="pt-2 sm:pt-4">
+                      <div className="flex items-baseline gap-2 mb-1 sm:mb-2">
+                        <span className="text-3xl sm:text-6xl font-bold text-white">
                           {pricing[currency].monthly}
                         </span>
-                        <span className="text-slate-400">/month</span>
+                        <span className="text-xs sm:text-base text-slate-400">/month</span>
                       </div>
                     </div>
 
                     <div className="flex-1" />
 
                     <div className="flex justify-center">
-                      <GlowButton onClick={openModal} variant="primary">
+                      <GlowButton onClick={openModal} variant="primary" innerClassName="px-6 py-2 sm:px-7 sm:py-3 text-sm sm:text-base">
                         Subscribe Now
                       </GlowButton>
                     </div>
@@ -399,7 +396,7 @@ export default function SupremeLanding() {
               >
                 {/* Inner card */}
                 <div
-                  className="relative rounded-2xl overflow-hidden h-full flex flex-col p-8 sm:p-10 transition-all duration-300"
+                  className="relative rounded-2xl overflow-hidden h-full flex flex-col p-5 sm:p-10 transition-all duration-300"
                   style={{
                     background: "rgba(8, 10, 20, 0.50)",
                     backdropFilter: "blur(16px) saturate(180%)",
@@ -417,28 +414,28 @@ export default function SupremeLanding() {
                   />
 
                   {/* Content */}
-                  <div className="relative z-10 space-y-6 flex-1 flex flex-col">
+                  <div className="relative z-10 space-y-3 sm:space-y-6 flex-1 flex flex-col">
                     <div>
-                      <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">
+                      <h3 className="text-lg sm:text-3xl font-bold text-white mb-1 sm:mb-2">
                         Yearly
                       </h3>
-                      <p className="text-slate-400">Best value</p>
+                      <p className="text-sm sm:text-base text-slate-400">Best value</p>
                     </div>
 
-                    <div className="pt-4">
-                      <div className="flex items-baseline gap-2 mb-2">
-                        <span className="text-5xl sm:text-6xl font-bold text-white">
+                    <div className="pt-2 sm:pt-4">
+                      <div className="flex items-baseline gap-2 mb-1 sm:mb-2">
+                        <span className="text-3xl sm:text-6xl font-bold text-white">
                           {pricing[currency].yearly}
                         </span>
-                        <span className="text-slate-400">/year</span>
+                        <span className="text-xs sm:text-base text-slate-400">/year</span>
                       </div>
-                      <p className="text-sm text-slate-500">~{Math.round(parseInt(pricing[currency].yearly.replace(/[^0-9]/g, '')) / 12)} per month</p>
+                      <p className="text-xs sm:text-sm text-slate-500">~{Math.round(parseInt(pricing[currency].yearly.replace(/[^0-9]/g, '')) / 12)} per month</p>
                     </div>
 
                     <div className="flex-1" />
 
                     <div className="flex justify-center">
-                      <GlowButton onClick={openModal} variant="primary">
+                      <GlowButton onClick={openModal} variant="primary" innerClassName="px-6 py-2 sm:px-7 sm:py-3 text-sm sm:text-base">
                         Subscribe Now
                       </GlowButton>
                     </div>
@@ -449,82 +446,100 @@ export default function SupremeLanding() {
           </div>
         </section>
 
-        {/* Screenshots Section */}
-        <section className="max-w-7xl mx-auto py-20 space-y-12">
+        {/* Features Section */}
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-0 space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
-              Showcase
+              Powerful Features
             </h2>
             <p className="text-slate-400 max-w-2xl mx-auto text-lg">
-              See what makes Supreme the perfect choice
+              Everything you need for secure code development
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {screenshots.map((screenshot, idx) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {features.map((feature, idx) => (
               <motion.div
                 key={idx}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: idx * 0.1 }}
-                className="group"
+                transition={{ delay: idx * 0.05 }}
+                className="group relative"
               >
-                <EdgeGlowCard
-                  mode="static"
-                  glowColor="#a855f7"
-                  outerClassName="relative rounded-2xl p-[1px] h-full"
-                  innerClassName="rounded-[20px] h-full"
-                >
-                  <div className="relative flex flex-col h-full p-6 bg-slate-900/40 border border-white/5 rounded-[20px] overflow-hidden">
-                    {/* 4:5 Image Frame */}
-                    <div className="aspect-[4/5] bg-gradient-to-br from-slate-800/60 to-slate-900/60 border border-white/10 rounded-xl overflow-hidden mb-6 flex items-center justify-center">
-                      <img
-                        src={screenshot.image}
-                        alt={screenshot.title}
-                        className="object-contain w-full h-full cursor-pointer"
-                        loading="lazy"
-                        onClick={() => {
-                          setLightboxIndex(idx);
-                          setLightboxOpen(true);
-                        }}
+                {/* Glow effect on hover */}
+                <div
+                  className="absolute -inset-2 rounded-xl transition-all duration-300 pointer-events-none blur-xl opacity-0 group-hover:opacity-40"
+                  style={{
+                    background: "linear-gradient(135deg, rgba(168,85,247,0.6), rgba(99,102,241,0.4))",
+                  }}
+                />
+                
+                <div className="relative flex items-start gap-4 p-6 bg-slate-900/40 border border-white/5 rounded-xl hover:border-purple-500/60 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-purple-500/20">
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-purple-500/20 border border-purple-500/40 flex items-center justify-center mt-0.5 group-hover:bg-purple-500/40 group-hover:border-purple-500/80 transition-all duration-300">
+                    <svg
+                      className="w-4 h-4 text-purple-400"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
                       />
-                    </div>
-
-                    {/* Content */}
-                    <div className="flex-1">
-                      <h3 className="text-lg font-bold text-white mb-2">
-                        {screenshot.title}
-                      </h3>
-                    </div>
+                    </svg>
                   </div>
-                </EdgeGlowCard>
+                  <p className="text-slate-200 text-sm leading-relaxed group-hover:text-slate-100 transition-colors duration-300">{feature}</p>
+                </div>
               </motion.div>
             ))}
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="max-w-4xl mx-auto py-20">
-          <EdgeGlowCard
-            mode="static"
-            glowColor="#a855f7"
-            secondaryGlowColor="rgba(99,102,241,0.5)"
-            outerClassName="relative rounded-2xl p-[2px]"
-            innerClassName="rounded-[18px]"
-          >
-            <div className="relative overflow-hidden rounded-2xl p-8 sm:p-12 text-center bg-gradient-to-br from-slate-900/40 to-slate-900/20 border border-white/5">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
-                Ready to secure your code?
-              </h2>
-              <p className="text-slate-300 mb-8 max-w-2xl mx-auto text-lg">
-                Start scanning for vulnerabilities locally with Supreme today
-              </p>
-              <GlowButton onClick={openModal} variant="primary" size="lg">
-                Get Started for Free
-              </GlowButton>
-            </div>
-          </EdgeGlowCard>
-        </section>
+        {/* Screenshots Section - Sticky Scroll */}
+        <div className="w-full pt-10 pb-20 relative z-30">
+          <div className="hidden lg:block">
+            <StickyScroll 
+              content={stickyScrollContent} 
+              backgroundColors={stickyScrollColors} 
+              itemClassName="my-60 md:my-96 lg:my-[30rem]"
+            />
+          </div>
+          <div className="lg:hidden flex flex-col gap-10 px-4 py-12">
+            {screenshots.map((item, idx) => (
+              <EdgeGlowCard
+                key={idx}
+                mode="static"
+                outerClassName="rounded-3xl p-[2px]"
+                innerClassName="glass-card p-6 space-y-4 rounded-3xl"
+                glowColor="#FF00B7"
+                secondaryGlowColor="rgba(0,191,255,0.7)"
+                topColor="#FF00B7"
+                leftColor="#FF00B7"
+                rightColor="rgba(0,191,255,0.7)"
+                bottomColor="rgba(0,191,255,0.7)"
+              >
+                <h3 className="text-2xl font-semibold text-center text-white">{item.title}</h3>
+                <div className="flex justify-center">
+                  <div className="relative w-full max-w-[280px] aspect-[4/5] overflow-hidden rounded-lg border border-white/10 bg-black/60">
+                    <img
+                      src={item.image}
+                      className="w-full h-full object-contain"
+                      alt={item.title}
+                    />
+                  </div>
+                </div>
+              </EdgeGlowCard>
+            ))}
+          </div>
+        </div>
+
+        {/* Spacer before social dock */}
+        <div className="py-16 sm:py-20 lg:py-24" />
+
+        <div className="w-full">
+            <FloatingText />
+        </div>
+
       </main>
 
       {lightboxOpen && (

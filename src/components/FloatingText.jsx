@@ -26,14 +26,14 @@ export function FloatingText({ className }) {
       icon: (
         <IconBrandYoutube className="h-full w-full text-[#FF0000]" />
       ),
-      href: "https://www.youtube.com/@silenceai_en",
+      href: "https://www.youtube.com/@silence_codes",
     },
     {
       title: "Instagram",
       icon: (
         <IconBrandInstagram className="h-full w-full text-[#E4405F]" />
       ),
-      href: "https://www.instagram.com/silence.eng/",
+      href: "https://www.instagram.com/silence.codes/",
     },
   ];
   const text1 = t("floatingText.headline", "Learn how hackers think");
