@@ -972,5 +972,966 @@
       "subtitle": "Silence AI는 정부 수준의 인텔리전스를 보유한 소수의 민간 기업 중 하나입니다.",
       "viewAll": "모든 기사 보기"
     }
+  },
+  "documentation": {
+    "tabs": {
+      "web": "웹 보안",
+      "email": "이메일 보안"
+    },
+    "system": {
+      "sections": "섹션",
+      "topics": "주제",
+      "tableOfContents": "목차",
+      "close": "닫기"
+    },
+    "webSecurity": {
+      "placeholder": {
+        "badge": "웹 보안",
+        "title": "문서가 곧 제공됩니다",
+        "description": "웹 애플리케이션 구성과 보호를 위한 자세한 가이드를 준비 중입니다. 곧 자료가 공개될 예정이니 다시 확인해 주세요."
+      }
+    },
+    "emailSecurity": {
+      "title": "이메일 보안 시스템",
+      "subtitle": "문서 | 버전 1.0",
+      "description": "기업 이메일 보안 플랫폼을 구성하고 운영하는 방법.",
+      "chapters": [
+        {
+          "id": "getting-started",
+          "title": "시작하기",
+          "label": "시작하기",
+          "description": "관리자와 최종 사용자를 위한 초기 단계입니다.",
+          "sections": [
+            {
+              "id": "admin-setup",
+              "title": "관리자용",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "시스템을 온보딩하려면 다음을 수행하세요."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Google 또는 Microsoft OAuth를 사용해 admin.silenceai.net의 CMC 관리자 패널에 로그인합니다.",
+                    "회사 도메인을 등록합니다.",
+                    "DNS를 통해 도메인 소유권을 확인합니다.",
+                    "보안 레코드(SPF, DKIM, DMARC)를 구성합니다.",
+                    "직원용 이메일 계정을 생성합니다."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "구성이 완료되면 사용자는 웹메일 클라이언트에 접속해 보호된 메시지를 보낼 수 있습니다."
+                }
+              ]
+            },
+            {
+              "id": "user-onboarding",
+              "title": "최종 사용자용",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "이메일을 사용하려면 다음을 따르세요."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "관리자로부터 자격 증명을 받습니다.",
+                    "mail.silenceai.net에 이메일/비밀번호 또는 OAuth로 로그인합니다.",
+                    "\"Compose\" 버튼을 눌러 첫 메시지를 전송합니다.",
+                    "보안 수준에 따라 메시지를 자동 분류하는 시스템 폴더를 확인합니다."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "수신 메일은 위협을 자동으로 검사한 뒤 해당 폴더로 이동합니다."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "step-by-step",
+          "title": "단계별 안내",
+          "label": "단계별 안내",
+          "description": "CMC 관리자 패널에서 도메인을 온보딩하고 DNS를 구성하는 절차입니다.",
+          "sections": [
+            {
+              "id": "add-domain",
+              "title": "도메인 추가",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "도메인 관리는 CMC 관리자 패널에서 시작됩니다."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "CMC 관리자 패널을 엽니다.",
+                    "\"Add Domain\"을 클릭합니다.",
+                    "www 없이 도메인 이름을 입력합니다(예: company.com).",
+                    "\"Add\"를 클릭합니다."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "시스템이 도메인 소유권을 확인할 검증 토큰을 발급합니다."
+                }
+              ]
+            },
+            {
+              "id": "verify-domain",
+              "title": "도메인 소유권 확인",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "도메인을 추가한 뒤에는 소유권을 증명해야 합니다."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "CMC에서 TXT 레코드를 복사합니다:"
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "_cmc-verification.company.com TXT \"cmc-verify-abc123xyz\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "도메인 DNS 설정에 레코드를 추가합니다.",
+                    "자동 검사(5분마다)를 기다리거나 \"Check Now\"를 클릭합니다."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "검증에는 최대 48시간이 걸릴 수 있습니다. 완료되면 도메인 상태가 'Verified'로 바뀝니다."
+                }
+              ]
+            },
+            {
+              "id": "configure-spf",
+              "title": "SPF 레코드 구성",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "SPF는 도메인을 대신해 메일을 보낼 수 있는 서버를 정의합니다."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "CMC에서 \"DNS Configuration\" → \"SPF\"를 엽니다.",
+                    "\"Check Current SPF\"를 눌러 기존 레코드를 확인합니다.",
+                    "\"Generate SPF Record\"를 클릭합니다.",
+                    "권장 레코드를 복사합니다:"
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "company.com TXT \"v=spf1 include:_spf.silenceai.net -all\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "레코드를 DNS에 추가합니다."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "이미 SPF 레코드(예: Gmail용)가 있다면 마지막 -all 앞에 include:_spf.silenceai.net을 추가하세요."
+                }
+              ]
+            },
+            {
+              "id": "configure-dkim",
+              "title": "DKIM 키 생성",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DKIM은 메일에 암호화된 서명을 추가합니다."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "CMC에서 \"DNS Configuration\" → \"DKIM\"을 엽니다.",
+                    "\"Generate DKIM Keys\"를 클릭합니다.",
+                    "시스템이 키 쌍을 생성합니다(개인 키는 서버에 저장되고 공개 키는 DNS에 사용됩니다).",
+                    "다음 DNS 레코드를 복사합니다:"
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "silenceai._domainkey.company.com TXT \"v=DKIM1; k=rsa; p=MIIBIjAN...\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "레코드를 DNS에 추가합니다.",
+                    "\"Verify DKIM\"을 실행해 확인합니다."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "configure-dmarc",
+              "title": "DMARC 정책 설정",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DMARC는 SPF 또는 DKIM 검사를 통과하지 못한 메시지를 처리하는 정책을 정의합니다."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "CMC에서 \"DNS Configuration\" → \"DMARC\"를 엽니다.",
+                    "정책을 선택합니다:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "quarantine — 스팸으로 이동(권장)",
+                    "reject — 메시지를 차단"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "\"Generate DMARC Record\"를 클릭합니다.",
+                    "레코드를 복사합니다:"
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "_dmarc.company.com TXT \"v=DMARC1; p=quarantine; rua=mailto:dmarc-reports@silenceai.net\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "레코드를 DNS에 추가합니다."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "먼저 quarantine으로 설정하고 1~2주 동안 보고서를 모니터링한 뒤 필요하면 reject로 전환하세요."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "user-management",
+          "title": "사용자 관리",
+          "label": "사용자 관리",
+          "description": "메일 계정을 생성하고 유지 관리하는 방법입니다.",
+          "sections": [
+            {
+              "id": "create-account",
+              "title": "이메일 계정 만들기",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "CMC의 \"Email Accounts\" 섹션을 엽니다.",
+                    "\"Create Account\"를 클릭합니다.",
+                    "다음 항목을 입력합니다:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Email: john.doe@company.com",
+                    "이름과 성",
+                    "비밀번호(최소 8자, 대문자·소문자·숫자·특수문자 포함)",
+                    "저장 용량: 메일함 크기를 선택합니다"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "\"Create\"를 클릭합니다."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "사용자는 즉시 웹메일에 로그인할 수 있습니다."
+                }
+              ]
+            },
+            {
+              "id": "suspend-activate",
+              "title": "계정 일시 중지 또는 재활성화",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "\"Email Accounts\"에서 사용자를 찾습니다.",
+                    "동작 메뉴에서 다음을 선택합니다:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Suspend — 액세스를 일시 중지(사용자는 로그인할 수 없음)",
+                    "Activate — 액세스를 복원"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "동작을 확인합니다."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "change-quota",
+              "title": "저장 용량 변경",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "목록에서 사용자를 찾습니다.",
+                    "동작 메뉴에서 \"Edit Quota\"를 선택합니다.",
+                    "새 저장 용량을 선택합니다.",
+                    "변경 사항을 저장합니다."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "변경 사항은 즉시 적용됩니다."
+                }
+              ]
+            },
+            {
+              "id": "delete-account",
+              "title": "계정 삭제",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "목록에서 사용자를 찾습니다.",
+                    "동작 메뉴에서 \"Delete\"를 선택합니다.",
+                    "삭제를 확인합니다."
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "intent": "warning",
+                  "content": "경고: 사용자 데이터는 모두 영구적으로 삭제됩니다."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mail-operations",
+          "title": "메일 작업",
+          "label": "메일 작업",
+          "description": "웹메일 클라이언트에서 수행하는 일상적인 작업입니다.",
+          "sections": [
+            {
+              "id": "send-letter",
+              "title": "메시지 보내기",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "웹메일에서 \"Compose\"를 클릭합니다.",
+                    "다음을 입력합니다:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "To: 수신자 주소",
+                    "Subject: 이메일 제목",
+                    "Body: 메시지 본문(서식 있는 편집 지원)"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "필요하면 파일을 첨부합니다(파일당 최대 25MB).",
+                    "\"Send\"를 클릭합니다."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "메시지에는 DKIM 서명이 자동으로 적용되어 전송됩니다."
+                }
+              ]
+            },
+            {
+              "id": "custom-folder",
+              "title": "규칙이 있는 사용자 정의 폴더 만들기",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "사용자 정의 폴더는 정의한 규칙에 따라 메시지를 자동으로 분류합니다."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "사이드바에서 \"Create Folder\"를 클릭합니다.",
+                    "폴더 이름을 입력합니다(예: \"Clients\").",
+                    "\"Add Rules\"를 클릭합니다.",
+                    "규칙을 구성합니다:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Filter by: Sender Domain(발신 도메인 기준)",
+                    "Match mode: Contains(포함)",
+                    "Value: client.com"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "기존 이메일에 다시 적용하려면 \"Apply to existing emails\"를 활성화합니다.",
+                    "\"Create\"를 클릭합니다."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "*@client.com에서 오는 새 메일은 자동으로 \"Clients\" 폴더로 이동합니다."
+                }
+              ]
+            },
+            {
+              "id": "add-whitelist",
+              "title": "발신자를 화이트리스트에 추가",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "메시지가 실수로 스팸으로 분류된 경우:"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "SPAM 폴더에서 해당 이메일을 엽니다.",
+                    "\"Not Spam\" → \"Add to Whitelist\"를 클릭합니다.",
+                    "다음을 선택합니다:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Whitelist sender email(발신자 이메일 허용)",
+                    "Whitelist sender domain(발신 도메인 허용)"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "동작을 확인합니다."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "이후 이 발신자의 메시지는 스팸으로 이동하지 않습니다."
+                }
+              ]
+            },
+            {
+              "id": "email-signature",
+              "title": "이메일 서명 설정",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Settings → \"Email Signature\"를 엽니다.",
+                    "\"Enable signature\"를 활성화합니다.",
+                    "편집기에 서명 텍스트를 입력합니다.",
+                    "\"Save\"를 클릭합니다."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "서명은 모든 발신 메시지에 자동으로 추가됩니다."
+                }
+              ]
+            },
+            {
+              "id": "vacation-responder",
+              "title": "자동 응답 설정",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Settings → \"Vacation Responder\"를 엽니다.",
+                    "\"Enable vacation responder\"를 활성화합니다.",
+                    "시작 및 종료 날짜를 설정합니다.",
+                    "자동 응답 메시지를 입력합니다.",
+                    "발신자당 1회만 응답하려면 \"Reply once per sender\"를 선택합니다.",
+                    "\"Save\"를 클릭합니다."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "자동 응답은 지정한 기간 동안 동작한 후 자동으로 종료됩니다."
+                }
+              ]
+            },
+            {
+              "id": "forwarding",
+              "title": "메일 전달 설정",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Settings → \"Email Forwarding\"을 엽니다.",
+                    "\"Add Forwarding Address\"를 클릭합니다.",
+                    "전달 받을 이메일 주소를 입력합니다.",
+                    "사본을 보관하려면 \"Keep copy in inbox\"를 활성화합니다.",
+                    "\"Save\"를 클릭합니다."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "모든 수신 메일이 선택한 주소로 전달됩니다."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "domain-administration",
+          "title": "도메인 관리",
+          "label": "도메인 관리",
+          "description": "도메인 분석과 대량 메일 작업을 위한 기능입니다.",
+          "sections": [
+            {
+              "id": "view-activity",
+              "title": "도메인 메일 활동 검토",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "관리자는 도메인 내 모든 사용자의 메시지를 확인할 수 있습니다."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "CMC → \"Email Activity\"를 엽니다.",
+                    "다음 필터를 사용합니다:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "사용자별",
+                    "폴더별(Secure, Spam, Phishing)",
+                    "날짜별",
+                    "위협 유형별"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "제목이나 발신자를 찾으려면 검색창을 사용합니다."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bulk-delete",
+              "title": "모든 사용자 메시지 삭제",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "악성 메시지가 모든 사용자에게 발송된 경우:"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "\"Email Activity\"를 엽니다.",
+                    "필터나 검색으로 메시지를 찾습니다.",
+                    "삭제할 메시지를 선택합니다.",
+                    "\"Delete Selected\"를 클릭합니다.",
+                    "대량 삭제를 확인합니다."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "메시지는 모든 사용자 메일함에서 제거됩니다."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "concepts",
+          "title": "핵심 개념",
+          "label": "핵심 개념",
+          "description": "플랫폼의 핵심 개념과 보안 흐름을 설명합니다.",
+          "sections": [
+            {
+              "id": "system-overview",
+              "title": "시스템 개요",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "이메일 보안 시스템은 기업 이메일을 사이버 위협으로부터 보호하는 플랫폼입니다."
+                },
+                {
+                  "type": "list",
+                  "title": "구성 요소:",
+                  "items": [
+                    "CMC 관리자 패널 — 도메인, 사용자, DNS 설정을 위한 관리자 콘솔.",
+                    "웹메일 클라이언트 — 자동 위협 보호가 적용된 직원용 메일함.",
+                    "인프라 서비스 — 메시지 처리를 위한 SMTP 서버와 보안 파이프라인."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "security-stack",
+              "title": "보안 파이프라인",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "모든 수신 메시지는 여섯 단계의 보호를 거칩니다:"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "레이어 0: 피싱 도메인 검사 — 알려진 피싱 데이터베이스와 발신 도메인을 비교합니다.",
+                    "레이어 1: 스푸핑 감지 — SPF, DKIM, DMARC 정합성을 검증합니다.",
+                    "레이어 2: 스팸 감지 — RSPAMD로 콘텐츠를 분석해 스팸 특성을 찾습니다.",
+                    "레이어 3: 링크 스캐너 — URLScan.io로 악성 링크를 검사합니다.",
+                    "레이어 4: 백신 — Bitdefender로 첨부 파일을 검사합니다.",
+                    "레이어 5: AI 피싱 탐지 — AI로 메시지 내용을 분석해 피싱 신호를 식별합니다."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "위협이 감지되면 처리가 중단되고 해당 폴더로 메시지가 이동합니다."
+                }
+              ]
+            },
+            {
+              "id": "system-folders",
+              "title": "시스템 폴더",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "검사 결과에 따라 메시지가 다음 폴더로 분류됩니다:"
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Unfiltered — 처리 전 임시 폴더입니다.",
+                    "Secure — 모든 검사를 통과한 메시지.",
+                    "Possibly Spoofed — 발신자 진위가 의심스러운 메시지.",
+                    "SPAM — 스팸 메시지.",
+                    "Dangerous Links — 악성 URL이 포함된 메시지.",
+                    "Malware — 감염된 첨부 파일이 있는 메시지.",
+                    "Possibly Phishing — 피싱 징후가 감지된 메시지.",
+                    "Sent — 발신 메시지."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "하나의 메시지가 여러 폴더(예: SPAM과 Possibly Spoofed)에 동시에 표시될 수 있습니다."
+                }
+              ]
+            },
+            {
+              "id": "custom-folders",
+              "title": "사용자 정의 폴더",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "사용자는 자동 필터링 규칙이 있는 사용자 정의 폴더를 만들 수 있습니다."
+                },
+                {
+                  "type": "list",
+                  "title": "필터 규칙:",
+                  "items": [
+                    "발신 도메인 기준",
+                    "발신 이메일 기준",
+                    "제목 기준",
+                    "발신자 이름 기준"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "title": "일치 모드:",
+                  "items": [
+                    "포함",
+                    "일치",
+                    "시작 문자",
+                    "끝 문자"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "규칙은 기존 메일에도 적용할 수 있습니다(소급 적용)."
+                }
+              ]
+            },
+            {
+              "id": "spf",
+              "title": "SPF(발신자 정책 프레임워크)",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "SPF는 도메인을 대신해 메일을 보낼 수 있는 서버를 정의하는 DNS 레코드입니다."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "형식:"
+                },
+                {
+                  "type": "code",
+                  "content": "v=spf1 include:_spf.silenceai.net -all"
+                },
+                {
+                  "type": "list",
+                  "title": "메커니즘:",
+                  "items": [
+                    "include:domain — 참조된 도메인의 서버를 허용",
+                    "ip4:x.x.x.x — 특정 IP 주소를 허용",
+                    "-all — 나머지는 모두 거부",
+                    "~all — 나머지는 의심으로 표시"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "SPF 검사: 수신자는 발신 IP가 도메인의 SPF 레코드에서 허용되는지 확인합니다. 실패하면 메시지가 의심스럽다고 표시됩니다."
+                }
+              ]
+            },
+            {
+              "id": "dkim",
+              "title": "DKIM(도메인키 확인 메일)",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DKIM은 메시지가 도메인 소유자가 보냈으며 전송 중 변경되지 않았음을 확인하기 위해 암호화 서명을 추가합니다."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "동작 방식:"
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "전송 시 서버가 개인 키로 메시지에 서명하고 DKIM-Signature 헤더를 추가합니다.",
+                    "수신자는 DNS에서 공개 키를 가져와 서명을 검증합니다."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "DNS 레코드:"
+                },
+                {
+                  "type": "code",
+                  "content": "selector._domainkey.domain.com TXT \"v=DKIM1; k=rsa; p=public_key\""
+                },
+                {
+                  "type": "paragraph",
+                  "content": "개인 키는 서버에 암호화된 상태로 저장되며 클라이언트와 공유되지 않습니다."
+                }
+              ]
+            },
+            {
+              "id": "dmarc",
+              "title": "DMARC(도메인 기반 메시지 인증)",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DMARC는 SPF 또는 DKIM 검사를 통과하지 못한 메시지에 대한 정책을 정의합니다."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "형식:"
+                },
+                {
+                  "type": "code",
+                  "content": "_dmarc.domain.com TXT \"v=DMARC1; p=quarantine; rua=mailto:reports@domain.com\""
+                },
+                {
+                  "type": "list",
+                  "title": "매개변수:",
+                  "items": [
+                    "p=quarantine — 스팸함으로 전달",
+                    "p=reject — 메시지를 거부",
+                    "p=none — 모니터링 전용",
+                    "rua= — 집계 보고서를 받을 주소"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "DMARC 검사: 수신자는 메시지가 SPF 또는 DKIM을 정렬된 도메인으로 통과했는지 확인하고, 실패하면 구성된 정책을 적용합니다."
+                }
+              ]
+            },
+            {
+              "id": "attachments",
+              "title": "첨부 파일 및 백신",
+              "body": [
+                {
+                  "type": "list",
+                  "title": "제한 사항:",
+                  "items": [
+                    "최대 파일 크기: 25MB",
+                    "모든 파일 형식을 지원"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "첨부 파일 검사: 모든 파일은 Bitdefender로 검사하며 악성 코드가 발견되면 메시지는 Malware 폴더로 이동하고 첨부 파일은 차단됩니다."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "저장소: 첨부 파일은 메시지 단위로 서버에 저장되며 감염된 파일은 격리됩니다."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "access-control",
+          "title": "접근 제어",
+          "label": "접근 제어",
+          "description": "사용자 역할과 접근 보호.",
+          "sections": [
+            {
+              "id": "user-roles",
+              "title": "사용자 역할",
+              "body": [
+                {
+                  "type": "list",
+                  "title": "관리자(Admin)",
+                  "items": [
+                    "CMC 관리자 패널 전체 접근",
+                    "도메인 및 DNS 관리",
+                    "사용자 생성 및 관리",
+                    "도메인의 모든 메일 열람",
+                    "대량 메일 작업 수행"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "title": "부관리자(Subordinate)",
+                  "items": [
+                    "제한된 CMC 접근",
+                    "사용자 목록 열람",
+                    "자신의 메일만 접근"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "title": "사용자(User)",
+                  "items": [
+                    "웹메일 클라이언트 접근",
+                    "자신의 메일 처리",
+                    "개인 설정 구성"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "role-assignment",
+              "title": "역할 부여",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "자동 관리자: OAuth로 최초 로그인한 사용자는 자동으로 관리자(Admin)가 됩니다."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "부관리자 생성: 관리자는 CMC의 \"User Management\"에서 부관리자 계정을 추가합니다."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "일반 사용자 생성: 관리자는 \"Email Accounts\"에서 메일함을 만들면 해당 계정에 사용자(User) 역할이 부여됩니다."
+                }
+              ]
+            },
+            {
+              "id": "authentication",
+              "title": "인증",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "OAuth 2.0: Google 또는 Microsoft 로그인에 PKCE를 적용해 보안을 강화합니다.",
+                    "이메일/비밀번호: 관리자가 CMC에서 발급한 자격 증명을 사용합니다.",
+                    "JWT 토큰: 액세스 토큰은 7일 동안 유효하며 httpOnly 쿠키에 저장됩니다.",
+                    "토큰 갱신: 액세스 토큰은 리프레시 토큰으로 자동 갱신되며, 리프레시 토큰이 만료되면 다시 로그인해야 합니다."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "access-protection",
+              "title": "접근 보호",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "요청 제한: 단일 IP에서 15분 동안 최대 5회 로그인 시도.",
+                    "세션 관리: 활성 세션을 데이터베이스에 저장하고 모든 요청마다 검증합니다.",
+                    "감사 로그: 중요한 관리자 및 사용자 작업을 기록합니다."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "quotas-limits",
+          "title": "할당량 및 제한",
+          "label": "할당량 및 제한",
+          "description": "저장 공간, 발송량, 사용자 한도를 안내합니다.",
+          "sections": [
+            {
+              "id": "storage-quota",
+              "title": "저장 용량",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "각 사용자에게 메일함 할당량이 부여됩니다. 사용량이 100%가 되면 메일을 보내거나 받을 수 없습니다."
+                }
+              ]
+            },
+            {
+              "id": "sending-limits",
+              "title": "발송 한도",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Business Basic: 사용자당 하루 500건",
+                    "Business Standard: 하루 1000건",
+                    "Business Premium: 하루 2000건",
+                    "Enterprise: 하루 10000건"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "user-limit",
+              "title": "사용자 한도",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Business 요금제: 최대 300명",
+                    "Enterprise 요금제: 무제한 사용자"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   }
 }

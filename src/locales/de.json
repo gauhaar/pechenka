@@ -15,6 +15,9 @@
       "mail": "Mail",
       "affiliate": "Partnerprogramm",
       "instructions": "Anleitungen",
+      "instructionsAiSoc": "AI-SOC",
+      "instructionsSupreme": "Supreme",
+      "instructionsSithub": "Sithub",
       "product": "AI-SOC",
       "secureDevelopment": "SLNC-env",
       "developerServices": "Entwicklerdienste",
@@ -22,13 +25,16 @@
       "systems": "Systeme",
       "systemsAiSoc": "AI-SOC",
       "systemsSlncEnv": "SLNC-env",
+      "systemsSithub": "Sithub",
+      "systemsSupreme": "Supreme",
       "services": "Services"
     },
     "login": "Anmelden",
     "cta": {
       "contact": "Kontakt",
       "download": "Download",
-      "requestDemo": "Demo anfragen"
+      "requestDemo": "Demo anfragen",
+      "get": "Jetzt erhalten"
     }
   },
   "affiliate": {
@@ -935,6 +941,959 @@
       "title": "Empfohlene Artikel",
       "subtitle": "Silence AI ist eines der wenigen privaten Unternehmen mit Geheimdienst-Niveau.",
       "viewAll": "Alle Artikel ansehen"
+    }
+  },
+  "documentation": {
+    "tabs": {
+      "web": "Web-Sicherheit",
+      "email": "E-Mail-Sicherheit"
+    },
+    "system": {
+      "sections": "Abschnitte",
+      "topics": "Themen",
+      "tableOfContents": "Inhaltsverzeichnis",
+      "close": "Schließen"
+    },
+    "webSecurity": {
+      "placeholder": {
+        "badge": "Web-Sicherheit",
+        "title": "Dokumentation kommt bald",
+        "description": "Detaillierte Anleitung in Vorbereitung."
+      }
+    },
+    "emailSecurity": {
+      "title": "E-Mail-Sicherheitssystem",
+      "subtitle": "Dokumentation | Version 1.0",
+      "description": "Wie Sie die unternehmensweite E-Mail-Sicherheitsplattform konfigurieren und betreiben.",
+      "chapters": [
+        {
+          "id": "getting-started",
+          "title": "Erste Schritte",
+          "label": "Erste Schritte",
+          "description": "Erste Onboarding-Schritte sowie Domain- und DNS-Konfiguration im CMC Admin-Panel.",
+          "sections": [
+            {
+              "id": "admin-setup",
+              "title": "Für Administratoren",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "So nehmen Sie das System in Betrieb:"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Melden Sie sich im CMC Admin-Panel unter admin.silenceai.net mit Google- oder Microsoft-OAuth an.",
+                    "Registrieren Sie Ihre Unternehmensdomain.",
+                    "Bestätigen Sie die Domaininhaberschaft über DNS.",
+                    "Konfigurieren Sie die Sicherheits-DNS-Einträge (SPF, DKIM, DMARC).",
+                    "Legen Sie E-Mail-Konten für Mitarbeitende an."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Nach der Konfiguration können Benutzer auf den Webmail-Client zugreifen und geschützte Nachrichten senden."
+                }
+              ]
+            },
+            {
+              "id": "user-onboarding",
+              "title": "Für Endbenutzer",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "So beginnen Endbenutzer mit der Arbeit im Postfach:"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Erhalten Sie Ihre Zugangsdaten vom Administrator.",
+                    "Melden Sie sich unter mail.silenceai.net mit E-Mail/Passwort oder per OAuth an.",
+                    "Senden Sie Ihre erste Nachricht über die Schaltfläche \"Verfassen\".",
+                    "Prüfen Sie die Systemordner, die Nachrichten automatisch nach Sicherheitsstufe kategorisieren."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Eingehende E-Mails werden automatisch auf Bedrohungen geprüft und in die entsprechenden Ordner verschoben."
+                }
+              ]
+            },
+            {
+              "id": "add-domain",
+              "title": "Domäne hinzufügen",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Die Domainverwaltung beginnt im CMC Admin-Panel."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Öffnen Sie das CMC Admin-Panel.",
+                    "Klicken Sie auf \"Domain hinzufügen\".",
+                    "Geben Sie den Domainnamen ohne www ein (z. B. company.com).",
+                    "Klicken Sie auf \"Hinzufügen\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Das System erstellt ein Verifizierungs-Token, um die Domaininhaberschaft zu bestätigen."
+                }
+              ]
+            },
+            {
+              "id": "verify-domain",
+              "title": "Domäneninhaberschaft verifizieren",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Nachdem Sie eine Domain hinzugefügt haben, müssen Sie deren Inhaberschaft nachweisen."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Kopieren Sie den TXT-Eintrag aus dem CMC:"
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "_cmc-verification.company.com TXT \"cmc-verify-abc123xyz\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Fügen Sie den Eintrag in die DNS-Einstellungen Ihrer Domain ein.",
+                    "Warten Sie auf die automatische Prüfung (alle 5 Minuten) oder klicken Sie auf \"Jetzt prüfen\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Die Verifizierung kann bis zu 48 Stunden dauern. Danach wird der Domainstatus als verifiziert angezeigt."
+                }
+              ]
+            },
+            {
+              "id": "configure-spf",
+              "title": "SPF-Eintrag konfigurieren",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "SPF legt fest, welche Server E-Mails im Namen Ihrer Domain versenden dürfen."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Öffnen Sie im CMC \"DNS-Konfiguration\" → \"SPF\".",
+                    "Klicken Sie auf \"Aktuellen SPF prüfen\", um vorhandene Einträge zu prüfen.",
+                    "Klicken Sie auf \"SPF-Eintrag generieren\".",
+                    "Kopieren Sie den vorgeschlagenen Eintrag:"
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "company.com TXT \"v=spf1 include:_spf.silenceai.net -all\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Fügen Sie den Eintrag in DNS ein."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Falls bereits ein SPF-Eintrag existiert (z. B. für Gmail), fügen Sie unseren include-Mechanismus vor dem abschließenden -all-Qualifier ein."
+                }
+              ]
+            },
+            {
+              "id": "configure-dkim",
+              "title": "DKIM-Schlüssel erzeugen",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DKIM fügt Ihren E-Mails eine kryptografische Signatur hinzu."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Öffnen Sie im CMC \"DNS-Konfiguration\" → \"DKIM\".",
+                    "Klicken Sie auf \"DKIM-Schlüssel erzeugen\".",
+                    "Das System erzeugt ein Schlüsselpaar (der private Schlüssel bleibt auf dem Server, der öffentliche Schlüssel wird in DNS veröffentlicht).",
+                    "Kopieren Sie den DNS-Eintrag:"
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "silenceai._domainkey.company.com TXT \"v=DKIM1; k=rsa; p=MIIBIjAN...\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Fügen Sie den Eintrag in DNS ein.",
+                    "Führen Sie \"DKIM verifizieren\" aus, um die Einrichtung zu bestätigen."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "configure-dmarc",
+              "title": "DMARC-Richtlinie einrichten",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DMARC legt fest, wie mit Nachrichten verfahren wird, die SPF- oder DKIM-Prüfungen nicht bestehen."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Öffnen Sie im CMC \"DNS-Konfiguration\" → \"DMARC\".",
+                    "Wählen Sie eine Richtlinie:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "quarantine — in den Spam-Ordner verschieben (empfohlen)",
+                    "reject — Nachricht ablehnen"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Klicken Sie auf \"DMARC-Eintrag generieren\".",
+                    "Kopieren Sie den Eintrag:"
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "_dmarc.company.com TXT \"v=DMARC1; p=quarantine; rua=mailto:dmarc-reports@silenceai.net\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Fügen Sie den Eintrag in DNS ein."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Beginnen Sie mit quarantine, beobachten Sie die Berichte 1–2 Wochen lang und wechseln Sie anschließend bei Bedarf zu reject."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "user-management",
+          "title": "Benutzerverwaltung",
+          "label": "Benutzerverwaltung",
+          "description": "Erstellen und Verwalten von E-Mail-Konten.",
+          "sections": [
+            {
+              "id": "create-account",
+              "title": "E-Mail-Konto erstellen",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Öffnen Sie im CMC den Bereich \"E-Mail-Konten\".",
+                    "Klicken Sie auf \"Konto erstellen\".",
+                    "Füllen Sie die Felder aus:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "E-Mail: john.doe@company.com",
+                    "Vor- und Nachname",
+                    "Passwort (mindestens 8 Zeichen, Groß-/Kleinbuchstaben, Ziffer und Sonderzeichen)",
+                    "Speicherkontingent: wählen Sie eine Postfachgröße"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Klicken Sie auf \"Erstellen\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Der Benutzer kann sich sofort im Webmail-Client anmelden."
+                }
+              ]
+            },
+            {
+              "id": "suspend-activate",
+              "title": "Konto sperren oder reaktivieren",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Suchen Sie den Benutzer unter \"E-Mail-Konten\".",
+                    "Wählen Sie im Aktionsmenü:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Suspend — Zugriff pausieren (der Benutzer kann sich nicht anmelden)",
+                    "Activate — Zugriff wiederherstellen"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Bestätigen Sie die Aktion."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "change-quota",
+              "title": "Speicherkontingent ändern",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Suchen Sie den Benutzer in der Liste.",
+                    "Wählen Sie im Aktionsmenü \"Kontingent bearbeiten\".",
+                    "Wählen Sie eine neue Speicherkapazität.",
+                    "Speichern Sie die Änderungen."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Die Änderungen werden sofort wirksam."
+                }
+              ]
+            },
+            {
+              "id": "delete-account",
+              "title": "Konto löschen",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Suchen Sie den Benutzer in der Liste.",
+                    "Wählen Sie im Aktionsmenü \"Löschen\".",
+                    "Bestätigen Sie das Löschen."
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "intent": "warning",
+                  "content": "Warnung: Alle Benutzerdaten werden dauerhaft gelöscht."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mail-operations",
+          "title": "E-Mail-Vorgänge",
+          "label": "E-Mail-Vorgänge",
+          "description": "Alltägliche Aktionen im Webmail-Client.",
+          "sections": [
+            {
+              "id": "send-letter",
+              "title": "Nachricht senden",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Klicken Sie im Webmail-Client auf \"Verfassen\".",
+                    "Füllen Sie aus:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "An: Empfängeradresse",
+                    "Betreff: E-Mail-Betreff",
+                    "Text: Nachrichtentext (Rich-Text-Formatierung verfügbar)"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Fügen Sie bei Bedarf Anhänge hinzu (bis zu 25 MB pro Datei).",
+                    "Klicken Sie auf \"Senden\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Nachrichten werden automatisch mit DKIM signiert und zugestellt."
+                }
+              ]
+            },
+            {
+              "id": "custom-folder",
+              "title": "Benutzerdefinierten Ordner mit Regeln erstellen",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Benutzerdefinierte Ordner sortieren Nachrichten automatisch nach von Ihnen definierten Regeln."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Klicken Sie in der Seitenleiste auf \"Ordner erstellen\".",
+                    "Geben Sie einen Ordnernamen ein (z. B. \"Kunden\").",
+                    "Klicken Sie auf \"Regeln hinzufügen\".",
+                    "Konfigurieren Sie die Regel:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Filter: Absenderdomain",
+                    "Übereinstimmungsmodus: Enthält",
+                    "Wert: client.com"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Aktivieren Sie \"Auf bestehende E-Mails anwenden\", wenn vorhandene Nachrichten erneut verarbeitet werden sollen.",
+                    "Klicken Sie auf \"Erstellen\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Alle neuen Nachrichten von *@client.com werden automatisch in den Ordner \"Kunden\" verschoben."
+                }
+              ]
+            },
+            {
+              "id": "add-whitelist",
+              "title": "Absender zur Positivliste hinzufügen",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Wenn eine Nachricht fälschlicherweise als Spam markiert wurde:"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Öffnen Sie die E-Mail im Ordner SPAM.",
+                    "Klicken Sie auf \"Kein Spam\" → \"Zur Positivliste hinzufügen\".",
+                    "Wählen Sie aus:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Absender-E-Mail auf die Positivliste setzen",
+                    "Absenderdomain auf die Positivliste setzen"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Bestätigen Sie die Aktion."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Zukünftige Nachrichten dieses Absenders werden nicht mehr in den Spam-Ordner verschoben."
+                }
+              ]
+            },
+            {
+              "id": "email-signature",
+              "title": "E-Mail-Signatur einrichten",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Öffnen Sie Einstellungen → \"E-Mail-Signatur\".",
+                    "Aktivieren Sie \"Signatur aktivieren\".",
+                    "Geben Sie den Signaturtext im Editor ein.",
+                    "Klicken Sie auf \"Speichern\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Die Signatur wird automatisch an jede ausgehende Nachricht angehängt."
+                }
+              ]
+            },
+            {
+              "id": "vacation-responder",
+              "title": "Automatische Antwort konfigurieren",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Öffnen Sie Einstellungen → \"Abwesenheitsnotiz\".",
+                    "Aktivieren Sie \"Abwesenheitsnotiz aktivieren\".",
+                    "Legen Sie Start- und Enddatum fest.",
+                    "Geben Sie den Antworttext ein.",
+                    "Aktivieren Sie \"Einmal pro Absender antworten\", um jedem Absender nur eine Antwort zu senden.",
+                    "Klicken Sie auf \"Speichern\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Der Autoresponder ist während des gewählten Zeitraums aktiv und wird anschließend automatisch deaktiviert."
+                }
+              ]
+            },
+            {
+              "id": "forwarding",
+              "title": "Weiterleitung konfigurieren",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Öffnen Sie Einstellungen → \"E-Mail-Weiterleitung\".",
+                    "Klicken Sie auf \"Weiterleitungsadresse hinzufügen\".",
+                    "Geben Sie die Weiterleitungsadresse ein.",
+                    "Aktivieren Sie \"Kopie im Posteingang behalten\", wenn eine Kopie im Postfach bleiben soll.",
+                    "Klicken Sie auf \"Speichern\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Alle eingehenden E-Mails werden an die ausgewählte Adresse weitergeleitet."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "domain-administration",
+          "title": "Domänenverwaltung",
+          "label": "Domänenverwaltung",
+          "description": "Analysen und Massenaktionen für E-Mails der Domäne.",
+          "sections": [
+            {
+              "id": "view-activity",
+              "title": "E-Mail-Aktivität der Domäne überprüfen",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Administratoren können jede Nachricht für jeden Benutzer der Domäne einsehen."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Öffnen Sie im CMC \"E-Mail-Aktivität\".",
+                    "Verwenden Sie die Filter:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Nach Benutzer",
+                    "Nach Ordner (Secure, Spam, Phishing)",
+                    "Nach Datum",
+                    "Nach Bedrohungstyp"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Verwenden Sie die Suchleiste, um nach Betreff oder Absender zu suchen."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bulk-delete",
+              "title": "Nachrichten für alle Benutzer löschen",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Wenn eine bösartige Nachricht an alle versendet wurde:"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Öffnen Sie \"E-Mail-Aktivität\".",
+                    "Suchen Sie die Nachricht über Filter oder Suche.",
+                    "Wählen Sie die zu löschenden Nachrichten aus.",
+                    "Klicken Sie auf \"Ausgewählte löschen\".",
+                    "Bestätigen Sie das Löschen für alle ausgewählten Nachrichten."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Die Nachricht wird aus allen Benutzerpostfächern entfernt."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "concepts",
+          "title": "Konzepte",
+          "label": "Konzepte",
+          "description": "Wichtige Plattformkonzepte und Sicherheitsabläufe.",
+          "sections": [
+            {
+              "id": "system-overview",
+              "title": "Systemübersicht",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Das Email Security System ist eine Plattform, die Unternehmens-E-Mails vor Cyberbedrohungen schützt."
+                },
+                {
+                  "type": "list",
+                  "title": "Komponenten:",
+                  "items": [
+                    "CMC Admin-Panel — Administratorkonsole für Domains, Benutzer und DNS-Einstellungen.",
+                    "Webmail-Client — Postfach für Mitarbeitende mit automatischem Bedrohungsschutz.",
+                    "Infrastrukturdienste — SMTP-Server und Sicherheitspipeline für die Nachrichtenverarbeitung."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "security-stack",
+              "title": "Sicherheitspipeline",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Jede eingehende Nachricht durchläuft sechs Schutzebenen:"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Ebene 0: Phishing-Domain-Prüfung — bewertet Absenderdomains anhand bekannter Phishing-Datenbanken.",
+                    "Ebene 1: Spoof-Erkennung — prüft SPF-, DKIM- und DMARC-Übereinstimmung.",
+                    "Ebene 2: Spam-Erkennung — analysiert Inhalte mit RSPAMD auf Spam-Merkmale.",
+                    "Ebene 3: Link-Scanner — prüft URLs mit URLScan.io auf bösartige Links.",
+                    "Ebene 4: Antivirus — untersucht Anhänge mit Bitdefender.",
+                    "Ebene 5: KI-Phishing-Erkennung — analysiert Nachrichteninhalte mit KI auf Phishing-Signale."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Wird eine Bedrohung erkannt, wird die Verarbeitung gestoppt und die Nachricht in den entsprechenden Ordner verschoben."
+                }
+              ]
+            },
+            {
+              "id": "system-folders",
+              "title": "Systemordner",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Nachrichten werden je nach Prüfergebnis in Ordner verteilt:"
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Ungefiltert — neue E-Mails vor der Verarbeitung (temporär).",
+                    "Secure — Nachrichten, die alle Prüfungen bestanden haben.",
+                    "Possibly Spoofed — Absenderauthentizität ist verdächtig.",
+                    "SPAM — Spam-Nachrichten.",
+                    "Dangerous Links — Nachrichten mit bösartigen URLs.",
+                    "Malware — Nachrichten mit infizierten Anhängen.",
+                    "Possibly Phishing — Phishing-Indikatoren erkannt.",
+                    "Sent — gesendete Nachrichten."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Eine Nachricht kann in mehreren Ordnern erscheinen (z. B. SPAM und Possibly Spoofed)."
+                }
+              ]
+            },
+            {
+              "id": "custom-folders",
+              "title": "Benutzerdefinierte Ordner",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Benutzer können benutzerdefinierte Ordner mit automatischen Filterregeln erstellen."
+                },
+                {
+                  "type": "list",
+                  "title": "Filterregeln:",
+                  "items": [
+                    "Nach Absenderdomain",
+                    "Nach Absender-E-Mail",
+                    "Nach Betreff",
+                    "Nach Absendername"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "title": "Übereinstimmungsmodi:",
+                  "items": [
+                    "Enthält",
+                    "Gleich",
+                    "Beginnt mit",
+                    "Endet mit"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Regeln können auch auf vorhandene E-Mails angewendet werden (rückwirkende Filterung)."
+                }
+              ]
+            },
+            {
+              "id": "spf",
+              "title": "SPF (Sender Policy Framework)",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "SPF ist ein DNS-Eintrag, der festlegt, welche Server E-Mails für die Domain versenden dürfen."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Format:"
+                },
+                {
+                  "type": "code",
+                  "content": "v=spf1 include:_spf.silenceai.net -all"
+                },
+                {
+                  "type": "list",
+                  "title": "Mechanismen:",
+                  "items": [
+                    "include:domain — erlaubt Server der referenzierten Domain",
+                    "ip4:x.x.x.x — erlaubt eine bestimmte IP-Adresse",
+                    "-all — lehnt alles andere ab",
+                    "~all — markiert alles andere als verdächtig"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "SPF-Prüfung: Der Empfänger überprüft, ob die Absender-IP im SPF-Eintrag der Domain autorisiert ist. Schlägt die Prüfung fehl, wird die Nachricht als verdächtig markiert."
+                }
+              ]
+            },
+            {
+              "id": "dkim",
+              "title": "DKIM (DomainKeys Identified Mail)",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DKIM fügt eine kryptografische Signatur hinzu, um zu bestätigen, dass die Nachricht vom Domaininhaber versendet wurde und auf dem Transportweg nicht verändert wurde."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Funktionsweise:"
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Beim Versand signiert der Server die Nachricht mit einem privaten Schlüssel und fügt den Header DKIM-Signature hinzu.",
+                    "Der Empfänger ruft den öffentlichen Schlüssel aus DNS ab und überprüft die Signatur."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "DNS-Eintrag:"
+                },
+                {
+                  "type": "code",
+                  "content": "selector._domainkey.domain.com TXT \"v=DKIM1; k=rsa; p=public_key\""
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Der private Schlüssel wird verschlüsselt auf dem Server gespeichert und niemals an Clients weitergegeben."
+                }
+              ]
+            },
+            {
+              "id": "dmarc",
+              "title": "DMARC (Domain-based Message Authentication)",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DMARC definiert die Richtlinie für Nachrichten, die SPF oder DKIM nicht bestehen."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Format:"
+                },
+                {
+                  "type": "code",
+                  "content": "_dmarc.domain.com TXT \"v=DMARC1; p=quarantine; rua=mailto:reports@domain.com\""
+                },
+                {
+                  "type": "list",
+                  "title": "Parameter:",
+                  "items": [
+                    "p=quarantine — an Spam ausliefern",
+                    "p=reject — Nachricht ablehnen",
+                    "p=none — nur protokollieren",
+                    "rua= — Adresse für aggregierte Berichte"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "DMARC-Prüfung: Der Empfänger prüft, ob die Nachricht SPF oder DKIM mit übereinstimmenden Domains besteht. Andernfalls wird die konfigurierte Richtlinie angewendet."
+                }
+              ]
+            },
+            {
+              "id": "attachments",
+              "title": "Anhänge und Antivirus",
+              "body": [
+                {
+                  "type": "list",
+                  "title": "Einschränkungen:",
+                  "items": [
+                    "Maximale Dateigröße: 25 MB",
+                    "Alle Dateitypen werden unterstützt"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Anhangsprüfung: Jede Datei wird von Bitdefender gescannt. Wird Malware erkannt, wird die Nachricht in den Ordner Malware verschoben und der Anhang blockiert."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Speicherung: Anhänge werden pro Nachricht auf dem Server gespeichert. Infizierte Dateien werden in die Quarantäne verschoben."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "access-control",
+          "title": "Zugriffskontrolle",
+          "label": "Zugriffskontrolle",
+          "description": "Benutzerrollen und Zugriffsschutz.",
+          "sections": [
+            {
+              "id": "user-roles",
+              "title": "Benutzerrollen",
+              "body": [
+                {
+                  "type": "list",
+                  "title": "Admin",
+                  "items": [
+                    "Vollzugriff auf das CMC Admin-Panel",
+                    "Verwaltung von Domains und DNS",
+                    "Benutzer anlegen und verwalten",
+                    "Alle E-Mails der Domäne einsehen",
+                    "Massenaktionen für E-Mails ausführen"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "title": "Subordinate",
+                  "items": [
+                    "Eingeschränkter Zugriff auf das CMC",
+                    "Benutzerliste einsehen",
+                    "Nur auf eigene E-Mails zugreifen"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "title": "User",
+                  "items": [
+                    "Zugriff auf den Webmail-Client",
+                    "Arbeit mit den eigenen E-Mails",
+                    "Persönliche Einstellungen konfigurieren"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "role-assignment",
+              "title": "Rollenzuweisung",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Auto-Admin: Der erste Benutzer, der sich per OAuth anmeldet, wird automatisch Administrator."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Subordinate-Benutzer anlegen: Administratoren fügen unter \"Benutzerverwaltung\" im CMC untergeordnete Konten hinzu."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "User-Konten anlegen: Administratoren erstellen Postfächer unter \"E-Mail-Konten\"; diese Konten erhalten die Rolle User."
+                }
+              ]
+            },
+            {
+              "id": "authentication",
+              "title": "Authentifizierung",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "OAuth 2.0: Anmeldung mit Google oder Microsoft unter Verwendung von PKCE für zusätzliche Sicherheit.",
+                    "E-Mail/Passwort: Zugangsdaten, die vom Administrator im CMC vergeben werden.",
+                    "JWT-Tokens: Zugriffstokens sind 7 Tage gültig und werden in httpOnly-Cookies gespeichert.",
+                    "Token-Refresh: Zugriffstokens werden automatisch über Refresh-Tokens erneuert; nach Ablauf des Refresh-Tokens ist eine erneute Anmeldung erforderlich."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "access-protection",
+              "title": "Zugangsschutz",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Rate-Limiting: maximal 5 Anmeldeversuche pro 15 Minuten von einer IP-Adresse.",
+                    "Sitzungsverwaltung: aktive Sitzungen werden in der Datenbank gespeichert und bei jeder Anfrage validiert.",
+                    "Audit-Logging: kritische Administrator- und Benutzeraktionen werden protokolliert."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "quotas-limits",
+          "title": "Kontingente und Limits",
+          "label": "Kontingente und Limits",
+          "description": "Speicher-, Sende- und Benutzerkontingente.",
+          "sections": [
+            {
+              "id": "storage-quota",
+              "title": "Speicherkontingent",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Jeder Benutzer erhält ein Postfachkontingent. Bei 100 % Auslastung kann der Benutzer keine E-Mails mehr senden oder empfangen."
+                }
+              ]
+            },
+            {
+              "id": "sending-limits",
+              "title": "Sendegrenzen",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Business Basic: 500 Nachrichten pro Benutzer und Tag",
+                    "Business Standard: 1000 Nachrichten pro Tag",
+                    "Business Premium: 2000 Nachrichten pro Tag",
+                    "Enterprise: 10000 Nachrichten pro Tag"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "user-limit",
+              "title": "Benutzerlimit",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Business-Tarife: bis zu 300 Benutzer",
+                    "Enterprise-Tarife: unbegrenzte Benutzer"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   }
 }

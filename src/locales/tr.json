@@ -120,18 +120,18 @@
     "termsAff": {
       "label": "Ortaklık Programı",
       "title": "Ortaklık Hizmet Şartları",
-        "gitServer": {
-          "title": "Git depo sunucusu",
-          "tag": "Kendi barındırılan sürüm kontrolü"
-        },
-        "analyzer": {
-          "title": "Güvenlik analizörü",
-          "tag": "Yerel kod tarama motoru"
-        },
-        "vulnDb": {
-          "title": "Zafiyet veritabanı",
-          "tag": "İndirilen güvenlik yamaları"
-        },
+      "gitServer": {
+        "title": "Git depo sunucusu",
+        "tag": "Kendi barındırılan sürüm kontrolü"
+      },
+      "analyzer": {
+        "title": "Güvenlik analizörü",
+        "tag": "Yerel kod tarama motoru"
+      },
+      "vulnDb": {
+        "title": "Zafiyet veritabanı",
+        "tag": "İndirilen güvenlik yamaları"
+      },
       "notice": "Bu politika yalnızca İngilizce mevcuttur",
       "intro": "Bu şartlar, Silence AI ortaklık programına katılan iş ortaklarına ödüllerin nasıl verildiğini ve ödendiğini açıklar.",
       "meta": {
@@ -936,6 +936,959 @@
       "title": "Öne çıkan yazılar",
       "subtitle": "Silence AI, devlet düzeyi istihbarata sahip az sayıdaki özel şirketten biridir.",
       "viewAll": "Tüm yazıları gör"
+    }
+  },
+  "documentation": {
+    "tabs": {
+      "web": "Web Security",
+      "email": "Email Security"
+    },
+    "system": {
+      "sections": "Sections",
+      "topics": "Topics",
+      "tableOfContents": "Table of contents",
+      "close": "Close"
+    },
+    "webSecurity": {
+      "placeholder": {
+        "badge": "Web Security",
+        "title": "Documentation is coming soon",
+        "description": "We are preparing a detailed guide for configuring and protecting web applications. Check back soon — the materials will appear shortly."
+      }
+    },
+    "emailSecurity": {
+      "title": "E-posta Güvenlik Sistemi",
+      "subtitle": "Dokümantasyon | Sürüm 1.0",
+      "description": "Kurumsal e-posta güvenlik platformunu nasıl yapılandırıp işleteceğinizi anlatır.",
+      "chapters": [
+        {
+          "id": "getting-started",
+          "title": "Başlarken",
+          "label": "Başlarken",
+          "description": "CMC Yönetici Paneli'nde ilk onboarding adımları ile etki alanı ve DNS yapılandırması.",
+          "sections": [
+            {
+              "id": "admin-setup",
+              "title": "Yöneticiler için",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Sistemi devreye almak için:"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Google veya Microsoft OAuth kullanarak admin.silenceai.net adresindeki CMC Yönetici Paneli'ne giriş yapın.",
+                    "Şirket etki alanınızı kaydedin.",
+                    "DNS üzerinden etki alanı sahipliğini doğrulayın.",
+                    "Güvenlik kayıtlarını yapılandırın (SPF, DKIM, DMARC).",
+                    "Çalışanlar için e-posta hesapları oluşturun."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Yapılandırma tamamlandıktan sonra kullanıcılar webmail istemcisine erişebilir ve korumalı mesajlar gönderebilir."
+                }
+              ]
+            },
+            {
+              "id": "user-onboarding",
+              "title": "Son kullanıcılar için",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "E-postayla çalışmaya başlamak için:"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Yönetici tarafından verilen kimlik bilgilerinizi alın.",
+                    "mail.silenceai.net adresine e-posta/şifre veya OAuth ile giriş yapın.",
+                    "\"Oluştur\" düğmesiyle ilk mesajınızı gönderin.",
+                    "Mesajları güvenlik seviyesine göre otomatik sınıflandıran sistem klasörlerini inceleyin."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Gelen e-postalar otomatik olarak tehditlere karşı taranır ve ilgili klasörlere yönlendirilir."
+                }
+              ]
+            },
+            {
+              "id": "add-domain",
+              "title": "Etki alanı ekleyin",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Etki alanı yönetimi CMC Yönetici Paneli'nde başlar."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "CMC Yönetici Paneli'ni açın.",
+                    "\"Etki Alanı Ekle\"ye tıklayın.",
+                    "Etki alanı adını www olmadan girin (örneğin, company.com).",
+                    "\"Ekle\"ye tıklayın."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Sistem, etki alanı sahipliğini doğrulamak için bir doğrulama belirteci üretir."
+                }
+              ]
+            },
+            {
+              "id": "verify-domain",
+              "title": "Etki alanı sahipliğini doğrulayın",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Etki alanını ekledikten sonra sahip olduğunuzu kanıtlayın."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "CMC'den TXT kaydını kopyalayın:"
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "_cmc-verification.company.com TXT \"cmc-verify-abc123xyz\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Kaydı etki alanınızın DNS ayarlarına ekleyin.",
+                    "Otomatik kontrolün (5 dakikada bir) tamamlanmasını bekleyin veya \"Şimdi Kontrol Et\"e tıklayın."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Doğrulama 48 saate kadar sürebilir. Başarılı olduğunda etki alanı durumu doğrulandı olarak görünür."
+                }
+              ]
+            },
+            {
+              "id": "configure-spf",
+              "title": "SPF kaydını yapılandırın",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "SPF, etki alanınız adına e-posta göndermesine izin verilen sunucuları tanımlar."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "CMC'de \"DNS Yapılandırması\" → \"SPF\" bölümünü açın.",
+                    "Mevcut kayıtları görmek için \"Geçerli SPF'yi Kontrol Et\"e tıklayın.",
+                    "\"SPF Kaydı Oluştur\"a tıklayın.",
+                    "Önerilen kaydı kopyalayın:"
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "company.com TXT \"v=spf1 include:_spf.silenceai.net -all\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Kaydı DNS'e ekleyin."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Zaten bir SPF kaydınız varsa (örneğin Gmail için), final -all ifadesinden önce bizim include değerimizi ekleyin."
+                }
+              ]
+            },
+            {
+              "id": "configure-dkim",
+              "title": "DKIM anahtarları oluşturun",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DKIM, e-postalarınıza kriptografik bir imza ekler."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "CMC'de \"DNS Yapılandırması\" → \"DKIM\" bölümünü açın.",
+                    "\"DKIM Anahtarları Oluştur\"a tıklayın.",
+                    "Sistem bir anahtar çifti oluşturur (özel anahtar sunucuda kalır, açık anahtar DNS içindir).",
+                    "DNS kaydını kopyalayın:"
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "silenceai._domainkey.company.com TXT \"v=DKIM1; k=rsa; p=MIIBIjAN...\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Kaydı DNS'e ekleyin.",
+                    "Doğrulamak için \"DKIM'i Doğrula\"yı çalıştırın."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "configure-dmarc",
+              "title": "DMARC politikasını ayarlayın",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DMARC, SPF veya DKIM kontrollerinde başarısız olan iletiler için yapılacak işlemi belirler."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "CMC'de \"DNS Yapılandırması\" → \"DMARC\" bölümünü açın.",
+                    "Bir politika seçin:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "quarantine — spam klasörüne taşı (önerilir)",
+                    "reject — mesajı reddet"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "\"DMARC Kaydı Oluştur\"a tıklayın.",
+                    "Kaydı kopyalayın:"
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "_dmarc.company.com TXT \"v=DMARC1; p=quarantine; rua=mailto:dmarc-reports@silenceai.net\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Kaydı DNS'e ekleyin."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Önce quarantine ile başlayın, raporları 1-2 hafta izleyin, isterseniz ardından reject politikasına geçin."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "user-management",
+          "title": "Kullanıcı yönetimi",
+          "label": "Kullanıcı yönetimi",
+          "description": "E-posta hesaplarını oluşturma ve yönetme.",
+          "sections": [
+            {
+              "id": "create-account",
+              "title": "E-posta hesabı oluşturun",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "CMC'de \"E-posta Hesapları\" bölümünü açın.",
+                    "\"Hesap Oluştur\"a tıklayın.",
+                    "Alanları doldurun:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "E-posta: john.doe@company.com",
+                    "Ad ve soyad",
+                    "Parola (en az 8 karakter, büyük harf, küçük harf, rakam ve özel karakter)",
+                    "Depolama kotası: bir posta kutusu boyutu seçin"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "\"Oluştur\"a tıklayın."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Kullanıcı hemen webmail'e giriş yapabilir."
+                }
+              ]
+            },
+            {
+              "id": "suspend-activate",
+              "title": "Hesabı askıya alın veya yeniden etkinleştirin",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "\"E-posta Hesapları\" içinde kullanıcıyı bulun.",
+                    "Eylemler menüsünden şunlardan birini seçin:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Suspend — erişimi duraklatır (kullanıcı giriş yapamaz)",
+                    "Activate — erişimi geri yükler"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "İşlemi onaylayın."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "change-quota",
+              "title": "Depolama kotasını değiştirin",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Listede kullanıcıyı bulun.",
+                    "Eylemler menüsünden \"Kotayı Düzenle\"yi seçin.",
+                    "Yeni depolama boyutunu seçin.",
+                    "Değişiklikleri kaydedin."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Değişiklikler anında uygulanır."
+                }
+              ]
+            },
+            {
+              "id": "delete-account",
+              "title": "Hesabı silin",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Listede kullanıcıyı bulun.",
+                    "Eylemler menüsünden \"Sil\"i seçin.",
+                    "Silme işlemini onaylayın."
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "intent": "warning",
+                  "content": "Uyarı: Tüm kullanıcı verileri kalıcı olarak silinir."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mail-operations",
+          "title": "E-posta işlemleri",
+          "label": "E-posta işlemleri",
+          "description": "Webmail istemcisindeki günlük işlemler.",
+          "sections": [
+            {
+              "id": "send-letter",
+              "title": "Mesaj gönderin",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Webmail'de \"Oluştur\"a tıklayın.",
+                    "Şunları doldurun:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Kime: alıcının adresi",
+                    "Konu: e-posta konusu",
+                    "Gövde: mesaj metni (zengin biçimlendirme kullanılabilir)"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Gerekirse dosya ekleyin (dosya başına en fazla 25 MB).",
+                    "\"Gönder\"e tıklayın."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Mesajlar otomatik olarak DKIM ile imzalanır ve teslim edilir."
+                }
+              ]
+            },
+            {
+              "id": "custom-folder",
+              "title": "Kurallarla özel klasör oluşturun",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Özel klasörler, tanımladığınız kurallara göre mesajları otomatik sıralar."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Kenar çubuğunda \"Klasör Oluştur\"a tıklayın.",
+                    "Bir klasör adı girin (örneğin, \"Müşteriler\").",
+                    "\"Kural Ekle\"ye tıklayın.",
+                    "Kuralı yapılandırın:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Filtre: Gönderen Etki Alanı",
+                    "Eşleştirme modu: İçerir",
+                    "Değer: client.com"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Mevcut mesajları yeniden işlemek istiyorsanız \"Mevcut e-postalara uygula\"yı etkinleştirin.",
+                    "\"Oluştur\"a tıklayın."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "*@client.com'dan gelen tüm yeni e-postalar otomatik olarak \"Müşteriler\" klasörüne taşınır."
+                }
+              ]
+            },
+            {
+              "id": "add-whitelist",
+              "title": "Göndereni beyaz listeye ekleyin",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Bir mesaj yanlışlıkla spam olarak işaretlendiyse:"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "SPAM klasöründeki e-postayı açın.",
+                    "\"Spam Değil\" → \"Beyaz Listeye Ekle\"ye tıklayın.",
+                    "Şunlardan birini seçin:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Gönderen e-postasını beyaz listeye ekle",
+                    "Gönderen etki alanını beyaz listeye ekle"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "İşlemi onaylayın."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Bu gönderenin gelecekteki mesajları artık spam klasörüne gitmez."
+                }
+              ]
+            },
+            {
+              "id": "email-signature",
+              "title": "E-posta imzası ayarlayın",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Ayarlar → \"E-posta İmzası\"nı açın.",
+                    "\"İmzayı etkinleştir\"i açın.",
+                    "İmza metnini düzenleyiciye girin.",
+                    "\"Kaydet\"e tıklayın."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "İmza her giden mesaja otomatik olarak eklenir."
+                }
+              ]
+            },
+            {
+              "id": "vacation-responder",
+              "title": "Otomatik yanıt yapılandırın",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Ayarlar → \"Tatilde Otomatik Yanıt\"ı açın.",
+                    "\"Tatilde otomatik yanıtı etkinleştir\"i açın.",
+                    "Başlangıç ve bitiş tarihlerini ayarlayın.",
+                    "Otomatik yanıt metnini girin.",
+                    "Her gönderene bir kez yanıt vermek için \"Gönderene bir kez yanıtla\" seçeneğini işaretleyin.",
+                    "\"Kaydet\"e tıklayın."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Otomatik yanıtlayıcı seçilen tarihler boyunca çalışır ve süre sonunda kendiliğinden kapanır."
+                }
+              ]
+            },
+            {
+              "id": "forwarding",
+              "title": "Yönlendirmeyi yapılandırın",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Ayarlar → \"E-posta Yönlendirme\"yi açın.",
+                    "\"Yönlendirme Adresi Ekle\"ye tıklayın.",
+                    "Yönlendirilecek e-posta adresini girin.",
+                    "Bir kopya tutmak istiyorsanız \"Gelen kutusunda kopyasını sakla\"yı etkinleştirin.",
+                    "\"Kaydet\"e tıklayın."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Tüm gelen e-postalar seçilen adrese yönlendirilir."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "domain-administration",
+          "title": "Etki alanı yönetimi",
+          "label": "Etki alanı yönetimi",
+          "description": "Etki alanı için analitik ve toplu e-posta işlemleri.",
+          "sections": [
+            {
+              "id": "view-activity",
+              "title": "Etki alanı e-posta aktivitesini inceleyin",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Yöneticiler, etki alanındaki her kullanıcı için tüm mesajları görüntüleyebilir."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "CMC → \"E-posta Aktivitesi\"ni açın.",
+                    "Filtreleri kullanın:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Kullanıcıya göre",
+                    "Klasöre göre (Güvenli, Spam, Kimlik Avı)",
+                    "Tarihe göre",
+                    "Tehdit türüne göre"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Konu veya gönderen araması için arama çubuğunu kullanın."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bulk-delete",
+              "title": "Tüm kullanıcılar için mesajları silin",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Kötü amaçlı bir mesaj tüm kullanıcılara gönderildiyse:"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "\"E-posta Aktivitesi\"ni açın.",
+                    "Mesajı filtreler veya arama ile bulun.",
+                    "Silinecek mesajları seçin.",
+                    "\"Seçileni Sil\"e tıklayın.",
+                    "Toplu silmeyi onaylayın."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Mesaj, tüm kullanıcıların posta kutularından kaldırılır."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "concepts",
+          "title": "Kavramlar",
+          "label": "Kavramlar",
+          "description": "Temel platform kavramları ve güvenlik akışları.",
+          "sections": [
+            {
+              "id": "system-overview",
+              "title": "Sisteme genel bakış",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "E-posta Güvenlik Sistemi, kurumsal e-postayı siber tehditlerden koruyan bir platformdur."
+                },
+                {
+                  "type": "list",
+                  "title": "Bileşenler:",
+                  "items": [
+                    "CMC Yönetici Paneli — etki alanları, kullanıcılar ve DNS ayarları için yönetici konsolu.",
+                    "Webmail İstemcisi — otomatik tehdit korumasına sahip çalışan posta kutusu.",
+                    "Altyapı Hizmetleri — iletilerin işlenmesi için SMTP sunucusu ve güvenlik hattı."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "security-stack",
+              "title": "Güvenlik hattı",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Her gelen mesaj altı koruma katmanından geçer:"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Katman 0: Kimlik Avı Etki Alanı Kontrolü — gönderen etki alanlarını bilinen kimlik avı veri tabanlarıyla karşılaştırır.",
+                    "Katman 1: Sahtecilik Tespiti — SPF, DKIM ve DMARC hizalamasını doğrular.",
+                    "Katman 2: Spam Tespiti — içeriği spam özellikleri için RSPAMD ile analiz eder.",
+                    "Katman 3: Bağlantı Tarayıcı — URLScan.io ile URL'leri kötü amaçlı bağlantılar için tarar.",
+                    "Katman 4: Antivirüs — ekleri Bitdefender ile inceler.",
+                    "Katman 5: YZ Kimlik Avı Tespiti — mesaj içeriğini kimlik avı sinyalleri için yapay zeka ile analiz eder."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Bir tehdit tespit edilirse işlem durur ve mesaj ilgili klasöre taşınır."
+                }
+              ]
+            },
+            {
+              "id": "system-folders",
+              "title": "Sistem klasörleri",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Mesajlar denetim sonuçlarına göre klasörlere yönlendirilir:"
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Filtrelenmemiş — işleme alınmadan önceki yeni e-posta (geçici).",
+                    "Güvenli — tüm kontrolleri geçen mesajlar.",
+                    "Olası Sahte — gönderen doğruluğu şüpheli.",
+                    "SPAM — spam mesajlar.",
+                    "Tehlikeli Bağlantılar — kötü amaçlı URL içeren mesajlar.",
+                    "Malware — zararlı ek içeren mesajlar.",
+                    "Olası Kimlik Avı — kimlik avı göstergeleri tespit edildi.",
+                    "Gönderilmiş — gönderilen e-postalar."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Tek bir mesaj birden fazla klasörde görünebilir (örneğin SPAM ve Olası Sahte)."
+                }
+              ]
+            },
+            {
+              "id": "custom-folders",
+              "title": "Özel klasörler",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Kullanıcılar otomatik filtreleme kurallarıyla özel klasörler oluşturabilir."
+                },
+                {
+                  "type": "list",
+                  "title": "Filtreleme kuralları:",
+                  "items": [
+                    "Gönderen etki alanına göre",
+                    "Gönderen e-posta adresine göre",
+                    "Konuya göre",
+                    "Gönderen adına göre"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "title": "Eşleşme modları:",
+                  "items": [
+                    "İçerir",
+                    "Eşittir",
+                    "İle başlar",
+                    "İle biter"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Kurallar mevcut postaya da uygulanabilir (geriye dönük filtreleme)."
+                }
+              ]
+            },
+            {
+              "id": "spf",
+              "title": "SPF (Sender Policy Framework)",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "SPF, etki alanı adına e-posta göndermeye yetkili sunucuları tanımlayan bir DNS kaydıdır."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Format:"
+                },
+                {
+                  "type": "code",
+                  "content": "v=spf1 include:_spf.silenceai.net -all"
+                },
+                {
+                  "type": "list",
+                  "title": "Mekanizmalar:",
+                  "items": [
+                    "include:domain — belirtilen etki alanındaki sunuculara izin verir",
+                    "ip4:x.x.x.x — belirli bir IP adresine izin verir",
+                    "-all — diğer tümünü reddeder",
+                    "~all — diğer tümünü şüpheli olarak işaretler"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "SPF kontrolü: Alıcı, gönderen IP'sinin etki alanının SPF kaydında yetkilendirildiğini doğrular. Kontrol başarısız olursa mesaj şüpheli olarak işaretlenir."
+                }
+              ]
+            },
+            {
+              "id": "dkim",
+              "title": "DKIM (DomainKeys Identified Mail)",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DKIM, mesajın etki alanı sahibi tarafından gönderildiğini ve iletim sırasında değişmediğini kanıtlayan kriptografik bir imza ekler."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Nasıl çalışır:"
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Gönderim sırasında sunucu mesajı özel anahtarla imzalar ve DKIM-Signature başlığını ekler.",
+                    "Alıcı, DNS'ten açık anahtarı indirir ve imzayı doğrular."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "DNS kaydı:"
+                },
+                {
+                  "type": "code",
+                  "content": "selector._domainkey.domain.com TXT \"v=DKIM1; k=rsa; p=public_key\""
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Özel anahtar sunucuda şifrelenmiş biçimde saklanır ve istemcilerle paylaşılmaz."
+                }
+              ]
+            },
+            {
+              "id": "dmarc",
+              "title": "DMARC (Domain-based Message Authentication)",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DMARC, SPF veya DKIM'den geçemeyen iletiler için uygulanacak politikayı tanımlar."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Format:"
+                },
+                {
+                  "type": "code",
+                  "content": "_dmarc.domain.com TXT \"v=DMARC1; p=quarantine; rua=mailto:reports@domain.com\""
+                },
+                {
+                  "type": "list",
+                  "title": "Parametreler:",
+                  "items": [
+                    "p=quarantine — spam klasörüne gönder",
+                    "p=reject — mesajı reddet",
+                    "p=none — yalnızca izleme",
+                    "rua= — toplu raporların gönderileceği adres"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "DMARC kontrolü: Alıcı, mesajın hizalanmış etki alanlarıyla SPF veya DKIM'den geçtiğini doğrular. Geçmezse yapılandırılan politika uygulanır."
+                }
+              ]
+            },
+            {
+              "id": "attachments",
+              "title": "Ekler ve antivirüs",
+              "body": [
+                {
+                  "type": "list",
+                  "title": "Kısıtlamalar:",
+                  "items": [
+                    "Azami dosya boyutu: 25 MB",
+                    "Tüm dosya türleri desteklenir"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Ek taraması: Her dosya Bitdefender tarafından taranır. Kötü amaçlı yazılım tespit edilirse mesaj Malware klasörüne taşınır ve ek engellenir."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Depolama: Ekler sunucuda mesaj bazında saklanır. Enfekte dosyalar karantinaya alınır."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "access-control",
+          "title": "Erişim kontrolü",
+          "label": "Erişim kontrolü",
+          "description": "Kullanıcı rolleri ve erişim koruması.",
+          "sections": [
+            {
+              "id": "user-roles",
+              "title": "Kullanıcı rolleri",
+              "body": [
+                {
+                  "type": "list",
+                  "title": "Yönetici",
+                  "items": [
+                    "CMC Yönetici Paneli'ne tam erişim",
+                    "Etki alanı ve DNS yönetimi",
+                    "Kullanıcı oluşturma ve yönetme",
+                    "Etki alanındaki tüm e-postaları görüntüleme",
+                    "Toplu e-posta işlemleri yapma"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "title": "Alt Yönetici",
+                  "items": [
+                    "Sınırlı CMC erişimi",
+                    "Kullanıcı listesini görüntüleme",
+                    "Yalnızca kendi e-postasına erişim"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "title": "Kullanıcı",
+                  "items": [
+                    "Webmail istemcisine erişim",
+                    "Kendi e-postasıyla çalışma",
+                    "Kişisel ayarları yapılandırma"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "role-assignment",
+              "title": "Rol ataması",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Otomatik yönetici: OAuth ile giriş yapan ilk kullanıcı otomatik olarak Yönetici olur."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Alt Yönetici hesapları oluşturma: Yöneticiler CMC'de \"Kullanıcı Yönetimi\" bölümünden alt hesaplar ekler."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Kullanıcı hesapları oluşturma: Yöneticiler \"E-posta Hesapları\"nda posta kutuları oluşturur; hesaplar Kullanıcı rolünü alır."
+                }
+              ]
+            },
+            {
+              "id": "authentication",
+              "title": "Kimlik doğrulama",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "OAuth 2.0: Google veya Microsoft ile PKCE güvenliği kullanılarak giriş.",
+                    "E-posta/şifre: Yönetici tarafından CMC'de verilen kimlik bilgileri.",
+                    "JWT belirteçleri: erişim belirteçleri 7 gün geçerlidir ve httpOnly çerezlerde saklanır.",
+                    "Belirteç yenileme: erişim belirteçleri otomatik olarak yenilenir; yenileme belirteci süresi dolduğunda yeniden giriş gerekir."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "access-protection",
+              "title": "Erişim koruması",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Hız sınırlaması: Tek bir IP'den 15 dakikada en fazla 5 giriş denemesi.",
+                    "Oturum yönetimi: Aktif oturumlar veritabanında saklanır ve her istekte doğrulanır.",
+                    "Denetim kaydı: Kritik yönetici ve kullanıcı eylemleri kaydedilir."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "quotas-limits",
+          "title": "Kotalar ve limitler",
+          "label": "Kotalar ve limitler",
+          "description": "Depolama, gönderim ve kullanıcı kotaları.",
+          "sections": [
+            {
+              "id": "storage-quota",
+              "title": "Depolama kotası",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Her kullanıcıya bir posta kutusu kotası atanır. Kullanım %100'e ulaştığında kullanıcı e-posta gönderip alamaz."
+                }
+              ]
+            },
+            {
+              "id": "sending-limits",
+              "title": "Gönderim limitleri",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Business Basic: kullanıcı başına günde 500 mesaj",
+                    "Business Standard: günde 1000 mesaj",
+                    "Business Premium: günde 2000 mesaj",
+                    "Enterprise: günde 10000 mesaj"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "user-limit",
+              "title": "Kullanıcı limiti",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Business planları: 300 kullanıcıya kadar",
+                    "Enterprise planları: sınırsız kullanıcı"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   }
 }

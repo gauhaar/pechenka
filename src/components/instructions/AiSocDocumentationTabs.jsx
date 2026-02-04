@@ -22,7 +22,7 @@ export default function AiSocDocumentationTabs() {
     return (
         <div className="flex w-full flex-col gap-2">
             {/* Tabs */}
-            <div className="flex w-full justify-center">
+            <div className="relative z-10 flex w-full justify-center">
                 <div className="relative flex rounded-full border border-cyan-400/25 bg-[#050b1a]/85 p-1 text-sm font-medium text-cyan-100/70 shadow-[0_0_55px_rgba(56,189,248,0.28)] backdrop-blur-xl">
                     {tabs.map((tab) => {
                         const isActive = tab.id === activeTab;
@@ -60,28 +60,15 @@ export default function AiSocDocumentationTabs() {
 
             {/* Content */}
             <div className="relative w-full">
-                <div
-                    className={`transition-opacity duration-300 ${activeTab === "email"
-                        ? "relative opacity-100"
-                        : "pointer-events-none opacity-0 absolute inset-0 w-full"
-                        }`}
-                    aria-hidden={activeTab !== "email"}
-                >
+                {activeTab === "email" ? (
                     <EmailSecurityDocumentation />
-                </div>
-                <div
-                    className={`transition-opacity duration-300 ${activeTab === "web"
-                        ? "relative opacity-100"
-                        : "pointer-events-none opacity-0 absolute inset-0 w-full"
-                        }`}
-                    aria-hidden={activeTab !== "web"}
-                >
+                ) : (
                     <WebSecurityPlaceholder
                         badge={placeholderCopy?.badge ?? "Web Security"}
                         title={placeholderCopy?.title ?? "Documentation is coming soon"}
                         description={placeholderCopy?.description ?? "We are preparing a detailed guide for configuring and protecting web applications. Check back soon — the materials will appear shortly."}
                     />
-                </div>
+                )}
             </div>
         </div>
     );
