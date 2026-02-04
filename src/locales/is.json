@@ -34,144 +34,144 @@
   },
   "affiliate": {
     "hero": {
-          "tagline": "Gakktu í samstarfsáætlun Silence AI",
-          "title": "Umbreyttu boðum í tekjur.",
-          "cta": "Skráðu þig í samstarfsáætlun",
-          "earnings": "$2,940.00",
-          "growth": "+18% miðað við síðasta mánuð",
-          "snapshot": {
-            "label": "Bein yfirlit",
-            "caption": "Frammistöðugögn uppfærast á 60 sekúndna fresti og staðfestar greiðslur samstillast samstundis."
-          },
-          "graph": {
-            "label": "Þróun tekna",
-            "title": "Vöxtur tilvísanatekna",
-            "window": "Síðustu 30 dagar",
-            "label0": "Vika 1",
-            "label1": "Vika 2",
-            "label2": "Vika 3",
-            "label3": "Vika 4",
-            "label4": "Vika 5",
-            "label5": "Vika 6",
-            "label6": "Í dag"
-          },
-          "metric": {
-            "conversion": "Virkjanir",
-            "conversionChange": "24 ný lið í þessum mánuði",
-            "pending": "Ógreiddar umbunir",
-            "pendingChange": "Úttektir afgreiddar innan 2 virkra daga"
-          }
+      "tagline": "Gakktu í samstarfsáætlun Silence AI",
+      "title": "Umbreyttu boðum í tekjur.",
+      "cta": "Skráðu þig í samstarfsáætlun",
+      "earnings": "$2,940.00",
+      "growth": "+18% miðað við síðasta mánuð",
+      "snapshot": {
+        "label": "Bein yfirlit",
+        "caption": "Frammistöðugögn uppfærast á 60 sekúndna fresti og staðfestar greiðslur samstillast samstundis."
+      },
+      "graph": {
+        "label": "Þróun tekna",
+        "title": "Vöxtur tilvísanatekna",
+        "window": "Síðustu 30 dagar",
+        "label0": "Vika 1",
+        "label1": "Vika 2",
+        "label2": "Vika 3",
+        "label3": "Vika 4",
+        "label4": "Vika 5",
+        "label5": "Vika 6",
+        "label6": "Í dag"
+      },
+      "metric": {
+        "conversion": "Virkjanir",
+        "conversionChange": "24 ný lið í þessum mánuði",
+        "pending": "Ógreiddar umbunir",
+        "pendingChange": "Úttektir afgreiddar innan 2 virkra daga"
+      }
+    },
+    "howItWorks": {
+      "title": "Hvernig þetta virkar",
+      "create": {
+        "title": "Búðu til tengilinn þinn",
+        "description": "Búðu til einstakan tilvísunartengil eða afsláttarkóða í Silence AI stjórnborðinu þínu."
+      },
+      "share": {
+        "title": "Deildu",
+        "description": "Bjóðaðu liðum með tölvupósti, á LinkedIn og í samfélögum. Fylgstu með frammistöðu í rauntíma."
+      },
+      "earn": {
+        "title": "Þénaðu",
+        "description": "Þú færð þóknun um leið og viðskiptavinir sem þú vísar á virkja Silence AI vörnin."
+      }
+    },
+    "commission": {
+      "heading": "Jafnvægisumbunir",
+      "highlight": {
+        "label": "Af hverju samstarfsaðilar kunna að meta þetta"
+      },
+      "reward": {
+        "title": "10% umbun fyrir hverja inneign",
+        "description": "Þegar boðið lið hleður Silence AI veskið sitt fær þú 10% af nettóupphæðinni samstundis."
+      },
+      "settlement": {
+        "title": "Rauntíma bókun í höfuðbók",
+        "description": "Umbanir bætast á samstarfsreikninginn innan einnar mínútu eftir að færslan klárast — engin handvirk samþykkt."
+      },
+      "withdrawal": {
+        "title": "Úttektir afgreiddar innan 2 virkra daga",
+        "description": "Úttektarbeiðnir eru yfirfarnar sjálfkrafa og berast inn á bankareikninginn innan tveggja virkra daga."
+      },
+      "sample": {
+        "label": "Dæmi um inneign",
+        "caption": "Tekjur samstarfsaðila aukast með hverri inneign — engar stigendurstillingar né vörukortlagning.",
+        "topup": "$250 inneign → $25 umbun",
+        "topupHigher": "$1,000 inneign → $100 umbun"
+      },
+      "note": "Þóknunin er reiknuð af nettóupphæðinni eftir greiðslugjöld."
+    },
+    "faq": {
+      "title": "Spurningar og svör",
+      "payments": {
+        "question": "Hvernig fæ ég greitt?",
+        "answer": "Bættu VISA- eða Mastercard-númerinu við prófílinn þinn. Úttektir er hægt að færa beint á tilgreinda kortið."
+      },
+      "discounts": {
+        "question": "Fá viðskiptavinir sem ég vísa til afslátt?",
+        "answer": "Nei. Viðskiptavinir sem þú vísar til fá ekki afslátt af kaupum sínum; aðeins samstarfsaðilinn fær þóknun af vel heppnuðum tilvísunum."
+      },
+      "statistics": {
+        "question": "Hvenær sé ég tilvísunartölfræðina mína?",
+        "answer": "Um leið og notandi skráir sig með kóðanum eða tenglinum þínum birtast netfang hans og umbunin í stjórnborðinu."
+      }
+    },
+    "termsAff": {
+      "label": "Affiliate Program",
+      "title": "Affiliate Terms of Service",
+      "notice": "This policy is available only in English",
+      "intro": "These terms describe how rewards are issued and paid to partners participating in the Silence AI affiliate program.",
+      "meta": {
+        "effective": "Effective date: 10 November 2024",
+        "lastUpdated": "Last updated: 10 November 2024"
+      },
+      "sections": {
+        "overview": {
+          "title": "1. Program Overview",
+          "body1": "1.1 Agreement Scope: These Affiliate Terms of Service (\"Terms\") govern your participation in the Silence AI affiliate program operated by Silence AI LLC (\"Silence AI,\" \"we,\" \"us,\" or \"our\"). These Terms apply to you, the individual or entity enrolling as an affiliate partner (\"you\" or \"your\"), and, where applicable, your employer, principal, or organization if you act on their behalf.",
+          "body2": "1.2 Program Summary: Under this program, qualified partners earn commission-based rewards when referred customers purchase or top up the AI-SOC 1 product. Participation in the affiliate program also requires compliance with the general Silence AI Terms of Service."
         },
-        "howItWorks": {
-          "title": "Hvernig þetta virkar",
-          "create": {
-            "title": "Búðu til tengilinn þinn",
-            "description": "Búðu til einstakan tilvísunartengil eða afsláttarkóða í Silence AI stjórnborðinu þínu."
-          },
-          "share": {
-            "title": "Deildu",
-            "description": "Bjóðaðu liðum með tölvupósti, á LinkedIn og í samfélögum. Fylgstu með frammistöðu í rauntíma."
-          },
-          "earn": {
-            "title": "Þénaðu",
-            "description": "Þú færð þóknun um leið og viðskiptavinir sem þú vísar á virkja Silence AI vörnin."
-          }
+        "eligibility": {
+          "title": "2. Partner Eligibility",
+          "item1": "You must maintain an active Silence AI affiliate account with accurate business and payment details.",
+          "item2": "Referrals must complete registration through your issued link or promo code.",
+          "item3": "Accounts found to be fraudulent, self-referred, or in breach of applicable law are not eligible for rewards."
         },
         "commission": {
-          "heading": "Jafnvægisumbunir",
-          "highlight": {
-            "label": "Af hverju samstarfsaðilar kunna að meta þetta"
-          },
-          "reward": {
-            "title": "10% umbun fyrir hverja inneign",
-            "description": "Þegar boðið lið hleður Silence AI veskið sitt fær þú 10% af nettóupphæðinni samstundis."
-          },
-          "settlement": {
-            "title": "Rauntíma bókun í höfuðbók",
-            "description": "Umbanir bætast á samstarfsreikninginn innan einnar mínútu eftir að færslan klárast — engin handvirk samþykkt."
-          },
-          "withdrawal": {
-            "title": "Úttektir afgreiddar innan 2 virkra daga",
-            "description": "Úttektarbeiðnir eru yfirfarnar sjálfkrafa og berast inn á bankareikninginn innan tveggja virkra daga."
-          },
-          "sample": {
-            "label": "Dæmi um inneign",
-            "caption": "Tekjur samstarfsaðila aukast með hverri inneign — engar stigendurstillingar né vörukortlagning.",
-            "topup": "$250 inneign → $25 umbun",
-            "topupHigher": "$1,000 inneign → $100 umbun"
-          },
-          "note": "Þóknunin er reiknuð af nettóupphæðinni eftir greiðslugjöld."
+          "title": "3. Commission Structure",
+          "body1": "You earn a 10% reward on every balance top-up completed by an account registered through your invitation.",
+          "body2": "Commission is calculated from the net top-up amount after payment processing fees are deducted."
         },
-        "faq": {
-          "title": "Spurningar og svör",
-          "payments": {
-            "question": "Hvernig fæ ég greitt?",
-            "answer": "Bættu VISA- eða Mastercard-númerinu við prófílinn þinn. Úttektir er hægt að færa beint á tilgreinda kortið."
-          },
-          "discounts": {
-            "question": "Fá viðskiptavinir sem ég vísa til afslátt?",
-            "answer": "Nei. Viðskiptavinir sem þú vísar til fá ekki afslátt af kaupum sínum; aðeins samstarfsaðilinn fær þóknun af vel heppnuðum tilvísunum."
-          },
-          "statistics": {
-            "question": "Hvenær sé ég tilvísunartölfræðina mína?",
-            "answer": "Um leið og notandi skráir sig með kóðanum eða tenglinum þínum birtast netfang hans og umbunin í stjórnborðinu."
-          }
+        "rewardPosting": {
+          "title": "4. Reward Posting",
+          "body1": "Rewards post to your partner balance within one minute after the transaction successfully clears. There is no manual approval queue.",
+          "body2": "Notifications appear in your affiliate dashboard alongside the customer identifier and top-up amount."
         },
-        "termsAff": {
-          "label": "Affiliate Program",
-          "title": "Affiliate Terms of Service",
-          "notice": "This policy is available only in English",
-          "intro": "These terms describe how rewards are issued and paid to partners participating in the Silence AI affiliate program.",
-          "meta": {
-            "effective": "Effective date: 10 November 2024",
-            "lastUpdated": "Last updated: 10 November 2024"
-          },
-          "sections": {
-            "overview": {
-              "title": "1. Program Overview",
-              "body1": "1.1 Agreement Scope: These Affiliate Terms of Service (\"Terms\") govern your participation in the Silence AI affiliate program operated by Silence AI LLC (\"Silence AI,\" \"we,\" \"us,\" or \"our\"). These Terms apply to you, the individual or entity enrolling as an affiliate partner (\"you\" or \"your\"), and, where applicable, your employer, principal, or organization if you act on their behalf.",
-              "body2": "1.2 Program Summary: Under this program, qualified partners earn commission-based rewards when referred customers purchase or top up the AI-SOC 1 product. Participation in the affiliate program also requires compliance with the general Silence AI Terms of Service."
-            },
-            "eligibility": {
-              "title": "2. Partner Eligibility",
-              "item1": "You must maintain an active Silence AI affiliate account with accurate business and payment details.",
-              "item2": "Referrals must complete registration through your issued link or promo code.",
-              "item3": "Accounts found to be fraudulent, self-referred, or in breach of applicable law are not eligible for rewards."
-            },
-            "commission": {
-              "title": "3. Commission Structure",
-              "body1": "You earn a 10% reward on every balance top-up completed by an account registered through your invitation.",
-              "body2": "Commission is calculated from the net top-up amount after payment processing fees are deducted."
-            },
-            "rewardPosting": {
-              "title": "4. Reward Posting",
-              "body1": "Rewards post to your partner balance within one minute after the transaction successfully clears. There is no manual approval queue.",
-              "body2": "Notifications appear in your affiliate dashboard alongside the customer identifier and top-up amount."
-            },
-            "withdrawals": {
-              "title": "5. Withdrawals",
-              "body1": "Withdrawal requests are processed within two business days and paid out using the settlement method on file.",
-              "body2": "Minimum withdrawal thresholds and supported payout networks are published inside the affiliate dashboard."
-            },
-            "productScope": {
-              "title": "6. Product Scope",
-              "body1": "Rewards are only provided for the AI-SOC 1 product. Other Silence AI services are excluded from the affiliate program unless explicitly stated otherwise in writing.",
-              "body2": "If additional products become eligible, Silence AI will publish an updated list inside these terms."
-            },
-            "compliance": {
-              "title": "7. Partner Conduct & Compliance",
-              "item1": "Partners must represent Silence AI accurately and avoid misleading claims about features or pricing.",
-              "item2": "Marketing communications must comply with applicable anti-spam, privacy, and advertising regulations.",
-              "item3": "Silence AI may suspend or terminate accounts that violate these obligations or harm the brand."
-            },
-            "changes": {
-              "title": "8. Changes & Contact",
-              "body1": "Silence AI may update these affiliate terms to reflect changes in the program or applicable law. Updated versions take effect upon publication on this page.",
-              "body2": "Questions about the affiliate program can be sent to info@silenceai.net."
-            }
-          }
+        "withdrawals": {
+          "title": "5. Withdrawals",
+          "body1": "Withdrawal requests are processed within two business days and paid out using the settlement method on file.",
+          "body2": "Minimum withdrawal thresholds and supported payout networks are published inside the affiliate dashboard."
+        },
+        "productScope": {
+          "title": "6. Product Scope",
+          "body1": "Rewards are only provided for the AI-SOC 1 product. Other Silence AI services are excluded from the affiliate program unless explicitly stated otherwise in writing.",
+          "body2": "If additional products become eligible, Silence AI will publish an updated list inside these terms."
+        },
+        "compliance": {
+          "title": "7. Partner Conduct & Compliance",
+          "item1": "Partners must represent Silence AI accurately and avoid misleading claims about features or pricing.",
+          "item2": "Marketing communications must comply with applicable anti-spam, privacy, and advertising regulations.",
+          "item3": "Silence AI may suspend or terminate accounts that violate these obligations or harm the brand."
+        },
+        "changes": {
+          "title": "8. Changes & Contact",
+          "body1": "Silence AI may update these affiliate terms to reflect changes in the program or applicable law. Updated versions take effect upon publication on this page.",
+          "body2": "Questions about the affiliate program can be sent to info@silenceai.net."
         }
-      },
+      }
+    }
+  },
   "playground": {
     "options": {
       "globeShield": "Veföryggi og umferðarstýring",
@@ -971,6 +971,959 @@
         "title": "Veikleikaleitari",
         "content": "Kerfið finnur veikleika í kóða og með dýnamískum samskiptum við vefinn/API-ið, með greindarstuðningi."
       }
+    }
+  },
+  "documentation": {
+    "tabs": {
+      "web": "Web Security",
+      "email": "Email Security"
+    },
+    "system": {
+      "sections": "Sections",
+      "topics": "Topics",
+      "tableOfContents": "Table of contents",
+      "close": "Close"
+    },
+    "webSecurity": {
+      "placeholder": {
+        "badge": "Web Security",
+        "title": "Documentation is coming soon",
+        "description": "We are preparing a detailed guide for configuring and protecting web applications. Check back soon — the materials will appear shortly."
+      }
+    },
+    "emailSecurity": {
+      "title": "Tölvupóstöryggiskerfi",
+      "subtitle": "Skjöl | Útgáfa 1.0",
+      "description": "Hvernig á að stilla og reka tölvupóstöryggisvettvang fyrirtækisins.",
+      "chapters": [
+        {
+          "id": "getting-started",
+          "title": "Að hefja notkun",
+          "label": "Að hefja notkun",
+          "description": "Upphafsskref við innleiðingu og stillingu á léni og DNS í CMC stjórnborðinu.",
+          "sections": [
+            {
+              "id": "admin-setup",
+              "title": "Fyrir stjórnendur",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Til að koma kerfinu í gagnið:"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Skráðu þig inn í CMC stjórnborðið á admin.silenceai.net með Google eða Microsoft OAuth.",
+                    "Skráðu lén fyrirtækisins.",
+                    "Staðfestu eignarhald á léninu í gegnum DNS.",
+                    "Stilltu öryggisskrár (SPF, DKIM, DMARC).",
+                    "Búðu til tölvupóstreikninga fyrir starfsmenn."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Eftir stillinguna geta notendur opnað vefpóstforritið og sent vernduð skilaboð."
+                }
+              ]
+            },
+            {
+              "id": "user-onboarding",
+              "title": "Fyrir endanotendur",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Til að hefja notkun á tölvupósti:"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Sæktu aðgangsupplýsingar hjá stjórnandanum.",
+                    "Skráðu þig inn á mail.silenceai.net með netfangi/lykilorði eða OAuth.",
+                    "Sendu fyrstu skilaboðin með því að smella á \"Compose\".",
+                    "Skoðaðu kerfismöppurnar sem flokka skilaboð sjálfkrafa eftir öryggisstigi."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Innkomandi póstur er sjálfkrafa skimaður eftir ógn og fluttur í viðeigandi möppur."
+                }
+              ]
+            },
+            {
+              "id": "add-domain",
+              "title": "Bæta við léni",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Lénastjórnun hefst í CMC stjórnborðinu."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Opnaðu CMC stjórnborðið.",
+                    "Smelltu á \"Add Domain\".",
+                    "Sláðu inn lénið án www (til dæmis company.com).",
+                    "Smelltu á \"Add\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Kerfið gefur út sannvottunarkóða til að staðfesta eignarhald lénsins."
+                }
+              ]
+            },
+            {
+              "id": "verify-domain",
+              "title": "Staðfestu eignarhald á léni",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Eftir að lén hefur verið bætt við þarftu að sanna að það sé í þinni eigu."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Afritaðu TXT-færsluna úr CMC:"
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "_cmc-verification.company.com TXT \"cmc-verify-abc123xyz\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Bættu færslunni við DNS stillingar lénsins þíns.",
+                    "Bíddu eftir sjálfvirkri athugun (á 5 mínútna fresti) eða smelltu á \"Check Now\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Staðfesting getur tekið allt að 48 klukkustundir. Þegar hún tekst fær lénið stöðuna verified."
+                }
+              ]
+            },
+            {
+              "id": "configure-spf",
+              "title": "Stilltu SPF-færslu",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "SPF skilgreinir hvaða netþjónar mega senda tölvupóst fyrir hönd lénsins."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Í CMC, opnaðu \"DNS Configuration\" → \"SPF\".",
+                    "Smelltu á \"Check Current SPF\" til að skoða núverandi færslur.",
+                    "Smelltu á \"Generate SPF Record\".",
+                    "Afritaðu tillöguna:"
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "company.com TXT \"v=spf1 include:_spf.silenceai.net -all\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Bættu færslunni við DNS."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Ef SPF-færsla er þegar til (til dæmis fyrir Gmail) skaltu setja include-tilvísun okkar fyrir loka -all viðaukann."
+                }
+              ]
+            },
+            {
+              "id": "configure-dkim",
+              "title": "Búðu til DKIM-lykla",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DKIM bætir dulritaðri undirskrift við póstinn þinn."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Í CMC, opnaðu \"DNS Configuration\" → \"DKIM\".",
+                    "Smelltu á \"Generate DKIM Keys\".",
+                    "Kerfið býr til lyklapar (einkalykillinn er á þjóninum, opinberi lykillinn fer í DNS).",
+                    "Afritaðu DNS-færsluna:"
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "silenceai._domainkey.company.com TXT \"v=DKIM1; k=rsa; p=MIIBIjAN...\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Bættu færslunni við DNS.",
+                    "Keyrðu \"Verify DKIM\" til að staðfesta."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "configure-dmarc",
+              "title": "Settu upp DMARC-stefnu",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DMARC skilgreinir hvað skal gera við skilaboð sem falla á SPF eða DKIM prófum."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Í CMC, opnaðu \"DNS Configuration\" → \"DMARC\".",
+                    "Veldu stefnu:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "quarantine — flytja í ruslpóst (mælt með)",
+                    "reject — hafna skilaboðinu"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Smelltu á \"Generate DMARC Record\".",
+                    "Afritaðu færsluna:"
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "_dmarc.company.com TXT \"v=DMARC1; p=quarantine; rua=mailto:dmarc-reports@silenceai.net\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Bættu færslunni við DNS."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Byrjaðu á quarantine, fylgstu með skýrslum í 1–2 vikur og skiptu svo yfir í reject ef þú vilt."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "user-management",
+          "title": "Notendastjórnun",
+          "label": "Notendastjórnun",
+          "description": "Stofnun og viðhald tölvupóstreikninga.",
+          "sections": [
+            {
+              "id": "create-account",
+              "title": "Búa til tölvupóstreikning",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Opnaðu hlutann \"Email Accounts\" í CMC.",
+                    "Smelltu á \"Create Account\".",
+                    "Fylltu út reitina:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Email: john.doe@company.com",
+                    "Fornafn og eftirnafn",
+                    "Lykilorð (að minnsta kosti 8 stafir, hástafur, lágstafur, tala, sértákn)",
+                    "Geymslukvóti: veldu stærð pósthólfs"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Smelltu á \"Create\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Notandinn getur strax skráð sig inn í vefpóstinn."
+                }
+              ]
+            },
+            {
+              "id": "suspend-activate",
+              "title": "Gera reikning óvirkan eða virkan",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Finndu notandann í \"Email Accounts\".",
+                    "Veldu í aðgerðavalmyndinni:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Suspend — stöðva aðgang (notandinn kemst ekki inn)",
+                    "Activate — virkja aðgang aftur"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Staðfestu aðgerðina."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "change-quota",
+              "title": "Breyta geymslukvóta",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Finndu notandann á listanum.",
+                    "Veldu \"Edit Quota\" í aðgerðavalmyndinni.",
+                    "Veldu nýja stærð geymslu.",
+                    "Vista breytingar."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Breytingarnar taka gildi samstundis."
+                }
+              ]
+            },
+            {
+              "id": "delete-account",
+              "title": "Eyða reikningi",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Finndu notandann á listanum.",
+                    "Veldu \"Delete\" í aðgerðavalmyndinni.",
+                    "Staðfestu eyðinguna."
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "intent": "warning",
+                  "content": "Aðvörun: Öllum gögnum notandans er eytt varanlega."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mail-operations",
+          "title": "Tölvupóstsaðgerðir",
+          "label": "Tölvupóstsaðgerðir",
+          "description": "Daglegar aðgerðir í vefpóstviðmótinu.",
+          "sections": [
+            {
+              "id": "send-letter",
+              "title": "Senda skilaboð",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Smelltu á \"Compose\" í vefpóstinum.",
+                    "Fylltu út:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "To: netfang viðtakanda",
+                    "Subject: efni tölvupósts",
+                    "Body: texti skilaboðanna (ríkar sniðmöguleikar í boði)"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Hengdu við skrár ef þörf er á (allt að 25 MB á skrá).",
+                    "Smelltu á \"Send\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Skilaboð eru sjálfkrafa undirrituð með DKIM og send."
+                }
+              ]
+            },
+            {
+              "id": "custom-folder",
+              "title": "Búa til sérsniðna möppu með reglum",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Sérsniðnar möppur flokka skilaboð sjálfkrafa eftir reglum sem þú skilgreinir."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Smelltu á \"Create Folder\" í hliðarstikunni.",
+                    "Sláðu inn heiti möppu (til dæmis \"Clients\").",
+                    "Smelltu á \"Add Rules\".",
+                    "Stilltu regluna:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Sía eftir: léni sendanda",
+                    "Samsvörunarhamur: Contains",
+                    "Gildi: client.com"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Virkjaðu \"Apply to existing emails\" ef þú vilt vinna úr núverandi skilaboðum.",
+                    "Smelltu á \"Create\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Allur nýr póstur frá *@client.com fer sjálfkrafa í möppuna \"Clients\"."
+                }
+              ]
+            },
+            {
+              "id": "add-whitelist",
+              "title": "Bæta sendanda á hvítlista",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Ef skilaboð voru merkt sem ruslpóstur fyrir mistök:"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Opnaðu skilaboðin í SPAM-möppunni.",
+                    "Smelltu á \"Not Spam\" → \"Add to Whitelist\".",
+                    "Veldu:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Setja netfang sendanda á hvítlista",
+                    "Setja lén sendanda á hvítlista"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Staðfestu aðgerðina."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Framtíðarpóstur frá þessum sendanda fer ekki lengur í ruslpóst."
+                }
+              ]
+            },
+            {
+              "id": "email-signature",
+              "title": "Stilla undirskrift",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Opnaðu Settings → \"Email Signature\".",
+                    "Virkjaðu \"Enable signature\".",
+                    "Sláðu inn texta undirskriftarinnar í ritlinum.",
+                    "Smelltu á \"Save\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Undirskriftin bætist sjálfkrafa við öll útfarandi skilaboð."
+                }
+              ]
+            },
+            {
+              "id": "vacation-responder",
+              "title": "Virkja sjálfvirkt svar",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Opnaðu Settings → \"Vacation Responder\".",
+                    "Virkjaðu \"Enable vacation responder\".",
+                    "Stilltu upphafs- og lokadagsetningar.",
+                    "Sláðu inn texta sjálfvirka svarsins.",
+                    "Hakaðu við \"Reply once per sender\" til að senda aðeins eitt svar á hvern sendanda.",
+                    "Smelltu á \"Save\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Sjálfvirki svararinn keyrir á valnum dagsetningum og slekkur á sér sjálfkrafa."
+                }
+              ]
+            },
+            {
+              "id": "forwarding",
+              "title": "Stilla framsendingu",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Opnaðu Settings → \"Email Forwarding\".",
+                    "Smelltu á \"Add Forwarding Address\".",
+                    "Sláðu inn netfangið sem á að framsenda á.",
+                    "Virkjaðu \"Keep copy in inbox\" ef þú vilt geyma eintak.",
+                    "Smelltu á \"Save\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Allur innkomandi póstur verður framsendur á valið netfang."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "domain-administration",
+          "title": "Lénastjórnun",
+          "label": "Lénastjórnun",
+          "description": "Greining og fjöldaaðgerðir á póstum fyrir lénið.",
+          "sections": [
+            {
+              "id": "view-activity",
+              "title": "Skoða póstvirkni lénsins",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Stjórnendur geta skoðað öll skilaboð fyrir hvern notanda í léninu."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Opnaðu CMC → \"Email Activity\".",
+                    "Notaðu síurnar:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Eftir notanda",
+                    "Eftir möppu (Secure, Spam, Phishing)",
+                    "Eftir dagsetningu",
+                    "Eftir tegund ógnar"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Notaðu leitarsvæðið til að leita að efni eða sendanda."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bulk-delete",
+              "title": "Eyða skilaboðum fyrir alla notendur",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Ef illgjörn skilaboð voru send til allra:"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Opnaðu \"Email Activity\".",
+                    "Finndu skilaboðin með síum eða leit.",
+                    "Veldu skilaboðin sem á að fjarlægja.",
+                    "Smelltu á \"Delete Selected\".",
+                    "Staðfestu fjöldaeyðinguna."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Skilaboðin eru fjarlægð úr öllum pósthólfum notenda."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "concepts",
+          "title": "Hugtök",
+          "label": "Hugtök",
+          "description": "Helstu hugtök vettvangsins og öryggisflæðin.",
+          "sections": [
+            {
+              "id": "system-overview",
+              "title": "Yfirlit kerfis",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Tölvupóstöryggiskerfið er vettvangur sem ver fyrirtækjapóst gegn netógnum."
+                },
+                {
+                  "type": "list",
+                  "title": "Hlutar:",
+                  "items": [
+                    "CMC stjórnborð — stjórnendaviðmót fyrir lén, notendur og DNS stillingar.",
+                    "Vefpóstviðmót — pósthólf starfsmanna með sjálfvirkri ógnarvörn.",
+                    "Innviðaþjónustur — SMTP þjónn og öryggisleiðsla fyrir meðhöndlun skilaboða."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "security-stack",
+              "title": "Öryggisleiðsla",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Hvert innkomandi skilaboð fer í gegnum sex varnarlög:"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Lag 0: Phishing-lénaeftirlit — metur lén sendenda gegn þekktum vefveiðigagnagrunnum.",
+                    "Lag 1: Fölsunargreining — staðfestir samræmi SPF, DKIM og DMARC.",
+                    "Lag 2: Ruslpóstsgreining — greinir efni með RSPAMD til að finna ruslpóstseinkenni.",
+                    "Lag 3: Hlekkjaskanni — skannar slóðir með URLScan.io til að finna illgjarnar tengingar.",
+                    "Lag 4: Vírusskimun — rannsakar viðhengi með Bitdefender.",
+                    "Lag 5: AI vefveiðigreining — greinir innihald skilaboða með AI til að finna vefveiðimerki."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Ef ógn greinist stöðvast vinnslan og skilaboðin eru sett í viðeigandi möppu."
+                }
+              ]
+            },
+            {
+              "id": "system-folders",
+              "title": "Kerfismöppur",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Skilaboð eru send í möppur út frá niðurstöðum skimunar:"
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Unfiltered — nýr póstur áður en vinnslu lýkur (bráðabirgða).",
+                    "Secure — skilaboð sem fóru í gegnum allar athuganir.",
+                    "Possibly Spoofed — grunur um fölsaðan sendanda.",
+                    "SPAM — ruslpósts skilaboð.",
+                    "Dangerous Links — skilaboð með hættulegum slóðum.",
+                    "Malware — skilaboð með sýktum viðhengjum.",
+                    "Possibly Phishing — greinast merki um vefveiði.",
+                    "Sent — send skilaboð."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Eitt skilaboð getur birst í fleiri en einni möppu (til dæmis SPAM og Possibly Spoofed)."
+                }
+              ]
+            },
+            {
+              "id": "custom-folders",
+              "title": "Sérsniðnar möppur",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Notendur geta búið til sérsniðnar möppur með sjálfvirkum síureglum."
+                },
+                {
+                  "type": "list",
+                  "title": "Síureglur:",
+                  "items": [
+                    "Eftir léni sendanda",
+                    "Eftir netfangi sendanda",
+                    "Eftir efni",
+                    "Eftir nafni sendanda"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "title": "Samsvörunarhamir:",
+                  "items": [
+                    "Contains",
+                    "Equals",
+                    "Starts with",
+                    "Ends with"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Hægt er að beita reglum á núverandi póst (afturvirk síun)."
+                }
+              ]
+            },
+            {
+              "id": "spf",
+              "title": "SPF (Sender Policy Framework)",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "SPF er DNS-færsla sem skilgreinir hvaða þjónar mega senda póst fyrir lénið."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Snið:"
+                },
+                {
+                  "type": "code",
+                  "content": "v=spf1 include:_spf.silenceai.net -all"
+                },
+                {
+                  "type": "list",
+                  "title": "Virkni:",
+                  "items": [
+                    "include:lén — leyfa þjónustum af tilgreindu léni",
+                    "ip4:x.x.x.x — leyfa tiltekna IP tölu",
+                    "-all — hafna öllu öðru",
+                    "~all — merkja allt annað sem grunsamlegt"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "SPF-próf: viðtakandi sannreynir að IP tala sendanda sé heimil í SPF-færslu lénsins. Ef prófið fellur er skilaboðunum flaggað sem grunsamlegum."
+                }
+              ]
+            },
+            {
+              "id": "dkim",
+              "title": "DKIM (DomainKeys Identified Mail)",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DKIM bætir við dulritaðri undirskrift sem staðfestir að skilaboðin voru send af léneiganda og hafi ekki breyst í flutningi."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Svona virkar það:"
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Við sendingu undirritar þjónninn skilaboðin með einkalykli og bætir við DKIM-Signature haus.",
+                    "Viðtakandinn sækir opinbera lykilinn úr DNS og sannreynir undirskriftina."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "DNS-færsla:"
+                },
+                {
+                  "type": "code",
+                  "content": "selector._domainkey.domain.com TXT \"v=DKIM1; k=rsa; p=public_key\""
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Einkalykillinn er geymdur dulkóðaður á þjóninum og er aldrei deilt með viðskiptavinum."
+                }
+              ]
+            },
+            {
+              "id": "dmarc",
+              "title": "DMARC (Domain-based Message Authentication)",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DMARC skilgreinir stefnu fyrir skilaboð sem standast ekki SPF eða DKIM."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Snið:"
+                },
+                {
+                  "type": "code",
+                  "content": "_dmarc.domain.com TXT \"v=DMARC1; p=quarantine; rua=mailto:reports@domain.com\""
+                },
+                {
+                  "type": "list",
+                  "title": "Viðföng:",
+                  "items": [
+                    "p=quarantine — setja í ruslpóst",
+                    "p=reject — hafna skilaboðinu",
+                    "p=none — eingöngu vöktun",
+                    "rua= — netfang fyrir samantektarskýrslur"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "DMARC-próf: viðtakandinn tryggir að skilaboðin standist SPF eða DKIM með samræmdum lénum. Ef ekki gildir stillta stefnan."
+                }
+              ]
+            },
+            {
+              "id": "attachments",
+              "title": "Viðhengi og vírusvörn",
+              "body": [
+                {
+                  "type": "list",
+                  "title": "Takmarkanir:",
+                  "items": [
+                    "Hámarksstærð skráar: 25 MB",
+                    "Allar skráargerðir eru studdar"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Skönnun viðhengja: Bitdefender skannar hverja skrá. Ef illgjarn hugbúnaður finnst fer skilaboðið í möppuna Malware og viðhengið er lokað."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Geymsla: viðhengi eru geymd per skilaboð á þjóninum. Sýktar skrár eru fluttar í sóttkví."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "access-control",
+          "title": "Aðgangsstýring",
+          "label": "Aðgangsstýring",
+          "description": "Notendahlutverk og aðgangsvörn.",
+          "sections": [
+            {
+              "id": "user-roles",
+              "title": "Notendahlutverk",
+              "body": [
+                {
+                  "type": "list",
+                  "title": "Admin",
+                  "items": [
+                    "Fullur aðgangur að CMC stjórnborðinu",
+                    "Lén- og DNS-stjórnun",
+                    "Búa til og stjórna notendum",
+                    "Skoða allan póst lénsins",
+                    "Framkvæma fjöldaaðgerðir á póstum"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "title": "Subordinate",
+                  "items": [
+                    "Takmarkaður aðgangur að CMC",
+                    "Skoða notendalista",
+                    "Aðgangur eingöngu að eigin pósti"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "title": "User",
+                  "items": [
+                    "Aðgangur að vefpóstviðmóti",
+                    "Vinna með eigin póst",
+                    "Stilla eigin notendastillingar"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "role-assignment",
+              "title": "Úthlutun hlutverka",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Auto-admin: fyrsti notandinn sem skráir sig inn með OAuth verður sjálfkrafa admin."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Að búa til Subordinate-notendur: admin bætir slíkum reikningum við í CMC undir \"User Management\"."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Að búa til User-reikninga: admin býr til pósthólf undir \"Email Accounts\" og reikningarnir fá User-hlutverk."
+                }
+              ]
+            },
+            {
+              "id": "authentication",
+              "title": "Auðkenning",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "OAuth 2.0: Google eða Microsoft innskráning með PKCE öryggisviðbót.",
+                    "Netfang/lykilorð: aðgangsupplýsingar gefnar út af admin í CMC.",
+                    "JWT-tákn: aðgangstákn gilda í 7 daga og eru geymd í httpOnly vafrakökum.",
+                    "Endurnýjun tákna: aðgangstákn endurnýjast sjálfkrafa með refresh-táknum; þegar þau renna út þarf aftur innskráningu."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "access-protection",
+              "title": "Aðgangsvörn",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Takmörkun á tilraunum: hámark 5 innskráningartilraunir á 15 mín frá sömu IP.",
+                    "Lotustýring: virkar lotur eru geymdar í gagnagrunni og sannreyndar við hverja beiðni.",
+                    "Eftirlitslógun: lykilaðgerðir stjórnenda og notenda eru skráðar."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "quotas-limits",
+          "title": "Kvótar og takmörk",
+          "label": "Kvótar og takmörk",
+          "description": "Geymslu-, sendingar- og notendakvótar.",
+          "sections": [
+            {
+              "id": "storage-quota",
+              "title": "Geymslukvóti",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Hver notandi fær kvóta á pósthólfið. Við 100% nýtingu getur hann hvorki sent né tekið við pósti."
+                }
+              ]
+            },
+            {
+              "id": "sending-limits",
+              "title": "Sendingarmörk",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Business Basic: 500 skilaboð á notanda á dag",
+                    "Business Standard: 1000 skilaboð á dag",
+                    "Business Premium: 2000 skilaboð á dag",
+                    "Enterprise: 10000 skilaboð á dag"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "user-limit",
+              "title": "Notendafjöldi",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Business-áætlanir: allt að 300 notendur",
+                    "Enterprise-áætlanir: ótakmarkaður fjöldi notenda"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   }
 }

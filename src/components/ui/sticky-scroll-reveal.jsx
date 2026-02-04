@@ -1,15 +1,28 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 export const StickyScroll = ({
   content,
   contentClassName,
+  backgroundColors,
+  itemClassName,
 }) => {
   const [activeCard, setActiveCard] = useState(0);
   const ref = useRef(null);
   const contentRefs = useRef([]);
+
+  const defaultBackgroundColors = [
+    "#01091C",
+    "linear-gradient(to bottom right, #FF00B7, #000000)",
+    "linear-gradient(to bottom right, #FB00FF, #000000)",
+    "#000000",
+    "linear-gradient(to bottom right, #15FF00, #000000)",
+    "linear-gradient(to bottom, #FB00FF, #01091C)",
+  ];
+
+  const colors = backgroundColors || defaultBackgroundColors; 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,30 +56,21 @@ export const StickyScroll = ({
     };
   }, [activeCard]);
 
-  const backgroundColors = [
-    "#01091C",
-    "linear-gradient(to bottom right, #FF00B7, #000000)",
-    "linear-gradient(to bottom right, #FB00FF, #000000)",
-    "#000000",
-    "linear-gradient(to bottom right, #15FF00, #000000)",
-    "linear-gradient(to bottom, #FB00FF, #01091C)",
-  ];
-
   return (
     <motion.div
       style={{
-        background: backgroundColors[activeCard % backgroundColors.length],
+        background: colors[activeCard % colors.length],
       }}
       className="w-full"
       ref={ref}
     >
-      <div className="relative mx-auto grid max-w-7xl grid-cols-12 gap-6 md:gap-10 px-4 py-12 sm:px-8 lg:px-10 lg:py-16 items-start">
+      <div className="relative mx-auto max-w-7xl grid grid-cols-12 gap-6 md:gap-10 px-4 py-12 sm:px-8 lg:px-10 lg:py-16 items-start">
         <div className="col-span-12 lg:col-span-5">
           {content.map((item, index) => (
             <div
               key={item.title + index}
               ref={(el) => (contentRefs.current[index] = el)}
-              className="my-16 md:my-24 lg:my-40"
+              className={cn("my-16 md:my-24 lg:my-40", itemClassName)}
             >
               <motion.h2
                 initial={{
@@ -97,11 +101,22 @@ export const StickyScroll = ({
         </div>
         <div
           className={cn(
-            "sticky top-[calc(50vh-10rem)] col-span-7 hidden h-80 w-full overflow-hidden rounded-md bg-black lg:block",
+            "sticky top-24 col-span-7 hidden w-full max-w-[24rem] mx-auto aspect-[4/5] overflow-hidden rounded-md bg-black lg:block",
             contentClassName
           )}
         >
-          {content[activeCard].content ?? null}
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeCard}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5 }}
+              className="h-full w-full"
+            >
+              {content[activeCard].content ?? null}
+            </motion.div>
+          </AnimatePresence>
         </div>
       </div>
     </motion.div>

@@ -120,18 +120,18 @@
     "termsAff": {
       "label": "Partnerprogramm",
       "title": "Partnerprogrammi teenusetingimused",
-        "gitServer": {
-          "title": "Git-hoidlate server",
-          "tag": "Isemajutatav versioonihaldus"
-        },
-        "analyzer": {
-          "title": "Turbeanalüsaator",
-          "tag": "Kohalik koodiskaneerimise mootor"
-        },
-        "vulnDb": {
-          "title": "Haavatavuste andmebaas",
-          "tag": "Allalaaditud turvapaigad"
-        },
+      "gitServer": {
+        "title": "Git-hoidlate server",
+        "tag": "Isemajutatav versioonihaldus"
+      },
+      "analyzer": {
+        "title": "Turbeanalüsaator",
+        "tag": "Kohalik koodiskaneerimise mootor"
+      },
+      "vulnDb": {
+        "title": "Haavatavuste andmebaas",
+        "tag": "Allalaaditud turvapaigad"
+      },
       "notice": "See poliitika on saadaval ainult inglise keeles",
       "intro": "Need tingimused kirjeldavad, kuidas preemiad määratakse ja makstakse Silence AI partnerprogrammis osalevatele partneritele.",
       "meta": {
@@ -971,6 +971,959 @@
       "title": "Esiletoodud artiklid",
       "subtitle": "Silence AI on üks väheseid eraettevõtteid, kellel on valitsustaseme luure.",
       "viewAll": "Vaata kõiki artikleid"
+    }
+  },
+  "documentation": {
+    "tabs": {
+      "web": "Web Security",
+      "email": "Email Security"
+    },
+    "system": {
+      "sections": "Sections",
+      "topics": "Topics",
+      "tableOfContents": "Table of contents",
+      "close": "Close"
+    },
+    "webSecurity": {
+      "placeholder": {
+        "badge": "Web Security",
+        "title": "Documentation is coming soon",
+        "description": "We are preparing a detailed guide for configuring and protecting web applications. Check back soon — the materials will appear shortly."
+      }
+    },
+    "emailSecurity": {
+      "title": "E-posti turbesüsteem",
+      "subtitle": "Dokumentatsioon | versioon 1.0",
+      "description": "Kuidas seadistada ja kasutada ettevõtte e-posti turbeplatvormi.",
+      "chapters": [
+        {
+          "id": "getting-started",
+          "title": "Alustamine",
+          "label": "Alustamine",
+          "description": "Esimesed liitumisetapid ning domeeni ja DNS-i seadistamine CMC administraatorpaneelis.",
+          "sections": [
+            {
+              "id": "admin-setup",
+              "title": "Administraatoritele",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Süsteemi kasutuselevõtuks:"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Logi Google'i või Microsofti OAuthi abil CMC administraatorpaneeli aadressil admin.silenceai.net.",
+                    "Registreeri oma ettevõtte domeen.",
+                    "Kinnita domeeni omandiõigus DNS-i kaudu.",
+                    "Seadista turbekirjed (SPF, DKIM, DMARC).",
+                    "Loo töötajatele e-posti kontod."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Pärast seadistamist saavad kasutajad avada veebimeilikliendi ja saata kaitstud sõnumeid."
+                }
+              ]
+            },
+            {
+              "id": "user-onboarding",
+              "title": "Lõppkasutajatele",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "E-postiga töötamise alustamiseks:"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Hangi oma mandaadid administraatorilt.",
+                    "Logi sisse aadressil mail.silenceai.net e-posti/parooli või OAuthi abil.",
+                    "Saada esimene sõnum nupuga \"Koosta\".",
+                    "Vaata süsteemikaustu, mis kategoriseerivad sõnumid turbetaseme järgi."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Saabuvad kirjad skannitakse automaatselt ohtude suhtes ja suunatakse sobivatesse kaustadesse."
+                }
+              ]
+            },
+            {
+              "id": "add-domain",
+              "title": "Lisa domeen",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Domeenihaldus algab CMC administraatorpaneelist."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Ava CMC administraatorpaneel.",
+                    "Klõpsa \"Add Domain\".",
+                    "Sisesta domeeninimi ilma www-ta (näiteks company.com).",
+                    "Klõpsa \"Add\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Süsteem väljastab domeeni omandi kinnitamiseks kontrolltõendi."
+                }
+              ]
+            },
+            {
+              "id": "verify-domain",
+              "title": "Kinnita domeeni omandiõigus",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Pärast domeeni lisamist tõesta, et see kuulub sulle."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Kopeeri TXT-kirje CMC-st:"
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "_cmc-verification.company.com TXT \"cmc-verify-abc123xyz\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Lisa kirje oma domeeni DNS-i seadistustesse.",
+                    "Oota automaatset kontrolli (iga 5 minuti järel) või klõpsa \"Check Now\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Kinnitamine võib võtta kuni 48 tundi. Pärast õnnestumist muutub domeeni olek kinnitatuks."
+                }
+              ]
+            },
+            {
+              "id": "configure-spf",
+              "title": "Seadista SPF-kirje",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "SPF määratleb serverid, mis võivad sinu domeeni nimel e-kirju saata."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Ava CMC-s \"DNS Configuration\" → \"SPF\".",
+                    "Klõpsa \"Check Current SPF\", et vaadata olemasolevaid kirjeid.",
+                    "Klõpsa \"Generate SPF Record\".",
+                    "Kopeeri soovitatud kirje:"
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "company.com TXT \"v=spf1 include:_spf.silenceai.net -all\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Lisa kirje DNS-i."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Kui SPF-kirje juba olemas (näiteks Gmaili jaoks), lisa meie include enne lõplikku -all kvalifikaatorit."
+                }
+              ]
+            },
+            {
+              "id": "configure-dkim",
+              "title": "Genereeri DKIM-võtmed",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DKIM lisab sinu e-kirjadele krüptograafilise allkirja."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Ava CMC-s \"DNS Configuration\" → \"DKIM\".",
+                    "Klõpsa \"Generate DKIM Keys\".",
+                    "Süsteem loob võtmebaari (privaatvõti jääb serverisse, avalik võti on DNS-i jaoks).",
+                    "Kopeeri DNS-kirje:"
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "silenceai._domainkey.company.com TXT \"v=DKIM1; k=rsa; p=MIIBIjAN...\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Lisa kirje DNS-i.",
+                    "Käivita kinnitamiseks \"Verify DKIM\"."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "configure-dmarc",
+              "title": "Määra DMARC-poliitika",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DMARC määratleb, mida teha sõnumitega, mis ei läbi SPF-i või DKIM-i kontrolle."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Ava CMC-s \"DNS Configuration\" → \"DMARC\".",
+                    "Vali poliitika:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "quarantine — saada rämpsposti (soovitatav)",
+                    "reject — hülga sõnum"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Klõpsa \"Generate DMARC Record\".",
+                    "Kopeeri kirje:"
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "_dmarc.company.com TXT \"v=DMARC1; p=quarantine; rua=mailto:dmarc-reports@silenceai.net\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Lisa kirje DNS-i."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Alusta quarantine-poliitikaga, jälgi aruandeid 1–2 nädalat, seejärel soovi korral lülitu reject'i peale."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "user-management",
+          "title": "Kasutajahaldus",
+          "label": "Kasutajahaldus",
+          "description": "E-posti kontode loomine ja haldamine.",
+          "sections": [
+            {
+              "id": "create-account",
+              "title": "Loo e-posti konto",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Ava CMC-s jaotis \"Email Accounts\".",
+                    "Klõpsa \"Create Account\".",
+                    "Täida väljad:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "E-post: john.doe@company.com",
+                    "Ees- ja perekonnanimi",
+                    "Parool (vähemalt 8 märki, suur- ja väiketäht, number, erimärk)",
+                    "Mahupiirang: vali postkasti suurus"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Klõpsa \"Create\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Kasutaja saab kohe veebimeili sisse logida."
+                }
+              ]
+            },
+            {
+              "id": "suspend-activate",
+              "title": "Peata või taasta konto",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Leia kasutaja jaotises \"Email Accounts\".",
+                    "Vali toimingute menüüst:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Suspend — peata juurdepääs (kasutaja ei saa sisse logida)",
+                    "Activate — taasta juurdepääs"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Kinnita toiming."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "change-quota",
+              "title": "Muuda mahupiirangut",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Leia kasutaja loendist.",
+                    "Vali toimingute menüüst \"Edit Quota\".",
+                    "Vali uus mahusuurus.",
+                    "Salvesta muudatused."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Muudatused jõustuvad koheselt."
+                }
+              ]
+            },
+            {
+              "id": "delete-account",
+              "title": "Kustuta konto",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Leia kasutaja loendist.",
+                    "Vali toimingute menüüst \"Delete\".",
+                    "Kinnita kustutamine."
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "intent": "warning",
+                  "content": "Hoiatus: kõik kasutaja andmed eemaldatakse pöördumatult."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mail-operations",
+          "title": "E-posti toimingud",
+          "label": "E-posti toimingud",
+          "description": "Igapäevased tegevused veebimeili kliendis.",
+          "sections": [
+            {
+              "id": "send-letter",
+              "title": "Saada sõnum",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Klõpsa veebimeilis \"Compose\".",
+                    "Täida väljad:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "To: saaja aadress",
+                    "Subject: e-kirja teema",
+                    "Body: sõnumi tekst (saadaval rikkalik vormindus)"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Lisa vajadusel manused (kuni 25 MB faili kohta).",
+                    "Klõpsa \"Send\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Sõnumid allkirjastatakse automaatselt DKIM-iga ja toimetatakse kohale."
+                }
+              ]
+            },
+            {
+              "id": "custom-folder",
+              "title": "Loo reeglitega kohandatud kaust",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Kohandatud kaustad sorteerivad sõnumid automaatselt sinu määratud reeglite alusel."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Klõpsa külgribal \"Create Folder\".",
+                    "Sisesta kausta nimi (näiteks \"Clients\").",
+                    "Klõpsa \"Add Rules\".",
+                    "Seadista reegel:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Filtreeri: saatja domeen",
+                    "Sobitusrežiim: Contains",
+                    "Väärtus: client.com"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Lülita sisse \"Apply to existing emails\", kui soovid töödelda olemasolevaid sõnumeid.",
+                    "Klõpsa \"Create\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Kõik uued sõnumid aadressilt *@client.com liiguvad automaatselt kausta \"Clients\"."
+                }
+              ]
+            },
+            {
+              "id": "add-whitelist",
+              "title": "Lisa saatja lubatud nimekirja",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Kui sõnum märgiti ekslikult rämpspostiks:"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Ava e-kiri SPAM-kaustas.",
+                    "Klõpsa \"Not Spam\" → \"Add to Whitelist\".",
+                    "Vali:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Luba saatja e-posti aadress",
+                    "Luba saatja domeen"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Kinnita toiming."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Tulevased sõnumid sellelt saatjalt ei satu enam rämpsu."
+                }
+              ]
+            },
+            {
+              "id": "email-signature",
+              "title": "Seadista e-kirja signatuur",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Ava Settings → \"Email Signature\".",
+                    "Lülita sisse \"Enable signature\".",
+                    "Sisesta signatuuri tekst redaktorisse.",
+                    "Klõpsa \"Save\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Signatuur lisatakse igale väljuvale sõnumile automaatselt."
+                }
+              ]
+            },
+            {
+              "id": "vacation-responder",
+              "title": "Seadista automaatvastus",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Ava Settings → \"Vacation Responder\".",
+                    "Lülita sisse \"Enable vacation responder\".",
+                    "Määra algus- ja lõppkuupäevad.",
+                    "Sisesta automaatvastuse tekst.",
+                    "Märgi \"Reply once per sender\", et saata igale saatjale vaid üks vastus.",
+                    "Klõpsa \"Save\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Automaatvastaja töötab valitud kuupäevadel ja lülitub ise välja."
+                }
+              ]
+            },
+            {
+              "id": "forwarding",
+              "title": "Seadista edastamine",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Ava Settings → \"Email Forwarding\".",
+                    "Klõpsa \"Add Forwarding Address\".",
+                    "Sisesta edastamise aadress.",
+                    "Lülita sisse \"Keep copy in inbox\", kui soovid säilitada koopia.",
+                    "Klõpsa \"Save\"."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Kõik saabuvad kirjad edastatakse valitud aadressile."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "domain-administration",
+          "title": "Domeenihaldus",
+          "label": "Domeenihaldus",
+          "description": "Domeeni analüütika ja hulgitoimingud e-postiga.",
+          "sections": [
+            {
+              "id": "view-activity",
+              "title": "Vaata domeeni e-posti aktiivsust",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Administraatorid näevad iga kasutaja kõiki sõnumeid domeenis."
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Ava CMC → \"Email Activity\".",
+                    "Kasuta filtreid:"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Kasutaja järgi",
+                    "Kausta järgi (Secure, Spam, Phishing)",
+                    "Kuupäeva järgi",
+                    "Ohutüübi järgi"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Kasuta otsinguvälja teema või saatja leidmiseks."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bulk-delete",
+              "title": "Kustuta sõnumid kõigi kasutajate jaoks",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Kui pahatahtlik sõnum saadeti kõigile:"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Ava \"Email Activity\".",
+                    "Leia sõnum filtrite või otsingu abil.",
+                    "Vali eemaldatavad sõnumid.",
+                    "Klõpsa \"Delete Selected\".",
+                    "Kinnita hulgikustutamine."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Sõnum eemaldatakse kõigi kasutajate postkastidest."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "concepts",
+          "title": "Põhimõisted",
+          "label": "Põhimõisted",
+          "description": "Platvormi võtmemõisted ja turbevood.",
+          "sections": [
+            {
+              "id": "system-overview",
+              "title": "Süsteemi ülevaade",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "E-posti turbesüsteem kaitseb ettevõtte e-posti küberohtude eest."
+                },
+                {
+                  "type": "list",
+                  "title": "Komponendid:",
+                  "items": [
+                    "CMC administraatorpaneel — administraatorite konsool domeenide, kasutajate ja DNS-i seadistuste jaoks.",
+                    "Veebimeili klient — töötajate postkast automaatse ohukaitsega.",
+                    "Taristuteenused — SMTP-server ja turbetrass sõnumite töötlemiseks."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "security-stack",
+              "title": "Turbetrass",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Iga saabuv sõnum läbib kuus kaitsekihti:"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "Kiht 0: Phishingu domeenikontroll — hindab saatja domeene tuntud andmepüügi andmebaaside põhjal.",
+                    "Kiht 1: Spoofingu tuvastamine — kontrollib SPF-i, DKIM-i ja DMARC-i vastavust.",
+                    "Kiht 2: Rämpsu tuvastamine — analüüsib sisu RSPAMD-ga rämpsu tunnuste leidmiseks.",
+                    "Kiht 3: Linkide skänner — kontrollib URL-e URLScan.io abil pahatahtlike linkide suhtes.",
+                    "Kiht 4: Viirusetõrje — kontrollib manuseid Bitdefenderiga.",
+                    "Kiht 5: AI-põhine phishingu tuvastus — analüüsib sõnumisisu AI abil andmepüügi signaalide leidmiseks."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Kui tuvastatakse oht, peatatakse töötlemine ja sõnum suunatakse vastavasse kausta."
+                }
+              ]
+            },
+            {
+              "id": "system-folders",
+              "title": "Süsteemikaustad",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Sõnumid suunatakse kaustadesse vastavalt kontrolli tulemustele:"
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Unfiltered — uus post enne töötlemist (ajutine).",
+                    "Secure — sõnumid, mis läbisid kõik kontrollid.",
+                    "Possibly Spoofed — saatja autentsus on kahtlane.",
+                    "SPAM — rämpsposti sõnumid.",
+                    "Dangerous Links — sõnumid, mis sisaldavad pahatahtlikke URL-e.",
+                    "Malware — sõnumid nakatunud manustega.",
+                    "Possibly Phishing — tuvastati phishingu tunnuseid.",
+                    "Sent — saadetud post."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Üks sõnum võib olla mitmes kaustas korraga (nt SPAM ja Possibly Spoofed)."
+                }
+              ]
+            },
+            {
+              "id": "custom-folders",
+              "title": "Kohandatud kaustad",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Kasutajad saavad luua automaatsete filtreerimisreeglitega kohandatud kaustu."
+                },
+                {
+                  "type": "list",
+                  "title": "Filtreerimisreeglid:",
+                  "items": [
+                    "Saatja domeeni järgi",
+                    "Saatja e-posti järgi",
+                    "Teema järgi",
+                    "Saatja nime järgi"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "title": "Sobitusrežiimid:",
+                  "items": [
+                    "Contains",
+                    "Equals",
+                    "Starts with",
+                    "Ends with"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Reegleid saab rakendada ka olemasolevale postile (tagasiulatuv filtreerimine)."
+                }
+              ]
+            },
+            {
+              "id": "spf",
+              "title": "SPF (Sender Policy Framework)",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "SPF on DNS-kirje, mis määrab serverid, kellel on lubatud antud domeeni nimel postit saata."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Formaat:"
+                },
+                {
+                  "type": "code",
+                  "content": "v=spf1 include:_spf.silenceai.net -all"
+                },
+                {
+                  "type": "list",
+                  "title": "Mehhanismid:",
+                  "items": [
+                    "include:domeen — luba viidatud domeeni serverid",
+                    "ip4:x.x.x.x — luba konkreetne IP-aadress",
+                    "-all — lükka kõik muu tagasi",
+                    "~all — märgi kõik muu kahtlaseks"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "SPF-kontroll: vastuvõtja veendub, et saatja IP on domeeni SPF-kirjes lubatud. Kui kontroll ebaõnnestub, märgitakse sõnum kahtlaseks."
+                }
+              ]
+            },
+            {
+              "id": "dkim",
+              "title": "DKIM (DomainKeys Identified Mail)",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DKIM lisab krüptograafilise allkirja, mis kinnitab, et sõnum saadeti domeeni omaniku poolt ja seda ei muudetud edastamisel."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Kuidas see toimib:"
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Saatmisel allkirjastab server sõnumi privaatvõtmega ja lisab päise DKIM-Signature.",
+                    "Vastuvõtja toob avaliku võtme DNS-ist ja kontrollib allkirja."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "DNS-kirje:"
+                },
+                {
+                  "type": "code",
+                  "content": "selector._domainkey.domain.com TXT \"v=DKIM1; k=rsa; p=public_key\""
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Privaatvõti hoitakse serveris krüpteeritult ega jagata kunagi klientidele."
+                }
+              ]
+            },
+            {
+              "id": "dmarc",
+              "title": "DMARC (Domain-based Message Authentication)",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DMARC määrab poliitika sõnumitele, mis ei läbi SPF-i või DKIM-i."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Formaat:"
+                },
+                {
+                  "type": "code",
+                  "content": "_dmarc.domain.com TXT \"v=DMARC1; p=quarantine; rua=mailto:reports@domain.com\""
+                },
+                {
+                  "type": "list",
+                  "title": "Parameetrid:",
+                  "items": [
+                    "p=quarantine — saada rämpsu",
+                    "p=reject — lükka sõnum tagasi",
+                    "p=none — ainult monitooring",
+                    "rua= — koondaruannete e-posti aadress"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "DMARC-kontroll: vastuvõtja kinnitab, et sõnum läbib SPF-i või DKIM-i joondatud domeenidega. Kui mitte, rakendatakse määratud poliitikat."
+                }
+              ]
+            },
+            {
+              "id": "attachments",
+              "title": "Manused ja viirusetõrje",
+              "body": [
+                {
+                  "type": "list",
+                  "title": "Piirangud:",
+                  "items": [
+                    "Maksimaalne faili suurus: 25 MB",
+                    "Kõiki failitüüpe toetatakse"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Manuste skannimine: iga faili kontrollib Bitdefender. Kui leitakse pahavara, liigutatakse sõnum kausta Malware ja manus blokeeritakse."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Säilitamine: manused hoitakse serveris sõnumi kaupa. Nakatunud failid viiakse karantiini."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "access-control",
+          "title": "Juurdepääsukontroll",
+          "label": "Juurdepääsukontroll",
+          "description": "Kasutajarollid ja juurdepääsu kaitse.",
+          "sections": [
+            {
+              "id": "user-roles",
+              "title": "Kasutajarollid",
+              "body": [
+                {
+                  "type": "list",
+                  "title": "Administraator",
+                  "items": [
+                    "Täielik juurdepääs CMC administraatorpaneelile",
+                    "Domeeni ja DNS-i haldus",
+                    "Kasutajate loomine ja haldamine",
+                    "Kõigi domeeni sõnumite vaatamine",
+                    "Hulgitoimingute tegemine e-postiga"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "title": "Alluv",
+                  "items": [
+                    "Piiratud ligipääs CMC-le",
+                    "Kasutajate loendi vaatamine",
+                    "Juurdepääs ainult oma postile"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "title": "Kasutaja",
+                  "items": [
+                    "Juurdepääs veebimeili kliendile",
+                    "Töötamine oma postiga",
+                    "Isiklike seadete muutmine"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "role-assignment",
+              "title": "Rollide määramine",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Auto-admin: esimene OAuthi kaudu sisseloginud kasutaja saab automaatselt administraatoriks."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Alluvate loomine: administraatorid lisavad alluvate kontosid CMC jaotises \"User Management\"."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Kasutajate loomine: administraatorid loovad postkaste jaotises \"Email Accounts\"; kontodele omistatakse kasutaja roll."
+                }
+              ]
+            },
+            {
+              "id": "authentication",
+              "title": "Autentimine",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "OAuth 2.0: Google'i või Microsofti sisselogimine koos PKCE turvalisusega.",
+                    "E-post/parool: mandaadid väljastab administraator CMC-s.",
+                    "JWT-tokenid: juurdepääsutokenid kehtivad 7 päeva ja salvestatakse httpOnly küpsistesse.",
+                    "Tokenite värskendamine: juurdepääsutokenid uuenevad automaatselt värskendustokeniga; pärast selle aegumist tuleb uuesti sisse logida."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "access-protection",
+              "title": "Juurdepääsu kaitse",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Päringute piiramine: üks IP võib 15 minuti jooksul proovida sisse logida kuni 5 korda.",
+                    "Sessioonihaldus: aktiivsed sessioonid salvestatakse andmebaasi ja kontrollitakse igal päringul.",
+                    "Auditeerimine: kriitilised administraatori ja kasutaja toimingud logitakse."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "quotas-limits",
+          "title": "Kvoodid ja piirangud",
+          "label": "Kvoodid ja piirangud",
+          "description": "Hoiustamis-, saatmis- ja kasutajapiirangud.",
+          "sections": [
+            {
+              "id": "storage-quota",
+              "title": "Hoiustamismaht",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Igal kasutajal on postkasti kvoot. Kui kasutus jõuab 100%-ni, ei saa ta enam kirju saata ega vastu võtta."
+                }
+              ]
+            },
+            {
+              "id": "sending-limits",
+              "title": "Saatmise piirangud",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Business Basic: 500 sõnumit kasutaja kohta päevas",
+                    "Business Standard: 1000 sõnumit päevas",
+                    "Business Premium: 2000 sõnumit päevas",
+                    "Enterprise: 10000 sõnumit päevas"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "user-limit",
+              "title": "Kasutajate arv",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Äriplaanid: kuni 300 kasutajat",
+                    "Enterprise'i plaanid: piiramatult kasutajaid"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   }
 }

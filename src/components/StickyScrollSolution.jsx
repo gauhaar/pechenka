@@ -9,7 +9,7 @@ import EdgeGlowCard from "./EdgeGlowCard";
 
 export function StickyScrollSolution() {
   const { t } = useLanguage();
-  
+
   // Fallback content mapping
   const fallbackContent = {
     webSecurity: {
@@ -37,7 +37,7 @@ export function StickyScrollSolution() {
       description: "For accounts added by the administrator, a secure web client is available that detects spoofing, spam, phishing, and malware."
     }
   };
-  
+
   const localizedContent = solutionContent.map((item) => {
     const fallback = fallbackContent[item.id] || { title: "", description: "" };
     const title = t(`stickySolution.${item.id}.title`, fallback.title);

@@ -16,6 +16,9 @@
       "mail": "邮件",
       "affiliate": "联盟计划",
       "instructions": "使用指南",
+      "instructionsAiSoc": "AI-SOC",
+      "instructionsSupreme": "Supreme",
+      "instructionsSithub": "Sithub",
       "product": "AI-SOC",
       "secureDevelopment": "SLNC-env",
       "developerServices": "开发者服务",
@@ -23,13 +26,16 @@
       "systems": "系统",
       "systemsAiSoc": "AI-SOC",
       "systemsSlncEnv": "SLNC-env",
+      "systemsSithub": "Sithub",
+      "systemsSupreme": "Supreme",
       "services": "服务"
     },
     "login": "登录",
     "cta": {
       "contact": "联系我们",
       "download": "下载",
-      "requestDemo": "预约演示"
+      "requestDemo": "预约演示",
+      "get": "获取"
     }
   },
   "affiliate": {
@@ -120,18 +126,18 @@
     "termsAff": {
       "label": "联盟计划",
       "title": "联盟服务条款",
-        "gitServer": {
-          "title": "Git 仓库服务器",
-          "tag": "自托管版本控制"
-        },
-        "analyzer": {
-          "title": "安全分析器",
-          "tag": "本地代码扫描引擎"
-        },
-        "vulnDb": {
-          "title": "漏洞数据库",
-          "tag": "已下载的安全补丁"
-        },
+      "gitServer": {
+        "title": "Git 仓库服务器",
+        "tag": "自托管版本控制"
+      },
+      "analyzer": {
+        "title": "安全分析器",
+        "tag": "本地代码扫描引擎"
+      },
+      "vulnDb": {
+        "title": "漏洞数据库",
+        "tag": "已下载的安全补丁"
+      },
       "notice": "本政策仅提供英文版本",
       "intro": "以下条款说明 Silence AI 联盟计划中合作伙伴的奖励发放与支付方式。",
       "meta": {
@@ -936,6 +942,959 @@
       "title": "精选文章",
       "subtitle": "Silence AI 是少数拥有政府级情报能力的私营公司之一。",
       "viewAll": "查看所有文章"
+    }
+  },
+  "documentation": {
+    "tabs": {
+      "web": "网络安全",
+      "email": "电子邮件安全"
+    },
+    "system": {
+      "sections": "章节",
+      "topics": "主题",
+      "tableOfContents": "目录",
+      "close": "关闭"
+    },
+    "webSecurity": {
+      "placeholder": {
+        "badge": "网络安全",
+        "title": "文档即将推出",
+        "description": "我们正在准备详细指南。"
+      }
+    },
+    "emailSecurity": {
+      "title": "电子邮件安全系统",
+      "subtitle": "文档 | 版本 1.0",
+      "description": "如何配置和运行企业电子邮件安全平台。",
+      "chapters": [
+        {
+          "id": "getting-started",
+          "title": "入门指南",
+          "label": "入门指南",
+          "description": "在 CMC 管理面板中完成初始接入步骤以及域名和 DNS 配置。",
+          "sections": [
+            {
+              "id": "admin-setup",
+              "title": "面向管理员",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "要接入并启用系统："
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "使用 Google 或 Microsoft OAuth 登录 admin.silenceai.net 上的 CMC 管理面板。",
+                    "注册贵公司的主域名。",
+                    "通过 DNS 验证明域名所有权。",
+                    "配置安全 DNS 记录（SPF、DKIM、DMARC）。",
+                    "为员工创建邮箱帐户。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "完成配置后，用户即可访问 Web 邮件客户端并发送受保护的邮件。"
+                }
+              ]
+            },
+            {
+              "id": "user-onboarding",
+              "title": "面向终端用户",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "终端用户开始使用邮箱："
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "从管理员处获取登录凭据。",
+                    "使用邮箱/密码或 OAuth 登录 mail.silenceai.net。",
+                    "通过“撰写”按钮发送第一封邮件。",
+                    "查看系统文件夹，它们会按安全级别自动分类邮件。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "所有收到的邮件都会自动进行威胁扫描，并被路由到相应文件夹。"
+                }
+              ]
+            },
+            {
+              "id": "add-domain",
+              "title": "添加域名",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "域名管理在 CMC 管理面板中完成。"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "打开 CMC 管理面板。",
+                    "点击“添加域名”。",
+                    "输入不带 www 的域名（例如 company.com）。",
+                    "点击“添加”。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "系统会生成一个验证令牌，用于确认域名所有权。"
+                }
+              ]
+            },
+            {
+              "id": "verify-domain",
+              "title": "验证域名所有权",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "添加域名后，需要证明该域名确实归您所有。"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "从 CMC 中复制 TXT 记录："
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "_cmc-verification.company.com TXT \"cmc-verify-abc123xyz\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "将该记录添加到域名的 DNS 设置中。",
+                    "等待系统自动检查（每 5 分钟一次），或点击“立即检查”。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "验证可能需要最长 48 小时。成功后，域名状态会变为“已验证”。"
+                }
+              ]
+            },
+            {
+              "id": "configure-spf",
+              "title": "配置 SPF 记录",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "SPF 用于声明哪些服务器可以代表您的域发送邮件。"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "在 CMC 中打开“DNS 配置”→“SPF”。",
+                    "点击“检查当前 SPF”，查看现有记录。",
+                    "点击“生成 SPF 记录”。",
+                    "复制推荐的记录："
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "company.com TXT \"v=spf1 include:_spf.silenceai.net -all\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "将该记录添加到 DNS 中。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "如果已经存在 SPF 记录（例如用于 Gmail），请在最后的 -all 之前加入我们的 include 项。"
+                }
+              ]
+            },
+            {
+              "id": "configure-dkim",
+              "title": "生成 DKIM 密钥",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DKIM 会为您的邮件添加加密签名。"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "在 CMC 中打开“DNS 配置”→“DKIM”。",
+                    "点击“生成 DKIM 密钥”。",
+                    "系统会生成一对密钥（私钥保留在服务器上，公钥用于 DNS）。",
+                    "复制生成的 DNS 记录："
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "silenceai._domainkey.company.com TXT \"v=DKIM1; k=rsa; p=MIIBIjAN...\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "将该记录添加到 DNS 中。",
+                    "运行“验证 DKIM”以确认配置生效。"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "configure-dmarc",
+              "title": "设置 DMARC 策略",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DMARC 用于定义当邮件未通过 SPF 或 DKIM 校验时应如何处理。"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "在 CMC 中打开“DNS 配置”→“DMARC”。",
+                    "选择一条策略："
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "quarantine — 移动到垃圾邮件（推荐）",
+                    "reject — 拒收该邮件"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "点击“生成 DMARC 记录”。",
+                    "复制生成的记录："
+                  ]
+                },
+                {
+                  "type": "code",
+                  "content": "_dmarc.company.com TXT \"v=DMARC1; p=quarantine; rua=mailto:dmarc-reports@silenceai.net\""
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "将该记录添加到 DNS 中。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "建议先使用 quarantine，监控 1–2 周的报告后，如有需要再切换为 reject。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "user-management",
+          "title": "用户管理",
+          "label": "用户管理",
+          "description": "创建与维护邮箱帐户。",
+          "sections": [
+            {
+              "id": "create-account",
+              "title": "创建邮箱帐户",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "在 CMC 中打开“邮箱帐户”版块。",
+                    "点击“创建帐户”。",
+                    "按要求填写各个字段："
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "邮箱：john.doe@company.com",
+                    "名字与姓氏",
+                    "密码（至少 8 个字符，包含大小写字母、数字和特殊字符）",
+                    "存储配额：选择邮箱容量大小"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "点击“创建”。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "用户创建完成后即可立即登录 Web 邮箱。"
+                }
+              ]
+            },
+            {
+              "id": "suspend-activate",
+              "title": "暂停或重新启用帐户",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "在“邮箱帐户”列表中找到目标用户。",
+                    "在“操作”菜单中选择："
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Suspend — 暂停访问（用户无法登录）",
+                    "Activate — 恢复访问权限"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "确认操作。"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "change-quota",
+              "title": "修改存储配额",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "在列表中找到目标用户。",
+                    "在“操作”菜单中选择“编辑配额”。",
+                    "选择新的存储容量大小。",
+                    "保存更改。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "更改会立即生效。"
+                }
+              ]
+            },
+            {
+              "id": "delete-account",
+              "title": "删除帐户",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "在列表中找到目标用户。",
+                    "在“操作”菜单中选择“删除”。",
+                    "确认删除操作。"
+                  ]
+                },
+                {
+                  "type": "callout",
+                  "intent": "warning",
+                  "content": "警告：该用户的所有数据将被永久删除，无法恢复。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mail-operations",
+          "title": "邮件操作",
+          "label": "邮件操作",
+          "description": "在 Web 邮件客户端中的日常操作。",
+          "sections": [
+            {
+              "id": "send-letter",
+              "title": "发送邮件",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "在 Web 邮件界面点击“撰写”。",
+                    "填写以下内容："
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "收件人（To）：收件地址",
+                    "主题（Subject）：邮件标题",
+                    "正文（Body）：邮件内容（支持富文本格式）"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "如有需要，添加附件（单个文件最大 25 MB）。",
+                    "点击“发送”。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "系统会自动为邮件添加 DKIM 签名并完成投递。"
+                }
+              ]
+            },
+            {
+              "id": "custom-folder",
+              "title": "创建带规则的自定义文件夹",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "通过自定义文件夹，您可以按规则自动整理邮件。"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "在侧边栏点击“创建文件夹”。",
+                    "输入文件夹名称（例如“客户”）。",
+                    "点击“添加规则”。",
+                    "配置筛选规则："
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "筛选字段：发件人域名",
+                    "匹配模式：包含",
+                    "值：client.com"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "如果希望对现有邮件也生效，请勾选“应用于现有邮件”。",
+                    "点击“创建”。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "此后，来自 *@client.com 的新邮件会自动进入“客户”文件夹。"
+                }
+              ]
+            },
+            {
+              "id": "add-whitelist",
+              "title": "将发件人添加到白名单",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "如果某封邮件被错误地标记为垃圾邮件："
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "在“垃圾邮件”文件夹中打开该邮件。",
+                    "点击“非垃圾邮件”→“添加到白名单”。",
+                    "选择以下范围："
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "将发件人邮箱地址加入白名单",
+                    "将发件人域名加入白名单"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "确认操作。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "之后，来自该发件人的邮件将不再被投递到垃圾邮件文件夹。"
+                }
+              ]
+            },
+            {
+              "id": "email-signature",
+              "title": "设置邮件签名",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "打开“设置”→“邮件签名”。",
+                    "开启“启用签名”。",
+                    "在编辑器中输入签名内容。",
+                    "点击“保存”。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "签名会自动附加到每一封外发邮件中。"
+                }
+              ]
+            },
+            {
+              "id": "vacation-responder",
+              "title": "配置自动回复",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "打开“设置”→“假期自动回复”。",
+                    "开启“启用假期自动回复”。",
+                    "设置开始和结束日期。",
+                    "输入自动回复内容。",
+                    "勾选“对每个发件人只回复一次”，避免重复回复同一发件人。",
+                    "点击“保存”。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "自动回复将在所选日期范围内生效，并在结束日期后自动关闭。"
+                }
+              ]
+            },
+            {
+              "id": "forwarding",
+              "title": "配置邮件转发",
+              "body": [
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "打开“设置”→“邮件转发”。",
+                    "点击“添加转发地址”。",
+                    "输入转发邮箱地址。",
+                    "如需在当前邮箱中保留副本，请勾选“在收件箱中保留副本”。",
+                    "点击“保存”。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "之后，所有收到的邮件都会被转发到所填写的目标地址。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "domain-administration",
+          "title": "域管理",
+          "label": "域管理",
+          "description": "针对整个域的统计分析与批量邮件操作。",
+          "sections": [
+            {
+              "id": "view-activity",
+              "title": "查看域邮件活动",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "管理员可以查看域内每位用户的每一封邮件。"
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "在 CMC 中打开“邮件活动”。",
+                    "使用以下筛选条件："
+                  ]
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "按用户筛选",
+                    "按文件夹筛选（安全、垃圾邮件、钓鱼）",
+                    "按日期筛选",
+                    "按威胁类型筛选"
+                  ]
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "使用搜索栏按主题或发件人进行精确查找。"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bulk-delete",
+              "title": "为所有用户删除邮件",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "如果有一封恶意邮件被群发给所有用户："
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "打开“邮件活动”。",
+                    "通过筛选或搜索找到这封邮件。",
+                    "勾选所有需要删除的相关邮件。",
+                    "点击“删除所选”。",
+                    "确认对所有选中邮件执行批量删除。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "该邮件会从所有用户的邮箱中被删除。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "concepts",
+          "title": "核心概念",
+          "label": "核心概念",
+          "description": "平台的关键概念与安全处理流程。",
+          "sections": [
+            {
+              "id": "system-overview",
+              "title": "系统概览",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "Email Security System 是一个保护企业邮件免受网络威胁的平台。"
+                },
+                {
+                  "type": "list",
+                  "title": "组成部分：",
+                  "items": [
+                    "CMC 管理面板——用于管理域名、用户和 DNS 配置的管理员控制台。",
+                    "Web 邮件客户端——面向员工的邮箱界面，内置自动威胁防护。",
+                    "基础设施服务——用于邮件处理的 SMTP 服务器与安全处理流水线。"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "security-stack",
+              "title": "安全处理流程",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "每一封收到的邮件都会经过六层安全防护："
+                },
+                {
+                  "type": "orderedList",
+                  "items": [
+                    "第 0 层：钓鱼域名检查——根据已知钓鱼数据库评估发件人域名。",
+                    "第 1 层：伪造检测——验证 SPF、DKIM 与 DMARC 是否一致对齐。",
+                    "第 2 层：垃圾邮件检测——使用 RSPAMD 分析内容中的垃圾特征。",
+                    "第 3 层：链接扫描——通过 URLScan.io 扫描 URL 是否存在恶意链接。",
+                    "第 4 层：防病毒——使用 Bitdefender 扫描所有附件。",
+                    "第 5 层：AI 钓鱼检测——利用 AI 分析邮件内容中的钓鱼信号。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "一旦检测到威胁，处理流程会立即中止，并将邮件放入对应的系统文件夹中。"
+                }
+              ]
+            },
+            {
+              "id": "system-folders",
+              "title": "系统文件夹",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "系统会根据安全检查结果将邮件路由到不同文件夹："
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "Unfiltered——未过滤：处理前的临时收件箱。",
+                    "Secure——安全：通过所有检查的邮件。",
+                    "Possibly Spoofed——可能伪造：发件人真实性存在可疑。",
+                    "SPAM——垃圾邮件：被判定为垃圾邮件的内容。",
+                    "Dangerous Links——危险链接：包含恶意 URL 的邮件。",
+                    "Malware——恶意软件：附件被检测出恶意软件的邮件。",
+                    "Possibly Phishing——可能钓鱼：检测到钓鱼指标的邮件。",
+                    "Sent——已发送：所有外发邮件。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "单封邮件有时可能出现在多个文件夹中（例如同时位于“垃圾邮件”和“可能伪造”）。"
+                }
+              ]
+            },
+            {
+              "id": "custom-folders",
+              "title": "自定义文件夹",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "用户可以创建自定义文件夹，并配置自动筛选规则。"
+                },
+                {
+                  "type": "list",
+                  "title": "筛选规则：",
+                  "items": [
+                    "按发件人域名筛选",
+                    "按发件人邮箱地址筛选",
+                    "按主题筛选",
+                    "按发件人名称筛选"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "title": "匹配模式：",
+                  "items": [
+                    "包含 (Contains)",
+                    "等于 (Equals)",
+                    "以…开头 (Starts with)",
+                    "以…结尾 (Ends with)"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "规则既可应用于新的来信，也可选中对现有邮件进行追溯性过滤。"
+                }
+              ]
+            },
+            {
+              "id": "spf",
+              "title": "SPF (Sender Policy Framework)",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "SPF 是一种 DNS 记录，用于声明哪些服务器可以为该域发送邮件。"
+                },
+                {
+                  "type": "paragraph",
+                  "content": "格式示例："
+                },
+                {
+                  "type": "code",
+                  "content": "v=spf1 include:_spf.silenceai.net -all"
+                },
+                {
+                  "type": "list",
+                  "title": "机制说明：",
+                  "items": [
+                    "include:domain —— 允许来自指定域的服务器",
+                    "ip4:x.x.x.x —— 允许指定 IPv4 地址",
+                    "-all —— 拒绝其他所有来源",
+                    "~all —— 将其他来源标记为可疑"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "SPF 校验：收件方会检查发件 IP 是否包含在该域的 SPF 记录中，若校验失败，邮件会被标记为可疑。"
+                }
+              ]
+            },
+            {
+              "id": "dkim",
+              "title": "DKIM (DomainKeys Identified Mail)",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DKIM 会为邮件添加加密签名，用于确认邮件由域名所有者发出且在传输过程中未被篡改。"
+                },
+                {
+                  "type": "paragraph",
+                  "content": "工作原理："
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "发送端服务器使用私钥对邮件进行签名，并添加 DKIM-Signature 头。",
+                    "收件方从 DNS 中获取公钥，对签名进行验证。"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "DNS 记录示例："
+                },
+                {
+                  "type": "code",
+                  "content": "selector._domainkey.domain.com TXT \"v=DKIM1; k=rsa; p=public_key\""
+                },
+                {
+                  "type": "paragraph",
+                  "content": "私钥以加密形式保存在服务器上，从不向任何客户端暴露。"
+                }
+              ]
+            },
+            {
+              "id": "dmarc",
+              "title": "DMARC (Domain-based Message Authentication)",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "DMARC 用于定义对未通过 SPF 或 DKIM 校验的邮件应采取的策略。"
+                },
+                {
+                  "type": "paragraph",
+                  "content": "格式示例："
+                },
+                {
+                  "type": "code",
+                  "content": "_dmarc.domain.com TXT \"v=DMARC1; p=quarantine; rua=mailto:reports@domain.com\""
+                },
+                {
+                  "type": "list",
+                  "title": "参数说明：",
+                  "items": [
+                    "p=quarantine —— 投递到垃圾邮件夹",
+                    "p=reject —— 拒收该邮件",
+                    "p=none —— 仅监控，不修改投递行为",
+                    "rua= —— 接收聚合报告的邮箱地址"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "DMARC 校验：收件方会确认邮件是否通过 SPF 或 DKIM 且域名一致，否则按照策略中的设置（如 quarantine 或 reject）进行处理。"
+                }
+              ]
+            },
+            {
+              "id": "attachments",
+              "title": "附件与杀毒",
+              "body": [
+                {
+                  "type": "list",
+                  "title": "限制条件：",
+                  "items": [
+                    "单个附件最大体积：25 MB",
+                    "支持所有常见文件类型"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "附件扫描：所有附件都会由 Bitdefender 扫描，如检测到恶意软件，该邮件会被移动到“恶意软件”文件夹，并阻止附件下载。"
+                },
+                {
+                  "type": "paragraph",
+                  "content": "存储：附件会作为邮件的一部分保存在服务器上，被判定为恶意的文件会被转移到隔离区。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "access-control",
+          "title": "访问控制",
+          "label": "访问控制",
+          "description": "用户角色划分与访问保护。",
+          "sections": [
+            {
+              "id": "user-roles",
+              "title": "用户角色",
+              "body": [
+                {
+                  "type": "list",
+                  "title": "Admin",
+                  "items": [
+                    "对 CMC 管理面板拥有完全访问权限",
+                    "管理域名与 DNS 配置",
+                    "创建和管理用户帐户",
+                    "查看整个域的所有邮件",
+                    "执行批量邮件操作"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "title": "Subordinate",
+                  "items": [
+                    "对 CMC 具有受限访问权限",
+                    "可以查看用户列表",
+                    "只能访问自己的邮箱"
+                  ]
+                },
+                {
+                  "type": "list",
+                  "title": "User",
+                  "items": [
+                    "访问 Web 邮件客户端",
+                    "处理自己的邮件",
+                    "配置个人偏好与设置"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "role-assignment",
+              "title": "角色分配",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "自动管理员：第一个通过 OAuth 登录系统的用户将自动获得管理员角色。"
+                },
+                {
+                  "type": "paragraph",
+                  "content": "创建 Subordinate 用户：管理员可在 CMC 的“用户管理”中添加下属帐户。"
+                },
+                {
+                  "type": "paragraph",
+                  "content": "创建 User 帐户：管理员在“邮箱帐户”中创建邮箱时，新帐户默认获得 User 角色。"
+                }
+              ]
+            },
+            {
+              "id": "authentication",
+              "title": "身份验证",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "OAuth 2.0：使用 Google 或 Microsoft 账号登录，并结合 PKCE 提升安全性。",
+                    "邮箱/密码：由管理员在 CMC 中发放的本地账号凭据。",
+                    "JWT 令牌：访问令牌有效期为 7 天，存储在 httpOnly Cookie 中。",
+                    "令牌刷新：访问令牌会通过刷新令牌自动续期；刷新令牌过期后则需要重新登录。"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "access-protection",
+              "title": "访问保护",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "登录速率限制：同一 IP 在 15 分钟内最多允许 5 次登录尝试。",
+                    "会话管理：活动会话存储在数据库中，并在每次请求时进行校验。",
+                    "审计日志：会记录关键的管理员与用户操作行为。"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "quotas-limits",
+          "title": "配额与限制",
+          "label": "配额与限制",
+          "description": "存储、发送以及用户数量方面的配额限制。",
+          "sections": [
+            {
+              "id": "storage-quota",
+              "title": "存储配额",
+              "body": [
+                {
+                  "type": "paragraph",
+                  "content": "每个用户都会分配一个邮箱存储配额，当使用率达到 100% 时，该用户将无法再发送或接收邮件。"
+                }
+              ]
+            },
+            {
+              "id": "sending-limits",
+              "title": "发送限制",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Business Basic：每位用户每天最多发送 500 封邮件",
+                    "Business Standard：每天最多 1000 封",
+                    "Business Premium：每天最多 2000 封",
+                    "Enterprise：每天最多 10000 封"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "user-limit",
+              "title": "用户上限",
+              "body": [
+                {
+                  "type": "list",
+                  "items": [
+                    "Business 方案：支持最多 300 名用户",
+                    "Enterprise 方案：用户数量不限"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   }
 }
